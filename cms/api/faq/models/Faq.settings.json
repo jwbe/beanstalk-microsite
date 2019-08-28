@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "faqs",
+  "info": {
+    "name": "faq",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "pages": {
+      "collection": "page",
+      "via": "faqs"
+    }
+  }
+}
