@@ -3,6 +3,24 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'why-beanstalk',
+        link: '/why-beanstalk'
+      },
+      {
+        name: 'about-beanstalk',
+        link: '/about-beanstalk'
+      },
+      {
+        name: 'support',
+        link: '/support'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
