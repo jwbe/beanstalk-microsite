@@ -2,15 +2,14 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 //import Head from '../components/head';
-//import Header from '../components/header';
 require('details-polyfill');
 
 const FaqsPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allStrapiFaq {
+      allFaqs: allStrapiFaq {
         group(field: category) {
-          fieldValue
+          subheader: fieldValue
           edges {
             node {
               title
@@ -24,11 +23,11 @@ const FaqsPage = () => {
   return (
     <Layout>
       {
-        data.allStrapiFaq.group.map((faqs) => {
+        data.allFaqs.group.map((faqs) => {
           return (
             <section>
               <h2>
-                {faqs.fieldValue}
+                {faqs.subheader}
               </h2>
               {
                 faqs.edges.map((faq) => {
