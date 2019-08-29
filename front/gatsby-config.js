@@ -46,14 +46,14 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-graphql',
+      resolve: 'gatsby-source-strapi',
       options: {
-        typeName: 'CMS',
-        fieldName: 'cms',
-        url: 'http://localhost:1337/graphql',
-        headers: {
-          Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTY2OTIxNzk3LCJleHAiOjE1Njk1MTM3OTd9.R-JAYlQvretEzywqOrJNpfgAWRRArQrdnUmFJzd_v3c'
-        }
+        apiURL: 'http://localhost:1337',
+        contentTypes: [
+          'page',
+          'faq'
+        ],
+        queryLimit: 1000
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
