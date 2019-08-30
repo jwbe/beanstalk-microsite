@@ -12,7 +12,7 @@ const FaqsPage = () => {
           subheader: fieldValue
           edges {
             node {
-              title
+              heading
               content
             }
           }
@@ -34,7 +34,7 @@ const FaqsPage = () => {
                   return (
                     <details>
                       <summary>
-                        {faq.node.title}
+                        {faq.node.heading}
                       </summary>
                       <p>
                         {faq.node.content}

@@ -5,7 +5,7 @@ import headerStyles from './header.module.scss';
 const Header = () => {
   return (
     <header>
-      Header
+      Heading
     </header>
   );
 };
