@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports.createPages = async({graphql, actions}) => {
   const { createPage } = actions;
-  const layoutTemplate = path.resolve('./src/components/layout.js');
+  const layoutTemplate = path.resolve('./src/templates/generated.js');
   const result = await graphql(`
     query {
-      allStrapiPage {
+      allPages: allStrapiPage {
         edges {
           node {
             slug
@@ -14,7 +14,7 @@ module.exports.createPages = async({graphql, actions}) => {
       }
     }
   `);
-  result.data.allStrapiPage.edges.forEach((edge) => {
+  result.data.allPages.edges.forEach((edge) => {
     createPage({
       path: edge.node.slug,
       component: layoutTemplate,

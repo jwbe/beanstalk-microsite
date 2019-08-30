@@ -39,10 +39,14 @@ module.exports = {
         apiURL: 'http://localhost:1337',
         contentTypes: [
           'page',
-          'faq'
+          'faq',
+          'header'
         ],
         queryLimit: 1000
       }
+    },
+    {
+      resolve: `gatsby-transformer-remark`
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

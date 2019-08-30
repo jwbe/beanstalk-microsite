@@ -1,12 +1,19 @@
 import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import headerStyles from './header.module.scss';
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <header>
-      Heading
-    </header>
+    <>
+      <header>
+        <h1>
+          {props.heading}
+        </h1>
+        <p>
+          {props.subheading}
+        </p>
+      </header>
+    </>
   );
 };
 

@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "headers",
+  "info": {
+    "name": "header",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
+    },
+    "page": {
+      "type": "string"
+    }
+  }
+}
