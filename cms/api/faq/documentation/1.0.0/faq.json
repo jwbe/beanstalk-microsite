@@ -516,46 +516,27 @@
           "id": {
             "type": "string"
           },
-          "title": {
+          "heading": {
             "type": "string"
           },
-          "pages": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "faqs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
+          "category": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
           }
         }
       },
       "NewFaq": {
         "properties": {
-          "title": {
+          "heading": {
             "type": "string"
           },
-          "pages": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "category": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
           }
         }
       }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/28/2019 5:49:00 AM"
+    "x-generation-date": "08/30/2019 2:31:42 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3131,46 +3131,27 @@
           "id": {
             "type": "string"
           },
-          "title": {
+          "heading": {
             "type": "string"
           },
-          "pages": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "text": {
-                  "type": "string"
-                },
-                "faqs": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
+          "category": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
           }
         }
       },
       "NewFaq": {
         "properties": {
-          "title": {
+          "heading": {
             "type": "string"
           },
-          "pages": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "category": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
           }
         }
       },
@@ -3182,49 +3163,33 @@
           "id": {
             "type": "string"
           },
-          "title": {
+          "heading": {
             "type": "string"
           },
-          "text": {
+          "content": {
             "type": "string"
           },
-          "faqs": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "pages": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
+          "slug": {
+            "type": "string"
+          },
+          "subheading": {
+            "type": "string"
           }
         }
       },
       "NewPage": {
         "properties": {
-          "title": {
+          "heading": {
             "type": "string"
           },
-          "text": {
+          "content": {
             "type": "string"
           },
-          "faqs": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "slug": {
+            "type": "string"
+          },
+          "subheading": {
+            "type": "string"
           }
         }
       },

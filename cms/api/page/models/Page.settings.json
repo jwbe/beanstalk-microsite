@@ -14,16 +14,17 @@
     "comment": ""
   },
   "attributes": {
-    "title": {
+    "heading": {
       "type": "string"
     },
-    "text": {
+    "content": {
       "type": "text"
     },
-    "faqs": {
-      "collection": "faq",
-      "via": "pages",
-      "dominant": true
+    "slug": {
+      "type": "string"
+    },
+    "subheading": {
+      "type": "string"
     }
   }
 }

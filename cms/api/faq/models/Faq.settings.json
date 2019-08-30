@@ -7,16 +7,21 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
-    "title": {
+    "heading": {
       "type": "string"
     },
-    "pages": {
-      "collection": "page",
-      "via": "faqs"
+    "category": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
     }
   }
 }

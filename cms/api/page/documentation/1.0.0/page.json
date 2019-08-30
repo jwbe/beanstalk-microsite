@@ -516,49 +516,33 @@
           "id": {
             "type": "string"
           },
-          "title": {
+          "heading": {
             "type": "string"
           },
-          "text": {
+          "content": {
             "type": "string"
           },
-          "faqs": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "pages": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
+          "slug": {
+            "type": "string"
+          },
+          "subheading": {
+            "type": "string"
           }
         }
       },
       "NewPage": {
         "properties": {
-          "title": {
+          "heading": {
             "type": "string"
           },
-          "text": {
+          "content": {
             "type": "string"
           },
-          "faqs": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "slug": {
+            "type": "string"
+          },
+          "subheading": {
+            "type": "string"
           }
         }
       }
