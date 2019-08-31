@@ -24,32 +24,29 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images`
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: 'gatsby-source-strapi',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        apiURL: 'http://localhost:1337',
-        contentTypes: [
-          'page',
-          'faq',
-          'header'
-        ],
-        queryLimit: 1000
+        name: `pages`,
+        path: `${__dirname}/src/pages`
       }
     },
     {
-      resolve: `gatsby-transformer-remark`
-    }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `faqs`,
+        path: `${__dirname}/src/faqs`
+      }
+    },
+    `gatsby-transformer-remark`
   ],
 }

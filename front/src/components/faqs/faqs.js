@@ -1,19 +1,21 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Layout from '../templates/custom';
-//import Head from '../components/head';
-require('details-polyfill');
+import ReactMarkdown from 'react-markdown/with-html';
 
-const FaqsPage = () => {
+//require('details-polyfill');
+
+const Faqs = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFaqs: allStrapiFaq {
-        group(field: category) {
+      allFaqs: allMarkdownRemark {
+        group(field: frontmatter___category) {
           subheader: fieldValue
           edges {
             node {
-              heading
-              content
+              meta: frontmatter {
+                heading
+              }
+              content: rawMarkdownBody
             }
           }
         }
@@ -21,7 +23,7 @@ const FaqsPage = () => {
     }
   `);
   return (
-    <Layout>
+    <>
       {
         data.allFaqs.group.map((faqs) => {
           return (
@@ -34,11 +36,9 @@ const FaqsPage = () => {
                   return (
                     <details>
                       <summary>
-                        {faq.node.heading}
+                        {faq.node.meta.heading}
                       </summary>
-                      <p>
-                        {faq.node.content}
-                      </p>
+                        <ReactMarkdown source={faq.node.content}/>
                     </details>
                   );
                 })
@@ -47,8 +47,8 @@ const FaqsPage = () => {
           );
         })
       }
-    </Layout>
+    </>
   );
 };
 
-export default FaqsPage;
+export default Faqs;
