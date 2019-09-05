@@ -1,0 +1,56 @@
+.DesktopNavigation {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  margin-top: $base-unit * 2;
+  margin-right: auto;
+  margin-bottom: $base-unit * 2;
+  margin-left: auto;
+  width: 100%;
+  @media (max-width: $breakpoint-md - .0625em) {
+    display: none;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: $base-unit * 3;
+    margin-bottom: $base-unit * 3.5;
+    width: $base-unit * 114;
+  }
+  &_logo {
+    display: block;
+  }
+  &_section {
+    flex-grow: 1;
+    flex-basis: percentage(1/3);
+    display: flex;
+    flex-direction: row;
+    &___start {
+
+    }
+    &___middle {
+      justify-content: center;
+    }
+    &___end {
+      justify-content: flex-end;
+    }
+  }
+  &_items {
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+  }
+  &_item {
+    &___start {
+      margin-right: $base-unit * 3;
+    }
+    &___end {
+      margin-left: $base-unit * 3;
+    }
+  }
+  &_link {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    font-weight: 600;
+    color: $white;
+    text-decoration: none;
+  }
+}

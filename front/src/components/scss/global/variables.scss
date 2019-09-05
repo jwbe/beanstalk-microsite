@@ -1,0 +1,129 @@
+//
+// Colours
+//
+
+$accent-1: #e8f6ff;
+$accent-1-light: rgba($accent-1, .5);
+$accent-1-lighter: rgba($accent-1, .25);
+$accent-1-lightest: rgba($accent-1, .05);
+$accent-2: #0008ff;
+$accent-2-light: rgba($accent-2, .5);
+$accent-2-lighter: rgba($accent-2, .25);
+$accent-2-lightest: rgba($accent-2, .05);
+$accent-3: #8e8e95;
+$accent-3-light: rgba($accent-3, .5);
+$accent-3-lighter: rgba($accent-3, .25);
+$accent-3-lightest: rgba($accent-3, .05);
+$accent-4: #61bfad;
+$accent-4-light: rgba($accent-4, .5);
+$accent-4-lighter: rgba($accent-4, .25);
+$accent-4-lightest: rgba($accent-4, .05);
+$accent-5: #46b8ff;
+$accent-5-light: rgba($accent-5, .5);
+$accent-5-lighter: rgba($accent-5, .25);
+$accent-5-lightest: rgba($accent-5, .05);
+$accent-6: #df2029;
+$accent-6-light: rgba($accent-6, .5);
+$accent-6-lighter: rgba($accent-6, .25);
+$accent-6-lightest: rgba($accent-6, .05);
+$black: #000000;
+$black-light: rgba($black, .5);
+$black-lighter: rgba($black, .25);
+$black-lightest: rgba($black, .05);
+$error: #ff0000;
+$error-light: rgba($error, .5);
+$error-lighter: rgba($error, .25);
+$error-lightest: rgba($error, .05);
+$primary: #055a5b;
+$primary-light: rgba($primary, .5);
+$primary-lighter: rgba($primary, .25);
+$primary-lightest: rgba($primary, .05);
+$secondary: #32b67a;
+$secondary-light: rgba($secondary, .5);
+$secondary-lighter: rgba($secondary, .25);
+$secondary-lightest: rgba($secondary, .05);
+$success: #00ff04;
+$success-light: rgba($success, .5);
+$success-lighter: rgba($success, .25);
+$success-lightest: rgba($success, .05);
+$warning: #ffb300;
+$warning-light: rgba($warning, .5);
+$warning-lighter: rgba($warning, .25);
+$warning-lightest: rgba($warning, .05);
+$white: #ffffff;
+$white-light: rgba($white, .5);
+$white-lighter: rgba($white, .25);
+$white-lightest: rgba($white, .05);
+
+
+//
+// Shadows
+//
+
+$shadow-level-1: 0 .125rem .25rem 0 rgba($black, .1);
+$shadow-level-2: 0 .25rem .5rem 0 rgba($black, .1);
+$shadow-level-3: 0 .5rem 1rem 0 rgba($black, .1);
+$shadow-level-4: 0 1rem 1.5rem 0 rgba($black, .1);
+
+$inset-shadow-level-1: inset 0 .125rem .25rem 0 rgba($black, .1);
+$inset-shadow-level-2: inset 0 .25rem .5rem 0 rgba($black, .1);
+$inset-shadow-level-3: inset 0 .5rem 1rem 0 rgba($black, .1);
+$inset-shadow-level-4: inset 0 1rem 1.5rem 0 rgba($black, .1);
+
+
+//
+// Fonts
+//
+
+$body-font-family: 'Roboto', sans-serif;
+$header-font-family: 'Quicksand', sans-serif;
+
+$small-font-size: .625rem;
+$caption-font-size: .75rem;
+$body-font-size: .875rem;
+$subheader-font-size: 1rem;
+$title-font-size: 1.25rem;
+$headline-font-size: 1.5rem;
+$display-font-size: 2rem;
+$grand-font-size: 3rem;
+$jumbo-font-size: 4rem;
+$mega-font-size: 4.5rem;
+
+$small-line-height: 0.875rem;
+$caption-line-height: 1rem;
+$body-line-height: 1.25rem;
+$subheader-line-height: 1.5rem;
+$title-line-height: 1.75rem;
+$headline-line-height: 2rem;
+$display-line-height: 2.5rem;
+$grand-line-height: 4rem;
+$jumbo-line-height: 4.5rem;
+$mega-line-height: 5rem;
+
+
+//
+// Containers
+//
+
+$container-sm: 33.75rem;
+$container-md: 45rem;
+$container-lg: 60rem;
+$container-xl: 71.25rem;
+
+
+//
+//  Breakpoints
+//
+
+$breakpoint-xs: 0;
+$breakpoint-xs-sm: 36em; // 576px
+$breakpoint-sm: 48em; // 768px
+$breakpoint-md: 62em; // 992px
+$breakpoint-lg: 75em; // 1200px
+
+
+//
+//  Units
+//
+
+$base-unit: .5rem;

@@ -1,0 +1,173 @@
+@mixin smallButton {
+  padding-top: $base-unit / 2 - .0625rem;
+  padding-right: $base-unit - .0625rem;
+  padding-bottom: $base-unit / 2 - .0625rem;
+  padding-left: $base-unit - .0625rem;
+}
+
+@mixin mediumButton {
+  padding-top: $base-unit - .0625rem;
+  padding-right: $base-unit * 2 - .0625rem ;
+  padding-bottom: $base-unit - .0625rem;
+  padding-left: $base-unit * 2 - .0625rem;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}
+
+@mixin largeButton {
+  padding-top: $base-unit - .0625rem;
+  padding-right: $base-unit * 2 - .0625rem ;
+  padding-bottom: $base-unit - .0625rem;
+  padding-left: $base-unit * 2 - .0625rem;
+}
+
+.Button {
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 50rem;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.desktop {
+  &___transparentBackground {
+    background-color: transparent;
+    border: .0625rem solid transparent;
+  }
+  &___PrimaryBackground {
+    background-color: $primary;
+    border: .0625rem solid $primary;
+  }
+  &___SecondaryBackground {
+    background-color: $secondary;
+    border: .0625rem solid $secondary;
+  }
+  &___WhiteBackground {
+    background-color: $white;
+    border: .0625rem solid $white;
+  }
+  &___PrimaryBorder {
+    border: .0625rem solid $primary;
+  }
+  &___SecondaryBorder {
+    border: .0625rem solid $secondary;
+  }
+  &___WhiteBorder {
+    border: .0625rem solid $white;
+  }
+  &___PrimaryColour {
+    color: $primary;
+  }
+  &___SecondaryColour {
+    color: $secondary;
+  }
+  &___WhiteColour {
+    color: $white;
+  }
+  &___Small {
+    @include smallButton;
+  }
+  &___Medium {
+    @include mediumButton;
+  }
+  &___Large {
+    @include largeButton;
+  }
+}
+
+@media (max-width: $breakpoint-md - .0625em) {
+  .tablet {
+    &___transparentBackground {
+      background-color: transparent;
+      border: .0625rem solid transparent;
+    }
+    &___PrimaryBackground {
+      background-color: $primary;
+      border: .0625rem solid $primary;
+    }
+    &___SecondaryBackground {
+      background-color: $secondary;
+      border: .0625rem solid $secondary
+    }
+    &___WhiteBackground {
+      background-color: $white;
+      border: .0625rem solid $white;
+    }
+    &___PrimaryBorder {
+      border: .0625rem solid $primary;
+    }
+    &___SecondaryBorder {
+      border: .0625rem solid $secondary;
+    }
+    &___WhiteBorder {
+      border: .0625rem solid $white;
+    }
+    &___PrimaryColour {
+      color: $primary;
+    }
+    &___SecondaryColour {
+      color: $secondary;
+    }
+    &___WhiteColour {
+      color: $white;
+    }
+    &___Small {
+      @include smallButton;
+    }
+    &___Medium {
+      @include mediumButton;
+    }
+    &___Large {
+      @include largeButton;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm - .0625em) {
+  .mobile {
+    &___transparentBackground {
+      background-color: transparent;
+      border: .0625rem solid transparent;
+    }
+    &___PrimaryBackground {
+      background-color: $primary;
+      border: .0625rem solid $primary;
+    }
+    &___SecondaryBackground {
+      background-color: $secondary;
+      border: .0625rem solid $secondary
+    }
+    &___WhiteBackground {
+      background-color: $white;
+      border: .0625rem solid $white;
+    }
+    &___PrimaryBorder {
+      border: .0625rem solid $primary;
+    }
+    &___SecondaryBorder {
+      border: .0625rem solid $secondary;
+    }
+    &___WhiteBorder {
+      border: .0625rem solid $white;
+    }
+    &___PrimaryColour {
+      color: $primary;
+    }
+    &___SecondaryColour {
+      color: $secondary;
+    }
+    &___WhiteColour {
+      color: $white;
+    }
+    &___Small {
+      @include smallButton;
+    }
+    &___Medium {
+      @include mediumButton;
+    }
+    &___Large {
+      @include largeButton;
+    }
+  }
+}

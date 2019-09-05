@@ -1,0 +1,61 @@
+.Header {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  background: $secondary;
+  &:after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/leaf-pattern.svg');
+    background-position: center;
+  }
+}
+
+.Header_heading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: $base-unit;
+  padding-right: $base-unit * 2;
+  padding-left: $base-unit * 2;
+  font-size: $display-font-size;
+  line-height: $display-line-height;
+  font-family: 'Quicksand', sans-serif;
+  color: $white;
+  text-align: center;
+  @media (max-width: $breakpoint-md - .0625em) {
+    margin-top: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: $base-unit / 2;
+    font-size: $grand-font-size;
+    line-height: $grand-line-height;
+  }
+}
+
+.Header_subheading {
+  position: relative;
+  z-index: 1;
+  padding-right: $base-unit * 2;
+  padding-left: $base-unit * 2;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-family: 'Roboto', sans-serif;
+  color: $white;
+  text-align: center;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 5;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+  }
+  @media (min-width: $breakpoint-md) {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}

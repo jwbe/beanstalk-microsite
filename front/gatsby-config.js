@@ -1,31 +1,39 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Beanstalk`,
+    description: `Beanstalk's Microsite`,
+    author: `James Barrett`,
     menuLinks: [
       {
-        name: 'home',
-        link: '/'
+        isButton: true,
+        name: 'Join waiting list',
+        link: '/waiting-list'
       },
       {
-        name: 'why-beanstalk',
-        link: '/why-beanstalk'
-      },
-      {
-        name: 'about-beanstalk',
+        name: 'About Beanstalk',
         link: '/about-beanstalk'
       },
       {
-        name: 'support',
+        name: 'Support',
         link: '/support'
-      }
+      },
+      {
+        name: 'Articles',
+        link: '/articles'
+      },
     ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        data: '@import "global.scss";',
+        includePaths: ["./src/components/scss/global"]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,16 +45,31 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages`
+        path: `${__dirname}/src/content/pages`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `articles`,
+        path: `${__dirname}/src/content/articles`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `faqs`,
-        path: `${__dirname}/src/faqs`
+        path: `${__dirname}/src/content/faqs`
       }
     },
-    `gatsby-transformer-remark`
-  ],
+    {
+      resolve: `gatsby-plugin-web-font-loader`,
+      options: {
+        google: {
+          families: ['Roboto', 'Quicksand']
+        }
+      }
+    },
+    `gatsby-plugin-mdx`
+  ]
 }

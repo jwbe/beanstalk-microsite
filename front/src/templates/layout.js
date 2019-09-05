@@ -1,41 +1,43 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { graphql } from 'gatsby';
-import rehypeReact from 'rehype-react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
-import Faqs from '../components/faqs/faqs';
-
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  components: {
-    'faqs': Faqs
-  }
-}).Compiler
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 export const query = graphql`
   query($slug: String!) {
-    page: markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    page: mdx(frontmatter: {slug: {eq: $slug}}) {
       meta: frontmatter {
         heading
         subheading
       }
-      content: htmlAst
+      content: body
     }
   }
 `;
 
-const Layout = ({ data }) => {
-  return (
-    <>
-      <Header heading={data.page.meta.heading} subheading={data.page.meta.subheading}/>
-      <main>
-        {
-          renderAst(data.page.content)
-        }
-      </main>
-      <Footer/>
-    </>
-  );
-};
+export default class Layout extends Component {
+  state = {
+    showMobileMenu: false
+  };
 
-export default Layout;
+  toggleMobileMenu = (event) => {
+    this.setState({
+      showMobileMenu: !this.state.showMobileMenu
+    });
+    event.preventDefault();
+  };
+
+  render() {
+    const { data } = this.props;
+    return (
+      <>
+        <Header heading={data.page.meta.heading} subheading={data.page.meta.subheading} handler={this.toggleMobileMenu} state={{ ...this.state }}/>
+        <main>
+          <MDXRenderer>{data.page.content}</MDXRenderer>
+        </main>
+        <Footer/>
+      </>
+    );
+  }
+};
