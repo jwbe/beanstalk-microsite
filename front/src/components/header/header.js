@@ -1,26 +1,41 @@
 import React from 'react';
 import DesktopNavigation from '../desktop-navigation/desktop-navigation';
 import MobileNavigation from '../mobile-navigation/mobile-navigation';
-//import { Link } from 'gatsby';
 import styles from './header.module.scss';
 
 const Header = ({
-  state,
-  handler,
   heading,
   subheading
 }) => {
+  const addSubheadingLineBreak = () => {
+    return(
+      {
+        __html: subheading.replace(/(\.(\s+))/g, '\$1 <br>')
+      }
+    );
+  }
   return (
     <>
       <header className={styles.Header}>
-        <DesktopNavigation/>
-        <MobileNavigation handlers={{ handler }} state={{ state }}/>
-        <h1 className={styles.Header_heading}>
-          {heading}
-        </h1>
-        <p className={styles.Header_subheading}>
-          {subheading}
-        </p>
+        <DesktopNavigation layoutVariant={{page:true}}/>
+        <MobileNavigation/>
+        {
+          heading
+          ?
+          <h1 className={styles.Header_heading}>
+            {heading}
+          </h1>
+          :
+          null
+        }
+
+        {
+          subheading
+          ?
+          <p className={styles.Header_subheading} dangerouslySetInnerHTML={addSubheadingLineBreak()}/> // Done this way for now to programmatically add br after full-stop in subheading.
+          :
+          null
+        }
       </header>
     </>
   );

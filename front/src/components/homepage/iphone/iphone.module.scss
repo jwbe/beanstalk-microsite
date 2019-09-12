@@ -1,0 +1,21 @@
+.Iphone {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 34.5625rem;
+  width: 16.6875rem;
+  background-color: $white;
+  border-radius: 2.375rem;
+  box-shadow: 0 .3125rem .625rem 0 rgba(65,117,5,0.05), 
+              0 .0625rem .1875rem 0 rgba(0,21,64,0.14), 
+              inset 0 -0.15625rem .625rem 0 rgba(173,186,204,0.25), 
+              inset 0 .125rem .21875rem .03125rem $white;
+}
+
+.Iphone_inner {
+  height: 28.8125rem;
+  width: 15.8125rem;
+  background-color: $black-light;
+  background-size: cover;
+  overflow: hidden;
+}

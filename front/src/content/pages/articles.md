@@ -1,13 +1,8 @@
 ---
 slug: articles
 heading: Knowledge base
-subheading: Blah
+subheading: Articles about finance and using Beanstalk.
 ---
 import Articles from '../../components/articles/articles'
 
-*** Hello ***
-
-This is some text.
 <Articles/>
-
-**This is some more text**

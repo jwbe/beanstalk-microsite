@@ -1,0 +1,52 @@
+.Point {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+}
+
+.Point_icon {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: $base-unit * 3;
+  padding: $base-unit * 2;
+  width: $base-unit * 9;
+  height: $base-unit * 9;
+  background-color: $primary;
+  border-radius: 50%;
+  overflow: hidden;
+  @media (min-width: $breakpoint-sm) {
+    width: $base-unit * 11;
+    height: $base-unit * 11;
+  }
+}
+
+.Point_heading {
+  margin-bottom: $base-unit * 2;
+  font-size: $headline-font-size;
+  line-height: $headline-line-height;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+  color: $primary;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 3;
+    font-size: $display-font-size;
+    line-height: $display-line-height;
+  }
+}
+
+.Point_content {
+  margin-bottom: $base-unit * 3;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  color: $accent-3;
+}
+
+.Point_link {
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-weight: 700;
+  color: $primary;
+  text-decoration: none;
+}

@@ -1,0 +1,99 @@
+.Article {
+  padding-top: $base-unit * 2;
+  border-top: $base-unit / 4 solid $secondary;
+  @media (min-width: $breakpoint-md) {
+    padding-top: $base-unit;
+  }
+}
+
+.Article_category {
+  margin-bottom: $base-unit * 2;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-weight: 700;
+  color: $secondary;
+  text-transform: uppercase;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 3;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}
+
+.Article_heading {
+  margin-bottom: $base-unit;
+  font-size: $display-font-size;
+  line-height: $display-line-height;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: $secondary;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $grand-font-size;
+    line-height: $grand-line-height;
+  }
+}
+
+.Article_subheading {
+  padding-bottom: $base-unit * 3;
+  margin-bottom: $base-unit * 3;
+  max-width: $base-unit * 80;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  color: $secondary;
+  border-bottom: $base-unit / 8 solid $secondary-lighter;
+  @media (min-width: $breakpoint-sm) {
+    padding-bottom: $base-unit * 4;
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.Article_author {
+  margin-bottom: $base-unit;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $secondary;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}
+
+.Article_author_name {
+  font-weight: 700;
+}
+
+.Article_date {
+  display: block;
+  margin-bottom: $base-unit * 3;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $secondary;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.Article_coverImage {
+  margin-bottom: $base-unit * 3;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: -$base-unit * 2;
+    margin-bottom: $base-unit * 4;
+    margin-left: -$base-unit * 2;
+  }
+}
+
+.Article_content {
+  max-width: $base-unit * 80;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  @media (min-width: $breakpoint-md) {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+  p {
+    margin-bottom: $base-unit * 3;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit * 4;
+    }
+  }
+}

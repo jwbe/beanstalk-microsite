@@ -1,0 +1,96 @@
+.Footer {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  padding-right: $base-unit * 3;
+  padding-left: $base-unit * 3;
+  background-color: $primary;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    border-radius: $base-unit * 6 $base-unit * 6 0 0;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em) {
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+  }
+}
+
+.Footer_navigation {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    flex-wrap: wrap;
+    margin-bottom: $base-unit * 3;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em) {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: $base-unit * 6;
+    margin-bottom: $base-unit * 6;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: $base-unit * 6;
+    margin-bottom: $base-unit * 5;
+  }
+}
+
+.Footer_navigation_item {
+  margin-right: $base-unit * 2;
+  margin-left: $base-unit * 2;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-top: $base-unit / 2;
+    padding-bottom: $base-unit / 2;
+  }
+}
+
+.Footer_navigation_link {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.Footer_navigation_button {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit * 4;
+    margin-bottom: $base-unit * 3;
+  }
+}
+
+.Footer_detailedLegals {
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  color: $white;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+    text-align: center;
+  }
+  @media (max-width: $breakpoint-md - .0625em) {
+    margin-bottom: $base-unit * 4;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 5;
+  }
+}
+
+.Footer_companyRegistration {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit;
+  }
+}
+
+.Footer_companyCopyright {
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+  font-weight: 700;
+  color: $white;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 6;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 6;
+  }
+}

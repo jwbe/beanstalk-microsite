@@ -1,6 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import H2 from '../custom-html-tags/h2/h2';
+import styles from './faqs.module.scss';
 
 if (typeof window !== 'undefined') {
   require('details-polyfill');
@@ -9,7 +11,7 @@ if (typeof window !== 'undefined') {
 const Faqs = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFaqs: allMdx {
+      allFaqs: allMdx(filter: {fields: {collection: {eq: "faqs"}}}) {
         group(field: frontmatter___category) {
           subheader: fieldValue
           edges {
@@ -30,18 +32,20 @@ const Faqs = () => {
       {
         data.allFaqs.group.map((faqs) => {
           return (
-            <section key={faqs.subheader}>
-              <h2>
+            <section className={styles.Faq_section} key={faqs.subheader}>
+              <H2>
                 {faqs.subheader}
-              </h2>
+              </H2>
               {
                 faqs.edges.map((faq) => {
                   return (
-                    <details key={faq.node.id}>
-                      <summary>
+                    <details className={styles.Faq_details} key={faq.node.id}>
+                      <summary className={styles.Faq_summary}>
                         {faq.node.meta.heading}
                       </summary>
-                      <MDXRenderer>{faq.node.content}</MDXRenderer>
+                      <div className={styles.Faq_content}>
+                        <MDXRenderer>{faq.node.content}</MDXRenderer>
+                      </div>
                     </details>
                   );
                 })

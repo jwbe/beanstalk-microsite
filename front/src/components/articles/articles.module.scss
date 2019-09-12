@@ -1,0 +1,98 @@
+.Articles {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: -$base-unit * 2;
+  margin-right: -$base-unit * 2;
+  margin-left: -$base-unit * 2;
+}
+
+.Articles_pod {
+  position: relative;
+  padding: $base-unit * 3;
+  margin: $base-unit 0 $base-unit $base-unit;
+  width: calc(100% - #{$base-unit * 2});
+  font-family: 'Quicksand', sans-serif;
+  color: $white;
+  background-size: cover;
+  border-radius: $base-unit * 3;
+  overflow: hidden;
+  @media (min-width: $breakpoint-sm) {
+    margin: $base-unit 0 $base-unit $base-unit;
+    width: calc(100% - #{$base-unit * 2});
+  }
+  @media (min-width: $breakpoint-md) {
+    padding: $base-unit * 4;
+    margin: $base-unit * 2 0 $base-unit * 2 $base-unit * 2;
+    width: calc(100% - #{$base-unit * 4});
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $black-lighter;
+  }
+}
+
+.Articles_pod_wrapper {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    flex-basis: 100%;
+    flex: 999 0 100%;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em) {
+    flex-basis: 50%;
+    flex: 999 0 50%;
+  }
+  @media (min-width: $breakpoint-md) {
+    flex-basis: percentage(1/3);
+    flex: 999 0 percentage(1/3);
+  }
+}
+
+.Articles_pod_content {
+  position: relative;
+  z-index: 1;
+}
+
+.Articles_pod_link {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: $base-unit * 3;
+}
+
+.Articles_pod_heading {
+  margin-bottom: $base-unit * 3;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-weight: 700;
+}
+
+.Articles_pod_author {
+  margin-bottom: $base-unit * 7;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  &_by {
+
+  }
+  &_name {
+    font-weight: 700;
+  }
+}
+
+.Articles_pod_category {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: 700;
+  text-transform: uppercase;
+}

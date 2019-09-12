@@ -1,6 +1,6 @@
 ---
-category: 'Category 3'
-heading: 'Faq 3'
+category: General Information
+heading: What is Beanstalk?
 ---
 
 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.

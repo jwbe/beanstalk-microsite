@@ -15,7 +15,8 @@ exports.onCreateNode = ({node, actions, getNode}) => {
 
 exports.createPages = async({graphql, actions}) => {
   const { createPage } = actions;
-  const layoutTemplate = path.resolve('./src/templates/layout.js');
+  const standardTemplate = path.resolve('./src/templates/layout.js');
+  const articleTemplate = path.resolve('./src/templates/article.js');
   const result = await graphql(`
     query  {
       allSources: allMdx {
@@ -46,7 +47,7 @@ exports.createPages = async({graphql, actions}) => {
   pageEdges.forEach((edge) => {
     createPage({
       path: edge.node.meta.slug,
-      component: layoutTemplate,
+      component: standardTemplate,
       context: {
         slug: edge.node.meta.slug
       }
@@ -56,7 +57,7 @@ exports.createPages = async({graphql, actions}) => {
   articleEdges.forEach((edge) => {
     createPage({
       path: `/articles/${edge.node.meta.slug}`,
-      component: layoutTemplate,
+      component: articleTemplate,
       context: {
         slug: edge.node.meta.slug
       }

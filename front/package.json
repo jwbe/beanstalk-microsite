@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "Beanstalk",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Beanstalk microsite",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "James Barrett <james.barrett@kidstart.co.uk>",
   "dependencies": {
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.4.0",
@@ -16,6 +16,7 @@
     "gatsby-plugin-mdx": "^1.0.34",
     "gatsby-plugin-offline": "^2.2.7",
     "gatsby-plugin-page-creator": "^2.1.15",
+    "gatsby-plugin-postcss-sass": "^1.0.22",
     "gatsby-plugin-react-helmet": "^3.1.4",
     "gatsby-plugin-sass": "^2.1.12",
     "gatsby-plugin-sharp": "^2.2.13",

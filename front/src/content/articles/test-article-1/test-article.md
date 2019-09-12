@@ -1,9 +1,12 @@
 ---
-slug: test-article-2
-date: 01-09-2019
-heading: Test article
+slug: test-article
+date: 2017-07-12T17:12:33.962Z
+category: Saving Tips
+coverImage: './man-using-calculator.jpg'
+coverImage_alt: 'Photo of a man using a calculator'
+heading: What is Beanstalk and how do I use it?
+subheading: Getting set-up and started with Beanstalk is far easier than you think. Here's a detailed guide.
 author: James Barrett
-category: Using Beanstalk
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Libero volutpat sed cras ornare arcu dui vivamus arcu felis. Aliquet nibh praesent tristique magna sit amet purus. Tempus imperdiet nulla malesuada pellentesque. Ac turpis egestas integer eget. Velit dignissim sodales ut eu sem integer vitae justo. Turpis massa sed elementum tempus egestas sed sed risus pretium. Non sodales neque sodales ut etiam sit amet. Et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Dis parturient montes nascetur ridiculus mus. Quis imperdiet massa tincidunt nunc pulvinar. Quam adipiscing vitae proin sagittis nisl rhoncus mattis. Aliquam vestibulum morbi blandit cursus. Faucibus pulvinar elementum integer enim. At urna condimentum mattis pellentesque. Urna id volutpat lacus laoreet non curabitur gravida arcu ac. Neque viverra justo nec ultrices dui sapien. Platea dictumst quisque sagittis purus sit amet. Aliquam eleifend mi in nulla posuere.

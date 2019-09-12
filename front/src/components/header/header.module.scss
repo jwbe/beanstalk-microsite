@@ -2,6 +2,8 @@
   position: relative;
   flex-direction: column;
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
   background: $secondary;
   &:after {
     content: '';
@@ -43,19 +45,32 @@
   z-index: 1;
   padding-right: $base-unit * 2;
   padding-left: $base-unit * 2;
+  margin-right: auto;
+  margin-left: auto;
   font-size: $subheader-font-size;
   line-height: $subheader-line-height;
   font-family: 'Roboto', sans-serif;
   color: $white;
   text-align: center;
   @media (max-width: $breakpoint-sm - .0625em) {
-    margin-bottom: $base-unit * 5;
+    margin-bottom: $base-unit * 8;
   }
   @media (min-width: $breakpoint-sm) {
-    margin-bottom: $base-unit * 4;
+    margin-bottom: $base-unit * 8;
   }
   @media (min-width: $breakpoint-md) {
     font-size: $title-font-size;
     line-height: $title-line-height;
+  }
+  br {
+    @media (max-width: $breakpoint-sm - .0625em) {
+      display: none;
+    }
+  }
+}
+
+.Header_subheading_break {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
   }
 }

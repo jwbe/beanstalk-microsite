@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import Header from '../components/header/header';
+import { Main, LAYOUT_VARIANT } from  '../components/main/main';
+import Content from '../components/content/content';
 import Footer from '../components/footer/footer';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 export const query = graphql`
   query($slug: String!) {
@@ -16,28 +17,18 @@ export const query = graphql`
   }
 `;
 
-export default class Layout extends Component {
-  state = {
-    showMobileMenu: false
-  };
-
-  toggleMobileMenu = (event) => {
-    this.setState({
-      showMobileMenu: !this.state.showMobileMenu
-    });
-    event.preventDefault();
-  };
-
-  render() {
-    const { data } = this.props;
-    return (
-      <>
-        <Header heading={data.page.meta.heading} subheading={data.page.meta.subheading} handler={this.toggleMobileMenu} state={{ ...this.state }}/>
-        <main>
-          <MDXRenderer>{data.page.content}</MDXRenderer>
-        </main>
-        <Footer/>
-      </>
-    );
-  }
+const Layout = ({ data }) => {
+  return (
+    <>
+      <Header heading={data.page.meta.heading} subheading={data.page.meta.subheading}/>
+      <Main layoutVariant={LAYOUT_VARIANT.PAGE}>
+        <Content>
+          {data.page.content}
+        </Content>
+      </Main>
+      <Footer/>
+    </>
+  );
 };
+
+export default Layout;

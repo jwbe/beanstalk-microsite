@@ -1,0 +1,59 @@
+
+.Main_wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: $breakpoint-md) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+    max-width: $base-unit * 118;
+  }
+}
+
+.Main___page {
+  padding-top: $base-unit * 3;
+  padding-right: $base-unit * 3;
+  padding-left: $base-unit * 3;
+  margin-top: -$base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    padding: $base-unit * 3;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding: $base-unit * 4;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+  }
+}
+
+.Main___article {
+  padding-top: $base-unit * 3;
+  padding-bottom: $base-unit * 3;
+  @media (max-width: $breakpoint-md - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-top: $base-unit * 8;
+  }
+}
+
+.Main {
+  position: relative;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  border-radius: $base-unit * 4 $base-unit * 4 0 0;
+  background-color: $white;
+  color: $black-light;
+  overflow: hidden;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-bottom: $base-unit * 5;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em)  {
+    padding-bottom: $base-unit * 8;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-bottom: $base-unit * 12;
+  }
+}
+
+
+

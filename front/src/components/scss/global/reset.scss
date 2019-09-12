@@ -51,8 +51,13 @@ table {
   border-spacing: 0;
 }
 
-/* JB */
+// Below added by James Barrett
+
+input {
+  border-style: none;
+  outline-style: none;
+}
+
 * {
   box-sizing: border-box;
 }
-

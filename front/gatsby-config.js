@@ -3,6 +3,11 @@ module.exports = {
     title: `Beanstalk`,
     description: `Beanstalk's Microsite`,
     author: `James Barrett`,
+    footer: {
+      companyRegistration: `© Copyright Beanstalk Ltd 2019, all rights reserved. Company registration number 7652431.`,
+      companyAuthorised: `Authorised and regulated by the Financial Conduct Authority - Authorisation no. 473606.`,
+      companyCopyright: `© 2019 Beanstalk Limited`
+    },
     menuLinks: [
       {
         isButton: true,
@@ -21,6 +26,11 @@ module.exports = {
         name: 'Articles',
         link: '/articles'
       },
+      {
+        footer: true,
+        name: 'T&Cs',
+        link: '/terms-and-conditions',
+      }
     ]
   },
   plugins: [
@@ -52,7 +62,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `articles`,
-        path: `${__dirname}/src/content/articles`
+        path: `${__dirname}/src/content/articles/`
       }
     },
     {
@@ -66,10 +76,15 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Roboto', 'Quicksand']
+          families: ['Roboto:400,700:latin', 'Quicksand:400,700:latin']
         }
       }
     },
-    `gatsby-plugin-mdx`
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    }
   ]
 }

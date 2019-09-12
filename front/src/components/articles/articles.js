@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
+import styles from './articles.module.scss';
 
 const Articles = () => {
   const data = useStaticQuery(graphql`
@@ -9,9 +10,17 @@ const Articles = () => {
           node {
             id
             meta: frontmatter {
-              category
               slug
+              coverImage {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    src
+                  }
+                }
+              }
+              category
               heading
+              author
             }
           }
         }
@@ -19,27 +28,36 @@ const Articles = () => {
     }
   `);
   return (
-    <>
+    <section className={styles.Articles}>
       {
         data.allArticles.edges.map((article) => {
+          const imageData = article.node.meta.coverImage.childImageSharp.fluid.src;
+          const podBackground = {
+            backgroundImage: `url(${imageData})`
+          }
           return (
-            <Link to={`/articles/${article.node.meta.slug}`} key={article.node.id}>
-              <article>
-                <h2>
-                  {article.node.meta.heading}
-                </h2>
-                <address>
-                  {article.node.meta.author}
-                </address>
-                <div>
-                  {article.node.meta.category}
-                </div>
-              </article>
-            </Link>
+            <>
+              <div className={styles.Articles_pod_wrapper}>
+                <article className={styles.Articles_pod} style={podBackground}>
+                  <Link className={styles.Articles_pod_link} to={`/articles/${article.node.meta.slug}`} key={article.node.id}></Link>
+                  <div className={styles.Articles_pod_content}>
+                    <h2 className={styles.Articles_pod_heading}>
+                      {article.node.meta.heading}
+                    </h2>
+                    <address className={styles.Articles_pod_author}>
+                      <span className={styles.Articles_pod_author_by}>by </span><span className={styles.Articles_pod_author_name}>{article.node.meta.author}</span>
+                    </address>
+                    <div className={styles.Articles_pod_category}>
+                      {article.node.meta.category}
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </>
           );
         })
       }
-    </>
+    </section>
   );
 };
 
