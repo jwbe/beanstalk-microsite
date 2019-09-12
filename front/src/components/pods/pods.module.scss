@@ -2,10 +2,23 @@
   justify-content: center;
   flex-wrap: wrap;
   display: flex;
-  padding-top: $base-unit * 2;
-  padding-right: $base-unit / 2;
-  padding-left: $base-unit / 2;
-  margin-top: -$base-unit * 2;
-  margin-right: -$base-unit * 2;
-  margin-left: -$base-unit * 2;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-top: $base-unit * 2;
+    padding-right: $base-unit / 2;
+    padding-left: $base-unit / 2;
+    margin-top: -$base-unit * 2;
+    margin-right: -$base-unit * 2;
+    margin-left: -$base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em) {
+    margin-top: -$base-unit;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-top: $base-unit;
+    padding-right: $base-unit;
+    padding-left: $base-unit;
+    margin-top: -$base-unit * 3;
+    margin-right: -$base-unit * 2;
+    margin-left: -$base-unit * 2;
+  }
 }

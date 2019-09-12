@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from '../components/head/head';
 import { graphql } from 'gatsby';
 import Header from '../components/header/header';
 import { Main, LAYOUT_VARIANT } from  '../components/main/main';
@@ -20,6 +21,7 @@ export const query = graphql`
 const Layout = ({ data }) => {
   return (
     <>
+      <Head title={data.page.meta.heading}/>
       <Header heading={data.page.meta.heading} subheading={data.page.meta.subheading}/>
       <Main layoutVariant={LAYOUT_VARIANT.PAGE}>
         <Content>

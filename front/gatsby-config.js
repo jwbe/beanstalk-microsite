@@ -25,11 +25,6 @@ module.exports = {
       {
         name: 'Articles',
         link: '/articles'
-      },
-      {
-        footer: true,
-        name: 'T&Cs',
-        link: '/terms-and-conditions',
       }
     ]
   },

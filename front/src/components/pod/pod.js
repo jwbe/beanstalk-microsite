@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styles from './pod.module.scss';
 
-import icon from '../../images/icons/icon_rosette.svg';
+import tempIcon from '../../images/icons/icon_rosette.svg';
 
 const Pod = ({
   icon,
@@ -15,7 +15,7 @@ const Pod = ({
       <article className={styles.Pod}>
         <Link className={styles.Pod_link} to={link}/>
         <div className={styles.Pod_icon_wrapper}>
-          <img className={styles.Pod_icon} src={icon} width='34' height='34'/>
+          <img className={styles.Pod_icon} src={tempIcon} width='34' height='34'/>
         </div>
         <h2 className={styles.Pod_title}>
           {heading}

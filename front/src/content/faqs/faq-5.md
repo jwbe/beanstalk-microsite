@@ -1,5 +1,5 @@
 ---
-category: Existentialism
+category: Big questions
 heading: What is the meaning of life?
 ---
 
