@@ -2,6 +2,7 @@
 slug: support
 heading: Help & Support
 subheading: What can we help you with?
+media: true
 ---
 import Pods from '../../components/pods/pods'
 import Pod from '../../components/pod/pod'

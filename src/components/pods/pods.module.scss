@@ -4,8 +4,8 @@
   display: flex;
   @media (max-width: $breakpoint-sm - .0625em) {
     padding-top: $base-unit * 2;
-    padding-right: $base-unit / 2;
-    padding-left: $base-unit / 2;
+    padding-right: $base-unit;
+    padding-left: $base-unit;
     margin-top: -$base-unit * 2;
     margin-right: -$base-unit * 2;
     margin-left: -$base-unit * 2;
@@ -18,7 +18,7 @@
     padding-right: $base-unit;
     padding-left: $base-unit;
     margin-top: -$base-unit * 3;
-    margin-right: -$base-unit * 2;
-    margin-left: -$base-unit * 2;
+    margin-right: -$base-unit * 3;
+    margin-left: -$base-unit * 3;
   }
 }

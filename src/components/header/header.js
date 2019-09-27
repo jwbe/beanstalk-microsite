@@ -1,12 +1,22 @@
 import React from 'react';
 import DesktopNavigation from '../desktop-navigation/desktop-navigation';
 import MobileNavigation from '../mobile-navigation/mobile-navigation';
+import classnames from 'classnames';
 import styles from './header.module.scss';
 
-const Header = ({
+export const HEADER_VARIANT = {
+  MEDIA_PAGE: 'Header___mediaPage',
+};
+
+export const Header = ({
+  headerVariant,
   heading,
   subheading
 }) => {
+  const headerClasses = classnames(
+    styles.Header,
+    styles[ headerVariant ]
+  );
   const addSubheadingLineBreak = () => {
     return(
       {
@@ -16,7 +26,7 @@ const Header = ({
   }
   return (
     <>
-      <header className={styles.Header}>
+      <header className={headerClasses}>
         <DesktopNavigation layoutVariant={{page:true}}/>
         <MobileNavigation/>
         {
@@ -40,5 +50,3 @@ const Header = ({
     </>
   );
 };
-
-export default Header;

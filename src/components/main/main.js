@@ -4,7 +4,8 @@ import styles from './main.module.scss';
 
 export const LAYOUT_VARIANT = {
   ARTICLE: 'Main___article',
-  PAGE: 'Main___page'
+  MEDIA_PAGE: 'Main___mediaPage',
+  PLAIN_PAGE: 'Main___plainPage'
 };
 
 export const Main = ({

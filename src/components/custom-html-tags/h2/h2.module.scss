@@ -4,7 +4,4 @@
   font-size: $title-font-size;
   line-height: $title-line-height;
   font-weight: 600;
-  &:first-of-type {
-    margin-top: $base-unit * 3;
-  }
 }

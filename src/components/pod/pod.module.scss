@@ -9,7 +9,6 @@
   padding-bottom: $base-unit * 3;
   padding-left: $base-unit;
   margin-bottom: .625rem;
-  width: calc(100% - .625rem);
   background-color: $white;
   border-radius: $base-unit / 4;
   text-align: center;
@@ -18,10 +17,12 @@
     padding-right: .625rem;
     padding-bottom: 1.875rem;
     padding-left: .625rem;
-    box-shadow: 0 $base-unit / 4 $base-unit / 4 0 rgba(#000000, .20);
+    width: calc(100% - .625rem);
+    box-shadow: 0 $base-unit / 4 $base-unit / 4 0 rgba($black, .20);
   }
   @media (min-width: $breakpoint-sm) {
     margin: $base-unit * 2 $base-unit * 2 $base-unit * 2 $base-unit * 2;
+    width: calc(100% - #{$base-unit * 4});
     box-shadow: $shadow-level-2;
     border-radius: $base-unit * 2;
   }

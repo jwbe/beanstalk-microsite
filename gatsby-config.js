@@ -4,7 +4,7 @@ module.exports = {
     description: `Beanstalk's Microsite`,
     author: `James Barrett`,
     footer: {
-      companyRegistration: `© Copyright Beanstalk Ltd 2019, all rights reserved. Company registration number 7652431.`,
+      companyRegistration: `© Copyright Beanstalk Ltd 2019, all rights reserved. Company registration number 7652431. `,
       companyAuthorised: `Authorised and regulated by the Financial Conduct Authority - Authorisation no. 473606.`,
       companyCopyright: `© 2019 Beanstalk Limited`
     },
