@@ -11,5 +11,5 @@ import Pod from '../../components/pod/pod'
   <Pod link={'/faqs'} heading={'Faqs'} description={'2 lines of description'}/>
   <Pod link={'/articles'} heading={'Knowledge base'} description={'2 lines of description'}/>
   <Pod link={'/legals'} heading={'Legals'} description={'2 lines of description'}/>
-  <Pod link={'/contact'} heading={'Contact us'} description={'2 lines of description'}/>
+  <Pod link={'/contact-us'} heading={'Contact us'} description={'2 lines of description'}/>
 </Pods>

@@ -28,7 +28,7 @@ export const Header = ({
     <>
       <header className={headerClasses}>
         <DesktopNavigation layoutVariant={{page:true}}/>
-        <MobileNavigation/>
+        <MobileNavigation layoutVariant={{page:true}}/>
         {
           heading
           ?

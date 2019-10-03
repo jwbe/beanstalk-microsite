@@ -3,7 +3,8 @@ slug: waiting-list
 heading: Waiting list
 subheading: Dedicated waiting list page
 ---
+import WaitingList from '../../components/waiting-list/waiting-list';
 
-## Beanstalk Contact
+## Join the waiting list
 
-Input form to allow waiting list to be easily navigated to by the user, no matter the page they are on.
+<WaitingList/>

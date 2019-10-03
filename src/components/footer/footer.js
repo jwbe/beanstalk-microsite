@@ -4,6 +4,12 @@ import { Button, DESKTOP_COLOURS, DESKTOP_SIZES, DESKTOP_BORDERS } from '../butt
 import styles from './footer.module.scss';
 import logo from '../../images/footer-logo.svg';
 
+import footerLogoWhite from '../../images/footer_logo___white.svg';
+import footerLogoSecondary from '../../images/footer_logo___secondary.svg';
+
+import WaitingList from '../homepage/waiting-list/waiting-list';
+
+/*
 const Footer = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -83,5 +89,30 @@ const Footer = () => {
     </footer>
   );
 };
+*/
+
+const Footer = () => {
+  return (
+    <footer className={styles.Homepage_footer}>
+      <div className={styles.Homepage_footer_top}>
+      </div>
+      <div className={styles.Homepage_footer_container}>
+        <div className={styles.Homepage_footer_inner}>
+          <WaitingList className={styles.Homepage_footer_waitingList}/>
+          <div className={styles.Homepage_footer_header}>
+            <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___secondary}`} src={footerLogoSecondary} width='223' height='28'/>
+            <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___white}`} src={footerLogoWhite} width='162' height='20'/>
+          </div>
+          <p className={styles.Homepage_footer_paragraph}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p className={styles.Homepage_footer_paragraph}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
 
 export default Footer;

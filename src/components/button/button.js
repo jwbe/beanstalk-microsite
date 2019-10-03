@@ -79,7 +79,7 @@ export const DESKTOP_SIZES = {
 };
 
 export const Button = ({
-  clickHandler,
+  clickHandle,
   children,
   className,
   link,
@@ -114,9 +114,9 @@ export const Button = ({
   );
   
   return (
-    clickHandler 
+    clickHandle 
     ?
-    <div className={`${className} ${buttonClasses}`} onClick={clickHandler}>
+    <div className={`${className} ${buttonClasses}`} onClick={clickHandle}>
       {children}
     </div>
     :

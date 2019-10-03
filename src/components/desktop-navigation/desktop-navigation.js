@@ -76,7 +76,7 @@ const DesktopNavigation = ({
       {
         isHomepage ?
           <nav className={`${className} ${styles.DesktopNavigation}`}>
-            <Link to="/">
+            <Link className={styles.Link} to="/">
               <img className={styles.DesktopNavigation_logo} src={logo} alt="Beanstalk logo" width="228" height="40"/>
             </Link>
             <div className={styles.DesktopNavigation_section}>

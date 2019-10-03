@@ -1,0 +1,41 @@
+.TopUp {
+  display: flex;
+  position: relative;
+  margin-bottom: $base-unit * 2;
+  padding-top: $base-unit * 2;
+  padding-right: $base-unit * 2;
+  padding-bottom: 1.25rem;
+  padding-left: $base-unit * 2;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  border-radius: $base-unit * 2;
+  box-shadow: $shadow-level-3;
+}
+
+.TopUp___middle {
+  left: $base-unit * 10;
+}
+
+.TopUp_header {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: $secondary;
+}
+
+.TopUp_recipient {
+  color: $accent-3;
+}
+
+.TopUp_date {
+  font-weight: 700;
+  color: $accent-3;
+}
+
+.TopUp_column {
+  flex-grow: 1;
+}
+
+.TopUp_icon {
+  display: block;
+  margin-left: auto
+}

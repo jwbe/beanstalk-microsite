@@ -83,6 +83,21 @@
   }
 }
 
+.Homepage_iphone_wrapper___topUps {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    margin-left: $base-unit * 20;
+  }
+}
+
+.Homepage_iphone_wrapper___thirdSection {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
 .Homepage_iphone {
   &___header {
     position: absolute;
@@ -113,6 +128,7 @@
 }
 
 .Homepage_column___copy {
+  position: relative;
   @media (max-width: $breakpoint-sm - .0625em) {
     order: 1;
   }
@@ -247,23 +263,92 @@
   }
 }
 
-.Homepage_section___secondSection {
-  position: relative;
-  overflow: hidden;
-  /*
-  &:after {
-    content: '';
-    top: 0;
+.Homepage_motherAndBabyCartoon {
+  @media (min-width: $breakpoint-sm) {
+    z-index: -1;
     right: 0;
-    bottom: 0;
-    left: 0;
+    bottom: -10.5rem;
     position: absolute;
-    width: 171.312rem;
-    height: 34.1875rem;
-    background-image: url('./images/second_section_shape.svg');
-    background-repeat: no-repeat;
+    width: 12.375rem;
+    height: 18.5rem;
+    background-image: url('./images/mother-holding-child-with-father.svg');
   }
-  */
+}
+
+.Homepage_topUps {
+  padding-right: $base-unit * 2;
+  padding-left: $base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.Homepage_section {
+  margin-bottom: $base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 8;
+  }
+}
+
+.Homepage_section___firstSection {
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 28;
+  }
+}
+
+.Homepage_section___secondSection {
+
+}
+
+.Homepage_section___thirdSection {
+  position: relative;
+  &:after {
+    z-index: -1;
+    content: '';
+    display: block;
+    height: 13rem;
+    width: 40.0625rem;
+    background-image: url('./images/graph.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      margin-top: -$base-unit * 6;
+    }
+    @media (min-width: $breakpoint-sm) {
+      right: 0;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      height: 19rem;
+      width: 90.0625rem;
+      background-position: center bottom;
+    }
+  }
+}
+
+.Homepage_column___figure___homepage {
+  position: relative;
+  @media (min-width: $breakpoint-sm) {
+    &:after {
+      z-index: -1;
+      content: '';
+      top: -6rem;
+      left: 2rem;
+      bottom: 0;
+      position: absolute;
+      padding-left: 2rem;
+      width: 171.312rem;
+      height: 34.1875rem;
+      background-image: url('./images/second_section_shape.svg');
+      background-repeat: no-repeat;
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    &:after {
+      right: -144.312rem;
+    }
+  }
 }
 
 .Homepage_footer {

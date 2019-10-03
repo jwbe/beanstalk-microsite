@@ -1,8 +1,8 @@
 @mixin smallButton {
   padding-top: $base-unit / 2 - .0625rem;
-  padding-right: $base-unit - .0625rem;
+  padding-right: $base-unit * 2 - .0625rem;
   padding-bottom: $base-unit / 2 - .0625rem;
-  padding-left: $base-unit - .0625rem;
+  padding-left: $base-unit * 2- .0625rem;
 }
 
 @mixin mediumButton {

@@ -9,6 +9,17 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  &[open] {
+    .Faq_summary {
+      list-style-image: url('../../images/icons/faq_summary_up-arrow___mobile.svg');
+      @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md -.0625em) {
+        list-style-image: url('../../images/icons/faq_summary_up-arrow___tablet.svg');
+      }
+      @media (min-width: $breakpoint-md) {
+        list-style-image: url('../../images/icons/faq_summary_up-arrow___desktop.svg');
+      }
+    }
+  }
 }
 
 .Faq_summary {
@@ -50,6 +61,7 @@
       height: 1.75rem;
     }
   }
+
   &::-webkit-details-marker {
     order: 3;
     margin-left: auto;

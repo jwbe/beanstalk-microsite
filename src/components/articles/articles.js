@@ -37,9 +37,9 @@ const Articles = () => {
           }
           return (
             <>
-              <div className={styles.Articles_pod_wrapper}>
+              <div className={styles.Articles_pod_wrapper} key={article.node.id}>
                 <article className={styles.Articles_pod} style={podBackground}>
-                  <Link className={styles.Articles_pod_link} to={`/articles/${article.node.meta.slug}`} key={article.node.id}></Link>
+                  <Link className={styles.Articles_pod_link} to={`/articles/${article.node.meta.slug}`}></Link>
                   <div className={styles.Articles_pod_content}>
                     <h2 className={styles.Articles_pod_heading}>
                       {article.node.meta.heading}

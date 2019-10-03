@@ -1,0 +1,31 @@
+.ContactForm {
+  flex-direction: column;
+  display: flex;
+  margin-top: $base-unit * 6;
+  width: 100%;
+  @media (min-width: $breakpoint-md) {
+    width: 50%;
+  }
+}
+
+.ContactForm_input {
+  padding-top: $base-unit * 3;
+  padding-right: $base-unit * 2;
+  padding-bottom: $base-unit * 3;
+  padding-left: $base-unit * 2;
+  margin-bottom: $base-unit * 2;
+  width: 100%;
+  border: .0625em solid $primary;
+  border-radius: $base-unit;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $black-light;
+  resize: none;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 3;
+  }
+}
+
+.ContactForm_button {
+  align-self: flex-end;
+}

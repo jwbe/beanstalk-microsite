@@ -12,7 +12,10 @@ import {
 import styles from './mobile-navigation.module.scss';
 import logo from '../../images/logo.svg';
 
+
+
 const MobileNavigation = ({
+  layoutVariant,
   className
 }) => {
   const data = useStaticQuery(graphql`
@@ -27,6 +30,8 @@ const MobileNavigation = ({
       }
     }
   `);
+
+  const isHomepage = layoutVariant.homepage === true;
 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
@@ -64,21 +69,35 @@ const MobileNavigation = ({
           mobileBorder={MOBILE_BORDERS.WHITE}
           mobileBackground={MOBILE_BACKGROUNDS.TRANSPARENT}
           mobileColour={MOBILE_COLOURS.WHITE}
-          clickHandler={toggleMobileMenu}
+          clickHandle={toggleMobileMenu}
         >
           Menu
         </Button>
       </div>
-      <div className={styles.MobileNavigation_logo_underlay}>
-        <Link to='/'>
-          <img
-            className={styles.MobileNavigation_logo}
-            src={logo}
-            alt='Beanstalk logo'
-            height='32'
-          />
-        </Link>
-      </div>
+      {
+        isHomepage ?
+        <div className={`${styles.MobileNavigation_logo_underlay} ${styles.MobileNavigation_logo_underlay___homepage}`}>
+          <Link to='/'>
+            <img
+              className={styles.MobileNavigation_logo}
+              src={logo}
+              alt='Beanstalk logo'
+              height='32'
+            />
+          </Link>
+        </div>
+        :
+        <div className={styles.MobileNavigation_logo_underlay}>
+          <Link to='/'>
+            <img
+              className={styles.MobileNavigation_logo}
+              src={logo}
+              alt='Beanstalk logo'
+              height='32'
+            />
+          </Link>
+        </div>
+      }
     </nav>
   );
 };

@@ -1,0 +1,27 @@
+.WaitingList_wrapper {
+  width: 100%;
+  @media (max-width: $breakpoint-md) {
+    width: 50%;
+  }
+}
+
+.WaitingList {
+  display: flex;
+  flex-direction: column;
+}
+
+.WaitingList_input {
+  height: $base-unit * 5;
+  padding-right: $base-unit * 2;
+  padding-left: $base-unit * 2;
+  border: 1px solid $primary;
+  border-radius: $base-unit / 2;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+    width: 100%;
+  }
+}
+
+.WaitingList_button {
+  align-self: flex-end;
+}

@@ -7,6 +7,7 @@ import Point from './point/point';
 import WaitingList from './waiting-list/waiting-list';
 import Iphone from './iphone/iphone';
 import Column from './column/column';
+import TopUp from './top-up/top-up';
 
 import footerLogoWhite from './images/footer_logo___white.svg';
 import footerLogoSecondary from './images/footer_logo___secondary.svg';
@@ -20,7 +21,7 @@ const Homepage = () => {
   return (
     <main className={styles.Homepage_main}>
       <header className={styles.Homepage_header}>
-        <MobileNavigation className={styles.Homepage_mobileNavigation}/>
+        <MobileNavigation className={styles.Homepage_mobileNavigation} layoutVariant={{homepage:true}}/>
         <DesktopNavigation className={styles.Homepage_desktopNavigation} layoutVariant={{homepage:true}}/>
         <div className={styles.Homepage_header_content}>
           <h1 className={styles.Homepage_heading}>
@@ -49,9 +50,9 @@ const Homepage = () => {
         </div>
       </header>
 
-      <Section>
+      <Section className={`${styles.Homepage_section} ${styles.Homepage_section___firstSection}`}>
         <Column className={styles.Homepage_column___figure}>
-          <div class={styles.Homepage_iphone_wrapper}>
+          <div className={styles.Homepage_iphone_wrapper}>
             <Iphone className={styles.Homepage_iphone___tilted___left}/>
           </div>
         </Column>
@@ -61,27 +62,35 @@ const Homepage = () => {
             heading='Invest in their future'>
             Give your child a launch into adult life with Beanstalk.
           </Point>
+          <div className={styles.Homepage_motherAndBabyCartoon}>
+
+          </div>
         </Column>
       </Section>
 
-      <Section className={styles.Homepage_section___secondSection}>
+      <Section className={styles.Homepage_section}>
         <Column className={styles.Homepage_column___copy}>
           <Point
             icon={iconCashInHand}
             heading='Saving made simple'>
             Easy Top up, Save the change and Money back on your shopping - just some of the tools to help you save.
           </Point>
+          <div className={styles.Homepage_topUps}>
+            <TopUp recipient={'£100 sent to Sarah'} date={'Date/Time'}/>
+            <TopUp middle recipient={'£100 sent to Sarah'} date={'Date/Time'}/>
+            <TopUp recipient={'£100 sent to Sarah'} date={'Date/Time'}/>
+          </div>
         </Column>
-        <Column className={styles.Homepage_column___figure}>
-          <div class={styles.Homepage_iphone_wrapper}>
+        <Column className={`${styles.Homepage_column___figure} ${styles.Homepage_column___figure___homepage}`}>
+          <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___topUps}`}>
             <Iphone className={styles.Homepage_iphone___tilted___right}/>
           </div>
         </Column>
       </Section>
 
-      <Section>
+      <Section className={`${styles.Homepage_section} ${styles.Homepage_section___thirdSection}`}>
         <Column className={styles.Homepage_column___figure}>
-          <div class={styles.Homepage_iphone_wrapper}>
+          <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___thirdSection}`}>
             <Iphone className={styles.Homepage_iphone___tilted___left}/>
           </div>
         </Column>
@@ -94,7 +103,7 @@ const Homepage = () => {
         </Column>
       </Section>
 
-      <Section>
+      <Section className={styles.Homepage_section}>
         <Column className={styles.Homepage_column___copy}>
           <Point
             icon={iconFamily}
@@ -103,7 +112,7 @@ const Homepage = () => {
           </Point>
         </Column>
         <Column className={styles.Homepage_column___figure}>
-          <div class={styles.Homepage_iphone_wrapper}>
+          <div className={styles.Homepage_iphone_wrapper}>
             <Iphone className={styles.Homepage_iphone___tilted___right}/>
           </div>
         </Column>
