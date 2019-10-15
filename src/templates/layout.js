@@ -14,6 +14,7 @@ export const query = graphql`
         heading
         subheading
         media
+        plain
       }
       content: body
     }
@@ -25,7 +26,7 @@ const Layout = ({ data }) => {
     <>
       <Wrapper>
         <Head title={data.page.meta.heading}/>
-        <Header headerVariant={data.page.meta.media ? HEADER_VARIANT.MEDIA_PAGE : null} heading={data.page.meta.heading} subheading={data.page.meta.subheading}/>
+        <Header plain={data.page.meta.plain} headerVariant={data.page.meta.media ? HEADER_VARIANT.MEDIA_PAGE : null} heading={data.page.meta.heading} subheading={data.page.meta.subheading}/>
         <Main layoutVariant={data.page.meta.media ? LAYOUT_VARIANT.MEDIA_PAGE : LAYOUT_VARIANT.PLAIN_PAGE}>
           <Content>
             {data.page.content}

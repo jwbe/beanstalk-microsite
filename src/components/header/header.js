@@ -9,6 +9,7 @@ export const HEADER_VARIANT = {
 };
 
 export const Header = ({
+  plain,
   headerVariant,
   heading,
   subheading
@@ -24,27 +25,36 @@ export const Header = ({
       }
     );
   }
+
+
   return (
     <>
       <header className={headerClasses}>
         <DesktopNavigation layoutVariant={{page:true}}/>
         <MobileNavigation layoutVariant={{page:true}}/>
         {
-          heading
-          ?
-          <h1 className={styles.Header_heading}>
-            {heading}
-          </h1>
-          :
+          plain ?
           null
-        }
+          :
+          <div>
+            {
+              heading
+              ?
+              <h1 className={styles.Header_heading}>
+                {heading}
+              </h1>
+              :
+              null
+            }
 
-        {
-          subheading
-          ?
-          <p className={styles.Header_subheading} dangerouslySetInnerHTML={addSubheadingLineBreak()}/> // Done this way for now to programmatically add br after full-stop in subheading.
-          :
-          null
+            {
+              subheading
+              ?
+              <p className={styles.Header_subheading} dangerouslySetInnerHTML={addSubheadingLineBreak()}/> // Done this way for now to programmatically add br after full-stop in subheading.
+              :
+              null
+            }
+          </div>
         }
       </header>
     </>

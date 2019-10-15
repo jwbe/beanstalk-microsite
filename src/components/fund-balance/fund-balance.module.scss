@@ -1,0 +1,218 @@
+.FundBalance {
+  background-color: #ffffff;
+}
+
+.FundBalance_Header {
+  position: relative;
+  height: 14.375rem;
+  padding-top: 0.0625rem;
+  background-color: $secondary;
+  &:after {
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 23.4375rem;
+    height: 14.375rem;
+    background-image: url('../../images/leaf-pattern.svg');
+    background-position: center;
+  }
+}
+
+.FundBalance_Header_iphoneBar {
+  margin-top: 0.3125rem;
+  margin-right: auto;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  width: 22.6875rem;
+  height: 0.875rem;
+  background-image: url('../../images/iphone-status-bar.svg');
+}
+
+.FundBalance_Header_title {
+  z-index: 1;
+  position: relative;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-family: 'Quicksand';
+  font-size: 1.375rem;
+  color: $white;
+  letter-spacing: .07375rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.FundBalance_phoneSizer {
+  width: 23.4375rem;
+}
+
+.FundBalance_split {
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  padding-top: 1.3125rem;
+  padding-bottom: 1.4375rem;
+  margin-right: 0.3125rem;
+  background: $white;
+  box-shadow: 0 .125rem .125rem 0 rgba(0,0,0,0.20);
+  border-radius: .125rem;
+  &:last-of-type {
+    margin-right: 0;
+    margin-left: 0.3125rem;
+  }
+}
+
+.FundBalance_split_container {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  margin-top: -3.0625rem;
+  margin-bottom: 1.9375rem;
+}
+
+.FundBalance_split_header {
+  font-family: Quicksand;
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #202020;
+  letter-spacing: 0.07375rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0.375rem;
+}
+
+.FundBalance_split_description {
+  font-size: 1rem;
+  color: #8E8E93;
+  letter-spacing: 0.0275rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+.FundBalance_slider {
+  align-items: center;
+  display: flex;
+
+  height: 2.25rem;
+}
+
+.FundBalance_slider_container {
+  width: calc(100% - 5rem);
+  margin: auto;
+}
+
+.FundBalance_slider_thumb {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: .0625rem solid $primary;
+  border-radius: 100%;
+  background-color: $white;
+  outline: 0;
+  cursor: default;
+}
+
+.FundBalance_slider_track {
+  height: .25rem;
+  background-color: #d5d5d5;
+  border-radius: 99rem;
+}
+
+.FundBalance_slider_steps {
+
+}
+
+.FundBalance_slider_steps {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: .6875rem;
+  padding-left: 0.0625rem;
+}
+
+.FundBalance_slider_steps_labels {
+  display: flex;
+  margin-bottom: 2rem;
+  font-family: 'Quicksand';
+  font-size: .8125rem;
+  color: #202020;
+  letter-spacing: .010625rem;
+}
+
+.FundBalance_slider_steps_label {
+  flex-grow: 1;
+  &:last-of-type {
+    text-align: right;
+  }
+}
+
+.FundBalance_slider_step {
+  height: 0.625rem;
+  width: 0.0625rem;
+  background-color: #4bbf8a;
+}
+
+.FundBalance_slider_summary {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.0275rem;
+  color: #8e8e93;
+  text-align: center;
+}
+
+.FundBalance_slider_buttons {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  cursor: default;
+}
+
+.FundBalance_slider_button_confirm {
+  align-self: flex-start;
+  padding: 0.75rem 1.9375rem 0.6875rem 1.9375rem;
+  background: #055a5b;
+  border-radius: 0.25rem;
+  font-family: 'Quicksand';
+  font-size: 0.75rem;
+  color: $white;
+  letter-spacing: 0.0575rem;
+  text-align: center;
+  margin-right: auto;
+  margin-bottom: 1.25rem;
+  margin-left: auto;
+  text-transform: uppercase;
+  box-shadow: 0 0.125rem 0.25rem 0 $black-light;
+}
+
+.FundBalance_slider_button_cancel {
+  font-family: 'Quicksand';
+  font-size: .75rem;
+  color: #202020;
+  letter-spacing: 0.0575rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.FundBalance_iPhone {
+  transform: scale(0.66675);
+}
+
+.FundBalance_iPhone_wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 17.1875rem;
+  height: 34.6875rem;
+  transform: rotate(-6deg);
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: auto;
+    margin-bottom: $base-unit * 6;
+    margin-left: auto;
+  }
+}

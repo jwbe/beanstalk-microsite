@@ -1,0 +1,46 @@
+.SimpleBars {
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.SimpleBar {
+  align-items: center;
+  display: flex;
+  margin-bottom: $base-unit;
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+  height: $base-unit * 9;
+  color: $white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+    height: $base-unit * 8;
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.SimpleBar {
+  &___secondary {
+    background-color: $secondary;
+    width: 75%;
+    @media (min-width: $breakpoint-sm) {
+
+    }
+  }
+  &___accent3 {
+    background-color: $accent-3-light;
+  }
+}

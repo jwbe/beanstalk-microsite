@@ -1,0 +1,365 @@
+$graph-unit-offset: 1.875rem;
+$graph-bar-colour: $secondary;
+
+.Title {
+  margin-top: $base-unit * 3;
+  margin-bottom: $base-unit * 4;
+  font-size: $display-font-size;
+  line-height: $display-line-height;
+  font-family: 'Quicksand', sans-serif;
+  color: $secondary;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 5;
+    margin-bottom: $base-unit * 6;
+    font-size: $grand-font-size;
+    line-height: $grand-line-height;
+  }
+}
+
+.Section {
+  margin-bottom: $base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 8;
+  }
+}
+
+.Article {
+  flex-grow: 1;
+  @media (min-width: $breakpoint-sm) {
+    flex-basis: 50%;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-sm) {
+    padding-right: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-right: $base-unit * 3;
+  }
+  &:last-of-type {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-sm) {
+      padding-left: $base-unit * 2;
+    }
+    @media (min-width: $breakpoint-md) {
+      padding-right: 0;
+      padding-left: $base-unit * 3;
+    }
+  }
+}
+
+.TextBlock {
+  margin-bottom: $base-unit * 3;
+}
+
+.TextBlock_Header {
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-weight: 700;
+  margin-bottom: $base-unit;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+  }
+}
+
+.TextBlock_Paragraph {
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  margin-bottom: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}
+
+.TextBlock_Paragraph___smaller {
+  @media (min-width: $breakpoint-sm) {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+}
+
+.graphBar_wrapper {
+  display: flex;
+  padding-top: $base-unit;
+  padding-right: .375rem;
+  padding-bottom: 1.875rem;
+  //padding-left: $base-unit * 2;
+  position: relative;
+  width: percentage(1/5);
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit;
+  }
+  &:last-of-type {
+    padding-right: 0;
+    &:after {
+      right: 0;
+    }
+  }
+  &:after {
+    content: '';
+    right: .375rem;
+    bottom: 0;
+    left: 0;
+    padding-right: $base-unit;
+    position: absolute;
+    margin: auto;
+    height: 1.875rem;
+    background-color: $graph-bar-colour;
+    @media (min-width: $breakpoint-sm) {
+      right: $base-unit;
+      padding-right: $base-unit;
+    }
+  }
+}
+
+.Diagram_graph_bars {
+  top: 0;
+  //right: 0;
+  bottom: 0;
+  //left: 0;
+  position: absolute;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  padding-right: $base-unit * 2;
+  padding-left: $base-unit * 8;
+  margin-bottom: $base-unit + .125rem;
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 6;
+    padding-left: $base-unit * 11;
+  }
+  &:after {
+    content: '';
+    right: 0;
+    bottom: -.125rem;
+    left: 0;
+    position: absolute;
+    margin: auto;
+    height: .125rem;
+    width: calc(100% - #{$base-unit * 2});
+    background-color: $secondary;
+    @media (min-width: $breakpoint-sm) {
+      width: calc(100% - #{$base-unit * 6});
+    }
+  }
+}
+
+.Diagram_graph_bar {
+  margin-top: auto;
+  width: 100%;
+  background-color: $graph-bar-colour;
+}
+
+.Diagram_graph {
+  position: relative;
+  display: flex;
+}
+
+.Diagram_graph_wrapper {
+  padding-top: $base-unit * 3;
+  padding-bottom: $base-unit * 3;
+}
+
+.Diagram_graph_bars_labels {
+  display: flex;
+  padding-right: $base-unit * 2;
+  padding-bottom: $base-unit;
+  padding-left: $base-unit * 8;
+  position: relative;
+  margin-bottom: $base-unit;
+  font-size: $base-unit;
+  line-height: .75rem;
+  font-weight: 700;
+  width: 100%;
+  color: $black;
+  //border-bottom: .0625rem solid $accent-3-lightest;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+    padding-right: $base-unit * 6;
+    padding-bottom: .875rem;
+    padding-left: $base-unit * 11;
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+  }
+  &:after {
+    content: '';
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    height: .0625rem;
+    width: calc(100% - #{$base-unit * 2});
+    margin: auto;
+    background-color: $accent-3-lightest;
+    @media (min-width: $breakpoint-sm) {
+      width: calc(100% - #{$base-unit * 6});
+    }
+  }
+}
+
+.Diagram_graph_bars_label {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  padding-right: .375rem;
+  width: percentage(1/5);
+  text-align: center;
+  &:last-of-type {
+    padding-right: 0;
+  }
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit;
+  }
+}
+
+.Diagram_graph_area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: $base-unit;
+  padding-left: $base-unit;
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+  }
+}
+
+.Diagram_graph_area_axis {
+}
+
+.Diagram_graph_area_axis_unit {
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-bottom: $base-unit * 2;
+  color: rgba($accent-3, .75);
+  font-size: .625rem;
+  line-height: .875rem;
+  font-weight: 700;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+  &:after {
+    content: '';
+    right: 0;
+    position: absolute;
+    width: calc(100% - #{$base-unit * 5});
+    height: .0625rem;
+    background-color: $accent-3-lighter;
+  }
+  &:last-of-type {
+    padding-bottom: $base-unit * 2;
+  }
+}
+
+.Diagram_graph_minimumContributions_container {
+  display: flex;
+  font-size: $base-unit;
+  line-height: .75rem;
+  font-weight: 700;
+  padding-left: $base-unit;
+  @media (min-width: $breakpoint-sm) {
+    padding-left: $base-unit * 3;
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+  }
+}
+
+.Diagram_graph_minimumContribution {
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  padding-right: $base-unit;
+  width: percentage(1/5);
+  color: $black-light;
+  &:last-of-type {
+    padding-right: 0;
+  }
+  &___kidstart {
+    color: $secondary;
+  }
+}
+
+.Diagram_graph_minimumContributions {
+  display: flex;
+  width: 100%;
+  padding-right: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 6;
+  }
+}
+
+.Diagram_graph_minimumContributions_axisLabel {
+  flex: none;
+  width: $base-unit * 7;
+  color: $black;
+  @media (min-width: $breakpoint-sm) {
+    width: $base-unit * 8;
+  }
+}
+
+.Diagram_wrapper {
+  //height: $base-unit * 24;
+  //max-width: 432px; //temp
+  box-shadow: $shadow-level-3;
+}
+
+.Diagram_tabs {
+  display: flex;
+}
+
+.Diagram_tabs_tab {
+  flex-grow: 1;
+  flex-basis: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  height: $base-unit * 7;
+  padding-right: $base-unit * 2;
+  padding-left: $base-unit * 2;
+  color: $black-light;
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  font-weight: 700;
+  background-color: $accent-3-lightest;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+  &:nth-child(1) {
+    border-radius: .125rem 0 0 0;
+    box-shadow: inset -1.25rem 0 1.25rem -1.25rem rgba($black, .1);
+  }
+  &:nth-child(2) {
+    border-radius: 0 .125rem 0 0;
+    box-shadow: inset 1.25rem 0 1.25rem -1.25rem rgba($black, .1);
+  }
+}
+
+.Diagram_tabs_tab___active {
+  color: $black;
+  background-color: $white;
+  box-shadow: none!important;
+  &:before {
+    content: '';
+    top: 0;
+    position: absolute;
+    height: .125rem;
+    width: 100%;
+    background-color: $secondary;
+  }
+}
