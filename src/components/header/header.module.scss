@@ -21,6 +21,14 @@
   }
 }
 
+.Header_container {
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: $breakpoint-md) {
+    width: $base-unit * 120;
+  }
+}
+
 .Header_heading {
   position: relative;
   z-index: 1;

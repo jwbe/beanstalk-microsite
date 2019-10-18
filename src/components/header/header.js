@@ -36,7 +36,7 @@ export const Header = ({
           plain ?
           null
           :
-          <div>
+          <div className={styles.Header_container}>
             {
               heading
               ?

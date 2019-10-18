@@ -2,6 +2,43 @@
 
 }
 
+.Homepage_iphone_screenshot {
+  width: 23.4375rem;
+  height: 41.6875rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Homepage_iphone_screenshot___header {
+  background-image: url('./images/one-child-setup-no-beanstalk-account.png');
+}
+
+.Homepage_iphone_screenshot___familySaving {
+  background-image: url('./images/child-profile.png');
+}
+
+.Homepage_designedForGrowthGraph_wrapper {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 4;
+  }
+}
+
+.Homepage_point_list {
+  margin-bottom: $base-unit * 2;
+}
+
+.Homepage_point_list_item {
+  margin-bottom: $base-unit;
+}
+
+.Homepage_point_strong {
+  font-weight: 700;
+}
+
 .Homepage_main {
   overflow-x: hidden;
 }
@@ -74,12 +111,21 @@
 }
 
 .Homepage_iphone_wrapper {
-  @media (max-width: $breakpoint-sm - .0625em) {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 18.375rem;
-    overflow: hidden;
+  &___tilted {
+    &___right {
+      transform: rotate(-12deg);
+      margin-left: auto;
+      @media (max-width: $breakpoint-sm - .0625em) {
+        margin-right: auto;
+      }
+    }
+    &___left {
+      transform: rotate(12deg);
+      @media (max-width: $breakpoint-sm - .0625em) {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
   }
 }
 
@@ -104,25 +150,6 @@
     @media (min-width: $breakpoint-sm) {
       bottom: -14.375rem;
       left: $base-unit * 10;
-    }
-  }
-  &___tilted {
-    &___right {
-      @media (max-width: $breakpoint-sm - .0625em) {
-        transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
-      }
-      @media (min-width: $breakpoint-sm) {
-        transform: rotate(-12deg);
-        margin-left: auto;
-      }
-    }
-    &___left {
-      @media (max-width: $breakpoint-sm - .0625em) {
-        transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
-      }
-      @media (min-width: $breakpoint-sm) {
-        transform: rotate(12deg);
-      }
     }
   }
 }
@@ -304,7 +331,7 @@
   position: relative;
   &:after {
     z-index: -1;
-    content: '';
+    //content: '';
     display: block;
     height: 13rem;
     width: 40.0625rem;

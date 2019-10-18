@@ -6,9 +6,11 @@ const Iphone = ({
   className
 }) => {
   return (
-    <div className={`${className} ${styles.Iphone}`}>
-      <div className={styles.Iphone_inner}>
-        {children}
+    <div className={`${className} ${styles.Iphone_wrapper}`}>
+      <div className={styles.Iphone}>
+        <div className={styles.Iphone_inner}>
+          {children}
+        </div>
       </div>
     </div>
   );

@@ -5,9 +5,11 @@ import MobileNavigation from '../mobile-navigation/mobile-navigation';
 import Section from './section/section';
 import Point from './point/point';
 import WaitingList from './waiting-list/waiting-list';
-import Iphone from './iphone/iphone';
+import Iphone from '../iphone/iphone';
 import Column from './column/column';
 import TopUp from './top-up/top-up';
+import DesignedForGrowthGraph from '../designed-for-growth-graph/designed-for-growth-graph';
+import FundBalance from '../fund-balance/fund-balance';
 
 import footerLogoWhite from './images/footer_logo___white.svg';
 import footerLogoSecondary from './images/footer_logo___secondary.svg';
@@ -41,7 +43,10 @@ const Homepage = () => {
               </div>
             </div>
             <div className={`${styles.Homepage_header_background_section} ${styles.Homepage_header_background_section___right}`}>
-              <Iphone className={styles.Homepage_iphone___header}/>
+              <Iphone className={styles.Homepage_iphone___header}>
+                <div className={`${styles.Homepage_iphone_screenshot} ${styles.Homepage_iphone_screenshot___header}`}>
+                </div>
+              </Iphone>
             </div>
           </div>
         </div>
@@ -52,15 +57,25 @@ const Homepage = () => {
 
       <Section className={`${styles.Homepage_section} ${styles.Homepage_section___firstSection}`}>
         <Column className={styles.Homepage_column___figure}>
-          <div className={styles.Homepage_iphone_wrapper}>
-            <Iphone className={styles.Homepage_iphone___tilted___left}/>
+          <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___tilted___left}`}>
+            <FundBalance/>
           </div>
         </Column>
         <Column className={styles.Homepage_column___copy}>
           <Point
             icon={iconPiggybank}
             heading='Invest in their future'>
-            Give your child a launch into adult life with Beanstalk.
+            <>
+              <p>
+                Five amazing tools to help you effortlessly build pots of money for your children and yourself in one simple app.
+              </p>
+              <p>
+                You don't need a penny to get started - KidStart, friends and family can all contribute
+              </p>
+              <p>
+                Save little and often with rounds-up and top up when the going is good
+              </p>
+            </>
           </Point>
           <div className={styles.Homepage_motherAndBabyCartoon}>
 
@@ -73,7 +88,31 @@ const Homepage = () => {
           <Point
             icon={iconCashInHand}
             heading='Saving made simple'>
-            Easy Top up, Save the change and Money back on your shopping - just some of the tools to help you save.
+            <>
+              <p>
+                Beanstalk makes it really easy to save for your children and you don't have to do it alone!
+              </p>
+              <ul className={styles.Homepage_point_list}>
+                <li className={styles.Homepage_point_list_item}>
+                  <strong className={styles.Homepage_point_strong}>Invite</strong> family and friends to help you save 
+                </li>
+                <li className={styles.Homepage_point_list_item}>
+                  <strong className={styles.Homepage_point_strong}>FREE child top-ups</strong> from KidStart 
+                </li>
+                <li className={styles.Homepage_point_list_item}>
+                  <strong className={styles.Homepage_point_strong}>Round-up</strong> transactions and invest the change 
+                </li>
+                <li className={styles.Homepage_point_list_item}>
+                  <strong className={styles.Homepage_point_strong}>Easy top-ups</strong> including gift messages
+                </li>
+                <li className={styles.Homepage_point_list_item}>
+                  <strong className={styles.Homepage_point_strong}>Regular Saver</strong> to help the pot grow 
+                </li>
+              </ul>
+              <p>
+                Plus see all your accounts and activity in one view
+              </p>
+            </>
           </Point>
           <div className={styles.Homepage_topUps}>
             <TopUp recipient={'£100 sent to Sarah'} date={'Date/Time'}/>
@@ -82,23 +121,30 @@ const Homepage = () => {
           </div>
         </Column>
         <Column className={`${styles.Homepage_column___figure} ${styles.Homepage_column___figure___homepage}`}>
-          <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___topUps}`}>
-            <Iphone className={styles.Homepage_iphone___tilted___right}/>
+          <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___tilted___right} ${styles.Homepage_iphone_wrapper___topUps}`}>
+            <Iphone/>
           </div>
         </Column>
       </Section>
 
       <Section className={`${styles.Homepage_section} ${styles.Homepage_section___thirdSection}`}>
         <Column className={styles.Homepage_column___figure}>
-          <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___thirdSection}`}>
-            <Iphone className={styles.Homepage_iphone___tilted___left}/>
+          <div className={styles.Homepage_designedForGrowthGraph_wrapper}>
+            <DesignedForGrowthGraph/>
           </div>
         </Column>
         <Column className={styles.Homepage_column___copy}>
           <Point
             icon={iconRosette}
             heading='Designed for growth'>
-            Maximise the growth potential of your kids savings with our JISA. Simple fund choices, low fees and no minimums make it a no brainer!
+            <>
+              <p>
+                Grow your child's savings by investing in our KidSave Junior ISA with a simple choice of two funds, which you can adjust
+              </p>
+              <p>
+                We have no charges and one of the lowest fees on the market which means you can save more for your child.
+              </p>
+            </>
           </Point>
         </Column>
       </Section>
@@ -108,12 +154,25 @@ const Homepage = () => {
           <Point
             icon={iconFamily}
             heading='Family saving'>
-            Invite family and friends to use Beanstalk to support your children and together we can help make a brighter future.
+            <>
+              <p>
+                Get all the family involved! Grandparents, friends and the wider family can save for your family too.
+              </p>
+              <p>
+                Simple and secure set-up with no complicated forms or visits in branch.
+              </p>
+              <p>
+                Messages can be sent with money gifts and replies of thanks given straight away. Making each gift for their future one with a happy memory attached.
+              </p>
+            </>
           </Point>
         </Column>
         <Column className={styles.Homepage_column___figure}>
-          <div className={styles.Homepage_iphone_wrapper}>
-            <Iphone className={styles.Homepage_iphone___tilted___right}/>
+          <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___tilted___right}`}>
+            <Iphone>
+              <div className={`${styles.Homepage_iphone_screenshot} ${styles.Homepage_iphone_screenshot___familySaving}`}>
+              </div>
+            </Iphone>
           </div>
         </Column>
       </Section>

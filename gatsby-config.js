@@ -10,11 +10,6 @@ module.exports = {
     },
     menuLinks: [
       {
-        isButton: true,
-        name: 'Join waiting list',
-        link: '/waiting-list'
-      },
-      {
         name: 'About Beanstalk',
         link: '/about-beanstalk'
       },
@@ -25,13 +20,38 @@ module.exports = {
       {
         name: 'Articles',
         link: '/articles'
+      },
+      {
+        isButton: true,
+        name: 'Join waiting list',
+        link: '/waiting-list'
       }
     ]
   },
   plugins: [
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Beanstalk microsite`,
+        short_name: `BS microsite`,
+        start_url: `/`,
+        background_color: `#32b67a`,
+        theme_color: `#055a5b`,
+        display: `minimal_ui`,
+        icon: `src/images/beanstalk-icon.png`
+      }
+    },
+    {
+      resolve: `gatsby-remark-external-links`,
+      options: {
+        target: `_blank`,
+        rel: `nofollow`
+      }
+    },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -71,7 +91,7 @@ module.exports = {
       resolve: `gatsby-plugin-web-font-loader`,
       options: {
         google: {
-          families: ['Roboto:400,700:latin', 'Quicksand:400,700:latin']
+          families: ['Roboto:100,200,300,400,700:latin', 'Quicksand:400,700:latin']
         }
       }
     },

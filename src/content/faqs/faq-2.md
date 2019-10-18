@@ -1,6 +1,6 @@
 ---
-category: Safety and Security
-heading: How do I use Beanstalk?
+category: Getting started
+heading: Can I start saving for my kids now?
 ---
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+Yes! Sign up to [KidStart](https://www.kidstart.co.uk) and open a KidSave account, any contributions made will be visible in your Beanstalk app once it is available to download.

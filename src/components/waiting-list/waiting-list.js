@@ -4,7 +4,9 @@ import { Button, DESKTOP_COLOURS, DESKTOP_SIZES, DESKTOP_BACKGROUNDS, DESKTOP_BO
 
 const waitingList = () => (
   <div className={styles.WaitingList_wrapper}>
-    <form className={styles.WaitingList} method="post" action="https://formspree.io/email@domain.tld">
+    <form name='Waiting list' method='POST' data-netlify='true' data-netlify-honeypot='bot-field' action='/thank-you-for-joining-our-waiting-list' className={styles.WaitingList}>
+      <input type='hidden' name='bot-field'/>
+      <input type='hidden' name='form-name' value='Waiting list'/>
       <label>
         <input className={styles.WaitingList_input} type="email" name="_replyto" placeholder="Enter your email"/>
       </label>

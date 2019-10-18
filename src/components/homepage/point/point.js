@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styles from './point.module.scss';
 
 const Point = ({
@@ -18,12 +17,9 @@ const Point = ({
       <h2 className={styles.Point_heading}>
         {heading}
       </h2>
-      <p className={styles.Point_content}>
+      <div className={styles.Point_content}>
         {children}
-      </p>
-      <Link className={styles.Point_link} to={linkTarget}>
-        {linkText}
-      </Link>
+      </div>
     </article>
   );
 };

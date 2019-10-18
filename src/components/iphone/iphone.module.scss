@@ -1,4 +1,13 @@
+.Iphone_wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 17.1875rem;
+  height: 34.6875rem;
+}
+
 .Iphone {
+  transform: scale(0.66675);
   flex: none;
   justify-content: center;
   align-items: center;

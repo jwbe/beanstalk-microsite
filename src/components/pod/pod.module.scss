@@ -45,6 +45,9 @@
   @media (max-width: $breakpoint-sm - .0625em) {
     height: 3.75rem;
   }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit;
+  }
 }
 
 .Pod_link {
@@ -68,6 +71,7 @@
     color: $black;
   }
   @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit;
     color: $black-light;
   }
 }
