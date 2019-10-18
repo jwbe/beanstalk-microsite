@@ -79,6 +79,7 @@ export const DESKTOP_SIZES = {
 };
 
 export const Button = ({
+  submit,
   clickHandle,
   children,
   className,
@@ -119,6 +120,12 @@ export const Button = ({
     <div className={`${className} ${buttonClasses}`} onClick={clickHandle}>
       {children}
     </div>
+    :
+    submit
+    ?
+    <button className={`${className} ${buttonClasses}`}>
+      {children}
+    </button>
     :
     <Link className={`${className} ${buttonClasses}`} to={link}>
       {children}

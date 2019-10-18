@@ -10,7 +10,7 @@ const waitingList = () => (
       <label>
         <input className={styles.WaitingList_input} type="email" name="_replyto" placeholder="Enter your email"/>
       </label>
-      <Button type="submit" className={styles.WaitingList_button} 
+      <Button type='submit' className={styles.WaitingList_button} 
         desktopColour={DESKTOP_COLOURS.WHITE}
         desktopBackground={DESKTOP_BACKGROUNDS.PRIMARY}
         desktopSize={DESKTOP_SIZES.LARGE}

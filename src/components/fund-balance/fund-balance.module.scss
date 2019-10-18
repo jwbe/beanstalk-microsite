@@ -200,7 +200,10 @@
 }
 
 .FundBalance_iPhone {
-  
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 /*
