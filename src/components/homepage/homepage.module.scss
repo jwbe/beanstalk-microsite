@@ -22,8 +22,16 @@
     padding-right: $base-unit * 2;
     padding-left: $base-unit * 2;
   }
-  @media (min-width: $breakpoint-sm) {
+  @media (min-width: $breakpoint-sm - .0625em) and (max-width: $breakpoint-md - .0625em) {
+    padding-right: $base-unit * 5;
+  }
+  @media (min-width: $breakpoint-md) {
     padding-right: $base-unit * 6;
+  }
+  @media (min-width: 66.25rem) {
+    margin-left: - 4.848vw;
+  }
+  @media (min-width: 81.25rem) {
     margin-left: -$base-unit * 6;
   }
 }
@@ -401,6 +409,12 @@
   @media (min-width: $breakpoint-md) {
     margin-bottom: $base-unit * 6;
   }
+  a {
+    text-decoration: none;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      color: $primary;
+    }
+  }
 }
 
 .Homepage_footer_header {
@@ -455,6 +469,8 @@
   line-height: $small-line-height;
   color: $white;
   @media (min-width: $breakpoint-sm) {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
     color: $accent-3;
   }
 }

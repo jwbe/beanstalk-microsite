@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styles from './homepage.module.scss';
 import DesktopNavigation from '../desktop-navigation/desktop-navigation';
 import MobileNavigation from '../mobile-navigation/mobile-navigation';
@@ -65,17 +66,9 @@ const Homepage = () => {
           <Point
             icon={iconPiggybank}
             heading='Invest in their future'>
-            <>
-              <p>
-                Five amazing tools to help you effortlessly build pots of money for your children and yourself in one simple app.
-              </p>
-              <p>
-                You don't need a penny to get started - KidStart, friends and family can all contribute
-              </p>
-              <p>
-                Save little and often with rounds-up and top up when the going is good
-              </p>
-            </>
+            <p>
+              Five amazing tools to help you effortlessly build pots of money for your children and yourself in one simple app.
+            </p>
           </Point>
           <div className={styles.Homepage_motherAndBabyCartoon}>
 
@@ -88,31 +81,9 @@ const Homepage = () => {
           <Point
             icon={iconCashInHand}
             heading='Saving made simple'>
-            <>
-              <p>
-                Beanstalk makes it really easy to save for your children and you don't have to do it alone!
-              </p>
-              <ul className={styles.Homepage_point_list}>
-                <li className={styles.Homepage_point_list_item}>
-                  <strong className={styles.Homepage_point_strong}>Invite</strong> family and friends to help you save 
-                </li>
-                <li className={styles.Homepage_point_list_item}>
-                  <strong className={styles.Homepage_point_strong}>FREE child top-ups</strong> from KidStart 
-                </li>
-                <li className={styles.Homepage_point_list_item}>
-                  <strong className={styles.Homepage_point_strong}>Round-up</strong> transactions and invest the change 
-                </li>
-                <li className={styles.Homepage_point_list_item}>
-                  <strong className={styles.Homepage_point_strong}>Easy top-ups</strong> including gift messages
-                </li>
-                <li className={styles.Homepage_point_list_item}>
-                  <strong className={styles.Homepage_point_strong}>Regular Saver</strong> to help the pot grow 
-                </li>
-              </ul>
-              <p>
-                Plus see all your accounts and activity in one view
-              </p>
-            </>
+            <p>
+              Beanstalk makes it really easy to save for your children and you don't have to do it alone!
+            </p>
           </Point>
           <div className={styles.Homepage_topUps}>
             <TopUp recipient={'£100 sent to Sarah'} date={'Date/Time'}/>
@@ -129,9 +100,16 @@ const Homepage = () => {
 
       <Section className={`${styles.Homepage_section} ${styles.Homepage_section___thirdSection}`}>
         <Column className={styles.Homepage_column___figure}>
-          <div className={styles.Homepage_designedForGrowthGraph_wrapper}>
-            <DesignedForGrowthGraph/>
+          <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___tilted___left}`}>
+            <FundBalance/>
           </div>
+          {
+            /*
+            <div className={styles.Homepage_designedForGrowthGraph_wrapper}>
+              <DesignedForGrowthGraph/>
+            </div>
+            */
+          }
         </Column>
         <Column className={styles.Homepage_column___copy}>
           <Point
@@ -139,10 +117,10 @@ const Homepage = () => {
             heading='Designed for growth'>
             <>
               <p>
-                Grow your child's savings by investing in our KidSave Junior ISA with a simple choice of two funds, which you can adjust
+                Invest into a simple choice of two funds with our KidSave Junior ISA.
               </p>
               <p>
-                We have no charges and one of the lowest fees on the market which means you can save more for your child.
+                We have no charges and one of the lowest fees on the market.
               </p>
             </>
           </Point>
@@ -156,13 +134,10 @@ const Homepage = () => {
             heading='Family saving'>
             <>
               <p>
-                Get all the family involved! Grandparents, friends and the wider family can save for your family too.
+                Grandparents, friends and the wider family can save for your family too.
               </p>
               <p>
-                Simple and secure set-up with no complicated forms or visits in branch.
-              </p>
-              <p>
-                Messages can be sent with money gifts and replies of thanks given straight away. Making each gift for their future one with a happy memory attached.
+                It's a simple and secure set-up with no complicated forms or visits in branch.
               </p>
             </>
           </Point>
@@ -188,10 +163,7 @@ const Homepage = () => {
               <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___white}`} src={footerLogoWhite} width='162' height='20'/>
             </div>
             <p className={styles.Homepage_footer_paragraph}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p className={styles.Homepage_footer_paragraph}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Beanstalk is a trading name of KidStart Limited. KidStart Limited is authorised and regulated by the Financial Conduct Authority. Our FCA number is 473606. See <a href='http://www.fca.org.uk'>http://www.fca.org.uk</a> for more information. View our <Link to='/data-privacy-and-cookies'>privacy policy</Link> and <Link to='/terms-and-conditions-for-site-and-app'>terms and conditions</Link>.
             </p>
           </div>
         </div>

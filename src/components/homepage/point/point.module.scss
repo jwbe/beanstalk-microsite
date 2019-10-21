@@ -50,6 +50,11 @@
   font-size: $subheader-font-size;
   line-height: $subheader-line-height;
   color: $accent-3;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $headline-font-size;
+    line-height: $display-line-height;
+    font-weight: 300;
+  }
 }
 
 .Point_link {

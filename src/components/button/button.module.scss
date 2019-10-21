@@ -15,10 +15,10 @@
 }
 
 @mixin largeButton {
-  padding-top: $base-unit - .0625rem;
-  padding-right: $base-unit * 2 - .0625rem ;
-  padding-bottom: $base-unit - .0625rem;
-  padding-left: $base-unit * 2 - .0625rem;
+  padding-top: $base-unit * 1.5 - .0625rem;
+  padding-right: $base-unit * 3 - .0625rem ;
+  padding-bottom: $base-unit * 1.5 - .0625rem;
+  padding-left: $base-unit * 3 - .0625rem;
 }
 
 .Button {
