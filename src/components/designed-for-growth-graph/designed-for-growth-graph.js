@@ -47,11 +47,11 @@ const DesignedForGrowthGraph = () => {
               </div>
             </div>
             <div className={styles.Diagram_graph_bars}>
-              {graphBar(100)}
-              {graphBar(50)}
-              {graphBar(75)}
-              {graphBar(25)}
               {graphBar(0)}
+              {graphBar(75)}
+              {graphBar(100)}
+              {graphBar(75)}
+              {graphBar(75)}
             </div>
           </div>
           <div className={styles.Diagram_graph_bars_labels}>

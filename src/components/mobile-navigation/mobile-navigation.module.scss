@@ -84,7 +84,6 @@
 }
 
 .MobileNavigation_logo_underlay___homepage {
-  //padding-bottom: $base-unit * 3;
   @media (min-width: $breakpoint-sm) {
     padding-top: $base-unit * 4;
   }
@@ -101,7 +100,7 @@
 }
 
 .MobileNavigation_waitingListButton {
-  @media (max-width: $breakpoint-sm - .0625em) {
+  @media (max-width: $breakpoint-md - .0625em) {
     display: none;
   }
 }

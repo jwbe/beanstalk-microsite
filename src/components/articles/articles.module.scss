@@ -40,6 +40,7 @@
 }
 
 .Articles_pod_wrapper {
+  display: flex;
   @media (max-width: $breakpoint-sm - .0625em) {
     flex-basis: 100%;
     flex: 999 0 100%;

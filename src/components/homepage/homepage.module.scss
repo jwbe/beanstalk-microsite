@@ -23,7 +23,8 @@
     padding-left: $base-unit * 2;
   }
   @media (min-width: $breakpoint-sm) {
-    padding-right: $base-unit * 4;
+    padding-right: $base-unit * 6;
+    margin-left: -$base-unit * 6;
   }
 }
 

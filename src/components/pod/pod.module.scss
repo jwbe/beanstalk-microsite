@@ -46,7 +46,14 @@
     height: 3.75rem;
   }
   @media (min-width: $breakpoint-sm) {
-    margin-bottom: $base-unit;
+    margin-bottom: $base-unit * 2;
+  }
+}
+
+.Pod_icon {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    width: 2.125rem;
+    height: 2.125rem;
   }
 }
 
@@ -71,7 +78,7 @@
     color: $black;
   }
   @media (min-width: $breakpoint-sm) {
-    margin-bottom: $base-unit;
+    margin-bottom: $base-unit / 2;
     color: $black-light;
   }
 }
