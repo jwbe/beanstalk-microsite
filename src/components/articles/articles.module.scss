@@ -15,6 +15,7 @@
   font-family: 'Quicksand', sans-serif;
   color: $white;
   background-size: cover;
+  background-position: center;
   border-radius: $base-unit * 3;
   overflow: hidden;
   @media (min-width: $breakpoint-sm) {

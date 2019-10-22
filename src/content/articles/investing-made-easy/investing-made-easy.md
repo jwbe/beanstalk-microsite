@@ -2,8 +2,8 @@
 slug: investing-made-easy
 date: 2019-10-20T17:12:33.962Z
 category: Saving Tips
-coverImage: './man-using-calculator.jpg'
-coverImage_alt: 'Photo of a man using a calculator'
+coverImage: './investing-made-easy.jpg'
+coverImage_alt: 'Photo of a group of children celebrating something in a park'
 heading: Investing made easy
 subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore.
 author: Lydia Boulstridge

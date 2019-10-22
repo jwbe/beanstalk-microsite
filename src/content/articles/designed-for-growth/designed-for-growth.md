@@ -2,8 +2,8 @@
 slug: beanstalk-is-designed-for-growth
 date: 2019-10-20T17:12:33.962Z
 category: Saving Tips
-coverImage: './man-using-calculator.jpg'
-coverImage_alt: 'Photo of a man using a calculator'
+coverImage: './designed-for-growth.jpg'
+coverImage_alt: 'Photo of a group of children looking pleased with their vegetables'
 heading: Designed for growth
 subheading: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt labore.
 author: Lydia Boulstridge

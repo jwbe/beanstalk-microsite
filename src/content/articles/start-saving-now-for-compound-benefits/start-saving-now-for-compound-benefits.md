@@ -2,8 +2,8 @@
 slug: start-saving-now-for-compound-benefits
 date: 2019-10-20T17:12:33.962Z
 category: Saving Tips
-coverImage: './man-using-calculator.jpg'
-coverImage_alt: 'Photo of a man using a calculator'
+coverImage: './start-saving-now-for-compound-benefits.jpg'
+coverImage_alt: 'Photo of parents teaching their daughter to use a piggybank.'
 heading: Start saving now for compound benefits
 subheading: Whatever it it that your child may need, you can do something positive now to help set them up for the future.
 author: Lydia Boulstridge
