@@ -1,0 +1,61 @@
+.TestimonialPods {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -$base-unit * 3 / 2;
+  margin-left: -$base-unit * 3 / 2;
+}
+
+.TestimonialPod {
+  flex-grow: 1;
+  display: flex;
+  padding-top: $base-unit * 3;
+  padding-bottom: $base-unit * 3;
+  padding-right: $base-unit * 3;
+  padding-left: $base-unit;
+  box-shadow: $shadow-level-3;
+  background-color: $white;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  border-radius: $base-unit * 2;
+}
+
+.TestimonialPod_wrapper {
+  flex-grow: 1;
+  display: flex;
+  padding-right: $base-unit * 3 / 2;
+  padding-left: $base-unit * 3 / 2;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm) {
+    width: percentage(1/3);
+  }
+}
+
+.TestimonialPod_speechMark {
+  flex: none;
+  width: $base-unit * 6;
+  height: $base-unit * 6;
+  margin-right: .75rem;
+  background-image: url('./images/icon_speechmark--left.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TestimonialPod_content {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+}
+
+.TestimonialPod_testimonial {
+  flex-grow: 1;
+  margin-bottom: $base-unit * 2;
+  color: $black-light;
+}
+
+.TestimonialPod_author {
+  align-self: flex-end;
+  color: $black;
+  font-weight: 700;
+}

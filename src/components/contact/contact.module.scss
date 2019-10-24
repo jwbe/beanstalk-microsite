@@ -2,9 +2,11 @@
   flex-direction: column;
   display: flex;
   margin-top: $base-unit * 6;
+  margin-right: auto;
+  margin-left: auto;
   width: 100%;
   @media (min-width: $breakpoint-md) {
-    width: 50%;
+    width: 75%;
   }
 }
 
