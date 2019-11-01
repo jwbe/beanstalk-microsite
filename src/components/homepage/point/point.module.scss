@@ -51,8 +51,8 @@
   line-height: $subheader-line-height;
   color: $accent-3;
   @media (min-width: $breakpoint-sm) {
-    font-size: $headline-font-size;
-    line-height: $display-line-height;
+    font-size: $title-font-size;
+    line-height: $headline-line-height;
     font-weight: 300;
   }
 }

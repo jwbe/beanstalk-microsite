@@ -59,7 +59,15 @@ const Homepage = () => {
       <Section className={`${styles.Homepage_section} ${styles.Homepage_section___firstSection}`}>
         <Column className={styles.Homepage_column___figure}>
           <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___tilted___left}`}>
-            <FundBalance/>
+            {
+              /*
+              <FundBalance/>
+              */
+            }
+            <Iphone>
+              <div className={`${styles.Homepage_iphone_screenshot} ${styles.Homepage_iphone_screenshot___changeChildAllocation}`}>
+              </div>
+            </Iphone>
           </div>
         </Column>
         <Column className={styles.Homepage_column___copy}>
@@ -93,7 +101,10 @@ const Homepage = () => {
         </Column>
         <Column className={`${styles.Homepage_column___figure} ${styles.Homepage_column___figure___homepage}`}>
           <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___tilted___right} ${styles.Homepage_iphone_wrapper___topUps}`}>
-            <Iphone/>
+          <Iphone>
+            <div className={`${styles.Homepage_iphone_screenshot} ${styles.Homepage_iphone_screenshot___roundUps}`}>
+            </div>
+          </Iphone>
           </div>
         </Column>
       </Section>
@@ -101,7 +112,15 @@ const Homepage = () => {
       <Section className={`${styles.Homepage_section} ${styles.Homepage_section___thirdSection}`}>
         <Column className={styles.Homepage_column___figure}>
           <div className={`${styles.Homepage_iphone_wrapper} ${styles.Homepage_iphone_wrapper___tilted___left}`}>
-            <FundBalance/>
+            {
+              /*
+              <FundBalance/>
+              */
+            }
+            <Iphone>
+              <div className={`${styles.Homepage_iphone_screenshot} ${styles.Homepage_iphone_screenshot___designedForGrowth}`}>
+              </div>
+            </Iphone>
           </div>
           {
             /*

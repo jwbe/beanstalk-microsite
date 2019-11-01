@@ -1,7 +1,3 @@
-.Homepage {
-
-}
-
 .Homepage_iphone_screenshot {
   width: 23.4375rem;
   height: 41.6875rem;
@@ -10,11 +6,70 @@
 }
 
 .Homepage_iphone_screenshot___header {
-  background-image: url('./images/one-child-setup-no-beanstalk-account.png');
+  background-image: url('./images/homepage-kidstart-import-accounts-setup.png');
 }
 
 .Homepage_iphone_screenshot___familySaving {
   background-image: url('./images/child-profile.png');
+}
+
+.Homepage_iphone_screenshot___changeChildAllocation {
+  background-image: url('./images/change-child-allocation.png');
+}
+
+.Homepage_iphone_screenshot___roundUps {
+  background-image: url('./images/round-ups.png');
+}
+
+.Homepage_iphone_screenshot___designedForGrowth {
+  background-image: url('./images/designed-for-growth.png');
+}
+
+.Homepage_header_cartoon {
+  z-index: 1;
+  position: absolute;
+  background-size: contain;
+  background-image: url('./images/mother-holding-child-with-father.svg');
+  background-repeat: no-repeat;
+  &___desktop {
+    transform: rotate(12deg) scaleX(-1);
+    bottom: -5rem;
+    left: $base-unit * 3;
+    //width: 20.625rem;
+    //height: 20rem;
+    width: 12.375rem;
+    height: 18.5rem;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      display: none;
+    }
+  }
+  &___mobile {
+    z-index: 0;
+    left: $base-unit;
+    bottom: -$base-unit * 3.5;
+    width: 19.5rem;
+    height: 11.75rem;
+    width: 8.25rem;
+    height: 10.57143rem;
+    @media (min-width: $breakpoint-sm - .0625em) {
+      display: none;
+    }
+  }
+}
+
+.Homepage_motherAndBabyCartoon {
+  @media (min-width: $breakpoint-sm) {
+    z-index: -1;
+    right: 0;
+    bottom: -12rem;
+    position: absolute;
+    width: 12.375rem;
+    height: 18.5rem;
+    width: 20.625rem;
+    height: 20rem;
+    background-image: url('./images/header_cartoon.svg');
+    background-repeat: no-repeat;
+  }
 }
 
 .Homepage_designedForGrowthGraph_wrapper {
@@ -208,33 +263,6 @@
   }
 }
 
-.Homepage_header_cartoon {
-  z-index: 1;
-  position: absolute;
-  background-size: contain;
-  background-image: url('./images/header_cartoon.svg');
-  background-repeat: no-repeat;
-  &___desktop {
-    transform: rotate(12deg) scaleX(-1);
-    bottom: -7.25rem;
-    left: 0;
-    width: 20.625rem;
-    height: 20rem;
-    @media (max-width: $breakpoint-sm - .0625em) {
-      display: none;
-    }
-  }
-  &___mobile {
-    z-index: 0;
-    bottom: -$base-unit * 3;
-    width: 19.5rem;
-    height: 11.75rem;
-    @media (min-width: $breakpoint-sm - .0625em) {
-      display: none;
-    }
-  }
-}
-
 .Homepage_header_cartoon_wrapper {
   bottom: 0;
   position: absolute;
@@ -310,18 +338,6 @@
   }
   @media (min-width: $breakpoint-md) {
     margin-bottom: $base-unit * 5;
-  }
-}
-
-.Homepage_motherAndBabyCartoon {
-  @media (min-width: $breakpoint-sm) {
-    z-index: -1;
-    right: 0;
-    bottom: -10.5rem;
-    position: absolute;
-    width: 12.375rem;
-    height: 18.5rem;
-    background-image: url('./images/mother-holding-child-with-father.svg');
   }
 }
 

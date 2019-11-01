@@ -29,10 +29,10 @@
 }
 
 .CookiesNotice_header {
-  margin-bottom: $base-unit * 2;
+  margin-bottom: $base-unit;
   font-family: 'Quicksand', sans-serif;
-  font-size: $title-font-size;
-  line-height: $title-line-height;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
   font-weight: 700;
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 2;
