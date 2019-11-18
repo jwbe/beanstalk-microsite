@@ -33,6 +33,7 @@ $stemColour: #126942;
 }
 
 .Stem_doubleLeaves {
+  z-index: 1;
   top: -$base-unit * 5;
   right: 0;
   left: 0;
@@ -74,6 +75,7 @@ $stemColour: #126942;
 }
 
 .Stem_top_leaves {
+  z-index: 1;
   margin-top: -3.5rem;
   left: 6.5rem;
   position: relative;
@@ -82,7 +84,6 @@ $stemColour: #126942;
   background-image: url('../../images/double-leaves___top.svg');
   background-size: cover;
   position: relative;
-  z-index: 1;
 }
 
 .Stem___connectVertical {
@@ -196,11 +197,15 @@ $stemColour: #126942;
   padding-bottom: $base-unit * 4;
   font-size: $subheader-font-size;
   line-height: $subheader-line-height;
-  @media (min-width: $breakpoint-sm) {
-    padding-top: $base-unit * 9;
-    padding-bottom: $base-unit * 9;
+  @media (min-width: $breakpoint-md) {
+    padding-top: $base-unit * 7;
+    padding-bottom: $base-unit * 7;
     font-size: $title-font-size;
     line-height: $title-line-height;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-top: $base-unit * 9;
+    padding-bottom: $base-unit * 9;
   }
 }
 
