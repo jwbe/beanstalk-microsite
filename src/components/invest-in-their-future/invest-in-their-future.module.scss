@@ -1,0 +1,209 @@
+$stemColour: #126942;
+
+.StemWrapper {
+
+}
+
+.Stem_container {
+  padding-right: $base-unit * 4;
+  padding-left: $base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    padding-top: 3.5rem;
+    padding-right: $base-unit * 5;
+    padding-left: $base-unit * 5;
+  }
+}
+
+.StemWrapper___desktop {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.StemWrapper___vertical {
+  display: none;
+  @media (min-width: $breakpoint-sm) {
+    justify-content: flex-end;
+    display: flex;
+  }
+}
+
+.StemWrapper___width50 {
+  width: 50%;
+}
+
+.Stem_doubleLeaves {
+  top: -$base-unit * 5;
+  right: 0;
+  left: 0;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  width: 4.5625rem;
+  height: $base-unit * 11;
+  background-image: url('../../images/double-leaves___mobile.svg');
+  background-size: cover;
+  @media (min-width: $breakpoint-sm) {
+    width: $base-unit * 10;
+    height: $base-unit * 12;
+    background-image: url('../../images/double-leaves.svg');
+  }
+}
+
+.Stem_doubleLeaves___mobileEnd___bottom {
+  right: auto;
+  left: -1.5rem;
+}
+
+.Stem_doubleLeaves___mobileEnd___top {
+  right: -1.5rem;
+  left: auto;
+}
+
+.Stem_leaves {
+  top: -2.45rem;
+  right: 2.45rem;
+  position: relative;
+  width: 5.0625rem;
+  height: $base-unit * 10;
+  background-image: url('../../images/leaves.svg');
+  background-size: cover;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.Stem_top_leaves {
+  margin-top: -3.5rem;
+  left: 6.5rem;
+  position: relative;
+  width: 12rem;
+  height: 10.0625rem;
+  background-image: url('../../images/double-leaves___top.svg');
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.Stem___connectVertical {
+  @media (min-width: $breakpoint-sm) {
+    margin-top: -$base-unit * 2;
+    margin-right: -$base-unit;
+  }
+}
+
+.Stem___horizontal {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.Foliage___flip180 {
+  transform: rotateY(180deg);
+}
+
+.Stem___vertical {
+  position: relative;
+  margin-right: -$base-unit;
+  height: $base-unit * 22;
+  width: $base-unit * 2;
+  background-color: $stemColour;
+}
+
+.Stem_section {
+  flex-direction: column;
+  display: flex;
+}
+
+.Stem_section___desktop {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.Stem_section___grow {
+  flex-grow: 1;
+}
+
+.Stem_section_row {
+
+}
+
+.Stem_section_row___middle {
+  flex-basis: 50%;
+  flex-grow: 1;
+  align-items: flex-end;
+  display: flex;
+}
+
+.Stem_curve {
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 6.75rem;
+  height: 5.75rem;
+  background-image: url('../../images/stem___mobile.svg');
+  background-size: cover;
+  @media (min-width: $breakpoint-sm) {
+    width: 7.25rem;
+    height: 6.25rem;
+    background-image: url('../../images/stem___desktop.svg');
+  }
+}
+
+.Stem_curve___desktop {
+  @media (max-width: $breakpoint-sm) {
+    //visibility: hidden;
+  }
+}
+
+.Stem_curve_shim {
+  width: 6.75rem;
+  height: 5.75rem;
+  @media (min-width: $breakpoint-sm) {
+    width: 7.25rem;
+    height: 6.25rem;
+  }
+}
+
+.Stem_curve_left {
+  bottom: $base-unit / 2;
+  @media (min-width: $breakpoint-sm) {
+    bottom: $base-unit;
+  }
+}
+
+.Stem_curve_right {
+  bottom: -$base-unit / 2;
+  transform: rotate(180deg);
+  @media (min-width: $breakpoint-sm) {
+    bottom: -$base-unit;
+  }
+}
+
+.Stem_curve_middle {
+  top: $base-unit / 2;
+  width: 100%;
+  height: $base-unit;
+  background-color: $stemColour;
+  @media (min-width: $breakpoint-sm) {
+    top: $base-unit;
+    height: $base-unit * 2;
+  }
+}
+
+.Stem_textPod {
+  padding-top: $base-unit * 4;
+  padding-bottom: $base-unit * 4;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  @media (min-width: $breakpoint-sm) {
+    padding-top: $base-unit * 9;
+    padding-bottom: $base-unit * 9;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}
+
+.Stem_textPod___right {
+  text-align: right;
+}

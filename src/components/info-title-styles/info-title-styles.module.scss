@@ -1,0 +1,30 @@
+.TitleBlock {
+  margin-top: $base-unit * 4;
+  margin-bottom: $base-unit * 4;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 10;
+    margin-bottom: $base-unit * 10;
+  }
+}
+
+.TitleBlock_heading {
+  margin-bottom: $base-unit * 4;
+  font-weight: 300;
+  font-size: $grand-font-size;
+  line-height: $grand-line-height;
+  color: $secondary;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 5;
+  }
+}
+
+.TitleBlock_subheading {
+  font-weight: 700;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  color: $primary;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 5;
+  }
+}
