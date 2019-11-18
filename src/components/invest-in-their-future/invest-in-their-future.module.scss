@@ -48,13 +48,17 @@ $stemColour: #126942;
 }
 
 .Stem_doubleLeaves___mobileEnd___bottom {
-  right: auto;
-  left: -1.5rem;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    right: auto;
+    left: -1.5rem;
+  }
 }
 
 .Stem_doubleLeaves___mobileEnd___top {
-  right: -1.5rem;
-  left: auto;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    right: -1.5rem;
+    left: auto;
+  }
 }
 
 .Stem_leaves {
