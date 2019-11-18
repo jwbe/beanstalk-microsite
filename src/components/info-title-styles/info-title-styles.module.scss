@@ -3,6 +3,10 @@
   margin-bottom: $base-unit * 4;
   text-align: center;
   @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 8;
+    margin-bottom: $base-unit * 8;
+  }
+  @media (min-width: $breakpoint-md) {
     margin-top: $base-unit * 10;
     margin-bottom: $base-unit * 10;
   }
@@ -11,20 +15,31 @@
 .TitleBlock_heading {
   margin-bottom: $base-unit * 4;
   font-weight: 300;
-  font-size: $grand-font-size;
-  line-height: $grand-line-height;
+  font-size: $display-font-size;
+  line-height: $display-line-height;
+  font-family: 'Quicksand', sans-serif;
   color: $secondary;
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 5;
+    font-size: $grand-font-size;
+    line-height: $grand-line-height;
   }
 }
 
 .TitleBlock_subheading {
   font-weight: 700;
-  font-size: $title-font-size;
-  line-height: $title-line-height;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
   color: $primary;
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 5;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}
+
+.TitleBlock_br___smUp {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
   }
 }

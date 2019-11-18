@@ -10,7 +10,7 @@ const InvestInTheirFuture = () => {
           Invest in their future
         </h1>
         <h2 className={titleStyles.TitleBlock_subheading}>
-          The new, really easy way to build up a<br/> fund to give your child a launch into adult life
+          The new, really easy way to build up a<br className={titleStyles.TitleBlock_br___smUp}></br> fund to give your child a launch into adult life
         </h2>
       </div>
       <div className={styles.Stem_container}>
@@ -152,7 +152,7 @@ const InvestInTheirFuture = () => {
       </div>
       <div className={titleStyles.TitleBlock}>
         <h2 className={titleStyles.TitleBlock_subheading}>
-          Celebrate a tax-fee nest egg to help your <br/>child start adult life
+          Celebrate a tax-fee nest egg to help your <br className={titleStyles.TitleBlock_br___smUp}></br>child start adult life
         </h2>
       </div>
     </>
