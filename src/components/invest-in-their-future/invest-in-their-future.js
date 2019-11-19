@@ -5,7 +5,7 @@ import titleStyles from '../info-title-styles/info-title-styles.module.scss';
 const InvestInTheirFuture = () => {
   return (
     <>
-      <div className={titleStyles.TitleBlock}>
+      <div className={`${titleStyles.TitleBlock} ${styles.TitleBlock___plant}`}>
         <h1 className={titleStyles.TitleBlock_heading}>
           Invest in their future
         </h1>
@@ -23,7 +23,7 @@ const InvestInTheirFuture = () => {
         <div className={`${styles.StemWrapper} ${styles.StemWrapper___vertical} ${styles.StemWrapper___width50}`}>
         </div>
         <div className={`${styles.StemWrapper___width50}`}>
-          <div className={`${styles.Stem___horizontal} ${styles.Stem___connectVertical}`}>
+          <div className={`${styles.Stem___horizontal} ${styles.Stem___horizontal___first} ${styles.Stem___connectVertical}`}>
             <div className={`${styles.Stem_section}`}>
               <div className={`${styles.Stem_section_row}`}>
                 <div className={`${styles.Stem_curve_shim}`}>
@@ -118,7 +118,7 @@ const InvestInTheirFuture = () => {
           Grow your child's savings by investing with two simple choices.
         </div>
         <div className={`${styles.StemWrapper___width50}`}>
-          <div className={`${styles.Stem___horizontal} ${styles.Foliage___flip180}`}>
+          <div className={`${styles.Stem___horizontal} ${styles.Stem___horizontal___last} ${styles.Foliage___flip180}`}>
             <div className={`${styles.Stem_section} ${styles.Stem_section___desktop}`}>
               <div className={`${styles.Stem_section_row}`}>
                 <div className={`${styles.Stem_curve_shim}`}>

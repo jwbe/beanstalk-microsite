@@ -1,6 +1,8 @@
 $stemColour: #126942;
 
 .Stem_container {
+  flex-direction: column;
+  display: flex;
   padding-right: $base-unit * 2;
   padding-left: $base-unit * 2;
   @media (min-width: $breakpoint-sm) {
@@ -59,6 +61,9 @@ $stemColour: #126942;
     right: -1.5rem;
     left: auto;
   }
+  @media (min-width: $breakpoint-sm) {
+    transform: rotateY(180deg);
+  }
 }
 
 .Stem_leaves {
@@ -96,6 +101,24 @@ $stemColour: #126942;
 .Stem___horizontal {
   justify-content: flex-end;
   display: flex;
+  padding-left: $base-unit * 4;
+  padding-right: $base-unit * 4;
+  @media (max-width: $breakpoint-xs-sm) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @media (min-width: $breakpoint-sm) {
+    padding-left: $base-unit * 8;
+    padding-right: $base-unit * 8;
+  }
+}
+
+.Stem___horizontal___first {
+  padding-right: 0;
+}
+
+.Stem___horizontal___last {
+  padding-left: 0;
 }
 
 .Foliage___flip180 {
@@ -193,22 +216,44 @@ $stemColour: #126942;
 }
 
 .Stem_textPod {
-  padding-top: $base-unit * 4;
-  padding-bottom: $base-unit * 4;
+  display: inline-flex;
+  margin-top: $base-unit * 3;
+  margin-right: -$base-unit * 2;
+  margin-bottom: $base-unit * 3;
+  margin-left: -$base-unit * 2;
+  padding: $base-unit * 3;
+  width: 75%;
   font-size: $subheader-font-size;
   line-height: $subheader-line-height;
-  @media (min-width: $breakpoint-md) {
-    padding-top: $base-unit * 7;
-    padding-bottom: $base-unit * 7;
+  background-color: $white;
+  box-shadow: $shadow-level-3;
+  border-radius: $base-unit * 4;
+  @media (max-width: $breakpoint-xs-sm) {
+    width: 100%;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 4;
+    margin-right: -$base-unit * 3;
+    margin-bottom: $base-unit * 4;
+    margin-left: -$base-unit * 3;
+    padding: $base-unit * 4;
+    width: 50%;
     font-size: $title-font-size;
     line-height: $title-line-height;
   }
   @media (min-width: $breakpoint-md) {
-    padding-top: $base-unit * 9;
-    padding-bottom: $base-unit * 9;
+    margin-top: $base-unit * 4;
+    margin-bottom: $base-unit * 4;
+    padding: $base-unit * 4;
   }
 }
 
 .Stem_textPod___right {
-  text-align: right;
+  align-self: flex-end;
+}
+
+.TitleBlock___plant {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 1!important;
+  }
 }
