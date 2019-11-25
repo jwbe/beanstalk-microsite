@@ -47,6 +47,19 @@
   }
 }
 
+.fundBalance___wrapper {
+  @media (min-width: $breakpoint-sm) {
+    transform: rotate(-12deg);
+  }
+}
+
+.Article___fundBalance {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-top: $base-unit * 3;
+    padding-bottom: $base-unit * 3;
+  }
+}
+
 .TextBlock {
   margin-bottom: $base-unit * 3;
   font-weight: 300;
@@ -67,7 +80,7 @@
 .TextBlock_Paragraph {
   font-size: $subheader-font-size;
   line-height: $subheader-line-height;
-  margin-bottom: $base-unit * 2;
+  margin-bottom: $base-unit * 3;
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 2;
     font-size: $title-font-size;
@@ -76,6 +89,7 @@
 }
 
 .TextBlock_Paragraph___smaller {
+  margin-bottom: $base-unit * 2;
   @media (min-width: $breakpoint-sm) {
     font-size: $caption-font-size;
     line-height: $caption-line-height;

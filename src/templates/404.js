@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from '../components/head/head';
 import { Header } from '../components/header/header';
-import { Main } from  '../components/main/main';
+import { Main, LAYOUT_VARIANT } from  '../components/main/main';
 import Content from '../components/content/content';
 import Footer from '../components/footer/footer';
 import Wrapper from '../components/wrapper/wrapper';
@@ -14,7 +14,7 @@ const Layout = ({
       <Wrapper>
         <Head title='Page not found'/>
         <Header/>
-        <Main>
+        <Main layoutVariant={LAYOUT_VARIANT.PLAIN_PAGE}>
           {children}
         </Main>
         <Footer/>

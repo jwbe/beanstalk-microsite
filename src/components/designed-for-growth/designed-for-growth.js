@@ -3,6 +3,7 @@ import styles from './designed-for-growth.module.scss';
 import FundBalance from '../fund-balance/fund-balance';
 import SimpleBars from '../simple-bars/simple-bars';
 import DesignedForGrowthGraph from '../designed-for-growth-graph/designed-for-growth-graph';
+import titleStyles from '../info-title-styles/info-title-styles.module.scss';
 
 
 const DesignedForGrowth = () => {
@@ -10,9 +11,11 @@ const DesignedForGrowth = () => {
 
   return (
     <>
-      <h1 className={styles.Title}>
-        Designed for Growth
-      </h1>
+      <div className={`${titleStyles.TitleBlock} ${styles.TitleBlock___plant}`}>
+        <h1 className={titleStyles.TitleBlock_heading}>
+          Designed for Growth
+        </h1>
+      </div>
       <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
@@ -39,7 +42,7 @@ const DesignedForGrowth = () => {
               Shares are better
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              Studies show that shares historically have returned nearly 3x as much as cash savings.
+              Over 50 years UK Shares returned over four times more than Cash as the ups and downs of shares were compensated for by higher growth.
             </p>
             <p className={styles.TextBlock_Paragraph___smaller}>
               Source: Barclays Equity Gift Study 2016
@@ -49,8 +52,10 @@ const DesignedForGrowth = () => {
 
         <article className={styles.Article}>
           <SimpleBars/>
-
           <div className={styles.TextBlock}>
+            <h2 className={styles.TextBlock_Header}>
+              Investments can be a great way to grow your money
+            </h2>
             <p className={styles.TextBlock_Paragraph}>
               Perhaps you're saving over a long period. A Junior ISA or a pension? The ups and downs of shares can be compensated for by higher growth.
             </p>
@@ -64,8 +69,10 @@ const DesignedForGrowth = () => {
 
 
       <section className={styles.Section}>
-        <article className={styles.Article}>
-          <FundBalance/>
+        <article className={`${styles.Article} ${styles.Article___fundBalance}`}>
+          <div className={styles.fundBalance___wrapper}>
+            <FundBalance/>
+          </div>
         </article>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>

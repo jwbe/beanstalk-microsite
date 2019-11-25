@@ -47,7 +47,7 @@ const DesignedForGrowthGraph = () => {
               </div>
             </div>
             <div className={styles.Diagram_graph_bars}>
-              {graphBar(0)}
+              {graphBar(25)}
               {graphBar(75)}
               {graphBar(100)}
               {graphBar(75)}
@@ -77,19 +77,19 @@ const DesignedForGrowthGraph = () => {
             </div>
             <div className={styles.Diagram_graph_minimumContributions}>
               <div className={`${styles.Diagram_graph_minimumContribution} ${styles.Diagram_graph_minimumContribution___kidstart}`}>
+                No
+              </div>
+              <div className={styles.Diagram_graph_minimumContribution}>
                 Yes
               </div>
               <div className={styles.Diagram_graph_minimumContribution}>
-                No
+                Yes
               </div>
               <div className={styles.Diagram_graph_minimumContribution}>
-                No
+                Yes
               </div>
               <div className={styles.Diagram_graph_minimumContribution}>
-                No
-              </div>
-              <div className={styles.Diagram_graph_minimumContribution}>
-                No
+                Yes
               </div>
             </div>
           </div>

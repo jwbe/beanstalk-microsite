@@ -2,7 +2,7 @@
   align-items: flex-start;
   flex-direction: column;
   display: flex;
-  margin-bottom: $base-unit * 2;
+  margin-bottom: $base-unit * 3;
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 4;
   }
@@ -35,10 +35,7 @@
 .SimpleBar {
   &___secondary {
     background-color: $secondary;
-    width: 75%;
-    @media (min-width: $breakpoint-sm) {
-
-    }
+    width: 90%;
   }
   &___accent3 {
     background-color: $accent-3-light;
