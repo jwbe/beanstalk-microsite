@@ -1,0 +1,192 @@
+$light-coin-colour: #f5b42a;
+$dark-coin-colour: #cf9823;
+$drop-shadow: drop-shadow(0 .5rem 1rem #212121);
+
+.MoneyPile {
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  margin-top: $base-unit * 6;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 3;
+  }
+}
+
+.MoneyPile___mobile {
+  margin-top: $base-unit * 6;
+  margin-right: -$base-unit * 2;
+  margin-left: -$base-unit * 2;
+  width: 20rem;
+  height: 12.9375rem;
+  background-image: url('../../images/coins.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.RoundCoin {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: $base-unit * 12;
+  height: $base-unit * 12;
+  background-color: $light-coin-colour;
+  border-radius: 100%;
+  &:after {
+    content: '';
+    position: absolute;
+    padding: 0.875rem;
+    border-width: 0.875rem;
+    border-style: solid;
+    border-color: #ca9951 #e6c47c #ca9951 #e6c47c;
+    border-radius: 100%;
+  }
+}
+
+.RoundCoin___smallUnderSm {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    width: 4.375rem;
+    height: 4.375rem;
+    &:after {
+      padding: .625rem;
+      border-width: .652rem;
+    }
+  }
+}
+
+.RoundCoin___background {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+}
+
+.StackedCoin {
+  position: relative;
+  width: 5.8125rem;
+  height: 1.6875rem;
+}
+
+.StackedCoin___smallUnderSm {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    width: 5.125rem;
+    height: 1.5rem;
+  }
+}
+
+.StackedCoin___first {
+  height: 1.25rem;
+}
+
+.StackedCoin___light {
+  background-color: $light-coin-colour;
+}
+
+.StackedCoin___dark {
+  background-color: $dark-coin-colour;
+}
+
+.CoinStack {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    position: absolute;
+  }
+  @media (min-width: $breakpoint-sm) {
+    position: relative;
+    margin-right: .875rem;
+    margin-left: .875rem;
+  }
+}
+
+.CoinStack___coin___one {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 3;
+    //filter: $drop-shadow;
+  }
+}
+
+.CoinStack___coin___two {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    right: $base-unit * 3;
+    //filter: $drop-shadow;
+  }
+}
+
+.CoinStack___foregroundUnderSm {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    z-index: 2;
+  }
+}
+
+.CoinStack___smallUnderSm {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    .StackedCoin {
+      width: 5.125rem;
+      height: 1.5rem;
+    }
+    .StackedCoin___first{
+      height: 1.0625rem;
+    }
+  }
+}
+
+.CoinStack___one {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 2;
+    bottom: .625rem;
+  }
+  *:nth-child(3) {
+    margin-left: .8125rem;
+  }
+  *:nth-child(5) {
+    margin-left: .8125rem;
+  }
+}
+
+.CoinStack___two {
+  z-index: 1;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    position: relative;
+    filter: $drop-shadow;
+  }
+  *:nth-child(2) {
+    margin-left: -.8125rem;
+  }
+  *:nth-child(4) {
+    margin-left: -.8125rem;
+  }
+  *:nth-child(7) {
+    margin-left: .8125rem;
+  }
+}
+
+.CoinStack___three {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    right: $base-unit * 4;
+  }
+  *:nth-child(1) {
+    margin-left: -.8125rem;
+  }
+  *:nth-child(2) {
+    margin-left: -.8125rem;
+  }
+}
+
+.Rotate30 {
+  transform: rotate(30deg);
+}
+
+.Rotate45 {
+  transform: rotate(45deg);
+}
+
+.Rotate75 {
+  transform: rotate(75deg);
+}

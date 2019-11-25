@@ -252,6 +252,10 @@ $stemColour: #126942;
   align-self: flex-end;
 }
 
+.Stem_textPod___textCentre {
+  justify-content: center;
+}
+
 .TitleBlock___plant {
   @media (max-width: $breakpoint-sm - .0625em) {
     margin-bottom: $base-unit * 1!important;

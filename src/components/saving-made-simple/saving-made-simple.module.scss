@@ -1,0 +1,184 @@
+$stemColour: #126942;
+
+.Plant {
+  width: 100%;
+}
+
+.Plant_section {
+  flex-direction: column;
+  display: flex;
+  margin-top: $base-unit;
+  margin-bottom: $base-unit;
+}
+
+.Plant_section__rightUp {
+  transform: scaleY(-1)
+}
+
+.Plant_section___leftDown {
+  transform: scaleX(-1);
+}
+
+.Plant_section___leftUp {
+  transform: scaleY(-1) scaleX(-1);
+}
+
+.Plant_section_row {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+}
+
+.Plant_section_column {
+  flex-basis: 50%;
+  justify-content: flex-end;
+  display: flex;
+  position: relative;
+}
+
+.Plant_stem {
+  z-index: 1;
+  position: relative;
+  margin-right: -$base-unit / 2;
+  width: $base-unit;
+  background-color: $stemColour;
+  @media (min-width: $breakpoint-sm) {
+    margin-right: -$base-unit;
+    width: $base-unit * 2;
+  }
+}
+
+.Plant_stem___small {
+  height: $base-unit * 6;
+  border-radius: 99rem;
+}
+
+.Plant_stem___medium {
+  height: $base-unit * 12;
+  border-radius: 99rem;
+}
+
+.Plant_stem___first {
+  border-radius: 99rem 99rem 0 0;
+}
+
+.Plant_stem___second {
+  border-radius:  0 0 99rem 99rem;
+}
+
+
+.Plant_stem___branch___first {
+  height: $base-unit * 18;
+}
+
+.Plant_stem___branch___second {
+  height: $base-unit * 3;
+}
+
+.Plant_stem_branch_curve {
+  margin-left: $base-unit / 2;
+  width: $base-unit * 7;
+  height: $base-unit * 9;
+  background-image: url('../../images/saving-made-simple/curve___mob.svg');
+  @media (min-width: $breakpoint-sm) {
+    margin-left: $base-unit - .0625rem;
+    background-image: url('../../images/saving-made-simple/curve.svg');
+    background-size: cover;
+  }
+}
+
+.Plant_stem_branch_horizontal {
+  position: relative;
+  margin-left: $base-unit;
+  height: $base-unit;
+  background-color: $stemColour;
+  border-radius: 999rem;
+  @media (min-width: $breakpoint-sm) {
+    width: $base-unit * 8;
+    height: $base-unit * 2;
+  }
+}
+
+.Plant_stem_branch_doubleLeaves {
+  top: 2.6875rem; // 43px. Should be 44px but visually, has to be 43. Adjust SVG.
+  right: auto;
+  position: relative;
+  margin-left: -.75rem;
+  @media (min-width: $breakpoint-sm) {
+    top: $base-unit * 5;
+    margin-left: -$base-unit;
+  }
+}
+
+.Plant_stem_branch_wrapper {
+  align-items: flex-end;
+  justify-content: flex-start;
+  display: flex;
+  width: 100%;
+}
+
+.Plant_stem_ball {
+  margin-right: -$base-unit / 2;
+  height: $base-unit;
+  width: $base-unit;
+  background-color: $stemColour;
+  border-radius: 100%;
+  @media (min-width: $breakpoint-sm) {
+    margin-right: -$base-unit;
+    height: $base-unit * 2;
+    width: $base-unit * 2;
+  }
+}
+
+.Plant_stem_doubleLeaves {
+  bottom: 0;
+  left: -2.75rem;
+  position: absolute;
+  width: $base-unit * 12;
+  height: $base-unit * 5;
+  background-image: url('../../images/saving-made-simple/double-leaves.svg');
+  background-size: cover;
+  @media (min-width: $breakpoint-sm) {
+    left: -$base-unit * 5;
+  }
+}
+
+.Plant_stem_doubleLeaves___top {
+  left: $base-unit * 8;
+  position: relative;
+  width: $base-unit * 20;
+  height: $base-unit * 15;
+  background-image: url('../../images/saving-made-simple/double-leaves___top.svg');
+  background-size: cover;
+  @media (min-width: $breakpoint-sm) {
+    left: $base-unit * 10;
+  }
+}
+
+.Plant_stem_doubleLeaves_wrapper {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.Plant_stem_doubleLeaves_wrapper___vertical {
+  width: $base-unit * 5;
+  height: $base-unit * 12;
+  .Plant_stem_doubleLeaves {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    transform: rotate(90deg);
+  }
+}
+
+.Plant_textPod {
+  margin-top: $base-unit * 5;
+  margin-bottom: $base-unit * 5;
+  color: $black-light;
+  font-weight: 700;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  text-align: center;
+}
