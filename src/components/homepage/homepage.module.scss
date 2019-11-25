@@ -60,14 +60,12 @@
 .Homepage_motherAndBabyCartoon {
   @media (min-width: $breakpoint-sm) {
     z-index: -1;
-    right: 0;
-    bottom: -12rem;
+    right: 9rem;
+    bottom: -10rem;
     position: absolute;
-    width: 12.375rem;
-    height: 18.5rem;
-    width: 20.625rem;
-    height: 20rem;
-    background-image: url('./images/header_cartoon.svg');
+    width: 12.625rem;
+    height: 16.25rem;
+    background-image: url('./images/happy-family.svg');
     background-repeat: no-repeat;
   }
 }

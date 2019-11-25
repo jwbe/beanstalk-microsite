@@ -68,10 +68,10 @@
 .TextBlock_Header {
   font-size: $title-font-size;
   line-height: $title-line-height;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: $base-unit;
   @media (min-width: $breakpoint-sm) {
-    margin-bottom: $base-unit * 2;
+    margin-bottom: $base-unit * 3;
     font-size: $headline-font-size;
     line-height: $headline-line-height;
   }
