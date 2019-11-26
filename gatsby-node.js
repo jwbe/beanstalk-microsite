@@ -29,20 +29,28 @@ exports.createPages = async({graphql, actions}) => {
               slug
             }
           }
+          next {
+            meta: frontmatter {
+              slug
+            }
+            fields {
+              collection
+            }
+          }
+          previous {
+            meta: frontmatter {
+              slug
+            }
+            fields {
+              collection
+            }
+          }
         }
       }
     }
   `);
 
   const allEdges = result.data.allSources.edges;
-
-  const pageEdges = allEdges.filter(
-    edge => edge.node.fields.collection === `pages`
-  );
-
-  const articleEdges = allEdges.filter(
-    edge => edge.node.fields.collection === `articles`
-  );
 
   pageEdges.forEach((edge) => {
     createPage({
@@ -59,7 +67,9 @@ exports.createPages = async({graphql, actions}) => {
       path: `/articles/${edge.node.meta.slug}`,
       component: articleTemplate,
       context: {
-        slug: edge.node.meta.slug
+        slug: edge.node.meta.slug,
+        previous: edge.previous.fields.collection === `articles` ? edge.previous.meta.slug : null,
+        next: edge.next.fields.collection === `articles` ? edge.next.meta.slug : null
       }
     });
   });

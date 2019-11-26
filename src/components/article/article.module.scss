@@ -97,3 +97,15 @@
     }
   }
 }
+
+.Article_disabledButton {
+  background-color: $accent-3-lighter;
+  color: $black-lighter;
+  pointer-events: none;
+}
+
+.Article_nav {
+  * {
+    margin-right: $base-unit * 2;
+  }
+}

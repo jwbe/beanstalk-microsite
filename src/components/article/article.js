@@ -1,7 +1,10 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 import styles from './article.module.scss';
 import Content from '../content/content';
+import { Button, DESKTOP_COLOURS, DESKTOP_BORDERS, DESKTOP_SIZES, TABLET_COLOURS, DESKTOP_BACKGROUNDS } from '../button/button';
+import buttonStyles from '../button/button.module.scss';
 
 const Article = ({
   articleCategory,
@@ -11,7 +14,9 @@ const Article = ({
   articleDate,
   articleCoverImage,
   articleCoverImage_alt,
-  articleContent
+  articleContent,
+  articleNext,
+  articlePrevious
 }) => {
   return (
     <article className={styles.Article}>
@@ -35,6 +40,38 @@ const Article = ({
         <Content>
           {articleContent}
         </Content>
+      </div>
+      <div className={styles.Article_nav}>
+        {
+          articlePrevious
+          ?
+          <Button link={`articles/${articlePrevious}`} 
+            desktopColour={DESKTOP_COLOURS.WHITE}
+            desktopSize={DESKTOP_SIZES.LARGE}
+            desktopBackground={DESKTOP_BACKGROUNDS.SECONDARY}
+            >
+            Previous
+          </Button>
+          :
+          <div className={`${buttonStyles.Button} ${styles.Article_disabledButton} ${buttonStyles.desktop___Large}`}>
+            Previous
+          </div>
+        }
+        {
+          articleNext
+          ?
+          <Button link={`articles/${articleNext}`} 
+            desktopColour={DESKTOP_COLOURS.WHITE}
+            desktopSize={DESKTOP_SIZES.LARGE}
+            desktopBackground={DESKTOP_BACKGROUNDS.SECONDARY}
+            >
+            Next
+          </Button>
+          :
+          <div className={`${buttonStyles.Button} ${styles.Article_disabledButton} ${buttonStyles.desktop___Large}`}>
+            Next
+          </div>
+        }
       </div>
     </article>
   );

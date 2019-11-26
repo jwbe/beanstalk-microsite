@@ -33,8 +33,10 @@ export const query = graphql`
 
 
 const Layout = ({
-  data
+  data,
+  pageContext
 }) => {
+  const { next, previous } = pageContext;
   return (
     <>
       <Wrapper>
@@ -50,6 +52,8 @@ const Layout = ({
             articleCoverImage={data.page.meta.coverImage.childImageSharp.fluid}
             articleCoverImage_alt={data.page.meta.coverImage_alt}
             articleContent={data.page.content}
+            articleNext={next}
+            articlePrevious={previous}
             />
         </Main>
         <Footer/>
