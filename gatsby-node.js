@@ -75,7 +75,9 @@ exports.createPages = async({graphql, actions}) => {
       path: `/articles/${edge.node.meta.slug}`,
       component: articleTemplate,
       context: {
-        slug: edge.node.meta.slug
+        slug: edge.node.meta.slug,
+        previous: edge.previous.fields.collection === `articles` ? edge.previous.meta.slug : null,
+        next: edge.next.fields.collection === `articles` ? edge.next.meta.slug : null
       }
     });
   });
