@@ -52,6 +52,14 @@ exports.createPages = async({graphql, actions}) => {
 
   const allEdges = result.data.allSources.edges;
 
+  const pageEdges = allEdges.filter(
+    edge => edge.node.fields.collection === `pages`
+  );
+
+  const articleEdges = allEdges.filter(
+    edge => edge.node.fields.collection === `articles`
+  );
+
   pageEdges.forEach((edge) => {
     createPage({
       path: edge.node.meta.slug,
@@ -67,9 +75,7 @@ exports.createPages = async({graphql, actions}) => {
       path: `/articles/${edge.node.meta.slug}`,
       component: articleTemplate,
       context: {
-        slug: edge.node.meta.slug,
-        previous: edge.previous.fields.collection === `articles` ? edge.previous.meta.slug : null,
-        next: edge.next.fields.collection === `articles` ? edge.next.meta.slug : null
+        slug: edge.node.meta.slug
       }
     });
   });
