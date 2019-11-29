@@ -1,15 +1,26 @@
 import React from 'react';
 import styles from './top-up.module.scss';
+import classnames from 'classnames';
 import iconCashInHand from '../images/icon_cash-in-hand___secondary.svg';
 
-const topUp = ({
-  middle,
+export const TOP_UP_ORDER = {
+  FIRST: 'TopUp___first',
+  SECOND: 'TopUp___second',
+  THIRD: 'TopUp___third',
+}
+
+export const TopUp = ({
+  order,
   className,
   recipient,
   date
 }) => {
+  const orderClassnames = classnames(
+    styles.TopUp,
+    styles[ order ]
+  );
   return (
-    <div className={`${middle ? styles.TopUp___middle : null} ${styles.TopUp}`}>
+    <div className={`${orderClassnames} ${styles.TopUp}`}>
       <div className={styles.TopUp_column}>
         <h3 className={styles.TopUp_header}>
           Your Top Up
@@ -27,5 +38,3 @@ const topUp = ({
     </div>
   );
 };
-
-export default topUp;

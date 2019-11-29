@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from './simple-bars.module.scss';
 
-const SimpleBars = () => {
+const SimpleBars = ({
+  className
+}) => {
   return (
-    <div className={styles.SimpleBars}>
+    <div className={`${className ? className : ''} ${styles.SimpleBars}`}>
       <div className={`${styles.SimpleBar} ${styles.SimpleBar___secondary}`}>
         UK Shares 4.7%
       </div>

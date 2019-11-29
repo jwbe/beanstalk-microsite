@@ -172,6 +172,20 @@
   }
 }
 
+
+.Homepage_iphone_screenshot___header___underSM {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.Homepage_iphone_screenshot___changeChildAllocation___atSM {
+  margin: 0 auto;
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
 .Homepage_iphone_wrapper {
   &___tilted {
     &___right {
@@ -240,6 +254,15 @@
 .Homepage_column___figure {
   @media (max-width: $breakpoint-sm - .0625em) {
     order: 2;
+  }
+}
+
+
+.Homepage_column___centredAtSm {
+  @media (min-width: $breakpoint-sm) {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
   }
 }
 
@@ -343,6 +366,12 @@
   padding-right: $base-unit * 2;
   padding-left: $base-unit * 4;
   @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.Homepage_topUps___desktop {
+  @media (max-width: $breakpoint-sm - .0625em) {
     display: none;
   }
 }
@@ -508,5 +537,15 @@
   margin-bottom: $base-unit * 4;
   @media (min-width: $breakpoint-sm) {
     display: none!important; //!important necessary to override inline-flex at this breakpoint, which is intrinsic to the component.
+  }
+}
+
+.Homepage_SimpleBars {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 2;
   }
 }

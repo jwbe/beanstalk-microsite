@@ -8,12 +8,46 @@
   padding-left: $base-unit * 2;
   font-size: $body-font-size;
   line-height: $body-line-height;
+  background-color: $white;
   border-radius: $base-unit * 2;
   box-shadow: $shadow-level-3;
+  @media (min-width: $breakpoint-sm - .0625em) {
+    max-width: 75%
+  }
+  @media (min-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.TopUp___desktop {
+  @media (min-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
 }
 
 .TopUp___middle {
   left: $base-unit * 10;
+}
+
+.TopUp___first {
+  @media (min-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 5;
+  }
+}
+
+.TopUp___second {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 10;
+  }
+  @media (min-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 15;
+  }
+}
+
+.TopUp___third {
+  @media (min-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 25;
+  }
 }
 
 .TopUp_header {
