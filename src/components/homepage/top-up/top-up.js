@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './top-up.module.scss';
 import classnames from 'classnames';
-import iconCashInHand from '../images/icon_cash-in-hand___secondary.svg';
 
 export const TOP_UP_ORDER = {
   FIRST: 'TopUp___first',
@@ -10,10 +9,12 @@ export const TOP_UP_ORDER = {
 }
 
 export const TopUp = ({
+  title,
   order,
   className,
   recipient,
-  date
+  date,
+  icon
 }) => {
   const orderClassnames = classnames(
     styles.TopUp,
@@ -23,7 +24,7 @@ export const TopUp = ({
     <div className={`${orderClassnames} ${styles.TopUp}`}>
       <div className={styles.TopUp_column}>
         <h3 className={styles.TopUp_header}>
-          Your Top Up
+          {title}
         </h3>
         <p className={styles.TopUp_recipient}>
           {recipient}
@@ -33,7 +34,7 @@ export const TopUp = ({
         </p>
       </div>
       <div className={styles.TopUp_column}>
-        <img className={styles.TopUp_icon} width='40' height='40' src={iconCashInHand} alt='Top up icon'/>
+        <img className={styles.TopUp_icon} width='40' height='40' src={icon} alt='Top up icon'/>
       </div>
     </div>
   );
