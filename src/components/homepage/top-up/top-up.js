@@ -14,7 +14,9 @@ export const TopUp = ({
   className,
   recipient,
   date,
-  icon
+  icon,
+  button,
+  buttonText
 }) => {
   const orderClassnames = classnames(
     styles.TopUp,
@@ -29,12 +31,15 @@ export const TopUp = ({
         <p className={styles.TopUp_recipient}>
           {recipient}
         </p>
-        <p className={styles.TopUp_date}>
-          {date}
-        </p>
+        <div className={styles.TopUp_bottomRow}>
+          <p className={styles.TopUp_date}>
+            {date}
+          </p>
+        </div>
       </div>
       <div className={styles.TopUp_column}>
         <img className={styles.TopUp_icon} width='40' height='40' src={icon} alt='Top up icon'/>
+        {button ? <div className={styles.TopUp_button}>{buttonText}</div> : ''}
       </div>
     </div>
   );

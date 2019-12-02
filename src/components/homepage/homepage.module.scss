@@ -376,6 +376,10 @@
   }
 }
 
+.Homepage_topUps_message {
+  color: $primary;
+}
+
 .Homepage_section {
   margin-bottom: $base-unit * 4;
   @media (min-width: $breakpoint-sm) {

@@ -23,7 +23,7 @@ import iconFamily from './images/icon_family.svg';
 import iconWallet from './images/icon_wallet.svg';
 import iconNameLabel from './images/icon_nameLabel.svg';
 
-const sarahSlug = <span>£50.00 sent to Sarah by Jane Doe.<br/> <strong>Happy birthday to little…</strong></span>
+const sarahSlug = <span>£50.00 sent to Sarah by Jane Doe.<br/> <span className={styles.Homepage_topUps_message}>Happy birthday to little…</span></span>
 
 const Homepage = () => {
   return (
@@ -105,16 +105,16 @@ const Homepage = () => {
             </p>
           </Point>
           <div className={styles.Homepage_topUps}>
-            <TopUp title={'Child top up'} recipient={'£100 sent to Sarah'} date={'24 Nov 10am'} icon={iconWallet} order={TOP_UP_ORDER.FIRST}/>
-            <TopUp title={'KidStart Savings'} recipient={'£100 sent to Sarah'} date={'24 Nov 10am'} icon={iconWallet} order={TOP_UP_ORDER.SECOND}/>
-            <TopUp title={'Round Ups Total'} recipient={'£100 sent to Sarah'} date={'24 Nov 10am'} icon={iconWallet} order={TOP_UP_ORDER.THIRD}/>
+            <TopUp title={'Child top up'} recipient={sarahSlug} date={'24 Nov 1:54pm'} icon={iconNameLabel} button buttonText={'View'} order={TOP_UP_ORDER.FIRST}/>
+            <TopUp title={'KidStart Savings'} recipient={'£100 sent to Sarah'} date={'24 Nov 10:02am'} icon={iconCashInHandSecondary}  order={TOP_UP_ORDER.SECOND}/>
+            <TopUp title={'Round Ups Total'} recipient={'£100 sent to Sarah'} date={'24 Nov 9:26am'} icon={iconWallet} order={TOP_UP_ORDER.THIRD}/>
           </div>
         </Column>
         <Column className={`${styles.Homepage_column___figure} ${styles.Homepage_column___figure___homepage}`}>
           <div className={styles.Homepage_topUps___desktop}>
-            <TopUp title={'Child top up'} recipient={sarahSlug} date={'24 Nov 10am'} icon={iconNameLabel} order={TOP_UP_ORDER.FIRST}/>
-            <TopUp title={'KidStart Savings'} recipient={'£100 sent to Sarah'} date={'24 Nov 10am'} icon={iconCashInHandSecondary} order={TOP_UP_ORDER.SECOND}/>
-            <TopUp title={'Round Ups Total'} recipient={'£100 sent to Sarah'} date={'24 Nov 10am'} icon={iconWallet} order={TOP_UP_ORDER.THIRD}/>
+            <TopUp title={'Child top up'} recipient={sarahSlug} date={'24 Nov 1:54pm'} icon={iconNameLabel} button buttonText={'View'} order={TOP_UP_ORDER.FIRST}/>
+            <TopUp title={'KidStart Savings'} recipient={'£100 sent to Sarah'} date={'24 Nov 10:02am'} icon={iconCashInHandSecondary}  order={TOP_UP_ORDER.SECOND}/>
+            <TopUp title={'Round Ups Total'} recipient={'£100 sent to Sarah'} date={'24 Nov 9:26am'} icon={iconWallet} order={TOP_UP_ORDER.THIRD}/>
           </div>
         </Column>
       </Section>
