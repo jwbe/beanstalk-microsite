@@ -4,10 +4,12 @@ import { MDXProvider } from '@mdx-js/react';
 
 import P from '../custom-html-tags/p/p';
 import H2 from '../custom-html-tags/h2/h2';
+import Ul from '../custom-html-tags/ul/ul';
 
 const components = {
   p: P,
-  h2: H2
+  h2: H2,
+  ul: Ul
 }
 
 const Content = ({children}) => {

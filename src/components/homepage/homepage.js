@@ -150,12 +150,8 @@ const Homepage = () => {
             icon={iconFamily}
             heading='Family saving'>
             <>
-              <p>
-                Would you put your pension in a bank account where the interest rate doesn't keep up with inflation? Do you stuff money under the mattress?? Of course you not – and there's no reason to do the same with the money you save for your kids.
-              </p>
-              <p>
-                Over the last 50 years the growth from shares has been over 4 times higher than interest paid on cash*. There are ups and downs but it pays to think long term when planning for your kids future. We also have one of the lowest fees in the industry – just 0.5%. See how we compare with others.
-              </p>
+              <p>Get all the family involved! Grandparents, friends and the wider family can save for your child too. It's simple and secure to set up with no tricky forms or visits in branch.</p>
+              <p>Personal messages can be sent with money gifts to mark special occasions. Replies of thanks can be sent back straight away letting them know how much you appreciate their support.</p>
             </>
           </Point>
         </Column>

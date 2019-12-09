@@ -11,3 +11,11 @@ a {
 button {
   border: 0;
 }
+
+h3 {
+  margin-top: $base-unit * 4;
+  margin-bottom: $base-unit * 2;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-weight: 500;
+}
