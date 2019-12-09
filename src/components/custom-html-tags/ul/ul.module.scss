@@ -3,6 +3,6 @@
   list-style-type: disc; 
   list-style-position: inside;
   li {
-    margin-bottom: $base-unit;
+    margin-bottom: $base-unit * 2;
   }
 }
