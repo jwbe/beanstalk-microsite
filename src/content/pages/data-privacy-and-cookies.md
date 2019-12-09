@@ -30,7 +30,7 @@ You retain all rights over your personal information, and in accordance with law
 
 We will need to retain your email address in order to maintain an unsubscribe list so that – if that is your choice – you receive no further communications from us.
 
-We are registered with the Information Commissioner for the handling and processing of personal information and will comply at all times with applicable data protection legislation. We will take all reasonable steps to ensure that the database containing this information is updated, is securely protected against unauthorised entry, and that personal information is kept strictly confidential. If you have any complaint about our handling of your personal information, you should contact the Information Commissioner’s Office as detailed here: https://ico.org.uk/concerns/.
+We are registered with the Information Commissioner for the handling and processing of personal information and will comply at all times with applicable data protection legislation. We will take all reasonable steps to ensure that the database containing this information is updated, is securely protected against unauthorised entry, and that personal information is kept strictly confidential.
 
 If you have any complaint about our handling of your personal information, you should contact the Information Commissioner’s Office as detailed <a href="https://ico.org.uk/concerns/">here</a>
 
