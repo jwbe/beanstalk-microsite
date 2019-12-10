@@ -16,7 +16,6 @@ const Head = ({title}) => {
     <>
       <Helmet>
         <title>{`${title} | ${data.site.siteMetadata.title}`}</title>
-        <meta name='robots' content='noindex, follow'/>
       </Helmet>
     </>
   )
