@@ -46,13 +46,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-remark-external-links`,
-      options: {
-        target: `_blank`,
-        rel: `nofollow`
-      }
-    },
-    {
       resolve: `gatsby-plugin-sass`,
       options: {
         data: '@import "global.scss";',
