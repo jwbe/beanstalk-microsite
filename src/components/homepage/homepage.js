@@ -139,6 +139,9 @@ const Homepage = () => {
               <p>
                 Over the last 50 years the growth from shares has been over 4 times higher than interest paid on cash*. There are ups and downs but it pays to think long term when planning for your kids future. We also have one of the lowest fees in the industry – just 0.5%. See how we compare with others.
               </p>
+              <p>
+                The value of your savings may go up as well as down.
+              </p>
             </>
           </Point>
         </Column>
@@ -170,6 +173,12 @@ const Homepage = () => {
           <div className={styles.Homepage_partners_partner}>
           </div>
         </div>
+      </Section>
+
+      <Section className={styles.Homepage_section}>
+        <p className={styles.Homepage_section_disclaimerText}>
+          Past performance is not a reliable indication of future performance
+        </p>
       </Section>
 
       <footer className={styles.Homepage_footer}>

@@ -51,7 +51,10 @@
 }
 
 .TopUp_header {
+  margin: 0;
   font-family: 'Quicksand', sans-serif;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
   font-weight: 700;
   color: $secondary;
 }

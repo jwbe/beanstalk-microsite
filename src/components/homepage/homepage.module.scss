@@ -553,3 +553,20 @@
     margin-top: $base-unit * 2;
   }
 }
+
+.Homepage_disclaimerPrint {
+  margin-top: auto;
+  color: $accent-3;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+}
+
+.Homepage_section_disclaimerText {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: $accent-3;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+  letter-spacing: .009375rem;
+}
