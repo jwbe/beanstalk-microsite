@@ -5,3 +5,5 @@ plain: true
 ---
 
 ## Coming soon!
+
+<a href="/">Return to home</a>
