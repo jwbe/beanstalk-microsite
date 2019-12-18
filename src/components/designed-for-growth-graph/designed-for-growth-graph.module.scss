@@ -171,8 +171,7 @@ $graph-bar-colour: $secondary;
   }
   &:after {
     content: '';
-    right: 0;
-    position: absolute;
+    margin-left: auto;
     width: calc(100% - #{$base-unit * 5});
     height: .0625rem;
     background-color: $accent-3-lighter;
@@ -309,6 +308,7 @@ $graph-bar-colour: $secondary;
 
 .Diagram_table_wrapper {
   padding-right: $base-unit;
+  padding-bottom: $base-unit * 1.5;
   padding-left: $base-unit;
   margin-top: $base-unit * 3;
   @media (min-width: $breakpoint-sm) {

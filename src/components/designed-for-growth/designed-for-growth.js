@@ -28,7 +28,7 @@ const DesignedForGrowth = () => {
           </div>
         </article>
 
-        <article className={styles.Article}>
+        <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
           <DesignedForGrowthGraph/>
         </article>
 
@@ -50,7 +50,7 @@ const DesignedForGrowth = () => {
           </div>
         </article>
 
-        <article className={styles.Article}>
+        <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
           <SimpleBars/>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
@@ -74,7 +74,7 @@ const DesignedForGrowth = () => {
             <FundBalance/>
           </div>
         </article>
-        <article className={styles.Article}>
+        <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
               Choose your risk
