@@ -1,0 +1,98 @@
+.Title {
+  margin-top: $base-unit * 3;
+  margin-bottom: $base-unit * 4;
+  font-size: $display-font-size;
+  line-height: $display-line-height;
+  font-family: 'Quicksand', sans-serif;
+  color: $secondary;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 5;
+    margin-bottom: $base-unit * 6;
+    font-size: $grand-font-size;
+    line-height: $grand-line-height;
+  }
+}
+
+.Section {
+  margin-bottom: $base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 10;
+  }
+}
+
+.Article {
+  flex-grow: 1;
+  @media (min-width: $breakpoint-sm) {
+    flex-basis: 50%;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-sm) {
+    padding-right: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-right: $base-unit * 3;
+  }
+}
+
+.Article___lastOfType {
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-sm) {
+    padding-left: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-right: 0;
+    padding-left: $base-unit * 3;
+  }
+}
+
+.fundBalance___wrapper {
+  @media (min-width: $breakpoint-sm) {
+    transform: rotate(-12deg);
+  }
+}
+
+.Article___fundBalance {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-top: $base-unit * 3;
+    padding-bottom: $base-unit * 3;
+  }
+}
+
+.TextBlock {
+  margin-bottom: $base-unit * 3;
+  font-weight: 300;
+}
+
+.TextBlock_Header {
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-weight: 700;
+  margin-bottom: $base-unit;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 3;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+  }
+}
+
+.TextBlock_Paragraph {
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  margin-bottom: $base-unit * 3;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}
+
+.TextBlock_Paragraph___smaller {
+  margin-bottom: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+}
