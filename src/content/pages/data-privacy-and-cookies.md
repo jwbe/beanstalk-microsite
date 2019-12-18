@@ -8,11 +8,11 @@ subheading: Data privacy & cookies
 
 The Beanstalk website (www.mybeanstalk.co.uk) and Beanstalk app are provided by KidStart Limited. By using this website you agree to our privacy policy. We have tried to keep the terms clear and in plain English as far as possible.
 Beanstalk take your Privacy and Security extremely seriously. If you have any questions regarding Privacy and Security matters please contact us at:
-hello@mybeanstalk.co.uk
+beanstalk@kidstart.co.uk
 
 ## Privacy policy
 
-When you register with Beanstalk, you provide us with personal information which we store on our systems. We use and process this personal information, for the purpose of providing and improving the Beanstalk services. By using the Beanstalk website and registering with Beanstalk, you consent to our processing your personal information in accordance with the requirements of the General Data Protection Regulation. You may withdraw your consent at any time by contacting us at Hello@mybeanstalk.co.uk, and this will have the effect of cancelling your Beanstalk registration.
+When you register with Beanstalk, you provide us with personal information which we store on our systems. We use and process this personal information, for the purpose of providing and improving the Beanstalk services. By using the Beanstalk website and registering with Beanstalk, you consent to our processing your personal information in accordance with the requirements of the General Data Protection Regulation. You may withdraw your consent at any time by contacting us at beanstalk@kidstart.co.uk.
 
 Beanstalk's Data Protection Officer, who holds ultimate responsibility for the security and privacy of your data, is the Managing Director of KidStart Limited.
 

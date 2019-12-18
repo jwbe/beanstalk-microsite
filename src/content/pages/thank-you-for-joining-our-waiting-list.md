@@ -6,4 +6,6 @@ plain: true
 
 ## Thank you for joining our waiting list
 
-We have registered your interest, we will notify you by email when the Beanstalk app is ready to download.
+We're beavering away to get Beanstalk live. We will email you when the app is ready to download.
+
+If you know anyone else who would be interested in using Beanstalk please tell them to join the list too.
