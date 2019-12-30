@@ -15,8 +15,12 @@ const CookiesNotice = () => {
     return window.localStorage.getItem('BeanstalkCookiesNotice');
   }
 
+  const onAppPage = () => {
+    return window.location.href.slice(-3) === 'app'
+  }
 
   return (
+    onAppPage() ? null :
     !getShownStatus() ?
     <div className={isVisible ? styles.CookiesNotice_wrapper : `${styles.CookiesNotice_wrapper} ${styles.CookiesNotice_wrapper___hidden}`}>
       <div className={styles.CookiesNotice}>
