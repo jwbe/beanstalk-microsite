@@ -96,3 +96,14 @@
     line-height: $caption-line-height;
   }
 }
+
+.Iphone_screenshot {
+  width: 23.4375rem;
+  height: 41.6875rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Iphone_screenshot___respondToMessage {
+  background-image: url('../homepage/images/homepage-kidstart-import-accounts-setup.png');
+}

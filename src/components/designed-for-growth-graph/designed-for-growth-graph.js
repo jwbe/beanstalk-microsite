@@ -49,7 +49,7 @@ const DesignedForGrowthGraph = () => {
             <div className={styles.Diagram_graph_bars}>
               {graphBar(25)}
               {graphBar(75)}
-              {graphBar(75)}
+              {graphBar(100)}
               {graphBar(75)}
               {graphBar(75)}
             </div>

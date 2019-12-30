@@ -1,0 +1,12 @@
+.Iphone_screenshot___accountSetup {
+  background-image: url('../homepage/images/homepage-kidstart-import-accounts-setup.png');
+}
+
+.Iphone {
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: $breakpoint-sm - .0625em) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

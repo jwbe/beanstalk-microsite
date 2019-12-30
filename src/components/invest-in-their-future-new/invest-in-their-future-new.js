@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import styles from '../info-page/info-page.module.scss';
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
-
+import uniqueStyles from './invest-in-their-future-new.module.scss';
+import Iphone from '../iphone/iphone';
 
 const InvestInTheirFuture = () => {
   const [showDiagramGraph, setShowDiagramGraph] = useState(true);
@@ -13,60 +14,30 @@ const InvestInTheirFuture = () => {
           Invest in their future
         </h1>
         <h2 className={titleStyles.TitleBlock_subheading}>
-          The new, really easy way to build a pot of gold to give your child a launch into adult life
+          The new, really easy way to build a pot of gold<br className={titleStyles.TitleBlock_br___smUp}></br> to give your child a launch into adult life
         </h2>
       </div>
       <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
-              Imperdiet sed metus vitae
+              Child savings reimagined
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              You don't need a penny to get started - KidStart, friends and family can all contribute
+              We believe every family can build a nest egg for the children they love. The Beanstalk app takes the pain away from saving and makes it easy for grandparents and others to contribute. 
             </p>
           </div>
         </article>
-        <article className={styles.Article}>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Imperdiet sed metus vitae
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              Save little and often with round-ups or top up when the going is good
-            </p>
-          </div>
-        </article>
-      </section>
-
-
-      <section className={styles.Section}>
-        <article className={styles.Article}>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Imperdiet sed metus vitae
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              Grow your child’s savings by investing with two simple choices
-            </p>
-          </div>
-        </article>
-
-        <article className={styles.Article}>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Imperdiet sed metus vitae
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              Etiam dolor lacus, imperdiet sed metus vitae, tempus scelerisque augue. Suspendisse a iaculis quam, iaculis aliquet.
-            </p>
-          </div>
+        <article className={`${styles.Article}`}>
+          <Iphone className={uniqueStyles.Iphone}>
+            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___accountSetup}`}></div>
+          </Iphone>
         </article>
       </section>
 
     </>
   );
 };
-
+ 
 export default InvestInTheirFuture;
 
