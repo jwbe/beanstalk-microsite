@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import styles from '../info-page/info-page.module.scss';
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
 
+import uniqueStyles from './family-saving-new.module.scss';
+
+import Iphone from '../iphone/iphone';
 
 const FamilySaving = () => {
   const [showDiagramGraph, setShowDiagramGraph] = useState(true);
@@ -12,59 +15,31 @@ const FamilySaving = () => {
         <h1 className={titleStyles.TitleBlock_heading}>
           Family Saving
         </h1>
-        <h2 className={titleStyles.TitleBlock_subheading}>
-          If your total is under £5 it will roll on to the next week or you can edit the total to keep the pot growing.
-        </h2>
       </div>
       <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
-              Etiam dolor lacus
+              Invite grandparents and others to link to your Beanstalk accounts
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              Get all the family involved!! Beanstalk makes it really easy for Grandparents, friends and your wider family to save for your child.
+              Your family and close friends can be linked to your Beanstalk accounts which allows them to make top-ups, set regular contributions and see how much they've contributed to your child's account.  
             </p>
           </div>
+          <div className={`${uniqueStyles.Image_contributors}`}></div>
         </article>
       </section>
-
 
       <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Etiam dolor lacus
-            </h2>
             <p className={styles.TextBlock_Paragraph}>
-              Etiam dolor lacus, imperdiet sed metus vitae, tempus scelerisque augue. Suspendisse a iaculis quam, iaculis aliquet.
+              Contributors can attach messages to their top-ups which you can reply to.
             </p>
           </div>
-        </article>
-
-        <article className={styles.Article}>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Etiam dolor lacus
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              Etiam dolor lacus, imperdiet sed metus vitae, tempus scelerisque augue. Suspendisse a iaculis quam, iaculis aliquet.
-            </p>
-          </div>
-        </article>
-      </section>
-
-
-      <section className={styles.Section}>
-        <article className={styles.Article}>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Etiam dolor lacus
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              Etiam dolor lacus, imperdiet sed metus vitae, tempus scelerisque augue. Suspendisse a iaculis quam, iaculis aliquet.
-            </p>
-          </div>
+          <Iphone className={uniqueStyles.Iphone}>
+            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___respondToMessage}`}></div>
+          </Iphone>
         </article>
       </section>
 
