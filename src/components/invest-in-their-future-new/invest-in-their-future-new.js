@@ -13,9 +13,6 @@ const InvestInTheirFuture = () => {
         <h1 className={titleStyles.TitleBlock_heading}>
           Invest in their future
         </h1>
-        <h2 className={titleStyles.TitleBlock_subheading}>
-          The new, really easy way to build a pot of gold<br className={titleStyles.TitleBlock_br___smUp}></br> to give your child a launch into adult life
-        </h2>
       </div>
       <section className={styles.Section}>
         <article className={styles.Article}>

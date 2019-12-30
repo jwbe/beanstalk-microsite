@@ -17,9 +17,6 @@ const SavingMadeSimple = () => {
         <h1 className={titleStyles.TitleBlock_heading}>
           Saving Made Simple
         </h1>
-        <h2 className={titleStyles.TitleBlock_subheading}>
-          Beanstalk gives you lots of ways to put<br className={titleStyles.TitleBlock_br___smUp}></br> more aside for your children
-        </h2>
       </div>
       <section className={styles.Section}>
         <article className={styles.Article}>
