@@ -86,7 +86,7 @@ const DesignedForGrowth = () => {
               You can split and adjust your child's investment whenever you want, following its performance on the app.
             </p>
             <p className={styles.TextBlock_Paragraph___smaller}>
-              Risk warning
+              As with any investment the value can go down as well as up.
             </p>
           </div>
         </article>
