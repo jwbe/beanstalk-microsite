@@ -1,0 +1,12 @@
+.Iphone_screenshot___roundUps {
+  background-image: url('../../images/round-ups-screenshot.png');
+}
+
+.Iphone {
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: $breakpoint-sm - .0625em) {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
