@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { withPrefix } from 'gatsby';
 import styles from './pod.module.scss';
 
 import lightbulbIcon from '../../images/icons/lightbulb--secondary.svg';
@@ -15,7 +16,8 @@ const Pod = ({
   link,
   heading,
   description,
-  type
+  type,
+  externalLink
 }) => {
 
   let iconSelect = null;
@@ -49,7 +51,8 @@ const Pod = ({
   return (
     <div className={styles.Pod_wrapper}>
       <article className={styles.Pod}>
-        <Link className={styles.Pod_link} to={link}/>
+        {link ? <Link className={styles.Pod_link} to={link}/> : null}
+        {externalLink ? <a className={styles.Pod_link} href={externalLink} target="_blank"></a> : null}
         <div className={styles.Pod_icon_wrapper}>
           <img className={styles.Pod_icon} src={iconSelect} width='56' height='56'/>
         </div>
