@@ -1,7 +1,6 @@
 ---
 slug: key-features-documents
 heading: Key Features Documents
-subheading: Subheader needed
 media: true
 ---
 
