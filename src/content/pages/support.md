@@ -8,8 +8,8 @@ import Pods from '../../components/pods/pods'
 import Pod from '../../components/pod/pod'
 
 <Pods>
-  <Pod link={'/faqs'} heading={'Faqs'} description={'2 lines of description'} type={'faqs'}/>
-  <Pod link={'/articles'} heading={'Knowledge base'} description={'2 lines of description'} type={'knowledge'}/>
-  <Pod link={'/legals'} heading={'Legals'} description={'2 lines of description'} type={'legals'}/>
-  <Pod link={'/contact-us'} heading={'Contact us'} description={'2 lines of description'} type={'contact'}/>
+  <Pod link={'/faqs'} heading={'Faqs'} description={'Answers to common questions'} type={'faqs'}/>
+  <Pod link={'/articles'} heading={'Knowledge base'} description={'Articles and News'} type={'knowledge'}/>
+  <Pod link={'/legals'} heading={'Legals'} description={'T&Cs and other documents'} type={'legals'}/>
+  <Pod link={'/contact-us'} heading={'Contact us'} description={'Email our support team'} type={'contact'}/>
 </Pods>

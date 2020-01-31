@@ -40,6 +40,9 @@
   font-family: 'Quicksand', sans-serif;
   color: $white;
   text-align: center;
+  &:only-child {
+    margin-bottom: $base-unit * 12;
+  }
   @media (max-width: $breakpoint-md - .0625em) {
     margin-top: $base-unit * 2;
   }

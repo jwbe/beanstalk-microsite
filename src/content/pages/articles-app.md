@@ -1,7 +1,7 @@
 ---
 slug: articles-app
 heading: Knowledge base
-subheading: Articles about finance and using Beanstalk.
+subheading: Articles about saving and investing.
 app: true
 ---
 import Articles from '../../components/articles/articles'

@@ -1,7 +1,6 @@
 ---
 slug: key-features-documents-app
 heading: Key Features Documents
-subheading: Subheader needed
 app: true
 ---
 

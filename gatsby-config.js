@@ -11,15 +11,15 @@ module.exports = {
     menuLinks: [
       {
         name: 'About Beanstalk',
-        link: '/coming-soon'
+        link: '/about-beanstalk'
       },
       {
         name: 'Support',
-        link: '/coming-soon'
+        link: '/support'
       },
       {
         name: 'Articles',
-        link: '/coming-soon'
+        link: '/articles'
       },
       {
         isButton: true,
