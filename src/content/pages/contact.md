@@ -3,7 +3,9 @@ slug: contact-us
 heading: Get in touch with us
 subheading: Do check out our FAQs for the answers to our most popular queries
 ---
-import Contact from '../../components/contact/contact';
 
-<Contact/>
+## Contact us
 
+Please contact us by emailing <a href="mailto:support@beanstalk.co.uk">support@beanstalkapp.co.uk</a>.
+
+We’ll aim to get back to you within 1 working day 

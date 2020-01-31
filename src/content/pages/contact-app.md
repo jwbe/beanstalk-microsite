@@ -10,4 +10,6 @@ import BackButton from '../../components/back-button/back-button'
 
 ## Contact us
 
-Please contact us by emailing<a href="mailto:support@beanstalk.co.uk">support@beanstalkapp.co.uk</a>.
+Please contact us by emailing <a href="mailto:support@beanstalk.co.uk">support@beanstalkapp.co.uk</a>.
+
+We’ll aim to get back to you within 1 working day 
