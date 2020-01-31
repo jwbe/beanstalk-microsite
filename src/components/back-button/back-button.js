@@ -8,7 +8,6 @@ const BackButton = ({
   return (
     <div className={styles.button}>
       <Button link={link} 
-        tabletColour={TABLET_COLOURS.SECONDARY}
         desktopColour={DESKTOP_COLOURS.WHITE}
         desktopSize={DESKTOP_SIZES.MEDIUM}
         desktopBackground={DESKTOP_BACKGROUNDS.SECONDARY}
