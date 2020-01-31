@@ -5,7 +5,7 @@ subheading: These are some of the most common questions users have about Beansta
 app: true
 ---
 import Faqs from '../../components/faqs/faqs'
-import BackToSupport from '../../components/back-to-support/backToSupport'
+import BackButton from '../../components/back-button/back-button'
 
-<BackToSupport/>
+<BackButton link='/support-app'/>
 <Faqs/>

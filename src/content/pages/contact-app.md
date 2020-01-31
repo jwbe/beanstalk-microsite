@@ -5,7 +5,7 @@ subheading: Do check out our FAQs for the answers to our most popular queries
 app: true
 ---
 import Contact from '../../components/contact/contact';
-import BackToSupport from '../../components/back-to-support/backToSupport'
+import BackButton from '../../components/back-button/back-button'
 
-<BackToSupport/>
+<BackButton link='/support-app'/>
 <Contact/>

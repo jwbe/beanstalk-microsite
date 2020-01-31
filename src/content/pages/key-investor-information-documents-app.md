@@ -7,6 +7,9 @@ app: true
 
 import Pods from '../../components/pods/pods'
 import Pod from '../../components/pod/pod'
+import BackButton from '../../components/back-button/back-button'
+
+<BackButton link='/legals-app'/>
 
 <Pods>
   <Pod externalLink={'/docs/Fidelity-Index-World-KIID.pdf'} heading={'Fidelity Index World KIID'} description={'Key Investor Information Document'} type={'isa-terms'}/>

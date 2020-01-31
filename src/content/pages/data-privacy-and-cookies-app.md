@@ -5,6 +5,10 @@ subheading: Data privacy & cookies
 app: true
 ---
 
+import BackButton from '../../components/back-button/back-button'
+
+<BackButton link='/legals-app'/>
+
 ## What terms and conditions apply?
 
 The Beanstalk website (www.mybeanstalk.co.uk) and Beanstalk app are provided by KidStart Limited. By using this website you agree to our privacy policy. We have tried to keep the terms clear and in plain English as far as possible.
