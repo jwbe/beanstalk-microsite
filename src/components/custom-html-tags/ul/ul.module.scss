@@ -4,5 +4,8 @@
   list-style-position: inside;
   li {
     margin-bottom: $base-unit * 2;
+    ul {
+      list-style-type: circle;
+    }
   }
 }
