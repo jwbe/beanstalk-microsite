@@ -4,12 +4,6 @@ heading: Privacy
 subheading: Data privacy & cookies
 ---
 
-## What terms and conditions apply?
-
-The Beanstalk website (https://beanstalkapp.co.uk/) and Beanstalk app are provided by KidStart Limited. By using this website you agree to our privacy policy. We have tried to keep the terms clear and in plain English as far as possible.
-Beanstalk take your Privacy and Security extremely seriously. If you have any questions regarding Privacy and Security matters please contact us at:
-support@beanstalkapp.co.uk
-
 ## Privacy policy
 
 When you register and use Beanstalk, you provide us with personal information which we store on our systems. We take your privacy very seriously and lay out in this privacy policy the type of information we collect from you and how we use it.
