@@ -1,6 +1,7 @@
 ---
 category: Direct debit and investment timing
 heading: When does money get invested?
+order: 5
 ---
 
 Buying and selling of funds happens once a week, normally on a Tuesday.

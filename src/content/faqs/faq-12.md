@@ -1,6 +1,7 @@
 ---
 category: The Beanstalk Account
 heading: Who is eligible for a Beanstalk adult account?
+order: 8
 ---
 
 You must be over 18 and resident in the UK. We do not accept applications from US citizens. You cannot subscribe to more than one Stocks & Shares ISA in the current tax year; if you have done so, you will need to transfer this to Beanstalk.

@@ -1,6 +1,7 @@
 ---
 category: About Beanstalk
 heading: How does Beanstalk help you save money?
+order: 2
 ---
 
 The Beanstalk app brings together a number of tools to help you put money aside for yourself and your kids.

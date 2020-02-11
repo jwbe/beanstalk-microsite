@@ -1,6 +1,7 @@
 ---
 category: The Beanstalk Account
 heading: Who is eligible for a Beanstalk child account?
+order: 3
 ---
 
 The child must be a UK permanent resident aged under 16 at time of application.

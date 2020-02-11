@@ -1,6 +1,7 @@
 ---
 category: Round ups
 heading: When will the round ups be collected?
+order: 4
 ---
 
 The total round ups are collected from your bank by direct debit on a weekly basis as follows.

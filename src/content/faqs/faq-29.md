@@ -1,6 +1,7 @@
 ---
 category: Direct debit and investment timing
 heading: When are direct debits collected?
+order: 4
 ---
 
 We collect one off top ups and regular monthly contributions at different times as detailed below. We will notify you by email in advance of:

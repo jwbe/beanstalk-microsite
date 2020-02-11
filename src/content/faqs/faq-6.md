@@ -1,6 +1,7 @@
 ---
 category: The Beanstalk Account
 heading: What is an ISA?
+order: 2
 ---
 
 An ISA is a tax-efficient way to save or invest as all income and capital gains within an ISA are exempt from UK personal tax. There are several types of ISAs and the Beanstalk ISA is a Stocks & Shares ISA.

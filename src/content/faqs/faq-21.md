@@ -1,6 +1,7 @@
 ---
 category: Saving together
 heading: What do it do if I have received an invitation to save for a child?
+order: 2
 ---
 
 Congratulations! You’ve been invited by the parent to help save for a child to give them the best possible launch into adult life.

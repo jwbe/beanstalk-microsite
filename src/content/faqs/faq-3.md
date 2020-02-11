@@ -1,6 +1,7 @@
 ---
 category: About Beanstalk
 heading: Where does the money get saved and invested?
+order: 3
 ---
 
 Through the App you need to set up a Beanstalk Account for anyone you wish to save for (your children and/or yourself). If you have been invited to save for a child, their account will have been set up already by the parent.

@@ -1,6 +1,7 @@
 ---
 category: Investing with Beanstalk
 heading: How do allocations work?
+order: 2
 ---
 
 Purchases and sales of funds through Beanstalk are made once a week. We use the allocation that is set on your account on the previous working day to determine the allocation that is applied to any new contributions received at that point.

@@ -1,6 +1,7 @@
 ---
 category: About Beanstalk
 heading: Does Beanstalk have any fees?
+order: 4
 ---
 
 Beanstalk has a simple and inexpensive fee structure, which consists an annual fee equal to 0.5% of the value of any Beanstalk Account.

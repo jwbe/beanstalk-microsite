@@ -1,6 +1,7 @@
 ---
 category: Direct debit and investment timing
 heading: How do I know which account the direct debit is for?
+order: 2
 ---
 
 We will use a different direct debit instruction for each account that you open. Each has a separate reference which we will communicate to you. 

@@ -1,6 +1,7 @@
 ---
 category: About Beanstalk
 heading: What is Beanstalk?
+order: 1
 ---
 
 Beanstalk is a mobile app designed to help families work together to save money for their children’s future.

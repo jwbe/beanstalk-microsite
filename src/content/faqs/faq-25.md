@@ -1,6 +1,7 @@
 ---
 category: KidStart
 heading: What is KidStart?
+order: 1
 ---
 
 KidStart is the company behind the Beanstalk app. Established in 2008, KidStart has been helping families to save millions of pounds for their children for 12 years.
