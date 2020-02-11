@@ -26,7 +26,9 @@ Understanding of product and risk
 * You have been given the opportunity to read the Key Features Document.
 * You understand that the value of your investments could rise or fall and that you could receive back less than you invested.
 * You understand that tax rules and relief may change in future.
-* No advice has been given to you by Beanstalk or the Platform Provider 
-Application checks
+* No advice has been given to you by Beanstalk or the Platform Provider
+
+### Application checks
+
 In order to comply with Money Laundering regulations, Beanstalk may be required to confirm your identity and source of any funds you contribute. 
 You hereby authorise us to make whatever checks are necessary to verify your identity and you understand that this might include checks with a credit reference agency; this check will be used only for the purpose of confirming your identity. 
