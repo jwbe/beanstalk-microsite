@@ -1,6 +1,7 @@
 ---
 category: Round ups
 heading: How do I round up transactions?
+order: 2
 ---
 
 The app shows you purchases that you have made over the last 7 days. These are updated once a day so today you will see any purchases you made yesterday along with the round up amount. To round up you swipe the purchase to the right.

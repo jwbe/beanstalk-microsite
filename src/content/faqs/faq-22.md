@@ -1,6 +1,7 @@
 ---
 category: Round ups
 heading: How does the round up tool work?
+order: 1
 ---
 
 The round up tool uses the Government-backed Open Banking initiative through which you can give your bank permission to let us securely display your bank data to you. This is read only, with no access to change any of your details or make transactions.
