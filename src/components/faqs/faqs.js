@@ -4,9 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import H2 from '../custom-html-tags/h2/h2';
 import styles from './faqs.module.scss';
 
-if (typeof window !== 'undefined') {
-  require('details-polyfill');
-}
+require('details-polyfill');
 
 const Faqs = () => {
   const data = useStaticQuery(graphql`
