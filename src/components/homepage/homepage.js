@@ -157,7 +157,7 @@ const Homepage = () => {
           <div className={styles.Homepage_SimpleBars}>
             <SimpleBars/>
             <p>
-              Over 50 years UK Shares returned over four times more than cash. <br/>Source: Barclays equity gilt study 2019
+              Over 50 years UK Shares returned over four times more than cash. <strong>Source: Barclays equity gilt study 2019</strong>
             </p>
           </div>
         </Column>
