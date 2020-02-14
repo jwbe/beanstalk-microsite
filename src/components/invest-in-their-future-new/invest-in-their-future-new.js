@@ -11,17 +11,14 @@ const InvestInTheirFuture = () => {
     <>
       <div className={`${titleStyles.TitleBlock} ${styles.TitleBlock___plant}`}>
         <h1 className={titleStyles.TitleBlock_heading}>
-          Invest in their future
+          Changing the way families save
         </h1>
       </div>
       <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Child savings reimagined
-            </h2>
             <p className={styles.TextBlock_Paragraph}>
-              We believe every family can build a nest egg for the children they love. The Beanstalk app takes the pain away from saving and makes it easy for grandparents and others to contribute. 
+              We believe every family can build a nest egg for the children they love. The Beanstalk app makes it easy whatever your family’s shape or budget.
             </p>
           </div>
         </article>

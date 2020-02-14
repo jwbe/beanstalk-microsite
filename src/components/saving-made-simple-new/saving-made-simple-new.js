@@ -35,6 +35,29 @@ const SavingMadeSimple = () => {
           <TopUp title={'Round Ups Total'} recipient={'£10.33 total Round ups this week'} date={'24 Nov 9:26am'} icon={iconWallet} order={TOP_UP_ORDER.THIRD}/>
         </article>
       </section>
+      <section>
+        <article className={styles.Article}>
+          <div className={styles.TextBlock}>
+            <h2 className={styles.TextBlock_Header}>
+              Moneyback on your shopping
+            </h2>
+            <p className={styles.TextBlock_Paragraph}>
+              Collect money back on thousands of retailers including Amazon, Ebay, John Lewis and Sainsburys. All dropped straight into your child’s account.
+            </p>
+          </div>
+        </article>
+        <article className={styles.Article}>
+          <div className={styles.TextBlock}>
+            <h2 className={styles.TextBlock_Header}>
+              Round up your purchases
+            </h2>
+            <p className={styles.TextBlock_Paragraph}>
+              Link your bank using government backed open banking and your can round up your purchases to save little and often.
+            </p>
+          </div>
+        </article>
+      </section>
+
     </>
   );
 };

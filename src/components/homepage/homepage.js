@@ -23,6 +23,8 @@ import iconFamily from './images/icon_family.svg';
 import iconWallet from './images/icon_wallet.svg';
 import iconNameLabel from './images/icon_nameLabel.svg';
 
+import AppBadges from './app-badges/app-badges';
+
 const sarahSlug = <span>£50.00 sent to Sarah by Jane Doe.<br/> <span className={styles.Homepage_topUps_message}>Happy birthday to little…</span></span>
 
 const Homepage = () => {
@@ -33,12 +35,12 @@ const Homepage = () => {
         <DesktopNavigation className={styles.Homepage_desktopNavigation} layoutVariant={{homepage:true}}/>
         <div className={styles.Homepage_header_content}>
           <h1 className={styles.Homepage_heading}>
-            Changing the way <br/>families save for their kids
+            The family app <br/>that invests in your kids
           </h1>
           <p className={styles.Homepage_subheading}>
-            Give your kids a launch into adult life with a tax-free<br className={styles.Homepage_heading_lineBreak}/> nest egg that the whole family can contribute to.
+            Beanstalk helps families work together to build a pot of money <br className={styles.Homepage_heading_lineBreak}/> to give their kids the best possible launch into adult life
           </p>
-          <WaitingList className={styles.Homepage_header_waitingList}/>
+          <AppBadges/>
         </div>
         <div className={styles.Homepage_header_background_wrapper}>
           <div className={styles.Homepage_header_background}>
@@ -81,9 +83,12 @@ const Homepage = () => {
         <Column className={styles.Homepage_column___copy}>
           <Point
             icon={iconPiggybank}
-            heading='Invest in their future'>
+            heading='Changing the way families save'>
             <p>
-              We believe every family can build a nest egg for the children they love. You just need some magic beans to get started. Well alright we don't have magic beans but we have got an app that takes the pain away from saving and makes it really easy for grandparents and others to contribute.... pretty wizard.
+              Beanstalk makes saving and investing easy whatever your family’s shape or budget.  
+            </p>
+            <p>
+              With no minimum or regular contribution required, you or anyone you invite can contribute whenever you want whether it is £10 or £1000, collect free savings on your shopping and round up your purchases to invest little and often.
             </p>
           </Point>
           <div className={styles.Homepage_motherAndBabyCartoon}>
@@ -95,13 +100,16 @@ const Homepage = () => {
       <Section className={styles.Homepage_section}>
         <Column className={`${styles.Homepage_column___copy}`}>
           <Point
-            icon={iconCashInHand}
-            heading='Saving made simple'>
+            icon={iconFamily}
+            heading='Family Saving'>
             <p>
-              We're dragging children's savings kicking and screaming into the 21st century. If you love taking birth certificates in branch and waiting 6 months for paper statements, boy have we not got the right product for you. 
+              Invite grandparents, or other family & friends through the app and they will be linked to your children’s accounts.  
             </p>
             <p>
-              If on the other hand you expect a slick user experience with fantastic features to help you (and grandparents) save little and often please pat yourself on the back while downloading the app.
+              You and they can see what they have given, and can swap messages about their gifts.
+            </p>
+            <p>
+              A great way for grandparents to save for their grandchildren.
             </p>
           </Point>
           <div className={styles.Homepage_topUps}>
@@ -119,42 +127,18 @@ const Homepage = () => {
         </Column>
       </Section>
 
-      <Section className={`${styles.Homepage_section} ${styles.Homepage_section___thirdSection}`}>
-        <Column className={`${styles.Homepage_column___figure} ${styles.Homepage_column___figure} ${styles.Homepage_column___centredAtSm}`}>
-          <div className={styles.Homepage_SimpleBars}>
-            <SimpleBars/>
-            <p>
-              * Barclays Equity Gilt Study 2019
-            </p>
-          </div>
-        </Column>
-        <Column className={styles.Homepage_column___copy}>
-          <Point
-            icon={iconRosette}
-            heading='Designed for growth'>
-            <>
-              <p>
-                Would you put your pension in a bank account where the interest rate doesn't keep up with inflation? Do you stuff money under the mattress? Of course not – and there's no reason to do the same with the money you save for your kids. 
-              </p>
-              <p>
-                Over the last 50 years the growth from shares has been over 4 times higher than interest paid on cash*. There are ups and downs but it pays to think long term when planning for your kids future. We also have one of the lowest fees in the industry – just 0.5%. See how we compare with others.
-              </p>
-              <p>
-                The value of your savings may go up as well as down.
-              </p>
-            </>
-          </Point>
-        </Column>
-      </Section>
-
       <Section className={styles.Homepage_section}>
         <Column className={styles.Homepage_column___copy}>
           <Point
-            icon={iconFamily}
-            heading='Family saving'>
+            icon={iconCashInHand}
+            heading='Reimagining child savings'>
             <>
-              <p>Get all the family involved! Grandparents, friends and the wider family can save for your child too. It's simple and secure to set up with no tricky forms or visits in branch.</p>
-              <p>Personal messages can be sent with money gifts to mark special occasions. Replies of thanks can be sent back straight away letting them know how much you appreciate their support.</p>
+              <p>
+                We are dragging children’s savings kicking and screaming into the 21st century! Through the app you can open and manage accounts for all your children - and yourself if you would like.
+              </p>
+              <p>
+                No waiting for statements! You can see what they have at any time; top up or gift all at the touch on your phone.
+              </p>
             </>
           </Point>
         </Column>
@@ -168,6 +152,34 @@ const Homepage = () => {
         </Column>
       </Section>
 
+      <Section className={`${styles.Homepage_section} ${styles.Homepage_section___thirdSection}`}>
+        <Column className={`${styles.Homepage_column___figure} ${styles.Homepage_column___figure} ${styles.Homepage_column___centredAtSm}`}>
+          <div className={styles.Homepage_SimpleBars}>
+            <SimpleBars/>
+            <p>
+              Over 50 years UK Shares returned over four times more than cash.
+            </p>
+          </div>
+        </Column>
+        <Column className={styles.Homepage_column___copy}>
+          <Point
+            icon={iconRosette}
+            heading='Designed for growth'>
+            <>
+              <p>
+                Beanstalk offers stocks & shares Junior / adult ISAs so any returns are tax free. 
+              </p>
+              <p>
+                You can choose to split your savings in whatever proportion between a cash fund and shares fund; many people choose stocks & shares when saving over longer periods as growth can compensate for the ups and downs.
+              </p>
+              <p>
+                At 0.5% our fee is one of the lowest meaning more saved for your kids. Learn more
+              </p>
+            </>
+          </Point>
+        </Column>
+      </Section>
+
       <Section className={styles.Homepage_section}>
         <div className={styles.Homepage_partners}>
           <div className={styles.Homepage_partners_partner}>
@@ -177,7 +189,7 @@ const Homepage = () => {
 
       <Section className={styles.Homepage_section}>
         <p className={styles.Homepage_section_disclaimerText}>
-          Past performance is not a reliable indication of future performance
+          As with any investment the value can go down as well as up. Past performance is no indicator of future performance. The tax treatment of the Junior Stocks and Shares ISA depends on your individual circumstances and may be subject to change in the future.
         </p>
       </Section>
 
