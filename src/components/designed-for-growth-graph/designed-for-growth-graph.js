@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import styles from './designed-for-growth-graph.module.scss';
 
 
-const graphBar = (height) => {
+const graphBar = ({
+  height,
+  kidstart
+}) => {
   return (
     <div className={styles.graphBar_wrapper}>
-      <div className={styles.Diagram_graph_bar} style={{height: `${height}%`}}>
+      <div className={`${kidstart ? styles.Diagram_graph_bar_kidstart : null} ${styles.Diagram_graph_bar}`} style={{height: `${height}%`}}>
 
       </div>
     </div>
@@ -22,7 +25,7 @@ const DesignedForGrowthGraph = () => {
           Fees vs Leading Child Savings Providers
         </div>
         <div className={`${styles.Diagram_tabs_tab} ${!showDiagramGraph ? styles.Diagram_tabs_tab___active : null}`} onClick={() => setShowDiagramGraph(false)}>
-          Fees vs Selected Investment Programs
+          Fees vs Selected Investment Platforms
         </div>
       </div>
       {
@@ -47,7 +50,7 @@ const DesignedForGrowthGraph = () => {
               </div>
             </div>
             <div className={styles.Diagram_graph_bars}>
-              {graphBar(25)}
+              {graphBar(25, true)}
               {graphBar(75)}
               {graphBar(100)}
               {graphBar(75)}
@@ -92,6 +95,11 @@ const DesignedForGrowthGraph = () => {
                 Yes
               </div>
             </div>
+          </div>
+          <div className={styles.Diagram_graph_note_wrapper}>
+            <p className={styles.Diagram_note}>
+              Note: Others run their own funds so fund fees included in comparison.
+            </p>
           </div>
         </div>
         :

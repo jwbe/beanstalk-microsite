@@ -34,8 +34,8 @@ const DesignedForGrowth = () => {
 
       </section>
 
-      <section>
-        <article className={styles.Article}>
+      <section className={styles.Section}>
+        <article>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
               Tax free Junior ISA and adult ISA

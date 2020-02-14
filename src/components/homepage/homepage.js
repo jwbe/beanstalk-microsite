@@ -157,7 +157,7 @@ const Homepage = () => {
           <div className={styles.Homepage_SimpleBars}>
             <SimpleBars/>
             <p>
-              Over 50 years UK Shares returned over four times more than cash.
+              Over 50 years UK Shares returned over four times more than cash. <br/>Source: Barclays equity gilt study 2019
             </p>
           </div>
         </Column>
@@ -167,13 +167,13 @@ const Homepage = () => {
             heading='Designed for growth'>
             <>
               <p>
-                Beanstalk offers stocks & shares Junior / adult ISAs so any returns are tax free. 
+                Beanstalk offers stocks & shares Junior and adult ISAs so any returns are tax free. 
               </p>
               <p>
                 You can choose to split your savings in whatever proportion between a cash fund and shares fund; many people choose stocks & shares when saving over longer periods as growth can compensate for the ups and downs.
               </p>
               <p>
-                At 0.5% our fee is one of the lowest meaning more saved for your kids. Learn more
+                At 0.5% our fee is one of the lowest meaning more saved for your kids. <Link to={"/designed-for-growth"}>Learn more</Link>
               </p>
             </>
           </Point>
@@ -189,7 +189,7 @@ const Homepage = () => {
 
       <Section className={styles.Homepage_section}>
         <p className={styles.Homepage_section_disclaimerText}>
-          As with any investment the value can go down as well as up. Past performance is no indicator of future performance. The tax treatment of the Junior Stocks and Shares ISA depends on your individual circumstances and may be subject to change in the future.
+          As with any investment the value can go down as well as up. Past performance is no indicator of future performance. The tax treatment of ISAs depends on your individual circumstances and may be subject to change in the future.
         </p>
       </Section>
 

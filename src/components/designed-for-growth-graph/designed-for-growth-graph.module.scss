@@ -196,6 +196,15 @@ $graph-bar-colour: $secondary;
   }
 }
 
+.Diagram_graph_note_wrapper {
+  display: flex;
+  justify-content: center;
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+  }
+}
+
 .Diagram_graph_minimumContribution {
   justify-content: center;
   align-items: flex-end;

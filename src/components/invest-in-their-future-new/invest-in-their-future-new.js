@@ -29,6 +29,27 @@ const InvestInTheirFuture = () => {
         </article>
       </section>
 
+      <section className={styles.Section}>
+        Some of the great features
+
+        Family saving
+
+        Link grandparents & others to your children: It’s a really simple way for grandparents to save for grandchildren
+
+        No minimums
+
+        No need to commit to upfront or regular payments, you or others can top up whenever you want
+
+        Easy ways to save
+
+        Free moneyback on your shopping, round up your purchases, easy top ups
+
+        Single view
+
+        See and manage all your children’s accounts (and your own) in one app
+
+      </section>
+
     </>
   );
 };

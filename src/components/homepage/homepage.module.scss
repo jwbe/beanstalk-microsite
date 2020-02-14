@@ -339,6 +339,7 @@
     line-height: $display-line-height;
   }
   @media (min-width: $breakpoint-md) {
+    margin-top: 3.5rem;
     margin-bottom: $base-unit * 3;
   }
 }
