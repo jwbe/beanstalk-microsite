@@ -42,6 +42,7 @@ class FundBalance extends Component {
                   defaultValue={50}
                   onChange={this.fundHandler}
                   className={styles.FundBalance_slider}
+                  step={10}
                   thumbClassName={styles.FundBalance_slider_thumb}
                   trackClassName={styles.FundBalance_slider_track}
                   renderThumb={(props, state) => <div {...props}></div>}

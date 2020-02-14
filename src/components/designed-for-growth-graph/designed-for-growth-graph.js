@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import styles from './designed-for-growth-graph.module.scss';
 
 
-const graphBar = ({
+const graphBar = (
   height,
   kidstart
-}) => {
+) => {
   return (
     <div className={styles.graphBar_wrapper}>
       <div className={`${kidstart ? styles.Diagram_graph_bar_kidstart : null} ${styles.Diagram_graph_bar}`} style={{height: `${height}%`}}>

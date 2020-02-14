@@ -66,9 +66,23 @@ $graph-bar-colour: $secondary;
 }
 
 .Diagram_graph_bar {
+  position: relative;
   margin-top: auto;
   width: 100%;
   background-color: $graph-bar-colour;
+}
+
+.Diagram_graph_bar_kidstart {
+  &:before {
+    content: '';
+    top: -.75rem;
+    right: 0;
+    left: 0;
+    position: absolute;
+    height: .75rem;
+    width: 100%;
+    background-color: $primary;
+  }
 }
 
 .Diagram_graph {
