@@ -30,24 +30,45 @@ const InvestInTheirFuture = () => {
       </section>
 
       <section className={styles.Section}>
-        Some of the great features
+        <article>
+          <h2 className={`${styles.TextBlock_Header} ${styles.TextBlock_Header___listTop}`}>Some of the great features</h2>
 
-        Family saving
+          <div className={styles.TextBlock_wrapper}>
+            <h2 className={`${styles.TextBlock_Header} ${styles.TextBlock_Header___list}`}>
+              Family saving
+            </h2>
+            <p className={`${styles.TextBlock_Paragraph} ${styles.TextBlock_Paragraph___list}`}>
+              Link grandparents & others to your children: It’s a really simple way for grandparents to save for grandchildren
+            </p>
+          </div>
 
-        Link grandparents & others to your children: It’s a really simple way for grandparents to save for grandchildren
+          <div className={styles.TextBlock_wrapper}>
+            <h2 className={`${styles.TextBlock_Header} ${styles.TextBlock_Header___list}`}>
+              No minimums
+            </h2>
+            <p className={`${styles.TextBlock_Paragraph} ${styles.TextBlock_Paragraph___list}`}>
+              No need to commit to upfront or regular payments, you or others can top up whenever you want
+            </p>
+          </div>
 
-        No minimums
+          <div className={styles.TextBlock_wrapper}>
+            <h2 className={`${styles.TextBlock_Header} ${styles.TextBlock_Header___list}`}>
+              Easy ways to save
+            </h2>
+            <p className={`${styles.TextBlock_Paragraph} ${styles.TextBlock_Paragraph___list}`}>
+              Free moneyback on your shopping, round up your purchases, easy top ups
+            </p>
+          </div>
 
-        No need to commit to upfront or regular payments, you or others can top up whenever you want
-
-        Easy ways to save
-
-        Free moneyback on your shopping, round up your purchases, easy top ups
-
-        Single view
-
-        See and manage all your children’s accounts (and your own) in one app
-
+          <div className={styles.TextBlock_wrapper}>
+            <h2 className={`${styles.TextBlock_Header} ${styles.TextBlock_Header___list}`}>
+              Single view
+            </h2>
+            <p className={`${styles.TextBlock_Paragraph} ${styles.TextBlock_Paragraph___list}`}>
+              See and manage all your children’s accounts (and your own) in one app
+            </p>
+          </div>
+        </article>
       </section>
 
     </>

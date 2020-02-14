@@ -66,6 +66,10 @@
   font-weight: 300;
 }
 
+.TextBlock_wrapper {
+
+}
+
 .TextBlock_Header {
   font-size: $title-font-size;
   line-height: $title-line-height;
@@ -78,6 +82,16 @@
   }
 }
 
+.TextBlock_Header___list {
+  margin-bottom: $base-unit * 2;
+  color: $secondary;
+}
+
+.TextBlock_Header___listTop {
+  font-size: $display-font-size;
+  line-height: $display-line-height;
+}
+
 .TextBlock_Paragraph {
   font-size: $subheader-font-size;
   line-height: $subheader-line-height;
@@ -87,6 +101,10 @@
     font-size: $title-font-size;
     line-height: $title-line-height;
   }
+}
+
+.TextBlock_Paragraph___list {
+
 }
 
 .TextBlock_Paragraph___smaller {
