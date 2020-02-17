@@ -7,6 +7,10 @@ import iconWallet from '../homepage/images/icon_wallet.svg';
 import iconNameLabel from '../homepage/images/icon_nameLabel.svg';
 import iconCashInHandSecondary from '../homepage/images/icon_top-ups--secondary.svg';
 
+import uniqueStyles from './saving-made-simple.module.scss';
+
+import Iphone from '../iphone/iphone';
+
 const sarahSlug = <span>£50.00 sent to Sarah by Jane Doe.<br/> <span className={styles.Homepage_topUps_message}>Happy birthday to little…</span></span>
 
 const SavingMadeSimple = () => {
@@ -46,6 +50,9 @@ const SavingMadeSimple = () => {
             </p>
           </div>
         </article>
+      </section>
+
+      <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
@@ -55,6 +62,12 @@ const SavingMadeSimple = () => {
               Link your bank using government backed open banking and your can round up your purchases to save little and often.
             </p>
           </div>
+        </article>
+
+        <article className={`${styles.Article}`}>
+          <Iphone className={uniqueStyles.Iphone}>
+            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___roundUps}`}></div>
+          </Iphone>
         </article>
       </section>
 

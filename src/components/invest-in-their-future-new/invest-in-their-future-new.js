@@ -24,7 +24,7 @@ const InvestInTheirFuture = () => {
         </article>
         <article className={`${styles.Article}`}>
           <Iphone className={uniqueStyles.Iphone}>
-            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___accountSetup}`}></div>
+            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___homepage}`}></div>
           </Iphone>
         </article>
       </section>

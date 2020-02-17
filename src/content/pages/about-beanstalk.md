@@ -8,9 +8,40 @@ import { TestimonialPod, TestimonialPods } from '../../components/testimonial-po
 
 ## About Beanstalk
 
-Beanstalk was crated by KidStart, who have been helping thousands of families save millions of pounds for their kids over the last ten years.
+Beanstalk is a brand new family saving app that has been created by the team at KidStart, the unique free shopping club for parents that gives you money for your kids whenever you shop. Over the last 10 years, KidStart has helped thousands of families save millions of pounds for their children on shopping at over 2,000 retailers.
 
-KidStart looked at the savings market for kids and thought it was broken, that's why they created Beanstalk - to make it easier and more worthwhile for parents to put something away for their kid's future.
+From our years of experience helping families save, we could see that the savings market for kids was broken. Almost every new parent we talk to wants to put something aside for their children to help launch them into adult life, but very few do.   
+
+Parents know their children face a tougher time than they did – university fees, housing costs, cost of living – but tell us it is hard to know what to do: putting money aside is tough; the choices are confusing making it difficult to decide what is right; and the products out there are often poor value, expensive or require commitment.
+
+Even when parents do something, they often just keep it in cash. With low interest rates, this may not be the right choice for longer term saving as the value can be eroded by inflation.
+
+
+## That’s why we’ve created Beanstalk – the revolutionary new way for families to make a real difference for their children
+
+### The power of family saving: 
+* We’ve made it really easy for grandparents & others to link to your children. 
+* You and they can see all the children they are saving for in the same place and how they have helped. 
+
+### We’ve ditched the complexity: 
+* It’s simple to open and manage through our app
+* You can see all your children’s accounts in one place realtime
+
+### There’s no commitment: 
+* We don’t require an upfront contribution or a regular commitment to open. 
+* Open with nothing and then top up when and if you feel able; or use one of our savings tools to help.
+
+### Lots of ways to save
+* Round ups, easy top up, free savings on your shopping…
+
+### Simple low cost investment choices
+* Choose between a global shares fund and a cash fund in whatever proportion you like
+
+### It’s great value
+* The app is free to download and use
+* Our fee is just 0.5% of account value annually, one of the lowest around.
+
+
 
 ## Here's what people say about us
 

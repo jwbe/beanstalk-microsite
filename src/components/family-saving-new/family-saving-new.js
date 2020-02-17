@@ -38,6 +38,12 @@ const FamilySaving = () => {
             </p>
           </div>
         </article>
+
+        <article className={styles.Article}>
+          <Iphone className={uniqueStyles.Iphone}>
+            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___sendInvite}`}></div>
+          </Iphone>
+        </article>
       </section>
 
       <section className={styles.Section}>
