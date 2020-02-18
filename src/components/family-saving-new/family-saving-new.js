@@ -3,8 +3,13 @@ import styles from '../info-page/info-page.module.scss';
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
 
 import uniqueStyles from './family-saving-new.module.scss';
-
 import Iphone from '../iphone/iphone';
+import inviteTool from '../../images/beanstalk-illustrations_invite-tools.png';
+
+import UL from '../custom-html-tags/ul/ul';
+import contributionTool from '../../images/beanstalk-illustrations_parent-and-contributor-view.png';
+
+import viewAndReply from '../../images/beanstalk-illustrations_messaging-gifts.png';
 
 const FamilySaving = () => {
   const [showDiagramGraph, setShowDiagramGraph] = useState(true);
@@ -28,7 +33,7 @@ const FamilySaving = () => {
       </section>
 
       <section className={styles.Section}>
-        <article className={styles.Article}>
+        <article>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
               Our unique Invitations tool
@@ -40,9 +45,7 @@ const FamilySaving = () => {
         </article>
 
         <article className={styles.Article}>
-          <Iphone className={uniqueStyles.Iphone}>
-            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___sendInvite}`}></div>
-          </Iphone>
+          <img src={inviteTool} width="250" height="250" alt="Invite family member to Beanstalk"/>
         </article>
       </section>
 
@@ -57,6 +60,10 @@ const FamilySaving = () => {
             </p>
           </div>
         </article>
+
+        <article>
+          <img className={styles.responsiveImage} src={contributionTool} width="450" height="450" alt="Invite family member to Beanstalk"/>
+        </article>
       </section>
 
       <section className={styles.Section}>
@@ -66,35 +73,39 @@ const FamilySaving = () => {
               Send messages with gifts
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              <span>Words TBC</span>
+              Donors can add their own personal messages when they make gifts so you and they both have a record.
             </p>
           </div>
         </article>
+
+        <article>
+          <img className={styles.responsiveImage} src={viewAndReply} width="450" height="450" alt="Send a message with a gift"/>
+        </article>
       </section>
+
+
 
       <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
+            <h2 className={styles.TextBlock_Header}>
+              It’s easy whatever your family’s shape or budget
+            </h2>
             <p className={styles.TextBlock_Paragraph}>
-              Contributors can attach messages to their top-ups which you can reply to.
+              Families come in all shapes and sizes and Beanstalk fits them all:
             </p>
+            <UL>
+              <li>
+                Whether you want to give them a few hundred or many thousand when they are 18
+              </li>
+              <li>
+                Granny the only one putting money in – no issue!
+              </li>
+              <li>
+                Different people saving for your children or your step children – that works!
+              </li>
+            </UL>
           </div>
-          <Iphone className={uniqueStyles.Iphone}>
-            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___respondToMessage}`}></div>
-          </Iphone>
-        </article>
-      </section>
-
-      <section className={styles.Section}>
-        <article className={styles.Article}>
-          <div className={styles.TextBlock}>
-            <p className={styles.TextBlock_Paragraph}>
-              Contributors can attach messages to their top-ups which you can reply to.
-            </p>
-          </div>
-          <Iphone className={uniqueStyles.Iphone}>
-            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___respondToMessage}`}></div>
-          </Iphone>
         </article>
       </section>
 

@@ -4,6 +4,8 @@ import FundBalance from '../fund-balance/fund-balance';
 import SimpleBars from '../simple-bars/simple-bars';
 import DesignedForGrowthGraph from '../designed-for-growth-graph/designed-for-growth-graph';
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
+import Iphone from '../iphone/iphone';
+
 
 
 const DesignedForGrowth = () => {
@@ -23,7 +25,7 @@ const DesignedForGrowth = () => {
               Pay less, save more
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              We want your children to benefit from your investment so the Beanstalk app is free to download and use. Our only charge is an annual fee of 0.5% on the value of any investments, one of the lowest around. (The low cost funds we offer have their own management fees of between 0.1 and 0.15% included)
+              We want your children to benefit from your investment so the Beanstalk app is free to download and use. Our only charge is an annual fee of 0.5% on the value of any investments, one of the lowest around. (The low cost funds we offer have their own management fees of between 0.12% and 0.15% included)
             </p>
           </div>
         </article>
@@ -48,7 +50,7 @@ const DesignedForGrowth = () => {
       </section>
 
       <section className={styles.Section}>
-        <article className={styles.Article}>
+        <article>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
               Stocks and Shares can be a great way to grow your money
@@ -58,30 +60,15 @@ const DesignedForGrowth = () => {
             </p>
           </div>
         </article>
-
-        <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
-          <SimpleBars/>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Investments can be a great way to grow your money
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              Perhaps you're saving over a long period. A Junior ISA or a pension? The ups and downs of shares can be compensated for by higher growth.
-            </p>
-            <p className={styles.TextBlock_Paragraph}>
-              Beanstalk is a Stocks & Shares Junior ISA allowing you to save for your child tax free.
-            </p>
-          </div>
-        </article>
-
       </section>
 
 
       <section className={styles.Section}>
         <article className={`${styles.Article} ${styles.Article___fundBalance}`}>
-          <div className={styles.fundBalance___wrapper}>
-            <FundBalance/>
-          </div>
+         <Iphone>
+           <div className={`${styles.Homepage_iphone_screenshot} ${styles.screenshot_changeAllocation}`}>
+           </div>
+         </Iphone>
         </article>
         <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
           <div className={styles.TextBlock}>
@@ -100,12 +87,6 @@ const DesignedForGrowth = () => {
           </div>
         </article>
       </section>
-
-
-
-
-
-
     </>
   );
 };

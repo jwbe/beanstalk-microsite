@@ -125,3 +125,10 @@
 .Iphone_screenshot___respondToMessage {
   background-image: url('../homepage/images/homepage-kidstart-import-accounts-setup.png');
 }
+
+.responsiveImage {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    max-width: 100%;
+    width: 100%;
+  }
+}

@@ -20,11 +20,6 @@ module.exports = {
       {
         name: 'Articles',
         link: '/articles'
-      },
-      {
-        isButton: true,
-        name: 'Join waiting list',
-        link: '/waiting-list'
       }
     ]
   },
@@ -34,6 +29,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://beanstalkapp.co.uk`,
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

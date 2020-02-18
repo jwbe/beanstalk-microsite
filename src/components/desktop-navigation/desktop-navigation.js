@@ -15,7 +15,6 @@ const DesktopNavigation = ({
           menuLinks {
             name
             link
-            isButton
           }
         }
       }
