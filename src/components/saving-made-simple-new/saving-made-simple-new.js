@@ -8,8 +8,9 @@ import iconNameLabel from '../homepage/images/icon_nameLabel.svg';
 import iconCashInHandSecondary from '../homepage/images/icon_top-ups--secondary.svg';
 
 import uniqueStyles from './saving-made-simple.module.scss';
-
 import Iphone from '../iphone/iphone';
+import linkedToKs from '../../images/beanstalk-illustrations_linked-to-ks.png'
+import roundUp from '../../images/beanstalk-illustrations_roundups.png'
 
 const sarahSlug = <span>£50.00 sent to Sarah by Jane Doe.<br/> <span className={styles.Homepage_topUps_message}>Happy birthday to little…</span></span>
 
@@ -39,7 +40,7 @@ const SavingMadeSimple = () => {
           <TopUp title={'Round Ups Total'} recipient={'£10.33 total Round ups this week'} date={'24 Nov 9:26am'} icon={iconWallet} order={TOP_UP_ORDER.THIRD}/>
         </article>
       </section>
-      <section>
+      <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
@@ -49,6 +50,9 @@ const SavingMadeSimple = () => {
               Collect money back on thousands of retailers including Amazon, Ebay, John Lewis and Sainsburys. All dropped straight into your child’s account.
             </p>
           </div>
+        </article>
+        <article>
+          <img src={linkedToKs} width="250" height="250" alt="Link to ks"/>
         </article>
       </section>
 
@@ -63,11 +67,8 @@ const SavingMadeSimple = () => {
             </p>
           </div>
         </article>
-
-        <article className={`${styles.Article}`}>
-          <Iphone className={uniqueStyles.Iphone}>
-            <div className={`${styles.Iphone_screenshot} ${uniqueStyles.Iphone_screenshot___roundUps}`}></div>
-          </Iphone>
+        <article>
+          <img src={roundUp} width="250" height="250" alt="Link to ks"/>
         </article>
       </section>
 
