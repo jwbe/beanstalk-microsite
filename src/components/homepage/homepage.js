@@ -198,7 +198,6 @@ const Homepage = () => {
         </div>
         <div className={styles.Homepage_footer_container}>
           <div className={styles.Homepage_footer_inner}>
-            <WaitingList className={styles.Homepage_footer_waitingList}/>
             <div className={styles.Homepage_footer_header}>
               <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___secondary}`} src={footerLogoSecondary} width='223' height='28'/>
               <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___white}`} src={footerLogoWhite} width='162' height='20'/>

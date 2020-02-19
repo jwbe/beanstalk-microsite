@@ -62,7 +62,7 @@ const MobileNavigation = ({
         Join waiting list
       </Button>
       <div className={styles.MobileNavigation_slideMenu}>
-        <ul className={styles.MobileNavigation_items}>{links(1, 4, true)}</ul>
+        <ul className={styles.MobileNavigation_items}>{links(0, 3, true)}</ul>
         <Button
           desktopBackground={DESKTOP_BACKGROUNDS.WHITE}
           desktopColour={DESKTOP_COLOURS.SECONDARY}

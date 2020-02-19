@@ -51,8 +51,11 @@ const SavingMadeSimple = () => {
             </p>
           </div>
         </article>
-        <article>
-          <img src={linkedToKs} width="250" height="250" alt="Link to ks"/>
+      </section>
+
+      <section className={styles.Section}>
+        <article className={styles.w100}>
+          <img class={styles.centreAlignedAll} src={linkedToKs} width="250" height="250" alt="Link to ks"/>
         </article>
       </section>
 
@@ -67,8 +70,11 @@ const SavingMadeSimple = () => {
             </p>
           </div>
         </article>
-        <article>
-          <img src={roundUp} width="250" height="250" alt="Link to ks"/>
+      </section>
+
+      <section className={styles.Section}>
+        <article className={styles.w100}>
+          <img class={styles.centreAlignedAll} src={roundUp} width="250" height="250" alt="Link to ks"/>
         </article>
       </section>
 

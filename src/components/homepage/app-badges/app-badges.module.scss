@@ -1,7 +1,14 @@
 .appBadges_wrapper {
   display: flex;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .appBadges_appBadge {
   margin-right: $base-unit * 4;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: $base-unit;
+  }
 }

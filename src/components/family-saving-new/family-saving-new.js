@@ -43,9 +43,11 @@ const FamilySaving = () => {
             </p>
           </div>
         </article>
+      </section>
 
-        <article className={styles.Article}>
-          <img src={inviteTool} width="250" height="250" alt="Invite family member to Beanstalk"/>
+      <section className={styles.Section}>
+        <article className={styles.w100}>
+          <img className={`${styles.centreAlignedAll} ${styles.responsiveImage}`} src={inviteTool} width="250" alt="Invite family member to Beanstalk"/>
         </article>
       </section>
 
@@ -60,9 +62,11 @@ const FamilySaving = () => {
             </p>
           </div>
         </article>
+      </section>
 
-        <article>
-          <img className={styles.responsiveImage} src={contributionTool} width="450" height="450" alt="Invite family member to Beanstalk"/>
+      <section className={styles.Section}>
+        <article className={styles.w100}>
+          <img className={`${styles.centreAlignedAll} ${styles.responsiveImage}`} src={contributionTool} width="450" alt="Invite family member to Beanstalk"/>
         </article>
       </section>
 
@@ -77,13 +81,13 @@ const FamilySaving = () => {
             </p>
           </div>
         </article>
-
-        <article>
-          <img className={styles.responsiveImage} src={viewAndReply} width="450" height="450" alt="Send a message with a gift"/>
-        </article>
       </section>
 
-
+      <section className={styles.Section}>
+        <article className={styles.w100}>
+          <img className={`${styles.centreAlignedAll} ${styles.responsiveImage}`} src={viewAndReply} width="450" alt="Send a message with a gift"/>
+        </article>
+      </section>
 
       <section className={styles.Section}>
         <article className={styles.Article}>
