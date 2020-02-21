@@ -15,6 +15,7 @@
 }
 
 .Homepage_footer_header {
+  display: flex;
   margin-bottom: $base-unit * 2;
   border-bottom: .0625rem solid $white;
   @media (min-width: $breakpoint-sm) {
@@ -94,6 +95,25 @@
   }
 }
 
+.Homepage_footer_socialIcons {
+  margin-left: auto;
+  display: flex;
+  a {
+    margin-left: $base-unit * 2;
+  }
+}
+
+.Homepage_footer_socialIcons_desktop {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.Homepage_footer_socialIcons_mobile {
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}
 
 .Footer {
   flex-shrink: 0;

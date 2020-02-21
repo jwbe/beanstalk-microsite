@@ -6,15 +6,15 @@
 }
 
 .Homepage_iphone_screenshot___header {
-  background-image: url('./images/homepage-kidstart-import-accounts-setup.png');
+  background-image: url('../../images/screenshots/header-screenshot.png');
 }
 
 .Homepage_iphone_screenshot___familySaving {
-  background-image: url('./images/child-profile.png');
+  background-image: url('../../images/screenshots/reimaginging-child-savings.png');
 }
 
 .Homepage_iphone_screenshot___changeChildAllocation {
-  background-image: url('./images/change-child-allocation.png');
+  background-image: url('../../images/screenshots/allocation.png');
 }
 
 .Homepage_iphone_screenshot___roundUps {
@@ -466,6 +466,7 @@
 }
 
 .Homepage_footer_header {
+  display: flex;
   margin-bottom: $base-unit * 2;
   border-bottom: .0625rem solid $white;
   @media (min-width: $breakpoint-sm) {
@@ -534,6 +535,26 @@
   background-image: url('./images/footer_top.svg');
   background-repeat: no-repeat;
   @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.Homepage_footer_socialIcons {
+  margin-left: auto;
+  display: flex;
+  a {
+    margin-left: $base-unit * 2;
+  }
+}
+
+.Homepage_footer_socialIcons_desktop {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.Homepage_footer_socialIcons_mobile {
+  @media (min-width: $breakpoint-md) {
     display: none;
   }
 }
