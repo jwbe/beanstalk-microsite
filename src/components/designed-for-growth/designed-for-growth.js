@@ -62,7 +62,6 @@ const DesignedForGrowth = () => {
         </article>
       </section>
 
-
       <section className={styles.Section}>
         <article className={`${styles.Article} ${styles.Article___fundBalance}`}>
          <Iphone>

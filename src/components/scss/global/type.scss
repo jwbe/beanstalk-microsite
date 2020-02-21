@@ -18,8 +18,13 @@ h3 {
   font-size: $title-font-size;
   line-height: $title-line-height;
   font-weight: 500;
+  color: $secondary;
 }
 
 strong {
   font-weight: 700;
+}
+
+em {
+  font-style: italic;
 }

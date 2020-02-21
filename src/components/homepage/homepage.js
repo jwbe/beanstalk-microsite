@@ -109,7 +109,7 @@ const Homepage = () => {
               You and they can see what they have given, and can swap messages about their gifts.
             </p>
             <p>
-              A great way for grandparents to save for their grandchildren.
+              It's a great way for grandparents to save for their grandchildren
             </p>
           </Point>
           <div className={styles.Homepage_topUps}>
@@ -134,10 +134,10 @@ const Homepage = () => {
             heading='Reimagining child savings'>
             <>
               <p>
-                We are dragging children’s savings kicking and screaming into the 21st century! Through the app you can open and manage accounts for all your children - and yourself if you would like.
+                We are dragging children's savings kicking and screaming into the 21st century. Through the app you can open and manage accounts for all your children - and yourself if you would like.
               </p>
               <p>
-                No waiting for statements! You can see what they have at any time; top up or gift all at the touch on your phone.
+                No waiting for statements. You can see what they have at any time; top up or gift all at the touch on your phone.
               </p>
             </>
           </Point>
@@ -170,7 +170,7 @@ const Homepage = () => {
                 Beanstalk offers stocks & shares Junior and adult ISAs so any returns are tax free. 
               </p>
               <p>
-                You can choose to split your savings in whatever proportion between a cash fund and shares fund; many people choose stocks & shares when saving over longer periods as growth can compensate for the ups and downs.
+                You can choose to split your savings between a cash fund and a shares fund in whatever proportion your would like: many people choose stocks & shares.
               </p>
               <p>
                 At 0.5% our fee is one of the lowest meaning more saved for your kids. <Link to={"/designed-for-growth"}>Learn more</Link>
