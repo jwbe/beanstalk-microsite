@@ -180,7 +180,7 @@ const Homepage = () => {
                 Beanstalk offers stocks & shares Junior and adult ISAs so any returns are tax free. 
               </p>
               <p>
-                You can choose to split your savings between a cash fund and a shares fund in whatever proportion your would like: many people choose stocks & shares.
+                Many people chose stocks and shares when saving over longer periods as growth can compensate for the risk
               </p>
               <p>
                 At 0.5% our fee is one of the lowest meaning more saved for your kids. <Link to={"/designed-for-growth"}>Learn more</Link>

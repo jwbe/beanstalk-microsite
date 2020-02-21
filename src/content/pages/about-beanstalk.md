@@ -54,7 +54,7 @@ From our years of experience helping families save, we could see that the saving
     Intuitive interface, easy for all family members to contribute and share on the news feed. Really handy and user friendly!
   </TestimonialPod>
 
-  <TestimonialPod author='Sally Harman'>
+  <TestimonialPod author='Sally H'>
     Fabulous way to save for your child. Hugely helpful if you have a query - always get back to you. Highly recommend.
   </TestimonialPod>
 </TestimonialPods>
