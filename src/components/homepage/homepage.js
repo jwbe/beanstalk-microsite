@@ -26,12 +26,12 @@ import iconNameLabel from './images/icon_nameLabel.svg';
 import iconFacebookSecondary from '../../images/icons/facebook-icon-secondary.png';
 import iconInstagramSecondary from '../../images/icons/instagram-icon-secondary.png';
 import iconTwitterSecondary from '../../images/icons/twitter-icon-secondary.png';
-import iconLinkedInSecondary from '../../images/icons/linkedin-icon-secondary.png';
+//import iconLinkedInSecondary from '../../images/icons/linkedin-icon-secondary.png';
 
 import iconFacebookWhite from '../../images/icons/facebook-icon-white.png';
 import iconInstagramWhite from '../../images/icons/instagram-icon-white.png';
 import iconTwitterWhite from '../../images/icons/twitter-icon-white.png';
-import iconLinkedInWhite from '../../images/icons/linkedin-icon-white.png';
+//import iconLinkedInWhite from '../../images/icons/linkedin-icon-white.png';
 
 import AppBadges from './app-badges/app-badges';
 
@@ -119,7 +119,7 @@ const Homepage = () => {
               You and they can see what they have given, and can swap messages about their gifts.
             </p>
             <p>
-              It's a great way for grandparents to save for their grandchildren
+              It's a great way for grandparents to save for their grandchildren.
             </p>
           </Point>
           <div className={styles.Homepage_topUps}>
@@ -223,10 +223,6 @@ const Homepage = () => {
                 <a href="https://twitter.com/TheBeanstalkApp" target="_blank">
                   <img className={styles.Homepage_footer_socialIcons_desktop} src={iconTwitterSecondary} width="24" height="24"/>
                   <img className={styles.Homepage_footer_socialIcons_mobile} src={iconTwitterWhite} width="24" height="24"/>
-                </a>
-                <a href="https://www.linkedin.com/company/the-beanstalk-app" target="_blank">
-                  <img className={styles.Homepage_footer_socialIcons_desktop} src={iconLinkedInSecondary} width="24" height="24"/>
-                  <img className={styles.Homepage_footer_socialIcons_mobile} src={iconLinkedInWhite} width="24" height="24"/>
                 </a>
               </div>
             </div>
