@@ -59,7 +59,7 @@ const DesignedForGrowthGraph = () => {
           </div>
           <div className={styles.Diagram_graph_bars_labels}>
             <div className={styles.Diagram_graph_bars_label}>
-              KidStart
+              Beanstalk
             </div>
             <div className={styles.Diagram_graph_bars_label}>
               One Family
@@ -118,7 +118,7 @@ const DesignedForGrowthGraph = () => {
             </tr>
             <tr className={styles.Diagram_table_row}>
               <td className={`${styles.Diagram_table_cell} ${styles.Diagram_table_cell___first} ${styles.Diagram_table_cell___name}`}>
-                KidSave
+                Beanstalk
               </td>
               <td className={styles.Diagram_table_cell}>
                 0.50%
@@ -140,7 +140,7 @@ const DesignedForGrowthGraph = () => {
             </tr>
             <tr className={styles.Diagram_table_row}>
               <td className={`${styles.Diagram_table_cell} ${styles.Diagram_table_cell___first} ${styles.Diagram_table_cell___name}`}>
-                Hargreaves Lansdowne
+                Hargreaves Lansdown
               </td>
               <td className={styles.Diagram_table_cell}>
                 0.45% + charges
