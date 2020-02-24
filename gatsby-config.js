@@ -19,7 +19,7 @@ module.exports = {
       },
       {
         name: 'Articles',
-        link: '/articles'
+        link: '/coming-soon'
       }
     ]
   },

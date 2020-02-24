@@ -6,7 +6,7 @@
 }
 
 .screenshot_changeAllocation {
-  background-image: url('../../images/change-child-allocation.png');
+  background-image: url('../../images/screenshots/allocation.png');
 }
 
 .Title {
@@ -105,4 +105,12 @@
     font-size: $caption-font-size;
     line-height: $caption-line-height;
   }
+}
+
+.TextBlock_disclaimerText {
+  margin-top: auto;
+  color: $accent-3;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+  text-align: center;
 }

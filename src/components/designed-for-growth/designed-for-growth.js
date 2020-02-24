@@ -37,6 +37,38 @@ const DesignedForGrowth = () => {
       </section>
 
       <section className={styles.Section}>
+        <article className={styles.Article}>
+          <div className={styles.TextBlock}>
+            <h2 className={styles.TextBlock_Header}>
+              Shares are better
+            </h2>
+            <p className={styles.TextBlock_Paragraph}>
+              Over 50 years UK Shares returned over four times more than Cash as the ups and downs of shares were compensated for by higher growth.
+            </p>
+            <p className={styles.TextBlock_Paragraph___smaller}>
+              Source: Barclays Equity Gift Study 2016
+            </p>
+          </div>
+        </article>
+
+        <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
+          <SimpleBars/>
+          <div className={styles.TextBlock}>
+            <h2 className={styles.TextBlock_Header}>
+              Investments can be a great way to grow your money
+            </h2>
+            <p className={styles.TextBlock_Paragraph}>
+              Perhaps you're saving over a long period. A Junior ISA or a pension? The ups and downs of shares can be compensated for by higher growth.
+            </p>
+            <p className={styles.TextBlock_Paragraph}>
+              Beanstalk is a Stocks & Shares Junior ISA allowing you to save for your child tax free.
+            </p>
+          </div>
+        </article>
+
+      </section>
+
+      <section className={styles.Section}>
         <article>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
@@ -75,17 +107,23 @@ const DesignedForGrowth = () => {
               Choose from two funds
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              Use our slider to choose from two funds: a cash fund (Legal & General Cash Trust fund) which aims to provide returns in line with money market rates and a shares fund (Fidelity Global Index fund) which aims to track the performance of global stock markets and therefore large companies such as Amazon, Facebook, Google and Microsoft.
+              Use our slider to choose from two funds: a cash fund (Legal & General Cash Trust fund) which aims to provide returns in line with money market rates and a shares fund (Fidelity Global Index fund) which aims to track the performance of global stock markets and therefore large companies such as Amazon, Facebook, Google and Johnson & Johnson.
             </p>
             <p className={styles.TextBlock_Paragraph}>
               You can split and adjust your child's investment whenever you want, following its performance on the app.
             </p>
-            <p className={styles.TextBlock_Paragraph___smaller}>
-              As with any investment the value can go down as well as up. Past performance is no indicator of future performance. The tax treatment of the Junior Stocks and Shares ISA depends on your individual circumstances and may be subject to change in the future
-            </p>
           </div>
         </article>
       </section>
+
+      <section className={styles.Section}>
+        <p className={styles.TextBlock_disclaimerText}>
+          As with any investment the value can go down as well as up. Past performance is no indicator of future performance. The tax treatment of ISAs depends on your individual circumstances and may be subject to change in the future.
+        </p>
+      </section>
+
+
+
     </>
   );
 };

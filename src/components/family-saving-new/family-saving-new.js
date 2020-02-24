@@ -28,7 +28,6 @@ const FamilySaving = () => {
               Beanstalk makes it easy for grandparents, other family and friends to save more together for the children they love.
             </p>
           </div>
-          <div className={`${uniqueStyles.Image_contributors}`}></div>
         </article>
       </section>
 
