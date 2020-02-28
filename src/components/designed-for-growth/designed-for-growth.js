@@ -33,7 +33,19 @@ const DesignedForGrowth = () => {
         <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
           <DesignedForGrowthGraph/>
         </article>
+      </section>
 
+      <section className={styles.Section}>
+        <article>
+          <div className={styles.TextBlock}>
+            <h2 className={styles.TextBlock_Header}>
+              Tax free Junior ISA and adult ISA
+            </h2>
+            <p className={styles.TextBlock_Paragraph}>
+              We offer a stocks & shares JISA for your children and a similar ISA for yourself. Both are tax free for income and capital gains meaning more returns for you. The JISA is in the child’s name and any contributions are locked up and can only be accessed by them (or converted into an adult ISA) when they are 18
+            </p>
+          </div>
+        </article>
       </section>
 
       <section className={styles.Section}>
@@ -46,38 +58,13 @@ const DesignedForGrowth = () => {
               Over 50 years UK Shares returned over four times more than Cash as the ups and downs of shares were compensated for by higher growth.
             </p>
             <p className={styles.TextBlock_Paragraph___smaller}>
-              Source: Barclays Equity Gift Study 2016
+              Source: Barclays Equity Gilt Study 2016
             </p>
           </div>
         </article>
 
         <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
           <SimpleBars/>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Investments can be a great way to grow your money
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              Perhaps you're saving over a long period. A Junior ISA or a pension? The ups and downs of shares can be compensated for by higher growth.
-            </p>
-            <p className={styles.TextBlock_Paragraph}>
-              Beanstalk is a Stocks & Shares Junior ISA allowing you to save for your child tax free.
-            </p>
-          </div>
-        </article>
-
-      </section>
-
-      <section className={styles.Section}>
-        <article>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Tax free Junior ISA and adult ISA
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              We offer a stocks & shares JISA for your children and a similar ISA for yourself. Both are tax free for income and capital gains meaning more returns for you. The JISA is in the child’s name and any contributions are locked up and cannot be accessed until they are 18.
-            </p>
-          </div>
         </article>
       </section>
 
@@ -88,7 +75,7 @@ const DesignedForGrowth = () => {
               Stocks and Shares can be a great way to grow your money
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              Many people choose stocks & shares when saving over longer periods as growth can compensate for the ups and downs. For example,  over 50 years UK Shares returned over four times more than cash.
+              Many people choose stocks & shares when saving over longer periods as growth can compensate for the ups and downs. For example, over 50 years UK Shares returned over four times more than cash.
             </p>
           </div>
         </article>

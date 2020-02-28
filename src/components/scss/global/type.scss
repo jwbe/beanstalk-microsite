@@ -17,6 +17,15 @@ h3 {
   margin-bottom: $base-unit * 2;
   font-size: $title-font-size;
   line-height: $title-line-height;
+  font-weight: 600;
+  color: $secondary;
+}
+
+h4 {
+  margin-top: $base-unit * 2;
+  margin-bottom: $base-unit * 1;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
   font-weight: 500;
   color: $secondary;
 }
