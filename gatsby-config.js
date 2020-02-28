@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://beanstalkapp.co.uk`,
     title: `Beanstalk`,
     description: `Beanstalk's Microsite`,
     author: `James Barrett`,
@@ -24,6 +25,7 @@ module.exports = {
     ]
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,

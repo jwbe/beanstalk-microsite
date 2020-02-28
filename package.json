@@ -25,6 +25,7 @@
     "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-plugin-sass": "^2.1.12",
     "gatsby-plugin-sharp": "^2.2.13",
+    "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-remark-external-links": "^0.0.4",
     "gatsby-source-filesystem": "^2.1.18",
