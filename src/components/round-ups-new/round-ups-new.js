@@ -21,13 +21,10 @@ const RoundUps = () => {
             Invest your change for the future
           </h2>
           <p className={styles.TextBlock_Paragraph}>
-            Make saving an easy habit with Round Ups. See your recent transactions and swipe to round up to the nearest £1 and invest the change into your beanstalk accounts.
+            Make saving an easy habit with Round Ups. See your recent transactions and swipe to round up to the nearest £1 and invest the change into your beanstalk accounts. Here's how it works.
           </p>
           <p className={styles.TextBlock_Paragraph}>
-            Through the Open Banking scheme, you can give your bank permission to securely display your data to you within the Beanstalk app.
-          </p>
-          <p className={styles.TextBlock_Paragraph}>
-            For example, if you bought a sandwich for £2.50, you can choose to ‘round up’ to £3 and invest the 50p change. 
+            Through the government backed Open Banking scheme you give your bank permission to securely display your data to you within the Beanstalk app.
           </p>
         </div>
       </article>
@@ -39,11 +36,32 @@ const RoundUps = () => {
       <article className={styles.Article}>
         <div className={styles.TextBlock}>
           <p className={styles.TextBlock_Paragraph}>
-            Set Auto Round up and we will collect the change on all transactions for the week – you’ll be surprised at how it can add up.
+            Swipe to round up and the change will be added to your running total for the week. For example: if you bought a sandwich for £2.50, you can choose to save 50p.
           </p>
 
           <p className={styles.TextBlock_Paragraph}>
-            If your total is under £5 it will roll on to the next week or you can edit the total to keep the pot growing.
+            You can also set to automatically round up which will add the change from your purchases once they are 7 days old.
+          </p>
+
+          <p className={styles.TextBlock_Paragraph}>
+            And if you are worried the round up total is too big, you can adjust it at any point. 
+          </p>
+
+        </div>
+      </article>
+    </section>
+
+    <section className={styles.Section}>
+      <article>
+        <div className={styles.TextBlock}>
+          <h2 className={styles.TextBlock_Header}>
+            When is the round ups collected?
+          </h2>
+          <p className={styles.TextBlock_Paragraph}>
+            At the start of each week, we reset your running total to zero and let you know how much we will be collecting by direct debit for the previous week. (If your total is under £5, it will roll over automatically as we don’t collect payments under £5).
+          </p>
+          <p className={styles.TextBlock_Paragraph}>
+            The money you round up will be divided equally between all your Beanstalk accounts. For example: if you have two children, each will receive half the round ups.
           </p>
         </div>
       </article>
