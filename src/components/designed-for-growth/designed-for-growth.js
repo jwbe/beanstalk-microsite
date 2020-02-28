@@ -52,32 +52,18 @@ const DesignedForGrowth = () => {
         <article className={styles.Article}>
           <div className={styles.TextBlock}>
             <h2 className={styles.TextBlock_Header}>
-              Shares are better
+              Stocks and Shares can be a great way to grow your money
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              Over 50 years UK Shares returned over four times more than Cash as the ups and downs of shares were compensated for by higher growth.
+              Many people choose stocks & shares when saving over longer periods as growth can compensate for the ups and downs. For example, over 50 years UK Shares returned over four times more than cash.
             </p>
             <p className={styles.TextBlock_Paragraph___smaller}>
               Source: Barclays Equity Gilt Study 2016
             </p>
           </div>
         </article>
-
         <article className={`${styles.Article} ${styles.Article___lastOfType}`}>
           <SimpleBars/>
-        </article>
-      </section>
-
-      <section className={styles.Section}>
-        <article>
-          <div className={styles.TextBlock}>
-            <h2 className={styles.TextBlock_Header}>
-              Stocks and Shares can be a great way to grow your money
-            </h2>
-            <p className={styles.TextBlock_Paragraph}>
-              Many people choose stocks & shares when saving over longer periods as growth can compensate for the ups and downs. For example, over 50 years UK Shares returned over four times more than cash.
-            </p>
-          </div>
         </article>
       </section>
 
@@ -95,9 +81,6 @@ const DesignedForGrowth = () => {
             </h2>
             <p className={styles.TextBlock_Paragraph}>
               Use our slider to choose from two funds: a cash fund (Legal & General Cash Trust fund) which aims to provide returns in line with money market rates and a shares fund (Fidelity Global Index fund) which aims to track the performance of global stock markets and therefore large companies such as Amazon, Facebook, Google and Johnson & Johnson.
-            </p>
-            <p className={styles.TextBlock_Paragraph}>
-              You can split and adjust your child's investment whenever you want, following its performance on the app.
             </p>
           </div>
         </article>
