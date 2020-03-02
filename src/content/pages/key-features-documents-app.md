@@ -1,5 +1,6 @@
 ---
 slug: key-features-documents-app
+canonical: 'https://beanstalkapp.co.uk/key-features-documents'
 heading: Key Features Documents
 app: true
 ---

@@ -1,5 +1,6 @@
 ---
 slug: legals-app
+canonical: 'https://beanstalkapp.co.uk/legals'
 heading: Legal documents
 subheading: T&Cs and other documents
 app: true

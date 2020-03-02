@@ -1,5 +1,6 @@
 ---
-slug: round-ups
+slug: round-ups-app
+canonical: 'https://beanstalkapp.co.uk/round-ups'
 heading: Round Ups
 plain: true
 ---

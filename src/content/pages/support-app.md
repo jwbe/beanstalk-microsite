@@ -1,5 +1,6 @@
 ---
 slug: support-app
+canonical: 'https://beanstalkapp.co.uk/support'
 heading: Help & Support
 subheading: What can we help you with?
 app: true

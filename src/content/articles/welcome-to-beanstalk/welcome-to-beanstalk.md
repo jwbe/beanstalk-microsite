@@ -1,5 +1,6 @@
 ---
 slug: welcome-to-beanstalk
+canonical: 'https://beanstalkapp.co.uk/articles/welcome-to-beanstalk'
 date: 2020-02-28T17:12:33.962Z
 category: Beanstalk
 coverImage: './welcome-to-beanstalk.jpg'

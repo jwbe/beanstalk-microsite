@@ -1,5 +1,6 @@
 ---
 slug: articles-app
+canonical: 'https://beanstalkapp.co.uk/articles'
 heading: Knowledge base
 subheading: Articles about saving and investing.
 app: true

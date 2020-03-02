@@ -1,5 +1,6 @@
 ---
 slug: terms-and-conditions-for-isa-app
+canonical: 'https://beanstalkapp.co.uk/terms-and-conditions-for-isa'
 heading: T&Cs
 subheading: ISA terms & conditions
 app: true

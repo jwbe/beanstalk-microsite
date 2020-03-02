@@ -34,6 +34,11 @@ function SEO({ canonical, description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      link={
+        canonical
+          ? [{ rel: 'canonical', key: canonical, href: canonical }]
+          : []
+      }
       meta={[
         {
           name: `description`,

@@ -1,5 +1,6 @@
 ---
 slug: terms-and-conditions-governing-beanstalk-app
+canonical: 'https://beanstalkapp.co.uk/terms-and-conditions-governing-beanstalk'
 heading: T&Cs
 subheading: ISA terms & conditions
 app: true

@@ -6,6 +6,7 @@ import { Main, LAYOUT_VARIANT } from  '../components/main/main';
 import Article from '../components/article/article';
 import Footer from '../components/footer/footer';
 import Wrapper from '../components/wrapper/wrapper';
+import SEO from '../components/seo';
 
 export const query = graphql`
   query($slug: String!) {
@@ -14,6 +15,7 @@ export const query = graphql`
         heading
         subheading
         slug
+        canonical
         coverImage {
           childImageSharp {
             fluid(maxWidth: 640, maxHeight: 360, quality: 80) {
@@ -41,6 +43,12 @@ const Layout = ({
     <>
       <Wrapper>
         <Head title={data.page.meta.heading}/>
+        <SEO
+          title={data.page.meta.heading}
+          description={data.page.meta.excerpt}
+          keywords={data.page.meta.tags}
+          canonical={data.page.meta.canonical}
+          />
         <Header/>
         <Main layoutVariant={LAYOUT_VARIANT.ARTICLE}>
           <Article 

@@ -6,6 +6,7 @@ import { Main, LAYOUT_VARIANT } from  '../components/main/main';
 import Content from '../components/content/content';
 import Footer from '../components/footer/footer';
 import Wrapper from '../components/wrapper/wrapper';
+import SEO from '../components/seo';
 
 export const query = graphql`
   query($slug: String!) {
@@ -16,6 +17,7 @@ export const query = graphql`
         media
         plain
         app
+        canonical
       }
       content: body
     }
@@ -27,6 +29,11 @@ const Layout = ({ data }) => {
     <>
       <Wrapper>
         <Head title={data.page.meta.heading}/>
+        <SEO
+          title={data.page.meta.heading}
+          description={data.page.meta.subheading}
+          canonical={data.page.meta.canonical}
+          />
         { data.page.meta.app ? null : <Header plain={data.page.meta.plain} headerVariant={data.page.meta.media ? HEADER_VARIANT.MEDIA_PAGE : null} heading={data.page.meta.heading} subheading={data.page.meta.subheading}/> }
         <Main layoutVariant={data.page.meta.media ? LAYOUT_VARIANT.MEDIA_PAGE : LAYOUT_VARIANT.PLAIN_PAGE}>
           <Content>

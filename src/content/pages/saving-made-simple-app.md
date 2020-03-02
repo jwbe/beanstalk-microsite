@@ -1,5 +1,6 @@
 ---
 slug: saving-made-simple-app
+canonical: 'https://beanstalkapp.co.uk/saving-made-simple'
 heading: Saving Made Simple
 app: true
 ---

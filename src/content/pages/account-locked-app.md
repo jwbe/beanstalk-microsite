@@ -1,5 +1,6 @@
 ---
 slug: account-locked-app
+canonical: 'https://beanstalkapp.co.uk/account-locked'
 heading: Round Ups
 app: true
 ---

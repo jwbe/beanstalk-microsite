@@ -1,5 +1,6 @@
 ---
 slug: start-saving-now-for-compound-benefits
+canonical: 'https://beanstalkapp.co.uk/articles/start-saving-now-for-compound-benefits'
 date: 2019-10-20T17:12:33.962Z
 category: Saving Tips
 coverImage: './start-saving-now-for-compound-benefits.jpg'

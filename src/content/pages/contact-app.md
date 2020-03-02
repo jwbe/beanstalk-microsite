@@ -1,5 +1,6 @@
 ---
 slug: contact-us-app
+canonical: 'https://beanstalkapp.co.uk/contact-us'
 heading: Get in touch with us
 subheading: Do check out our FAQs for the answers to our most popular queries
 app: true
