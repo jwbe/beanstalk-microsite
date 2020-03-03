@@ -48,11 +48,12 @@
 }
 
 .Article_author {
-  margin-bottom: $base-unit;
+  margin-bottom: $base-unit * 3;
   font-size: $body-font-size;
   line-height: $body-line-height;
   color: $secondary;
   @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
     font-size: $title-font-size;
     line-height: $title-line-height;
   }

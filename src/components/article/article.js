@@ -32,9 +32,13 @@ const Article = ({
       <address className={styles.Article_author}>
         <span className={styles.Article_author_by}>By</span> <span className={styles.Article_author_name}>{articleAuthor}</span>
       </address>
+      {
+      /*
       <time className={styles.Article_date}>
         {articleDate}
       </time>
+      */
+     }
       <div className={styles.Article_content}>
         <Img className={styles.Article_coverImage} fluid={articleCoverImage} backgroundColor={'#f9f9f9'} alt={articleCoverImage_alt}/>
         <Content>
