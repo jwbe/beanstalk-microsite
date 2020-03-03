@@ -1,6 +1,5 @@
 ---
 slug: why-invest-for-your-kids
-canonical: 'https://beanstalkapp.co.uk/articles/why-invest-for-your-kids'
 date: 2019-10-20T17:12:33.962Z
 category: Saving Tips
 coverImage: './why-invest-for-your-kids.jpg'

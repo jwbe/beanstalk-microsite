@@ -1,6 +1,5 @@
 ---
 slug: beanstalk-is-designed-for-growth
-canonical: 'https://beanstalkapp.co.uk/articles/beanstalk-is-designed-for-growth'
 date: 2019-10-20T17:12:33.962Z
 category: Saving Tips
 coverImage: './designed-for-growth.jpg'

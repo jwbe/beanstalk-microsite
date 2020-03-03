@@ -25,12 +25,69 @@ module.exports = {
     ]
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            edges {
+               node {
+                 path
+               }
+             }
+          }
+          allMdx(filter: {frontmatter: {canonical: {eq: null}}, fields: {collection: {in: ["pages", "articles"]}}}) {
+            edges {
+              node {
+                fields {
+                  collection
+                }
+                frontmatter {
+                  slug
+                }
+              }
+            }
+          }
+        }`,
+        serialize: ({ site, allSitePage, allMdx }) => {
+          let pages = []
+          const allEdges = allMdx.edges;
+          const pageEdges = allEdges.filter(
+            edge => edge.node.fields.collection === `pages`
+          );
+          const articleEdges = allEdges.filter(
+            edge => edge.node.fields.collection === `articles`
+          );
+          pageEdges.forEach(edge => {
+            pages.push({
+              url: `${site.siteMetadata.siteUrl}/${edge.node.frontmatter.slug}`,
+              changefreq: `daily`,
+              priority: 0.7,
+            })
+          })
+          articleEdges.forEach(edge => {
+            pages.push({
+              url: `${site.siteMetadata.siteUrl}/articles/${edge.node.frontmatter.slug}`,
+              changefreq: `daily`,
+              priority: 0.7,
+            })
+          })
+          return pages
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {

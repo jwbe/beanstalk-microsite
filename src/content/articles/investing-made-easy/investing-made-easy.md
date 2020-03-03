@@ -1,6 +1,5 @@
 ---
 slug: investing-made-easy
-canonical: 'https://beanstalkapp.co.uk/articles/investing-made-easy'
 date: 2019-10-20T17:12:33.962Z
 category: Saving Tips
 coverImage: './investing-made-easy.jpg'
