@@ -3,7 +3,7 @@ slug: welcome-to-beanstalk
 date: 2020-02-28T17:12:33.962Z
 category: Beanstalk
 coverImage: './welcome-to-beanstalk.jpg'
-coverImage_alt: 'Photo of a group of children looking pleased with their vegetables'
+coverImage_alt: 'Photo showing screenshots from Beanstalk'
 heading: Welcome to Beanstalk!
 subheading: Why Beanstalk and how we help families build a lump sum to give their children the best possible launch into adult life
 author: Julian
