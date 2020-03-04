@@ -48,7 +48,7 @@ const Homepage = () => {
             The family app <br/>that invests in your kids
           </h1>
           <p className={styles.Homepage_subheading}>
-            Beanstalk helps families work together to build a pot of money <br className={styles.Homepage_heading_lineBreak}/> to give their kids the best possible launch into adult life
+            The easiest way to save for children, Beanstalk helps families work together<br className={styles.Homepage_heading_lineBreak}/>  to build a pot of money to give their kids the best possible launch into adult life
           </p>
           <AppBadges/>
         </div>
