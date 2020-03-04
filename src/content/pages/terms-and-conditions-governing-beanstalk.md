@@ -195,8 +195,8 @@ A person who is not party to this agreement may not enforce any of its terms und
 
 
 
+### Section 2: App registration<a id="fees" name="fees"></a>
 
-### Section 2: App registration
 
 #### Registering your profile
 
