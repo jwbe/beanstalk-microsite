@@ -197,7 +197,7 @@ A person who is not party to this agreement may not enforce any of its terms und
 
 
 
-### Section 2: App registration<a id="fees" name="fees"></a>
+### Section 2: App registration
 
 #### Registering your profile
 
@@ -833,7 +833,7 @@ Schedule of Charges: Details of any interest, costs, fees or other charges, as v
 
 
 
-### Appendix 2: Schedule of Charges
+### Appendix 2: Schedule of Charges<a id="fees" name="fees"></a>
 
 #### Account Fee
 
