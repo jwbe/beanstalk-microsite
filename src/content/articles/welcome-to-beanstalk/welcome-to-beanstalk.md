@@ -23,4 +23,4 @@ That’s why we’ve created Beanstalk – the revolutionary new way for familie
 * All the family can help – Beanstalk lets grandparents, friends and the wider family to all contribute easily to your kids’ pots.
 * You don’t need to put any money into open an account and start saving– whatever your family’s budget, we are here to help. Use KidStart to earn free savings, round ups to save little and often, top up or set up regular contributions if you would like.
 
-We are proud to be bring child savings into the 21st Century!
+We are proud to be bringing child savings into the 21st Century!
