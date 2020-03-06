@@ -1,7 +1,8 @@
 ---
 slug: use-alternative-link
 heading: Use alternative link
-app: true
+canonical: 'https://beanstalkapp.co.uk/registration-issue'
+plain: true
 ---
 
 ## Use alternative link
