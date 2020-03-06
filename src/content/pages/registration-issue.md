@@ -9,4 +9,4 @@ plain: true
 
 Oops. It looks like this link did not work on your phone. 
 
-Please copy and paste the alternative link at bottom of the email into you iphone safari browser
+Please copy and paste the alternative link at bottom of the email into your iphone safari browser
