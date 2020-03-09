@@ -10,11 +10,12 @@
     width: 100%;
   }
   @media (min-width: $breakpoint-sm) {
-    padding-right: $base-unit * 2;
-    padding-left: $base-unit * 2;
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
   }
   @media (min-width: $breakpoint-md) {
-    width: $base-unit * 118;
+    //width: $base-unit * 118;
+    width: $base-unit * 120;
   }
 }
 

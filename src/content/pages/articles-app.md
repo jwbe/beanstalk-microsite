@@ -2,7 +2,7 @@
 slug: articles-app
 canonical: 'https://beanstalkapp.co.uk/articles'
 heading: Knowledge base
-subheading: Articles about saving and investing.
+subheading: Articles & News
 app: true
 ---
 import Articles from '../../components/articles/articles'
