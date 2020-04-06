@@ -102,7 +102,7 @@
   width: 1.625rem;
   height: 1.625rem;
   background-color: $white;
-  border: .0625rem solid $primary;
+  border: $base-unit / 4 solid $primary;
   border-radius: 50%;
   box-shadow: 0 .0625rem .3125rem 0 rgba(0,0,0,0.15);
   outline: 0;
@@ -110,7 +110,6 @@
   @media (min-width: $breakpoint-sm) {
     width: 2.25rem;
     height: 2.25rem;
-    border: $base-unit / 4 solid $primary;
   }
 }
 

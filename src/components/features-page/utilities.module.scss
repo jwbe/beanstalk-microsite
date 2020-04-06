@@ -4,6 +4,12 @@
   }
 }
 
+.BreakUpToTablet {
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
 .BreakAtLargeDesktop {
   @media (max-width: $breakpoint-md - .0625em) {
     display: none;

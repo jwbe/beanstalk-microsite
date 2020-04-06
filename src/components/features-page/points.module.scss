@@ -50,6 +50,16 @@
   }
 }
 
+.Point_Roundel___Triple {
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-top: $base-unit / 2;
+  background-color: $white;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    width: $base-unit * 2;
+  }
+}
+
 .Point___Triple {
   @media (min-width: $breakpoint-sm - .0625em) {
     margin-bottom: $base-unit * 5;

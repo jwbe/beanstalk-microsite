@@ -8,6 +8,12 @@
   }
 }
 
+.Graphic___TopOffSetAtMobile {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit;
+  }
+}
+
 .Graphic___SubSection {
   @media (max-width: $breakpoint-sm - .0625em) {
     margin-bottom: $base-unit * 4;
