@@ -50,6 +50,8 @@
   &:after {
     top: $base-unit * 6 + .25rem;
     position: absolute;
+    margin-right: auto;
+    margin-left: auto;
     content: '';
     width: 1px;
     height: calc(100% - #{$base-unit} * 6 - .5rem);
