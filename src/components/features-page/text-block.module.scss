@@ -1,5 +1,8 @@
 .Container {
   @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $base-unit * 36;
     text-align: center;
   }
 }
