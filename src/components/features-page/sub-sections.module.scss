@@ -1,0 +1,9 @@
+._Wrapper {
+  margin-bottom: $base-unit * 9;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 12;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 16;
+  }
+}

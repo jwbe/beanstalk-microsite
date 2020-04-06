@@ -1,0 +1,30 @@
+.BreakAtDesktop {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.BreakAtLargeDesktop {
+  @media (max-width: $breakpoint-md - .0625em) {
+    display: none;
+  }
+}
+
+.BreakAtTabletOnly {
+  display: none;
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
+    display: block;
+  }
+}
+
+.BreakAtMobile {
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.BreakUptoDesktop {
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}

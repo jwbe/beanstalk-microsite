@@ -1,0 +1,53 @@
+.Graphic {
+  display: block;
+  height: auto;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: auto;
+    margin-bottom: $base-unit * 6;
+    margin-left: auto;
+  }
+}
+
+.Graphic___SubSection {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.Graphic___allYourAccountsInOnePlace {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    width: 15.5rem;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
+    max-width: 16rem;
+    margin-left: $base-unit * 3;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-left: $base-unit * 6;
+  }
+}
+
+.Graphic___linkFamilyAndFriends {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    width: 17.25rem;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
+    width: 17.5rem;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-right: $base-unit * 4;
+  }
+}
+
+.Graphic___swapMessages {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    width: 17.25rem;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
+    width: 17.5rem;
+    margin-left: $base-unit * 6;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-left: $base-unit * 10;
+  }
+}

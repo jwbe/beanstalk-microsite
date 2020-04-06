@@ -1,0 +1,184 @@
+._Heading {
+  margin-bottom: $base-unit * 6;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 7;
+  }
+}
+
+.Wrapper {
+  margin-right: auto;
+  margin-bottom: $base-unit * 5;
+  margin-left: auto;
+  max-width: $base-unit * 46;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 8;
+  }
+}
+
+.Splits {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2.25rem;
+  padding-left: .8125rem;
+  padding-right: .8125rem;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: 3.125rem;
+  }
+}
+
+.Split {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
+  display: flex;
+  width: 100%;
+  background-color: $white;
+  border-radius: $base-unit / 2;
+  box-shadow: 0 -4px 16px 0 rgba(139,139,139,0.18);
+  @media (min-width: $breakpoint-sm) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.Split_First {
+  margin-right: .3125rem;
+}
+
+.Split_Last {
+  margin-left: .3125rem;
+}
+
+.Split_Percentage {
+  margin-bottom: $base-unit;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.125rem;
+  line-height: 100%;
+  color: $black;
+  letter-spacing: .06rem;
+  @media (min-width: $breakpoint-sm) {
+    font-size: 1.375rem;
+  }
+}
+
+.Split_Label {
+  color: #8e8e93;
+  font-family: 'Quicksand', sans-serif;
+  font-size: .75rem;
+  line-height: 100%;
+  letter-spacing: .04rem;
+  @media (min-width: $breakpoint-sm) {
+    font-size: 1rem;
+  }
+}
+
+.Slider_Container {
+  //width: calc(100% - 5rem);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $base-unit * 4;
+  padding-left: $base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+}
+
+.Slider {
+  align-items: center;
+  display: flex;
+  //margin-bottom: 1rem;
+  height: 1.625rem;
+  @media (min-width: $breakpoint-sm) {
+    height: 2.25rem;
+  }
+}
+
+.Slider_Thumb {
+  width: 1.625rem;
+  height: 1.625rem;
+  background-color: $white;
+  border: .0625rem solid $primary;
+  border-radius: 50%;
+  box-shadow: 0 .0625rem .3125rem 0 rgba(0,0,0,0.15);
+  outline: 0;
+  cursor: default;
+  @media (min-width: $breakpoint-sm) {
+    width: 2.25rem;
+    height: 2.25rem;
+    border: $base-unit / 4 solid $primary;
+  }
+}
+
+.Slider_Track {
+  margin-bottom: 1.0625rem;
+  height: .1875rem;
+  background-color: #d5d5d5;
+  border-radius:  $base-unit * 99;
+  @media (min-width: $breakpoint-sm) {
+    height: $base-unit / 2;
+  }
+}
+
+.Slider_Steps {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Slider_Step {
+  width: .0625rem;
+  height: $base-unit;
+  background-color: $secondary;
+  border-radius: $base-unit * 99;
+  opacity: 0.26;
+  @media (min-width: $breakpoint-sm) {
+    width: .125rem;
+    height: .625rem;
+  }
+}
+
+.Slider_Labels {
+  display: flex;
+  margin-bottom: $base-unit * 5;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 5;
+  }
+}
+
+.Slider_Label {
+  flex-grow: 1;
+  color: $black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: .625rem;
+  line-height: 100%;
+  letter-spacing: .010625rem;
+  @media (min-width: $breakpoint-sm) {
+    font-size: .8125rem;
+  }
+  &:last-of-type {
+    text-align: right;
+  }
+}
+
+.Results {
+  padding-top: $base-unit * 2;
+  padding-right: $base-unit * 3;
+  padding-bottom: $base-unit * 2;
+  padding-left: $base-unit * 3;
+  text-align: center;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  border-radius: $base-unit * 99;
+  background-color: $accent-3-lightest;
+  @media (min-width: $breakpoint-sm) {
+    padding-top: $base-unit * 3;
+    padding-right: $base-unit * 4;
+    padding-bottom: $base-unit * 3;
+    padding-left: $base-unit * 4;
+  }
+}

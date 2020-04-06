@@ -1,0 +1,31 @@
+.Container {
+  margin-right: auto;
+  margin-left: auto;
+  height: $base-unit * 5;
+  width: $base-unit * 12;
+  background-image: url('./images/leaf-decoration.svg');
+  background-size: contain;
+}
+
+.___vFlipped {
+  transform: rotate(180deg);
+}
+
+.___Top {
+  margin-top: $base-unit * 7;
+  margin-bottom: $base-unit * 4;
+  @media (min-width: $breakpoint-md) {
+    margin-top: $base-unit * 12;
+    margin-bottom: $base-unit * 6;
+  }
+}
+
+.___Bottom {
+  margin-bottom: $base-unit * 5;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 8;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 11;
+  }
+}

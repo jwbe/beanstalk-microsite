@@ -1,0 +1,32 @@
+.Container {
+  justify-content: center;
+  display: flex;
+  margin-right: auto;
+  margin-bottom: $base-unit * 6;
+  margin-left: auto;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 7;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 8;
+  }
+}
+
+._BadgeWrapper {
+  &___first {
+    margin-right: $base-unit;
+    @media (min-width: $breakpoint-sm) {
+      margin-right: .75rem;
+    }
+  }
+  &___last {
+    margin-left: $base-unit;
+    @media (min-width: $breakpoint-sm) {
+      margin-left: .75rem;
+    }
+  }
+}
+
+._Badge {
+  display: block;
+}

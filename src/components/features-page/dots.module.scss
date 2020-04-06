@@ -1,0 +1,36 @@
+$iron: #d2d2d5;
+
+._Container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: .375rem;
+  margin-right: auto;
+  margin-bottom: $base-unit * 6;
+  margin-left: auto;
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+._Dot {
+  margin-right: $base-unit;
+  margin-left: $base-unit;
+  background-color: $iron;
+  border-radius: 50%;
+}
+
+._Dot___Large {
+  width: .375rem;
+  height: .375rem;
+}
+
+._Dot___Medium {
+  width: $base-unit / 2;
+  height: $base-unit / 2;
+}
+
+._Dot___Small {
+  width: $base-unit / 4;
+  height: $base-unit / 4;
+}
