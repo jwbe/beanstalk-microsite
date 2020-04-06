@@ -46,3 +46,12 @@
     width: 40%;
   }
 }
+
+._Point {
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-right: $base-unit * 4;
+  }
+}

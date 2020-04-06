@@ -1,3 +1,14 @@
+.Sizer {
+  margin-right: auto;
+  margin-left: auto;
+  @media (max-width: 50em - .0625em) {
+    max-width: $base-unit * 36;
+  }
+  @media (max-width: $breakpoint-sm - .0625em) {
+    max-width: 23.4375rem;
+  }
+}
+
 .Row {
   flex-direction: column;
   display: flex;
