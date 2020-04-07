@@ -443,7 +443,7 @@ const FeaturesPage = () => {
                   Tell us who you are saving for
                 </h3>
                 <p className={LinkedBullets.LinkedBullet_Description}>
-                  You and/or as many children  as your would like
+                  You and/or as many children  as you would like
                 </p>
               </div>
             </div>
