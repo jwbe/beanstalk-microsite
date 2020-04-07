@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactSlider from 'react-slider';
 
 import AllocationCalculator from './allocation-calculator.module.scss';
@@ -18,7 +18,8 @@ import Leaves from './leaves.module.scss';
 import pigIcon from './images/pig-icon.svg';
 import topUpIcon from './images/top-up-icon.svg';
 import roundUpIcon from './images/round-up-icon.svg';
-import familyIcon from './images/family-icon.svg';
+import multipleContributionsIcon from './images/multiple-contributions-icon.svg';
+import kidstartIcon from './images/kidstart-icon.svg';
 import secondaryTickIcon from './images/secondary-tick-icon.svg';
 import primaryTickIcon from './images/primary-tick-icon.svg';
 import googlePlayBadge from './images/google-play-badge.png';
@@ -27,6 +28,111 @@ import allYourAccountsInOnePlace from './images/all-your-accounts-in-one-place.p
 import linkFamilyAndFriends from './images/link-family-and-friends.png'
 import swapMessages from './images/swap-messages.png'
 import toolsToMakeItEasyToSave from './images/tools-to-make-it-easy-to-save.png'
+
+class AllocationCalculatorModule extends Component {
+  state = {
+    fundBalance: 20
+  }
+
+  fundHandler = (changedValue) => {
+    this.setState({
+      fundBalance: changedValue
+    });
+  }
+
+  numbers = (number) => {
+    switch(number) {
+      case 80:
+        return 1208
+        break;
+      case 70:
+        return 1320
+        break;
+      case 60:
+        return 1432
+        break;
+      case 50:
+        return 1544
+        break;
+      case 40:
+        return 1656
+        break;
+      case 30:
+        return 1768
+        break;
+      case 20:
+        return 1880
+        break;
+      case 10:
+        return 1992
+        break;
+      case 0:
+        return 2104
+        break;
+    }
+  }
+
+  render () {
+    return (
+      <div className={AllocationCalculator.Wrapper}>
+        <div className={AllocationCalculator.Splits}>
+          <div className={`${AllocationCalculator.Split} ${AllocationCalculator.Split_First}`}>
+            <div className={AllocationCalculator.Split_Percentage}>{`${this.state.fundBalance}%`}</div>
+            <div className={AllocationCalculator.Split_Label}>Cash Fund</div>
+          </div>
+          <div className={`${AllocationCalculator.Split} ${AllocationCalculator.Split_Last}`}>
+            <div className={AllocationCalculator.Split_Percentage}>{`${100 - this.state.fundBalance}%`}</div>
+            <div className={AllocationCalculator.Split_Label}>Share Fund</div>
+          </div>
+        </div>
+        <div className={AllocationCalculator.Slider_Container}>
+          <ReactSlider
+            defaultValue={20}
+            onChange={this.fundHandler}
+            className={AllocationCalculator.Slider}
+            step={10}
+            max={80}
+            min={0}
+            thumbClassName={AllocationCalculator.Slider_Thumb}
+            trackClassName={AllocationCalculator.Slider_Track}
+            renderThumb={(props, state) => <div {...props}></div>}
+          />
+          <div className={AllocationCalculator.Slider_Steps}>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+            <div className={AllocationCalculator.Slider_Step}>
+            </div>
+          </div>
+          <div className={AllocationCalculator.Slider_Labels}>
+            <div className={AllocationCalculator.Slider_Label}>
+              Cash Fund
+            </div>
+            <div className={AllocationCalculator.Slider_Label}>
+              Share Fund
+            </div>
+          </div>
+        </div>
+        <div className={AllocationCalculator.Results}>
+          With this choice if you had invested <strong>£1000</strong> for Sarah, it would be worth <strong>{`£${this.numbers(this.state.fundBalance)}`}</strong>
+        </div>
+      </div>
+    );
+  }
+}
 
 const FeaturesPage = () => {
   return (  
@@ -38,7 +144,7 @@ const FeaturesPage = () => {
         <section>
           <div className={`${TextBlock.Container} ${TextBlock.___Top} ${TextBlock.___Centred}`}>
             <h2 className={TextBlock._LargeHeading}>
-              The easiest way to save for your family
+              The easiest way to <br className={Utilities.BreakUpToTablet}/>save for your family
             </h2>
             <p className={TextBlock._Content}>
               The Beanstalk app is designed to make it really easy to build a nest egg for your children, grandchildren or even yourself. Whether your goal is to save £500 or £50,000 - we've packed it with some great tools and features to help.
@@ -156,7 +262,9 @@ const FeaturesPage = () => {
               <div className={ToolsPoints._Container}>
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large}`}>
-                  <div className={`${Points.Point_Roundel}`}></div>
+                  <div className={`${Points.Point_Roundel}`}>
+                    <img src={kidstartIcon} width="22" height="23"/>
+                  </div>
                   <div className={`${Points.Point_Content}`}>
                     Collect free moneyback on your shopping automatically shared between your children
                   </div>
@@ -182,7 +290,7 @@ const FeaturesPage = () => {
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large}`}>
                   <div className={`${Points.Point_Roundel}`}>
-                    <img src={pigIcon} width="24" height="24"/>
+                    <img src={pigIcon}  width="24" height="24"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
                     Set up a regular savings plan <br className={Utilities.BreakAtTablet}/>if you want to
@@ -191,7 +299,7 @@ const FeaturesPage = () => {
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large} ${Points.Point___Last}`}>
                   <div className={`${Points.Point_Roundel}`}>
-                    <img src={familyIcon} width="24" height="23"/>
+                    <img src={multipleContributionsIcon} width="24" height="22"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
                     Boost your kids savings with multiple people contributing
@@ -220,64 +328,7 @@ const FeaturesPage = () => {
               Designed to help grow your family's savings
             </h2>
           </div>
-
-          <div className={AllocationCalculator.Wrapper}>
-            <div className={AllocationCalculator.Splits}>
-              <div className={`${AllocationCalculator.Split} ${AllocationCalculator.Split_First}`}>
-                <div className={AllocationCalculator.Split_Percentage}>80%</div>
-                <div className={AllocationCalculator.Split_Label}>Cash Fund</div>
-              </div>
-              <div className={`${AllocationCalculator.Split} ${AllocationCalculator.Split_Last}`}>
-                <div className={AllocationCalculator.Split_Percentage}>20%</div>
-                <div className={AllocationCalculator.Split_Label}>Share Fund</div>
-              </div>
-            </div>
-            <div className={AllocationCalculator.Slider_Container}>
-              <ReactSlider
-                defaultValue={50}
-                className={AllocationCalculator.Slider}
-                step={10}
-                thumbClassName={AllocationCalculator.Slider_Thumb}
-                trackClassName={AllocationCalculator.Slider_Track}
-                renderThumb={(props, state) => <div {...props}></div>}
-              />
-              <div className={AllocationCalculator.Slider_Steps}>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-                <div className={AllocationCalculator.Slider_Step}>
-                </div>
-              </div>
-              <div className={AllocationCalculator.Slider_Labels}>
-                <div className={AllocationCalculator.Slider_Label}>
-                  Cash Fund
-                </div>
-                <div className={AllocationCalculator.Slider_Label}>
-                  Share Fund
-                </div>
-              </div>
-            </div>
-            <div className={AllocationCalculator.Results}>
-              With this choice if you had invested <strong>£1000</strong> for Sarah, it would be worth <strong>£2500</strong>
-            </div>
-          </div>
+          <AllocationCalculatorModule/>
 
           <div className={Points.TriplePoints}>
             <div className={Points.TriplePoints_Column}>

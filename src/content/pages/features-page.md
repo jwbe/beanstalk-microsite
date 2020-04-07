@@ -1,5 +1,5 @@
 ---
-slug: features-page
+slug: features
 heading: Features Page
 subheading: These are some of the features of the Beanstalk app.
 plain: true
