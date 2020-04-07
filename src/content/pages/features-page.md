@@ -1,6 +1,6 @@
 ---
 slug: features
-heading: Features Page
+heading: Features
 subheading: These are some of the features of the Beanstalk app.
 plain: true
 ---
