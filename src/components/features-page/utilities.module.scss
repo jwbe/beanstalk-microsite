@@ -10,21 +10,9 @@
   }
 }
 
-.BreakAtLargeDesktop {
-  @media (max-width: $breakpoint-md - .0625em) {
-    display: none;
-  }
-}
-
-.BreakAtTabletOnly {
+.BreakAtDesktop {
   display: none;
-  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
-    display: block;
-  }
-}
-
-.BreakUptoDesktop {
   @media (min-width: $breakpoint-md) {
-    display: none;
+    display: block
   }
 }

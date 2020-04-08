@@ -275,7 +275,7 @@ const FeaturesPage = () => {
                     <img src={roundUpIcon} width="22" height="22"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
-                    Round you up your purchases to save little and often
+                    Round you up your purchases<br className={Utilities.BreakAtTablet}/> to save little and often
                   </div>
                 </div>
 
@@ -284,7 +284,7 @@ const FeaturesPage = () => {
                     <img src={topUpIcon} width="22" height="22"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
-                    Top-up or make gifts when you want, at the touch of a button
+                    Top-up or make gifts when you want,<br className={Utilities.BreakAtDesktop}/> at the touch of a button
                   </div>
                 </div>
 
