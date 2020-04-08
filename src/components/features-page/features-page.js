@@ -77,11 +77,11 @@ class AllocationCalculatorModule extends Component {
       <div className={AllocationCalculator.Wrapper}>
         <div className={AllocationCalculator.Splits}>
           <div className={`${AllocationCalculator.Split} ${AllocationCalculator.Split_First}`}>
-            <div className={AllocationCalculator.Split_Percentage}>{`${this.state.fundBalance}%`}</div>
+            <div className={AllocationCalculator.Split_Percentage}>{`${100 - this.state.fundBalance}%`}</div>
             <div className={AllocationCalculator.Split_Label}>Cash Fund</div>
           </div>
           <div className={`${AllocationCalculator.Split} ${AllocationCalculator.Split_Last}`}>
-            <div className={AllocationCalculator.Split_Percentage}>{`${100 - this.state.fundBalance}%`}</div>
+            <div className={AllocationCalculator.Split_Percentage}>{`${this.state.fundBalance}%`}</div>
             <div className={AllocationCalculator.Split_Label}>Share Fund</div>
           </div>
         </div>
@@ -290,7 +290,7 @@ const FeaturesPage = () => {
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large}`}>
                   <div className={`${Points.Point_Roundel}`}>
-                    <img src={pigIcon}  width="24" height="24"/>
+                    <img src={pigIcon} width="24" height="24"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
                     Set up a regular savings plan <br className={Utilities.BreakAtTablet}/>if you want to
@@ -429,7 +429,7 @@ const FeaturesPage = () => {
                   Set up your profile
                 </h3>
                 <p className={LinkedBullets.LinkedBullet_Description}>
-                  We just need your name,  date of birth and address.
+                  We just need your name, date of birth and address.
                 </p>
               </div>
             </div>
@@ -443,7 +443,7 @@ const FeaturesPage = () => {
                   Tell us who you are saving for
                 </h3>
                 <p className={LinkedBullets.LinkedBullet_Description}>
-                  You and/or as many children  as you would like
+                  You and/or as many children as you would like
                 </p>
               </div>
             </div>
@@ -454,7 +454,7 @@ const FeaturesPage = () => {
               </div>
               <div className={LinkedBullets.LinkedBullet_content}>
                 <h3 className={LinkedBullets.LinkedBullet_Heading}>
-                  Choose how you would  like your savings allocated
+                  Choose how you would like your savings allocated
                 </h3>
                 <p className={LinkedBullets.LinkedBullet_Description}>
                   You can change at any time
