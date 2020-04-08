@@ -155,7 +155,7 @@ const FeaturesPage = () => {
         <div className={SubSections._Wrapper}>
           <section className={`${Layout.Row} ${Layout.Row___SubSections} ${Layout.Row___SubSections___BottomOffset}`}>
             <div className={`${Layout.Column} ${Layout.Column___Gap}`}>
-              <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___allYourAccountsInOnePlace}`} src={allYourAccountsInOnePlace} width="253" height="368"/>
+              <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___allYourAccountsInOnePlace}`} src={allYourAccountsInOnePlace} width="276" height="416"/>
             </div>
             <div className={`${Layout.Column} ${Layout.Column___Gap}`}>
               <div className={`${TextBlock.Container} ${TextBlock.___SubSection___Right} ${TextBlock.___SubSection} ${TextBlock.___SubSection___TopOffset}`}>
