@@ -5,6 +5,7 @@
   padding-left: $base-unit * 2;
   margin-right: auto;
   margin-left: auto;
+  display: inline-block;
   color: $white;
   background-color: $primary;
   border-radius: 1.5rem 1.5rem 0 0;
@@ -54,13 +55,12 @@
 
 .CookiesNotice_wrapper {
   z-index: 1;
-  justify-content: center;
-  display: flex;
   bottom: 0;
   position: fixed;
   width: 100%;
   padding-right: $base-unit * 2;
   padding-left: $base-unit * 2;
+  text-align: center;
 }
 
 .CookiesNotice___hidden {

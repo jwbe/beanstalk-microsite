@@ -62,7 +62,11 @@
   }
 }
 
-.LinkedBullet_Roundel___last {
+.LinkedBullet_Roundel_Wrapper {
+  position: relative;
+}
+
+.LinkedBullet_Roundel___Last {
   &:after {
     content: none
   }

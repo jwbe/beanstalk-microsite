@@ -91,8 +91,8 @@ class AllocationCalculatorModule extends Component {
             onChange={this.fundHandler}
             className={AllocationCalculator.Slider}
             step={10}
-            max={80}
-            min={0}
+            max={100}
+            min={20}
             thumbClassName={AllocationCalculator.Slider_Thumb}
             trackClassName={AllocationCalculator.Slider_Track}
             renderThumb={(props, state) => <div {...props}></div>}
@@ -127,7 +127,7 @@ class AllocationCalculatorModule extends Component {
           </div>
         </div>
         <div className={AllocationCalculator.Results}>
-          With this choice if you had invested <strong>£1000</strong> for Sarah, it would be worth <strong>{`£${this.numbers(this.state.fundBalance)}`}</strong>
+          With this choice if you had invested <strong>£1000</strong> for Sarah, it would be worth <strong>{`£${this.numbers(100 - this.state.fundBalance)}`}</strong>
         </div>
       </div>
     );
@@ -194,7 +194,7 @@ const FeaturesPage = () => {
                 </div>
               </div>
               <div className={`${Layout.Column} ${Layout.Column___Gap} ${Layout.Column___Graphic}`}>
-                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___linkFamilyAndFriends}`} src={linkFamilyAndFriends} width="379" height="453"/>
+                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___linkFamilyAndFriends}`} src={linkFamilyAndFriends} width="376" height="456"/>
               </div>
             </section>
           </div>
@@ -214,7 +214,7 @@ const FeaturesPage = () => {
           <div className={Layout.Sizer}>
             <section className={`${Layout.Row} ${Layout.Row___SubSections}`}>
               <div className={`${Layout.Column} ${Layout.Column___Gap} ${Layout.Column___Graphic}`}>
-                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___swapMessages}`} src={swapMessages} width="335" height="485"/>
+                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___swapMessages}`} src={swapMessages} width="319" height="464"/>
               </div>
               <div className={`${Layout.Column} ${Layout.Column___Gap} ${Layout.Column___Text}`}>
                 <div className={`${TextBlock.Container} ${TextBlock.___SubSection___Last} ${TextBlock.___SubSection___Right} ${TextBlock.___SubSection}`}>
@@ -222,7 +222,7 @@ const FeaturesPage = () => {
                     Swap messages
                   </h2>
                   <p className={TextBlock._Content}>
-                    Send messages with your gifts of money so they know what it's for!
+                    Send messages with your gifts of<br className={Utilities.BreakAtTablet}/> money so they know what it's for!
                   </p>
                 </div>
               </div>
@@ -463,7 +463,7 @@ const FeaturesPage = () => {
             </div>
 
             <div className={`${LinkedBullets.LinkedBullet} ${LinkedBullets.LinkedBullet___Last}`}>
-              <div className={`${LinkedBullets.LinkedBullet_Roundel} ${LinkedBullets.LinkedBullet_Roundel___last}`}>
+              <div className={`${LinkedBullets.LinkedBullet_Roundel} ${LinkedBullets.LinkedBullet_Roundel___Last}`}>
                 <img src={primaryTickIcon} width="16" height="12"/>
               </div>
               <div className={LinkedBullets.LinkedBullet_content}>
@@ -491,12 +491,12 @@ const FeaturesPage = () => {
           </h2>
 
           <div className={AppBadges.Container}>
-            <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___first}`}>
+            <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___First}`}>
               <a href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank">
                 <img className={AppBadges._Badge} src={appStoreBadge} width="135" height="40" alt="Apple app store badge"/>
               </a>
             </div>
-            <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___last}`}>
+            <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___Last}`}>
               <a href="https://play.google.com/store/apps/details?id=com.beanstalk" target="_blank">
                 <img className={AppBadges._Badge} src={googlePlayBadge} width="135" height="40" alt="Google Play store badge"/>
               </a>
@@ -509,7 +509,7 @@ const FeaturesPage = () => {
 
         <section>
           <p className={TextBlock.SmallPrint}>
-            AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.
+            AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE.<br className={Utilities.BreakAtDesktop}/> THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.
           </p>
           <p className={TextBlock.SmallPrint}>
             *JUST £10 FOR AN ADULT ACCOUNT

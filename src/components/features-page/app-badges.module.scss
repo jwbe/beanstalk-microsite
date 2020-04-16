@@ -13,13 +13,13 @@
 }
 
 ._BadgeWrapper {
-  &___first {
+  &___First {
     margin-right: $base-unit;
     @media (min-width: $breakpoint-sm) {
       margin-right: .75rem;
     }
   }
-  &___last {
+  &___Last {
     margin-left: $base-unit;
     @media (min-width: $breakpoint-sm) {
       margin-left: .75rem;

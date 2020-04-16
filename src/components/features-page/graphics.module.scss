@@ -1,10 +1,12 @@
 .Graphic {
   display: block;
-  height: auto;
   @media (max-width: $breakpoint-sm - .0625em) {
     margin-right: auto;
     margin-bottom: $base-unit * 6;
     margin-left: auto;
+  }
+  @media (max-width: $breakpoint-md - .0625em) {
+    height: auto;
   }
 }
 
@@ -28,7 +30,7 @@
   */
   @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
     //max-width: 16rem;
-    margin-left: $base-unit * 3
+    margin-left: $base-unit * 3;
   }
   @media (min-width: $breakpoint-md) {
     margin-left: $base-unit * 7 + $base-unit / 4;
@@ -37,10 +39,11 @@
 
 .Graphic___linkFamilyAndFriends {
   @media (max-width: $breakpoint-sm - .0625em) {
-    width: 17.25rem;
+    width: $base-unit * 36;
   }
   @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
-    width: 18.3125rem;
+    width: $base-unit * 35;
+    margin-left: $base-unit * 2;
   }
   @media (min-width: $breakpoint-md) {
     margin-right: $base-unit * 4;
@@ -48,11 +51,13 @@
 }
 
 .Graphic___swapMessages {
-  @media (max-width: $breakpoint-sm - .0625em) {
-    width: 17.25rem;
+  @media (max-width: $breakpoint-md - .0625em) {
+    width: $base-unit * 36;
   }
   @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
-    width: 17.5rem;
+    margin-left: $base-unit * 6;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em){
     margin-left: $base-unit * 6;
   }
   @media (min-width: $breakpoint-md) {

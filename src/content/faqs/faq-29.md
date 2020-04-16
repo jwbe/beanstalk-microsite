@@ -19,9 +19,9 @@ We will notify you by email 5 working days in advance of a new regular contribut
 
 ### One off top ups
 
-We typically collect one off top ups weekly on Wednesdays. If the Wednesday clashes with a public holiday, then the collection date will be the first working day after.
+We typically collect one off top ups weekly on Mondays. If the Monday clashes with a public holiday, then the collection date will be the first working day after.
 
-We send payment instructions to the bank 5 working days in advance. This means that if you request a top up, we will collect it on Wednesday week after you requested the top up.
+We send payment instructions to the bank 5 working days in advance. This means that if you request a top up, we will collect it on Monday week after you requested the top up.
 
 We will confirm your top up to you by email 5 working days in advance of collection so you know the exact day it is going.
 
