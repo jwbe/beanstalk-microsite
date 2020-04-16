@@ -4,13 +4,17 @@ module.exports = {
     title: `Beanstalk`,
     description: `Beanstalk's Microsite`,
     author: `James Barrett`,
-    logoUrl: `https://beanstalkapp.co.uk/static/images/beanstalk-icon.png`,
+    logoUrl: `https://beanstalkapp.co.uk/images/beanstalk-icon.png`,
     footer: {
       companyRegistration: `© Copyright Beanstalk Ltd 2019, all rights reserved. Company registration number 7652431. `,
       companyAuthorised: `Authorised and regulated by the Financial Conduct Authority - Authorisation no. 473606.`,
       companyCopyright: `© 2019 Beanstalk Limited`
     },
     menuLinks: [
+      {
+        name: 'Key Features',
+        link: '/features'
+      },
       {
         name: 'About Beanstalk',
         link: '/about-beanstalk'
@@ -19,10 +23,7 @@ module.exports = {
         name: 'Support',
         link: '/support'
       },
-      {
-        name: 'Articles',
-        link: '/articles'
-      }
+
     ]
   },
   plugins: [
