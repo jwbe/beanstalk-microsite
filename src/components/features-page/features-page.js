@@ -31,7 +31,7 @@ import toolsToMakeItEasyToSave from './images/tools-to-make-it-easy-to-save.png'
 
 class AllocationCalculatorModule extends Component {
   state = {
-    fundBalance: 20
+    fundBalance: 60
   }
 
   fundHandler = (changedValue) => {
@@ -87,7 +87,7 @@ class AllocationCalculatorModule extends Component {
         </div>
         <div className={AllocationCalculator.Slider_Container}>
           <ReactSlider
-            defaultValue={20}
+            defaultValue={60}
             onChange={this.fundHandler}
             className={AllocationCalculator.Slider}
             step={10}

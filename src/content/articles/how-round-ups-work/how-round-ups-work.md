@@ -4,7 +4,7 @@ date: 2020-02-28T17:12:33.962Z
 category: Beanstalk
 coverImage: './how-round-ups-work.jpg'
 coverImage_alt: 'Screenshot from Beanstalk round ups'
-heading: Round Ups
+heading: How Round Ups Work
 subheading: Invest your change for the future
 author: Beanstalk
 ---
