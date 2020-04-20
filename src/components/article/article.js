@@ -45,38 +45,6 @@ const Article = ({
           {articleContent}
         </Content>
       </div>
-      <div className={styles.Article_nav}>
-        {
-          articlePrevious
-          ?
-          <Button link={`articles/${articlePrevious}`} 
-            desktopColour={DESKTOP_COLOURS.WHITE}
-            desktopSize={DESKTOP_SIZES.LARGE}
-            desktopBackground={DESKTOP_BACKGROUNDS.SECONDARY}
-            >
-            Previous
-          </Button>
-          :
-          <div className={`${buttonStyles.Button} ${styles.Article_disabledButton} ${buttonStyles.desktop___Large}`}>
-            Previous
-          </div>
-        }
-        {
-          articleNext
-          ?
-          <Button link={`articles/${articleNext}`} 
-            desktopColour={DESKTOP_COLOURS.WHITE}
-            desktopSize={DESKTOP_SIZES.LARGE}
-            desktopBackground={DESKTOP_BACKGROUNDS.SECONDARY}
-            >
-            Next
-          </Button>
-          :
-          <div className={`${buttonStyles.Button} ${styles.Article_disabledButton} ${buttonStyles.desktop___Large}`}>
-            Next
-          </div>
-        }
-      </div>
     </article>
   );
 };

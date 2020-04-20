@@ -5,7 +5,7 @@ import styles from './articles.module.scss';
 const Articles = () => {
   const data = useStaticQuery(graphql`
     query {
-      allArticles: allMdx(filter: {fields: {collection: {eq: "articles"}}, frontmatter: {app: {ne: true}}}) {
+      allArticles: allMdx(filter: {fields: {collection: {eq: "articles"}}, frontmatter: {app: {eq: true}}}) {
         edges {
           node {
             id

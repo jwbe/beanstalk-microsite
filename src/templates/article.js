@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Header } from '../components/header/header';
 import Head from '../components/head/head';
+import { Header, HEADER_VARIANT } from '../components/header/header';
 import { Main, LAYOUT_VARIANT } from  '../components/main/main';
 import Article from '../components/article/article';
 import Footer from '../components/footer/footer';
@@ -14,6 +14,7 @@ export const query = graphql`
       meta: frontmatter {
         heading
         subheading
+        app
         slug
         canonical
         coverImage {
@@ -49,7 +50,7 @@ const Layout = ({
           keywords={data.page.meta.tags}
           canonical={data.page.meta.canonical}
           />
-        <Header/>
+        { data.page.meta.app ? null : <Header plain={true} heading={data.page.meta.heading} subheading={data.page.meta.subheading}/> }
         <Main layoutVariant={LAYOUT_VARIANT.ARTICLE}>
           <Article 
             articleCategory={data.page.meta.category} 
@@ -64,7 +65,7 @@ const Layout = ({
             articlePrevious={previous}
             />
         </Main>
-        <Footer/>
+        { data.page.meta.app ? null : <Footer/> }
       </Wrapper>
     </>
   );
