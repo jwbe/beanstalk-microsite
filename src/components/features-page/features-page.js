@@ -266,7 +266,7 @@ const FeaturesPage = () => {
                     <img src={kidstartIcon} width="22" height="23"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
-                    Collect free moneyback on your shopping automatically shared between your children
+                    Collect free money back on your shopping automatically shared between your children
                   </div>
                 </div>
 
@@ -275,7 +275,7 @@ const FeaturesPage = () => {
                     <img src={roundUpIcon} width="22" height="22"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
-                    Round you up your purchases<br className={Utilities.BreakAtTablet}/> to save little and often
+                    Round up your purchases<br className={Utilities.BreakAtTablet}/> to save little and often
                   </div>
                 </div>
 
