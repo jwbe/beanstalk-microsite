@@ -49,9 +49,8 @@
   background-color: $white;
   &:after {
     top: $base-unit * 6 + .25rem;
+    left: 1.4375rem; // You can't centre pseudoelemtn with flexbox on ie11 etc
     position: absolute;
-    margin-right: auto;
-    margin-left: auto;
     content: '';
     width: 1px;
     height: calc(100% - #{$base-unit} * 6 - .5rem);
