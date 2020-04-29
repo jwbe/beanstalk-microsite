@@ -214,7 +214,7 @@ const FeaturesPage = () => {
           <div className={Layout.Sizer}>
             <section className={`${Layout.Row} ${Layout.Row___SubSections}`}>
               <div className={`${Layout.Column} ${Layout.Column___Gap} ${Layout.Column___Graphic}`}>
-                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___swapMessages}`} src={swapMessages} width="319" height="464"/>
+                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___swapMessages}`} src={swapMessages} width="335" height="483"/>
               </div>
               <div className={`${Layout.Column} ${Layout.Column___Gap} ${Layout.Column___Text}`}>
                 <div className={`${TextBlock.Container} ${TextBlock.___SubSection___Last} ${TextBlock.___SubSection___Right} ${TextBlock.___SubSection}`}>
