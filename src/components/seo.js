@@ -19,6 +19,7 @@ function SEO({ canonical, description, lang, meta, title }) {
             title
             description
             author
+            logoUrl
           }
         }
       }
@@ -46,11 +47,15 @@ function SEO({ canonical, description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
+        },
+        {
+          property: `og:image`,
+          content: site.siteMetadata.logoUrl,
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: site.siteMetadata.description,
         },
         {
           property: `og:type`,
@@ -66,11 +71,11 @@ function SEO({ canonical, description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           name: `twitter:description`,
-          content: metaDescription,
+          content: site.siteMetadata.description,
         },
       ].concat(meta)}
     />
