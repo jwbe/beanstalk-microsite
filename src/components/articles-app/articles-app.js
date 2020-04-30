@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import styles from './articles.module.scss';
 
-const Articles = () => {
+const ArticlesApp = () => {
   const data = useStaticQuery(graphql`
     query {
       allArticles: allMdx(filter: {fields: {collection: {eq: "articles"}}, frontmatter: {app: {eq: true}}}) {
@@ -61,4 +61,4 @@ const Articles = () => {
   );
 };
 
-export default Articles;
+export default ArticlesApp;
