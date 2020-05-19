@@ -34,7 +34,7 @@ const AppDownloadRedirect = () => {
     }
 
     if(isAndroid){
-      window.gtag('event', `directed_to_googlePlay from ${window.location.pathname}`, {
+      window.gtag('event', `redirected_to_googlePlay from ${window.location.pathname}`, {
         'event_callback': redirectToGooglePlay
       });
     }
