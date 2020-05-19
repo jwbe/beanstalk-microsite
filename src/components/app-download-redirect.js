@@ -22,7 +22,7 @@ const AppDownloadRedirect = () => {
     }
 
     if(isBrowser){
-      window.gtag('event', `redirected_to_Homepage from ${window.location.pathname}`, {
+      window.gtag('event', `redirected_to_homepage from ${window.location.pathname}`, {
         'event_callback': redirectToHomepage
       });
     }
