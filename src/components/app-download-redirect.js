@@ -3,29 +3,28 @@ import { isIOS, isAndroid, isBrowser } from 'react-device-detect';
 
 const AppDownloadRedirect = () => {
   if (typeof window !== `undefined`) {
-    
-    var redirectFired = false;
-
     function redirectToAppleStore() {
-      if (!redirectFired) {
-        setTimeout(function() {
-          redirectFired = true;
-          window.location.replace(`https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597`);
-        }, 2000)
-      }
+      setTimeout(function() {
+        window.location.replace(`https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597`);
+      }, 2000)
     }
 
     function redirectToGooglePlay() {
-      if (!redirectFired) {
-        setTimeout(function() {
-          redirectFired = true;
-          window.location.replace(`https://play.google.com/store/apps/details?id=com.beanstalk`);
-        }, 2000)
-      }
+      setTimeout(function() {
+        window.location.replace(`https://play.google.com/store/apps/details?id=com.beanstalk`);
+      }, 2000)
+    }
+
+    function redirectToHomepage() {
+      setTimeout(function() {
+        window.location.replace(`https://beanstalkapp.co.uk`);
+      }, 2000)
     }
 
     if(isBrowser){
-      window.location.replace(`https://beanstalkapp.co.uk`);
+      window.gtag('event', `redirected_to_Homepage from ${window.location.pathname}`, {
+        'event_callback': redirectToHomepage
+      });
     }
 
     if(isIOS){
@@ -39,7 +38,6 @@ const AppDownloadRedirect = () => {
         'event_callback': redirectToGooglePlay
       });
     }
-
   }
   return <></>
 } 
