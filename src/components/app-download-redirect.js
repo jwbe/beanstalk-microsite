@@ -29,13 +29,13 @@ const AppDownloadRedirect = () => {
     }
 
     if(isIOS){
-      window.gtag('event', 'directed_to_appleStore', {
+      window.gtag('event', `redirected_to_appleStore from ${window.location.pathname}`, {
         'event_callback': redirectToAppleStore
       });
     }
 
     if(isAndroid){
-      window.gtag('event', 'directed_to_googlePlay', {
+      window.gtag('event', `directed_to_googlePlay from ${window.location.pathname}`, {
         'event_callback': redirectToGooglePlay
       });
     }
