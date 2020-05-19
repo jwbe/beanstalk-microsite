@@ -8,15 +8,19 @@ const AppDownloadRedirect = () => {
 
     function redirectToAppleStore() {
       if (!redirectFired) {
-        redirectFired = true;
-        window.location.replace(`https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597`);
+        setTimeout(function() {
+          redirectFired = true;
+          window.location.replace(`https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597`);
+        }, 2000)
       }
     }
 
     function redirectToGooglePlay() {
       if (!redirectFired) {
-        redirectFired = true;
-        window.location.replace(`https://play.google.com/store/apps/details?id=com.beanstalk`);
+        setTimeout(function() {
+          redirectFired = true;
+          window.location.replace(`https://play.google.com/store/apps/details?id=com.beanstalk`);
+        }, 2000)
       }
     }
 
@@ -38,6 +42,6 @@ const AppDownloadRedirect = () => {
 
   }
   return <></>
-}
+} 
 
 export default AppDownloadRedirect;
