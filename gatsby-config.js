@@ -27,6 +27,14 @@ module.exports = {
     ]
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "UA-2373866-7"
+        ],
+      },
+    },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -120,14 +128,6 @@ module.exports = {
         data: '@import "global.scss";',
         includePaths: ["./src/components/scss/global"]
       }
-    },
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          "UA-2373866-7"
-        ],
-      },
     },
     {
       resolve: `gatsby-source-filesystem`,
