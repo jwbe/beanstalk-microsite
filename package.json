@@ -47,6 +47,7 @@
     "react-slider": "^1.0.0",
     "rehype-react": "^4.0.1",
     "reset-css": "^4.0.1",
+    "smart-app-banner": "^2.0.0",
     "underscore": "^1.9.2"
   },
   "devDependencies": {
