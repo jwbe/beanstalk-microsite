@@ -111,6 +111,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://beanstalkapp.co.uk',
+        sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: '/docs/JISATransferForm.pdf' }]
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Beanstalk microsite`,
