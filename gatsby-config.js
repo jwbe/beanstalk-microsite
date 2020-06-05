@@ -127,7 +127,14 @@ module.exports = {
         background_color: `#32b67a`,
         theme_color: `#055a5b`,
         display: `minimal_ui`,
-        icon: `src/images/beanstalk-icon.png`
+        icon: `src/images/beanstalk-icon.png`,
+        icons: [
+          {
+            src: `src/images/android-icon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          }
+        ],
       }
     },
     {
