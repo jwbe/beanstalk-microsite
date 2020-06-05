@@ -16,10 +16,8 @@ const IndexPage = () => {
           <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png"/>
           <meta name="google-play-app" content="app-id=uk.co.beanstalkapp" />
           <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png"/>
-          <meta name="smartbanner:api" content="true"/>
         </Helmet>
         <Homepage/>
-        <script dangerouslySetInnerHTML= {{ __html: `smartbanner.publish();`}} />`
       </>
     </Layout>
   )
