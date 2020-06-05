@@ -19,12 +19,9 @@ const IndexPage = () => {
           <meta name="smartbanner:api" content="true"/>
         </Helmet>
         <Homepage/>
-        <script dangerouslySetInnerHTML= {{ __html: `(function() {
-  window.onload = function() {
+        <script dangerouslySetInnerHTML= {{ __html: `window.onload = function() {
     smartbanner.publish();
-  }
-})();
-`}} />`
+  }`}} />`
       </>
     </Layout>
   )
