@@ -130,7 +130,7 @@ module.exports = {
         icon: `src/images/beanstalk-icon.png`,
         icons: [
           {
-            src: `src/images/android-icon-192x192.png`,
+            src: `/images/android-icon-192x192.png`,
             sizes: `192x192`,
             type: `image/png`,
           }
