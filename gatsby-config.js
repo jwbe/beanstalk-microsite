@@ -116,7 +116,7 @@ module.exports = {
       options: {
         host: 'https://beanstalkapp.co.uk',
         sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
-        policy: [{ userAgent: '*', disallow: '/docs/JISATransferForm.pdf' }]
+        policy: [{ userAgent: '*', disallow: [`/docs/JISATransferForm.pdf`, `/beanstalk-survey`] }]
       }
     },
     {
