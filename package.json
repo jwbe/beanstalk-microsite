@@ -46,6 +46,7 @@
     "react-helmet": "^5.2.1",
     "react-markdown": "^4.1.0",
     "react-slider": "^1.0.0",
+    "react-typeform-embed": "^0.2.1",
     "rehype-react": "^4.0.1",
     "reset-css": "^4.0.1",
     "smart-app-banner": "^2.0.0",

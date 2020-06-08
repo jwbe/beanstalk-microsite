@@ -44,6 +44,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
+        exclude: [`/beanstalk-survey`],
         query: `
         {
           site {
