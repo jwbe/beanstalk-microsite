@@ -1,6 +1,6 @@
 ---
 slug: welcome-to-beanstalk-app
-date: 2020-02-28T17:12:33.962Z
+date: 2020-03-28T17:12:33.962Z
 category: Beanstalk
 coverImage: './welcome-to-beanstalk.jpg'
 coverImage_alt: 'Photo showing screenshots from Beanstalk'
@@ -8,6 +8,7 @@ heading: Welcome to Beanstalk!
 subheading: Why Beanstalk and how we help families build a lump sum to give their children the best possible launch into adult life
 author: Julian
 app: true
+order: 2
 ---
 
 Ten years ago, I co-founded KidStart, the free shopping club for parents that has helped thousands of families save millions of pounds for free for their children when shopping at over 2,000 retailers.
