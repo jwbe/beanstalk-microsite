@@ -26,7 +26,7 @@ const IndexPage = () => {
           <meta name="smartbanner:button" content="VIEW"/>
           <meta name="smartbanner:button-url-apple" content="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597"/>
           <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.beanstalk"/>
-          <meta name="smartbanner:enabled-platforms" content="android,ios"/>
+          <meta name="smartbanner:enabled-platforms" content="android"/>
           <meta name="smartbanner:close-label" content="Close"/>
         </Helmet>
         <Homepage/>
