@@ -1,5 +1,5 @@
 ---
-slug: transfer-ctf-jisa-app
+slug: transfer-ctf-jisa
 date: 2020-02-28T17:12:33.962Z
 category: Beanstalk
 coverImage: './transfer-ctf-jisa.jpg'
@@ -31,6 +31,6 @@ When you apply for a Beanstalk account, we will ask you if you have an existing 
 
 Once we have sent your existing provider the signed transfer form, they will close your existing account and transfer the funds over to your Beanstalk account.
 
-(If you are not sure whether your child has a CTF or cannot remember who the provider is, we explain how to check in this <a href="https://beanstalkapp.co.uk/articles/locate-a-missing-ctf-app">article</a>)
+(If you are not sure whether your child has a CTF or cannot remember who the provider is, we explain how to check in this <a href="https://beanstalkapp.co.uk/articles/locate-a-missing-ctf">article</a>)
 
 PLEASE NOTE: AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.

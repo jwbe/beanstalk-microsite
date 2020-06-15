@@ -16,6 +16,7 @@ import BackButton from '../../components/back-button/back-button'
   <Pod link={'/key-investor-information-documents-app'} heading={'KIIDs'} description={'Key Investor Information Documents'} type={'isa-terms'}/>
   <Pod link={'/key-features-documents-app'} heading={'KFDs'} description={'Key Features Documents'} type={'key-facts'}/>
   <Pod link={'/data-privacy-and-cookies-app'} heading={'Privacy'} description={'Data privacy & cookies'} type={'privacy'}/>
+  <Pod link={'/other-terms-app'} heading={'Misc'} description={'Other terms'} type={'app-terms'}/>
 </Pods>
 
 

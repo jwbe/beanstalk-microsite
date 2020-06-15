@@ -1,7 +1,7 @@
 ---
 slug: legals
 heading: Legal documents
-subheading: T&Cs and other documents
+subheading: Beanstalk terms and conditions
 media: true
 ---
 
@@ -13,4 +13,5 @@ import Pod from '../../components/pod/pod'
   <Pod link={'/key-investor-information-documents'} heading={'KIIDs'} description={'Key Investor Information Documents'} type={'isa-terms'}/>
   <Pod link={'/key-features-documents'} heading={'KFDs'} description={'Key Features Documents'} type={'key-facts'}/>
   <Pod link={'/data-privacy-and-cookies'} heading={'Privacy'} description={'Data privacy & cookies'} type={'privacy'}/>
+  <Pod link={'/other-terms'} heading={'Misc'} description={'Other terms'} type={'app-terms'}/>
 </Pods>

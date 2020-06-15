@@ -8,7 +8,7 @@ heading: How Round Ups Work
 subheading: Invest your change for the future
 author: Beanstalk
 app: true
-order: 1
+order: 2
 ---
 
 Make saving an easy habit with Round Ups. See your recent transactions and swipe to round up to the nearest £1 and invest the change into your beanstalk accounts. Here's how it works.
