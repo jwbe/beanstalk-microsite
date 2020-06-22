@@ -9,6 +9,7 @@ subheading: Transferring an existing child trust fund or junior ISA to Beanstalk
 author: Beanstalk
 order: 3
 app: true
+backButton: articles-app
 ---
 
 Transferring an existing child trust fund or junior ISA to Beanstalk is very simple.  Here we explain why it may make sense to transfer and how the transfer process works.

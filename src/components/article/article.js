@@ -5,6 +5,7 @@ import styles from './article.module.scss';
 import Content from '../content/content';
 import { Button, DESKTOP_COLOURS, DESKTOP_BORDERS, DESKTOP_SIZES, TABLET_COLOURS, DESKTOP_BACKGROUNDS } from '../button/button';
 import buttonStyles from '../button/button.module.scss';
+import BackButton from '../../components/back-button/back-button'
 
 const Article = ({
   articleCategory,
@@ -16,10 +17,12 @@ const Article = ({
   articleCoverImage_alt,
   articleContent,
   articleNext,
-  articlePrevious
+  articlePrevious,
+  articleBackButton
 }) => {
   return (
     <article className={styles.Article}>
+      {articleBackButton ? <BackButton link={articleBackButton}/> : null}
       <div className={styles.Article_category}>
         {articleCategory}
       </div>

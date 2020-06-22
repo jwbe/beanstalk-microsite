@@ -28,6 +28,7 @@ export const query = graphql`
         date(formatString: "Do MMMM YYYY")
         category
         author
+        backButton
       }
       content: body
     }
@@ -53,6 +54,7 @@ const Layout = ({
         { data.page.meta.app ? null : <Header plain={true} heading={data.page.meta.heading} subheading={data.page.meta.subheading}/> }
         <Main layoutVariant={LAYOUT_VARIANT.ARTICLE}>
           <Article 
+            articleBackButton={data.page.meta.backButton}
             articleCategory={data.page.meta.category} 
             articleHeading={data.page.meta.heading} 
             articleSubheading={data.page.meta.subheading} 
@@ -65,7 +67,6 @@ const Layout = ({
             articlePrevious={previous}
             />
         </Main>
-        { data.page.meta.app ? null : <Footer/> }
       </Wrapper>
     </>
   );
