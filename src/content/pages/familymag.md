@@ -1,7 +1,7 @@
 ---
 slug: familymag
 heading: 
-app: true
+plain: true
 ---
 
 import CustomEntryTracker from '../../components/custom-entry-tracker';
