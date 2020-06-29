@@ -1,5 +1,5 @@
 ---
-slug: familymag
+slug: familiesmag
 heading: 
 plain: true
 ---
