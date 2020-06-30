@@ -5,7 +5,7 @@ plain: true
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';
-import IsolatedTextBlock from '../../components/isolated-text-block/isolated-text-block';
+import IsolatedTextBlock from '../components/isolated-text-block/isolated-text-block';
 
 <AppDownloadRedirect/>
 
