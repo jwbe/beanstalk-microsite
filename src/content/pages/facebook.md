@@ -5,9 +5,10 @@ plain: true
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';
+import IsolatedTextBlock from '../../components/isolated-text-block/isolated-text-block';
 
 <AppDownloadRedirect/>
 
-## Please wait a moment
-
-Please wait, you will be automatically redirected to the Beanstalk website, Google Play Store or Apple App Store depending on the device you're on.
+<IsolatedTextBlock>
+  Please wait, we are redirecting you.
+</IsolatedTextBlock>

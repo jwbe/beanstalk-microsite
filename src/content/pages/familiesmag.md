@@ -5,9 +5,10 @@ plain: true
 ---
 
 import CustomEntryTracker from '../../components/custom-entry-tracker';
+import IsolatedTextBlock from '../../components/isolated-text-block/isolated-text-block';
 
 <CustomEntryTracker/>
 
-## Please wait a moment
-
-You are being directed to the Beanstalk app microsite.
+<IsolatedTextBlock>
+  Please wait, we are redirecting you.
+</IsolatedTextBlock>
