@@ -4,10 +4,10 @@ heading:
 plain: true
 ---
 
-import CustomEntryTracker from '../../components/custom-entry-tracker';
+import AppDownloadRedirect from '../../components/app-download-redirect';
 import IsolatedTextBlock from '../../components/isolated-text-block/isolated-text-block';
 
-<CustomEntryTracker/>
+<AppDownloadRedirect/>
 
 <IsolatedTextBlock>
   Please wait, we are redirecting you.
