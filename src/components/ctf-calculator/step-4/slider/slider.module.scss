@@ -1,0 +1,13 @@
+.Slider {
+  display: flex;
+  &_Thumb {
+    width: $base-unit;
+    height: $base-unit;
+    background: blue;
+  }
+
+  &_Track {
+    height: $base-unit / 2;
+    background: red;
+  }
+}

@@ -15,8 +15,6 @@ const IndexPage = () => {
           <meta name="google-play-app" content="app-id=uk.co.beanstalkapp" />
           <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png"/>
           <meta name="smartbanner:title" content="Beanstalk App"/>
-          <meta name="smartbanner:author" content="KidStart Ltd"/>
-          <meta name="smartbanner:price" content="FREE"/>
           <meta name="smartbanner:price-suffix-google" content=" - In Google Play"/>
           <meta name="smartbanner:price-suffix-apple" content=" - on the App Store"/>
           <meta name="smartbanner:icon-google" content="https://beanstalkapp.co.uk/images/beanstalk-icon.png"/>

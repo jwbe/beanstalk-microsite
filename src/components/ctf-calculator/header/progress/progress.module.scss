@@ -1,0 +1,15 @@
+.Progress {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  &_Track {
+    height: $base-unit / 2;
+    background-color: red;
+  }
+  &_Milestone {
+    width: $base-unit;
+    height: $base-unit;
+    border-radius: 100%;
+    background-color: blue;
+  }
+}
