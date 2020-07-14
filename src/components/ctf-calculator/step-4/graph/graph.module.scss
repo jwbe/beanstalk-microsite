@@ -1,6 +1,58 @@
 .Graph {
+  padding-right: $base-unit * 5;
+  padding-left: $base-unit * 5;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
   display: flex;
+  height: $base-unit * 35;
+  &_Heading {
+    font-size: $title-font-size;
+    font-weight: 700;
+    line-height: $title-line-height;
+    font-family: 'Quicksand', sans-serif;
+    color: $secondary;
+    text-align: center;
+  }
+  &_Bars {
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    border-bottom: $base-unit / 4 solid $accent-3;
+  }
   &_Bar {
-
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    padding-right: $base-unit / 2;
+    padding-left: $base-unit / 2;
+    width: 32.592592592592595%;
+    height: 100%;
+    &_Inner {
+      width: 100%;
+    }
+    &___First {
+      background-image: linear-gradient(180deg, #be6366 0%, #e09c9f 100%);
+    }
+    &___Second {
+      background-image: linear-gradient(180deg, #6ec19c 0%, #32b67a 100%);
+    }
+  }
+  &_Axis {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    &_Providers {
+      justify-content: center;
+      display: flex;
+      width: 100%;
+    }
+    &_Provider {
+      width: 32.592592592592595%;
+      text-align: center;
+    }
   }
 }

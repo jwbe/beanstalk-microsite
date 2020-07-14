@@ -5,6 +5,7 @@ import Step2 from './step-2/step-2.js';
 import Step3 from './step-3/step-3.js';
 import Step4 from './step-4/step-4.js';
 
+import CtCalculatorTheme from './ctf-calculator.module.scss';
 
 class CtfCalculator extends Component {
   constructor(props) {
@@ -14,8 +15,8 @@ class CtfCalculator extends Component {
       currentStep: 1,
       ctfValue: 10000,
       childAge: 8,
-      firstSelectionId: 0,
-      secondSelectionId: 1
+      firstSelectionId: 1,
+      secondSelectionId: 0
     }
 
     this._goToStep= this._goToStep.bind(this)
@@ -64,7 +65,7 @@ class CtfCalculator extends Component {
 
   render() {
     return(
-      <>
+      <div className={CtCalculatorTheme.Container}>
         <Header
           currentStep={this.state.currentStep}/>
         <Step1 
@@ -88,7 +89,7 @@ class CtfCalculator extends Component {
           firstSelectionId={this.state.firstSelectionId}
           secondSelectionId={this.state.secondSelectionId}
           />
-      </>
+      </div>
     )
   }
 }

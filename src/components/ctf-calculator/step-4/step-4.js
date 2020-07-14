@@ -5,7 +5,9 @@ import Data from '../data.js';
 import numberWithCommas from '../helpers';
 
 import SliderTheme from './slider/slider.module.scss';
-import Graph from './graph/graph.js';
+import Graph from './graph/graph';
+import Dashboard from './dashboard/dashboard';
+import CtaButton from '../shared-components/cta-button/cta-button';
 
 const _calculateProviderCost = ({ annualPercentageCharge }, { MAX_CHILD_AGE }, { ctfValue, childAge }) => {
   return Math.round((annualPercentageCharge * ctfValue) * (MAX_CHILD_AGE - childAge) / 100);
@@ -32,65 +34,66 @@ class Step4 extends Component {
     const secondProduct = Data.providers[this.props.secondSelectionId].product;
 
     if (this.props.currentStep !== 4) {
-      return null
+      //return null
     }
 
     return(
       <>
-        <div>
-          <div>
-            CTF Current Value
+        <div className={SliderTheme.Sliders}>
+          <div className={SliderTheme.Slider}>
+            <div className={SliderTheme.Slider_Heading}>
+              CTF Current Value
+            </div>
+            <div>
+              <Slider
+                className={SliderTheme.Slider_Input}
+                thumbClassName={SliderTheme.Slider_Thumb}
+                trackClassName={SliderTheme.Slider_Track}
+                defaultValue={1000}
+                onChange={this.props.updateCtfValue}
+                step={50}
+                min={0}
+                max={50000}
+              />
+              <div className={SliderTheme.Slider_Feedback}>
+                {`£${numberWithCommas(this.props.ctfValue)}`}
+              </div>
+            </div>
           </div>
-          <Slider
-            className={SliderTheme.Slider}
-            thumbClassName={SliderTheme.Slider_Thumb}
-            trackClassName={SliderTheme.Slider_Track}
-            defaultValue={50}
-            onChange={this.props.updateCtfValue}
-            step={10}
-          />
-          <div>
-            {this.props.ctfValue}
+
+          <div className={SliderTheme.Slider}>
+            <div className={SliderTheme.Slider_Heading}>
+              Child's age
+            </div>
+            <div>
+              <Slider
+                className={SliderTheme.Slider_Input}
+                thumbClassName={SliderTheme.Slider_Thumb}
+                trackClassName={SliderTheme.Slider_Track}
+                defaultValue={12}
+                onChange={this.props.updateChildAge}
+                min={8}
+                max={18}
+              />
+              <div className={SliderTheme.Slider_Feedback}>
+                {`${this.props.childAge} years`}
+              </div>
+            </div>
           </div>
         </div>
 
-        <div>
-          <div>
-            Child's age
-          </div>
-          <Slider
-            className={SliderTheme.Slider}
-            thumbClassName={SliderTheme.Slider_Thumb}
-            trackClassName={SliderTheme.Slider_Track}
-            defaultValue={50}
-            onChange={this.props.updateChildAge}
-            step={10}
-          />
-          <div>
-            {this.props.childAge}
-          </div>
-
-        </div>
-
-        <div>
-          <div>
-            When your child is 18 you will have saved
-          </div>
-          <div>
-            {`£${numberWithCommas(firstTotalCharge - secondTotalCharge)}`}
-          </div>
-        </div>
+        <Dashboard totalFees={firstTotalCharge - secondTotalCharge}/>
 
         {Graph(
           firstAnnualPercentageCharge, 
           secondAnnualPercentageCharge, 
           firstTotalCharge, 
           secondTotalCharge, 
-          firstProduct, 
-          secondProduct, 
+          firstProvider, 
+          secondProvider, 
           formData)}
 
-        <Link to=''>Open a Beanstalk account</Link>
+        <CtaButton/>
 
         <p>
           *Capital at risk

@@ -1,13 +1,53 @@
+.Sliders {
+  margin-bottom: $base-unit * 8;
+  padding-right: $base-unit * 5;
+  padding-left: $base-unit * 5;
+}
+
 .Slider {
   display: flex;
+  flex-direction: column;
+  &_Input {
+    display: flex;
+    align-items: center;
+    height: $base-unit * 5;
+  }
+  &_Heading {
+    margin-bottom: $base-unit;
+    color: $accent-3;
+    font-size: $subheader-font-size;
+    font-weight: 700;
+    line-height: $subheader-line-height;
+    font-family: 'Quicksand', sans-serif;
+  }
   &_Thumb {
-    width: $base-unit;
-    height: $base-unit;
-    background: blue;
+    width: $base-unit * 4;
+    height: $base-unit * 4;
+    background: $secondary;
+    border: $base-unit / 2 solid $white;
+    box-shadow: $shadow-level-1;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: 0;
   }
 
   &_Track {
-    height: $base-unit / 2;
-    background: red;
+    height: $base-unit;
+    background: #d2d3d2;
+    border-radius: 99rem;
+  }
+
+  &_Feedback {
+    padding-top: $base-unit;
+    padding-right: $base-unit * 2;
+    padding-bottom: $base-unit;
+    padding-left: $base-unit * 2;
+    color: $accent-3;
+    background-color: $accent-3-lighter;
+    font-size: $subheader-font-size;
+    font-weight: 700;
+    line-height: $subheader-line-height;
+    border-radius: 99rem;
+    text-align: center;
   }
 }

@@ -1,0 +1,28 @@
+.Question {
+  display: flex;
+  align-items: flex-start;
+  &_Roundel {
+    flex: none;
+    margin-right: $base-unit * 2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: $base-unit * 6;
+    height: $base-unit * 6;
+    color: $primary;
+    font-weight: 700;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    border: 1px dotted $secondary;
+    border-radius: 50%;
+    background-color: $white;
+    @media (min-width: $breakpoint-sm) {
+      margin-right: $base-unit * 3;
+    }
+  }
+  &_Body {
+    color: $primary;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}

@@ -2,18 +2,18 @@ const Data = {
   providers: [
     {
       id: 0,
-      name: 'One Family',
-      annualPercentageCharge: 1.5,
-      product: 'One Family CTF',
-      showProviderSelector: true,
-    }, 
-    {
-      id: 1,
       name: 'Beanstalk',
       annualPercentageCharge: 0.5,
       product: 'Beanstalk CTF',
       showProviderSelector: false,
-    }, 
+    },
+    {
+      id: 1,
+      name: 'One Family',
+      annualPercentageCharge: 1.5,
+      product: 'One Family CTF',
+      showProviderSelector: true,
+    },  
     {
       id: 2,
       name: 'Foresters Financial',

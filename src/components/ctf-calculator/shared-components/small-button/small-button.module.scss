@@ -1,0 +1,12 @@
+.SmallButton {
+  padding-top: $base-unit;
+  padding-right: $base-unit * 3;
+  padding-bottom: $base-unit;
+  padding-left: $base-unit * 3;
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  background-color: $secondary;
+  border-radius: 99rem;
+}

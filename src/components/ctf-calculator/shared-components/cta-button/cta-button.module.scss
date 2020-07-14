@@ -1,0 +1,16 @@
+.CtaButton {
+  display: inline-flex;
+  padding-top: $base-unit * 3;
+  padding-right: $base-unit * 4;
+  padding-bottom: $base-unit * 3;
+  padding-left: $base-unit * 4;
+  color: $white;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: $primary;
+  border-radius: 99rem;
+  box-shadow: $shadow-level-3;
+  text-decoration: none;
+}

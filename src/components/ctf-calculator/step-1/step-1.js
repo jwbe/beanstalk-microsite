@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Question from '../shared-components/question/question';
+import SmallButton from '../shared-components/small-button/small-button';
 
 class Step1 extends Component {
   render() {
@@ -7,18 +9,17 @@ class Step1 extends Component {
     }
     return(
       <>
-        <p>
-          Does your child have a Cash or Stakeholder / Equity CTF?
-        </p>
+        <Question number={'1'}>
+          Is your child's CTF or JISA held as cash or is it stakeholder stocks & shares?
+        </Question>
 
-        <button onClick={() => { this.props.goToStep(2) }}>
+        <SmallButton handler={() => {this.props.goToStep(2)}}>
           Cash
-        </button>
+        </SmallButton>
 
-        <button onClick={() => { this.props.goToStep(3) }}>
+        <SmallButton handler={() => {this.props.goToStep(3)}}>
           Stakeholder / Equity
-        </button>
-        
+        </SmallButton>
       </>
     )
   }

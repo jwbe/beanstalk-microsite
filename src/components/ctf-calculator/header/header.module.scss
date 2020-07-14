@@ -1,0 +1,13 @@
+.Heading {
+  color: $secondary;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    margin-right: $base-unit * 5;
+    margin-bottom: $base-unit * 9;
+    margin-left: $base-unit * 5;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+  }
+}
