@@ -34,7 +34,7 @@ class Step4 extends Component {
     const secondProduct = Data.providers[this.props.secondSelectionId].product;
 
     if (this.props.currentStep !== 4) {
-      //return null
+      return null
     }
 
     return(
