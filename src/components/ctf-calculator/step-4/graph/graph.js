@@ -12,7 +12,7 @@ const _bar = (identifier, annualPercentageCharge, totalCharge, height) => {
   const FONT_SIZE_THRESHOLD = 20;
   const belowThresholdValue = (height * 100 / 2500) + 0.25;
   return (
-    <div className={`${GraphTheme.Graph_Bar}`}>
+    <div className={`${GraphTheme.Graph_Bar} ${GraphTheme['Graph_Bar' + identifier]}`}>
       <div className={`${GraphTheme.Graph_Bar_Label} ${GraphTheme.Graph_Bar_Label___AnnualPercentageCharge} ${GraphTheme['Graph_Bar_Label___AnnualPercentageCharge' + identifier]}`}>
         {annualPercentageCharge}
       </div>
@@ -72,10 +72,10 @@ const Graph = (
         </div>
         <div className={GraphTheme.Graph_Axis}>
           <div className={GraphTheme.Graph_Axis_Providers}>
-            <div className={GraphTheme.Graph_Axis_Provider}>
+            <div className={`${GraphTheme.Graph_Axis_Provider} ${GraphTheme.Graph_Axis_Provider___First}`}>
               {firstProvider.name}
             </div>
-            <div className={GraphTheme.Graph_Axis_Provider}>
+            <div className={`${GraphTheme.Graph_Axis_Provider} ${GraphTheme.Graph_Axis_Provider___Second}`}>
               {secondProvider.name}
             </div>
           </div>

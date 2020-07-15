@@ -8,13 +8,14 @@
 }
 
 .Disclaimer {
-  margin-top: $base-unit * 12;
+  margin-top: $base-unit * 6;
   color: $accent-3;
   font-size: $caption-font-size;
   line-height: $caption-line-height;
   text-align: center;
   text-transform: uppercase;
   @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 12;
     font-size: $body-font-size;
     line-height: $body-line-height;
   }
