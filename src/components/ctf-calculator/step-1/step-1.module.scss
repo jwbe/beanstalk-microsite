@@ -3,7 +3,10 @@
   display: flex;
   button {
     &:first-of-type {
-      margin-right: $base-unit * 2;
+      margin-right: $base-unit;
+      @media (min-width: $breakpoint-sm) {
+        margin-right: $base-unit * 2;
+      }
     }
   }
 }

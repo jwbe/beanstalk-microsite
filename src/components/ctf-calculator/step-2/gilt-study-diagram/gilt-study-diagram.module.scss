@@ -1,31 +1,49 @@
 .GiltStudyDiagram {
   margin-right: auto;
-  margin-bottom: $base-unit * 8;
+  margin-bottom: $base-unit * 5;
   margin-left: auto;
   max-width: $base-unit * 50;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 8;
+  }
   &_Bar {
     align-items: center;
-    padding-right: $base-unit * 3;
-    padding-left: $base-unit * 3;
-    height: $base-unit * 9;
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+    height: $base-unit * 7;
     color: $white;
     font-size: $headline-font-size;
     line-height: $headline-line-height;
     font-family: 'Quicksand', sans-serif;
+    @media (min-width: $breakpoint-sm) {
+      padding-right: $base-unit * 3;
+      padding-left: $base-unit * 3;
+      height: $base-unit * 9;
+    }
     &___Shares {
       display: flex;
-      margin-bottom: $base-unit * 2;
+      margin-bottom: $base-unit;
       background-color: $secondary;
+      @media (min-width: $breakpoint-sm) {
+        margin-bottom: $base-unit * 2;
+      }
     }
     &___Cash {
       display: inline-flex;
-      margin-bottom: $base-unit * 3;
+      margin-bottom: $base-unit * 2;
       background-color: $accent-3-light;
+      @media (min-width: $breakpoint-sm) {
+        margin-bottom: $base-unit * 3;
+      }
     }
     &_Caption {
-      font-size: $body-font-size;
+      font-size: $small-font-size;
       font-weight: 700;
-      line-height: $body-line-height;
+      line-height: $small-line-height;
+      @media (min-width: $breakpoint-sm) {
+        font-size: $body-font-size;
+        line-height: $body-line-height;
+      }
     }
   }
 } 

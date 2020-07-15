@@ -1,6 +1,9 @@
 .Sliders {
-  margin-bottom: $base-unit * 8;
-  padding-left: $base-unit * 5;
+  margin-bottom: $base-unit * 5;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 8;
+    padding-left: $base-unit * 5;
+  }
 }
 
 .Slider {
@@ -9,33 +12,46 @@
   &_Input {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 26.25rem;
-    height: $base-unit * 5;
+    width: calc(100% - #{$base-unit * 4});
+    height: $base-unit * 4;
     margin-right: $base-unit * 4;
+    @media (min-width: $breakpoint-sm) {
+      height: $base-unit * 5;
+    }
   }
   &_Heading {
     margin-bottom: $base-unit;
     color: $accent-3;
-    font-size: $subheader-font-size;
+    font-size: $caption-font-size;
     font-weight: 700;
-    line-height: $subheader-line-height;
+    line-height: $caption-line-height;
     font-family: 'Quicksand', sans-serif;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+    }
   }
   &_Thumb {
-    width: $base-unit * 4;
-    height: $base-unit * 4;
+    width: $base-unit * 3;
+    height: $base-unit * 3;
     background: $secondary;
     border: $base-unit / 2 solid $white;
     box-shadow: $shadow-level-1;
     border-radius: 100%;
     cursor: pointer;
     outline: 0;
+    @media (min-width: $breakpoint-sm) {
+      width: $base-unit * 4;
+      height: $base-unit * 4;
+    }
   }
   &_Track {
-    height: $base-unit;
+    height: $base-unit / 2;
     background: #d2d3d2;
     border-radius: 99rem;
+    @media (min-width: $breakpoint-sm) {
+      height: $base-unit;
+    }
   }
   &_Feedback {
     padding-top: $base-unit;
@@ -44,17 +60,21 @@
     padding-left: $base-unit * 2;
     color: $accent-3;
     background-color: $accent-3-lighter;
-    font-size: $subheader-font-size;
+    font-size: $caption-font-size;
     font-weight: 700;
-    line-height: $subheader-line-height;
+    line-height: $caption-line-height;
     border-radius: 99rem;
     text-align: center;
     white-space: nowrap;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+    }
   }
   &_InputAndFeedbackWrapper {
     display: flex;
     &___Top {
-      margin-bottom: $base-unit;
+      margin-bottom: $base-unit * 2;
     }
   }
 }

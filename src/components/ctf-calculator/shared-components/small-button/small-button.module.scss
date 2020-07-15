@@ -6,13 +6,18 @@
   padding-left: $base-unit * 3;
   color: $white;
   font-family: 'Roboto', sans-serif;
-  font-size: $title-font-size;
-  line-height: $title-line-height;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
   background-color: $secondary;
   border-radius: 99rem;
   box-shadow: $shadow-level-3;
   cursor: pointer;
   outline: 0;
+  white-space: nowrap;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
   &___Centred {
     margin-right: auto;
     margin-left: auto;

@@ -1,13 +1,20 @@
 .ProviderSelect {
-  margin-bottom: $base-unit * 11;
+  margin-bottom: $base-unit * 8;
   box-shadow: $shadow-level-3;
   border-radius: $base-unit;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 11;
+  }
   &_Heading {
     margin-top: 0;
     margin-bottom: $base-unit;
     color: $secondary;
     font-family: 'Quicksand', sans-serif;
-    font-size: $subheader-font-size;
-    line-height: $subheader-line-height;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+    }
   }
 }

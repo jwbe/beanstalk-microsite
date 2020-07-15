@@ -19,7 +19,7 @@ class Step2 extends Component {
             Cash CTFs and JISAs do not charge fees as banks make money by paying savers less interest on their cash than they charge to people who borrow from the bank. 
           </p>
 
-          <p className={StepTheme.Paragraph}>
+          <p className={`${StepTheme.Paragraph} ${StepTheme.Paragraph___Last}`}>
             Cash CTFs/JISAs give certainty as you know that the savings will grow by the interest rate but inflation can reduce the effective value of your child's savings.
           </p>
 

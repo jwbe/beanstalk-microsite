@@ -1,9 +1,23 @@
 .Container {
-  margin-bottom: $base-unit * 12;
+  margin-bottom: $base-unit * 6;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 12;
+  }
 }
 
 .Paragraph {
-  margin-bottom: $base-unit * 4;
-  font-size: $title-font-size;
-  line-height: $title-line-height;
+  margin-bottom: $base-unit * 2;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+  &___Last {
+    margin-bottom: $base-unit * 5;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit * 8;
+    }
+  }
 }

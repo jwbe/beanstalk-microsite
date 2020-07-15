@@ -92,7 +92,7 @@ class CtfCalculator extends Component {
             />
         </div>
         <p className={CtfCalculatorTheme.Disclaimer}>
-          As with any investment the value can got down as well up. Past performance is no indicator of future performance. The tax treatment of ISAs Depends on your individual circumstances and may be subject to change in the future.
+          As with any investment the value can go down as well up. Past performance is no indicator of future performance. The tax treatment of ISAs Depends on your individual circumstances and may be subject to change in the future.
         </p>
       </>
     )

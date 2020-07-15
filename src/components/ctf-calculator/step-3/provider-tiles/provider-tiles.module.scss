@@ -2,19 +2,29 @@
   flex-wrap: wrap;
   display: flex;
   max-width: $base-unit * 56;
-  margin-right: auto;
-  margin-bottom: $base-unit * 7;
-  margin-left: auto;
+  margin-right: -$base-unit / 2;
+  margin-bottom: $base-unit * 4;
+  margin-left: -$base-unit / 2;
+  @media (min-width: $breakpoint-sm) {
+    margin-right: auto;
+    margin-bottom: $base-unit * 7;
+    margin-left: auto;
+  }
   &_Tile {
     position: relative;
-    flex-basis: calc(25% - #{$base-unit * 2});
+    flex-basis: calc(25% - #{$base-unit});
     display: flex;
-    margin: $base-unit;
-    width: $base-unit * 11;
+    margin: $base-unit / 2;
+    width: 4.125rem;
     border-radius: $base-unit;
     cursor: pointer;
     background-color: $white;
     box-shadow: $shadow-level-3;
+    @media (min-width: $breakpoint-sm) {
+      flex-basis: calc(25% - #{$base-unit * 2});
+      width: $base-unit * 11;
+      margin: $base-unit;
+    }
     &::before {
       display: block;
       content: '';
