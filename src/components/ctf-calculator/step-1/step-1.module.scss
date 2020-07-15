@@ -1,0 +1,9 @@
+.Buttons {
+  justify-content: center;
+  display: flex;
+  button {
+    &:first-of-type {
+      margin-right: $base-unit * 2;
+    }
+  }
+}

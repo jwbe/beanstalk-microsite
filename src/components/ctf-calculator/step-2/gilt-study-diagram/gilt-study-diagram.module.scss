@@ -1,0 +1,31 @@
+.GiltStudyDiagram {
+  margin-right: auto;
+  margin-bottom: $base-unit * 8;
+  margin-left: auto;
+  max-width: $base-unit * 50;
+  &_Bar {
+    align-items: center;
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+    height: $base-unit * 9;
+    color: $white;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+    font-family: 'Quicksand', sans-serif;
+    &___Shares {
+      display: flex;
+      margin-bottom: $base-unit * 2;
+      background-color: $secondary;
+    }
+    &___Cash {
+      display: inline-flex;
+      margin-bottom: $base-unit * 3;
+      background-color: $accent-3-light;
+    }
+    &_Caption {
+      font-size: $body-font-size;
+      font-weight: 700;
+      line-height: $body-line-height;
+    }
+  }
+} 

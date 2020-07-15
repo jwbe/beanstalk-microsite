@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Header from './header/header.js';
-import Step1 from './step-1/step-1.js';
-import Step2 from './step-2/step-2.js';
-import Step3 from './step-3/step-3.js';
-import Step4 from './step-4/step-4.js';
+import Header from './header/header';
+import Step1 from './step-1/step-1';
+import Step2 from './step-2/step-2';
+import Step3 from './step-3/step-3';
+import Step4 from './step-4/step-4';
 
-import CtCalculatorTheme from './ctf-calculator.module.scss';
+import CtfCalculatorTheme from './ctf-calculator.module.scss';
 
 class CtfCalculator extends Component {
   constructor(props) {
@@ -65,31 +65,36 @@ class CtfCalculator extends Component {
 
   render() {
     return(
-      <div className={CtCalculatorTheme.Container}>
-        <Header
-          currentStep={this.state.currentStep}/>
-        <Step1 
-          currentStep={this.state.currentStep} 
-          goToStep={this._goToStep}/>
-        <Step2 
-          currentStep={this.state.currentStep} 
-          goToStep={this._goToStep}/>
-        <Step3 
-          currentStep={this.state.currentStep} 
-          goToStep={this._goToStep} 
-          updateProviderSelection={this._updateProviderSelection}
-          providerSelection={this.state.firstSelectionId}/>
-        <Step4 
-          currentStep={this.state.currentStep}
-          goToStep={this._goToStep}
-          updateCtfValue={this._updateCtfValue}
-          updateChildAge={this._updateChildAge}
-          childAge={this.state.childAge}
-          ctfValue={this.state.ctfValue}
-          firstSelectionId={this.state.firstSelectionId}
-          secondSelectionId={this.state.secondSelectionId}
-          />
-      </div>
+      <>
+        <div className={CtfCalculatorTheme.Container}>
+          <Header
+            currentStep={this.state.currentStep}/>
+          <Step1 
+            currentStep={this.state.currentStep} 
+            goToStep={this._goToStep}/>
+          <Step2 
+            currentStep={this.state.currentStep} 
+            goToStep={this._goToStep}/>
+          <Step3 
+            currentStep={this.state.currentStep} 
+            goToStep={this._goToStep} 
+            updateProviderSelection={this._updateProviderSelection}
+            providerSelection={this.state.firstSelectionId}/>
+          <Step4 
+            currentStep={this.state.currentStep}
+            goToStep={this._goToStep}
+            updateCtfValue={this._updateCtfValue}
+            updateChildAge={this._updateChildAge}
+            childAge={this.state.childAge}
+            ctfValue={this.state.ctfValue}
+            firstSelectionId={this.state.firstSelectionId}
+            secondSelectionId={this.state.secondSelectionId}
+            />
+        </div>
+        <p className={CtfCalculatorTheme.Disclaimer}>
+          As with any investment the value can got down as well up. Past performance is no indicator of future performance. The tax treatment of ISAs Depends on your individual circumstances and may be subject to change in the future.
+        </p>
+      </>
     )
   }
 }

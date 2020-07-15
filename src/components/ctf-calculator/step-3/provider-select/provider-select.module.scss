@@ -1,5 +1,10 @@
 .ProviderSelect {
+  margin-bottom: $base-unit * 11;
+  box-shadow: $shadow-level-3;
+  border-radius: $base-unit;
   &_Heading {
+    margin-top: 0;
+    margin-bottom: $base-unit;
     color: $secondary;
     font-family: 'Quicksand', sans-serif;
     font-size: $subheader-font-size;

@@ -1,4 +1,5 @@
 .SmallButton {
+  display: block;
   padding-top: $base-unit;
   padding-right: $base-unit * 3;
   padding-bottom: $base-unit;
@@ -9,4 +10,11 @@
   line-height: $title-line-height;
   background-color: $secondary;
   border-radius: 99rem;
+  box-shadow: $shadow-level-3;
+  cursor: pointer;
+  outline: 0;
+  &___Centred {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

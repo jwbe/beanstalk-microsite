@@ -1,6 +1,5 @@
 .Sliders {
   margin-bottom: $base-unit * 8;
-  padding-right: $base-unit * 5;
   padding-left: $base-unit * 5;
 }
 
@@ -10,7 +9,10 @@
   &_Input {
     display: flex;
     align-items: center;
+    width: 100%;
+    max-width: 26.25rem;
     height: $base-unit * 5;
+    margin-right: $base-unit * 4;
   }
   &_Heading {
     margin-bottom: $base-unit;
@@ -30,13 +32,11 @@
     cursor: pointer;
     outline: 0;
   }
-
   &_Track {
     height: $base-unit;
     background: #d2d3d2;
     border-radius: 99rem;
   }
-
   &_Feedback {
     padding-top: $base-unit;
     padding-right: $base-unit * 2;
@@ -49,5 +49,12 @@
     line-height: $subheader-line-height;
     border-radius: 99rem;
     text-align: center;
+    white-space: nowrap;
+  }
+  &_InputAndFeedbackWrapper {
+    display: flex;
+    &___Top {
+      margin-bottom: $base-unit;
+    }
   }
 }

@@ -1,15 +1,49 @@
+$iron: #e3e3e4;
+
 .Progress {
+  position: relative;
   align-items: center;
   justify-content: space-between;
   display: flex;
-  &_Track {
-    height: $base-unit / 2;
-    background-color: red;
+  margin-top: $base-unit * 11;
+  margin-bottom: $base-unit * 9;
+  height: $base-unit * 2;
+  &::before {
+    position: absolute;
+    height: $base-unit / 4;
+    width: 100%;
+    background-color: $iron;
+    content: '';
   }
   &_Milestone {
-    width: $base-unit;
-    height: $base-unit;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: $base-unit * 2;
+    height: $base-unit * 2;
     border-radius: 100%;
-    background-color: blue;
+    z-index: 1;
+    &___Active {
+      border: $base-unit / 4 solid $secondary;
+      background-color: $white;
+      &::before {
+        display: block;
+        width: $base-unit;
+        height: $base-unit;
+        background-color: $secondary;
+        border-radius: 100%;
+        content: '';
+      }
+    }
+    &___Inactive {
+      border: $base-unit / 4 solid $iron;
+      background-color: $white;
+    }
+    &___Visited {
+      border: $base-unit / 2 solid $white;
+      width: $base-unit * 2;
+      height: $base-unit * 2;
+      background-color: $secondary;
+    }
   }
 }

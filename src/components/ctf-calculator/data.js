@@ -9,11 +9,11 @@ const Data = {
     },
     {
       id: 1,
-      name: 'One Family',
+      name: 'Barclays',
       annualPercentageCharge: 1.5,
-      product: 'One Family CTF',
+      product: 'Barclays CTF',
       showProviderSelector: true,
-    },  
+    }, 
     {
       id: 2,
       name: 'Foresters Financial',
@@ -37,9 +37,9 @@ const Data = {
     }, 
     {
       id: 5,
-      name: 'HSBC',
+      name: 'One Family',
       annualPercentageCharge: 1.5,
-      product: 'HSBC CTF',
+      product: 'One Family CTF',
       showProviderSelector: true,
     }, 
     {
@@ -58,11 +58,11 @@ const Data = {
     },
     {
       id: 8,
-      name: 'Barclays',
+      name: 'HSBC',
       annualPercentageCharge: 1.5,
-      product: 'Barclays CTF',
+      product: 'HSBC CTF',
       showProviderSelector: true,
-    }, 
+    },  
     {
       id: 9,
       name: 'Legal & General',

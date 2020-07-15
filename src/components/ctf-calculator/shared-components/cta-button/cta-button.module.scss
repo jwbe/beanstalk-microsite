@@ -1,5 +1,5 @@
 .CtaButton {
-  display: inline-flex;
+  display: inline-block;
   padding-top: $base-unit * 3;
   padding-right: $base-unit * 4;
   padding-bottom: $base-unit * 3;
@@ -13,4 +13,8 @@
   border-radius: 99rem;
   box-shadow: $shadow-level-3;
   text-decoration: none;
+  white-space: nowrap;
+  &_Wrapper {
+    text-align: center;
+  }
 }

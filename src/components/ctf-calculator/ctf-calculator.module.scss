@@ -6,3 +6,12 @@
     max-width: 38.75rem;
   }
 }
+
+.Disclaimer {
+  margin-top: $base-unit * 12;
+  color: $accent-3;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -9,16 +9,26 @@ const _heightEquation = (value, total, scale) => {
 }
 
 const _bar = (identifier, annualPercentageCharge, totalCharge, height) => {
+  const FONT_SIZE_THRESHOLD = 20;
+  const belowThresholdValue = (height * 100 / 2500) + 0.25;
   return (
     <div className={`${GraphTheme.Graph_Bar}`}>
-      <div className={`${GraphTheme.Graph_Bar_Inner} ${identifier}`} style={{height: `${height}%`}}>
-        <div className={GraphTheme.Graph_Bar_AnnualPercentageCharge}>
-          {annualPercentageCharge}
-        </div>
-        <div className={GraphTheme.Graph_Bar_Plot}>
-          <div className={GraphTheme.Graph_Bar_TotalCharge}>
-            {totalCharge}
-          </div>
+      <div className={`${GraphTheme.Graph_Bar_Label} ${GraphTheme.Graph_Bar_Label___AnnualPercentageCharge} ${GraphTheme['Graph_Bar_Label___AnnualPercentageCharge' + identifier]}`}>
+        {annualPercentageCharge}
+      </div>
+      <div 
+        className={`${GraphTheme.Graph_Bar_Plot} ${GraphTheme['Graph_Bar_Plot' + identifier]}`} 
+        style={{
+          height: `${height}%`,
+        }}>
+        <div 
+          className={`${GraphTheme.Graph_Bar_Label} ${GraphTheme.Graph_Bar_Label___TotalCharge}`}
+          style={{
+            marginTop: height < FONT_SIZE_THRESHOLD ? `${belowThresholdValue / 1.5}rem` : null,
+            fontSize: height < FONT_SIZE_THRESHOLD ? `${belowThresholdValue}rem` : null,
+            lineHeight: height < FONT_SIZE_THRESHOLD ? `${belowThresholdValue}rem` : null
+          }}>
+          {totalCharge}
         </div>
       </div>
     </div>
@@ -34,7 +44,7 @@ const Graph = (
   secondProvider, 
   {ctfValue}) => {
 
-  const SCALE = 0.25;
+  const SCALE = 0.20;
 
   return (
     <>
@@ -44,7 +54,7 @@ const Graph = (
       <div className={GraphTheme.Graph}>
         <div className={GraphTheme.Graph_Bars}>
           {_bar(
-              GraphTheme.Graph_Bar___First,
+              `___First`,
               `${firstAnnualPercentageCharge}%`, 
               `£${numberWithCommas(firstTotalCharge)}`, 
               _heightEquation(
@@ -52,7 +62,7 @@ const Graph = (
                 ctfValue, 
                 SCALE))}
           {_bar(
-              GraphTheme.Graph_Bar___Second,
+              `___Second`,
               `${secondAnnualPercentageCharge}%`, 
               `£${numberWithCommas(secondTotalCharge)}`, 
               _heightEquation(

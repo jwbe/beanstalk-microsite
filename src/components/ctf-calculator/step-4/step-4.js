@@ -44,12 +44,12 @@ class Step4 extends Component {
             <div className={SliderTheme.Slider_Heading}>
               CTF Current Value
             </div>
-            <div>
+            <div className={`${SliderTheme.Slider_InputAndFeedbackWrapper} ${SliderTheme.Slider_InputAndFeedbackWrapper___Top}`}>
               <Slider
                 className={SliderTheme.Slider_Input}
                 thumbClassName={SliderTheme.Slider_Thumb}
                 trackClassName={SliderTheme.Slider_Track}
-                defaultValue={1000}
+                defaultValue={10000}
                 onChange={this.props.updateCtfValue}
                 step={50}
                 min={0}
@@ -65,12 +65,12 @@ class Step4 extends Component {
             <div className={SliderTheme.Slider_Heading}>
               Child's age
             </div>
-            <div>
+            <div className={SliderTheme.Slider_InputAndFeedbackWrapper}>
               <Slider
                 className={SliderTheme.Slider_Input}
                 thumbClassName={SliderTheme.Slider_Thumb}
                 trackClassName={SliderTheme.Slider_Track}
-                defaultValue={12}
+                defaultValue={8}
                 onChange={this.props.updateChildAge}
                 min={8}
                 max={18}
@@ -94,10 +94,6 @@ class Step4 extends Component {
           formData)}
 
         <CtaButton/>
-
-        <p>
-          *Capital at risk
-        </p>
       </>
     )
   }
