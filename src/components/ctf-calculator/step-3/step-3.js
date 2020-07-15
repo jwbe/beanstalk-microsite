@@ -78,7 +78,7 @@ class Step3 extends Component {
         color: isDisabled
           ? '#32b67a'
           : isSelected
-          ? '#00ff00'
+          ? '#8e8e95'
           : '#8e8e95'
       }),
       input: (styles) => ({

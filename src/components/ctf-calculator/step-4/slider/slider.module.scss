@@ -56,10 +56,10 @@
   }
   &_Feedback {
     padding-top: $base-unit;
-    padding-right: $base-unit * 2;
+    padding-right: $base-unit;
     padding-bottom: $base-unit;
-    padding-left: $base-unit * 2;
-    width: $base-unit * 11;
+    padding-left: $base-unit;
+    width: $base-unit * 12;
     color: $accent-3;
     background-color: $accent-3-lighter;
     font-size: $caption-font-size;
@@ -69,7 +69,7 @@
     text-align: center;
     white-space: nowrap;
     @media (min-width: $breakpoint-sm) {
-      width: $base-unit * 13;
+      width: $base-unit * 14;
       font-size: $subheader-font-size;
       line-height: $subheader-line-height;
     }
