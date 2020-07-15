@@ -3,7 +3,7 @@ const Data = {
     {
       id: 0,
       name: 'Beanstalk',
-      annualPercentageCharge: 0.5,
+      annualPercentageCharge: 0.62,
       product: 'Beanstalk CTF',
       showProviderSelector: false,
     },

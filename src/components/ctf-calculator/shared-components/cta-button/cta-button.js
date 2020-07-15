@@ -4,7 +4,7 @@ import CtaButtonTheme from './cta-button.module.scss';
 
 const CtaButton = () => (
   <div className={CtaButtonTheme.CtaButton_Wrapper}>
-    <Link className={CtaButtonTheme.CtaButton} to=''>Open a Beanstalk account</Link>
+    <Link className={CtaButtonTheme.CtaButton} to='/from-ctf-calculator'>Open a Beanstalk account</Link>
   </div>
 )
 

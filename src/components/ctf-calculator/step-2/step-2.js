@@ -16,7 +16,7 @@ class Step2 extends Component {
       <>
         <div className={StepTheme.Container}>
           <p className={StepTheme.Paragraph}>
-            Cash CTFs and JISAs do not charge fees as banks make money by paying savers less interest on their cash than they charge to people who borrow from the bank. 
+            Cash CTFs and JISAs do not charge fees as banks make money by paying savers less interest on their cash than they charge to people who borrow from the bank.
           </p>
 
           <p className={`${StepTheme.Paragraph} ${StepTheme.Paragraph___Last}`}>

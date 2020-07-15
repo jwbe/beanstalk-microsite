@@ -72,7 +72,7 @@ class Step4 extends Component {
                 trackClassName={SliderTheme.Slider_Track}
                 defaultValue={8}
                 onChange={this.props.updateChildAge}
-                min={8}
+                min={0}
                 max={18}
               />
               <div className={SliderTheme.Slider_Feedback}>

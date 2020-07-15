@@ -44,7 +44,7 @@ const Graph = (
   secondProvider, 
   {ctfValue}) => {
 
-  const SCALE = 0.20;
+  const SCALE = 0.32;
 
   return (
     <>
