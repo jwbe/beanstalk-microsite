@@ -43,6 +43,7 @@
     @media (min-width: $breakpoint-sm) {
       width: $base-unit * 4;
       height: $base-unit * 4;
+      border: $base-unit / 2 solid $white;
     }
   }
   &_Track {
