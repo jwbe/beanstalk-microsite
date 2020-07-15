@@ -58,6 +58,7 @@
     padding-right: $base-unit * 2;
     padding-bottom: $base-unit;
     padding-left: $base-unit * 2;
+    width: $base-unit * 10;
     color: $accent-3;
     background-color: $accent-3-lighter;
     font-size: $caption-font-size;
@@ -67,6 +68,7 @@
     text-align: center;
     white-space: nowrap;
     @media (min-width: $breakpoint-sm) {
+      width: $base-unit * 12;
       font-size: $subheader-font-size;
       line-height: $subheader-line-height;
     }

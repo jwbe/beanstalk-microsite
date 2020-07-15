@@ -37,7 +37,7 @@ class Step3 extends Component {
     const isAfterSplit = (id) => id >= SPLIT_PROVIDERS_AT;
 
     const providerTiles = () => {
-      return R.map(provider => <div key={provider.id} className={`${ProviderTilesTheme.ProviderTiles_Tile} ${provider.id === this.props.providerSelection ? `active` : null}` } onClick={() => {this.props.updateProviderSelection(provider.id)}}><div className={ProviderTilesTheme.ProviderTiles_Tile_Inner}><img className={ProviderTilesTheme.ProviderTiles_Tile_Logo} src={`${_removeSpacesFromString(provider.name)}Logo`}/></div></div>, R.compose(R.filter(isAllowedInUi), R.filter(provider => isBeforeSplit(provider.id)))(providers))
+      return R.map(provider => <div key={provider.id} className={`${ProviderTilesTheme.ProviderTiles_Tile} ${provider.id === this.props.providerSelection ? `${ProviderTilesTheme.ProviderTiles_Tile___Active}` : null}` } onClick={() => {this.props.updateProviderSelection(provider.id)}}><div className={ProviderTilesTheme.ProviderTiles_Tile_Inner}><img className={ProviderTilesTheme.ProviderTiles_Tile_Logo} src={`${_removeSpacesFromString(provider.name)}Logo`}/></div></div>, R.compose(R.filter(isAllowedInUi), R.filter(provider => isBeforeSplit(provider.id)))(providers))
     }
 
     const providerSelect = () => {
@@ -98,7 +98,9 @@ class Step3 extends Component {
         </Question>
 
         <div className={ProviderTilesTheme.ProviderTiles}>
-          {providerTiles()}
+          <div className={ProviderTilesTheme.ProviderTiles_Wrapper}>
+            {providerTiles()}
+          </div>
         </div>
 
         <div className={StepTheme.BottomContainer}>

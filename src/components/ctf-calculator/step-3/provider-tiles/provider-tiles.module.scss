@@ -1,14 +1,18 @@
 .ProviderTiles {
-  flex-wrap: wrap;
+  justify-content: center;
   display: flex;
-  max-width: $base-unit * 56;
-  margin-right: -$base-unit / 2;
-  margin-bottom: $base-unit * 4;
-  margin-left: -$base-unit / 2;
-  @media (min-width: $breakpoint-sm) {
-    margin-right: auto;
-    margin-bottom: $base-unit * 7;
-    margin-left: auto;
+  &_Wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    max-width: $base-unit * 56;
+    margin-right: -$base-unit / 2;
+    margin-bottom: $base-unit * 4;
+    margin-left: -$base-unit / 2;
+    @media (min-width: $breakpoint-sm) {
+      margin-right: auto;
+      margin-bottom: $base-unit * 7;
+      margin-left: auto;
+    }
   }
   &_Tile {
     position: relative;
@@ -29,6 +33,9 @@
       display: block;
       content: '';
       padding-top: 100%;
+    }
+    &___Active {
+      box-shadow: 0 .5rem 1rem 0 rgba($secondary, .3);
     }
     &_Inner {
       top: 0;

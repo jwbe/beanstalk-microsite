@@ -10,8 +10,12 @@
 .Disclaimer {
   margin-top: $base-unit * 12;
   color: $accent-3;
-  font-size: $body-font-size;
-  line-height: $body-line-height;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
   text-align: center;
   text-transform: uppercase;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
 }
