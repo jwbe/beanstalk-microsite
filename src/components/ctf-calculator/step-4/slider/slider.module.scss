@@ -35,7 +35,7 @@
     width: $base-unit * 3;
     height: $base-unit * 3;
     background: $secondary;
-    border: $base-unit / 2 solid $white;
+    border: $base-unit / 4 solid $white;
     box-shadow: $shadow-level-1;
     border-radius: 100%;
     cursor: pointer;
@@ -58,7 +58,7 @@
     padding-right: $base-unit * 2;
     padding-bottom: $base-unit;
     padding-left: $base-unit * 2;
-    width: $base-unit * 10;
+    width: $base-unit * 11;
     color: $accent-3;
     background-color: $accent-3-lighter;
     font-size: $caption-font-size;
@@ -68,7 +68,7 @@
     text-align: center;
     white-space: nowrap;
     @media (min-width: $breakpoint-sm) {
-      width: $base-unit * 12;
+      width: $base-unit * 13;
       font-size: $subheader-font-size;
       line-height: $subheader-line-height;
     }
