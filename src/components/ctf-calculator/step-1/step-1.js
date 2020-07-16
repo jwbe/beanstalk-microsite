@@ -12,7 +12,7 @@ class Step1 extends Component {
     return(
       <>
         <Question number={'1'}>
-          Is your child's CTF or JISA held as cash or is it stakeholder stocks & shares?
+          Does your child have a cash or stakeholder / stocks & shares account?
         </Question>
 
         <div className={StepTheme.Buttons}>

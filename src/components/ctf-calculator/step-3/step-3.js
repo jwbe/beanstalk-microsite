@@ -10,7 +10,7 @@ import ProviderTilesTheme from './provider-tiles/provider-tiles.module.scss';
 import ProviderSelectTheme from './provider-select/provider-select.module.scss';
 
 import StepTheme from './step-3.module.scss';
-
+/*
 import ScottishFriendlyLogo from '../images/logos/scottish-friendly-logo.png'
 import RoyalBankOfScotlandLogo from '../images/logos/royal-bank-of-scotland-logo.png'
 import NatWestLogo from '../images/logos/natwest-logo.png'
@@ -19,6 +19,7 @@ import HsbcLogo from '../images/logos/hsbc-logo.png'
 import ForestersFinancialLogo from '../images/logos/foresters-financial-logo.png'
 import FandCLogo from '../images/logos/FAndC-logo.png'
 import BarclaysLogo from '../images/logos/barclays-logo.png'
+*/
 
 const _removeSpacesFromString = (string) => {
   return string.replace(/\s/g, '');
