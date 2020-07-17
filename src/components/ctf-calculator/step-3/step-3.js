@@ -51,11 +51,17 @@ class Step3 extends Component {
     const { firstSelectionId } = this.props.providerSelection;
 
     const selectStyles = {
-      control: (styles, { isDisabled, isFocused, isSelected }) => ({
+      control: (styles, { state, base, isDisabled, isFocused, isSelected }) => ({
+        ...base,
         ...styles,
         paddingRight: '0.875rem',
         paddingLeft: '1rem',
         height: '3rem',
+        boxShadow: isFocused ? '0 0 0.125rem 0 rgba(50, 182, 122, 0.3), 0 0.0625rem 0.25rem 0 rgba(50, 182, 122, 0.3), 0 0.5rem 1rem 0 rgba(50, 182, 122, 0.3)' : null,
+        borderColor: isFocused ? '#32b67a' : null,
+        "&:hover": {
+          borderColor: isFocused ? '#32b67a' : null
+        },
         border: isDisabled
           ? 'none'
           : isSelected
