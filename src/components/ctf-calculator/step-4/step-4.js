@@ -144,6 +144,7 @@ class Step4 extends Component {
 
         <div className={StepTheme.Footnotes}>
           {footNotes.map((note, index) => <div className={StepTheme.Footnotes_Footnote} key={index}>{NOTE_SYMBOLS[index]} {note}</div>)}
+          <div className={StepTheme.Footnotes_Footnote}><strong>Note:</strong> Competitor fees as listed on their websites. Data accurate as of 15/07/20</div>
         </div>
 
       </>
