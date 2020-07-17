@@ -115,7 +115,7 @@ class Step4 extends Component {
               max={16}
               />
               <div className={SliderTheme.Slider_Feedback}>
-                {`${this.props.childAge} years`}
+                {`${this.props.childAge} ${this.props.childAge === 1 ? `year` : `years`}`}
               </div>
             </div>
           </div>
