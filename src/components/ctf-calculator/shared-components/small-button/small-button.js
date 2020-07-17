@@ -11,10 +11,10 @@ const SmallButton = ({
       case 'centred':
         return SmallButtonTheme.SmallButton___Centred;
         break;
-      default:
-        return null;
       case 'right':
         return SmallButtonTheme.SmallButton___Right;
+      default:
+        return '';
     }
   }
   return (

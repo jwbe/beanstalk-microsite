@@ -3,10 +3,11 @@ import QuestionTheme from './question.module.scss';
 
 const Question = ({
   number,
-  children
+  children,
+  topsFlushOnMobile
 }) => {
   return (
-    <div className={QuestionTheme.Question}>
+    <div className={`${QuestionTheme.Question} ${topsFlushOnMobile ? QuestionTheme.Question___topsFlushOnMobile : ''}`}>
       <div className={QuestionTheme.Question_Roundel}>
         {number}
       </div>

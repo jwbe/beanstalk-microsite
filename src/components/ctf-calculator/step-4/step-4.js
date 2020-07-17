@@ -15,7 +15,6 @@ const _calculateProviderCost = ({ annualPercentageCharge }, { MAX_CHILD_AGE }, {
 
 const NOTE_SYMBOLS = ['*','†','‡','§'];
 
-
 class Step4 extends Component {
   render() {
     const params = {

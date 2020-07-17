@@ -11,7 +11,9 @@ class Step1 extends Component {
     }
     return(
       <>
-        <Question number={'1'}>
+        <Question 
+        number={'1'} 
+        topsFlushOnMobile={true}>
           Does your child have a cash or stakeholder / stocks & shares account?
         </Question>
 

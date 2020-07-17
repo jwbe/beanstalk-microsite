@@ -30,7 +30,7 @@ class Step3 extends Component {
       return R.map(provider => 
         <div 
         key={provider.id} 
-        className={`${ProviderTilesTheme.ProviderTiles_Tile} ${provider.id === this.props.providerSelection ? `${ProviderTilesTheme.ProviderTiles_Tile___Active}` : null}` } 
+        className={`${ProviderTilesTheme.ProviderTiles_Tile} ${provider.id === this.props.providerSelection ? `${ProviderTilesTheme.ProviderTiles_Tile___Active}` : ''}` } 
         onClick={() => {this.props.updateProviderSelection(provider.id)}}>
           <div className={ProviderTilesTheme.ProviderTiles_Tile_Inner}>
             <img 

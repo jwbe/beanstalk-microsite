@@ -6,6 +6,11 @@
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 4;
   }
+  &___topsFlushOnMobile {
+    @media (max-width: $breakpoint-sm - .0625em) {
+      align-items: flex-start;
+    }
+  }
   &_Roundel {
     flex: none;
     margin-right: $base-unit * 2;
