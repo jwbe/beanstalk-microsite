@@ -24,6 +24,7 @@
     cursor: pointer;
     background-color: $white;
     box-shadow: $shadow-level-3;
+    overflow: hidden;
     @media (min-width: $breakpoint-sm) {
       flex-basis: calc(25% - #{$base-unit * 2});
       width: $base-unit * 11;
@@ -35,7 +36,9 @@
       padding-top: 100%;
     }
     &___Active {
-      box-shadow: 0 .5rem 1rem 0 rgba($secondary, .3);
+      box-shadow: 0 0 .125rem 0 rgba(50,182,122,.30), 
+                  0 .0625rem .25rem 0 rgba(50,182,122,.30), 
+                  0 .5rem 1rem 0 rgba(50,182,122,.30);
     }
     &_Inner {
       top: 0;
