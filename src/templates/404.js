@@ -2,7 +2,6 @@ import React from 'react';
 import Head from '../components/head/head';
 import { Header } from '../components/header/header';
 import { Main, LAYOUT_VARIANT } from  '../components/main/main';
-import Content from '../components/content/content';
 import Footer from '../components/footer/footer';
 import Wrapper from '../components/wrapper/wrapper';
 

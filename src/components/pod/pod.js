@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { withPrefix } from 'gatsby';
 import styles from './pod.module.scss';
 
 import lightbulbIcon from '../../images/icons/lightbulb--secondary.svg';
@@ -46,13 +45,15 @@ const Pod = ({
     case('privacy'):
       iconSelect = shieldIcon;
       break
+    default:
+      console.log('No logo assigned to pod');
   }
 
   return (
     <div className={styles.Pod_wrapper}>
       <article className={styles.Pod}>
         {link ? <Link className={styles.Pod_link} to={link}/> : null}
-        {externalLink ? <a className={styles.Pod_link} href={externalLink} target="_blank"></a> : null}
+        {externalLink ? <a className={styles.Pod_link} href={externalLink} target="_blank" rel="noopener noreferrer"></a> : null}
         <div className={styles.Pod_icon_wrapper}>
           <img className={styles.Pod_icon} src={iconSelect} width='56' height='56'/>
         </div>

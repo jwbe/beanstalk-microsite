@@ -8,13 +8,14 @@ const _heightEquation = (value, total, scale) => {
   return MIN_GRAPH_BAR_HEIGHT + (((value / total) * 100) / scale);
 }
 
-const _bar = (identifier, annualPercentageCharge, totalCharge, height) => {
+const _bar = (identifier, annualPercentageCharge, additionalPercentageChargeLabel, additionalGraphBarAnnualPercentageLabelCommentIcon, totalCharge, height) => {
   const FONT_SIZE_THRESHOLD = 20;
   const belowThresholdValue = (height * 100 / 2500) + 0.25;
   return (
     <div className={`${GraphTheme.Graph_Bar} ${GraphTheme['Graph_Bar' + identifier]}`}>
       <div className={`${GraphTheme.Graph_Bar_Label} ${GraphTheme.Graph_Bar_Label___AnnualPercentageCharge} ${GraphTheme['Graph_Bar_Label___AnnualPercentageCharge' + identifier]}`}>
-        {annualPercentageCharge}
+        {`${annualPercentageCharge}%`}
+        {additionalPercentageChargeLabel ? <span className={GraphTheme.Graph_Bar_Label___AnnualPercentageCharge_AdditionalLabel}>{additionalPercentageChargeLabel}{additionalGraphBarAnnualPercentageLabelCommentIcon}</span>: null}
       </div>
       <div 
         className={`${GraphTheme.Graph_Bar_Plot} ${GraphTheme['Graph_Bar_Plot' + identifier]}`} 
@@ -28,21 +29,14 @@ const _bar = (identifier, annualPercentageCharge, totalCharge, height) => {
             fontSize: height < FONT_SIZE_THRESHOLD ? `${belowThresholdValue}rem` : null,
             lineHeight: height < FONT_SIZE_THRESHOLD ? `${belowThresholdValue}rem` : null
           }}>
-          {totalCharge}
+          {`£${numberWithCommas(totalCharge)}`}
         </div>
       </div>
     </div>
   )
 }
 
-const Graph = (
-  firstAnnualPercentageCharge, 
-  secondAnnualPercentageCharge, 
-  firstTotalCharge, 
-  secondTotalCharge, 
-  firstProvider, 
-  secondProvider, 
-  {ctfValue}) => {
+const Graph = props => {
 
   const SCALE = 0.32;
 
@@ -55,28 +49,32 @@ const Graph = (
         <div className={GraphTheme.Graph_Bars}>
           {_bar(
               `___First`,
-              `${firstAnnualPercentageCharge}%`, 
-              `£${numberWithCommas(firstTotalCharge)}`, 
+              props.firstAnnualPercentageCharge,
+              props.firstAdditionalGraphBarAnnualPercentageLabel,
+              props.firstAdditionalGraphBarAnnualPercentageLabelCommentIcon,
+              props.firstTotalCharge, 
               _heightEquation(
-                firstTotalCharge, 
-                ctfValue, 
+                props.firstTotalCharge, 
+                props.formData.ctfValue, 
                 SCALE))}
           {_bar(
               `___Second`,
-              `${secondAnnualPercentageCharge}%`, 
-              `£${numberWithCommas(secondTotalCharge)}`, 
+              props.secondAnnualPercentageCharge,
+              props.secondAdditionalGraphBarAnnualPercentageLabel,
+              props.secondAdditionalGraphBarAnnualPercentageLabelCommentIcon,
+              props.secondTotalCharge, 
               _heightEquation(
-                secondTotalCharge, 
-                ctfValue, 
+                props.secondTotalCharge, 
+                props.formData.ctfValue, 
                 SCALE))}
         </div>
         <div className={GraphTheme.Graph_Axis}>
           <div className={GraphTheme.Graph_Axis_Providers}>
             <div className={`${GraphTheme.Graph_Axis_Provider} ${GraphTheme.Graph_Axis_Provider___First}`}>
-              {firstProvider.name}
+              {props.firstProvider.name}{props.firstAdditionalProviderCommentIcon}
             </div>
             <div className={`${GraphTheme.Graph_Axis_Provider} ${GraphTheme.Graph_Axis_Provider___Second}`}>
-              {secondProvider.name}
+              {props.secondProvider.name}{props.secondAdditionalProviderCommentIcon}
             </div>
           </div>
         </div>

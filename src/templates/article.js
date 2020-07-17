@@ -1,10 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Head from '../components/head/head';
-import { Header, HEADER_VARIANT } from '../components/header/header';
+import { Header } from '../components/header/header';
 import { Main, LAYOUT_VARIANT } from  '../components/main/main';
 import Article from '../components/article/article';
-import Footer from '../components/footer/footer';
 import Wrapper from '../components/wrapper/wrapper';
 import SEO from '../components/seo';
 

@@ -1,0 +1,18 @@
+.Footnotes {
+  margin-top: $base-unit * 7;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 33.75rem;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 10;
+  }
+  &_Footnote {
+    margin-bottom: $base-unit;
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

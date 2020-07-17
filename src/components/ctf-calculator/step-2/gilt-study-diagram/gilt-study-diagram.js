@@ -3,6 +3,9 @@ import GiltStudyDiagramTheme from './gilt-study-diagram.module.scss';
 
 const GiltStudyDiagram = () => (
   <div className={GiltStudyDiagramTheme.GiltStudyDiagram}>
+    <h3 className={GiltStudyDiagramTheme.GiltStudyDiagram_Heading}>
+      Returns over 50 years
+    </h3>
     <div className={`${GiltStudyDiagramTheme.GiltStudyDiagram_Bar} ${GiltStudyDiagramTheme.GiltStudyDiagram_Bar___Shares}`}>
       UK Shares 4.7%
     </div>

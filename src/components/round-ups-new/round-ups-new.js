@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from '../info-page/info-page.module.scss';
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
 import uniqueStyles from './roundups.module.scss';
 import Iphone from '../iphone/iphone';
 
 const RoundUps = () => {
-  const [showDiagramGraph, setShowDiagramGraph] = useState(true);
-
   return (
     <>
     <div className={`${titleStyles.TitleBlock} ${styles.TitleBlock___plant}`}>

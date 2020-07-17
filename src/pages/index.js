@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../templates/homepage'
 import Homepage from '../components/homepage/homepage'
-import Head from '../components/head/head';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
 
@@ -10,7 +9,7 @@ const IndexPage = () => {
     <Layout>
       <>
         <Helmet>
-          <title>{`Beanstalk`}</title>
+          <title>Beanstalk</title>
           <script src={withPrefix('smartbanner.min.js')} type="text/javascript" />
           <meta name="google-play-app" content="app-id=uk.co.beanstalkapp" />
           <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png"/>

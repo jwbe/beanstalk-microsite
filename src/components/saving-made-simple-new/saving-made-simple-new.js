@@ -7,15 +7,12 @@ import iconWallet from '../homepage/images/icon_wallet.svg';
 import iconNameLabel from '../homepage/images/icon_nameLabel.svg';
 import iconCashInHandSecondary from '../homepage/images/icon_top-ups--secondary.svg';
 
-import uniqueStyles from './saving-made-simple.module.scss';
-import Iphone from '../iphone/iphone';
 import linkedToKs from '../../images/beanstalk-illustrations_linked-to-ks.png'
 import roundUp from '../../images/beanstalk-illustrations_roundups.png'
 
 const sarahSlug = <span>£50.00 sent to Sarah by Jane Doe.<br/> <span className={styles.Homepage_topUps_message}>Happy birthday to little…</span></span>
 
 const SavingMadeSimple = () => {
-  const [showDiagramGraph, setShowDiagramGraph] = useState(true);
   return (
     <>
       <div className={`${titleStyles.TitleBlock} ${styles.TitleBlock___plant}`}>
