@@ -24,6 +24,8 @@ The decision on whether to transfer is obviously up to you. If you think you are
 
 Generally CTFs have become less attractive as providers are not competing for new accounts (e.g. Cash CTFs interest rates tend to be lower than Cash Junior ISAs) and fees on Stakeholder CTFs (and some Stocks & Shares JISAs) are typically around 1.5%, significantly higher than for Beanstalk. The Beanstalk JISA also automatically becomes an ISA when the child turns 18 years old.
 
+Our [switch calculator](/ctf-calculator) will show if you could save money in fees by transferring.
+
 ### What do I need to do to arrange the transfer?
 
 When you apply for a Beanstalk account, we will ask you if you have an existing account to transfer.  If you do, all we need is for you to sign and return to us (via Freepost) a transfer form that we send to your existing provider. We will contact you directly to get the name and account number for the existing provider and to send you the transfer form. 

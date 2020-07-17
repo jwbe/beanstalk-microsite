@@ -28,7 +28,6 @@ All CTFs were registered with HM Revenue and Customs, who provide a form allowin
 
 <a href="https://www.gov.uk/government/organisations/hm-revenue-customs/contact/child-trust-fund" target="_blank">https://www.gov.uk/government/organisations/hm-revenue-customs/contact/child-trust-fund</a>
 
-
 You will need to log in using your Government Gateway credentials (which are the credentials you use to access Government services, taxes and so on). If you don’t have credentials, you can register for them using the link above.
 
 
@@ -39,5 +38,7 @@ The Child Trust Fund was replaced by the Junior ISA in 2011 and since then you h
 Fees on Stakeholder CTFs (and some Stocks & Shares JISAs) are typically around 1.5%, significantly higher than for Beanstalk.  The Beanstalk JISA also automatically becomes an ISA when the child turns 18 years old, and with Beanstalk you can monitor the performance of your account in real time on your phone (unlike many CTFs where you have to wait for an annual statement).
 
 It is for you to decide, but if you open a Beanstalk JISA, the transfer process is very simple, and we handle everything for you.
+
+Our [switch calculator](/ctf-calculator) will show if you could save money in fees by transferring.
 
 PLEASE NOTE: AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.

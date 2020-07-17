@@ -185,6 +185,9 @@ const Homepage = () => {
               <p>
                 At 0.5% our fee is one of the lowest meaning more saved for your kids. <Link to={"/designed-for-growth"}>Learn more</Link>
               </p>
+              <p>
+                Many child trust funds and JISAs charge more than this and transferring to Beanstalk might save you money. Check out our <Link to={"/ctf-calculator"}>switch calculator </Link> to see.
+              </p>
             </>
           </Point>
         </Column>

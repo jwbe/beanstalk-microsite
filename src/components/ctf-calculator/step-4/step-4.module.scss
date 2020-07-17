@@ -11,6 +11,9 @@
     margin-bottom: $base-unit;
     font-size: $caption-font-size;
     line-height: $caption-line-height;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit / 2;
+    }
     &:last-of-type {
       margin-bottom: 0;
     }
