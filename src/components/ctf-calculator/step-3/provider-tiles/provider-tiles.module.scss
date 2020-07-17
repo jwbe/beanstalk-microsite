@@ -25,6 +25,7 @@
     background-color: $white;
     box-shadow: $shadow-level-3;
     overflow: hidden;
+    transition: box-shadow 0.25s ease-in-out;
     @media (min-width: $breakpoint-sm) {
       flex-basis: calc(25% - #{$base-unit * 2});
       width: $base-unit * 11;
@@ -36,6 +37,7 @@
       padding-top: 100%;
     }
     &___Active {
+      transition: box-shadow 0.25s ease-in-out;
       box-shadow: 0 0 .125rem 0 rgba(50,182,122,.30), 
                   0 .0625rem .25rem 0 rgba(50,182,122,.30), 
                   0 .5rem 1rem 0 rgba(50,182,122,.30);
