@@ -30,7 +30,7 @@ const Data = {
     {
       id: 4,
       name: 'HSBC',
-      annualPercentageCharge: 1.5,
+      annualPercentageCharge: 0.43,
       tileLogo: '/images/ctf-calculator-provider-logos/hsbc-logo.png'
     }, 
     {
@@ -48,13 +48,13 @@ const Data = {
     {
       id: 7,
       name: 'NatWest',
-      annualPercentageCharge: 1.5,
+      annualPercentageCharge: 1.07,
       tileLogo: '/images/ctf-calculator-provider-logos/natwest-logo.png'
     },
     {
       id: 8,
       name: 'RBS',
-      annualPercentageCharge: 1.5,
+      annualPercentageCharge: 1.07,
       tileLogo: '/images/ctf-calculator-provider-logos/royal-bank-of-scotland-logo.png'
     },
     {
