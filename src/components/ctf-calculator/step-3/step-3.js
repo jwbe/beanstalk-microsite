@@ -112,6 +112,7 @@ class Step3 extends Component {
           className={ProviderSelectTheme.ProviderSelect}
           styles={selectStyles}
           value={firstSelectionId}
+          placeholder={`Type or scroll to search providers`}
           onChange={(option, event) => {
             let value='';
             if(event.action!=='clear')
