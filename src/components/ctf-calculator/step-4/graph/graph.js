@@ -71,7 +71,7 @@ const Graph = props => {
         <div className={GraphTheme.Graph_Axis}>
           <div className={GraphTheme.Graph_Axis_Providers}>
             <div className={`${GraphTheme.Graph_Axis_Provider} ${GraphTheme.Graph_Axis_Provider___First}`}>
-              {props.firstProvider.name}{props.firstAdditionalProviderCommentIcon}
+              {props.firstProvider.name}<span className={GraphTheme.Graph_Axis_Provider_Comment_Icon}>{props.firstAdditionalProviderCommentIcon}</span>
             </div>
             <div className={`${GraphTheme.Graph_Axis_Provider} ${GraphTheme.Graph_Axis_Provider___Second}`}>
               {props.secondProvider.name}{props.secondAdditionalProviderCommentIcon}

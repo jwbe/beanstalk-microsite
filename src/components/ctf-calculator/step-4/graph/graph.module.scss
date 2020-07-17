@@ -137,6 +137,11 @@
         font-size: $body-font-size;
         line-height: $body-line-height;
       }
+      &_Comment {
+        &_Icon {
+          font-weight: 500;
+        }
+      }
       &___First {
         margin-right: $base-unit / 2;
       }
