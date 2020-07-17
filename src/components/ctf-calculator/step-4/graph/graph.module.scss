@@ -32,7 +32,7 @@
     padding-top: $base-unit * 2;
     width: 100%;
     border-bottom: $base-unit / 4 solid $accent-3;
-    background-color: #f2f7f7;
+    background-image: linear-gradient(180deg, #f3f7f7 0%, #FFFFFF 100%);
     border-radius: $base-unit $base-unit 0 0;
     @media (min-width: $breakpoint-sm) {
       margin-bottom: $base-unit * 3;
