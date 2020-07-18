@@ -9,7 +9,8 @@ import Graph from './graph/graph';
 import Dashboard from './dashboard/dashboard';
 import CtaButton from '../shared-components/cta-button/cta-button';
 
-const _calculateProviderCost = ({ annualPercentageCharge }, { MAX_CHILD_AGE }, { ctfValue, childAge }) => {
+const _calculateProviderCost = ({ annualPercentageCharge, optionalActualAnnualPercentageCharge }, { MAX_CHILD_AGE }, { ctfValue, childAge }) => {
+  annualPercentageCharge = typeof annualPercentageCharge === 'string' ? optionalActualAnnualPercentageCharge : annualPercentageCharge;
   return Math.round((annualPercentageCharge * ctfValue) * (MAX_CHILD_AGE - childAge) / 100);
 }
 
@@ -29,6 +30,8 @@ class Step4 extends Component {
     const firstProvider = Data.providers[this.props.firstSelectionId];
     const firstTotalCharge = _calculateProviderCost(firstProvider, params, formData);
     const firstAnnualPercentageCharge = Data.providers[this.props.firstSelectionId].annualPercentageCharge;
+    const firstOptionalActualAnnualPercentageCharge = Data.providers[this.props.firstSelectionId].optionalActualAnnualPercentageCharge;
+    const secondOptionalActualAnnualPercentageCharge = Data.providers[this.props.secondSelectionId].optionalActualAnnualPercentageCharge;
     const secondProvider = Data.providers[this.props.secondSelectionId];
     const secondTotalCharge = _calculateProviderCost(secondProvider, params, formData);
     const secondAnnualPercentageCharge = Data.providers[this.props.secondSelectionId].annualPercentageCharge;
@@ -125,6 +128,8 @@ class Step4 extends Component {
         <Graph
         firstAnnualPercentageCharge={firstAnnualPercentageCharge}
         secondAnnualPercentageCharge={secondAnnualPercentageCharge}
+        firstOptionalActualAnnualPercentageCharge={firstOptionalActualAnnualPercentageCharge}
+        secondOptionalActualAnnualPercentageCharge={secondOptionalActualAnnualPercentageCharge}
         firstAdditionalProviderComment={firstAdditionalProviderComment}
         secondAdditionalProviderComment={secondAdditionalProviderComment}
         firstTotalCharge={firstTotalCharge}
