@@ -33,6 +33,7 @@ module.exports = {
         trackingIds: [
           "UA-2373866-7"
         ],
+        defaultDataLayer: 'GTM-P72DNHS',
       },
     },
     `gatsby-plugin-catch-links`,
