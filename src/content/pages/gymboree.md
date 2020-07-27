@@ -2,6 +2,7 @@
 slug: gymboree
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/gymboree'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

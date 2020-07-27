@@ -2,6 +2,7 @@
 slug: twitter
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/twitter'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

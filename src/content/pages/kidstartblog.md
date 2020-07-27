@@ -2,6 +2,7 @@
 slug: kidstartblog
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/kidstartblog'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

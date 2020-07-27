@@ -2,6 +2,7 @@
 slug: familiesmag
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/familiesmag'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

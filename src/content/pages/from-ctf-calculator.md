@@ -1,5 +1,5 @@
 ---
-slug: from-cta-calculator
+slug: from-ctf-calculator
 heading: 
 plain: true
 ---

@@ -2,6 +2,7 @@
 slug: kidstartemail
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/kidstartemail'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

@@ -7,7 +7,7 @@ const Dashboard = ({totalFees}) => {
     <div className={DashboardTheme.Dashboard}>
       <div className={DashboardTheme.Dashboard_Background}>
         <h3 className={DashboardTheme.Dashboard_Heading}>
-          By the time your child is 18, <br/>you will have saved in fees approximately
+          By the time your child is 18,<br/>you will have saved in fees approximately
         </h3>
         <div className={DashboardTheme.Dashboard_TotalFees}>
           {`£${numberWithCommas(totalFees)}`}

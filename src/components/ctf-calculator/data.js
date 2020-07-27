@@ -3,8 +3,7 @@ const Data = {
     {
       id: 0,
       name: 'Beanstalk',
-      annualPercentageCharge: '0.5',
-      optionalActualAnnualPercentageCharge: 0.62,
+      annualPercentageCharge: 0.5
       hideProviderSelector: true,
       additionalGraphBarAnnualPercentageLabel: '(+0.12%)',
       additionalGraphBarAnnualPercentageLabelComment: 'Beanstalk\'s fee is 0.5%. The funds we offer have their own fees of which 0.12% is the highest'

@@ -2,6 +2,7 @@
 slug: instagram
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/instagram'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

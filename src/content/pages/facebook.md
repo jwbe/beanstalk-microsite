@@ -2,6 +2,7 @@
 slug: facebook
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/facebook'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

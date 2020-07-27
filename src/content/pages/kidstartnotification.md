@@ -2,6 +2,7 @@
 slug: kidstartnotification
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/kidstartnotification'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

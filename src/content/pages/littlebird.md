@@ -2,6 +2,7 @@
 slug: littlebird
 heading: 
 plain: true
+canonical: 'https://beanstalkapp.co.uk/littlebird'
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

@@ -34,6 +34,9 @@ module.exports = {
           "UA-2373866-7"
         ],
         defaultDataLayer: 'GTM-P72DNHS',
+        gtmAuth: 'GTM-P72DNHS',
+        gtmPreview: 'GTM-P72DNHS',
+        dataLayerName: 'GTM-P72DNHS_NAME'
       },
     },
     `gatsby-plugin-catch-links`,
@@ -45,7 +48,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: [`/beanstalk-survey`],
+        exclude: [`/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`, `/articles/about-junior-isa-app`, `/articles/how-family-saving-works-app`, `/articles/how-round-ups-work-app`, `/articles/locate-a-missing-ctf-app`, `/articles/saving-vs-investing-app`, `/articles/transfer-ctf-jisa-app`, `/articles/welcome-to-beanstalk-app`],
         query: `
         {
           site {
