@@ -34,6 +34,19 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "UA-2373866-7"
+        ],
+      },
+      gtagConfig: {
+        optimize_id: 'GTM-P72DNHS',
+        anonymize_ip: false,
+        cookie_expires: 0,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         trackingIds: [
