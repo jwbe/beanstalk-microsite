@@ -34,15 +34,19 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-plugin-google-tagmanager`,
       options: {
         trackingIds: [
           "UA-2373866-7"
         ],
+        defaultDataLayer: {'dataLayer': 'GTM-P72DNHS'},
+        gtmAuth: 'GTM-P72DNHS',
+        gtmPreview: 'GTM-P72DNHS',
+        dataLayerName: 'GTM-P72DNHS_NAME'
       },
       gtagConfig: {
         optimize_id: 'GTM-P72DNHS',
-        anonymize_ip: false,
+        anonymize_ip: true,
         cookie_expires: 0,
       },
     },

@@ -5,11 +5,9 @@ import DesktopNavigation from '../desktop-navigation/desktop-navigation';
 import MobileNavigation from '../mobile-navigation/mobile-navigation';
 import Section from './section/section';
 import Point from './point/point';
-import WaitingList from './waiting-list/waiting-list';
 import Iphone from '../iphone/iphone';
 import Column from './column/column';
 import { TopUp, TOP_UP_ORDER  } from './top-up/top-up';
-import FundBalance from '../fund-balance/fund-balance';
 import SimpleBars from '../simple-bars/simple-bars';
 
 import footerLogoWhite from './images/footer_logo___white.svg';

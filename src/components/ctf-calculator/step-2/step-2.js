@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
 
 import StepTheme from './step-2.module.scss';
 

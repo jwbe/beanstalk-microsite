@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from '../info-page/info-page.module.scss';
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
 import { TopUp, TOP_UP_ORDER  } from '../homepage/top-up/top-up';
