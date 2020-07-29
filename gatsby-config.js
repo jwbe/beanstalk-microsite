@@ -39,14 +39,10 @@ module.exports = {
         trackingIds: [
           "UA-2373866-7"
         ],
-        defaultDataLayer: {'dataLayer': 'GTM-P72DNHS'},
-        gtmAuth: 'GTM-P72DNHS',
-        gtmPreview: 'GTM-P72DNHS',
-        dataLayerName: 'GTM-P72DNHS_NAME'
       },
       gtagConfig: {
         optimize_id: 'GTM-P72DNHS',
-        anonymize_ip: true,
+        anonymize_ip: false,
         cookie_expires: 0,
       },
     },
