@@ -6,19 +6,19 @@ const AppDownloadRedirect = () => {
     function redirectToAppleStore() {
       setTimeout(function() {
         window.location.replace(`https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597`);
-      }, 1000)
+      }, 500)
     }
 
     function redirectToGooglePlay() {
       setTimeout(function() {
         window.location.replace(`https://play.google.com/store/apps/details?id=com.beanstalk`);
-      }, 1000)
+      }, 500)
     }
 
     function redirectToHomepage() {
       setTimeout(function() {
         window.location.replace(`https://beanstalkapp.co.uk`);
-      }, 1000)
+      }, 500)
     }
 
     if(isBrowser){
