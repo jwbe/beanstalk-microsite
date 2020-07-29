@@ -1,4 +1,4 @@
-import React, { Component, useEffect} from 'react';
+import React, { Component } from 'react';
 import { isIOS, isAndroid, isBrowser } from 'react-device-detect';
 
 const AppDownloadRedirect = () => {
@@ -22,27 +22,21 @@ const AppDownloadRedirect = () => {
     }
 
     if(isBrowser){
-      useEffect(() => {
-        window.gtag('event', `redirected_to_homepage from ${window.location.pathname}`, {
-          'event_callback': redirectToHomepage
-        });
-      }, [])
+      window.gtag('event', `redirected_to_homepage from ${window.location.pathname}`, {
+        'event_callback': redirectToHomepage
+      });
     }
 
     if(isIOS){
-      useEffect(() => {
-        window.gtag('event', `redirected_to_appleStore from ${window.location.pathname}`, {
-          'event_callback': redirectToAppleStore
-        });
-      }, [])
+      window.gtag('event', `redirected_to_appleStore from ${window.location.pathname}`, {
+        'event_callback': redirectToAppleStore
+      });
     }
 
     if(isAndroid){
-      useEffect(() => {
-        window.gtag('event', `redirected_to_googlePlay from ${window.location.pathname}`, {
-          'event_callback': redirectToGooglePlay
-        });
-      }, [])
+      window.gtag('event', `redirected_to_googlePlay from ${window.location.pathname}`, {
+        'event_callback': redirectToGooglePlay
+      });
     }
   }
   return <></>
