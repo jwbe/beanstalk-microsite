@@ -38,7 +38,7 @@ module.exports = {
       options: {
         trackingIds: [
           "UA-2373866-7"
-        ],
+        ]
       },
       gtagConfig: {
         optimize_id: 'GTM-P72DNHS',
@@ -52,7 +52,11 @@ module.exports = {
         trackingIds: [
           "UA-2373866-7"
         ],
-        defaultDataLayer: {'dataLayer': 'GTM-P72DNHS'},
+        defaultDataLayer: function () {
+          return {
+            dataLayer: 'GTM-P72DNHS'
+          }
+        },
         gtmAuth: 'GTM-P72DNHS',
         gtmPreview: 'GTM-P72DNHS',
         dataLayerName: 'GTM-P72DNHS_NAME'
