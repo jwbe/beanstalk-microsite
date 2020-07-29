@@ -1,13 +1,9 @@
 import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
-import { Button, DESKTOP_COLOURS, DESKTOP_SIZES, DESKTOP_BORDERS } from '../button/button';
+import { Link } from 'gatsby';
 import styles from './footer.module.scss';
-import logo from '../../images/footer-logo.svg';
 
 import footerLogoWhite from '../../images/footer_logo___white.svg';
 import footerLogoSecondary from '../../images/footer_logo___secondary.svg';
-
-import WaitingList from '../homepage/waiting-list/waiting-list';
 
 import iconFacebookSecondary from '../../images/icons/facebook-icon-secondary.png';
 import iconInstagramSecondary from '../../images/icons/instagram-icon-secondary.png';
