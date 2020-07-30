@@ -39,7 +39,7 @@ From our years of experience helping families save, we could see that the saving
 
 ### It’s great value
 * The app is free to download and use
-* Our fee is just 0.5% of account value annually, one of the lowest around.
+* Our fee is just 0.5% of account value annually, one of the lowest around (the funds we offer have fees of 0.12% - 0.15% deducted within the fund)
 
 
 
