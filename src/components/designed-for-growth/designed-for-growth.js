@@ -25,7 +25,7 @@ const DesignedForGrowth = () => {
               Pay less, save more
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              We want your children to benefit from your investment so the Beanstalk app is free to download and use. Our only charge is an annual fee of 0.5% on the value of any investments, one of the lowest around. (The low cost funds we offer have their own management fees of between 0.1% and 0.12% included)
+              We want your children to benefit from your investment so the Beanstalk app is free to download and use. Our only charge is an annual fee of 0.5% on the value of any investments, one of the lowest around. (The low cost funds we offer have their own management fees of between 0.12% and 0.15% included)
             </p>
           </div>
         </article>
