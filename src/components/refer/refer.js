@@ -32,14 +32,14 @@ const Refer = (props) => (
               <p>Please enter your email to claim your prize.</p>
             </div>
           </header>
-          <form name="refer" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/">
+          <form name="refer" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you-for-referring">
             <div className={ReferTheme.Form_VisibleInputs}>
               <input className={ReferTheme.Form_Input} placeholder="Your email address" type="email"/>
               <input className={ReferTheme.Form_Input} placeholder="Your full name" type="name"/>
             </div>
             <input type="hidden" name="form-name" value="refer"/>
             <input type="hidden" name="bot-field"/>
-            <input type="hidden" value={props.referID}/>
+            <input type="hidden" value={props.referID} name="referID"/>
             <button className={ReferTheme.Form_Submit} type="submit">Get Started!</button>
           </form>
           <p className={ReferTheme.SignUp_NB}>
