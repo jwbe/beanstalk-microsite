@@ -1,0 +1,191 @@
+.Container {
+
+}
+
+.SignUp {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  margin-bottom: $base-unit * 5;
+  padding-top: $base-unit * 4;
+  padding-bottom: $base-unit * 6;
+  width: 100%;
+  background-color: $primary;
+  text-align: center;
+  color: $white;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 12;
+    padding-top: $base-unit * 9;
+    padding-bottom: $base-unit * 12;
+  }
+  &_Inner {
+    margin: 0 auto;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      padding-right: $base-unit * 2;
+      padding-left: $base-unit * 2;
+    }
+    @media (min-width: $breakpoint-sm) {
+      width: 38.75rem;
+    }
+  }
+  &_Heading {
+    margin-bottom: $base-unit * 2;
+    color: $white;
+    font-weight: 700;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    font-family: 'Quicksand', sans-serif;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit * 6;
+      font-size: $headline-font-size;
+      line-height: $headline-line-height;
+    }
+  }
+  &_Subheading {
+    margin-bottom: $base-unit * 3;
+    text-align: center;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit * 6;
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+    }
+  }
+  &_NB {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+}
+
+.Form {
+  &_VisibleInputs {
+    display: flex;
+    margin-bottom: $base-unit * 3;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      flex-direction: column;
+    }
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit * 6;
+    }
+  }
+  &_Input {
+    width: 100%;
+    padding: .875rem;
+    border-radius: $base-unit;
+    background-color: $white;
+    box-shadow: $shadow-level-3;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      &:first-of-type {
+        margin-bottom: $base-unit * 2;
+      }
+    }
+    @media (min-width: $breakpoint-sm) {
+      &:first-of-type {
+        margin-right: $base-unit * 2;
+      }
+      &:last-of-type {
+        margin-left: $base-unit * 2;
+      }
+    }
+  }
+  &_Submit {
+    padding-top: $base-unit * 2;
+    padding-right: $base-unit * 4;
+    padding-bottom: $base-unit * 2;
+    padding-left: $base-unit * 4;
+    margin-bottom: $base-unit * 5;
+    color: $white;
+    text-align: center;
+    font-weight: 700;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+    background-color: $secondary;
+    box-shadow: $shadow-level-3;
+    border-radius: 99rem;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit * 9;
+    }
+  }
+}
+
+.Content {
+  &_Heading {
+    margin-top: 0;
+    margin-bottom: $base-unit * 4;
+    color: $secondary;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    text-align: center;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit * 9;
+    }
+    &_Break {
+      @media (max-width: $breakpoint-sm - .0625em) {
+        display: none;
+      }
+    }
+  }
+}
+
+.Points {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.Point {
+  display: flex;
+  margin-bottom: $base-unit * 6;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 9;
+  }
+  &_Icon {
+    width: $base-unit * 6;
+    height: $base-unit * 6;
+    border-radius: 100%;
+    background-color: $secondary;
+    @media (min-width: $breakpoint-sm) {
+      width: $base-unit * 7;
+      height: $base-unit * 7;
+    }
+    &_Wrapper {
+      padding-right: $base-unit * 2;
+      @media (min-width: $breakpoint-sm) {
+        padding-right: $base-unit * 3;
+      }
+    }
+  }
+  &_Heading {
+    margin-top: 0;
+    margin-bottom: $base-unit;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+    font-family: 'Quicksand', sans-serif;
+    color: $primary;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $title-font-size;
+      line-height: $title-line-height;
+    }
+  }
+  &_Description {
+    max-width: $base-unit * 35;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    color: $accent-3;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+    }
+  }
+}
