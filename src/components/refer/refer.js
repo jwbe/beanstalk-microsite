@@ -1,5 +1,6 @@
 import React from 'react';
-import { Router, Location } from '@reach/router'
+import { Router, Location } from '@reach/router';
+import Head from '../head/head';
 import { Header, HEADER_VARIANT } from '../header/header';
 import Footer from '../footer/footer';
 import ReferTheme from './refer.module.scss';
@@ -18,8 +19,8 @@ const ReferPage = props => (
 
 const Refer = (props) => (
   <>
+    <Head title="You've been invited to join Beanstalk!"/>
     <Header/>
-
     <div className={ReferTheme.Container}>
       <div className={ReferTheme.SignUp}>
         <div className={ReferTheme.SignUp_Inner}>
