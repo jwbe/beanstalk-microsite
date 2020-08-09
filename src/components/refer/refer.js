@@ -35,8 +35,8 @@ const Refer = (props) => (
           </header>
           <form name="refer" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you-for-referring">
             <div className={ReferTheme.Form_VisibleInputs}>
-              <input className={ReferTheme.Form_Input} placeholder="Your email address" type="email"/>
-              <input className={ReferTheme.Form_Input} placeholder="Your full name" type="name"/>
+              <input className={ReferTheme.Form_Input} placeholder="Your email address" type="email" name="email" id="email"/>
+              <input className={ReferTheme.Form_Input} placeholder="Your full name" type="text" name="name" id="name"/>
             </div>
             <input type="hidden" name="form-name" value="refer"/>
             <input type="hidden" name="bot-field"/>
