@@ -28,6 +28,10 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: { prefixes: [`/refer/*`] },
+    },
+    {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
         pixelId: '111269363785058',

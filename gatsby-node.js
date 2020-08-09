@@ -18,6 +18,7 @@ exports.createPages = async({graphql, actions}) => {
   const { createPage } = actions;
   const standardTemplate = path.resolve('./src/templates/layout.js');
   const articleTemplate = path.resolve('./src/templates/article.js');
+
   const result = await graphql(`
     query  {
       allSources: allMdx {
@@ -39,7 +40,7 @@ exports.createPages = async({graphql, actions}) => {
             }
           }
           previous {
-            meta: frontmatter {
+            meta: frontmatter { 
               slug
             }
             fields {
