@@ -49,35 +49,41 @@ class Refer extends Component {
         <div className={ReferTheme.Container}>
           <div className={ReferTheme.SignUp}>
             <div className={ReferTheme.SignUp_Inner}>
-              <header className={ReferTheme.Header}>
-                <h1 className={ReferTheme.SignUp_Heading}>
-                  You've been invited to join Beanstalk!
-                </h1>
-                <div className={ReferTheme.SignUp_Subheading}>
-                  <strong>2 minutes to open an account.</strong>
-                  <p>Please enter your email to claim your prize.</p>
-                </div>
-              </header>
+              {
+                this.state.formSubmitted ? <p>Form submitted</p>
+                :
+                <>
+                  <header className={ReferTheme.Header}>
+                    <h1 className={ReferTheme.SignUp_Heading}>
+                      You've been invited to join Beanstalk!
+                    </h1>
+                    <div className={ReferTheme.SignUp_Subheading}>
+                      <strong>2 minutes to open an account.</strong>
+                      <p>Please enter your email to claim your prize.</p>
+                    </div>
+                  </header>
 
-              <form 
-              ref={this.domRef} 
-              name="refer" 
-              method="POST" 
-              data-netlify="true" data-netlify-honeypot="bot-field" 
-              onSubmit={event => this.handleSubmit(event)}
-              >
-
-                <div className={ReferTheme.Form_VisibleInputs}>
-                  <input className={ReferTheme.Form_Input} placeholder="Your email address" type="email" name="email" id="email" ref="email"/>
-                  <input className={ReferTheme.Form_Input} placeholder="Your full name" type="text" name="name" id="name" ref="name"/>
-                </div>
-                <input type="hidden" ref="form-name" name="form-name" value="refer"/>
-                <input type="hidden" name="referID" value={this.props.referID} id="referID"/>
-                <button className={ReferTheme.Form_Submit} type="submit">Get Started!</button>
-              </form>
-              <p className={ReferTheme.SignUp_NB}>
-                <strong>Note:</strong> We will only use your email to remind you to register and to record whether you have registered.
-              </p>
+                  <form 
+                  ref={this.domRef} 
+                  name="refer" 
+                  method="POST" 
+                  data-netlify="true" data-netlify-honeypot="bot-field" 
+                  onSubmit={event => this.handleSubmit(event)}
+                  >
+                    <div className={ReferTheme.Form_VisibleInputs}>
+                      <input className={ReferTheme.Form_Input} placeholder="Your email address" type="email" name="email" id="email" ref="email"/>
+                      <input className={ReferTheme.Form_Input} placeholder="Your full name" type="text" name="name" id="name" ref="name"/>
+                    </div>
+                    <input type="hidden" name='bot-field'/>
+                    <input type="hidden" ref="form-name" name="form-name" value="refer"/>
+                    <input type="hidden" ref="referID" name="referID" value={this.props.referID} id="referID"/>
+                    <button className={ReferTheme.Form_Submit} type="submit">Get Started!</button>
+                  </form>
+                  <p className={ReferTheme.SignUp_NB}>
+                    <strong>Note:</strong> We will only use your email to remind you to register and to record whether you have registered.
+                  </p>
+                </>
+              }
             </div>
           </div>
         </div>
