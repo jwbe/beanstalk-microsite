@@ -30,13 +30,13 @@ class Refer extends Component {
     axios(axiosOptions)
       .then(response => {
         this.setState({
-          formSubmitted: true
+          formSubmitted: 'true'
         })
         this.domRef.current.reset()
       })
       .catch(err =>
         this.setState({
-          formSubmitted: false
+          formSubmitted: 'false'
         })
       )
   }
