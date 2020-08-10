@@ -28,6 +28,9 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-netlify`
+    },
+    {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/refer/*`] },
     },
