@@ -5,18 +5,6 @@ import { Header, HEADER_VARIANT } from '../header/header';
 import Footer from '../footer/footer';
 import ReferTheme from './refer.module.scss';
 
-const ReferPage = props => (
-  <>
-    <Location>
-      {({ location }) => (
-        <Router location={location}>
-          <Refer path="refer/:referID"/>
-        </Router>
-      )}
-    </Location>
-  </>
-)
-
 const Refer = (props) => (
   <>
     <Head title="You've been invited to join Beanstalk!"/>
