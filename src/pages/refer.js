@@ -7,7 +7,6 @@ import Refer from '../components/refer/refer';
 const ReferPage = props => (
   <Layout>
     <>
-      <Refer/>
       <Location>
         {({ location }) => (
           <Router location={location}>
