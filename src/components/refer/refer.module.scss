@@ -106,6 +106,8 @@
     background-color: $secondary;
     box-shadow: $shadow-level-3;
     border-radius: 99rem;
+    cursor: pointer;
+    -webkit-appearance: none;
     @media (min-width: $breakpoint-sm) {
       margin-bottom: $base-unit * 9;
     }

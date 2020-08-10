@@ -14,6 +14,16 @@ exports.onCreateNode = ({node, actions, getNode}) => {
   }
 };
 
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage } = actions
+
+  if (page.path.match(/^\/refer/)) {
+    page.matchPath = "/refer/*"
+
+    createPage(page)
+  }
+}
+
 exports.createPages = async({graphql, actions}) => {
   const { createPage } = actions;
   const standardTemplate = path.resolve('./src/templates/layout.js');
