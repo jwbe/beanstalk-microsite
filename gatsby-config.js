@@ -49,27 +49,6 @@ module.exports = {
         cookie_expires: 0,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-tagmanager`,
-      options: {
-        trackingIds: [
-          "UA-2373866-7"
-        ],
-        defaultDataLayer: function () {
-          return {
-            dataLayer: 'GTM-P72DNHS'
-          }
-        },
-        gtmAuth: 'GTM-P72DNHS',
-        gtmPreview: 'GTM-P72DNHS',
-        dataLayerName: 'GTM-P72DNHS_NAME'
-      },
-      gtagConfig: {
-        optimize_id: 'GTM-P72DNHS',
-        anonymize_ip: true,
-        cookie_expires: 0,
-      },
-    },
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
