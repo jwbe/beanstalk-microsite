@@ -10,7 +10,7 @@
     "axios": "^0.19.2",
     "details-polyfill": "^1.1.0",
     "digest": "^0.0.5",
-    "gatsby": "^2.13.73",
+    "gatsby": "^2.24.42",
     "gatsby-image": "^2.2.10",
     "gatsby-plugin-catch-links": "^2.1.21",
     "gatsby-plugin-facebook-pixel": "^1.0.3",

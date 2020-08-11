@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import * as qs from 'query-string'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 import ReferTheme from './refer.module.scss'
 
@@ -66,10 +65,10 @@ class Refer extends Component {
                   </div>
                 </header>
                 <div className={ReferTheme.Badges}>
-                  <a className={ReferTheme.Badges_Badge} href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank">
+                  <a className={ReferTheme.Badges_Badge} href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank" rel="noreferrer">
                     <img className={ReferTheme.Badges_Badge_Image} src={AppStoreLogo} alt="Apple App Store logo" width="135" height="40"/>
                   </a>
-                  <a className={ReferTheme.Badges_Badge} href="https://play.google.com/store/apps/details?id=com.beanstalk" target="_blank">
+                  <a className={ReferTheme.Badges_Badge} href="https://play.google.com/store/apps/details?id=com.beanstalk" target="_blank" rel="noreferrer">
                     <img className={ReferTheme.Badges_Badge_Image} src={GooglePlayStoreLogo} alt="Google Play Store logo" width="135" height="40"/>
                   </a>
                 </div>
