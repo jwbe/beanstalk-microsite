@@ -1,4 +1,5 @@
 import React from 'react'
+
 import PointsTheme from './points.module.scss'
 
 import PadlockIcon from './images/padlock-icon.svg'
