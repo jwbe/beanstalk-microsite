@@ -10,10 +10,6 @@ import StepTheme from './step-3.module.scss';
 import ProviderTilesTheme from './provider-tiles/provider-tiles.module.scss';
 import ProviderSelectTheme from './provider-select/provider-select.module.scss';
 
-const _removeSpacesFromString = (string) => {
-  return string.replace(/\s/g, '');
-}
-
 class Step3 extends Component {
   render() {
     if (this.props.currentStep !== 3) {

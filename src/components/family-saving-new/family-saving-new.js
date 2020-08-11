@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from '../info-page/info-page.module.scss';
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
 
-import uniqueStyles from './family-saving-new.module.scss';
-import Iphone from '../iphone/iphone';
 import inviteTool from '../../images/beanstalk-illustrations_invite-tools.png';
 
 import UL from '../custom-html-tags/ul/ul';
@@ -12,8 +10,6 @@ import contributionTool from '../../images/beanstalk-illustrations_parent-and-co
 import viewAndReply from '../../images/beanstalk-illustrations_messaging-gifts.png';
 
 const FamilySaving = () => {
-  const [showDiagramGraph, setShowDiagramGraph] = useState(true);
-
   return (
     <>
       <div className={`${titleStyles.TitleBlock} ${styles.TitleBlock___plant}`}>

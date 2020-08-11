@@ -1,10 +1,7 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import { Link } from 'gatsby';
 import styles from './article.module.scss';
 import Content from '../content/content';
-import { Button, DESKTOP_COLOURS, DESKTOP_BORDERS, DESKTOP_SIZES, TABLET_COLOURS, DESKTOP_BACKGROUNDS } from '../button/button';
-import buttonStyles from '../button/button.module.scss';
 import BackButton from '../../components/back-button/back-button'
 
 const Article = ({

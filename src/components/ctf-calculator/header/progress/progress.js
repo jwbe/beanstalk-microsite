@@ -14,7 +14,6 @@ const Progress = ({ currentStep }) => {
           </div>
         </div>
       )
-      break;
     case 2:
       return (
         <div className={ProgressTheme.Progress}>
@@ -24,7 +23,6 @@ const Progress = ({ currentStep }) => {
           </div>
         </div>
       )
-      break;
     case 3:
       return (
         <div className={ProgressTheme.Progress}>
@@ -36,7 +34,6 @@ const Progress = ({ currentStep }) => {
           </div>
         </div>
       )
-      break;
     case 4:
       return (
         <div className={ProgressTheme.Progress}>
@@ -48,9 +45,8 @@ const Progress = ({ currentStep }) => {
           </div>
         </div>
       )
-      break;
     default:
-      return null;
+      break;
   }
 }
 

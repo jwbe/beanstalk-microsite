@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, DESKTOP_COLOURS, DESKTOP_SIZES, TABLET_COLOURS, DESKTOP_BACKGROUNDS } from '../button/button';
+import { Button, DESKTOP_COLOURS, DESKTOP_SIZES, DESKTOP_BACKGROUNDS } from '../button/button';
 import styles from './back-button.module.scss';
 
 const BackButton = ({

@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import * as qs from 'query-string'
-import { Router, Location } from '@reach/router'
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
+
+import ReferTheme from './refer.module.scss'
 
 import Head from '../head/head'
 import { Header } from '../header/header'
 import Footer from '../footer/footer'
-import ReferTheme from './refer.module.scss'
-
 import Points from './points/points'
 
 import AppStoreLogo from './images/app-store-logo.png'

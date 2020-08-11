@@ -21,7 +21,7 @@ export const Header = ({
   const addSubheadingLineBreak = () => {
     return(
       {
-        __html: subheading.replace(/(\.(\s+))/g, '\$1 <br>')
+        __html: subheading.replace(/(\.(\s+))/g, '$1 <br>')
       }
     );
   }

@@ -11,7 +11,7 @@ const Points = () => (
   <div className={PointsTheme.Points}>
     <div className={PointsTheme.Point}>
       <div className={PointsTheme.Point_Icon_Wrapper}>
-        <img className={PointsTheme.Point_Icon} src={FamilyIcon}/>
+        <img className={PointsTheme.Point_Icon} src={FamilyIcon} alt="Family icon"/>
       </div>
       <div className={PointsTheme.Point_Content}>
         <h3 className={PointsTheme.Point_Heading}>
@@ -24,7 +24,7 @@ const Points = () => (
     </div>
     <div className={PointsTheme.Point}>
       <div className={PointsTheme.Point_Icon_Wrapper}>
-        <img className={PointsTheme.Point_Icon} src={PiggybankIcon}/>
+        <img className={PointsTheme.Point_Icon} src={PiggybankIcon} alt="Piggybank icon"/>
       </div>
       <div className={PointsTheme.Point_Content}>
         <h3 className={PointsTheme.Point_Heading}>
@@ -37,7 +37,7 @@ const Points = () => (
     </div>
     <div className={PointsTheme.Point}>
       <div className={PointsTheme.Point_Icon_Wrapper}>
-        <img className={PointsTheme.Point_Icon} src={CoinInHandIcon}/>
+        <img className={PointsTheme.Point_Icon} src={CoinInHandIcon} alt="Coin-in-hand icon"/>
       </div>
       <div className={PointsTheme.Point_Content}>
         <h3 className={PointsTheme.Point_Heading}>
@@ -50,7 +50,7 @@ const Points = () => (
     </div>
     <div className={PointsTheme.Point}>
       <div className={PointsTheme.Point_Icon_Wrapper}>
-        <img className={PointsTheme.Point_Icon} src={FamilyIcon}/>
+        <img className={PointsTheme.Point_Icon} src={FamilyIcon} alt="Family icon"/>
       </div>
       <div className={PointsTheme.Point_Content}>
         <h3 className={PointsTheme.Point_Heading}>
@@ -63,7 +63,7 @@ const Points = () => (
     </div>
     <div className={PointsTheme.Point}>
       <div className={PointsTheme.Point_Icon_Wrapper}>
-        <img className={PointsTheme.Point_Icon} src={PadlockIcon}/>
+        <img className={PointsTheme.Point_Icon} src={PadlockIcon} alt="Padlock icon"/>
       </div>
       <div className={PointsTheme.Point_Content}>
         <h3 className={PointsTheme.Point_Heading}>

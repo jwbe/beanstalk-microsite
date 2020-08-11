@@ -105,29 +105,29 @@ const Footer = () => {
       <div className={styles.Homepage_footer_container}>
         <div className={styles.Homepage_footer_inner}>
           <div className={styles.Homepage_footer_header}>
-            <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___secondary}`} src={footerLogoSecondary} width='223' height='28'/>
-            <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___white}`} src={footerLogoWhite} width='162' height='20'/>
+            <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___secondary}`} src={footerLogoSecondary} width='223' height='28' alt="Beanstalk logo"/>
+            <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___white}`} src={footerLogoWhite} width='162' height='20' alt="Beanstalk logo"/>
             <div className={styles.Homepage_footer_socialIcons}>
-              <a href="https://www.facebook.com/TheBeanstalkApp/" target="_blank">
-                <img className={styles.Homepage_footer_socialIcons_desktop} src={iconFacebookSecondary} width="24" height="24"/>
-                <img className={styles.Homepage_footer_socialIcons_mobile} src={iconFacebookWhite} width="24" height="24"/>
+              <a href="https://www.facebook.com/TheBeanstalkApp/" target="_blank" rel="noreferrer">
+                <img className={styles.Homepage_footer_socialIcons_desktop} src={iconFacebookSecondary} width="24" height="24" alt="Facebook icon"/>
+                <img className={styles.Homepage_footer_socialIcons_mobile} src={iconFacebookWhite} width="24" height="24" alt="Facebook icon"/>
               </a>
-              <a href="https://www.instagram.com/thebeanstalkapp/" target="_blank">
-                <img className={styles.Homepage_footer_socialIcons_desktop} src={iconInstagramSecondary} width="24" height="24"/>
-                <img className={styles.Homepage_footer_socialIcons_mobile} src={iconInstagramWhite} width="24" height="24"/>
+              <a href="https://www.instagram.com/thebeanstalkapp/" target="_blank" rel="noreferrer">
+                <img className={styles.Homepage_footer_socialIcons_desktop} src={iconInstagramSecondary} width="24" height="24" alt="Instagram icon"/>
+                <img className={styles.Homepage_footer_socialIcons_mobile} src={iconInstagramWhite} width="24" height="24" alt="Instagram icon"/>
               </a>
-              <a href="https://twitter.com/TheBeanstalkApp" target="_blank">
-                <img className={styles.Homepage_footer_socialIcons_desktop} src={iconTwitterSecondary} width="24" height="24"/>
-                <img className={styles.Homepage_footer_socialIcons_mobile} src={iconTwitterWhite} width="24" height="24"/>
+              <a href="https://twitter.com/TheBeanstalkApp" target="_blank" rel="noreferrer">
+                <img className={styles.Homepage_footer_socialIcons_desktop} src={iconTwitterSecondary} width="24" height="24" alt="Twitter icon"/>
+                <img className={styles.Homepage_footer_socialIcons_mobile} src={iconTwitterWhite} width="24" height="24" alt="Twitter icon"/>
               </a>
-              <a href="https://www.linkedin.com/company/the-beanstalk-app" target="_blank">
-                <img className={styles.Homepage_footer_socialIcons_desktop} src={iconLinkedInSecondary} width="24" height="24"/>
-                <img className={styles.Homepage_footer_socialIcons_mobile} src={iconLinkedInWhite} width="24" height="24"/>
+              <a href="https://www.linkedin.com/company/the-beanstalk-app" target="_blank" rel="noreferrer">
+                <img className={styles.Homepage_footer_socialIcons_desktop} src={iconLinkedInSecondary} width="24" height="24" alt="LinkedIn icon"/>
+                <img className={styles.Homepage_footer_socialIcons_mobile} src={iconLinkedInWhite} width="24" height="24" alt="LinkedIn icon"/>
               </a>
             </div>
           </div>
           <p className={styles.Homepage_footer_paragraph}>
-            Beanstalk is a trading name of KidStart Limited. KidStart Limited is authorised and regulated by the Financial Conduct Authority. Our FCA number is 473606. See <a href='http://www.fca.org.uk' target="_blank">http://www.fca.org.uk</a> for more information. View our <Link to='/data-privacy-and-cookies'>privacy policy</Link> and <Link to='/legals'>terms & conditions</Link>.
+            Beanstalk is a trading name of KidStart Limited. KidStart Limited is authorised and regulated by the Financial Conduct Authority. Our FCA number is 473606. See <a href='http://www.fca.org.uk' target="_blank" rel="noreferrer">http://www.fca.org.uk</a> for more information. View our <Link to='/data-privacy-and-cookies'>privacy policy</Link> and <Link to='/legals'>terms & conditions</Link>.
           </p>
         </div>
       </div>

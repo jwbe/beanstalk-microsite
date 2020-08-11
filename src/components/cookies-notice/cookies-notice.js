@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styles from './cookies-notice.module.scss';
-import { Button, DESKTOP_COLOURS, DESKTOP_BORDERS, DESKTOP_SIZES, MOBILE_SIZES, TABLET_COLOURS, DESKTOP_BACKGROUNDS } from '../button/button';
+import { Button, DESKTOP_COLOURS, DESKTOP_SIZES, MOBILE_SIZES, DESKTOP_BACKGROUNDS } from '../button/button';
 
 const CookiesNotice = () => {
   const [isVisible, setIsVisible] = useState(true);

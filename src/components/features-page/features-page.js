@@ -44,30 +44,23 @@ class AllocationCalculatorModule extends Component {
     switch(number) {
       case 80:
         return 1208
-        break;
       case 70:
         return 1320
-        break;
       case 60:
         return 1432
-        break;
       case 50:
         return 1544
-        break;
       case 40:
         return 1656
-        break;
       case 30:
         return 1768
-        break;
       case 20:
         return 1880
-        break;
       case 10:
         return 1992
-        break;
       case 0:
         return 2104
+      default:
         break;
     }
   }
@@ -155,7 +148,7 @@ const FeaturesPage = () => {
         <div className={SubSections._Wrapper}>
           <section className={`${Layout.Row} ${Layout.Row___SubSections} ${Layout.Row___SubSections___BottomOffset}`}>
             <div className={`${Layout.Column} ${Layout.Column___Gap}`}>
-              <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___allYourAccountsInOnePlace}`} src={allYourAccountsInOnePlace} width="276" height="416"/>
+              <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___allYourAccountsInOnePlace}`} src={allYourAccountsInOnePlace} width="276" height="416" alt="All your accounts in one place"/>
             </div>
             <div className={`${Layout.Column} ${Layout.Column___Gap}`}>
               <div className={`${TextBlock.Container} ${TextBlock.___SubSection___Right} ${TextBlock.___SubSection} ${TextBlock.___SubSection___TopOffset}`}>
@@ -194,7 +187,7 @@ const FeaturesPage = () => {
                 </div>
               </div>
               <div className={`${Layout.Column} ${Layout.Column___Gap} ${Layout.Column___Graphic}`}>
-                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___linkFamilyAndFriends}`} src={linkFamilyAndFriends} width="376" height="456"/>
+                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___linkFamilyAndFriends}`} src={linkFamilyAndFriends} width="376" height="456" alt="Family and friends"/>
               </div>
             </section>
           </div>
@@ -214,7 +207,7 @@ const FeaturesPage = () => {
           <div className={Layout.Sizer}>
             <section className={`${Layout.Row} ${Layout.Row___SubSections}`}>
               <div className={`${Layout.Column} ${Layout.Column___Gap} ${Layout.Column___Graphic}`}>
-                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___swapMessages}`} src={swapMessages} width="335" height="483"/>
+                <img className={`${Graphics.Graphic} ${Graphics.Graphic___SubSection} ${Graphics.Graphic___TopOffSetAtMobile} ${Graphics.Graphic___swapMessages}`} src={swapMessages} width="335" height="483" alt="Swap messages"/>
               </div>
               <div className={`${Layout.Column} ${Layout.Column___Gap} ${Layout.Column___Text}`}>
                 <div className={`${TextBlock.Container} ${TextBlock.___SubSection___Last} ${TextBlock.___SubSection___Right} ${TextBlock.___SubSection}`}>
@@ -263,7 +256,7 @@ const FeaturesPage = () => {
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large}`}>
                   <div className={`${Points.Point_Roundel}`}>
-                    <img src={kidstartIcon} width="22" height="23"/>
+                    <img src={kidstartIcon} width="22" height="23" alt="KidStart icon"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
                     Collect free money back on your shopping automatically shared between your children
@@ -272,7 +265,7 @@ const FeaturesPage = () => {
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large}`}>
                   <div className={`${Points.Point_Roundel}`}>
-                    <img src={roundUpIcon} width="22" height="22"/>
+                    <img src={roundUpIcon} width="22" height="22" alt="Round-up icon"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
                     Round up your purchases<br className={Utilities.BreakAtTablet}/> to save little and often
@@ -281,7 +274,7 @@ const FeaturesPage = () => {
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large}`}>
                   <div className={`${Points.Point_Roundel}`}>
-                    <img src={topUpIcon} width="22" height="22"/>
+                    <img src={topUpIcon} width="22" height="22" alt="Top-up icon"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
                     Top-up or make gifts when you want,<br className={Utilities.BreakAtDesktop}/> at the touch of a button
@@ -290,7 +283,7 @@ const FeaturesPage = () => {
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large}`}>
                   <div className={`${Points.Point_Roundel}`}>
-                    <img src={pigIcon} width="24" height="24"/>
+                    <img src={pigIcon} width="24" height="24" alt="Pig icon"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
                     Set up a regular savings plan <br className={Utilities.BreakAtTablet}/>if you want to
@@ -299,7 +292,7 @@ const FeaturesPage = () => {
 
                 <div className={`${Points.Point} ${ToolsPoints._Point} ${Points.Point___Large} ${Points.Point___Last}`}>
                   <div className={`${Points.Point_Roundel}`}>
-                    <img src={multipleContributionsIcon} width="24" height="22"/>
+                    <img src={multipleContributionsIcon} width="24" height="22" alt="Family icon"/>
                   </div>
                   <div className={`${Points.Point_Content}`}>
                     Boost your kids savings with multiple people contributing
@@ -310,7 +303,7 @@ const FeaturesPage = () => {
             </div>
 
             <div className={`${Layout.Column} ${ToolsPoints.Column___Second}`}>
-              <img className={`${Graphics.Graphic} ${ToolsPoints._Graphic}`} src={toolsToMakeItEasyToSave} width="340" height="612"/>
+              <img className={`${Graphics.Graphic} ${ToolsPoints._Graphic}`} src={toolsToMakeItEasyToSave} width="340" height="612" alt="Screenshot of beanstalk app showing allocation"/>
             </div>
           </div>
         </section>
@@ -334,7 +327,7 @@ const FeaturesPage = () => {
             <div className={Points.TriplePoints_Column}>
               <div className={`${Points.Point} ${Points.Point___large} ${Points.Point___Triple}`}>
                 <div className={`${Points.Point_Roundel} ${Points.Point_Roundel___Triple}`}>
-                  <img src={secondaryTickIcon} width="16" height="12"/>
+                  <img src={secondaryTickIcon} width="16" height="12" alt="Tick icon"/>
                 </div>
                 <div className={`${Points.Point_Content}`}>
                   Stocks and shares junior and adult ISAs so income and gains tax free
@@ -344,7 +337,7 @@ const FeaturesPage = () => {
             <div className={Points.TriplePoints_Column}>
               <div className={`${Points.Point} ${Points.Point___large} ${Points.Point___Triple}`}>
                 <div className={`${Points.Point_Roundel} ${Points.Point_Roundel___Triple}`}>
-                  <img src={secondaryTickIcon} width="16" height="12"/>
+                  <img src={secondaryTickIcon} width="16" height="12" alt="Tick icon"/>
                 </div>
                 <div className={`${Points.Point_Content}`}>
                   Choose to allocate your savings between a cash and shares fund with our unique slider tool
@@ -354,7 +347,7 @@ const FeaturesPage = () => {
             <div className={Points.TriplePoints_Column}>
               <div className={`${Points.Point} ${Points.Point___large} ${Points.Point___Triple} ${Points.Point___Triple___Last}`}>
                 <div className={`${Points.Point_Roundel} ${Points.Point_Roundel___Triple}`}>
-                  <img src={secondaryTickIcon} width="16" height="12"/>
+                  <img src={secondaryTickIcon} width="16" height="12" alt="Tick icon"/>
                 </div>
                 <div className={`${Points.Point_Content}`}>
                   Low cost index tracker funds from Fidelity and L&G so less taken away in fees
@@ -464,7 +457,7 @@ const FeaturesPage = () => {
 
             <div className={`${LinkedBullets.LinkedBullet} ${LinkedBullets.LinkedBullet___Last}`}>
               <div className={`${LinkedBullets.LinkedBullet_Roundel} ${LinkedBullets.LinkedBullet_Roundel___Last}`}>
-                <img src={primaryTickIcon} width="16" height="12"/>
+                <img src={primaryTickIcon} width="16" height="12" alt="Tick icon"/>
               </div>
               <div className={LinkedBullets.LinkedBullet_content}>
                 <h3 className={LinkedBullets.LinkedBullet_Heading}>
@@ -492,12 +485,12 @@ const FeaturesPage = () => {
 
           <div className={AppBadges.Container}>
             <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___First}`}>
-              <a href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank">
+              <a href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank" rel="noreferrer">
                 <img className={AppBadges._Badge} src={appStoreBadge} width="135" height="40" alt="Apple app store badge"/>
               </a>
             </div>
             <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___Last}`}>
-              <a href="https://play.google.com/store/apps/details?id=com.beanstalk" target="_blank">
+              <a href="https://play.google.com/store/apps/details?id=com.beanstalk" target="_blank" rel="noreferrer">
                 <img className={AppBadges._Badge} src={googlePlayBadge} width="135" height="40" alt="Google Play store badge"/>
               </a>
             </div>

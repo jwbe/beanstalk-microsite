@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './designed-for-growth.module.scss';
-import FundBalance from '../fund-balance/fund-balance';
+
 import SimpleBars from '../simple-bars/simple-bars';
 import DesignedForGrowthGraph from '../designed-for-growth-graph/designed-for-growth-graph';
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
@@ -9,8 +9,6 @@ import Iphone from '../iphone/iphone';
 
 
 const DesignedForGrowth = () => {
-  const [showDiagramGraph, setShowDiagramGraph] = useState(true);
-
   return (
     <>
       <div className={`${titleStyles.TitleBlock} ${styles.TitleBlock___plant}`}>

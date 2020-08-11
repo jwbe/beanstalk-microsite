@@ -10,7 +10,6 @@ const SmallButton = ({
     switch (align) {
       case 'centred':
         return SmallButtonTheme.SmallButton___Centred;
-        break;
       case 'right':
         return SmallButtonTheme.SmallButton___Right;
       default:
