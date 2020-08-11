@@ -84,7 +84,7 @@ class Refer extends Component {
                   </h1>
                   <div className={ReferTheme.SignUp_Subheading}>
                     <strong>2 minutes to open an account.</strong>
-                    <p>Please enter your email to claim your prize.</p>
+                    <p>Please enter your email to claim your prize</p>
                   </div>
                 </header>
 
