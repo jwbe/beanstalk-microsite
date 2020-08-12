@@ -181,7 +181,7 @@
 
 .Content {
   margin: 0 auto;
-  @media (min-width: $breakpoint-sm) {
+  @media (min-width: $breakpoint-md) {
     width: $base-unit * 114;
   }
   &_Heading {
