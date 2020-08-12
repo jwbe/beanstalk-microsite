@@ -1,0 +1,29 @@
+.Tooltip {
+  top: $base-unit * 5;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  &_Tab {
+    right: $base-unit * 2;
+    position: absolute;
+    width: $base-unit * 2;
+    height: .625rem;
+    background-image: url('./images/tab.svg');
+    &_Wrapper {
+      width: 100%;
+      height: $base-unit;
+    }
+  }
+  &_Inner {
+    z-index: 1;
+    position: relative;
+    padding-top: $base-unit;
+    padding-right: $base-unit * 2;
+    padding-bottom: $base-unit;
+    padding-left: $base-unit * 2;
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+    background-color: #497378;
+    border-radius: $base-unit / 2;
+  }
+}

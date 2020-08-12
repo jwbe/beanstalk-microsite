@@ -11,9 +11,9 @@
   text-align: center;
   color: $white;
   @media (min-width: $breakpoint-sm) {
-    margin-bottom: $base-unit * 12;
-    padding-top: $base-unit * 9;
-    padding-bottom: $base-unit * 12;
+    margin-bottom: $base-unit * 8;
+    padding-top: $base-unit * 7;
+    padding-bottom: $base-unit * 8;
   }
   &_Inner {
     margin: 0 auto;
@@ -33,7 +33,7 @@
     line-height: $title-line-height;
     font-family: 'Quicksand', sans-serif;
     @media (min-width: $breakpoint-sm) {
-      margin-bottom: $base-unit * 6;
+      margin-bottom: $base-unit * 4;
       font-size: $headline-font-size;
       line-height: $headline-line-height;
     }
@@ -44,7 +44,7 @@
     font-size: $body-font-size;
     line-height: $body-line-height;
     @media (min-width: $breakpoint-sm) {
-      margin-bottom: $base-unit * 6;
+      margin-bottom: $base-unit * 4;
       font-size: $subheader-font-size;
       line-height: $subheader-line-height;
     }
@@ -71,7 +71,7 @@
   }
   @media (min-width: $breakpoint-sm) {
     padding: $base-unit * 3;
-    margin-bottom: $base-unit * 14;
+    margin-bottom: $base-unit * 11;
   }
   &_Badge {
     @media (max-width: $breakpoint-sm - .0625em) {
@@ -101,28 +101,44 @@
       flex-direction: column;
     }
     @media (min-width: $breakpoint-sm) {
-      margin-bottom: $base-unit * 6;
+      margin-bottom: $base-unit * 5;
     }
   }
   &_Input {
     width: 100%;
-    padding: .875rem;
+    padding-top: .875rem;
+    padding-right: $base-unit * 2;
+    padding-bottom: .875rem;
+    padding-left: .875rem;
     border-radius: $base-unit;
     background-color: $white;
     box-shadow: $shadow-level-3;
     font-size: $body-font-size;
     line-height: $body-line-height;
-    @media (max-width: $breakpoint-sm - .0625em) {
-      &:first-of-type {
-        margin-bottom: $base-unit * 2;
-      }
+    &_Error {
+      right: .75rem;
+      position: absolute;
+      width: $base-unit * 3;
+      height: $base-unit * 3;
+      background-image: url('./images/error-icon.svg');
     }
-    @media (min-width: $breakpoint-sm) {
-      &:first-of-type {
-        margin-right: $base-unit * 2;
+    &_Wrapper {
+      align-items: center;
+      display: flex;
+      position: relative;
+      width: 100%;
+      @media (max-width: $breakpoint-sm - .0625em) {
+        &:first-of-type {
+          margin-bottom: $base-unit * 2;
+        }
       }
-      &:last-of-type {
-        margin-left: $base-unit * 2;
+      @media (min-width: $breakpoint-sm) {
+        &:first-of-type {
+          margin-right: $base-unit * 2;
+        }
+        &:last-of-type {
+          margin-left: $base-unit * 2;
+        }
       }
     }
   }
@@ -142,13 +158,32 @@
     border-radius: 99rem;
     cursor: pointer;
     -webkit-appearance: none;
+    transition: transform .2s, box-shadow .2s, background-color .2s;
     @media (min-width: $breakpoint-sm) {
-      margin-bottom: $base-unit * 9;
+      margin-bottom: $base-unit * 7;
+    }
+    &:hover {
+      background-color: lighten($secondary, 5%);
+      transform: translateY(-$base-unit / 4);
+      box-shadow: $shadow-level-4;
+    }
+    &:active {
+      background-color: darken($secondary, 2%);
+      transform: translateY(0);
+      box-shadow: $shadow-level-1;
+    }
+    &:active,
+    &:focus {
+      outline: none;
     }
   }
 }
 
 .Content {
+  margin: 0 auto;
+  @media (min-width: $breakpoint-sm) {
+    width: $base-unit * 114;
+  }
   &_Heading {
     margin-top: 0;
     margin-bottom: $base-unit * 4;
@@ -158,8 +193,15 @@
     font-size: $title-font-size;
     line-height: $title-line-height;
     text-align: center;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      padding-right: $base-unit;
+      padding-left: $base-unit;
+    }
     @media (min-width: $breakpoint-sm) {
-      margin-bottom: $base-unit * 9;
+      margin-bottom: $base-unit * 7;
+      &:last-of-type {
+        margin-bottom: $base-unit * 9;
+      }
     }
     &_Break {
       @media (max-width: $breakpoint-sm - .0625em) {

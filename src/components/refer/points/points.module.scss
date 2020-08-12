@@ -13,7 +13,10 @@
     padding-left: $base-unit * 2;
   }
   @media (min-width: $breakpoint-sm) {
-    margin-bottom: $base-unit * 9;
+    margin-bottom: $base-unit * 7;
+    &:last-of-type {
+      margin-bottom: $base-unit * 9;
+    }
   }
   &_Icon {
     width: 100%;
