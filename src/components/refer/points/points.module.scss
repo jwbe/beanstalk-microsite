@@ -22,6 +22,7 @@
     width: 100%;
     display: block;
     &_Wrapper {
+      flex: none;
       margin-right: $base-unit * 2;
       width: $base-unit * 6;
       height: $base-unit * 6;
