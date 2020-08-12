@@ -42,7 +42,7 @@ class Refer extends Component {
     }
 
     if(fields['name'] !== '') {
-      if(!fields['name'].match(/^[a-zA-Z]{4,}(?: [a-zA-Z]+){0,2}$/)) {
+      if(!fields['name'].match(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u)) {
         formIsValid = false;
         errors['name'] = 'Please only use letters';
       }
