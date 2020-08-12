@@ -3,6 +3,7 @@
   right: 0;
   bottom: 0;
   position: absolute;
+  box-shadow: $shadow-level-3;
   &_Tab {
     right: $base-unit * 2;
     position: absolute;

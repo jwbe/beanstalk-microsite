@@ -20,6 +20,7 @@
   }
   &_Icon {
     width: 100%;
+    display: block;
     &_Wrapper {
       margin-right: $base-unit * 2;
       width: $base-unit * 6;
