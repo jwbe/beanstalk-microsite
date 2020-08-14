@@ -44,7 +44,7 @@ class Refer extends Component {
     if(fields['name'] !== '') {
       if(!fields['name'].match(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u)) {
         formIsValid = false;
-        errors['name'] = 'Please only use letters';
+        errors['name'] = 'Your name shouldn\'t contain numbers';
       }
     }
 
@@ -147,11 +147,11 @@ class Refer extends Component {
               <>
                 <header className={ReferTheme.Header}>
                   <h1 className={ReferTheme.SignUp_Heading}>
-                    You've been invited to join Beanstalk!
+                    You’ve been invited to join Beanstalk!
                   </h1>
                   <div className={ReferTheme.SignUp_Subheading}>
                     <strong>2 minutes to open an account.</strong>
-                    <p>Please enter your email to claim your prize.</p>
+                    <p>Please enter your email to get started.</p>
                   </div>
                 </header>
 
@@ -207,7 +207,7 @@ class Refer extends Component {
           <Points/>
 
           <h2 className={ReferTheme.Content_Heading}>
-            We are bringing child savings into the 21st Century. <br className={ReferTheme.Content_Heading_Break}/>Join the revolution in as little as 5 minutes.
+            We are bringing child savings into the 21st Century. <br className={ReferTheme.Content_Heading_Break}/>Join the revolution in as little as 5 minutes.
           </h2>
 
           <SmallPrint/>
