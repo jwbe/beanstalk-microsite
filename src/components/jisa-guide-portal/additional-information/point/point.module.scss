@@ -1,0 +1,28 @@
+.List {
+  display: flex;
+  margin-bottom: 1.25rem;
+  &:last-of-type {
+    margin-bottom: 1.75rem;
+  }
+}
+
+.Bullet {
+  flex: none;
+  height: $base-unit * 2;
+  width: $base-unit * 2;
+  background-color: $secondary;
+  border-radius: 100%;
+}
+
+.Item {
+  margin-top: -$base-unit / 2;
+  margin-left: $base-unit * 2;
+  color: $accent-3;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  @media (min-width: $breakpoint-sm) {
+    margin-left: $base-unit * 2;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+  }
+}

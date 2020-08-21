@@ -44,7 +44,7 @@ const Points = () => (
           Many ways to save
         </h3>
         <p className={PointsTheme.Point_Description}>
-          Round ups, free money back on your shopping, easy top ups
+          Round ups, free money back on your shopping, easy top-ups
         </p>
       </div>
     </div>
@@ -57,7 +57,7 @@ const Points = () => (
           Link family and friends
         </h3>
         <p className={PointsTheme.Point_Description}>
-          Boost your kids savings with multiple people contributing
+          Boost your kid's savings with multiple people contributing
         </p>
       </div>
     </div>

@@ -1,0 +1,60 @@
+.Container {
+  width: 100%;
+  display: flex;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    flex-direction: column;
+  }
+  @media (min-width: $breakpoint-sm) {
+    height: 100%;
+  }
+}
+
+.Section {
+  height: 100%;
+  display: flex;
+  padding-top: $base-unit * 3;
+  padding-right: $base-unit * 2;
+  padding-left: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    padding-top: $base-unit * 4;
+    padding-right: $base-unit * 4;
+    padding-bottom: $base-unit * 4;
+    padding-left: $base-unit * 4;
+    width: 50%;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-top: $base-unit * 7;
+    padding-right: $base-unit * 7;
+    padding-bottom: $base-unit * 7;
+    padding-left: $base-unit * 7;
+  }
+  &_Inner {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    @media (min-width: $breakpoint-sm) {
+      max-width: $base-unit * 60;
+    }
+  }
+  &___First {
+    justify-content: flex-end;
+    background-color: $primary;
+  }
+  &___Second {
+    justify-content: flex-start;
+    background-color: $white;
+    @media (min-width: $breakpoint-sm) {
+      padding-top: $base-unit * 3;
+    }
+    @media (min-width: $breakpoint-md) {
+      padding-top: $base-unit * 6;
+    }
+  }
+}
+
+.UiElements {
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}

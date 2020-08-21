@@ -1,0 +1,108 @@
+.Header {
+  flex-direction: row;
+  display: flex;
+  margin-bottom: $base-unit * 3;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.Logo {
+  margin-bottom: $base-unit * 4;
+  height: $base-unit * 3;
+  width: $base-unit * 24;
+  background-image: url('./images/beanstalk-logo.svg');
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 5;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.Headings {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit;
+  }
+  @media (max-width: $breakpoint-md - .0625em) {
+    padding-right: $base-unit * 3;
+  }
+  @media (min-width: $breakpoint-sm) {
+    flex: 1 1 0px;
+  }
+  @media (min-width: $breakpoint-md) {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding-right: $base-unit * 4;
+  }
+}
+
+.Heading {
+  margin-bottom: $base-unit;
+  color: $white;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 3;
+  }
+}
+
+.Subheading {
+  margin-top: 0;
+  margin-bottom: $base-unit;
+  color: $white;
+  font-weight: 700;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+}
+
+.Cta {
+  color: $white;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  @media (min-width: $breakpoint-md) {
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+  }
+}
+
+.Cta_Break {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.FrontPageMagazine {
+  flex: 1 1 0px;
+  //flex: none;
+  max-width: $base-unit * 28;
+
+  @media (max-width: $breakpoint-md - .0625em) {
+    //margin-left: $base-unit * 3;
+    margin-left: auto;
+  }
+  @media (min-width: $breakpoint-sm) {
+    //margin-left: $base-unit * 2;
+    width: 50%
+  }
+}
+
+.FrontPageMagazine_Inner {
+  padding-top: 133%;
+  background-image: url('./images/3-4-ratio-placeholder.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #dcdcda;
+}

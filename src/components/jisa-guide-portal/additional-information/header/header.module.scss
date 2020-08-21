@@ -1,0 +1,26 @@
+.Header {
+  margin-top: 0;
+  margin-bottom: $base-unit * 2;
+  color: $secondary;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 3;
+  }
+}
+
+.Subheader {
+  margin-top: 0;
+  margin-bottom: $base-unit * 2;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 3;
+  }
+}

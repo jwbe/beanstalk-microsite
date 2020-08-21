@@ -1,0 +1,22 @@
+.SmallPrint {
+  margin-top: auto;
+  margin-bottom: $base-unit * 3;
+  color: $accent-3;
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.Disclaimer {
+  margin-bottom: $base-unit * 8;
+  color: $secondary;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 3;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+}
