@@ -4,9 +4,6 @@
   @media (max-width: $breakpoint-sm - .0625em) {
     flex-direction: column;
   }
-  @media (min-width: $breakpoint-sm) {
-    height: 100%;
-  }
 }
 
 .Section {
