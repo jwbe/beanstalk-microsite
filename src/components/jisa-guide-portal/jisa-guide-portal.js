@@ -13,9 +13,7 @@ class JisaGuidePortal extends Component {
       <Location>
         {({ location }) => (
           <>
-            <div className={Styles.UiElements}>
-              <Header/>
-            </div>
+            <Header/>
             <div className={Styles.Container}>
               <section className={`${Styles.Section} ${Styles.Section___First}`}>
                 <div className={Styles.Section_Inner}>
@@ -28,9 +26,7 @@ class JisaGuidePortal extends Component {
                 </div>
               </section>
             </div>
-            <div className={Styles.UiElements}>
-              <Footer/>
-            </div>
+            <Footer/>
           </>
         )}
       </Location>

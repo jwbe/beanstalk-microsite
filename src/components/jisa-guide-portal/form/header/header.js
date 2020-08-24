@@ -5,8 +5,6 @@ const Header = (
   props
 ) => (
   <>
-    <div className={Styles.Logo}>
-    </div>
     <header className={Styles.Header}>
       <div className={Styles.Headings}>
         {

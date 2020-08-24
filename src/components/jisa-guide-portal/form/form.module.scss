@@ -1,11 +1,6 @@
 .VisibleInputs {
+  flex-direction: column; 
   display: flex;
-  @media (max-width: $breakpoint-md - .0625em) {
-    flex-direction: column;
-  }
-  @media (min-width: $breakpoint-md) {
-    margin-bottom: $base-unit * 4;
-  }
 }
 
 .Input {
@@ -36,16 +31,8 @@
     @media (max-width: $breakpoint-sm - .0625em) {
       margin-bottom: $base-unit * 2;
     }
-    @media (max-width: $breakpoint-md - .0625em) {
+    @media (min-width: $breakpoint-sm) {
       margin-bottom: $base-unit * 3;
-    }
-    @media (min-width: $breakpoint-md) {
-      &:first-of-type {
-        margin-right: $base-unit * 2;
-      }
-      &:last-of-type {
-        margin-left: $base-unit * 2;
-      }
     }
   }
 }

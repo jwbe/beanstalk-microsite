@@ -16,7 +16,7 @@ const AdditionalInformation = () => (
       The tax advantage of Junior ISAs
     </Point>
     <Point>
-      The types of Junior ISAs: Cash JISAs and stocks & shares JISAs
+      The types of Junior ISAs: cash JISAs and stocks & shares JISAs
     </Point>
     <Point>
       Transferring Child Trust Funds (CTFs) into Junior ISAs
