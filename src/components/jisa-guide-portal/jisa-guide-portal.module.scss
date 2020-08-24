@@ -39,7 +39,9 @@
   &___First {
     justify-content: flex-end;
     background-color: $primary;
-    border-radius: 0 0 $base-unit * 3 0;
+    @media (min-width: $breakpoint-sm) {
+      border-radius: 0 0 $base-unit * 3 0;
+    }
   }
   &___Second {
     justify-content: flex-start;
