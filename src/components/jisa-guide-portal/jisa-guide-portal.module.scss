@@ -1,8 +1,12 @@
 .Container {
+  margin-bottom: $base-unit * 4;
   width: 100%;
   display: flex;
   @media (max-width: $breakpoint-sm - .0625em) {
     flex-direction: column;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 7;
   }
 }
 
@@ -14,14 +18,14 @@
   @media (min-width: $breakpoint-sm) {
     padding-top: $base-unit * 4;
     padding-right: $base-unit * 4;
-    padding-bottom: $base-unit * 4;
+    padding-bottom: $base-unit * 5;
     padding-left: $base-unit * 4;
     width: 50%;
   }
   @media (min-width: $breakpoint-md) {
     padding-top: $base-unit * 7;
     padding-right: $base-unit * 7;
-    padding-bottom: $base-unit * 7;
+    padding-bottom: $base-unit * 8;
     padding-left: $base-unit * 7;
   }
   &_Inner {
@@ -29,24 +33,13 @@
     display: flex;
     width: 100%;
     @media (min-width: $breakpoint-sm) {
-      max-width: $base-unit * 60;
+      max-width: $base-unit * 50;
     }
   }
   &___First {
     justify-content: flex-end;
     background-color: $primary;
-    @media (min-width: $breakpoint-sm) {
-      &:after {
-        z-index: -1;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        height: 100%;
-        width: 50%;
-        background-color: $primary;
-        //content: '';
-      }
-    }
+    border-radius: 0 0 $base-unit * 3 0;
   }
   &___Second {
     justify-content: flex-start;
@@ -60,8 +53,27 @@
   }
 }
 
-.UiElements {
+.SmallPrint {
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: $base-unit * 3;
+  margin-left: auto;
+  max-width: $base-unit * 120;
+  color: $accent-3;
+  font-size: $small-font-size;
+  line-height: $small-line-height;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
   @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+    text-align: center;
+  }
+}
+
+.SmallPrint_Break {
+  @media (max-width: $breakpoint-sm - .0625em) {
     display: none;
   }
 }

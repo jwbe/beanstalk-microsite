@@ -115,7 +115,9 @@ class Form extends Component {
               heading='Thank you'
               cta='You can download your guide by clicking the button below'
             />
-            <button className={Styles.Submit}>Download guide now</button>
+            <div className={Styles.Submit_Wrapper}>
+              <a className={Styles.Submit} href="/docs/terms-and-conditions.pdf" target="_blank" rel="noopener noreferrer">Download guide now</a>
+            </div>
           </>
           :
           <>

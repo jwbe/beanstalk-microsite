@@ -55,7 +55,9 @@
   border-radius: 99rem;
   cursor: pointer;
   -webkit-appearance: none;
+  appearance: button;
   transition: transform .2s, box-shadow .2s, background-color .2s;
+  text-decoration: none;
   @media (max-width: $breakpoint-sm - .0625em) {
     margin-bottom: $base-unit * 4;
   }
@@ -72,5 +74,12 @@
   &:active,
   &:focus {
     outline: none;
+  }
+}
+
+.Submit_Wrapper {
+  text-align: center;
+  a {
+    display: inline-block;
   }
 }

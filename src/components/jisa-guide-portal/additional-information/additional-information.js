@@ -24,9 +24,6 @@ const AdditionalInformation = () => (
     <p className={Styles.Disclaimer}>
       The introduction is designed to help you understand the basics of what Junior ISAs are and how they work but is not personal advice on what you should do in your specific circumstances.
     </p>
-    <p className={Styles.SmallPrint}>
-      AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.
-    </p>
   </>
 )
 

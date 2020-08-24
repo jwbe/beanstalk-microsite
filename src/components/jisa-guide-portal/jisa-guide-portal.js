@@ -26,6 +26,9 @@ class JisaGuidePortal extends Component {
                 </div>
               </section>
             </div>
+            <p className={Styles.SmallPrint}>
+              AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE.<br className={Styles.SmallPrint_Break}/> THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.
+            </p>
             <Footer/>
           </>
         )}
