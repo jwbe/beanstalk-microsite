@@ -61,7 +61,7 @@ module.exports = {
         exclude: [`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`, `/articles/about-junior-isa-app`, `/articles/how-family-saving-works-app`, `/articles/how-round-ups-work-app`, `/articles/locate-a-missing-ctf-app`, `/articles/saving-vs-investing-app`, `/articles/transfer-ctf-jisa-app`, `/articles/welcome-to-beanstalk-app`],
         query: `
         {
-          allMdx(sort: filter: {fields: {collection: {in: ["pages", "articles"]}}, frontmatter: {app: {ne: true}}}) {
+          allMdx(filter: {frontmatter: {canonical: {eq: null}}, fields: {collection: {in: ["pages", "articles"]}}}) {
             edges {
               node {
                 fields {
