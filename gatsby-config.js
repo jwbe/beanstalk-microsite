@@ -73,7 +73,7 @@ module.exports = {
                }
              }
           }
-          allMdx(sort: filter: {fields: {collection: {in: ["pages", "articles"]}}, frontmatter: {app: {ne: true}}}) {
+          allMdx(filter: {frontmatter: {app: {ne: true}}, fields: {collection: {in: ["pages", "articles"]}}}) {
             edges {
               node {
                 fields {
