@@ -70,6 +70,8 @@
   }
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 4;
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
     text-align: center;
   }
 }

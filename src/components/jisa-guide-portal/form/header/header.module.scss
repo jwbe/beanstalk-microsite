@@ -2,6 +2,9 @@
   flex-direction: row;
   display: flex;
   margin-bottom: $base-unit * 3;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    justify-content: center;
+  }
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 4;
   }
@@ -24,14 +27,12 @@
 }
 
 .Headings {
+  flex: 1 1 0px;
   @media (max-width: $breakpoint-sm - .0625em) {
-    padding-right: $base-unit;
+    padding-right: $base-unit * 2;
   }
-  @media (max-width: $breakpoint-md - .0625em) {
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em) {
     padding-right: $base-unit * 3;
-  }
-  @media (min-width: $breakpoint-sm) {
-    flex: 1 1 0px;
   }
   @media (min-width: $breakpoint-md) {
     flex-direction: column;
@@ -48,6 +49,7 @@
   font-size: $title-font-size;
   line-height: $title-line-height;
   @media (min-width: $breakpoint-sm) {
+    margin-top: -$base-unit;
     margin-bottom: $base-unit * 2;
     font-size: $headline-font-size;
     line-height: $headline-line-height;
