@@ -2,6 +2,7 @@
 slug: jisa-declaration
 heading: JISA Declaration
 plain: true
+noSitemap: true
 ---
 
 ## JISA Declaration

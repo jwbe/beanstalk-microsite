@@ -58,7 +58,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: [`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`, `/articles/about-junior-isa-app`, `/articles/how-family-saving-works-app`, `/articles/how-round-ups-work-app`, `/articles/locate-a-missing-ctf-app`, `/articles/saving-vs-investing-app`, `/articles/transfer-ctf-jisa-app`, `/articles/welcome-to-beanstalk-app`],
+        exclude: [`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
         query: `
         {
           site {
@@ -73,7 +73,7 @@ module.exports = {
                }
              }
           }
-          allMdx(filter: {frontmatter: {app: {ne: true}}, fields: {collection: {in: ["pages", "articles"]}}}) {
+          allMdx(filter: {frontmatter: {app: {ne: true}, noSitemap: {ne: true}}, fields: {collection: {in: ["pages", "articles"]}}}) {
             edges {
               node {
                 fields {
