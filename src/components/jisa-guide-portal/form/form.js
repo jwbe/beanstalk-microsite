@@ -16,7 +16,8 @@ class Form extends Component {
       formSubmitAttempted: false,
       fields: {
         name: '',
-        email: ''
+        email: '',
+        optIn: false
       },
       errors: {
         name: '',
@@ -164,8 +165,8 @@ class Form extends Component {
                   name="optIn"
                   id="optIn"
                   ref="optIn"
-                  value="true"
-                  />
+                  onChange={this.handleChange.bind(this, 'optIn')}
+                  value={this.state.fields['optIn']}/>
                   <span className={QuestionStyles.Checkbox_Facade}></span>
                   <div className={QuestionStyles.Copy}>I would like to receive information about Junior ISAs from Beanstalk</div>
                 </label>
