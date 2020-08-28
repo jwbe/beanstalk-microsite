@@ -164,6 +164,7 @@ class Form extends Component {
                   name="optIn"
                   id="optIn"
                   ref="optIn"
+                  value="true"
                   />
                   <span className={QuestionStyles.Checkbox_Facade}></span>
                   <div className={QuestionStyles.Copy}>I would like to receive information about Junior ISAs from Beanstalk</div>
