@@ -76,13 +76,12 @@ class Form extends Component {
     let checkboxField = this.state.fields.optIn;
     if (event.target.checked) {
       checkboxField = { optIn: true };
-      console.log('checkbox true');
+      this.setState(checkboxField)
     }
     else {
       checkboxField = { optIn: false };
-      console.log('checkbox false');
+      this.setState(checkboxField)
     }
-    this.setState(checkboxField)
   }
 
   handleSubmit(event) {
@@ -168,9 +167,6 @@ class Form extends Component {
                   {this.state.errors['name'] && <Tooltip>{this.state.errors['name']}</Tooltip>}
                 </div>
               </div>
-              <input type="hidden" ref="bot-field" name="bot-field"/>
-              <input type="hidden" ref="form-name" name="form-name" value="jisa-guide"/>
-
               <div className={QuestionStyles.Question}>
                 <label className={QuestionStyles.Checkbox}>
                   <input 
@@ -185,7 +181,8 @@ class Form extends Component {
                   <div className={QuestionStyles.Copy}>I would like to receive information about Junior ISAs from Beanstalk</div>
                 </label>
               </div>
-
+              <input type="hidden" ref="bot-field" name="bot-field"/>
+              <input type="hidden" ref="form-name" name="form-name" value="jisa-guide"/>
               <button className={Styles.Submit} type="submit">Request guide</button>
             </form>
           </>
