@@ -73,16 +73,14 @@ class Form extends Component {
   }
 
   handleCheck(event) {
-    let checkboxField = this.state.fields.optIn;
+    let fields = this.state.fields;
     if (event.target.checked) {
-      checkboxField = { optIn: true };
-      console.log(checkboxField)
-      this.setState({checkboxField})
+      fields['optIn'] = true
+      this.setState({fields});
     }
     else {
-      checkboxField = { optIn: false };
-      console.log(checkboxField)
-      this.setState({checkboxField})
+      fields['optIn'] = false
+      this.setState({fields});
     }
   }
 
@@ -177,7 +175,6 @@ class Form extends Component {
                   id="optIn"
                   ref="optIn"
                   onChange={this.handleCheck.bind(this)}
-                  value={this.state.fields['optIn']}
                   />
                   <span className={QuestionStyles.Checkbox_Facade}></span>
                   <div className={QuestionStyles.Copy}>I would like to receive information about Junior ISAs from Beanstalk</div>
