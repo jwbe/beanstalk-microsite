@@ -3,6 +3,7 @@ slug: account-locked-app
 canonical: 'https://beanstalkapp.co.uk/account-locked'
 heading: Round Ups
 app: true
+noSitemap: true
 ---
 
 ## Your account has been locked

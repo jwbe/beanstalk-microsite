@@ -1,6 +1,8 @@
 ---
 slug: saving-vs-investing
 date: 2020-03-28T17:12:33.962Z
+title: Saving Versus Investing
+description: We take a look at whether saving or investing is the best option for you and why it can be a complicated decision.
 category: Beanstalk
 coverImage: './saving-vs-investing.jpg'
 coverImage_alt: 'Photo showing screenshots from Beanstalk'

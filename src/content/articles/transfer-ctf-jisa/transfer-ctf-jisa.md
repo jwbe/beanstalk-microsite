@@ -1,5 +1,7 @@
 ---
 slug: transfer-ctf-jisa
+title: Transferring a Child Trust Fund or Junior ISA 
+description: Transferring an existing CTF or JISA to Beanstalk is very simple. Find out why it may make sense to transfer your child's account and how the process works.
 date: 2020-02-28T17:12:33.962Z
 category: Beanstalk
 coverImage: './transfer-ctf-jisa.jpg'

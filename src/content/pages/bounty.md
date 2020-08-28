@@ -1,7 +1,7 @@
 ---
 slug: bounty
 plain: true
-canonical: 'https://beanstalkapp.co.uk/bounty'
+noSitemap: true
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

@@ -2,7 +2,7 @@
 slug: cuddledry
 heading: 
 plain: true
-canonical: 'https://beanstalkapp.co.uk/cuddledry'
+noSitemap: true
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

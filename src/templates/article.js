@@ -13,6 +13,8 @@ export const query = graphql`
       meta: frontmatter {
         heading
         subheading
+        title
+        description
         app
         slug
         canonical
@@ -45,8 +47,8 @@ const Layout = ({
       <Wrapper>
         <Head title={data.page.meta.heading}/>
         <SEO
-          title={data.page.meta.heading}
-          description={data.page.meta.excerpt}
+          title={data.page.meta.title}
+          description={data.page.meta.description}
           keywords={data.page.meta.tags}
           canonical={data.page.meta.canonical}
           />

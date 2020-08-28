@@ -1,6 +1,8 @@
 ---
 slug: how-round-ups-work
 date: 2020-02-28T17:12:33.962Z
+title: How Round Ups Work
+description: Learn more about Beanstalk's Round Up tool and how you can invest your spare change on our app for your children's future.
 category: Beanstalk
 coverImage: './how-round-ups-work.jpg'
 coverImage_alt: 'Screenshot from Beanstalk round ups'

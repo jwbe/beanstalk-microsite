@@ -3,6 +3,7 @@ slug: terms-and-conditions-governing-beanstalk
 heading: T&Cs
 subheading: ISA terms & conditions
 plain: true
+noSitemap: true
 ---
 
 ## Terms and conditions governing Beanstalk

@@ -1,6 +1,6 @@
 ---
 slug: key-investor-information-documents-app
-canonical: 'https://beanstalkapp.co.uk/key-investor-information-documents-app'
+canonical: 'https://beanstalkapp.co.uk/key-investor-information-documents'
 heading: Key Investor Information Documents
 app: true
 ---

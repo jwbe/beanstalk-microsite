@@ -14,6 +14,8 @@ export const query = graphql`
       meta: frontmatter {
         heading
         subheading
+        title
+        description
         media
         plain
         app
@@ -30,8 +32,8 @@ const Layout = ({ data }) => {
       <Wrapper>
         <Head title={data.page.meta.heading}/>
         <SEO
-          title={data.page.meta.heading}
-          description={data.page.meta.subheading}
+          title={data.page.meta.title}
+          description={data.page.meta.description}
           canonical={data.page.meta.canonical}
           />
         { data.page.meta.app ? null : <Header plain={data.page.meta.plain} headerVariant={data.page.meta.media ? HEADER_VARIANT.MEDIA_PAGE : null} heading={data.page.meta.heading} subheading={data.page.meta.subheading}/> }

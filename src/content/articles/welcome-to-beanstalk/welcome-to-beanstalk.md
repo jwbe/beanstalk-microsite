@@ -1,6 +1,8 @@
 ---
 slug: welcome-to-beanstalk
 date: 2020-03-28T17:12:33.962Z
+title: Welcome To Beanstalk!
+description: Find out about why we decided to launch Beanstalk and what we've done to make saving and investing accessible for all.
 category: Beanstalk
 coverImage: './welcome-to-beanstalk.jpg'
 coverImage_alt: 'Photo showing screenshots from Beanstalk'

@@ -2,6 +2,7 @@
 slug: isa-declaration
 heading: ISA Declaration
 plain: true
+noSitemap: true
 ---
 
 

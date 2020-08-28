@@ -1,7 +1,9 @@
 ---
 slug: legals
 heading: Legal documents
-subheading: Beanstalk terms and conditions
+subheading: Beanstalk Terms & Conditions
+title: Beanstalk Terms & Conditions
+description: Find Beanstalk Terms & Conditions, Privacy Policy and Key Information Documents.
 media: true
 ---
 

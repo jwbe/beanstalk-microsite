@@ -2,6 +2,7 @@
 slug: from-ctf-calculator
 heading: 
 plain: true
+noSitemap: true
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

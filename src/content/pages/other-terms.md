@@ -2,6 +2,7 @@
 slug: other-terms
 heading: Other Terms
 subheading: Miscelleanous site terms
+noSitemap: true
 ---
 
 ## Beanstalk Referral programme terms and conditions

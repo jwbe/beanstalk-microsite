@@ -2,6 +2,7 @@
 slug: key-investor-information-documents
 heading: Key Investor Information Documents
 media: true
+noSitemap: true
 ---
 
 import Pods from '../../components/pods/pods'

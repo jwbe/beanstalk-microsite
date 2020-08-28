@@ -1,6 +1,8 @@
 ---
 slug: about-junior-isa
 date: 2020-03-28T17:12:33.962Z
+title: What Is A Junior ISA?
+description: Want to understand more about Junior ISAs and the differences between Cash and Stocks & Shares JISAs? Read on.
 category: Beanstalk
 coverImage: './about-junior-isa.jpg'
 coverImage_alt: 'Photo showing screenshots from Beanstalk'

@@ -2,6 +2,7 @@
 slug: reglink
 heading: Get in touch with us
 plain: true
+noSitemap: true
 ---
 
 ## Hi there

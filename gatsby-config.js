@@ -1,3 +1,12 @@
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://www.example.com',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV
+} = process.env;
+const isNetlifyProduction = NETLIFY_ENV === 'production';
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+
 module.exports = {
   siteMetadata: {
     siteUrl: `https://beanstalkapp.co.uk`,
@@ -130,7 +139,7 @@ module.exports = {
       options: {
         host: 'https://beanstalkapp.co.uk',
         sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
-        policy: [{ userAgent: '*', disallow: [`/docs/JISATransferForm.pdf`, `/beanstalk-survey`] }]
+        policy: [{ userAgent: '*', disallow: [`/docs/JISATransferForm.pdf`, `/beanstalk-survey`, `jisa-declaration`, `isa-declaration`, `key-features-documents`, ] }]
       }
     },
     {

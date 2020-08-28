@@ -2,7 +2,7 @@
 slug: family
 heading: 
 plain: true
-canonical: 'https://beanstalkapp.co.uk/family'
+noSitemap: true
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

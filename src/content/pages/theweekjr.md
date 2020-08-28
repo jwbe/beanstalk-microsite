@@ -2,7 +2,7 @@
 slug: theweekjr
 heading: 
 plain: true
-canonical: 'https://beanstalkapp.co.uk/theweekjr'
+noSitemap: true
 ---
 
 import AppDownloadRedirect from '../../components/app-download-redirect';

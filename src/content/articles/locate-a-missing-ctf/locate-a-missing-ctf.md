@@ -1,6 +1,8 @@
 ---
 slug: locate-a-missing-ctf
 date: 2020-02-28T17:12:33.962Z
+title: Locate A Missing CTF
+description: We explain how to find out if your child has a Child Trust Fund, where it might be and details into how to switch to a different account.
 category: Beanstalk
 coverImage: './locate-a-missing-ctf.jpg'
 coverImage_alt: 'Screenshot from Beanstalk round ups'

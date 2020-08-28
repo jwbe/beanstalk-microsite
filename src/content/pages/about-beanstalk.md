@@ -2,6 +2,8 @@
 slug: about-beanstalk
 heading: About Beanstalk
 subheading: What we do and why we do it
+title: About The Beanstalk App
+description: Find out more about the Beanstalk app and why we do what we do.
 ---
 
 import { TestimonialPod, TestimonialPods } from '../../components/testimonial-pod/testimonial-pod'

@@ -1,6 +1,8 @@
 ---
 slug: how-family-saving-works
 date: 2020-03-28T17:12:33.962Z
+title: How Family Saving Works
+description: Inviting friends and family to link to your child’s account so they can help out is one of the many unique features that Beanstalk offers, find out more here.
 category: Beanstalk
 coverImage: './how-family-saving-works.jpg'
 coverImage_alt: 'Photo showing screenshots from Beanstalk'

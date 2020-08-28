@@ -101,9 +101,11 @@
 
 .FrontPageMagazine_Inner {
   padding-top: 133%;
-  background-image: url('./images/3-4-ratio-placeholder.png');
+  background-image: url('./images/jisa-guide-cover.png');
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-color: #dcdcda;
+  //background-color: #dcdcda;
+  border-radius: $base-unit / 2;
+  border: 1px solid $white;
 }

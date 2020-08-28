@@ -2,6 +2,8 @@
 slug: support
 heading: Help & Support
 subheading: What can we help you with?
+title: Help & Support
+description: What can we help you with? Find contact details and FAQS to help resolve any queries you have.
 media: true
 ---
 import Pods from '../../components/pods/pods'
