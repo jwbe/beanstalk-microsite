@@ -76,11 +76,13 @@ class Form extends Component {
     let checkboxField = this.state.fields.optIn;
     if (event.target.checked) {
       checkboxField = { optIn: true };
-      this.setState(checkboxField)
+      console.log(checkboxField)
+      this.setState({checkboxField})
     }
     else {
       checkboxField = { optIn: false };
-      this.setState(checkboxField)
+      console.log(checkboxField)
+      this.setState({checkboxField})
     }
   }
 
