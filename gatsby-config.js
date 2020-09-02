@@ -96,22 +96,23 @@ module.exports = {
           }
         }`,
         serialize: ({ site, allSitePage, allMdx }) => {
-          let pages = []
+          let pages = [`${site.siteMetadata.siteUrl}/guides/jisa-guide}`]
+          const 
           const allEdges = allMdx.edges;
-          const pageEdges = allEdges.filter(
+          const mdxPageEdges = allEdges.filter(
             edge => edge.node.fields.collection === `pages`
           );
-          const articleEdges = allEdges.filter(
+          const mdxArticleEdges = allEdges.filter(
             edge => edge.node.fields.collection === `articles`
           );
-          pageEdges.forEach(edge => {
+          mdxPageEdges.forEach(edge => {
             pages.push({
               url: `${site.siteMetadata.siteUrl}/${edge.node.frontmatter.slug}`,
               changefreq: `daily`,
               priority: 0.7,
             })
           })
-          articleEdges.forEach(edge => {
+          mdxArticleEdges.forEach(edge => {
             pages.push({
               url: `${site.siteMetadata.siteUrl}/articles/${edge.node.frontmatter.slug}`,
               changefreq: `daily`,
@@ -137,9 +138,24 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://beanstalkapp.co.uk',
-        sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
-        policy: [{ userAgent: '*', disallow: [`/docs/JISATransferForm.pdf`, `/beanstalk-survey`, `jisa-declaration`, `isa-declaration`, `key-features-documents`, ] }]
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            host: 'https://beanstalkapp.co.uk',
+            sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
+            policy: [{ userAgent: '*', disallow: [`/docs/JISATransferForm.pdf`, `/beanstalk-survey`, `jisa-declaration`, `isa-declaration`, `key-features-documents`, ] }]
+          },
+          'branch-deploy': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null
+          },
+          'deploy-preview': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null
+          }
+        }
       }
     },
     {
