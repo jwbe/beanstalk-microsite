@@ -24,7 +24,7 @@ const Data = {
     {
       id: 3,
       name: 'Halifax',
-      annualPercentageCharge: 1.5,
+      annualPercentageCharge: 1,
       tileLogo: '/images/ctf-calculator-provider-logos/halifax-logo.png'
     },
     {
