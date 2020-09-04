@@ -96,7 +96,7 @@ module.exports = {
           }
         }`,
         serialize: ({ site, allSitePage, allMdx }) => {
-          let pages = [{`${site.siteMetadata.siteUrl}/guides/jisa-guide`, changefreq: `daily`, priority: 0.7}]
+          let pages = [{url: `${site.siteMetadata.siteUrl}/guides/jisa-guide}`, changefreq: `daily`, priority: 0.7}]
           const allEdges = allMdx.edges;
           const mdxPageEdges = allEdges.filter(
             edge => edge.node.fields.collection === `pages`
