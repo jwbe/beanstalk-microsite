@@ -1,5 +1,6 @@
 ---
 slug: about-beanstalk
+canonical: 'https://beanstalkapp.co.uk/about-beanstalk'
 heading: About Beanstalk
 subheading: What we do and why we do it
 title: About The Beanstalk App
@@ -7,6 +8,7 @@ description: Find out more about the Beanstalk app and why we do what we do.
 ---
 
 import { TestimonialPod, TestimonialPods } from '../../components/testimonial-pod/testimonial-pod'
+import PressLogos from '../../components/press-logos/press-logos'
 
 ## About Beanstalk
 
@@ -60,3 +62,7 @@ From our years of experience helping families save, we could see that the saving
     Fabulous way to save for your child. Hugely helpful if you have a query - always get back to you. Highly recommend.
   </TestimonialPod>
 </TestimonialPods>
+
+## Here's what the press says about us
+
+<PressLogos/>

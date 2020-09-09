@@ -1,5 +1,6 @@
 ---
 slug: other-terms
+canonical: 'https://beanstalkapp.co.uk/other-terms'
 heading: Other Terms
 subheading: Miscelleanous site terms
 noSitemap: true

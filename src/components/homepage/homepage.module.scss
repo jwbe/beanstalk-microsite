@@ -1,3 +1,17 @@
+.H2_PressLogos {
+  font-size: $headline-font-size;
+  line-height: $headline-line-height;
+  text-align: center;
+  color: $primary;
+  font-weight: 700;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.H2_PressLogos_section {
+  width: 100%;
+  display: block!important;
+}
+
 .Homepage_iphone_screenshot {
   width: 23.4375rem;
   height: 41.6875rem;

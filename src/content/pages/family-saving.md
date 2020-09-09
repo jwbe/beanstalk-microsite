@@ -1,5 +1,6 @@
 ---
 slug: family-saving
+canonical: 'https://beanstalkapp.co.uk/family-saving'
 heading: Family Saving
 plain: true
 ---

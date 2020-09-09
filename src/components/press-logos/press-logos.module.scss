@@ -1,0 +1,21 @@
+.Logos {
+  padding-right: $base-unit;
+  padding-left: $base-unit;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.Logo {
+  //flex-basis: percentage(1/4);
+  align-items: center;
+  display: flex;
+  img {
+    max-height: $base-unit * 8;
+    max-width: 100%;
+    display: block;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      max-width: calc(100% - #{$base-unit * 4});
+    }
+  }
+}

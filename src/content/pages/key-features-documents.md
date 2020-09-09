@@ -1,5 +1,6 @@
 ---
 slug: key-features-documents
+canonical: 'https://beanstalkapp.co.uk/key-features-documents'
 heading: Key Features Documents
 title: Key Features Documents
 description: Read our documents on key features of the Beanstalk JISA and ISA

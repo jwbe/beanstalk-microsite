@@ -1,5 +1,6 @@
 ---
 slug: faqs
+canonical: 'https://beanstalkapp.co.uk/faqs'
 heading: Frequently asked questions
 subheading: These are some of the most common questions users have about Beanstalk.
 title: Frequently Asked Questions 

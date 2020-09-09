@@ -1,5 +1,6 @@
 ---
 slug: isa-declaration
+canonical: 'https://beanstalkapp.co.uk/isa-declaration'
 heading: ISA Declaration
 plain: true
 noSitemap: true

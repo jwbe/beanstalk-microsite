@@ -1,5 +1,6 @@
 ---
 slug: key-investor-information-documents
+canonical: 'https://beanstalkapp.co.uk/key-investor-information-documents'
 heading: Key Investor Information Documents
 media: true
 noSitemap: true

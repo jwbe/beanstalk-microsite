@@ -1,5 +1,6 @@
 ---
 slug: articles
+canonical: 'https://beanstalkapp.co.uk/articles'
 heading: Knowledge base
 subheading: Articles & News
 media: true

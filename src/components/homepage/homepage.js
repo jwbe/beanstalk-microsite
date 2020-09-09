@@ -31,6 +31,8 @@ import iconInstagramWhite from '../../images/icons/instagram-icon-white.png';
 import iconTwitterWhite from '../../images/icons/twitter-icon-white.png';
 import iconLinkedInWhite from '../../images/icons/linkedin-icon-white.png';
 
+import PressLogos from '../press-logos/press-logos';
+
 import AppBadges from './app-badges/app-badges';
 
 const sarahSlug = <span>£50.00 sent to Sarah by Jane Doe.<br/> <span className={styles.Homepage_topUps_message}>Happy birthday to little…</span></span>
@@ -191,10 +193,12 @@ const Homepage = () => {
         </Column>
       </Section>
 
-      <Section className={styles.Homepage_section}>
-        <div className={styles.Homepage_partners}>
-          <div className={styles.Homepage_partners_partner}>
-          </div>
+      <Section className={`${styles.Homepage_section}`}>
+        <div className={styles.H2_PressLogos_section}>
+          <h2 className={styles.H2_PressLogos}>
+            As seen in
+          </h2>
+          <PressLogos/>
         </div>
       </Section>
 

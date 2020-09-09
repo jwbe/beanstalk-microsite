@@ -145,7 +145,19 @@ module.exports = {
           production: {
             host: 'https://beanstalkapp.co.uk',
             sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
-            policy: [{ userAgent: '*', disallow: [`/docs/JISATransferForm.pdf`, `/beanstalk-survey`, `jisa-declaration`, `isa-declaration`, `key-features-documents`, ] }]
+            policy: [{ userAgent: '*', disallow: [
+              `/docs/JISATransferForm.pdf`, 
+              `/beanstalk-survey`, 
+              `/jisa-declaration`, 
+              `/isa-declaration`, 
+              `/key-features-documents`,
+              `/key-investor-information-documents`,
+              `/other-terms`,
+              `/reglink`,
+              `/terms-and-conditions-for-isa`,
+              `/terms-and-conditions-governming-beanstalk`,
+              `/data-privacy-and-cookies`
+              ] }]
           },
           'branch-deploy': {
             policy: [{ userAgent: '*', disallow: ['/'] }],

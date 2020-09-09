@@ -9,7 +9,7 @@ subheading: Why Beanstalk and how we help families build a lump sum to give thei
 author: Julian
 app: true
 order: 1
-backButton: articles-app
+backButton: '/articles-app'
 ---
 
 Ten years ago, I co-founded KidStart, the free shopping club for parents that has helped thousands of families save millions of pounds for free for their children when shopping at over 2,000 retailers.

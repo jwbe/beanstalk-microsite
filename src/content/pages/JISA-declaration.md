@@ -1,5 +1,6 @@
 ---
 slug: jisa-declaration
+canonical: 'https://beanstalkapp.co.uk/jisa-declaration'
 heading: JISA Declaration
 plain: true
 noSitemap: true

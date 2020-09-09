@@ -9,7 +9,7 @@ subheading: When putting money aside for the future, some people just stick it i
 author: Julian
 order: 5
 app: true
-backButton: articles-app
+backButton: '/articles-app'
 ---
 
 When we were carrying out research for Beanstalk, I met a mum with an 18 month old son. She was putting £50 a month into her son’s cash junior ISA with the goal of giving him a nice lump sum for when he turned 18.  Great – starting early is never a bad thing as it gives longer for your money to grow. 

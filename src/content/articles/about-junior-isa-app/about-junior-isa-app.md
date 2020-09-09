@@ -9,7 +9,7 @@ subheading: Want to understand more about Junior ISAs and the differences betwee
 author: Beanstalk
 order: 7
 app: true
-backButton: articles-app
+backButton: '/articles-app'
 ---
 
 ## What is a Junior ISA?

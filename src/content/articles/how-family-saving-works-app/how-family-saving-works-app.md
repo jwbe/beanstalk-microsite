@@ -9,7 +9,7 @@ subheading: How friends and family can help build your child’s nest egg
 author: Beanstalk
 order: 6
 app: true
-backButton: articles-app
+backButton: '/articles-app'
 ---
 
 Inviting friends and family to link to your child’s account so they can help out is one of the many unique features that Beanstalk offers. Grandparents, for example, tell us that they really want to support grandchildren by putting money away for when they are older, and they are often in a financial position to be able to do so. Beanstalk makes this really easy for them. Here is how it works:
