@@ -58,6 +58,7 @@ module.exports = {
         cookie_expires: 0,
       },
     },
+    `gatsby-plugin-preact`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
