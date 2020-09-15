@@ -54,7 +54,7 @@ From our years of experience helping families save, we could see that the saving
     <strong>Loving this app.</strong> Great way to save for my kids’ future. It's so transparent compared to the other junior ISAs in some banks. I will definitely recommend it. definitely recommend it.
   </TestimonialPod>
 
-  <TestimonialPod author='Veli Aghdiran>
+  <TestimonialPod author='Veli Aghdiran'>
     Really well-designed app with a lot of different ways for me to save for my family and get other family members to chip in too. I love the round-up feature as a great way to top up savings and being able to invite friends and family makes it all even more useful.
   </TestimonialPod>
 
