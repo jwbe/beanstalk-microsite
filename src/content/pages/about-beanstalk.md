@@ -50,19 +50,26 @@ From our years of experience helping families save, we could see that the saving
 ## Here's what people say about us
 
 <TestimonialPods>
-  <TestimonialPod author='nev.76'>
-    Love this app, it's so easy to use (even for me!) I set both my kids up in minutes and my husband, in-laws and my mum are all linked to the kids accounts so they can contribute whenever they like. I like I can use KidStart with this too.
+  <TestimonialPod author='Oluwatosin Akisanya'>
+    <strong>Loving this app.</strong> Great way to save for my kids’ future. It's so transparent compared to the other junior ISAs in some banks. I will definitely recommend it. definitely recommend it.
   </TestimonialPod>
 
-  <TestimonialPod author='JoWebber1981'>
-    Intuitive interface, easy for all family members to contribute and share on the news feed. Really handy and user friendly!
+  <TestimonialPod author='Veli Aghdiran>
+    Really well-designed app with a lot of different ways for me to save for my family and get other family members to chip in too. I love the round-up feature as a great way to top up savings and being able to invite friends and family makes it all even more useful.
   </TestimonialPod>
 
-  <TestimonialPod author='Sally H'>
-    Fabulous way to save for your child. Hugely helpful if you have a query - always get back to you. Highly recommend.
+  <TestimonialPod author='K Stephenson'>
+    Two of my children had CTFs with another company, and after setting up a child ISA for my youngest child, Beanstalk helped me transfer the funds belonging to my two older children. Everything was so easy and straightforward. I'm even thinking of setting up an ISA for myself with them.
   </TestimonialPod>
 </TestimonialPods>
 
 ## Here's what the press says about us
 
 <PressLogos/>
+
+
+Really well-designed app, great way to save for kids
+Really well-designed app with a lot of different ways for me to save for my family, and get other family members to chip in too. I love the round-up feature as a great way to top up savings, and being able to invite friends and family makes it all even more useful. I love having a dedicated app for child savings. Would highly recommend Beanstalk!
+
+Would highly recommend Beanstalk to anyone
+I found out about Beanstalk through the Kidstart website. Two of my children had CTF's with another company, and after setting up a child ISA for my yougest child, Beanstalk helped me transfer the funds belonging to my two older children. Everything was so easy and straightforward, with Beanstalk talking me through the process and keeping me informed regularly throughout the process. They are so friendly and helpful and I would highly recommend Beanstalk to anyone, they are brilliant. I'm even thinking of setting up an ISA for myself with them.
