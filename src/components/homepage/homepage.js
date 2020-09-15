@@ -198,7 +198,7 @@ const Homepage = () => {
           <h2 className={styles.H2_PressLogos}>
             As seen in
           </h2>
-          <PressLogos/>
+          <PressLogos links='false'/>
         </div>
       </Section>
 

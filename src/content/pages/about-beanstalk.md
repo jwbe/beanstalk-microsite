@@ -65,4 +65,4 @@ From our years of experience helping families save, we could see that the saving
 
 ## Here's what the press say about us
 
-<PressLogos/>
+<PressLogos links/>
