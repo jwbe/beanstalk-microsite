@@ -4,6 +4,7 @@ canonical: 'https://beanstalkapp.co.uk/terms-and-conditions-governing-beanstalk'
 heading: T&Cs
 subheading: ISA terms & conditions
 app: true
+noSitemap: true
 ---
 
 ## Terms and conditions governing Beanstalk

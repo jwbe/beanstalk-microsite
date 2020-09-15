@@ -10,16 +10,32 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ canonical, description, lang, meta, title }) {
+function SEO({ canonical, description, lang, meta, title, noSitemap }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
-            description
-            author
-            logoUrl
+            siteUrl
+          }
+        }
+        allSitePage {
+          edges {
+             node {
+               path
+             }
+           }
+        }
+        allMdx(filter: {frontmatter: {app: {ne: true}, noSitemap: {ne: true}}, fields: {collection: {in: ["pages", "articles"]}}}) {
+          edges {
+            node {
+              fields {
+                collection
+              }
+              frontmatter {
+                slug
+              }
+            }
           }
         }
       }
@@ -42,6 +58,9 @@ function SEO({ canonical, description, lang, meta, title }) {
           : []
       }
       meta={[
+        noSitemap
+          ? [{ name: `robots`, content:`noindex`}]
+          : [],
         {
           name: `description`,
           content: metaDescription,

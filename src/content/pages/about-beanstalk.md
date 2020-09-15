@@ -51,7 +51,7 @@ From our years of experience helping families save, we could see that the saving
 
 <TestimonialPods>
   <TestimonialPod author='Oluwatosin Akisanya'>
-    <strong>Loving this app.</strong> Great way to save for my kids’ future. It's so transparent compared to the other junior ISAs in some banks. I will definitely recommend it. definitely recommend it.
+    Loving this app. Great way to save for my kids’ future. It's so transparent compared to the other junior ISAs in some banks. I will definitely recommend it. definitely recommend it.
   </TestimonialPod>
 
   <TestimonialPod author='Veli Aghdiran'>

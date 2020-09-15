@@ -4,6 +4,7 @@ canonical: 'https://beanstalkapp.co.uk/data-privacy-and-cookies'
 heading: Privacy
 subheading: Data privacy & cookies
 app: true
+noSitemap: true
 ---
 
 import BackButton from '../../components/back-button/back-button'

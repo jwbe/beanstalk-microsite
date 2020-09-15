@@ -4,6 +4,7 @@ canonical: 'https://beanstalkapp.co.uk/other-terms'
 heading: Other termms
 subheading: Miscelleanous site terms
 app: true
+noSitemap: true
 ---
 
 

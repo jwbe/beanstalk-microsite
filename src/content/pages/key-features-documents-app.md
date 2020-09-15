@@ -3,6 +3,7 @@ slug: key-features-documents-app
 canonical: 'https://beanstalkapp.co.uk/key-features-documents'
 heading: Key Features Documents
 app: true
+noSitemap: true
 ---
 
 import Pods from '../../components/pods/pods'

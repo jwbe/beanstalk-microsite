@@ -4,6 +4,7 @@ canonical: 'https://beanstalkapp.co.uk/articles'
 heading: Knowledge base
 subheading: Articles & News
 app: true
+noSitemap: true
 ---
 import ArticlesApp from '../../components/articles-app/articles-app'
 import BackButton from '../../components/back-button/back-button'

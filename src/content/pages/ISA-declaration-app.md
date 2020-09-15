@@ -3,6 +3,7 @@ slug: isa-declaration-app
 canonical: 'https://beanstalkapp.co.uk/isa-declaration'
 heading: ISA Declaration
 app: true
+noSitemap: true
 ---
 
 

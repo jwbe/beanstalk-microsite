@@ -3,6 +3,7 @@ slug: jisa-declaration-app
 canonical: 'https://beanstalkapp.co.uk/jisa-declaration'
 heading: JISA Declaration
 app: true
+noSitemap: true
 ---
 
 ## JISA Declaration
