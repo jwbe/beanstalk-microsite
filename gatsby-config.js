@@ -186,13 +186,11 @@ module.exports = {
               `/other-terms-app`,
               `/readingeggs`,
               `/saving-made-simple-app`,
-              `/support-app`
+              `/support-app`,
               `/terms-and-conditions-governing-beanstalk-app`,
               `/theweekjr`,
               `/twitter`,
               `/use-alternative-link`, 
-
-              
               ] }]
           },
           'branch-deploy': {
