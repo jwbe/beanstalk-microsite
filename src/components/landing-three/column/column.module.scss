@@ -1,0 +1,5 @@
+.Column {
+  @media (min-width: $breakpoint-sm) {
+    flex-basis: 50%;
+  }
+}

@@ -1,0 +1,18 @@
+.appBadges_wrapper {
+  display: inline-flex;
+  text-align: center;
+  &___Centred {
+    margin: 0 auto;
+  }
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.appBadges_appBadge {
+  margin-right: $base-unit * 4;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: $base-unit;
+  }
+}

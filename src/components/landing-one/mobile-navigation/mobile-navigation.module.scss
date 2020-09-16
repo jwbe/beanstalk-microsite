@@ -1,0 +1,114 @@
+.MobileNavigation {
+  z-index: 1;
+  position: relative;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  width: 100%;
+  padding: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    padding-top: $base-unit * 4;
+    padding-right: $base-unit * 4;
+    padding-left: $base-unit * 4;
+  }
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.MobileNavigation_items {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  width: calc(100% - #{$base-unit * 3});
+  margin-right: $base-unit * 2;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.MobileNavigation.isNotActive {
+  & .MobileNavigation_items {
+    width: 0;
+    transition: width 250ms ease-out;
+  }
+  & .MobileNavigation_logo  {
+    opacity: 1;
+    transition: opacity 250ms ease-out;
+  }
+}
+
+.MobileNavigation.isActive {
+  & .MobileNavigation_slideMenu {
+    width: 100%;
+  }
+  & .MobileNavigation_items {
+    width: 100%;
+    transition: width 250ms ease-in;
+    @media (min-width: $breakpoint-sm) {
+      margin-left: $base-unit * 2;
+    }
+  }
+  & .MobileNavigation_logo  {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+}
+
+.MobileNavigation_link {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: 600;
+  color: $white;
+  text-decoration: none;
+  white-space: nowrap;
+  @media (max-width: $breakpoint-xs-sm) {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+}
+
+.MobileNavigation_logo_underlay {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    padding-top: $base-unit * 4;
+    padding-right: $base-unit * 4;
+    padding-left: $base-unit * 4;
+  }
+}
+
+.MobileNavigation_logo_underlay___homepage {
+  @media (min-width: $breakpoint-sm) {
+    padding-top: $base-unit * 4;
+  }
+}
+
+.MobileNavigation_logo {
+  @media (min-width: $breakpoint-sm) {
+    height: 2.5rem;
+    //margin-top: .0625rem;
+    margin-right: auto;
+    //margin-bottom: .0625rem;
+    margin-left: auto;
+  }
+}
+
+.MobileNavigation_waitingListButton {
+  @media (max-width: $breakpoint-md - .0625em) {
+    display: none;
+  }
+}
+
+.MobileNavigation_slideMenu {
+  z-index: 1;
+  position: relative;
+  justify-content: flex-end;
+  display: flex;
+  //width: 100%;
+}

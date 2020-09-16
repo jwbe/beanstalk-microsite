@@ -1,0 +1,106 @@
+.TopUp {
+  display: flex;
+  position: relative;
+  margin-bottom: $base-unit * 2;
+  padding-top: $base-unit * 2;
+  padding-right: $base-unit * 2;
+  padding-bottom: 1.25rem;
+  padding-left: $base-unit * 2;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  background-color: $white;
+  border-radius: $base-unit * 2;
+  box-shadow: $shadow-level-3;
+  @media (min-width: $breakpoint-sm - .0625em) {
+    max-width: 75%
+  }
+  @media (min-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.TopUp___desktop {
+  @media (min-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.TopUp___middle {
+  left: $base-unit * 10;
+}
+
+.TopUp___first {
+  @media (min-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 5;
+  }
+}
+
+.TopUp___second {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 10;
+  }
+  @media (min-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 15;
+  }
+}
+
+.TopUp___third {
+  @media (min-width: $breakpoint-sm - .0625em) {
+    left: $base-unit * 25;
+  }
+}
+
+.TopUp_header {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-weight: 700;
+  color: $secondary;
+}
+
+.TopUp_recipient {
+  color: $accent-3;
+}
+
+.TopUp_date {
+  margin-top: $base-unit / 2;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+  font-weight: 500;
+  color: $accent-3;
+}
+
+.TopUp_column {
+  flex-direction: column;
+  flex-grow: 1;
+  display: flex;
+}
+
+.TopUp_icon {
+  display: block;
+  margin-left: auto
+}
+
+.TopUp_button {
+  align-self: flex-end;
+  display: inline-block;
+  margin-top: auto;
+  padding-top: $base-unit / 2;
+  padding-right: $base-unit;
+  padding-bottom: $base-unit / 2;
+  padding-left: $base-unit;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $caption-font-size;
+  font-weight: 100;
+  line-height: $caption-line-height;
+  text-transform: uppercase;
+  border: 1px solid $primary;
+  color: $accent-3;
+  border-radius: $base-unit / 2;
+}
+
+.TopUp_bottomRow {
+  display: flex;
+}

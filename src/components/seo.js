@@ -17,6 +17,7 @@ function SEO({ canonical, description, lang, meta, title, noSitemap }) {
         site {
           siteMetadata {
             siteUrl
+            title
           }
         }
         allSitePage {
@@ -59,7 +60,7 @@ function SEO({ canonical, description, lang, meta, title, noSitemap }) {
       }
       meta={[
         noSitemap
-          ? [{ name: `robots`, content:`noindex`}]
+          ? [{ name: `robots`, content: `noindex`}]
           : [],
         {
           name: `description`,

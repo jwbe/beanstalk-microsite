@@ -1,0 +1,30 @@
+.Section {
+
+}
+
+.Section_inner {
+  flex-direction: column;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit * 7;
+  }
+  @media (min-width: $breakpoint-sm) {
+    flex-direction: row;
+    padding-top: $base-unit * 4;
+    padding-bottom: $base-unit * 4;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em) {
+    padding-right: $base-unit * 4;
+    padding-left: $base-unit * 4;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+    max-width: $base-unit * 120;
+  }
+  &:first-of-type {
+    padding-top: 0;
+  }
+}

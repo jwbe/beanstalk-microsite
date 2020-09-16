@@ -1,5 +1,8 @@
 .appBadges_wrapper {
   display: flex;
+  &___Centred {
+    margin: 0 auto;
+  }
   @media (max-width: $breakpoint-sm - .0625em) {
     margin-top: 3rem;
     margin-bottom: 2rem;
