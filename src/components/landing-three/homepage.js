@@ -48,7 +48,6 @@ const Homepage = () => {
             Beanstalk: the family investment solution
           </h1>
           <p className={styles.Homepage_subheading}>
-            The Beanstalk savings app helps families work together <br className={styles.Homepage_heading_lineBreak}/> to give their kids the best possible launch into adult life. <br className={styles.Homepage_heading_lineBreak}/> Get the app and start saving today!
             The easiest way to save for your children, <br className={styles.Homepage_heading_lineBreak}/> Beanstalk helps families invest together to build a pot of money that will give their kids the best possible launch into adult life.<br className={styles.Homepage_heading_lineBreak}/> Get the app NOW and start saving straight today!
           </p>
           <AppBadges/>
