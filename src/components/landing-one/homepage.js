@@ -45,7 +45,7 @@ const Homepage = () => {
         <DesktopNavigation className={styles.Homepage_desktopNavigation} layoutVariant={{homepage:true}}/>
         <div className={styles.Homepage_header_content}>
           <h1 className={styles.Homepage_heading}>
-            The savings apps <br className={styles.Homepage_heading_lineBreak}/> that makes saving for children easy
+            The savings app <br className={styles.Homepage_heading_lineBreak}/> that makes saving for children easy
           </h1>
           <p className={styles.Homepage_subheading}>
             The Beanstalk savings app helps families work together <br className={styles.Homepage_heading_lineBreak}/> to give their kids the best possible launch into adult life. <br className={styles.Homepage_heading_lineBreak}/> Get the app and start saving today!
@@ -98,7 +98,7 @@ const Homepage = () => {
               Beanstalk makes saving and investing easy whatever your family’s shape or budget.
             </p>
             <p>
-              With no minimum or regular contribution required, the Beanstalk app makes investing for your kids easy whether it is £10 or £1000, collect free savings on your shopping and round up your purchases to automatically save.
+              With no minimum or regular contribution required, the Beanstalk savings app makes investing for your kids easy whether it is £10 or £1000, collect free savings on your shopping and round up your purchases to automatically save.
             </p>
 
           </Point>
@@ -112,7 +112,7 @@ const Homepage = () => {
         <Column className={`${styles.Homepage_column___copy}`}>
           <Point
             icon={iconFamily}
-            heading='Family saving app'>
+            heading="The UK's family savings app">
             <p>
               The Beanstalk savings app lets you open and manage accounts for all your children - and yourself if you would like.
             </p>
@@ -141,9 +141,6 @@ const Homepage = () => {
             icon={iconCashInHand}
             heading='Reimagining child savings and investing'>
             <>
-              <p>
-                Beanstalk offers stocks & shares Junior ISAs and adult ISAs so any returns are tax free.
-              </p>
               <p>
                 Beanstalk offers stocks & shares Junior ISAs and adult ISAs so any returns are tax free.
               </p>
@@ -198,24 +195,6 @@ const Homepage = () => {
             <div className={styles.Homepage_footer_header}>
               <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___secondary}`} src={footerLogoSecondary} width='223' height='28' alt="Beanstalk logo"/>
               <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___white}`} src={footerLogoWhite} width='162' height='20' alt="Beanstalk logo"/>
-              <div className={styles.Homepage_footer_socialIcons}>
-                <a href="https://www.facebook.com/TheBeanstalkApp/" target="_blank" rel="noreferrer">
-                  <img className={styles.Homepage_footer_socialIcons_desktop} src={iconFacebookSecondary} width="24" height="24" alt="Facebook icon"/>
-                  <img className={styles.Homepage_footer_socialIcons_mobile} src={iconFacebookWhite} width="24" height="24" alt="Facebook icon"/>
-                </a>
-                <a href="https://www.instagram.com/thebeanstalkapp/" target="_blank" rel="noreferrer">
-                  <img className={styles.Homepage_footer_socialIcons_desktop} src={iconInstagramSecondary} width="24" height="24" alt="Instagram icon"/>
-                  <img className={styles.Homepage_footer_socialIcons_mobile} src={iconInstagramWhite} width="24" height="24" alt="Instagram icon"/>
-                </a>
-                <a href="https://twitter.com/TheBeanstalkApp" target="_blank" rel="noreferrer">
-                  <img className={styles.Homepage_footer_socialIcons_desktop} src={iconTwitterSecondary} width="24" height="24" alt="Twitter icon"/>
-                  <img className={styles.Homepage_footer_socialIcons_mobile} src={iconTwitterWhite} width="24" height="24" alt="Twitter icon"/>
-                </a>
-                <a href="https://www.linkedin.com/company/the-beanstalk-app" target="_blank" rel="noreferrer">
-                  <img className={styles.Homepage_footer_socialIcons_desktop} src={iconLinkedInSecondary} width="24" height="24" alt="LinkedIn icon"/>
-                  <img className={styles.Homepage_footer_socialIcons_mobile} src={iconLinkedInWhite} width="24" height="24" alt="LinkedIn icon"/>
-                </a>
-              </div>
             </div>
             <p className={styles.Homepage_footer_paragraph}>
               Beanstalk is a trading name of KidStart Limited. KidStart Limited is authorised and regulated by the Financial Conduct Authority. Our FCA number is 473606. See <a href='http://www.fca.org.uk' target="_blank" rel="noreferrer">http://www.fca.org.uk</a> for more information. View our <Link to='/data-privacy-and-cookies'>privacy policy</Link> and <Link to='/legals'>terms & conditions</Link>.
