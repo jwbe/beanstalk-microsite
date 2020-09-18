@@ -48,7 +48,7 @@ const Homepage = () => {
             The savings app <br className={styles.Homepage_heading_lineBreak}/> that makes saving for children easy
           </h1>
           <p className={styles.Homepage_subheading}>
-            The Beanstalk savings app helps families work together <br className={styles.Homepage_heading_lineBreak}/> to give their kids the best possible launch into adult life. <br className={styles.Homepage_heading_lineBreak}/> Get the app and start saving today!
+            The Beanstalk savings app helps families work together <br className={styles.Homepage_heading_lineBreak}/> to give their kids the best possible launch into adult life. <br className={styles.Homepage_heading_lineBreak}/> <span className={styles.Homepage_specialCTA}>Get the app NOW and start saving today!</span>
           </p>
           <AppBadges/>
         </div>

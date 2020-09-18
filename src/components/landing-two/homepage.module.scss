@@ -1,3 +1,9 @@
+.Homepage_specialCTA {
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+}
+
 .H2_PressLogos {
   margin-bottom: $base-unit * 2;
   font-size: $headline-font-size;
@@ -373,8 +379,6 @@
   color: $white;
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 4;
-    font-size: 1.15rem;
-    line-height: 1.8rem;
   }
   @media (min-width: $breakpoint-md) {
     margin-bottom: $base-unit * 5;
