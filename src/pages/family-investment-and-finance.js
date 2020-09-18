@@ -9,7 +9,7 @@ const LandingThreePage = () => {
     <Layout>
       <>
         <Helmet>
-          <title>{`Save for your children with Beanstalk | Beanstalk`}</title>
+          <title>{`Family investment with Beanstalk`}</title>
           <script src={withPrefix('smartbanner.min.js')} type="text/javascript" />
           <meta name="google-play-app" content="app-id=uk.co.beanstalkapp" />
           <meta name="description" content="Beanstalk is an app-based JISA that helps families build a pot of money for their children's futures. Making saving and investing accessible for all." />

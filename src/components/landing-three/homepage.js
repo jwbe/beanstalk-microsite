@@ -48,7 +48,7 @@ const Homepage = () => {
             Beanstalk: the family investment solution
           </h1>
           <p className={styles.Homepage_subheading}>
-            The easiest way to save for your children, <br className={styles.Homepage_heading_lineBreak}/> Beanstalk helps families invest together to build a pot of money <br className={styles.Homepage_heading_lineBreak}/>that will give their kids the best possible launch into adult life.<br className={styles.Homepage_heading_lineBreak}/> <span className={styles.Homepage_specialCTA}>Get the app NOW and start saving today!</span>
+            The easiest way to save for your children, <br className={styles.Homepage_heading_lineBreak}/> Beanstalk helps families invest together to build a pot of money <br className={styles.Homepage_heading_lineBreak}/>that will give their kids the best possible launch into adult life.<br/> <span className={styles.Homepage_specialCTA}>Get the app NOW and start saving today!</span>
           </p>
           <AppBadges/>
         </div>
@@ -95,7 +95,7 @@ const Homepage = () => {
             icon={iconPiggybank}
             heading='Changing the way families invest for their kids'>
             <p>
-              Beanstalk makes saving and investing easy whatever your family’s shape or budget.
+              Beanstalk makes saving and investing for your kids easy whatever your family's shape or budget.
             </p>
             <p>
               With no minimum or regular contribution required, you or anyone you invite can contribute whenever you want whether it is £10 or £1000, collect free savings on your shopping and round up your purchases to invest little and often.
