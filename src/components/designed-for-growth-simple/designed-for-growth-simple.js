@@ -6,16 +6,9 @@ import DesignedForGrowthGraph from '../designed-for-growth-graph/designed-for-gr
 import titleStyles from '../info-title-styles/info-title-styles.module.scss';
 import Iphone from '../iphone/iphone';
 
-
-
 const DesignedForGrowth = () => {
   return (
     <>
-      <div className={`${titleStyles.TitleBlock} ${styles.TitleBlock___plant}`}>
-        <h1 className={titleStyles.TitleBlock_heading}>
-          Designed for Growth
-        </h1>
-      </div>
       <section className={styles.Section}>
         <article className={styles.Article}>
           <div className={styles.TextBlock}>

@@ -1,0 +1,65 @@
+.DesktopNavigation {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  padding-right: $base-unit * 3;
+  padding-left: $base-unit * 3;
+  margin-top: $base-unit * 2;
+  margin-right: auto;
+  margin-bottom: $base-unit * 4;
+  margin-left: auto;
+  width: 100%;
+  @media (max-width: $breakpoint-md - .0625em) {
+    display: none;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: $base-unit * 3;
+    margin-bottom: $base-unit * 9;
+    width: $base-unit * 120;
+  }
+  &_logo {
+    display: block;
+  }
+  &_section {
+    flex-grow: 1;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    &___middle {
+      justify-content: center;
+    }
+    &___end {
+      justify-content: flex-end;
+    }
+  }
+  &_items {
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    &___page {
+      width: auto;
+    }
+  }
+  &_item {
+    margin-left: $base-unit * 8;
+    white-space: nowrap;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &___start {
+      margin-right: $base-unit * 3;
+    }
+    &___end {
+      margin-left: $base-unit * 3;
+    }
+  }
+  &_link {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    font-weight: 600;
+    color: $white;
+    text-decoration: none;
+  }
+}
