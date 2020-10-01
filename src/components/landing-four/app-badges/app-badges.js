@@ -4,8 +4,8 @@ import styles from './app-badges.module.scss'
 import AppStoreLogo from './images/app-store-logo.png'
 import GooglePlayLogo from './images/google-play-logo.png'
 
-const AppBadges = () => (
-  <div className={styles.AppBadges}>
+const AppBadges = ({centred}) => (
+  <div className={`${styles.AppBadges} ${centred ? styles.AppBadges___Centred : null}`}>
     <div className={styles.AppBadges_Inner}>
       <a href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank" rel="noreferrer">
         <img className={styles.AppBadges_Badge} src={AppStoreLogo} width="162" height="48"/>

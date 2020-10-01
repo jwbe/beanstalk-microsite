@@ -13,8 +13,8 @@
     display: none;
   }
   @media (min-width: $breakpoint-md) {
-    margin-top: $base-unit * 3;
-    margin-bottom: $base-unit * 3.5;
+    //margin-top: $base-unit * 3;
+    //margin-bottom: $base-unit * 3.5;
     width: $base-unit * 120;
   }
   &_logo {

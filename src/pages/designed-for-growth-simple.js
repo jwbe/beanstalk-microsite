@@ -37,13 +37,13 @@ const DesignedForGrowthSimplePage = () => {
         <Header plain={true}/>
 
         <Main layoutVariant={LAYOUT_VARIANT.PLAIN_PAGE}>
-          <AppBadges/>
+          <AppBadges centred/>
           <DesignedForGrowthSimple/>
-          <AppBadges/>
+          <AppBadges centred/>
         </Main>
 
         <Footer/>
-        
+
         </>
     </Layout>
   )

@@ -9,10 +9,10 @@ const LandingTwoPage = () => {
     <Layout>
       <>
         <Helmet>
-          <title>{`Save for your children with Beanstalk`}</title>
+          <title>{`Beanstalk - The Easy Way To Save For Your Children`}</title>
           <script src={withPrefix('smartbanner.min.js')} type="text/javascript" />
           <meta name="google-play-app" content="app-id=uk.co.beanstalkapp" />
-          <meta name="description" content="Beanstalk is an app-based JISA that helps families build a pot of money for their children's futures. Making saving and investing accessible for all." />
+          <meta name="description" content="Find out how to save for your kids with Beanstalk. The unique app makes investing for your kids simple to build them a brighter future. Download now!" />
           <link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png"/>
           <meta name="smartbanner:title" content="Beanstalk App"/>
           <meta name="smartbanner:author" content="Beanstalk"/>
