@@ -98,7 +98,10 @@ module.exports = {
         serialize: ({ site, allSitePage, allMdx }) => {
           let pages = [
             {url: `${site.siteMetadata.siteUrl}`, changefreq: `daily`, priority: 0.7},
-            {url: `${site.siteMetadata.siteUrl}/guides/jisa-guide`, changefreq: `daily`, priority: 0.7}
+            {url: `${site.siteMetadata.siteUrl}/guides/jisa-guide`, changefreq: `daily`, priority: 0.7},
+            {url: `${site.siteMetadata.siteUrl}/save-and-invest-for-kids`, changefreq: `daily`, priority: 0.7},
+            {url: `${site.siteMetadata.siteUrl}/the-family-savings-app`, changefreq: `daily`, priority: 0.7},
+            {url: `${site.siteMetadata.siteUrl}/family-investment-and-finance`, changefreq: `daily`, priority: 0.7}
           ]
           const allEdges = allMdx.edges;
           const mdxPageEdges = allEdges.filter(
