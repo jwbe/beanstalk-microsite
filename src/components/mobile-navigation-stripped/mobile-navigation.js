@@ -25,14 +25,12 @@ const MobileNavigation = ({
   return (
     <nav className={`${className} ${styles.MobileNavigation}`}>
       <div className={`${styles.MobileNavigation_logo_underlay} ${styles.MobileNavigation_logo_underlay___homepage}`}>
-        <Link to='/'>
-          <img
-            className={styles.MobileNavigation_logo}
-            src={logo}
-            alt='Beanstalk logo'
-            height='32'
-          />
-        </Link>
+        <img
+          className={styles.MobileNavigation_logo}
+          src={logo}
+          alt='Beanstalk logo'
+          height='32'
+        />
       </div>
     </nav>
   );

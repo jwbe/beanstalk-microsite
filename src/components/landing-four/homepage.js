@@ -151,7 +151,7 @@ const Homepage = () => {
                 Choose from two low cost investment funds in the proportion you choose.
               </p>
               <p>
-                At 0.5% our fee is one of the lowest meaning more invested for your family. <Link to={"/designed-for-growth-simple"}>Learn more</Link>
+                At 0.5% our fee is one of the lowest meaning more invested for your family. <Link to={"/designed-to-grow"}>Learn more</Link>
               </p>
             </>
           </Point>

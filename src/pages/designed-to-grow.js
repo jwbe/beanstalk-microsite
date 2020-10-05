@@ -32,6 +32,7 @@ const DesignedForGrowthSimplePage = () => {
           <meta name="smartbanner:button-url-apple" content="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597"/>
           <meta name="smartbanner:enabled-platforms" content="android, ios"/>
           <meta name="smartbanner:close-label" content="Close"/>
+          <link rel="canonical" href="https://beanstalkapp.co.uk/designed-for-growth" />
         </Helmet>
 
         <Header plain={true}/>

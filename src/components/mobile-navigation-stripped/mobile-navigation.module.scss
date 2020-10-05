@@ -6,11 +6,12 @@
   display: flex;
   width: 100%;
   padding: $base-unit * 2;
+  margin-bottom: 1.75rem;
   @media (min-width: $breakpoint-sm ) and (max-width: $breakpoint-md - .0625em) {
     padding-top: $base-unit * 4;
     padding-left: $base-unit * 4;
     padding-right: $base-unit * 4;
-    margin-bottom: $base-unit * 6;
+    margin-bottom: 2.25rem;
   }
   @media (min-width: $breakpoint-md) {
     display: none;
