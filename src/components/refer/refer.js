@@ -4,6 +4,8 @@ import * as qs from 'query-string'
 
 import ReferTheme from './refer.module.scss'
 
+import { Link } from 'gatsby'
+
 import Head from '../head/head'
 import { Header } from '../header/header'
 import Footer from '../footer/footer'
@@ -190,7 +192,7 @@ class Refer extends Component {
                 </form>
 
                 <p className={ReferTheme.SignUp_NotaBene}>
-                  <strong>Note:</strong> We will only use your email to remind you to register and to record whether you have registered.
+                  <strong>Note:</strong> We will only use your email to remind you to register and to record whether you have registered.<br/> View referral T&Cs <Link to="">here</Link>.
                 </p>
               </>
             }
