@@ -15,9 +15,9 @@ const PressLogos = ({links}) => (
      <a className={styles.Logo} href="https://www.finextra.com/pressarticle/83509/beanstalk-launches-kids-savings-app" target="_blank" rel="noopener">
        <img src={FinnExtraLogo} alt='FinnExtra logo'/>
      </a>
-     <div className={styles.Logo}>
+     <a className={styles.Logo} href="https://inews.co.uk/inews-lifestyle/money/child-trust-fund-junior-isa-find-account-hmrc-653002" target="_blank" rel="noopener">
        <img src={iNewsLogo} alt='iNews logo'/>
-     </div>
+     </a>
      <a className={styles.Logo} href="https://www.themoneypages.com/investments/top-childs-savings-two-minutes-new-app/" target="_blank" rel="noopener">
        <img src={TheMoneyPagesLogo} alt='The Money Pages logo'/>
      </a>
