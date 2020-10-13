@@ -149,6 +149,8 @@ module.exports = {
             host: 'https://beanstalkapp.co.uk',
             sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
             policy: [{ userAgent: '*', disallow: [
+              `/family`,
+              `kidstart`,
               `/docs/JISATransferForm.pdf`, 
               `/beanstalk-survey`, 
               `/jisa-declaration-app`, 
