@@ -237,7 +237,8 @@ module.exports = {
         includePaths: ["./src/components/scss/global"]
       }
     },
-      resolve: `gatsby-plugin-purgecss`
+    }
+      resolve: `gatsby-plugin-purgecss`,
     },
     {
       resolve: `gatsby-source-filesystem`,
