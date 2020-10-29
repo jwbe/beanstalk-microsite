@@ -238,12 +238,6 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        printRejected: true,
-      }
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
