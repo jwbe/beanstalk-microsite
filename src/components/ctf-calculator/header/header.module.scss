@@ -37,10 +37,11 @@
   }
   &:nth-child(1) {
     font-family: 'Quicksand', sans-serif;
-    font-size: $body-font-size;
-    line-height: $body-line-height;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
     font-weight: 700;
     color: $primary;
+    text-align: center;
     @media (min-width: $breakpoint-sm) {
       font-size: $display-font-size;
       line-height: $display-line-height;
