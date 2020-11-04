@@ -1,6 +1,7 @@
 ---
 slug: about-beanstalk
 canonical: 'https://beanstalkapp.co.uk/about-beanstalk'
+priority: 0.9
 heading: About Beanstalk
 subheading: What we do and why we do it
 title: About The Beanstalk App

@@ -39,6 +39,7 @@ exports.createPages = async({graphql, actions}) => {
             }
             meta: frontmatter {
               slug
+              priority
             }
           }
           next {
@@ -77,7 +78,8 @@ exports.createPages = async({graphql, actions}) => {
       path: edge.node.meta.slug,
       component: standardTemplate,
       context: {
-        slug: edge.node.meta.slug
+        slug: edge.node.meta.slug,
+        priority: edge.node.meta.priority
       }
     });
   });

@@ -1,6 +1,7 @@
 ---
 slug: features
 canonical: 'https://beanstalkapp.co.uk/features'
+priority: 0.9
 heading: Features
 title: Key Features That Make Beanstalk Unique
 description: Learn how to link family, round up your purchases, earn money back and more. We've packed the app with some great tools and features to help your save

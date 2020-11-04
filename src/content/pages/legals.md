@@ -1,6 +1,7 @@
 ---
 slug: legals
 canonical: 'https://beanstalkapp.co.uk/legals'
+priority: 0.2
 heading: Legal documents
 subheading: Beanstalk Terms & Conditions
 title: Beanstalk Terms & Conditions

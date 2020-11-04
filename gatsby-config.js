@@ -90,6 +90,7 @@ module.exports = {
                 }
                 frontmatter {
                   slug
+                  priority
                 }
               }
             }
@@ -97,8 +98,8 @@ module.exports = {
         }`,
         serialize: ({ site, allSitePage, allMdx }) => {
           let pages = [
-            {url: `${site.siteMetadata.siteUrl}`, changefreq: `daily`, priority: 0.7},
-            {url: `${site.siteMetadata.siteUrl}/guides/jisa-guide`, changefreq: `daily`, priority: 0.7},
+            {url: `${site.siteMetadata.siteUrl}`, changefreq: `daily`, priority: 1.0},
+            {url: `${site.siteMetadata.siteUrl}/guides/jisa-guide`, changefreq: `daily`, priority: 0.9},
             {url: `${site.siteMetadata.siteUrl}/save-and-invest-for-kids`, changefreq: `daily`, priority: 0.7},
             {url: `${site.siteMetadata.siteUrl}/the-family-savings-app`, changefreq: `daily`, priority: 0.7},
             {url: `${site.siteMetadata.siteUrl}/family-investment-and-finance`, changefreq: `daily`, priority: 0.7}
@@ -111,10 +112,11 @@ module.exports = {
             edge => edge.node.fields.collection === `articles`
           );
           mdxPageEdges.forEach(edge => {
+            let priority = edge.node.frontmatter.priority ? edge.node.frontmatter.priority : 0.7;
             pages.push({
               url: `${site.siteMetadata.siteUrl}/${edge.node.frontmatter.slug}`,
               changefreq: `daily`,
-              priority: 0.7,
+              priority: priority,
             })
           })
           mdxArticleEdges.forEach(edge => {

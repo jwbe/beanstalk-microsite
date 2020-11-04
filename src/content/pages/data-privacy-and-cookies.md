@@ -1,6 +1,7 @@
 ---
 slug: data-privacy-and-cookies
 canonical: 'https://beanstalkapp.co.uk/data-privacy-and-cookies'
+priority: 0.2
 heading: Privacy
 subheading: Data privacy & cookies
 noSitemap: true
