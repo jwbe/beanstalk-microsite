@@ -58,6 +58,7 @@ module.exports = {
         cookie_expires: 0,
       },
     },
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -67,7 +68,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: [`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
+        exclude: [`/kidstart`,`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
         query: `
         {
           site {
@@ -152,7 +153,8 @@ module.exports = {
             sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
             policy: [{ userAgent: '*', disallow: [
               `/family`,
-              `kidstart`,
+              `/kidstart`,
+              `/faqs-app`,
               `/docs/JISATransferForm.pdf`, 
               `/beanstalk-survey`, 
               `/jisa-declaration-app`, 
@@ -163,7 +165,6 @@ module.exports = {
               `/reglink`,
               `/terms-and-conditions-for-isa`,
               `/terms-and-conditions-governing-beanstalk`,
-              `/data-privacy-and-cookies`,
               `/account-locked-app`,
               `/coming-soon-app`,
               `/bloggers`,
@@ -195,6 +196,7 @@ module.exports = {
               `/saving-made-simple-app`,
               `/support-app`,
               `/terms-and-conditions-governing-beanstalk-app`,
+              `/terms-and-conditions-governing-beanstalk`,
               `/theweekjr`,
               `/twitter`,
               `/use-alternative-link`, 
