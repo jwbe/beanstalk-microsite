@@ -1,0 +1,35 @@
+.Section {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    position: relative;
+    padding-top: $base-unit * 9;
+    padding-right: $base-unit;
+    padding-left: $base-unit;
+    margin-left: -$base-unit * 2;
+    margin-right: -$base-unit * 2;
+    background-color: $secondary;
+  }
+}
+
+.Footer {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-top: $base-unit * 4;
+    margin-left: -$base-unit;
+    margin-right: -$base-unit;
+    background-color: $secondary;
+  }
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.Footer_Shape {
+  background-color: #5bc595;
+}
+
+.Footer_Shape_Top  {
+
+}
+
+.Footer_Graphic {
+
+}

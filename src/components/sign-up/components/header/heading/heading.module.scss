@@ -1,0 +1,62 @@
+.Header {
+  font-family: 'Quicksand', sans-serif;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit * 5;
+    text-align: center;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 10;
+    margin-bottom: $base-unit * 27;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: $base-unit * 15;
+    margin-bottom: $base-unit * 22;
+  }
+}
+
+.MainCta {
+  display: inline-block;
+  padding-top: $base-unit;
+  padding-right: .75rem;
+  padding-bottom: $base-unit;
+  padding-left: .75rem;
+  margin-bottom: $base-unit;
+  color: $white;
+  font-size: $display-font-size;
+  font-weight: 700;
+  line-height: $display-line-height;
+  background-color: $secondary;
+  box-shadow: $shadow-level-3;
+  border-radius: $base-unit / 2;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    letter-spacing: -.0625em
+  }
+}
+
+.SecondaryCta {
+  padding-left: .75rem;
+  margin-bottom: $base-unit;
+  color: $white;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    letter-spacing: -.03125em;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+    font-size: $base-unit * 3;
+    line-height: $base-unit * 4;
+  }
+}
+
+.Partner {
+  padding-left: .75rem;
+  color: $white;
+  font-size: $headline-font-size;
+  font-weight: 700;
+  line-height: $headline-line-height;
+  letter-spacing: -.03125em;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}

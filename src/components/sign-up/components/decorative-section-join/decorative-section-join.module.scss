@@ -1,0 +1,30 @@
+.Wrapper {
+  top: 0;
+  position: absolute;
+  margin-right: -$base-unit;
+  margin-left: -$base-unit;
+  width: 100%;
+  justify-self: center;
+  display: flex;
+  overflow: hidden;
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.Inner {
+  width: 100%;
+  height: $base-unit * 3;
+  background-image: url('./images/cut.svg');
+  background-position: center -.5rem;
+  background-size: 47.9375rem 2rem;
+  background-repeat: no-repeat;
+}
+
+.Wrapper__vFlipped {
+  top: auto;
+  bottom: 0;
+  .Inner {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,106 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form_Wrapper {
+  //display: none;
+}
+
+.Form_VisibleInputs {
+  margin-bottom: $base-unit * 3;
+  @media (min-width: $breakpoint-sm) {
+    align-items: flex-end;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: $base-unit * 4;
+  }
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+}
+
+.Form_Input {
+  width: 100%;
+  padding-top: .875rem;
+  padding-right: $base-unit * 2;
+  padding-bottom: .875rem;
+  padding-left: .875rem;
+  margin: 0; // Solves iOS extra margin-top
+  margin-bottom: 0;
+  border-radius: $base-unit;
+  background-color: $white;
+  box-shadow: 0 .5rem 1rem 0 rgba(#32b67a, .1);
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  &::placeholder {
+    color: $accent-3;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+  &_Error {
+    right: .75rem;
+    position: absolute;
+    width: $base-unit * 3;
+    height: $base-unit * 3;
+    background-image: url('./images/error-icon.svg');
+  }
+  &_Wrapper {
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: $base-unit * 42;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &:first-of-type {
+      margin-bottom: $base-unit * 2;
+    }
+  }
+}
+
+.Form_Submit {
+  padding-top: $base-unit * 2;
+  padding-right: $base-unit * 4;
+  padding-bottom: $base-unit * 2;
+  padding-left: $base-unit * 4;
+  margin-bottom: $base-unit * 3;
+  margin-left: auto;
+  color: $white;
+  text-align: center;
+  font-weight: 700;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  background-color: $secondary;
+  box-shadow: $shadow-level-3;
+  border-radius: 99rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: transform .2s, box-shadow .2s, background-color .2s;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: auto;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 3;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 5;
+  }
+  &:hover {
+    background-color: lighten($secondary, 5%);
+    transform: translateY(-$base-unit / 4);
+    box-shadow: $shadow-level-4;
+  }
+  &:active {
+    background-color: darken($secondary, 2%);
+    transform: translateY(0);
+    box-shadow: $shadow-level-1;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

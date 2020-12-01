@@ -1,0 +1,16 @@
+.Container {
+  padding-right: $base-unit * 2;
+  padding-left: $base-unit * 2;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: $breakpoint-sm) {
+    padding-right: $base-unit * 4;
+    padding-left: $base-unit * 4;
+    //max-width: $base-unit * 88;
+  }
+  @media (min-width: $breakpoint-md) {
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+    max-width: $base-unit * 120;
+  }
+}

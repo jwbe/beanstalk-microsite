@@ -1,0 +1,87 @@
+.Iphone {
+  right: 0;
+  position: absolute;
+  transform: translate(1.5rem, 3.5rem) rotate(32deg);
+  @media (max-width: $breakpoint-md - .0625em) {
+    display: none;
+  }
+}
+
+.Header {
+  //padding-top: $base-unit * 4;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-left: -$base-unit * 2;
+    margin-bottom: $base-unit * 3;
+    margin-right: -$base-unit * 2;
+    background-color: $primary;
+  }
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+  }
+}
+
+.Section {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit;
+    padding-left: $base-unit;
+  }
+}
+
+.Cut {
+  position: absolute;
+  background-repeat: no-repeat;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.Cut__Primary {
+  z-index: -3;
+  right: -8.25rem;
+  height: $base-unit * 60;
+  width: $base-unit * 107;
+  background-image: url('./images/cut/cut-primary.svg');
+}
+
+.Cut__White {
+  z-index: -1;
+  left: -13.125rem;
+  height: $base-unit * 60;
+  width: 58.125rem;
+  background-image: url('./images/cut/cut-white.svg');
+}
+
+.Cut_Overlay {
+  bottom: $base-unit * 3;
+  left: 0;
+  position: absolute;
+  width: 30.375rem;
+  height: 30rem;
+  background-image: url('./images/cut/cut-opaque-overlay.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (min-width: $breakpoint-sm) {
+    bottom: 0;
+    z-index: -2;
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: row;
+  }
+}
+
+.Cut_Mask {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $base-unit * 180;
+  overflow: hidden;
+  @media (min-width: $breakpoint-md) {
+    height: $base-unit * 60;
+  }
+}

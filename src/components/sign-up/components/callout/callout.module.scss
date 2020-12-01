@@ -1,0 +1,49 @@
+.Callout {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 5;
+  }
+  @media (min-width: $breakpoint-sm){
+    margin-bottom: $base-unit * 7;
+  }
+  &_Inner {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: .75rem;
+    padding-right: $base-unit * 4;
+    padding-bottom: .75rem;
+    padding-left: $base-unit * 4;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $white;
+    border-radius: 99rem;
+    font-size: $body-font-size;
+    font-family: 'Quicksand', sans-serif;
+    color: $white;
+    text-align: center;
+    line-height: $body-line-height;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      max-width: 17.625rem;
+    }
+    @media (min-width: $breakpoint-sm){
+      padding-top: $base-unit * 3;
+      padding-right: $base-unit * 5;
+      padding-bottom: $base-unit * 3;
+      padding-left: $base-unit * 5;
+      border-color: $primary;
+      font-size: $title-font-size;
+      color: $primary;
+      text-align: center;
+      line-height: $title-line-height;
+    }
+  }
+}
+
+.Callout_LineBreak {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}

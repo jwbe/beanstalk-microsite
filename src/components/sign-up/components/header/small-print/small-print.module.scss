@@ -1,0 +1,33 @@
+.SmallPrint {
+  text-align: center;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit;
+    padding-left: $base-unit;
+    margin-right: auto;
+    margin-bottom: $base-unit * 7;
+    margin-left: auto;
+    max-width: $base-unit * 42;
+    color: $white;
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+  @media (min-width: $breakpoint-sm - .0625em) and (max-width: $breakpoint-md - .0625em) {
+    margin-bottom: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm ) {
+    font-size: $small-font-size;
+    line-height: $small-line-height;
+    text-align: right;
+    color: $accent-3;
+  }
+  span {
+    margin-top: $base-unit;  
+  }
+}
+
+.StandOut {
+  display: block;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit;
+  }
+}

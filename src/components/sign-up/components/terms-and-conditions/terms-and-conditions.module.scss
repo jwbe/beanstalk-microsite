@@ -1,0 +1,14 @@
+.Section {
+  @media (min-width: $breakpoint-md) {
+    column-count: 2;
+  }
+  p {
+    margin-bottom: $base-unit * 2;
+    color: $white;
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+    @media (min-width: $breakpoint-sm) {
+      color: $accent-3;
+    }
+  }
+}

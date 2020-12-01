@@ -1,0 +1,64 @@
+.Wrapper {
+  display: none;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit;
+    text-align: center;
+  }
+  @media (min-width: $breakpoint-sm) {
+    text-align: right;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-top: -$base-unit;
+  }
+}
+
+.Heading {
+  margin-bottom: $base-unit * 2;
+  color: $white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $title-font-size;
+  font-weight: 700;
+  line-height: $title-line-height;
+  @media (min-width: $breakpoint-sm) {
+    color: $secondary;
+  }
+}
+
+.Text {
+  margin-bottom: $base-unit * 5;
+  color: $white;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  @media (min-width: $breakpoint-sm) {
+    margin-left: auto;
+    max-width: 19.375rem;
+    margin-bottom: $base-unit * 3;
+    color: $accent-3;
+  }
+}
+
+.Badges {
+  display: flex;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 9;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: $breakpoint-sm) {
+    justify-content: flex-end;
+  }
+}
+
+.Badge {
+  display: block;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    &:first-of-type {
+      margin-bottom: $base-unit * 2;
+    }
+  }
+  @media (min-width: $breakpoint-sm) {
+    &:first-of-type {
+      margin-right: $base-unit * 3;
+    }
+  }
+}
