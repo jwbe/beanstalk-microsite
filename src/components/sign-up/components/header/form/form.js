@@ -93,7 +93,7 @@ const Form = () => {
         name: formFields.name,
         email: formFields.email,
         partner: location(),
-        form-name: 'signup'
+        'form-name': 'signup'
       }
 
       const axiosOptions = {
