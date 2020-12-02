@@ -89,9 +89,11 @@ const Form = () => {
 
     if(handleValidation()) {
       const formData = {
+        botfield: '',
         name: formFields.name,
         email: formFields.email,
-        partner: location()
+        partner: location(),
+        form-name: 'signup'
       }
 
       const axiosOptions = {
@@ -114,7 +116,6 @@ const Form = () => {
             ...formStatuses,
             formSubmitted: false
           });
-          console.log(axiosOptions, ' catch')
         })
     }
     else {
