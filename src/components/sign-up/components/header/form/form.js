@@ -18,7 +18,8 @@ const Form = () => {
 
   const initialFormStatus = {
     formSubmitted: null,
-    formSubmitAttempted: false
+    formSubmitAttempted: false,
+    botField: ''
   };
 
   const initialFormFields = {
@@ -89,7 +90,7 @@ const Form = () => {
 
     if(handleValidation()) {
       const formData = {
-        botfield: '',
+        'bot-field': formFields.botField,
         name: formFields.name,
         email: formFields.email,
         partner: location(),
@@ -164,8 +165,9 @@ const Form = () => {
                 {formErrors.name && <Tooltip>{formErrors['name']}</Tooltip>}
               </div>
             </div>
-            <input type="hidden" name="bot-field"/>
+            <input type="hidden" name="bot-field" onChange={ event => handleChange('bot-field', event)} value={formFields['bot-field']}/>
             <input type="hidden" name="form-name" value="signup"/>
+            <input type="hidden" name="partner" value={location()}/>
             <button className={Theme.Form_Submit} type="submit">Get Started</button>
           </form>
 
