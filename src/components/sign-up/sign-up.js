@@ -1,5 +1,6 @@
 import React from 'react';
-import { Header as Nav } from '../header/header'
+import { Header as Nav } from '../header/header';
+import Footer from '../footer/footer';
 import Container from './components/container/container';
 import Header from './components/header/header';
 import QuoteCredential from './components/quote-credential/quote-credential';
@@ -54,6 +55,7 @@ const SignUp = () => {
         </SecondaryColourSectionOnMobile>
         <SmallPrint/>
       </Container>
+      <Footer/>
     </>
   )
 }
