@@ -107,12 +107,14 @@ const Form = () => {
             ...formStatuses,
             formSubmitted: true
           });
+          console.log(axiosOptions, ' then')
         })
         .catch(err => {
           setFormStatuses({
             ...formStatuses,
             formSubmitted: false
           });
+          console.log(axiosOptions, ' catch')
         })
     }
     else {
