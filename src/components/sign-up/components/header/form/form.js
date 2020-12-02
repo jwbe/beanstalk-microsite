@@ -132,7 +132,7 @@ const Form = () => {
         <Confirmation/>
         :
         <div className={Theme.Form_Wrapper}>
-          <form className={Theme.Form} name="refer" method="POST" noValidate data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={ event => handleSubmit(event) }>
+          <form className={Theme.Form} name="signup" method="POST" noValidate data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={ event => handleSubmit(event) }>
             <div className={Theme.Form_VisibleInputs}>
               <div className={Theme.Form_Input_Wrapper}>
                 <input 
@@ -162,7 +162,7 @@ const Form = () => {
               </div>
             </div>
             <input type="hidden" name="bot-field"/>
-            <input type="hidden" name="form-name"/>
+            <input type="hidden" name="form-name" value="signup"/>
             <button className={Theme.Form_Submit} type="submit">Get Started</button>
           </form>
 

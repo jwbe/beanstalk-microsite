@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.Form_Wrapper {
-  //display: none;
-}
-
 .Form_VisibleInputs {
   margin-bottom: $base-unit * 3;
   @media (min-width: $breakpoint-sm) {
