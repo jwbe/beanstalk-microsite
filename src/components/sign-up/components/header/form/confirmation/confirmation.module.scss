@@ -1,5 +1,4 @@
 .Wrapper {
-  display: none;
   @media (max-width: $breakpoint-sm - .0625em) {
     margin-top: $base-unit;
     text-align: center;
@@ -31,9 +30,11 @@
   line-height: $body-line-height;
   @media (min-width: $breakpoint-sm) {
     margin-left: auto;
-    max-width: 19.375rem;
+    max-width: $base-unit * 50;
     margin-bottom: $base-unit * 3;
     color: $accent-3;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
   }
 }
 

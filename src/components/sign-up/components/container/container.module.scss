@@ -3,6 +3,7 @@
   padding-left: $base-unit * 2;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
   @media (min-width: $breakpoint-sm) {
     padding-right: $base-unit * 4;
     padding-left: $base-unit * 4;
