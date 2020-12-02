@@ -37,6 +37,8 @@ The Terms are split into different sections and appendices:
 
 **Appendix 3** - Conflicts of Interest Policy
 
+Last updated 30/11/2020. Applies to existing accounts from 1/1/2021
+
 ### Section 1: Overview
 #### Your Agreement with Us
 
@@ -840,7 +842,7 @@ Schedule of Charges: Details of any interest, costs, fees or other charges, as v
 
 The Beanstalk fee is 0.5% per year of the total value of the Beanstalk Account and is payable in respect of each Beanstalk Account that you have set up.
 
-The fee is calculated monthly on the average value of each Account over the month but the accrued fees due are only deducted twice a year in early January and early July.
+The fee is calculated monthly on the value of each Account at month end but the accrued fees due are only deducted twice a year in early January and early July
 
 If you close, withdraw or transfer out your account during the year, we will deduct any accrued fees due prior to making the transfer.
 
