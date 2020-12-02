@@ -167,7 +167,7 @@ const Form = () => {
             </div>
             <input type="hidden" name="bot-field" onChange={ event => handleChange('bot-field', event)} value={formFields['bot-field']}/>
             <input type="hidden" name="form-name" value="signup"/>
-            <input type="hidden" name="partner" value={location()}/>
+            <input type="hidden" name="partner"/>
             <button className={Theme.Form_Submit} type="submit">Get Started</button>
           </form>
 
