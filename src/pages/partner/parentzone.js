@@ -3,7 +3,7 @@ import SignUp from '../../components/sign-up/sign-up'
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 
-import Logo from './images/reading-eggs-logo.png'
+import Logo from './images/parent-zone-logo.png'
 
 const SignUpPage = () => {
   return (
@@ -23,38 +23,29 @@ const SignUpPage = () => {
         }
         secondaryCta={
           <>
-            and get a 30 Day Trial<br/> & up to 35% Off
+            & get £5 when you open and save into an account
           </>
         }
         partner={
           <>
-            from Reading Eggs
           </>
         }
         quote={
           <>
-            We're excited to have teamed up with Beanstalk to help parents save for their children and to help them read. Parents can get 30 days free trial plus up to 34% off a subscription when they join Beanstalk! - <strong>Reading Eggs.</strong>
+            We’re delighted to have partnered with Beanstalk to help parents save for their children. We love their app and the tools you can use to make saving easy. Plus, Beanstalk are giving ParentZone mums and dads £5 for every Junior ISA they open and fund. - <strong>ParentZone.</strong>
           </>
         }
       >
         <p>
-          Must be genuine new, non-duplicate registrations who enter their details on this page and then download and sign up to the Beanstalk app 
+          Must be genuine new, non-duplicate registrations who enter their details on this page and then downloads, opens and contributes into a Beanstalk Junior ISA 
         </p>
 
         <p>
-          Your details will be passed on to Reading Eggs once you have signed up to Beanstalk for them to send you your unique code
+          To be eligible for the £5 bonus register with Beanstalk with the same details you enter on this page
         </p>
 
         <p>
-          Offer is 34% off a combined Mathseeds and Reading Eggs 12 month subscription
-        </p>
-
-        <p>
-          Only one bonus per member.
-        </p>
-
-        <p>
-          The offer is valid until midnight on the 28th February 2021.
+          £5 will be paid into every Junior ISA you open and contribute into
         </p>
 
         <p>

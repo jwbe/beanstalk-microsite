@@ -7,7 +7,12 @@ import Container from '../container/container';
 import Iphone from '../iphone/iphone';
 import DecorativeSectionJoin from '../decorative-section-join/decorative-section-join';
 
-const Header = () => (
+const Header = ({
+  mainCta,
+  secondaryCta,
+  partner,
+  logo
+}) => (
   <> 
     <div className={Theme.Cut_Mask}>
       <div className={Theme.Cut_Overlay}></div>
@@ -17,12 +22,16 @@ const Header = () => (
             <div className={Theme.Iphone}>
               <Iphone/>
             </div>
-            <Heading/>
+            <Heading
+              mainCta={mainCta}
+              secondaryCta={secondaryCta}
+              partner={partner}
+            />
             <div className={`${Theme.Cut} ${Theme.Cut__Primary}`}>
             </div>
           </div>
           <div className={Theme.Section}>
-            <InPartnershipCallout/>
+            <InPartnershipCallout logo={logo}/>
             <Form/>
             <DecorativeSectionJoin flipped/>
             <div className={`${Theme.Cut} ${Theme.Cut__White}`}>
