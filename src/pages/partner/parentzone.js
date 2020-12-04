@@ -23,7 +23,7 @@ const SignUpPage = () => {
         }
         secondaryCta={
           <>
-            & get £5 when you open and save into an account
+            & get £5 when you open <br/>& save into an account
           </>
         }
         partner={
