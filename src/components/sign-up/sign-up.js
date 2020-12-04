@@ -34,7 +34,7 @@ const SignUp = ({
         </QuoteCredential>
         <SecondaryColourSectionOnMobile>
           <Heading>
-            The easiest way to build a nest egg for yourself,  your children or your grandchildren
+            The easiest way to build a nest egg for yourself, your children or your grandchildren
           </Heading>
           <Points/>
           <Callout/>

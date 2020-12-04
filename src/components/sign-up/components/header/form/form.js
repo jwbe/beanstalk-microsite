@@ -172,7 +172,7 @@ const Form = () => {
           </form>
 
           <SmallPrint>
-            <strong>Note:</strong> We will only use your email to remind you to register and to record whether you have registered.  <br/><strong>Capital at risk</strong>.
+            <strong>Note:</strong> We will only use your email to remind you to register and to record whether you have registered. <br/><strong>Capital at risk</strong>.
           </SmallPrint>
         </div>
       }

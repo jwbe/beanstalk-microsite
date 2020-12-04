@@ -23,7 +23,7 @@ const SignUpPage = () => {
         }
         secondaryCta={
           <>
-            and get a 30 Day Trial<br/> & up to 35% Off
+            & get 34% off a<br/> 12 month subscription
           </>
         }
         partner={
