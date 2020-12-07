@@ -11,7 +11,8 @@ const Header = ({
   mainCta,
   secondaryCta,
   partner,
-  logo
+  logo,
+  formSmallPrint
 }) => (
   <> 
     <div className={Theme.Cut_Mask}>
@@ -30,9 +31,14 @@ const Header = ({
             <div className={`${Theme.Cut} ${Theme.Cut__Primary}`}>
             </div>
           </div>
-          <div className={Theme.Section}>
+          <div className={`${Theme.Section} ${Theme.Section__Right}`}>
             <InPartnershipCallout logo={logo}/>
-            <Form/>
+            <Form 
+              formSmallPrint={
+                formSmallPrint
+              }
+
+            />
             <DecorativeSectionJoin flipped/>
             <div className={`${Theme.Cut} ${Theme.Cut__White}`}>
             </div>

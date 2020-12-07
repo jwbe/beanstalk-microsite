@@ -31,9 +31,14 @@ const SignUpPage = () => {
             from Reading Eggs
           </>
         }
+        formSmallPrint={
+          <>
+            <strong>Note:</strong> We will only use your email address so Reading Eggs can share the offer code, remind you to register and to record whether you registered. View T&Cs <Link to={'/terms-and-conditions-governing-beanstalk'}>here</Link>.
+          </>
+        }
         quote={
           <>
-            We're excited to have teamed up with Beanstalk to help parents save for their children and to help them read. Parents can get 30 days free trial plus up to 34% off a subscription when they join Beanstalk! - <strong>Reading Eggs.</strong>
+            We're excited to have teamed up with Beanstalk to help parents save for their children and to help their reading and maths skills. Parents can get 34% off a subscription to Reading Eggs and Mathseeds when they join Beanstalk! days free trial plus up to 34% off a subscription to Reading Eggs and Mathseeds when they join Beanstalk! - <strong>Reading Eggs.</strong>
           </>
         }
       >

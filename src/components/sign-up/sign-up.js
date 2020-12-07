@@ -17,7 +17,8 @@ const SignUp = ({
   mainCta,
   secondaryCta,
   partner,
-  logo
+  logo,
+  formSmallPrint
 }) => {
   return (
     <>
@@ -27,6 +28,7 @@ const SignUp = ({
         secondaryCta={secondaryCta}
         partner={partner}
         logo={logo}
+        formSmallPrint={formSmallPrint}
       />
       <Container>
         <QuoteCredential>

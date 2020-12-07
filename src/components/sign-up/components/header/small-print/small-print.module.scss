@@ -11,10 +11,8 @@
     font-size: $caption-font-size;
     line-height: $caption-line-height;
   }
-  @media (min-width: $breakpoint-sm - .0625em) and (max-width: $breakpoint-md - .0625em) {
-    margin-bottom: $base-unit * 2;
-  }
   @media (min-width: $breakpoint-sm ) {
+    margin-top: auto;
     font-size: $small-font-size;
     line-height: $small-line-height;
     text-align: right;
