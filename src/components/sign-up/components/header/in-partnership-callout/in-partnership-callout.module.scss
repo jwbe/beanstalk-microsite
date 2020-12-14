@@ -18,6 +18,9 @@
 }
 
 .InPartnershipCallout_Legend_Wrapper {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    text-align: center
+  }
   @media (min-width: $breakpoint-sm) {
     text-align: right;
   }
@@ -29,7 +32,7 @@
   font-weight: 700;
   line-height: $small-line-height;
   &:before {
-    content: 'From';
+    content: 'in partnership with';
   }
   @media (max-width: $breakpoint-md - .0625em) {
     display: inline-block;
@@ -43,9 +46,6 @@
   }
   @media (min-width: $breakpoint-sm) {
     color: $secondary;
-    &:before {
-      content: 'in partnership with';
-    }
   }
 }
 

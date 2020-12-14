@@ -1,14 +1,42 @@
 .Section {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit;
+    padding-left: $base-unit;
+  }
   @media (min-width: $breakpoint-md) {
     column-count: 2;
   }
-  p {
-    margin-bottom: $base-unit * 2;
-    color: $white;
-    font-size: $caption-font-size;
-    line-height: $caption-line-height;
+  ul {
+    margin-left: $base-unit * 2;
+    //padding-left: 1.25rem;
+    list-style-type: disc;
+    list-style-position: outside;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      //padding-left: 1.25rem;
+    }
     @media (min-width: $breakpoint-sm) {
-      color: $accent-3;
+      //margin-left: $base-unit * 3;
+      //padding-left: $base-unit * 3;
+    }
+    li {
+      padding-left: $base-unit;
+      margin-bottom: $base-unit * 2;
+      color: $white;
+      font-size: $caption-font-size;
+      line-height: $caption-line-height;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      @media (min-width: $breakpoint-sm) {
+        color: $accent-3;
+      }
+    }
+    a {
+      @media (max-width: $breakpoint-sm - .0625em) {
+        color: $white;
+        text-decoration: none;
+        font-weight: 700;
+      }
     }
   }
 }

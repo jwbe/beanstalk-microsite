@@ -36,21 +36,21 @@ const SignUpPage = () => {
           </>
         }
       >
-        <p>
-          Must be genuine new, non-duplicate registrations who enter their details on this page and then downloads, opens and contributes into a Beanstalk Junior ISA 
-        </p>
+        <li>
+          Users must be genuine new, non-duplicate registrations who enter their details on this page and then opens and makes a contribution into a Beanstalk Junior ISA 
+        </li>
 
-        <p>
+        <li>
           To be eligible for the £5 bonus register with Beanstalk with the same details you enter on this page
-        </p>
+        </li>
 
-        <p>
+        <li>
           £5 will be paid into every Junior ISA you open and contribute into
-        </p>
+        </li>
 
-        <p>
+        <li>
           Full Beanstalk T&Cs can be viewed <Link to="/terms-and-conditions-governing-beanstalk">here</Link>. Beanstalk reserve the right to withdraw or amend this offer at any time.
-        </p>
+        </li>
       </SignUp>
     </>
   )

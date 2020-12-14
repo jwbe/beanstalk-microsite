@@ -11,25 +11,58 @@
 }
 
 .Footer {
-  @media (max-width: $breakpoint-sm - .0625em) {
-    padding-top: $base-unit * 4;
-    margin-left: -$base-unit;
-    margin-right: -$base-unit;
-    background-color: $secondary;
-  }
+  position: relative;
+  margin-left: -$base-unit;
+  margin-right: -$base-unit;
+  background-color: $secondary;
   @media (min-width: $breakpoint-sm) {
     display: none;
   }
 }
 
-.Footer_Shape {
+.Curve {
+  align-items: flex-end;
+  display: flex;
+  overflow: hidden;
+}
+
+.Curve_Bottom {
+  position: relative;
+  height: $base-unit * 33;
   background-color: #5bc595;
 }
 
-.Footer_Shape_Top  {
-
+.Shape {
+  flex-shrink: 0;
+  height: $base-unit * 27;
+  background-repeat: no-repeat;
 }
 
-.Footer_Graphic {
+.Shape___Right {
+  flex-basis: 12.5rem;
+  width: 12.5rem;
+  background-image: url('./images/footer-curve-right.svg');
+}
 
+.Shape___Middle {
+  flex-grow: 1;
+  height: 8.625rem;
+  background-color: #5bc595;
+}
+
+.Shape___Left {
+  flex-basis: 7.5rem;
+  width: 7.5rem;
+  background-image: url('./images/footer-curve-left.svg');
+}
+
+.Graphic {
+  margin: 0 auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  height: 20rem;
+  width: 20.8125rem;
+  background-image: url('./images/graphic.svg');
 }

@@ -8,7 +8,9 @@ const TermsAndConditions = ({ children }) => (
       Terms & Conditions
     </Heading>
     <div className={Theme.Section}>
-      {children}
+      <ul>
+        {children}
+      </ul>
     </div>
   </>
 );

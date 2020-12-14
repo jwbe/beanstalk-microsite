@@ -42,29 +42,29 @@ const SignUpPage = () => {
           </>
         }
       >
-        <p>
-          Must be genuine new, non-duplicate registrations who enter their details on this page and then download and sign up to the Beanstalk app 
-        </p>
+        <li>
+          Users must be genuine new, non-duplicate registrations who enter their details on this page and then opens and makes a contribution into a Beanstalk Junior ISA 
+        </li>
 
-        <p>
+        <li>
           Your details will be passed on to Reading Eggs once you have signed up to Beanstalk for them to send you your unique code
-        </p>
+        </li>
 
-        <p>
+        <li>
           Offer is 34% off a combined Mathseeds and Reading Eggs 12 month subscription
-        </p>
+        </li>
 
-        <p>
+        <li>
           Only one bonus per member.
-        </p>
+        </li>
 
-        <p>
+        <li>
           The offer is valid until midnight on the 28th February 2021.
-        </p>
+        </li>
 
-        <p>
+        <li>
           Full Beanstalk T&Cs can be viewed <Link to="/terms-and-conditions-governing-beanstalk">here</Link>. Beanstalk reserve the right to withdraw or amend this offer at any time.
-        </p>
+        </li>
       </SignUp>
     </>
   )
