@@ -152,6 +152,10 @@ module.exports = {
             host: 'https://beanstalkapp.co.uk',
             sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
             policy: [{ userAgent: '*', disallow: [
+              `/partner/firstnews`,
+              `/partner/littlebird`,
+              `/partner/parentzone`,
+              `/partner/twinstrust`,
               `/family`,
               `/kidstart`,
               `/faqs-app`,
