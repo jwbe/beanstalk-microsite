@@ -20,3 +20,15 @@ The following general terms apply to any refer a friend incentive programme offe
 * Beanstalk is entitled to change, extend, or cancel the refer a friend programme, terms and conditions and any other relevant material as required without prior notice.  By participating, participants will have been deemed to have agreed with these terms and conditions and any revisions or amendments. The participant agrees that Beanstalk will not accept liability for such changes or any inconvenience caused.
 * Beanstalk’s decision is final and no correspondence will be entered into.
 * Beanstalk will only use the personal details supplied by the referrer for the administration of the Refer a Friend scheme and for no other purpose, unless we have the referred person’s consent.
+
+
+## Competition and Prize Draw Rules
+
+Sometimes Beanstalk runs prize draws and competitions. Unless otherwise stated in the entry rules for the specific competition or prize draw, the following rules apply:
+
+(1.) Prizes will be awarded at the sole discretion of Beanstalk  
+(2.) Non cash prizes do not have cash alternatives  
+(3.) Winners must be resident in the United Kingdom  
+(4.) Winners will be selected from valid entries at random and Beanstalk will inform winners as soon as practical after the closing date. Beanstalk will not contact losing entrants. We will typically notify winners of a date by which they need to respond and reserve the right to select alternative winners if there is no response within the time given.  
+(5.) By entering a competition, you agree to grant to Beanstalk, free of charge, permission to use any material you provide in any way it wants (including modifying and adapting it for operational and editorial reasons). Entries will not be returned.  
+(6.) Beanstalk will always seek your permission to use your name or any images you provide and that identify you or family members in any publicity related to the competition.  
