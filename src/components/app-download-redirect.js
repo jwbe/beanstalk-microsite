@@ -5,7 +5,7 @@ const AppDownloadRedirect = () => {
   if (typeof window !== `undefined`) {
     function redirectToAppleStore() {
       setTimeout(function() {
-        window.location.replace(`https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597`);
+        window.location.replace(`https://apps.apple.com/gb/app/beanstalk-save-for-your-kids/id1470619597`);
       }, 500)
     }
 

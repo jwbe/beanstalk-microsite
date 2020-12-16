@@ -8,7 +8,7 @@ const AppBadges = () => {
   return (
     <div className={styles.appBadges_wrapper}>
       <div className={styles.appBadges_appBadge}>
-        <a href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank" rel="noreferrer">
+        <a href="https://apps.apple.com/gb/app/beanstalk-save-for-your-kids/id1470619597" target="_blank" rel="noreferrer">
           <img src={appStoreBadge} width="135" height="40" alt="Apple app store badge"/>
         </a>
       </div>

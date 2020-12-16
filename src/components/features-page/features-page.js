@@ -485,7 +485,7 @@ const FeaturesPage = () => {
 
           <div className={AppBadges.Container}>
             <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___First}`}>
-              <a href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank" rel="noreferrer">
+              <a href="https://apps.apple.com/gb/app/beanstalk-save-for-your-kids/id1470619597" target="_blank" rel="noreferrer">
                 <img className={AppBadges._Badge} src={appStoreBadge} width="135" height="40" alt="Apple app store badge"/>
               </a>
             </div>

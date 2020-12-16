@@ -7,7 +7,7 @@ import GooglePlayLogo from './images/google-play-logo.png'
 const AppBadges = ({centred}) => (
   <div className={`${styles.AppBadges} ${centred ? styles.AppBadges___Centred : null}`}>
     <div className={styles.AppBadges_Inner}>
-      <a href="https://apps.apple.com/gb/app/beanstalk-save-invest/id1470619597" target="_blank" rel="noreferrer">
+      <a href="https://apps.apple.com/gb/app/beanstalk-save-for-your-kids/id1470619597" target="_blank" rel="noreferrer">
         <img className={styles.AppBadges_Badge} src={AppStoreLogo} width="162" height="48"/>
       </a>
       <a href="https://play.google.com/store/apps/details?id=com.beanstalk" target="_blank" rel="noreferrer">
