@@ -1,12 +1,9 @@
-
-
-
 import React from 'react'
 import SignUp from '../../components/sign-up/sign-up'
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 
-import Logo from './images/littlebird-logo.png'
+import Logo from './images/first-news-logo.png'
 
 const SignUpPage = () => {
   return (
@@ -26,7 +23,7 @@ const SignUpPage = () => {
         }
         secondaryCta={
           <>
-            & get £6 when you open <br/>an account
+            & get £5 when you open <br/>an account
           </>
         }
         partner={
@@ -35,7 +32,7 @@ const SignUpPage = () => {
         }
         quote={
           <>
-            We're thrilled to have teamed up with Beanstalk to help parents save for their children's future. LittleBird parents will get £5 when they open a Beanstalk JISA for their children. <strong>LittleBird.</strong>
+            We're thrilled to have teamed up with Beanstalk to help parents save for their children's future. First News parents will get £5 when they open a Beanstalk JISA for their children. <strong>First News.</strong>
           </>
         }
       >
