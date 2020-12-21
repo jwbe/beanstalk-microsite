@@ -1,0 +1,76 @@
+@use './bariol.module.scss';
+
+.Container {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: $base-unit * 4 - $base-unit / 4; // Offset divider height pseudo element.
+  padding-bottom: $base-unit * 4;
+  max-width: $base-unit * 114;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+    &:before,
+    &:after {
+      width: calc(50% - 1rem);
+      top: 0;
+      position: absolute;
+      content: '';
+      height: $base-unit / 4;
+    }
+    &:before {
+      left: $base-unit * 2;
+      background-color: #bf2e1b;
+    }
+    &:after {
+      right: $base-unit * 2;
+      background-color: #8c2214;
+    }
+  }
+  @media (min-width: $breakpoint-sm) {
+    padding-top: $base-unit * 4;
+  }
+}
+
+.Container_Inner {
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 38.75rem;
+  }
+}
+
+.Logo {
+  flex: none;
+  height: 2.6875rem;
+  width: 8.25rem;
+  background-image: url('./images/kidstart-logo.svg');
+  background-repeat: no-repeat;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-left: -$base-unit;
+    margin-bottom: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-right: $base-unit * 4;
+  }
+}
+
+.Text {
+  width: 100%;
+  color: #4a4e4d;
+  font-family: 'Bariol Regular';
+  @media (max-width: $breakpoint-sm - .0625em) {
+    font-size: .625rem;
+    line-height: .875rem;
+  }
+  @media (min-width: $breakpoint-sm) {
+    font-size: .75rem;
+    line-height: $base-unit * 2;
+  }
+  a {
+    color: #bf2e1b;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,13 @@
+.Heading {
+  margin-top: 0;
+  margin-bottom: $base-unit * 2;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-family: 'Quicksand', sans-serif;
+  color: $white;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 3;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}

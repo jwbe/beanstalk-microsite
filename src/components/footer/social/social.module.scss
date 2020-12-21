@@ -1,0 +1,37 @@
+.Icons {
+  display: flex;
+}
+
+.Icon {
+  flex: none;
+  width: $base-unit * 5;
+  height: $base-unit * 5;
+  flex-basis: $base-unit * 5;
+  margin-right: $base-unit * 2;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 99rem;
+  background-color: #82acad;
+  &:last-of-type {
+    margin-right: 0
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-right: $base-unit * 3;
+  }
+}
+
+.Icon.Instagram {
+  background-image: url('./images/instagram-icon.svg');
+}
+
+.Icon.Facebook {
+  background-image: url('./images/facebook-icon.svg');
+}
+
+.Icon.Twitter {
+  background-image: url('./images/twitter-icon.svg');
+}
+
+.Icon.LinkedIn {
+  background-image: url('./images/linkedin-icon.svg');
+}
