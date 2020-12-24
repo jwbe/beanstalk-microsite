@@ -6,8 +6,6 @@ import Social from './social/social';
 
 import KidStartFamily from '../kidstart-family/kidstart-family';
 
-
-
 const Footer = () => {
   return (
     <> 
