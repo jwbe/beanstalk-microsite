@@ -163,8 +163,8 @@ const Form = ({
                   onChange={event => handleChange('name', event)}
                   value={formFields['name']}
                   />
-                  {formErrors.name && <span className={Theme.Form_Input_Error}></span>}
-                  {formErrors.name && <Tooltip>{formErrors['name']}</Tooltip>}
+                  {formErrors.phoneNumber && <span className={Theme.Form_Input_Error}></span>}
+                  {formErrors.phoneNumber && <Tooltip>{formErrors['phoneNumber']}</Tooltip>}
                 </div>
               </div>
               <input type="hidden" name="bot-field" onChange={ event => handleChange('bot-field', event)} value={formFields['bot-field']}/>
