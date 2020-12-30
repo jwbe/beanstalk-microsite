@@ -1,0 +1,5 @@
+[[redirects]]
+from = “/sms-api/**”
+to = “https://api.plivo.com/:splat”
+status = 200
+headers = { Access-Control-Allow-Origin = “*”, Authorization = “YjBlODkxYmQ0YjliMTAxYmFlMDI4MTU5ZjFiMjE4”}
