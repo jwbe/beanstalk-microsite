@@ -66,10 +66,10 @@ const SmsCapture = () => {
 
     const axiosOptions = {
       method: "post",
+      mode: 'cors',
       url: `https://api.plivo.com/v1/Account/${AUTH_ID}/Message/`,
       headers: { 
-        "Content-Type": "application/x-www-form-urlencoded",
-        "Access-Control-Allow-Origin": "*"
+        "Content-Type": "application/x-www-form-urlencoded"
       },
       src: "+447753356426",
       dst: formFields.phoneNumber,
