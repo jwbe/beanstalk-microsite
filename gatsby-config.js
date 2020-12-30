@@ -8,10 +8,6 @@ const isNetlifyProduction = NETLIFY_ENV === 'production';
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
 
 module.exports = {
-  proxy: {
-    prefix: "/sms-api/**",
-    url: "https://api.plivo.com/v1/Account/"
-  },
   siteMetadata: {
     siteUrl: `https://beanstalkapp.co.uk`,
     title: `Beanstalk`,
@@ -38,6 +34,10 @@ module.exports = {
       },
 
     ]
+  },
+  proxy: {
+    prefix: '/sms-api',
+    url: 'https://api.plivo.com'
   },
   plugins: [
     {
