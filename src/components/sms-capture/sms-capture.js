@@ -2,9 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Tooltip from './tooltip/tooltip';
 import Theme from './sms-capture.module.scss';
+import base64 from 'base-64'
 
-const AUTH_ID = 'MAODI4MZNJNTM5YTK2MT';
-const AUTH_TOKEN = 'YjBlODkxYmQ0YjliMTAxYmFlMDI4MTU5ZjFiMjE4';
+const PLIVO = {
+  AUTH_ID: 'MAODI4MZNJNTM5YTK2MT',
+  AUTH_TOKEN: 'YjBlODkxYmQ0YjliMTAxYmFlMDI4MTU5ZjFiMjE4',
+  SENDER_ID: '+447753356426',
+  MESSAGE: 'Localhost test send'
+}
 
 const SmsCapture = () => {
 
@@ -64,35 +69,30 @@ const SmsCapture = () => {
       formSubmitted: true, formSubmitAttempted: true
     });
 
-    const axiosOptions = {
-      method: "post",
-      url: `/sms-api/v1/Account/${AUTH_ID}/Message/`,
-      headers: { 
-        "Content-Type": "application/x-www-form-urlencoded"
+    fetch("/.netlify/functions/auth-fetch", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": `Basic ${base64.encode(`${PLIVO.AUTH_ID}:${PLIVO.AUTH_TOKEN}`)}`
       },
-      src: "+447753356426",
-      dst: formFields.phoneNumber,
-      text: "Localhost test send",
-      auth: {
-        username: AUTH_ID,
-        password: AUTH_TOKEN
-      }
-    }
-
-    axios(axiosOptions)
+      body: JSON.stringify({
+        src: PLIVO.SENDER_ID,
+        dst: formFields.phoneNumber,
+        text: PLIVO.MESSAGE,
+      })
+    })
       .then(response => {
         setFormStatuses({
           ...formStatuses,
           formSubmitted: true
         });
-        console.log(axiosOptions, ' then')
+        console.log( 'then', response)
       })
       .catch(err => {
         setFormStatuses({
           ...formStatuses,
           formSubmitted: false
         });
-        console.log(axiosOptions, ' not then')
       })
 
 

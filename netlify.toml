@@ -1,4 +1,4 @@
-[[redirects]]
-from = “/sms-api/**”
-to = “https://api.plivo.com”
-status = 200
+[build]
+  command = "yarn build && cd functions/node-fetch && yarn"
+  functions = "functions"
+  publish = "dist"

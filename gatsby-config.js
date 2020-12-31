@@ -35,10 +35,6 @@ module.exports = {
 
     ]
   },
-  proxy: {
-    prefix: '/sms-api',
-    url: 'https://api.plivo.com'
-  },
   plugins: [
     {
       resolve: `gatsby-plugin-netlify`
