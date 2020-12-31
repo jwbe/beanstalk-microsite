@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Tooltip from './tooltip/tooltip';
 import Theme from './sms-capture.module.scss';
-import base64 from 'base-64'
+import base64 from 'base-64';
 
 const PLIVO = {
   AUTH_ID: 'MAODI4MZNJNTM5YTK2MT',

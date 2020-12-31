@@ -8,6 +8,7 @@
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.4.0",
     "axios": "^0.19.2",
+    "base-64": "^1.0.0",
     "details-polyfill": "^1.1.0",
     "digest": "^0.0.5",
     "gatsby": "^2.24.42",
