@@ -33,7 +33,7 @@ const SignUpPage = () => {
         }
         formSmallPrint={
           <>
-            <strong>Note:</strong> We will only use your email address so Reading Eggs can share the offer code, remind you to register and to record whether you registered. View T&Cs <Link to={'/terms-and-conditions-governing-beanstalk'}>here</Link>.
+            <strong>Note:</strong> We will only use your email address so Reading Eggs can share the offer code, remind you to register and to record whether you registered.
           </>
         }
         quote={

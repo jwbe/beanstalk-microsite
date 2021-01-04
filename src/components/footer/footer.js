@@ -9,7 +9,7 @@ import KidStartFamily from '../kidstart-family/kidstart-family';
 const Footer = () => {
   return (
     <> 
-      <KidStartFamily/>
+      {/*<KidStartFamily/>*/}
       <footer className={Theme.Container}>
         <div className={Theme.Container_Inner}>
           <div className={Theme.Content}>
