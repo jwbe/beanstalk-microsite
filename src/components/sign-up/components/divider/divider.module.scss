@@ -4,6 +4,17 @@
     margin-left: -$base-unit;
     margin-right: -$base-unit;
   }
+  &___dividerDefaultOnMobile {
+    .Divider {
+      &:before {
+        box-shadow: 0 -.1875rem 2.75rem 0 rgba(50,182,122,20);
+        opacity: .2;
+      }
+    }
+    .Divider_Leaves {
+      background-image: url('./images/leaves.svg');
+    }
+  }
 }
 
 .Divider {

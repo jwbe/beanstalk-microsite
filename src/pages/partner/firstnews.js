@@ -32,7 +32,7 @@ const SignUpPage = () => {
         }
         quote={
           <>
-            We're thrilled to have teamed up with Beanstalk to help parents save for their children's future. First News parents will get £5 when they open a Beanstalk JISA for their children. <strong>First News.</strong>
+            We're thrilled to have teamed up with Beanstalk to help parents save for their children's future. First News parents will get £5 when they open a Beanstalk JISA for their children. - <strong>First News.</strong>
           </>
         }
       >

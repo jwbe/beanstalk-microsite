@@ -35,7 +35,7 @@ const SignUpPage = () => {
         }
         quote={
           <>
-            We're thrilled to have teamed up with Beanstalk to help parents save for their children's future. LittleBird parents will get £5 when they open a Beanstalk JISA for their children. <strong>LittleBird.</strong>
+            We're thrilled to have teamed up with Beanstalk to help parents save for their children's future. LittleBird parents will get £5 when they open a Beanstalk JISA for their children. - <strong>LittleBird.</strong>
           </>
         }
       >

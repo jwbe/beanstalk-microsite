@@ -21,4 +21,7 @@
     font-size: $headline-font-size;
     line-height: $headline-line-height;
   }
+  &___dividerDefaultOnMobile {
+    color: $secondary;
+  }
 }

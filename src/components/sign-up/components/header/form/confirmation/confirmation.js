@@ -10,7 +10,7 @@ const Confirmation = () => (
       Thank you.
     </h2>
     <p className={Theme.Text}>
-      <strong>Now just download the Beanstalk app and<br/>  register with the same email you just gave us.</strong>  <br/>It takes just a couple of minutes to open an account.
+      <strong>Now just download the Beanstalk app and<br/> register with the same email you just gave us. </strong><br/>It takes just a couple of minutes to open an account.
     </p>
     <div className={Theme.Badges}>
       <a className={Theme.Badge} href="https://apps.apple.com/gb/app/beanstalk-save-for-your-kids/id1470619597" target="_blank" rel="noreferrer">

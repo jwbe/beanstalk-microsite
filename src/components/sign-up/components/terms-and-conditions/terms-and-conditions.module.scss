@@ -21,14 +21,11 @@
     li {
       padding-left: $base-unit;
       margin-bottom: $base-unit * 2;
-      color: $white;
+      color: $accent-3;
       font-size: $caption-font-size;
       line-height: $caption-line-height;
       &:last-of-type {
         margin-bottom: 0;
-      }
-      @media (min-width: $breakpoint-sm) {
-        color: $accent-3;
       }
     }
     a {

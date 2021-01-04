@@ -4,7 +4,7 @@ import Heading from '../heading/heading';
 
 const TermsAndConditions = ({ children }) => (
   <>
-    <Heading>
+    <Heading dividerDefaultOnMobile={true}>
       Terms & Conditions
     </Heading>
     <div className={Theme.Section}>

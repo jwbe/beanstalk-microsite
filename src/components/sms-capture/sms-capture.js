@@ -3,6 +3,7 @@ import axios from 'axios';
 import Tooltip from './tooltip/tooltip';
 import Theme from './sms-capture.module.scss';
 import base64 from 'base-64';
+import phone from 'phone';
 
 const PLIVO = {
   AUTH_ID: 'MAODI4MZNJNTM5YTK2MT',
@@ -50,6 +51,8 @@ const SmsCapture = () => {
     }
 
     setFormErrors({ ...errors });
+
+    return formIsValid;
   }
 
   const handleChange = (field, event) => {
@@ -69,35 +72,32 @@ const SmsCapture = () => {
       formSubmitted: true, formSubmitAttempted: true
     });
 
-    fetch("/.netlify/functions/auth-fetch", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": `Basic ${base64.encode(`${PLIVO.AUTH_ID}:${PLIVO.AUTH_TOKEN}`)}`
-      },
-      body: JSON.stringify({
-        src: PLIVO.SENDER_ID,
-        dst: formFields.phoneNumber,
-        text: PLIVO.MESSAGE,
-      })
-    })
-      .then(response => {
-        setFormStatuses({
-          ...formStatuses,
-          formSubmitted: true
-        });
-        console.log( 'then', response)
-      })
-      .catch(err => {
-        setFormStatuses({
-          ...formStatuses,
-          formSubmitted: false
-        });
-      })
-
-
     if(handleValidation()) {
-
+      fetch("/.netlify/functions/auth-fetch", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Basic ${base64.encode(`${PLIVO.AUTH_ID}:${PLIVO.AUTH_TOKEN}`)}`
+        },
+        body: JSON.stringify({
+          src: PLIVO.SENDER_ID,
+          dst: phone(formFields.phoneNumber, 'GB')[0],
+          text: PLIVO.MESSAGE,
+        })
+      })
+        .then(response => {
+          setFormStatuses({
+            ...formStatuses,
+            formSubmitted: true
+          });
+          console.log(response);
+        })
+        .catch(err => {
+          setFormStatuses({
+            ...formStatuses,
+            formSubmitted: false
+          });
+        })
     }
 
     else {

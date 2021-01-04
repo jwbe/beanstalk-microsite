@@ -15361,6 +15361,11 @@ phin@^2.9.1:
   resolved "https://registry.yarnpkg.com/phin/-/phin-2.9.3.tgz#f9b6ac10a035636fb65dfc576aaaa17b8743125c"
   integrity sha512-CzFr90qM24ju5f88quFC/6qohjC144rehe5n6DH900lgXmUe86+xCKc10ev56gRKC4/BkHUoG4uSiQgBiIXwDA==
 
+phone@^2.4.17:
+  version "2.4.17"
+  resolved "https://registry.yarnpkg.com/phone/-/phone-2.4.17.tgz#5c48220884947fde638b2c1ed4e7d879969da68c"
+  integrity sha512-PV5wt/jkUm546WFVSAdRjKT6Vp4xGmxhfDaGZqiRL56Xb1dwTFrHTR2YEUfrVwFhDowVYwhUQQZUsTm/nOP3aw==
+
 physical-cpu-count@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/physical-cpu-count/-/physical-cpu-count-2.0.0.tgz#18de2f97e4bf7a9551ad7511942b5496f7aba660"

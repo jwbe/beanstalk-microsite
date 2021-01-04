@@ -38,7 +38,7 @@ const SignUpPage = () => {
         }
         quote={
           <>
-            We're excited to have teamed up with Beanstalk to help parents save for their children and to help their reading and maths skills. Parents can get 34% off a subscription to Reading Eggs and Mathseeds when they join Beanstalk! days free trial plus up to 34% off a subscription to Reading Eggs and Mathseeds when they join Beanstalk! - <strong>Reading Eggs.</strong>
+            We're excited to have teamed up with Beanstalk to help parents save for their children and to help their reading and maths skills. Parents can get 34% off a subscription to Reading Eggs and Mathseeds when they join Beanstalk! - <strong>Reading Eggs.</strong>
           </>
         }
       >

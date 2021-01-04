@@ -1,8 +1,10 @@
 import React from 'react';
 import Theme from './divider.module.scss';
 
-const Divider = () => (
-  <div className={Theme.Divider_Wrapper}>
+const Divider = ({
+  dividerDefaultOnMobile
+}) => (
+  <div className={`${Theme.Divider_Wrapper} ${dividerDefaultOnMobile ? Theme.Divider_Wrapper___dividerDefaultOnMobile : null}`}>
     <div className={Theme.Divider_Leaves}>
     </div>
     <div className={Theme.Divider}>

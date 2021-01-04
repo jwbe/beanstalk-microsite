@@ -37,7 +37,7 @@ const SignUpPage = () => {
         }
       >
         <li>
-          Users must be genuine new, non-duplicate registrations who enter their details on this page and then opens and makes a contribution into a Beanstalk Junior ISA 
+          Users must be genuine new, non-duplicate registrations who enter their details on this page and then download and register with the same details on the Beanstalk app
         </li>
 
         <li>

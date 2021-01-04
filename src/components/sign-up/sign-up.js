@@ -40,10 +40,10 @@ const SignUp = ({
           </Heading>
           <Points/>
           <Callout/>
-          <TermsAndConditions>
-            {children}
-          </TermsAndConditions>
         </SecondaryColourSectionOnMobile>
+        <TermsAndConditions>
+          {children}
+        </TermsAndConditions>
         <SmallPrint/>
       </Container>
       <Footer/>

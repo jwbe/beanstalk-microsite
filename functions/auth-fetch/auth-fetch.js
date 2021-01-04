@@ -3,7 +3,6 @@
 const fetch = require('node-fetch')
 
 const handler = async function (event, context) {
-  console.log(event, ' event');
   if (!context.clientContext && !context.clientContext.identity) {
     return {
       statusCode: 500,
@@ -16,7 +15,6 @@ const handler = async function (event, context) {
   const { identity, user } = context.clientContext
 
   const { headers, body } = event;
-  console.log(headers.authorization, ' headers.authorization')
   try {
     const response = await fetch('https://api.plivo.com/v1/Account/MAODI4MZNJNTM5YTK2MT/Message/', {
       method: "POST",
