@@ -190,21 +190,6 @@ const Homepage = () => {
         </p>
       </Section>
 
-      <footer className={styles.Homepage_footer}>
-        <div className={styles.Homepage_footer_top}>
-        </div>
-        <div className={styles.Homepage_footer_container}>
-          <div className={styles.Homepage_footer_inner}>
-            <div className={styles.Homepage_footer_header}>
-              <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___secondary}`} src={footerLogoSecondary} width='223' height='28' alt="Beanstalk logo"/>
-              <img className={`${styles.Homepage_footer_logo} ${styles.Homepage_footer_logo___white}`} src={footerLogoWhite} width='162' height='20' alt="Beanstalk logo"/>
-            </div>
-            <p className={styles.Homepage_footer_paragraph}>
-              Beanstalk is a trading name of KidStart Limited. KidStart Limited is authorised and regulated by the Financial Conduct Authority. Our FCA number is 473606. See <a href='http://www.fca.org.uk' target="_blank" rel="noreferrer">http://www.fca.org.uk</a> for more information. View our <Link to='/data-privacy-and-cookies'>privacy policy</Link> and <Link to='/legals'>terms & conditions</Link>.
-            </p>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 };
