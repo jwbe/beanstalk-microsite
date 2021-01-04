@@ -2,14 +2,14 @@
   margin-top: $base-unit * 3;
   margin-bottom: $base-unit * 5;
   color: $accent-3;
-  font-size: $small-font-size;
-  line-height: $small-line-height;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
   text-align: center;
   text-transform: uppercase;
   @media (min-width: $breakpoint-sm) {
     margin-top: $base-unit * 9;
-    font-size: $caption-font-size;
-    line-height: $caption-line-height;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
   }
   @media (min-width: $breakpoint-md) {
     margin-top: $base-unit * 8;
