@@ -212,8 +212,6 @@ class Refer extends Component {
           <h2 className={ReferTheme.Content_Heading}>
             We are bringing child savings into the 21st Century. <br className={ReferTheme.Content_Heading_Break}/>Join the revolution in as little as 5 minutes.
           </h2>
-
-          <SmallPrint/>
         </div>
 
 

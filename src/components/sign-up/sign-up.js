@@ -44,7 +44,6 @@ const SignUp = ({
         <TermsAndConditions>
           {children}
         </TermsAndConditions>
-        <SmallPrint/>
       </Container>
       <Footer/>
     </>

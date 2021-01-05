@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactSlider from 'react-slider';
 
+import SmallPrint from '../small-print/small-print';
+
 import AllocationCalculator from './allocation-calculator.module.scss';
 import Layout from './layout.module.scss';
 import Dividers from './dividers.module.scss';
@@ -499,16 +501,12 @@ const FeaturesPage = () => {
           <div className={`${Leaves.Container} ${Leaves.___Bottom} ${Leaves.___vFlipped}`}>
           </div>
         </section>
-
-        <section>
-          <p className={TextBlock.SmallPrint}>
-            AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE.<br className={Utilities.BreakAtDesktop}/> THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.
-          </p>
-          <p className={TextBlock.SmallPrint}>
-            *JUST £10 FOR AN ADULT ACCOUNT
-          </p>
-        </section>
       </div>
+      <SmallPrint>
+        <p>
+          *JUST £10 FOR AN ADULT ACCOUNT
+        </p>
+      </SmallPrint>
 
     </>
   );

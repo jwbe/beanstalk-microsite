@@ -47,6 +47,3 @@ Stocks & shares JISAs make money by charging various fees on the account. Beanst
 ![Cost comparison chart](./comparison-chart.png)
 
 (Note: the tracker funds we offer have their own charges of 0.1% - 0.12% which are deducted through the fund).
-
-
-PLEASE NOTE: AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.

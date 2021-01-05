@@ -5,6 +5,7 @@ import { Header } from '../components/header/header';
 import { Main, LAYOUT_VARIANT } from  '../components/main/main';
 import Article from '../components/article/article';
 import Wrapper from '../components/wrapper/wrapper';
+import Footer from '../components/footer/footer';
 import SEO from '../components/seo';
 
 export const query = graphql`
@@ -68,6 +69,7 @@ const Layout = ({
             articlePrevious={previous}
             />
         </Main>
+        { data.page.meta.app ? null : <Footer/> }
       </Wrapper>
     </>
   );

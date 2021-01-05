@@ -5,11 +5,17 @@ import Heading from './heading/heading';
 import Social from './social/social';
 
 import KidStartFamily from '../kidstart-family/kidstart-family';
+import SmallPrint from '../small-print/small-print';
 
 const Footer = () => {
   return (
     <> 
       {/*<KidStartFamily/>*/}
+      <SmallPrint>
+        <p>
+          AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.
+        </p>
+      </SmallPrint>
       <footer className={Theme.Container}>
         <div className={Theme.Container_Inner}>
           <div className={Theme.Content}>

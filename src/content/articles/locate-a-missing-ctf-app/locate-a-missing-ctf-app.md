@@ -40,5 +40,3 @@ Fees on Stakeholder CTFs (and some Stocks & Shares JISAs) are typically around 1
 It is for you to decide, but if you open a Beanstalk JISA, the transfer process is very simple, and we handle everything for you.
 
 Our [switch calculator](/ctf-calculator) will show if you could save money in fees by transferring.
-
-PLEASE NOTE: AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.

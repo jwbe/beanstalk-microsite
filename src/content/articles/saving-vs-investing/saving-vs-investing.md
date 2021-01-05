@@ -34,6 +34,4 @@ For example, the Barclays Equity Gilt Study in 2019 showed that over 50 years, U
 
 The study also showed that since 1899, money invested in UK shares and held for 10 years would have outperformed cash savings in 100 out of the 110 years, which is one of the reasons why many people choose to put their pensions and other longer terms savings into investments rather than cash.
 
-Of course only you can decide what level of risk and return you feel comfortable with and what is right for you but hopefully I have given you a few pointers as to some of the things to think about.  
-
-PLEASE NOTE: AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.
+Of course only you can decide what level of risk and return you feel comfortable with and what is right for you but hopefully I have given you a few pointers as to some of the things to think about.

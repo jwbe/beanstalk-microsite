@@ -68,7 +68,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: [`/kidstart`,`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
+        exclude: [`/sms-capture`,`/happity`,`/firstnews`,`/kidstart`,`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
         query: `
         {
           site {
@@ -152,6 +152,10 @@ module.exports = {
             host: 'https://beanstalkapp.co.uk',
             sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
             policy: [{ userAgent: '*', disallow: [
+              `/sms-capture`,
+              `/happity`,
+              `/firstnews`,
+              `/sign-up`,
               `/partner/firstnews`,
               `/partner/littlebird`,
               `/partner/parentzone`,
