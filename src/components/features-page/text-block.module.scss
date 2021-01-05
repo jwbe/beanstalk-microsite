@@ -138,15 +138,15 @@
 
 .SmallPrint {
   margin-bottom: $base-unit;
-  font-size: $small-font-size;
-  line-height: $small-line-height;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
   text-align: center;
   @media (max-width: $breakpoint-sm - .0625em) {
     padding-right: $base-unit * 2;
     padding-left: $base-unit * 2;
   }
   @media (min-width: $breakpoint-sm) {
-    font-size: $caption-font-size;
-    line-height: $caption-line-height;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
   }
 }

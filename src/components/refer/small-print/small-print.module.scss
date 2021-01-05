@@ -5,12 +5,12 @@
   margin-right: auto;
   margin-left: auto;
   color: $accent-3;
-  font-size: $small-font-size;
-  line-height: $small-line-height;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
   text-align: center;
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 12;
-    font-size: $caption-font-size;
-    line-height: $caption-line-height;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
   }
 }
