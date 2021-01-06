@@ -6,8 +6,6 @@ import base64 from 'base-64';
 import phone from 'phone';
 
 const PLIVO = {
-  AUTH_ID: 'MAODI4MZNJNTM5YTK2MT',
-  AUTH_TOKEN: 'YjBlODkxYmQ0YjliMTAxYmFlMDI4MTU5ZjFiMjE4',
   SENDER_ID: '+447753356426',
   MESSAGE: 'Localhost test send'
 }
@@ -77,7 +75,7 @@ const SmsCapture = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Basic ${base64.encode(`${PLIVO.AUTH_ID}:${PLIVO.AUTH_TOKEN}`)}`
+          "Authorization": `Basic ${base64.encode(`${process.env.PLIVO_AUTH_ID}:${process.env.PLIVO_AUTH_TOKEN}`)}`
         },
         body: JSON.stringify({
           src: PLIVO.SENDER_ID,
@@ -118,19 +116,22 @@ const SmsCapture = () => {
           Link to app will be texted to your number.
         </p>
         :
-        <form method="POST" name="sms-capture" noValidate onSubmit={ event => handleSubmit(event)}>
-          <input 
-          type="tel"
-          placeholder="Your UK telephone number"
-          name="phoneNumber"
-          id="phoneNumber"
-          onChange={event => handleChange('phoneNumber', event)}
-          value={formFields['phoneNumber']}
-          />
-          { formErrors.phoneNumber && <span className={Theme.Form_Input_Error}></span> }
-          { formErrors.phoneNumber && <Tooltip>{formErrors['phoneNumber']}</Tooltip> }
-          <button type="submit">Text me the app</button>
-        </form>
+        <div className={Theme.Container}>
+          <form method="POST" name="sms-capture" noValidate onSubmit={ event => handleSubmit(event)}>
+            <input 
+            className={Theme.Form_Input}
+            type="tel"
+            placeholder="Your UK telephone number"
+            name="phoneNumber"
+            id="phoneNumber"
+            onChange={event => handleChange('phoneNumber', event)}
+            value={formFields['phoneNumber']}
+            />
+            { formErrors.phoneNumber && <span className={Theme.Form_Input_Error}></span> }
+            { formErrors.phoneNumber && <Tooltip>{formErrors['phoneNumber']}</Tooltip> }
+            <button type="submit">Text me the app</button>
+          </form>
+        </div>
       }
     </>
   );
