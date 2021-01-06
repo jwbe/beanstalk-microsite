@@ -21,16 +21,16 @@ module.exports = {
     },
     menuLinks: [
       {
-        name: 'Key Features',
+        name: 'Features',
         link: '/features'
       },
       {
-        name: 'About Beanstalk',
+        name: 'About',
         link: '/about-beanstalk'
       },
       {
-        name: 'Support',
-        link: '/support'
+        name: 'Switch & Save',
+        link: '/ctf-calculator'
       },
 
     ]
