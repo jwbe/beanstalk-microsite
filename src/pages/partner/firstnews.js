@@ -23,7 +23,7 @@ const SignUpPage = () => {
         }
         secondaryCta={
           <>
-            & get £5 when you open <br/>an account
+            & get £5 when you open <br/>& save into an account
           </>
         }
         partner={
@@ -36,6 +36,9 @@ const SignUpPage = () => {
           </>
         }
       >
+        <li>
+          The offer is valid until midnight on the 28th February 2021
+        </li>
         <li>
           Users must be genuine new, non-duplicate registrations who enter their details on this page and then opens and makes a contribution into a Beanstalk Junior ISA 
         </li>
