@@ -84,14 +84,6 @@ const DesignedForGrowth = () => {
         </article>
       </section>
 
-      <section className={styles.Section}>
-        <p className={styles.TextBlock_disclaimerText}>
-          As with any investment the value can go down as well as up. Past performance is no indicator of future performance. The tax treatment of ISAs depends on your individual circumstances and may be subject to change in the future.
-        </p>
-      </section>
-
-
-
     </>
   );
 };
