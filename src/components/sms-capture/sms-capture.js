@@ -127,7 +127,7 @@ const SmsCapture = () => {
             onChange={event => handleChange('phoneNumber', event)}
             value={formFields['phoneNumber']}
             />
-            { `PLIVO_AUTH_ID is ${process.env.GATSBY_PLIVO_AUTH_ID}` }
+            { `GATSBY_PLIVO_AUTH_ID is ${process.env.GATSBY_PLIVO_AUTH_ID}` }
             { formErrors.phoneNumber && <span className={Theme.Form_Input_Error}></span> }
             { formErrors.phoneNumber && <Tooltip>{formErrors['phoneNumber']}</Tooltip> }
 
