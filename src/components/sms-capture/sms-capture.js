@@ -127,8 +127,7 @@ const SmsCapture = () => {
             onChange={event => handleChange('phoneNumber', event)}
             value={formFields['phoneNumber']}
             />
-            { process.env.PLIVO_AUTH_ID }
-            { process.env.PLIVO_AUTH_TOKEN }
+            { `PLIVO_AUTH_ID is ${process.env.PLIVO_AUTH_ID}` }
             { formErrors.phoneNumber && <span className={Theme.Form_Input_Error}></span> }
             { formErrors.phoneNumber && <Tooltip>{formErrors['phoneNumber']}</Tooltip> }
 
