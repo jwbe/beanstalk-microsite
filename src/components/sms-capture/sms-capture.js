@@ -75,7 +75,7 @@ const SmsCapture = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Authorization": `Basic ${base64.encode(`${process.env.PLIVO_AUTH_ID}:${process.env.PLIVO_AUTH_TOKEN}`)}`
+          "Authorization": `Basic ${base64.encode(`${process.env.GATSBY_PLIVO_AUTH_ID}:${process.env.GATSBY_PLIVO_AUTH_TOKEN}`)}`
         },
         body: JSON.stringify({
           src: PLIVO.SENDER_ID,
@@ -127,7 +127,7 @@ const SmsCapture = () => {
             onChange={event => handleChange('phoneNumber', event)}
             value={formFields['phoneNumber']}
             />
-            { `PLIVO_AUTH_ID is ${process.env.PLIVO_AUTH_ID}` }
+            { `PLIVO_AUTH_ID is ${process.env.GATSBY_PLIVO_AUTH_ID}` }
             { formErrors.phoneNumber && <span className={Theme.Form_Input_Error}></span> }
             { formErrors.phoneNumber && <Tooltip>{formErrors['phoneNumber']}</Tooltip> }
 
