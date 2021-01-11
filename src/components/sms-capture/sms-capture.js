@@ -6,8 +6,7 @@ import base64 from 'base-64';
 import phone from 'phone';
 
 const PLIVO = {
-  SENDER_ID: '+447753356426',
-  MESSAGE: 'Localhost test send'
+  SENDER_ID: 'Beanstalk'
 }
 
 const SmsCapture = () => {
@@ -80,7 +79,7 @@ const SmsCapture = () => {
         body: JSON.stringify({
           src: PLIVO.SENDER_ID,
           dst: phone(formFields.phoneNumber, 'GB')[0],
-          text: PLIVO.MESSAGE,
+          text: process.env.GATSBY_PLIVO_MESSAGE
         })
       })
         .then(response => {
@@ -127,7 +126,6 @@ const SmsCapture = () => {
             onChange={event => handleChange('phoneNumber', event)}
             value={formFields['phoneNumber']}
             />
-            { `GATSBY_PLIVO_AUTH_ID is ${process.env.GATSBY_PLIVO_AUTH_ID}` }
             { formErrors.phoneNumber && <span className={Theme.Form_Input_Error}></span> }
             { formErrors.phoneNumber && <Tooltip>{formErrors['phoneNumber']}</Tooltip> }
 
