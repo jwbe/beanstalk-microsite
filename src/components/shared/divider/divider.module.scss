@@ -1,0 +1,74 @@
+.Divider_Wrapper {
+  position: relative;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-left: -$base-unit;
+    margin-right: -$base-unit;
+  }
+  &___dividerDefaultOnMobile {
+    .Divider {
+      &:before {
+        box-shadow: 0 -.1875rem 2.75rem 0 rgba(50,182,122,20);
+        opacity: .2;
+      }
+    }
+    .Divider_Leaves {
+      background-image: url('./images/leaves.svg');
+    }
+  }
+}
+
+.Divider {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  overflow: hidden;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    height: $base-unit * 4;
+    margin-bottom: $base-unit;
+  }
+  @media (min-width: $breakpoint-sm) {
+    height: $base-unit * 5;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit;
+  }
+  &:before {
+    top: -$base-unit * 5;
+    height: $base-unit * 5;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 -.1875rem 2.75rem 0 rgba(255,255,255,20);
+    content: '';
+    @media (max-width: $breakpoint-sm - .0625em) {
+      height: $base-unit * 4;
+    }
+    @media (min-width: $breakpoint-sm) {
+      top: -$base-unit * 3;
+      height: $base-unit * 3;
+      box-shadow: 0 -.1875rem 2.75rem 0 rgba(50,182,122,20);
+      opacity: .2;
+    }
+  }
+}
+
+.Divider_Leaves {
+  top: -$base-unit;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  width: 2.25rem;
+  height: $base-unit * 2;
+  background-image: url('./images/leaves-white.svg');
+  z-index: 1;
+  @media (min-width: $breakpoint-sm) {
+    background-image: url('./images/leaves.svg');
+  }
+}

@@ -1,0 +1,32 @@
+.Container {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-left: -$base-unit * 2;
+    margin-right: -$base-unit * 2;
+    padding-top: $base-unit * 4;
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+    margin-bottom: $base-unit * 5;
+    background-image: url('./images/leaves.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 48rem 46.125rem;
+  }
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}
+
+.Iphone {
+  margin-bottom: $base-unit * 7;
+  display: flex;
+  justify-content: center;
+  @media (min-width: $breakpoint-sm) {
+    bottom: 0;
+    left: -$base-unit * 3;
+    position: absolute;
+    transform: translate(4.5rem, 1rem) rotate(32deg);
+  }
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}

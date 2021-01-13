@@ -1,0 +1,39 @@
+.Container {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    text-align: center;
+  }
+  p {
+    margin-bottom: $base-unit;
+    color: $white;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+    }
+    &:last-of-type {
+      margin-bottom: $base-unit * 3;
+      font-weight: 700;
+    }
+  }
+}
+
+.MainCta {
+  display: inline-block;
+  padding-top: $base-unit;
+  padding-right: $base-unit * 2;
+  padding-bottom: $base-unit;
+  padding-left: $base-unit * 2;
+  margin-bottom: $base-unit * 3;
+  color: $white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $display-font-size;
+  font-weight: 700;
+  line-height: $display-line-height;
+  background-color: $secondary;
+  box-shadow: $shadow-level-3;
+  border-radius: $base-unit / 2;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    letter-spacing: -.0625em
+  }
+}

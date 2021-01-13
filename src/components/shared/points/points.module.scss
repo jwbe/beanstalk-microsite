@@ -1,0 +1,76 @@
+.Points {
+  @media (max-width: $breakpoint-md - .0625em) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: $base-unit * 6;
+    column-count: 2;
+  }
+}
+
+.Point {
+  display: flex;
+  margin-bottom: $base-unit * 3;
+  &:last-of-type {
+    margin-bottom: $base-unit * 6;
+  }
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+    &:last-of-type {
+      margin-bottom: $base-unit * 5;
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  &_Icon {
+    width: 100%;
+    display: block;
+    &_Wrapper {
+      flex: none;
+      margin-right: $base-unit * 2;
+      width: $base-unit * 6;
+      height: $base-unit * 6;
+      border-radius: 100%;
+      background-color: $secondary;
+      overflow: hidden;
+      @media (max-width: $breakpoint-sm - .0625em) {
+        background-color: $primary;
+      }
+      @media (min-width: $breakpoint-sm) {
+        margin-right: $base-unit * 3;
+        width: $base-unit * 7;
+        height: $base-unit * 7;
+      }
+    }
+  }
+  &_Heading {
+    margin-top: 0;
+    margin-bottom: $base-unit;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+    font-family: 'Quicksand', sans-serif;
+    color: $primary;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $title-font-size;
+      line-height: $title-line-height;
+    }
+  }
+  &_Description {
+    max-width: $base-unit * 35;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    color: $white;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+      color: $accent-3;
+    }
+  }
+}

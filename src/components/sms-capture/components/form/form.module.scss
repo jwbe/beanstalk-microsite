@@ -1,0 +1,158 @@
+.Container {
+  width: 100%;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset !important;
+    color: $accent-3;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+}
+
+.InputAndButtonWrapper {
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+  }
+}
+
+.Input {
+  position: relative;
+  min-width: $base-unit * 16;
+  width: 100%;
+  padding-top: .875rem;
+  padding-right: 0;
+  padding-bottom: .875rem;
+  padding-left: 0;
+  margin: 0; // Solves iOS extra margin-top
+  margin-bottom: 0;
+  color: $accent-3;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  &::placeholder {
+    color: $accent-3-light;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+  &_Wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: $base-unit * 6;
+    background-color: $white;
+    border-radius: $base-unit;
+    box-shadow: 0 .5rem 1rem rgba(#32b67a, .10);
+    @media (max-width: $breakpoint-sm - .0625em) {
+      margin-bottom: $base-unit * 3;
+    }
+    @media (min-width: $breakpoint-sm) {
+      border-radius: .5rem 0 0 .5rem;
+    }
+  }
+  &_UnionFlagIcon {
+    flex: none;
+    margin-right: $base-unit * 2;
+    margin-left: $base-unit * 2;
+    width: $base-unit * 3;
+    height: .75rem;
+    background-image: url('./images/union-flag.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &_PhoneIcon {
+    flex: none;
+    margin-right: $base-unit * 2;
+    margin-left: $base-unit * 2;
+    width: .875rem;
+    height: $base-unit * 3;
+    background-image: url('./images/phone-icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &_Error {
+    right: 3rem;
+    position: absolute;
+    width: $base-unit * 3;
+    height: $base-unit * 3;
+    background-image: url('./images/error-icon.svg');
+  }
+}
+
+.Submit {
+  flex: none;
+  align-items: center;
+  display: flex;
+  padding-right: $base-unit * 4;
+  padding-left: $base-unit * 4;
+  color: $white;
+  text-align: center;
+  font-weight: 700;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  background-color: $secondary;
+  cursor: pointer;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 4;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: $base-unit * 2;
+    padding-bottom: $base-unit * 2;
+    box-shadow: $shadow-level-3;
+    border-radius: 99rem;
+    transition: transform .2s, box-shadow .2s, background-color .2s;
+    &:hover {
+      background-color: lighten($secondary, 5%);
+      box-shadow: $shadow-level-4;
+    }
+    &:active {
+      background-color: darken($secondary, 2%);
+      box-shadow: $shadow-level-1;
+    }
+  }
+  @media (min-width: $breakpoint-sm) {
+    height: $base-unit * 6;
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    border-radius: 0 .5rem .5rem 0;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.Confirmation {
+  display: inline-flex;
+  margin-top: .375rem;
+  margin-bottom: .375rem;
+  padding-top: $base-unit;
+  padding-right: $base-unit * 2;
+  padding-bottom: $base-unit;
+  padding-left: $base-unit * 2;
+  color: $primary;
+  font-size: $body-font-size;
+  font-weight: 700;
+  line-height: $body-line-height;
+  background-color: #61bfad;
+  border-radius: 99rem;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+  }
+}
