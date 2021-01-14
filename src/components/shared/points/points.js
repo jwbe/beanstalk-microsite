@@ -19,7 +19,7 @@ const Points = () => (
           All your children on one app
         </h3>
         <p className={Theme.Point_Description}>
-          Open accounts for all your kids, check how much they have within seconds all in one app
+          Open accounts for all your kids, check how much they have within seconds all in one app.
         </p>
       </div>
     </div>
@@ -45,7 +45,7 @@ const Points = () => (
           Lots of easy ways to save
         </h3>
         <p className={Theme.Point_Description}>
-          Round ups, free money back on your shopping, easy top-ups
+          Round ups, free money back on your shopping, easy top-ups.
         </p>
       </div>
     </div>
@@ -58,7 +58,7 @@ const Points = () => (
           The whole family can help save for your children
         </h3>
         <p className={Theme.Point_Description}>
-          Invite friends and family and they can contribute to your kids’ JISAs through their own
+          Invite friends and family and they can contribute to your kids’ JISAs through their own app.
         </p>
       </div>
     </div>

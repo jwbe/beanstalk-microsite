@@ -12,7 +12,7 @@ class CtfCalculator extends Component {
     super(props)
 
     this.state = {
-      currentStep: 1,
+      currentStep: 4,
       ctfValue: 10000,
       childAge: 8,
       firstSelectionId: 1,

@@ -1,3 +1,18 @@
+.Heading {
+  margin-top: 0;
+  margin-bottom: $base-unit * 4;
+  font-size: $body-font-size;
+  font-weight: 700;
+  line-height: $body-line-height;
+  font-family: 'Quicksand', sans-serif;
+  color: $secondary;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}
+
 .Footnotes {
   margin-top: $base-unit * 7;
   margin-right: auto;

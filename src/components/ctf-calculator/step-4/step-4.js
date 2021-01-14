@@ -8,6 +8,7 @@ import StepTheme from './step-4.module.scss';
 import Graph from './graph/graph';
 import Dashboard from './dashboard/dashboard';
 import CtaButton from '../shared-components/cta-button/cta-button';
+import Badges from '../../shared/badges/badges';
 
 const _calculateProviderCost = ({ annualPercentageCharge, optionalActualAnnualPercentageCharge }, { MAX_CHILD_AGE }, { ctfValue, childAge }) => {
   annualPercentageCharge = typeof annualPercentageCharge === 'string' ? optionalActualAnnualPercentageCharge : annualPercentageCharge;
@@ -144,7 +145,9 @@ class Step4 extends Component {
         secondAdditionalGraphBarAnnualPercentageLabelCommentIcon={secondAdditionalGraphBarAnnualPercentageLabelCommentIcon}
         formData={formData}/>
 
-        <CtaButton/>
+        <h2 className={StepTheme.Heading}>Switch your account now</h2>
+
+        <Badges/>
 
         <div className={StepTheme.Footnotes}>
           {footNotes.map((note, index) => <div className={StepTheme.Footnotes_Footnote} key={index}>{NOTE_SYMBOLS[index]} {note}</div>)}
