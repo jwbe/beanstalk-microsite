@@ -2,6 +2,8 @@ import React from 'react';
 import Progress from './progress/progress';
 import HeaderTheme from './header.module.scss';
 
+import Badges from '../../shared/badges/badges';
+
 const Header = ({ currentStep }) => {
   return (
     <>
@@ -15,6 +17,9 @@ const Header = ({ currentStep }) => {
         <p className={HeaderTheme.SuperHeading}>
           No minimum or regular contribution required, you or anyone you invite can contribute whenever you want, and even opt to round-up your purchases to invest little and often.
         </p>
+        <div className={HeaderTheme.Badges}>
+          <Badges/>
+        </div>
       </header>
 
       <Progress currentStep={{ currentStep }}/>

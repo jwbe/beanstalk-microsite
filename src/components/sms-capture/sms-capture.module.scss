@@ -11,6 +11,8 @@
   //padding-bottom: $base-unit * 4;
   @media (min-width: $breakpoint-sm) {
     padding-top: $base-unit * 6;
+  }
+  @media (min-width: $breakpoint-md) {
     padding-bottom: $base-unit * 7;
   }
 }
@@ -26,10 +28,16 @@
 
 .Column {
   flex-basis: percentage(2/3);
+  @media (min-width: $breakpoint-sm) {
+    flex-basis: 70%
+  }
   &:first-of-type {
     flex-basis: percentage(1/3);
     @media (max-width: $breakpoint-sm - .0625em) {
       display: none;
+    }
+    @media (min-width: $breakpoint-sm) {
+      flex-basis: 30%
     }
   }
   @media (max-width: $breakpoint-sm - .0625em) {
@@ -40,7 +48,13 @@
 }
 
 .Iphone {
-  transform: rotate(-8deg);
+  transform: rotate(-8deg) translateY(-1rem);
+  @media (min-width: $breakpoint-sm) {
+    transform: rotate(-8deg) translateY(-1rem) translateX(-4rem);
+  }
+  @media (min-width: $breakpoint-md) {
+    transform: rotate(-8deg) translateY(-1rem);
+  }
 }
 
 .DecorativeSectionJoin {
@@ -75,6 +89,8 @@
   overflow: hidden;
   @media (min-width: $breakpoint-md) {
     height: $base-unit * 60;
-    border-radius: 0 0 3rem 3rem;
+  }
+  @media (min-width: 140rem) {
+    border-radius: 0 0 2rem 2rem;
   }
 }

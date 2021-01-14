@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Theme from './points.module.scss'
 
@@ -15,10 +16,10 @@ const Points = () => (
       </div>
       <div className={Theme.Point_Content}>
         <h3 className={Theme.Point_Heading}>
-          All accounts in one place
+          All your children on one app
         </h3>
         <p className={Theme.Point_Description}>
-          See everyone you are saving for, how much they have and your contributions all within seconds
+          Open accounts for all your kids, check how much they have within seconds all in one app
         </p>
       </div>
     </div>
@@ -31,7 +32,7 @@ const Points = () => (
           Start small 
         </h3>
         <p className={Theme.Point_Description}>
-          No contributions needed to open an account
+          With no minimum or regular contribution required, you or anyone you invite can contribute whenever you want whether it is £10 or £1000.
         </p>
       </div>
     </div>
@@ -41,7 +42,7 @@ const Points = () => (
       </div>
       <div className={Theme.Point_Content}>
         <h3 className={Theme.Point_Heading}>
-          Many ways to save
+          Lots of easy ways to save
         </h3>
         <p className={Theme.Point_Description}>
           Round ups, free money back on your shopping, easy top-ups
@@ -54,10 +55,10 @@ const Points = () => (
       </div>
       <div className={Theme.Point_Content}>
         <h3 className={Theme.Point_Heading}>
-          Link family and friends
+          The whole family can help save for your children
         </h3>
         <p className={Theme.Point_Description}>
-          Boost your kid's savings with multiple people contributing
+          Invite friends and family and they can contribute to your kids’ JISAs through their own
         </p>
       </div>
     </div>
@@ -67,10 +68,12 @@ const Points = () => (
       </div>
       <div className={Theme.Point_Content}>
         <h3 className={Theme.Point_Heading}>
-          Safe and secure
+          Reimagining child savings and investing
         </h3>
         <p className={Theme.Point_Description}>
-          Beanstalk is FCA regulated and your money and investments are held under FCA client money and custody rules by our authorised investment platform provider
+          Beanstalk offers stocks & shares Junior ISAs and adult ISAs so any returns are tax free.
+          Choose from two low cost investment funds in the proportion you choose.
+          At 0.5% our fee is one of the lowest meaning more saved for your kids. <Link to="/designed-to-grow">Learn more</Link>
         </p>
       </div>
     </div>

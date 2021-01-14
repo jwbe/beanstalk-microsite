@@ -9,7 +9,7 @@ const PLIVO = {
   SENDER_ID: 'Beanstalk'
 }
 
-const TEXT_CONFIRMATION = 'A link to the app has been texted to your number.'
+const TEXT_CONFIRMATION = 'A link to the app will be texted to your number.'
 
 const Form = () => {
 

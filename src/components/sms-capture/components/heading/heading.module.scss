@@ -1,4 +1,4 @@
-.Container {
+ .Container {
   @media (max-width: $breakpoint-sm - .0625em) {
     text-align: center;
   }
@@ -8,6 +8,7 @@
     font-size: $body-font-size;
     line-height: $body-line-height;
     @media (min-width: $breakpoint-sm) {
+      max-width: 22.5rem;
       font-size: $subheader-font-size;
       line-height: $subheader-line-height;
     }
@@ -31,9 +32,9 @@
   font-weight: 700;
   line-height: $display-line-height;
   background-color: $secondary;
-  box-shadow: $shadow-level-3;
+  //box-shadow: $shadow-level-3;
   border-radius: $base-unit / 2;
   @media (max-width: $breakpoint-sm - .0625em) {
-    letter-spacing: -.0625em
+    letter-spacing: -.015625rem;
   }
 }
