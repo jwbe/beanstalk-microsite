@@ -10,6 +10,7 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 48rem 46.125rem;
+    overflow: hidden;
   }
   @media (min-width: $breakpoint-sm) {
     display: none;
