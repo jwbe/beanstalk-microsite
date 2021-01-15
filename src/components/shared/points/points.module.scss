@@ -24,6 +24,9 @@
       margin-bottom: $base-unit * 5;
     }
   }
+  @media (min-width: $breakpoint-sm) {
+    width: 50%;
+  }
   @media (min-width: $breakpoint-md) {
     &:last-of-type {
       margin-bottom: 0;
