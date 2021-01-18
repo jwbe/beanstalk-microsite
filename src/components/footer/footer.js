@@ -9,7 +9,9 @@ import SmallPrint from '../small-print/small-print';
 
 const TEXT_SMALL_PRINT = 'AS WITH ANY INVESTMENT THE VALUE CAN GO DOWN AS WELL AS UP. PAST PERFORMANCE IS NO INDICATOR OF FUTURE PERFORMANCE. THE TAX TREATMENT OF ISAS DEPENDS ON YOUR INDIVIDUAL CIRCUMSTANCES AND MAY BE SUBJECT TO CHANGE IN THE FUTURE.'
 
-const Footer = () => {
+const Footer = ({
+  isKidStartFamily
+}) => {
   return (
     <> 
       <SmallPrint>
@@ -17,6 +19,9 @@ const Footer = () => {
           { TEXT_SMALL_PRINT }
         </p>
       </SmallPrint>
+
+      { isKidStartFamily &&  <KidStartFamily/> }
+      
 
       <footer className={Theme.Container}>
         <div className={Theme.Container_Inner}>

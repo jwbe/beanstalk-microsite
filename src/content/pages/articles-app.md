@@ -5,6 +5,7 @@ heading: Knowledge base
 subheading: Articles & News
 app: true
 noSitemap: true
+isKidStartFamily: false
 ---
 import ArticlesApp from '../../components/articles-app/articles-app'
 import BackButton from '../../components/back-button/back-button'

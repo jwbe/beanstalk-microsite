@@ -69,7 +69,7 @@ const Layout = ({
             articlePrevious={previous}
             />
         </Main>
-        { data.page.meta.app ? null : <Footer/> }
+        { data.page.meta.app ? null : <Footer isKidStartFamily/> }
       </Wrapper>
     </>
   );

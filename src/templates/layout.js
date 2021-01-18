@@ -20,6 +20,7 @@ export const query = graphql`
         plain
         app
         canonical
+        isKidStartFamily
       }
       content: body
     }
@@ -42,7 +43,9 @@ const Layout = ({ data }) => {
             {data.page.content}
           </Content>
         </Main>
-        { data.page.meta.app ? null : <Footer/> }
+        { data.page.meta.app ? null : 
+          data.page.meta.isKidStartFamily ? <Footer isKidStartFamily/> : <Footer/> 
+        }
       </Wrapper>
     </>
   );

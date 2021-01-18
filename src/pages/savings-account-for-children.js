@@ -30,7 +30,7 @@ const SmsCapturePage = () => {
           <Callout/>
         </SecondaryColourSectionOnMobile>
       </Container>
-      <Footer/>
+      <Footer isKidStartFamily/>
     </>
   )
 }

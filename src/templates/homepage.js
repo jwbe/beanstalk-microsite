@@ -5,7 +5,7 @@ const Layout = (props) => {
   return (
     <>
       { props.children }
-      <Footer/>
+      <Footer isKidStartFamily/>
     </>
   );
 };
