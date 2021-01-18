@@ -5,6 +5,8 @@
     flex-direction: column;
     display: flex;
   }
+  @media (min-width: $breakpoint-sm) {
+  }
   @media (min-width: $breakpoint-md) {
     margin-bottom: $base-unit * 6;
     column-count: 2;
@@ -16,21 +18,23 @@
   margin-bottom: $base-unit * 3;
   &:last-of-type {
     margin-bottom: $base-unit * 6;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      margin-bottom: $base-unit * 5;
+    }
+    @media (min-width: $breakpoint-md) {
+      margin-bottom: 0;
+    }
   }
   @media (max-width: $breakpoint-sm - .0625em) {
     padding-right: $base-unit * 2;
     padding-left: $base-unit * 2;
-    &:last-of-type {
-      margin-bottom: $base-unit * 5;
-    }
   }
-  @media (min-width: $breakpoint-sm) {
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - .0625em) {
     width: 50%;
   }
-  @media (min-width: $breakpoint-md) {
-    &:last-of-type {
-      margin-bottom: 0;
-    }
+  &_Content {
+    display: flex;
+    flex-direction: column;
   }
   &_Icon {
     width: 100%;
