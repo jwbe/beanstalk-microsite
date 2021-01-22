@@ -1,12 +1,9 @@
-
-
-
 import React from 'react'
 import SignUp from '../../components/sign-up/sign-up'
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 
-import Logo from './images/the-family-pass-logo.jpg'
+import Logo from './images/bounty-logo.png'
 
 const SignUpPage = () => {
   return (
@@ -26,7 +23,7 @@ const SignUpPage = () => {
         }
         secondaryCta={
           <>
-            & get £6 when you open <br/>& save into an account
+            & get £5 when you open <br/>& save into an account
           </>
         }
         partner={
@@ -35,18 +32,19 @@ const SignUpPage = () => {
         }
         quote={
           <>
-            We're thrilled to have teamed up with Beanstalk to help LittleBird Family Pass members save for their children's futures. You will get £6 for every Beanstalk Junior ISA and ISA you open. - <strong>LittleBird Family Pass.</strong>
+            We're excited to have partnered with Beanstalk to help Bounty mums save for their baby's future. You will get £5 for every Beanstalk Junior ISA and ISA you open. - <strong>Bounty.</strong>
           </>
         }
       >
 
         <li>Users must be genuine new, non-duplicate registrations who enter their details on this page and then opens and saves into a Beanstalk Junior ISA or ISA.</li>
 
-        <li>To be eligible for the £6 bonus register with Beanstalk with the same details you enter on this page.</li>
+        <li>To be eligible for the £5 bonus register with Beanstalk with the same details you enter on this page.</li>
 
-        <li>£6 will be paid into every Junior ISA you open and contribute into. If an is ISA opened and saved into £6 will be paid into your KidStart account due to HMRC rules.</li>
 
-        <li>Offer available until the 16th May 2021.</li>
+        <li>£5 will be paid into every Junior ISA you open and contribute into. If an ISA is opened and saved into £5 will be paid into your KidStart account due to HMRC rules.</li>
+
+        <li>Offer available until 23:59 14th February 2021.</li>
 
         <li>
           Full Beanstalk T&Cs can be viewed <Link to="/terms-and-conditions-governing-beanstalk">here</Link>. Beanstalk reserve the right to withdraw or amend this offer at any time.
