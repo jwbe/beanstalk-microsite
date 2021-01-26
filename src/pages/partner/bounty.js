@@ -44,7 +44,7 @@ const SignUpPage = () => {
 
         <li>£5 will be paid into every Junior ISA you open and contribute into. If an ISA is opened and saved into £5 will be paid into your KidStart account due to HMRC rules.</li>
 
-        <li>Offer available until 23:59 14th February 2021.</li>
+        <li>Offer available until 23:59 28th February 2021.</li>
 
         <li>
           Full Beanstalk T&Cs can be viewed <Link to="/terms-and-conditions-governing-beanstalk">here</Link>. Beanstalk reserve the right to withdraw or amend this offer at any time.
