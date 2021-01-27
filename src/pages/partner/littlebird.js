@@ -46,6 +46,8 @@ const SignUpPage = () => {
 
         <li>£6 will be paid into every Junior ISA you open and contribute into. If an is ISA opened and saved into £6 will be paid into your KidStart account due to HMRC rules.</li>
 
+        <li>Bonus will be paid within two weeks of when you make your first contribution into your open Beanstalk account</li>
+
         <li>Offer available until the 16th May 2021.</li>
 
         <li>
