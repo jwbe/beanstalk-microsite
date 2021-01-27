@@ -1,19 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-const netlifyIdentity = require('netlify-identity-widget');
 
 export default function HTML(props) {
-  netlifyIdentity.init({
-    container: '#netlify-modal', // defaults to document.body
-    locale: 'en' // defaults to 'en'
-  });
   return (
     <html {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
-
         {props.headComponents}
         <script
           dangerouslySetInnerHTML={{
@@ -35,9 +29,21 @@ export default function HTML(props) {
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P72DNHS" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
           }}
         />
-        <script>
-
-        </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                    if (window.netlifyIdentity) {
+                      window.netlifyIdentity.on("init", user => {
+                        if (!user) {
+                          window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                          });
+                        }
+                      })
+                    }
+                `,
+          }}
+        />
       </body>
     </html>
   )

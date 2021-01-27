@@ -37,7 +37,10 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-netlify-cms`
+        resolve: `gatsby-plugin-netlify-cms`,
+        options: {
+            enableIdentityWidget: true,
+        },
     },
     {
       resolve: `gatsby-plugin-netlify`
@@ -61,6 +64,7 @@ module.exports = {
         cookie_expires: 0,
       },
     },
+    'gatsby-plugin-netlify-identity-widget',
     `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
