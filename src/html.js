@@ -1,8 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
-import netlifyIdentity from "netlify-identity-widget"
+const netlifyIdentity = require('netlify-identity-widget');
 
 export default function HTML(props) {
+  netlifyIdentity.init({
+    container: '#netlify-modal', // defaults to document.body
+    locale: 'en' // defaults to 'en'
+  });
   return (
     <html {...props.htmlAttributes}>
       <head>
@@ -32,15 +36,7 @@ export default function HTML(props) {
           }}
         />
         <script>
-          if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-              if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                  document.location.href = "/admin/";
-                });
-              }
-            });
-          }
+
         </script>
       </body>
     </html>
