@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import netlifyIdentity from "netlify-identity-widget"
 
 export default function HTML(props) {
   return (
@@ -30,6 +31,17 @@ export default function HTML(props) {
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P72DNHS" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
           }}
         />
+        <script>
+          if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+              if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                  document.location.href = "/admin/";
+                });
+              }
+            });
+          }
+        </script>
       </body>
     </html>
   )
