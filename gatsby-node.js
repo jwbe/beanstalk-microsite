@@ -23,16 +23,26 @@ exports.onCreatePage = async ({ page, actions }) => {
   }
 }
 
-exports.createPages = async({graphql, actions}) => {
+exports.createPages = async ({graphql, actions}) => {
   const { createPage } = actions;
   const standardTemplate = path.resolve('./src/templates/layout.js');
   const articleTemplate = path.resolve('./src/templates/article.js');
+  const blogTemplate = path.resolve('./src/templates/blog.js');
+
+
+  function stripTrailingSlash(str) {
+    if(str.substr(-1) === '/') {
+        return str.substr(0, str.length - 1);
+    }
+    return str;
+  }
 
   const result = await graphql(`
     query  {
       allSources: allMdx {
         edges {
           node {
+            slug
             fields {
               collection
             }
@@ -72,6 +82,10 @@ exports.createPages = async({graphql, actions}) => {
     edge => edge.node.fields.collection === `articles`
   );
 
+  const blogEdges = allEdges.filter(
+    edge => edge.node.fields.collection === `blog`
+  );
+
   pageEdges.forEach((edge) => {
     createPage({
       path: edge.node.meta.slug,
@@ -94,4 +108,27 @@ exports.createPages = async({graphql, actions}) => {
       }
     });
   });
+
+  blogEdges.forEach((edge) => {
+    createPage({
+      path: `/blog/${edge.node.slug}`,
+      component: blogTemplate,
+      context: {
+        slug: `${edge.node.slug}`
+      }
+    });
+  });
 };
+
+const replacePath = path => (path === `/` ? path : path.replace(/\/$/, ``))
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+  const oldPage = Object.assign({}, page)
+  // Remove trailing slash unless page is /
+  page.path = replacePath(page.path)
+  if (page.path !== oldPage.path) {
+    // Replace old page with new page
+    deletePage(oldPage)
+    createPage(page)
+  }
+}
