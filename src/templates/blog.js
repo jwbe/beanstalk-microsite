@@ -4,21 +4,28 @@ import Head from '../components/head/head';
 import { Header } from '../components/header/header';
 import Footer from '../components/footer/footer';
 import SEO from '../components/seo';
-import Content from '../components/content/content';
 import Post from '../components/blog/post/post';
 
 export const query = graphql`
-  query($slug: String!) {
-    page: allMdx(filter: {slug: {eq: $slug}}) {
+  query($id: String!) {
+    page: allMdx(filter: {id: {eq: $id}}) {
       edges {
         node {
-          slug
-          body
           frontmatter {
             title
             date
             description
+            author
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 640, maxHeight: 360, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
+          id
+          body
         }
       }
     }
@@ -32,12 +39,15 @@ const Layout = ({
     title: data.page.edges[0].node.frontmatter.title,
     date: data.page.edges[0].node.frontmatter.date,
     description: data.page.edges[0].node.frontmatter.description,
-    featuredImage: data.page.edges[0].node.featuredImage,
+    author: data.page.edges[0].node.frontmatter.author,
+    featuredImage: data.page.edges[0].node.frontmatter.featuredImage.childImageSharp.fluid,
     body: data.page.edges[0].node.body
   }
   return (
     <>
+      <Header/>
       <Post {...props}/>
+      <Footer/>
     </>
   );
 };

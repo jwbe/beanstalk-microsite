@@ -1,7 +1,9 @@
 ---
 title: Hello World 2
 date: "2018-05-01T22:12:03.284Z"
-description: "Hello World"
+description: "chicken eggs, though the taste and texture will be somewhat different, and the egg yolk will be less rich."
+author: "Beanstalk"
+featuredImage: "./post-image.png"
 ---
 
 Wow! I love blogging so much already.

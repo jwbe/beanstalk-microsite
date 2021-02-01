@@ -1,30 +1,40 @@
-import React from 'react';
-import Img from 'gatsby-image';
-import Theme from './post.module.scss';
+import React from 'react'
+import Img from 'gatsby-image'
+import { Link } from 'gatsby'
+import Theme from './post.module.scss'
 
-import Content from '../../content/content';
+import Wrapper from '../../wrapper/wrapper'
+import { Main, LAYOUT_VARIANT } from  '../../main/main'
+import Content from '../../content/content'
 
 const Post = ({
   title,
   date,
   description,
+  author,
   featuredImage,
   body
 }) => {
   return (
-    <article>
-      <header>
-        {featuredImage ? (
-          <Img fluid={featuredImage}/>
-        ) : null}
-        {title}
-        {date}
-      </header>
+    <Wrapper>
+      <Main layoutVariant={LAYOUT_VARIANT.ARTICLE}>
+        <Link to={`/blog`}>Back</Link>
+        <article>
+          <header>
+            { title }
+            { featuredImage ? (
+              <Img fluid={ featuredImage }/>
+            ) : null }
+            { author }
+            { date }
+          </header>
 
-      <Content>
-        { body }
-      </Content>
-    </article>
+          <Content>
+            { body }
+          </Content>
+        </article>
+      </Main>
+    </Wrapper>
   );
 };
 

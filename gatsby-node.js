@@ -42,6 +42,7 @@ exports.createPages = async ({graphql, actions}) => {
       allSources: allMdx {
         edges {
           node {
+            id
             slug
             fields {
               collection
@@ -111,24 +112,11 @@ exports.createPages = async ({graphql, actions}) => {
 
   blogEdges.forEach((edge) => {
     createPage({
-      path: `/blog/${edge.node.slug}`,
+      path: `/blog/${stripTrailingSlash(edge.node.slug)}`,
       component: blogTemplate,
       context: {
-        slug: `${edge.node.slug}`
+        id: edge.node.id
       }
     });
   });
 };
-
-const replacePath = path => (path === `/` ? path : path.replace(/\/$/, ``))
-exports.onCreatePage = async ({ page, actions }) => {
-  const { createPage, deletePage } = actions
-  const oldPage = Object.assign({}, page)
-  // Remove trailing slash unless page is /
-  page.path = replacePath(page.path)
-  if (page.path !== oldPage.path) {
-    // Replace old page with new page
-    deletePage(oldPage)
-    createPage(page)
-  }
-}

@@ -13,7 +13,7 @@ const Articles = () => {
               slug
               coverImage {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
+                  fluid(maxWidth: 640) {
                     src
                   }
                 }
