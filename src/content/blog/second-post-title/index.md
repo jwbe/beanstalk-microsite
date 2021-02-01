@@ -1,16 +1,13 @@
 ---
-title: Hello World 2
-date: "2018-05-01T22:12:03.284Z"
-description: "chicken eggs, though the taste and texture will be somewhat different, and the egg yolk will be less rich."
-author: "Beanstalk"
-featuredImage: "./post-image.png"
+title: What is Beanstalk and how do I use it?
+date: 2018-05-01T22:12:03.284Z
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+author: Beanstalk
+featuredImage: ./post-image.png
 ---
 
-Wow! I love blogging so much already.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id risus congue, sagittis dui in, faucibus massa. Sed egestas eu tellus sit amet porta. Nullam pharetra, risus et elementum sagittis, dolor odio aliquet tellus, auctor interdum mauris mauris nec nisi. Nam sed diam nisi. Morbi nec eros iaculis, porta est ut, suscipit orci. Nullam ut cursus justo. Quisque consequat purus faucibus suscipit aliquam. Pellentesque auctor lacinia lectus id placerat. Vivamus sodales at diam id dictum. Mauris non erat mollis, semper diam eu, condimentum diam. Suspendisse accumsan facilisis augue, pharetra tristique ipsum dignissim in. Pellentesque id elementum nisl. Sed auctor tristique lacus, vitae mollis dui finibus et.
 
-Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich."?
-([Wikipedia Link](https://en.wikipedia.org/wiki/Salted_duck_egg))
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id risus congue, sagittis dui in, faucibus massa. Sed egestas eu tellus sit amet porta. Nullam pharetra, risus et elementum sagittis, dolor odio aliquet tellus, auctor interdum mauris mauris nec nisi. Nam sed diam nisi. Morbi nec eros iaculis, porta est ut, suscipit orci. Nullam ut cursus justo. Quisque consequat purus faucibus suscipit aliquam. Pellentesque auctor lacinia lectus id placerat. Vivamus sodales at diam id dictum. Mauris non erat mollis, semper diam eu, condimentum diam. Suspendisse accumsan facilisis augue, pharetra tristique ipsum dignissim in. Pellentesque id elementum nisl. Sed auctor tristique lacus, vitae mollis dui finibus et.
 
-Yeah, I didn't either.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id risus congue, sagittis dui in, faucibus massa. Sed egestas eu tellus sit amet porta. Nullam pharetra, risus et elementum sagittis, dolor odio aliquet tellus, auctor interdum mauris mauris nec nisi. Nam sed diam nisi. Morbi nec eros iaculis, porta est ut, suscipit orci. Nullam ut cursus justo. Quisque consequat purus faucibus suscipit aliquam. Pellentesque auctor lacinia lectus id placerat. Vivamus sodales at diam id dictum. Mauris non erat mollis, semper diam eu, condimentum diam. Suspendisse accumsan facilisis augue, pharetra tristique ipsum dignissim in. Pellentesque id elementum nisl. Sed auctor tristique lacus, vitae mollis dui finibus et.

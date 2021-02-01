@@ -1,6 +1,8 @@
-import React from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import React from 'react'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+import { Button, DESKTOP_COLOURS, DESKTOP_SIZES, DESKTOP_BACKGROUNDS } from '../../button/button'
+import Theme from './posts.module.scss'
 
 const Posts = () => {
   const data = useStaticQuery(graphql`
@@ -12,11 +14,12 @@ const Posts = () => {
             slug
             frontmatter {
               title
-              date
+              date(formatString: "MMMM Do YYYY")
               description
+              author
               featuredImage {
                 childImageSharp {
-                  fluid(maxWidth: 1280, maxHeight: 360, quality: 80) {
+                  fluid(maxWidth: 912, maxHeight: 304, quality: 80, cropFocus: CENTER) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -38,21 +41,47 @@ const Posts = () => {
               title: post.node.frontmatter.title,
               date: post.node.frontmatter.date,
               description: post.node.frontmatter.description,
+              author: post.node.frontmatter.author,
               featuredImage: post.node.frontmatter.featuredImage.childImageSharp.fluid,
               body: post.node.body
             }
             return (
-              <div key={props.id}>
+              <article className={Theme.Post} key={props.id}>
                 <Link to={`/blog/${props.slug}`}>
-                  <Img fluid={ props.featuredImage }/>
+                  <Img className={Theme.FeaturedImage} fluid={ props.featuredImage }/>
                 </Link>
-                <Link to={`/blog/${props.slug}`}>
-                  { props.title }
-                </Link>
-                { props.date }
-                { props.description }
-                <Link to={`/blog/${props.slug}`}>Go to post</Link>
-              </div>
+                <header>
+                  <h3 className={Theme.Heading}>
+                    <Link to={`/blog/${props.slug}`}>
+                      { props.title }
+                    </Link>
+                  </h3>
+                </header>
+                <div className={Theme.InfoPanel}>
+                  <div className={Theme.Details}>
+                    <div className={Theme.Description}>
+                      { props.description }
+                    </div>
+                    <div className={Theme.Meta}>
+                      <address className={Theme.Author} rel="author">
+                        By <strong>{ props.author }</strong>
+                      </address>
+                      <time>
+                        { props.date }
+                      </time>
+                    </div>
+                  </div>
+                  <div className={Theme.Button}>
+                    <Button className={Theme.BackButton} link={`/blog/${props.slug}`} 
+                      desktopColour={DESKTOP_COLOURS.WHITE}
+                      desktopSize={DESKTOP_SIZES.LARGE}
+                      desktopBackground={DESKTOP_BACKGROUNDS.SECONDARY}
+                      >
+                      Read article
+                    </Button>
+                  </div>
+                </div>
+              </article>
             )
           })
         }

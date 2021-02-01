@@ -13,7 +13,7 @@ export const query = graphql`
         node {
           frontmatter {
             title
-            date
+            date(formatString: "MMMM Do YYYY")
             description
             author
             featuredImage {

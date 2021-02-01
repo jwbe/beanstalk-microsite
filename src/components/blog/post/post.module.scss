@@ -1,0 +1,62 @@
+.BackButton {
+  margin-bottom: $base-unit * 3;
+}
+
+.Header {
+  color: $secondary;
+}
+
+.FeaturedImage {
+  margin-bottom: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.InfoPanel {
+  display: flex;
+}
+
+.Heading {
+  font-weight: 700;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit;
+    font-size: $display-font-size;
+    line-height: $display-line-height;
+  }
+}
+
+.Meta {
+  justify-content: center;
+  display: flex;
+  margin-bottom: $base-unit * 2;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+}
+
+.Author {
+  margin-right: $base-unit;
+}
+
+.Content {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $accent-3;
+  p {
+    margin-bottom: $base-unit * 2;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $title-font-size;
+      line-height: $title-line-height;
+      margin-bottom: $base-unit * 4;
+    }
+  }
+}
