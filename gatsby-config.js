@@ -59,7 +59,7 @@ module.exports = {
         ]
       },
       gtagConfig: {
-        optimize_id: 'GTM-P72DNHS',
+        optimize_id: 'GTM-PN3JST2',
         anonymize_ip: false,
         cookie_expires: 0,
       },
