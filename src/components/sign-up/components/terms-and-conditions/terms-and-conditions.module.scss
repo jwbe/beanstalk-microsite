@@ -5,6 +5,7 @@
   }
   @media (min-width: $breakpoint-md) {
     column-count: 2;
+    orphans: 1;
   }
   ul {
     margin-left: $base-unit * 2;
