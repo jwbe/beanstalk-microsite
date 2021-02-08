@@ -26,6 +26,7 @@ export const query = graphql`
           }
           id
           body
+          slug
         }
       }
     }
@@ -45,6 +46,8 @@ const Layout = ({
   }
   return (
     <>
+      <Head title={props.title}/>
+      <SEO {...props}/>
       <Header/>
       <Post {...props}/>
       <Footer/>

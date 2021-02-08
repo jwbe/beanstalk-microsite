@@ -1,5 +1,27 @@
 const path = require('path');
 const _ = require('lodash');
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  // Ensures we are processing only markdown files
+  if (_.get(node, 'internal.type') === `Mdx`) {
+    // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
+    const relativeFilePath = createFilePath({
+      node,
+      getNode,
+      basePath: "content/",
+      trailingSlash: false
+    })
+
+    // Creates new query'able field with name of 'slug'
+    createNodeField({
+      node,
+      name: "slug",
+      value: `/blog${relativeFilePath}`,
+    })
+  }
+}
 
 exports.onCreateNode = ({node, actions, getNode}) => {
   const { createNodeField } = actions;
