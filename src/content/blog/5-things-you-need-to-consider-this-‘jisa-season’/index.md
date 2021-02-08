@@ -1,7 +1,7 @@
 ---
 title: " 5 Things You Need To Consider This ‘JISA Season’"
 date: 2021-02-08T17:22:14.201Z
-author: Beanstalk Team
+author: The Beanstalk Team
 featuredImage: beanstalk-5-reasons.png
 description: We discuss the five things you need to consider before opening a
   JISA for your child. From which is right for your family to what are the
