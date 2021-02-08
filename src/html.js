@@ -8,7 +8,6 @@ export default function HTML(props) {
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
-
         {props.headComponents}
         <script
           dangerouslySetInnerHTML={{
@@ -28,6 +27,21 @@ export default function HTML(props) {
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P72DNHS" height="0" width="0" style="display:none;visibility:hidden"></iframe>`
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                    if (window.netlifyIdentity) {
+                      window.netlifyIdentity.on("init", user => {
+                        if (!user) {
+                          window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                          });
+                        }
+                      })
+                    }
+                `,
           }}
         />
       </body>

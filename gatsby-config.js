@@ -37,6 +37,12 @@ module.exports = {
   },
   plugins: [
     {
+        resolve: `gatsby-plugin-netlify-cms`,
+        options: {
+            enableIdentityWidget: true,
+        },
+    },
+    {
       resolve: `gatsby-plugin-netlify`
     },
     {
@@ -53,11 +59,12 @@ module.exports = {
         ]
       },
       gtagConfig: {
-        optimize_id: 'GTM-P72DNHS',
+        optimize_id: 'GTM-PN3JST2',
         anonymize_ip: false,
         cookie_expires: 0,
       },
     },
+    'gatsby-plugin-netlify-identity-widget',
     `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
@@ -248,6 +255,13 @@ module.exports = {
         data: '@import "global.scss";',
         includePaths: ["./src/components/scss/global"]
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/blog/`,
+        name: `blog`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,

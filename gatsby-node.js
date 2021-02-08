@@ -1,5 +1,27 @@
 const path = require('path');
 const _ = require('lodash');
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions
+  // Ensures we are processing only markdown files
+  if (_.get(node, 'internal.type') === `Mdx`) {
+    // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
+    const relativeFilePath = createFilePath({
+      node,
+      getNode,
+      basePath: "content/",
+      trailingSlash: false
+    })
+
+    // Creates new query'able field with name of 'slug'
+    createNodeField({
+      node,
+      name: "slug",
+      value: `/blog${relativeFilePath}`,
+    })
+  }
+}
 
 exports.onCreateNode = ({node, actions, getNode}) => {
   const { createNodeField } = actions;
@@ -23,16 +45,27 @@ exports.onCreatePage = async ({ page, actions }) => {
   }
 }
 
-exports.createPages = async({graphql, actions}) => {
+exports.createPages = async ({graphql, actions}) => {
   const { createPage } = actions;
   const standardTemplate = path.resolve('./src/templates/layout.js');
   const articleTemplate = path.resolve('./src/templates/article.js');
+  const blogTemplate = path.resolve('./src/templates/blog.js');
+
+
+  function stripTrailingSlash(str) {
+    if(str.substr(-1) === '/') {
+        return str.substr(0, str.length - 1);
+    }
+    return str;
+  }
 
   const result = await graphql(`
     query  {
       allSources: allMdx {
         edges {
           node {
+            id
+            slug
             fields {
               collection
             }
@@ -72,6 +105,10 @@ exports.createPages = async({graphql, actions}) => {
     edge => edge.node.fields.collection === `articles`
   );
 
+  const blogEdges = allEdges.filter(
+    edge => edge.node.fields.collection === `blog`
+  );
+
   pageEdges.forEach((edge) => {
     createPage({
       path: edge.node.meta.slug,
@@ -91,6 +128,16 @@ exports.createPages = async({graphql, actions}) => {
         slug: edge.node.meta.slug,
         previous: edge.previous.fields.collection === `articles` ? edge.previous.meta.slug : null,
         next: edge.next.fields.collection === `articles` ? edge.next.meta.slug : null
+      }
+    });
+  });
+
+  blogEdges.forEach((edge) => {
+    createPage({
+      path: `/blog/${stripTrailingSlash(edge.node.slug)}`,
+      component: blogTemplate,
+      context: {
+        id: edge.node.id
       }
     });
   });

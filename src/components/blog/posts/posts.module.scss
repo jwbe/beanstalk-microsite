@@ -1,0 +1,69 @@
+.Post {
+  margin-bottom: $base-unit * 4;
+}
+
+.FeaturedImage {
+  border-radius: $base-unit / 2;
+  @media (min-width: $breakpoint-sm) {
+    border-radius: $base-unit;
+  }
+}
+
+.Heading {
+  margin-top: $base-unit * 2;
+  margin-bottom: $base-unit * 1;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-family: "Quicksand", sans-serif;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 4;
+    margin-bottom: $base-unit * 2;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.InfoPanel {
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+  }
+}
+
+.Details {
+  @media (min-width: $breakpoint-sm) {
+    flex-grow: 1;
+    max-width: 40rem;
+  }
+}
+
+.Description {
+  margin-bottom: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+}
+
+.Meta {
+  display: flex;
+  color: $secondary;
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+  }
+}
+
+.Author {
+  margin-right: $base-unit;
+}
+
+.Button {
+  margin-left: auto;
+  @media (max-width: $breakpoint-sm) {
+    text-align: right;
+  }
+}
