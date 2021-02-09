@@ -51,6 +51,18 @@
   font-size: $body-font-size;
   line-height: $body-line-height;
   color: $accent-3;
+  h2 {
+    margin-top: $base-unit;
+    margin-bottom: $base-unit * 2;
+    font-weight: 700;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+    @media (min-width: $breakpoint-sm) {
+      margin-bottom: $base-unit * 3;
+      font-size: $headline-font-size;
+      line-height: $headline-line-height;
+    }
+  }
   p {
     margin-bottom: $base-unit * 2;
     @media (min-width: $breakpoint-sm) {
