@@ -18,7 +18,7 @@ export const query = graphql`
             author
             featuredImage {
               childImageSharp {
-                fluid(maxWidth: 640, quality: 80) {
+                fluid(maxWidth: 1280, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }
