@@ -13,7 +13,7 @@ Putting a little money aside over a long time can help build a nice lump sum if 
 
 So what are the five things you need to consider before opening a Junior ISA for your child?
 
-##  **1. Which type of Junior ISA is right for your family?**
+## 1. Which type of Junior ISA is right for your family?
 
 When putting money aside for the future, some people just stick it into a savings account because they don’t want to lose any money. This makes sense but the right decision is a bit more complicated, particularly if you are putting money away for a long time such as with a Junior ISA or a pension.
 
@@ -25,13 +25,13 @@ Unlike saving where your returns are dependent on the interest rate, returns fro
 
 Apart from exceptional circumstances, such as the sad death or terminal illness of a child, withdrawals are not permitted until the child is 18, so you may want to split your child’s “nest-egg” between a cash and a stocks & shares JISA and take advantage of the fact that a child is allowed one of each type.
 
-##  **2. How easy is it to manage?**
+## 2. How easy is it to manage?
 
 We know from speaking with lots families that managing their children’s savings can be both confusing and difficult. You can never find the paperwork and you even have to go into the bank branch to manage it. Why can’t they be more like the mobile banking apps you use for your own savings and investments? 
 
 Well, there is a new breed of Junior ISAs such as Beanstalk which do just this. You can open a Junior ISA in just a couple of minutes on your smartphone. You can manage all your children’s accounts (and your own ISA!), with easy access to all your documents online, and decide how to split contributions between all within the one Beanstalk App. 
 
-##  **3. Do you want to commit to regular payments, or have flexibly in how and when you pay in?**
+## 3. Do you want to commit to regular payments, or have flexibly in how and when you pay in?
 
 Opening a Junior ISA can seem like a big commitment, especially if the provider insists that you have to make a regular contribution every month. 
 
@@ -41,7 +41,7 @@ Beanstalk lets you open an account without making a contribution and then top up
 
 Over half % of Beanstalk JISAs use ad hoc and flexible contributions such as top-ups, roundups and KidStart, so we know this uniquely flexible approach to family saving makes a real difference.
 
-##  **4. Can my child’s grandparents also pay into the Junior ISA?**
+## 4. Can my child’s grandparents also pay into the Junior ISA?
 
 While only the child’s parent or legal guardian can open a Junior ISA, it doesn’t mean they’re the only ones who want to make contributions.  However, unlike Beanstalk, not all providers make it easy for family and friends to pay money in.
 
@@ -49,7 +49,7 @@ Our experience is that grandparents in particular want to help out and the right
 
 So if you’re a grandparent, you’ll need to ask the parent to open the JISA account – and with Beanstalk all they do then is invite you via the Beanstalk app and you can contribute in exactly the same variety of ways. We believe long-term child savings can and should be something the whole family can play a part in; today many Beanstalk JISA accounts are ‘family-sourcing’ contributions!
 
-##  **5. What are the costs?**
+## 5. What are the costs?
 
 Fees can and do vary enormously between Junior ISAs – and even more so between JISAs and any Child Trust Fund (CTF) account your children may already have.
 
