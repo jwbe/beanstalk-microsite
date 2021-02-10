@@ -49,6 +49,11 @@ const Footer = ({
                       </Link>
                     </li>
                     <li>
+                      <Link to="/blog">
+                        Blog
+                      </Link>
+                    </li>
+                    <li>
                       <Link to="/support">
                         Support
                       </Link>
@@ -61,11 +66,6 @@ const Footer = ({
                     <li>
                       <Link to="/contact-us">
                         Contact Us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/blog">
-                        Blog
                       </Link>
                     </li>
                   </ul>
