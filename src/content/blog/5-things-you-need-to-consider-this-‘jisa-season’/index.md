@@ -1,5 +1,5 @@
 ---
-title: " 5 Things You Need To Consider This ‘JISA Season’"
+title: " 5 Things You Need To Consider This JISA Season"
 date: 2021-02-08T17:22:14.201Z
 author: The Beanstalk Team
 featuredImage: beanstalk-5-reasons.png
@@ -53,9 +53,9 @@ So if you’re a grandparent, you’ll need to ask the parent to open the JISA a
 
 Fees can and do vary enormously between Junior ISAs – and even more so between JISAs and any Child Trust Fund (CTF) account your children may already have.
 
-If your child has a CTF (you can locate a missing CTF here), you may be paying as much as 1.5% in fees. This was the ‘fee cap’ imposed by the government back in 2005 when CTFs were introduced. But fast forward to 2021 and many Junior ISAs have much lower fees. This means that children with CTF investments still paying 1.5% could be paying twice as much or more in fees compared to some Junior ISA alternatives.
+If your child has a [CTF](https://beanstalkapp.co.uk/articles/locate-a-missing-ctf), you may be paying as much as 1.5% in fees. This was the ‘fee cap’ imposed by the government back in 2005 when CTFs were introduced. But fast forward to 2021 and many Junior ISAs have much lower fees. This means that children with CTF investments still paying 1.5% could be paying twice as much or more in fees compared to some Junior ISA alternatives.
 
-To see how much your child can save in fees on their own Child Trust Fund, we’ve built a CTF Calculator, a simple online tool that lets you calculate how much they can save in fees simply by transferring an existing Child Trust Fund across to a Junior ISA with Beanstalk. 
+To see how much your child can save in fees on their own Child Trust Fund, we’ve built a [CTF Calculator](https://beanstalkapp.co.uk/ctf-calculator), a simple online tool that lets you calculate how much they can save in fees simply by transferring an existing Child Trust Fund across to a Junior ISA with Beanstalk. 
 
 [Beanstalk](https://beanstalkapp.co.uk/) is a fintech app aimed at helping parents and families build their long-term child savings. The Beanstalk app is available for download for Apple and Android devices.  
 
