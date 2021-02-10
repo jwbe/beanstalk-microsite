@@ -63,6 +63,11 @@ const Footer = ({
                         Contact Us
                       </Link>
                     </li>
+                    <li>
+                      <Link to="/blog">
+                        Blog
+                      </Link>
+                    </li>
                   </ul>
                 </div>
               </div>
