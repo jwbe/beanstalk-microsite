@@ -49,7 +49,7 @@ const Posts = () => {
             }
             return (
               <article className={Theme.Post} key={props.id}>
-                <Link to={`/blog/${props.slug}`}>
+                <Link to={`/blog/${props.path}`}>
                   <Img className={Theme.FeaturedImage} fluid={ props.featuredImage }/>
                 </Link>
                 <header>
