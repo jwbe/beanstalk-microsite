@@ -1,6 +1,7 @@
 ---
 title: Welcome To Beanstalk
 date: 2021-02-08T17:04:18.974Z
+path: welcome-to-beanstalk
 author: Julian - Beanstalk Co-Founder
 featuredImage: welcome-to-beanstalk.png
 description: Find out why we launched Beanstalk and why it's a revolutionary app

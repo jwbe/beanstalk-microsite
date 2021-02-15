@@ -7,7 +7,7 @@ import Theme from './posts.module.scss'
 const Posts = () => {
   const data = useStaticQuery(graphql`
     query {
-      blogPosts: allMdx(filter: {fields: {collection: {eq: "blog"}}, frontmatter: {app: {ne: true}}}) {
+      blogPosts: allMdx(sort: {order: DESC, fields: frontmatter___date} filter: {fields: {collection: {eq: "blog"}}, frontmatter: {app: {ne: true}}}) {
         edges {
           node {
             id
@@ -15,6 +15,7 @@ const Posts = () => {
             frontmatter {
               title
               date(formatString: "MMMM Do YYYY")
+              path
               description
               author
               featuredImage {
@@ -39,6 +40,7 @@ const Posts = () => {
               slug: post.node.slug.substr(0, post.node.slug.length - 1),
               id: post.node.id,
               title: post.node.frontmatter.title,
+              path: post.node.frontmatter.path,
               date: post.node.frontmatter.date,
               description: post.node.frontmatter.description,
               author: post.node.frontmatter.author,
@@ -52,7 +54,7 @@ const Posts = () => {
                 </Link>
                 <header>
                   <h3 className={Theme.Heading}>
-                    <Link to={`/blog/${props.slug}`}>
+                    <Link to={`/blog/${props.path}`}>
                       { props.title }
                     </Link>
                   </h3>
@@ -72,7 +74,7 @@ const Posts = () => {
                     </div>
                   </div>
                   <div className={Theme.Button}>
-                    <Button className={Theme.BackButton} link={`/blog/${props.slug}`} 
+                    <Button className={Theme.BackButton} link={`/blog/${props.path}`} 
                       desktopColour={DESKTOP_COLOURS.WHITE}
                       desktopSize={DESKTOP_SIZES.LARGE}
                       desktopBackground={DESKTOP_BACKGROUNDS.SECONDARY}

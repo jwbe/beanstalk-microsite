@@ -1,6 +1,7 @@
 ---
 title: Are high fees eating into your child’s savings?
 date: 2021-02-15T11:56:09.329Z
+path: are-high-fees-eating-into-your-childs-savings
 author: The Beanstalk Team
 featuredImage: ctf-fees.jpg
 description: "Beanstalk calculates UK’s children could save an amazing £200

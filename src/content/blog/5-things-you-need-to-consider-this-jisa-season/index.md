@@ -1,6 +1,7 @@
 ---
 title: " 5 Things You Need To Consider This JISA Season"
 date: 2021-02-08T17:22:14.201Z
+path: 5-things-you-need-to-consider-this-jisa-season
 author: The Beanstalk Team
 featuredImage: beanstalk-5-reasons.png
 description: We discuss the five things you need to consider before opening a

@@ -14,10 +14,11 @@ collections:
     slug: 'index'
     media_folder: ''
     public_folder: ''
-    path: '{{title}}/index'
-    preview_path: 'blog/{{title}}'
+    path: '{{path}}/index'
+    preview_path: 'blog/{{path}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Path', name: 'path', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }

@@ -13,13 +13,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       basePath: "content/",
       trailingSlash: false
     })
-
-    // Creates new query'able field with name of 'slug'
-    createNodeField({
-      node,
-      name: "slug",
-      value: `/blog${relativeFilePath}`,
-    })
   }
 }
 
@@ -71,6 +64,7 @@ exports.createPages = async ({graphql, actions}) => {
             }
             meta: frontmatter {
               slug
+              path
               priority
             }
           }
@@ -134,7 +128,7 @@ exports.createPages = async ({graphql, actions}) => {
 
   blogEdges.forEach((edge) => {
     createPage({
-      path: `/blog/${stripTrailingSlash(edge.node.slug)}`,
+      path: `/blog/${edge.node.meta.path}`,
       component: blogTemplate,
       context: {
         id: edge.node.id
