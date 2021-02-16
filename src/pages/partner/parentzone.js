@@ -36,21 +36,13 @@ const SignUpPage = () => {
           </>
         }
       >
-        <li>
-          Users must be genuine new, non-duplicate registrations who enter their details on this page and then opens and makes a contribution into a Beanstalk Junior ISA 
-        </li>
-
-        <li>
-          To be eligible for the £5 bonus register with Beanstalk with the same details you enter on this page
-        </li>
-
-        <li>
-          £5 will be paid into every Junior ISA you open and contribute into
-        </li>
-
-        <li>
-          Full Beanstalk T&Cs can be viewed <Link to="/terms-and-conditions-governing-beanstalk">here</Link>. Beanstalk reserve the right to withdraw or amend this offer at any time.
-        </li>
+      <li>Users must be genuine new, non-duplicate registrations who enter their details on this page and then opens and saves into a Beanstalk Junior ISA or ISA.</li>
+      <li>To be eligible for the £5 bonus register with Beanstalk with the same details you enter on this page.</li>
+      <li>£5 will be paid into every Junior ISA you open and contribute into. If an ISA is opened and saved into, £5 will be paid into your KidStart account due to HMRC rules.</li>
+      <li>Bonus will be paid within two weeks of when you make your first contribution into your open Beanstalk account. You have a month after downloading and registering Beanstalk to claim the offer.</li>
+      <li>
+        Full Beanstalk T&Cs can be viewed <Link to="/terms-and-conditions-governing-beanstalk">here</Link>. Beanstalk reserve the right to withdraw or amend this offer at any time.
+      </li>
       </SignUp>
     </>
   )
