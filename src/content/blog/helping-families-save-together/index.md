@@ -2,7 +2,7 @@
 title: Helping families save together for their children’s futures
 path: helping-families-save-together
 date: 2021-02-22T13:49:40.282Z
-author: Julian Robson - Beanstalk Co-founder
+author: Julian - Beanstalk Co-founder
 featuredImage: family_blog.jpg
 description: We look at the breakdown in how families save and invest together
   and how it's not as easy as it should be.
