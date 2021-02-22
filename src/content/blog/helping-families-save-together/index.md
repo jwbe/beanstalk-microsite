@@ -2,7 +2,7 @@
 title: Helping families save together for their children’s futures
 path: helping-families-save-together
 date: 2021-02-22T13:49:40.282Z
-author: Julian Robson - Beanstalk Co-founder
+author: Julian - Beanstalk Co-founder
 featuredImage: family_blog.jpg
 description: We look at the breakdown in how families save and invest together
   and how it's not as easy as it should be.
@@ -22,7 +22,7 @@ And yet when it comes to regularly contributing to their grandchildren’s finan
 I have personal experience: I don’t dare tell my father, but I recently found some 10-year old cheques he had written for the grandchildren but I had forgotten to pay in to their accounts as I needed to go to the bank to do so.
 
 *Last Christmas, grandparents expected to spend just under £104 on each grandchild. On average, grandparents have four grandchildren, so that’s about £416 or an estimated spend of £2.4billion in total, according to research from insurer SunLife.*
-[\[source]](https://www.thisismoney.co.uk/money/pensions/article-8962585/Christmas-shopping-Grandparents-set-spend-104-grandchild.html)
+[(source)](https://www.thisismoney.co.uk/money/pensions/article-8962585/Christmas-shopping-Grandparents-set-spend-104-grandchild.html)
 
 Grandparents want to help out, but financial services providers don’t make this easy with accounts that only accept payments from the parent, paper processes or complex AML checks. Few embrace the App age despite the fact that many grandparents are all too familiar with, for example, Facetiming or WhatsApping with their family.
 
@@ -32,7 +32,7 @@ It simply makes no sense to make child savings and investment accounts so hard t
 
 Families want and need a [different approach](https://www.thetimes.co.uk/article/the-saving-apps-that-give-parents-a-helping-hand-pcsms7r0r) – one that suits their family set-up. Families have lots of interrelated financial needs and so effective family saving requires integrated thinking.
 
-A survey of Beanstalk families has revealed that over a third of accounts with [Junior ISAs](https://beanstalkapp.co.uk/blog/5-things-you-need-to-consider-this-jisa-season) are inviting donors – typically grandparents – to contribute.  This encompasses everything from regular direct debits that are part of a grandparent’s estate planning and wealth transfer right through to ad hoc and flexible contributions such as top-ups, roundups and money back on shopping via KidStart. They use the app to add personal messages to the contributions so the child can be reminded where the money came from in the future.
+A survey of Beanstalk families has revealed that over a third of accounts with [Junior ISAs](https://beanstalkapp.co.uk/blog/5-things-you-need-to-consider-this-jisa-season) are inviting donors – typically grandparents – to contribute.  This encompasses everything from regular direct debits that are part of a grandparent’s estate planning and wealth transfer right through to ad hoc and flexible contributions such as top ups, round ups and money back on shopping via KidStart. They use the app to add personal messages to the contributions so the child can be reminded where the money came from in the future.
 
 *Over a third of Beanstalk account holders are inviting donors – typically grandparents – to contribute.*
 
