@@ -5,7 +5,7 @@ date: 2021-02-15T11:56:09.329Z
 author: The Beanstalk Team
 featuredImage: eating-savings-blog.jpg
 description: "Beanstalk calculates UK’s children could save an amazing £200
-  million in fees by switching their Child Trust Funds "
+  million in fees by switching their Child Trust Funds. "
 ---
 We’ve recently been looking into fees on child trust funds as we knew that many people could save money by switching their child’s CTF to the Beanstalk JISA, but we did not know quite how much. The answer: collectively the savings could be £200 million! 
 
