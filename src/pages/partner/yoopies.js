@@ -3,7 +3,7 @@ import SignUp from '../../components/sign-up/sign-up'
 import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 
-import Logo from './images/parent-zone-logo.png'
+import Logo from './images/yoopies-logo.png'
 
 const SignUpPage = () => {
   return (
