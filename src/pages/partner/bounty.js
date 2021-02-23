@@ -45,7 +45,7 @@ const SignUpPage = () => {
 
         <li>Bonus will be paid within two weeks of when you make your first contribution into your open Beanstalk account</li>
 
-        <li>Offer available until 23:59 28th February 2021.</li>
+        <li>Offer available until 23:59 14th March 2021.</li>
 
         <li>
           Full Beanstalk T&Cs can be viewed <Link to="/terms-and-conditions-governing-beanstalk">here</Link>. Beanstalk reserve the right to withdraw or amend this offer at any time.

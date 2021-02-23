@@ -32,7 +32,7 @@ const SignUpPage = () => {
         }
         quote={
           <>
-            We’re delighted to have partnered with Beanstalk to help parents save for their children. We love their app and the tools you can use to make saving easy. Plus, Beanstalk are giving ParentZone mums and dads £5 for every Junior ISA and ISA they open and save into. <strong> - ParentZone</strong>
+            We’re delighted to have partnered with Beanstalk to help parents save for their children. We love their app and the tools you can use to make saving easy. Plus, Beanstalk are giving Yoopies mums and dads £5 for every Junior ISA and ISA they open and save into. <strong> - Yoopies</strong>
           </>
         }
       >
