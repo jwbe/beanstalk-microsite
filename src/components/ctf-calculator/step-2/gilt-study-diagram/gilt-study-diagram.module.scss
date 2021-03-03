@@ -15,6 +15,7 @@
     line-height: $body-line-height;
     font-family: 'Quicksand', sans-serif;
     @media (min-width: $breakpoint-sm) {
+      text-align: center;
       margin-bottom: $base-unit * 4;
       font-size: $title-font-size;
       line-height: $title-line-height;

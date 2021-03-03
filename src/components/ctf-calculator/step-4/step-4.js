@@ -150,6 +150,10 @@ class Step4 extends Component {
           Recalculate
         </div>
 
+        <div className={StepTheme.CtaButton}>
+          <CtaButton link={'/from-ctf-calculator-shares'}/>
+        </div>
+
         <div className={StepTheme.CentreInlined}>
           <Link to={'/from-ctf-calculator-shares'}>
             <h2 className={`${StepTheme.Heading} ${StepTheme.KeyHeading}`}>Switch your account now</h2>

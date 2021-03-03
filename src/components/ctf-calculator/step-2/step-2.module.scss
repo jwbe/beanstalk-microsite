@@ -15,9 +15,9 @@
     line-height: $title-line-height;
   }
   &___Last {
-    margin-bottom: $base-unit * 5;
+    margin-bottom: $base-unit * 3;
     @media (min-width: $breakpoint-sm) {
-      margin-bottom: $base-unit * 6;
+      margin-bottom: $base-unit * 4;
     }
   }
 }
