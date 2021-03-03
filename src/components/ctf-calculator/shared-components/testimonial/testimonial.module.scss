@@ -1,0 +1,33 @@
+.Container {
+  justify-content: center;
+  display: flex;
+}
+
+.Thumbnail {
+  flex: none;
+  margin-right: $base-unit * 2;
+  width: $base-unit * 8;
+  height: $base-unit * 8;
+  background-color: $accent-3;
+  box-shadow: $shadow-level-2;
+  background-image: url('./images/thumbnail.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 999rem;
+}
+
+.Content {
+  font-size: $caption-font-size;
+  line-height: $caption-line-height;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+  }
+  p {
+    margin-bottom: $base-unit;
+  }
+}
+
+.Author {
+  font-weight: 700;
+}
