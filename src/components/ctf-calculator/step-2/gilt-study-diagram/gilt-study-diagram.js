@@ -4,7 +4,7 @@ import GiltStudyDiagramTheme from './gilt-study-diagram.module.scss';
 const GiltStudyDiagram = () => (
   <div className={GiltStudyDiagramTheme.GiltStudyDiagram}>
     <h3 className={GiltStudyDiagramTheme.GiltStudyDiagram_Heading}>
-      Returns over 50 years
+      Over the long term, shares can outperform cash
     </h3>
     <div className={`${GiltStudyDiagramTheme.GiltStudyDiagram_Bar} ${GiltStudyDiagramTheme.GiltStudyDiagram_Bar___Shares}`}>
       UK Shares 4.7%
@@ -13,7 +13,7 @@ const GiltStudyDiagram = () => (
       Cash 1.1%
     </div>
     <div className={GiltStudyDiagramTheme.GiltStudyDiagram_Bar_Caption}>
-      Source: Barclays equity gilt study 2019
+      Source: Barclays equity gilt study 2019, 50 year returns
     </div>
   </div>
 );

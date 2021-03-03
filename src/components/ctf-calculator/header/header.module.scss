@@ -2,14 +2,14 @@
   color: $secondary;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
-  text-align: center;
   @media (max-width: $breakpoint-sm - .0625em) {
-    margin-bottom: $base-unit * 5;
+    margin-bottom: $base-unit * 3;
     font-size: $subheader-font-size;
     line-height: $subheader-line-height;
   }
   @media (min-width: $breakpoint-sm) {
-    margin-bottom: $base-unit * 9;
+    text-align: center;
+    margin-bottom: $base-unit * 4;
     font-size: $headline-font-size;
     line-height: $headline-line-height;
   }
@@ -18,59 +18,43 @@
 .SuperHeader {
   margin-top: $base-unit * 4;
   margin-bottom: $base-unit * 4;
-  @media (max-width: $breakpoint-sm - .0625em) {
-    padding-right: $base-unit * 2;
-    padding-left: $base-unit * 2;
-  }
   @media (min-width: $breakpoint-sm) {
     margin-top: $base-unit * 7;
     margin-bottom: $base-unit * 8;
+  }
+  p {
+    margin-bottom: $base-unit * 2;
   }
 }
 
 .SuperHeading {
   margin-bottom: $base-unit * 2;
   color: $accent-3;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-weight: 700;
+  color: $primary;
   @media (min-width: $breakpoint-sm) {
-    padding-right: $base-unit * 6;
-    padding-left: $base-unit * 6;
+    text-align: center;
+    margin-bottom: $base-unit * 3;
+    font-size: $display-font-size;
+    line-height: $display-line-height;
   }
-  &:nth-child(1) {
-    font-family: 'Quicksand', sans-serif;
+}
+
+.SubSuperHeading {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  @media (min-width: $breakpoint-sm) {
     font-size: $title-font-size;
     line-height: $title-line-height;
-    font-weight: 700;
-    color: $primary;
-    text-align: center;
-    @media (min-width: $breakpoint-sm) {
-      font-size: $display-font-size;
-      line-height: $display-line-height;
-    }
-  }
-  &:nth-child(2) {
-    font-size: $body-font-size;
-    line-height: $body-line-height;
-    @media (min-width: $breakpoint-sm) {
-      font-size: $title-font-size;
-      line-height: $title-line-height;
-    }
-  }
-  &:nth-child(3) {
-    margin-bottom: 0;
-    font-size: $caption-font-size;
-    line-height: $caption-line-height;
-    @media (min-width: $breakpoint-sm) {
-      font-size: $subheader-font-size;
-      line-height: $subheader-line-height;
-    }
-  }
-  & > {
-    @media (min-width: $breakpoint-sm) {
-      margin-bottom: $base-unit * 3;
-    }
   }
 }
 
 .Badges {
-  margin-top: $base-unit * 3;
+  margin-top: $base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 6;
+  }
 }

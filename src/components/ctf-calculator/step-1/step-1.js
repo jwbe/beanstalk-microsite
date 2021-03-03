@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Question from '../shared-components/question/question';
 import SmallButton from '../shared-components/small-button/small-button';
+import Testimonial from '../shared-components/testimonial/testimonial';
 
 import StepTheme from './step-1.module.scss';
 
@@ -26,6 +27,8 @@ class Step1 extends Component {
             Stakeholder / Equity
           </SmallButton>
         </div>
+
+        <Testimonial/>
       </>
     )
   }

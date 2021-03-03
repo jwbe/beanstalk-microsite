@@ -1,6 +1,10 @@
 .Buttons {
   justify-content: center;
   display: flex;
+  margin-bottom: $base-unit * 4;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 5;
+  }
   button {
     &:first-of-type {
       margin-right: $base-unit;

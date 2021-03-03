@@ -5,12 +5,12 @@ $iron: #e3e3e4;
   align-items: center;
   justify-content: space-between;
   display: flex;
-  //margin-top: $base-unit * 4;
+  margin-top: $base-unit * 4;
   margin-bottom: $base-unit * 3;
   height: $base-unit * 2;
   @media (min-width: $breakpoint-sm) {
-    //margin-top: $base-unit * 11;
-    margin-bottom: $base-unit * 9;
+    margin-top: $base-unit * 7;
+    margin-bottom: $base-unit * 5;
   }
   &::before {
     position: absolute;
@@ -38,6 +38,9 @@ $iron: #e3e3e4;
         border-radius: 100%;
         content: '';
       }
+    }
+    &___HandlerAttached {
+      cursor: pointer;
     }
     &___Inactive {
       border: $base-unit / 4 solid $iron;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 import Slider from 'react-slider';
 import Data from '../data.js';
 import numberWithCommas from '../helpers';
@@ -8,7 +9,7 @@ import StepTheme from './step-4.module.scss';
 import Graph from './graph/graph';
 import Dashboard from './dashboard/dashboard';
 import CtaButton from '../shared-components/cta-button/cta-button';
-import Badges from '../../shared/badges/badges';
+import Badges from '../shared-components/badges/badges';
 
 const _calculateProviderCost = ({ annualPercentageCharge, optionalActualAnnualPercentageCharge }, { MAX_CHILD_AGE }, { ctfValue, childAge }) => {
   annualPercentageCharge = typeof annualPercentageCharge === 'string' ? optionalActualAnnualPercentageCharge : annualPercentageCharge;
@@ -145,9 +146,19 @@ class Step4 extends Component {
         secondAdditionalGraphBarAnnualPercentageLabelCommentIcon={secondAdditionalGraphBarAnnualPercentageLabelCommentIcon}
         formData={formData}/>
 
-        <h2 className={StepTheme.Heading}>Switch your account now</h2>
+        <div className={StepTheme.Recalculate} onClick={() => {this.props.goToStep(1)}}>
+          Recalculate
+        </div>
+
+        <div className={StepTheme.CentreInlined}>
+          <Link to={'/from-ctf-calculator-shares'}>
+            <h2 className={`${StepTheme.Heading} ${StepTheme.KeyHeading}`}>Switch your account now</h2>
+          </Link>
+        </div>
 
         <Badges/>
+
+
 
         <div className={StepTheme.Footnotes}>
           {footNotes.map((note, index) => <div className={StepTheme.Footnotes_Footnote} key={index}>{NOTE_SYMBOLS[index]} {note}</div>)}

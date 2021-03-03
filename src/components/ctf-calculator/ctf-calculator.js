@@ -68,7 +68,8 @@ class CtfCalculator extends Component {
       <>
         <div className={CtfCalculatorTheme.Container}>
           <Header
-            currentStep={this.state.currentStep}/>
+            currentStep={this.state.currentStep}
+            goToStep={this._goToStep}/>
           <Step1 
             currentStep={this.state.currentStep} 
             goToStep={this._goToStep}/>

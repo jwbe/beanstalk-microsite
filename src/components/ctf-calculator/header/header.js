@@ -2,27 +2,31 @@ import React from 'react';
 import Progress from './progress/progress';
 import HeaderTheme from './header.module.scss';
 
-import Badges from '../../shared/badges/badges';
+import Badges from '../shared-components/badges/badges';
 
-const Header = ({ currentStep }) => {
+const Header = (props) => {
+  let { currentStep, goToStep } = props;
   return (
     <>
-      <header className={HeaderTheme.SuperHeader}>
-        <h1 className={HeaderTheme.SuperHeading}>
-          Transfer your CTF to the family app that invests in your kids
-        </h1>
-        <p className={HeaderTheme.SuperHeading}>
-          The easiest way to save on investment fees, transferring your child trust fund to Beanstalk helps your family work together to build a pot of money, giving your kids the best possible launch into adult life.
-        </p>
-        <p className={HeaderTheme.SuperHeading}>
-          No minimum or regular contribution required, you or anyone you invite can contribute whenever you want, and even opt to round-up your purchases to invest little and often.
-        </p>
-        <div className={HeaderTheme.Badges}>
-          <Badges/>
-        </div>
-      </header>
+      <Progress props={{ currentStep, goToStep }}/>
+      {
+        currentStep === 1 &&
+        <header className={HeaderTheme.SuperHeader}>
+          <h1 className={HeaderTheme.SuperHeading}>
+            Transfer your child's CTF/JISA and save
+          </h1>
+          <p className={HeaderTheme.SubSuperHeading}>
+            Save on investment fees by transferring your child trust fund to Beanstalk. It just <strong>takes a minute</strong> to open an account.
+          </p>
+          <p className={HeaderTheme.SubSuperHeading}>
+            The app helps your family work together to build a pot of money, giving your kids the best possible launch into adult life. You or anyone you invite can contribute whenever you want, and you can see immediately how much your kids have.
+          </p>
+          <div className={HeaderTheme.Badges}>
+            <Badges/>
+          </div>
+        </header>
+      }
 
-      <Progress currentStep={{ currentStep }}/>
       <h2 className={HeaderTheme.Heading}>
         See how much you could save in fees by transferring your child's Child Trust Fund or Junior ISA to Beanstalk
       </h2>

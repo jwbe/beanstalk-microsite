@@ -128,6 +128,7 @@ class Step3 extends Component {
           handler={() => {this.props.goToStep(4)}}>
             Next
           </SmallButton>
+
         </div>
       </>
     )

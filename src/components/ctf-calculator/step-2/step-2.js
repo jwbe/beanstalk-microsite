@@ -25,14 +25,16 @@ class Step2 extends Component {
           <GiltStudyDiagram/>
 
           <p className={StepTheme.Paragraph}>
-            Evidence suggests that, over the long term, stocks and shares tend to outperform cash as the returns can compensate for the ups and downs.
+            Beanstalk is an app based stocks and shares JISA that allows you to choose between a money fund and a shares fund.
           </p>
 
-          <p className={StepTheme.Paragraph}>
-            For example, the Barclays Equity Gilt Study in 2019 showed that over 50 years, UK shares would have outperformed cash by over 4x.
-          </p>
         </div>
-        <CtaButton/>
+        <CtaButton link={'/from-ctf-calculator-cash'}/>
+
+        <div className={StepTheme.Recalculate} onClick={() => {this.props.goToStep(3)}}>
+          Go to shares calculator
+        </div>
+
       </>
     )
   }
