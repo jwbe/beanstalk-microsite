@@ -17,7 +17,7 @@ const AppDownloadRedirect = (link) => {
     }
 
     function redirectToAddress() {
-      let target = target ? target : `https://beanstalkapp.co.uk`
+      let target = link ? link : `https://beanstalkapp.co.uk`
       setTimeout(function() {
         window.location.replace(target);
       }, 500)
