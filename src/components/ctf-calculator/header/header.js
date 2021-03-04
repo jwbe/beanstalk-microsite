@@ -8,7 +8,6 @@ const Header = (props) => {
   let { currentStep, goToStep } = props;
   return (
     <>
-      <Progress props={{ currentStep, goToStep }}/>
       {
         currentStep === 1 &&
         <header className={HeaderTheme.SuperHeader}>
@@ -26,6 +25,8 @@ const Header = (props) => {
           </div>
         </header>
       }
+
+      <Progress props={{ currentStep, goToStep }}/>
 
       <h2 className={HeaderTheme.Heading}>
         See how much you could save in fees by transferring your child's Child Trust Fund or Junior ISA to Beanstalk

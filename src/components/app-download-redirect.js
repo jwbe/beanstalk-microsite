@@ -1,7 +1,8 @@
 import React from 'react';
 import { isIOS, isAndroid, isBrowser } from 'react-device-detect';
 
-const AppDownloadRedirect = () => {
+const AppDownloadRedirect = (link) => {
+  const EVENT_CODE = link ? link : `homepage`
   if (typeof window !== `undefined`) {
     function redirectToAppleStore() {
       setTimeout(function() {
@@ -15,15 +16,16 @@ const AppDownloadRedirect = () => {
       }, 500)
     }
 
-    function redirectToHomepage() {
+    function redirectToAddress() {
+      let target = target ? target : `https://beanstalkapp.co.uk`
       setTimeout(function() {
-        window.location.replace(`https://beanstalkapp.co.uk`);
+        window.location.replace(target);
       }, 500)
     }
 
     if(isBrowser){
-      window.gtag('event', `redirected_to_homepage from ${window.location.pathname}`, {
-        'event_callback': redirectToHomepage
+      window.gtag('event', `redirected_to_${EVENT_CODE} from ${window.location.pathname}`, {
+        'event_callback': redirectToAddress
       });
     }
 

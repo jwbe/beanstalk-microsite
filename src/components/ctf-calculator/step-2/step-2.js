@@ -25,14 +25,14 @@ class Step2 extends Component {
           <GiltStudyDiagram/>
 
           <p className={StepTheme.Paragraph}>
-            Beanstalk is an app based stocks and shares JISA that allows you to choose between a money fund and a shares fund.
+            Beanstalk is a unique app based stocks and shares JISA that allows you to choose between a cash fund and a shares fund.
           </p>
 
         </div>
         <CtaButton link={'/from-ctf-calculator-cash'}/>
 
-        <div className={StepTheme.Recalculate} onClick={() => {this.props.goToStep(3)}}>
-          Go to shares calculator
+        <div className={StepTheme.Recalculate} onClick={() => {this.props.goToStep(1)}}>
+          Recalculate
         </div>
 
       </>

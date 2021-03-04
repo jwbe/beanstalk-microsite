@@ -1,9 +1,9 @@
 .Buttons {
   justify-content: center;
   display: flex;
-  margin-bottom: $base-unit * 4;
+  margin-bottom: $base-unit * 10;
   @media (min-width: $breakpoint-sm) {
-    margin-bottom: $base-unit * 5;
+    margin-bottom: $base-unit * 14;
   }
   button {
     &:first-of-type {

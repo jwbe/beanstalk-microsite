@@ -30,13 +30,15 @@
 .SuperHeading {
   margin-bottom: $base-unit * 2;
   color: $accent-3;
+  text-align: center;
   font-family: 'Quicksand', sans-serif;
   font-size: $title-font-size;
   line-height: $title-line-height;
   font-weight: 700;
   color: $primary;
   @media (min-width: $breakpoint-sm) {
-    text-align: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
     margin-bottom: $base-unit * 3;
     font-size: $display-font-size;
     line-height: $display-line-height;
@@ -47,8 +49,18 @@
   font-size: $body-font-size;
   line-height: $body-line-height;
   @media (min-width: $breakpoint-sm) {
+    padding-right: 2rem;
+    padding-left: 2rem;
     font-size: $title-font-size;
     line-height: $title-line-height;
+  }
+  &:last-of-type {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+    }
   }
 }
 
