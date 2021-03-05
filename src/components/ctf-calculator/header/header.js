@@ -29,7 +29,7 @@ const Header = (props) => {
       <Progress props={{ currentStep, goToStep }}/>
 
       <h2 className={HeaderTheme.Heading}>
-        See how much you could save in fees by transferring your child's Child Trust Fund or Junior ISA to Beanstalk
+        See how much you could save in fees
       </h2>
     </>
   )
