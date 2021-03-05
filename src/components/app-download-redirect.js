@@ -2,7 +2,6 @@ import React from 'react';
 import { isIOS, isAndroid, isBrowser } from 'react-device-detect';
 
 const AppDownloadRedirect = ({ link }) => {
-
   const EVENT_CODE = link ? link : `homepage`
   if (typeof window !== `undefined`) {
     function redirectToAppleStore() {
@@ -25,7 +24,7 @@ const AppDownloadRedirect = ({ link }) => {
     }
 
     if(isBrowser){
-      window.gtag('event', `redirected_to_${URL} from ${window.location.pathname}`, {
+      window.gtag('event', `redirected_to_${EVENT_CODE} from ${window.location.pathname}`, {
         'event_callback': redirectToAddress
       });
     }
@@ -42,6 +41,7 @@ const AppDownloadRedirect = ({ link }) => {
       });
     }
   }
+  return <></>
 } 
 
 export default AppDownloadRedirect;
