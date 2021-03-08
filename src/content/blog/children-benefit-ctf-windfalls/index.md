@@ -1,5 +1,6 @@
 ---
-title: Children turning 18 are seeing the benefits of their CTF windfalls
+title: Children turning 18 are seeing the benefits of their CTF windfalls - make
+  sure your kids doesn't miss out!
 path: children-benefit-ctf-windfalls
 date: 2021-03-08T11:31:22.878Z
 author: Julian - Beanstalk Co-founder
