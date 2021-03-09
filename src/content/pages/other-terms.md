@@ -8,9 +8,9 @@ noSitemap: true
 
 ## Beanstalk Referral programme terms and conditions
 
-Your friends must register with Beanstalk before 15th April 2021 and apply for an account before 18th April to be eligible for the £10 referral offer.
-
 The following general terms apply to refer a friend incentive programmes offered by Beanstalk. The details of the incentive programme on offer from time to time and any specific terms relating to the programme will be outlined on the Beanstalk website, app and/or email at that time.
+
+* Your friends must register with Beanstalk before 15th April 2021 and apply for an account before 18th April to be eligible for the £10 referral offer.
 
 * Participants must use their unique refer link or the refer tool on the Beanstalk app to refer friends. Beanstalk tracks referrals by matching the email address entered on the refer tool or refer link page with new registrants on the app. Unless otherwise specified, referrals made by other means or where the referred person uses a different email to join Beanstalk will not be tracked and will not be eligible for the incentive.
 
