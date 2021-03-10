@@ -25,8 +25,8 @@ module.exports = {
         link: '/features'
       },
       {
-        name: 'About',
-        link: '/about-beanstalk'
+        name: 'Blog',
+        link: '/blog'
       },
       {
         name: 'Switch & Save',
