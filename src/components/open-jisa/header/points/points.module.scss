@@ -1,0 +1,6 @@
+.Points {
+  margin-bottom: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 7;
+  }
+}
