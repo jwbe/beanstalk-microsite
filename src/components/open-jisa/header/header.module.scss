@@ -1,0 +1,37 @@
+.Container {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+
+.Heading {
+  margin-top: $base-unit * 3;
+  margin-bottom: $base-unit * 2;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $headline-font-size;
+  line-height: $headline-line-height;
+  font-weight: 700;
+  color: $secondary;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 6;
+  }
+}
+
+.Subheading {
+  margin-top: 0;
+  margin-bottom: $base-unit * 4;
+  color: $accent-3;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+}
+
+.SecondSubheading {
+  margin-top: 0;
+  margin-bottom: $base-unit * 4;
+  font-family: 'Quicksand', sans-serif;
+  color: $secondary;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+  font-weight: 700;
+}

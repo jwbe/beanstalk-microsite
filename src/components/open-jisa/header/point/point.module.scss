@@ -1,0 +1,32 @@
+.Container {
+  align-items: center;
+  display: flex;
+  margin-bottom: $base-unit * 2;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.Icon {
+  flex: none;
+  margin-right: $base-unit * 2;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: $base-unit * 5;
+  height: $base-unit * 5;
+  background-color: $primary;
+  border-radius: 100%;
+  background-image: url('./images/tick.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  @media (min-width: $breakpoint-sm) {
+    margin-right: $base-unit * 3;
+  }
+}
+
+.Content {
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  text-align: left;
+}

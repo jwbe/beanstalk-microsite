@@ -1,0 +1,27 @@
+.Container {
+  text-align: center;
+  color: $black;
+  font-weight: 700;
+}
+
+.Header {
+  margin-bottom: $base-unit;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+}
+
+.MainResult {
+  margin-bottom: $base-unit;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+}
+
+.SecondaryResult {
+  margin-bottom: $base-unit * 3;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+}
+
+.Highlight {
+  color: $secondary;
+}
