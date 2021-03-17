@@ -78,11 +78,12 @@ const DesignedForGrowth = () => {
               Choose from two funds
             </h2>
             <p className={styles.TextBlock_Paragraph}>
-              Use our slider to choose from two funds: a cash fund (Legal & General Cash Trust fund) which aims to provide returns in line with money market rates and a shares fund (Fidelity Global Index fund) which aims to track the performance of global stock markets and therefore large companies such as Amazon, Facebook, Google and Johnson & Johnson.
+              Use our slider to choose from two funds: a cash fund (<a href="/docs/LG-Cash-Trust-KIID.pdf" target="_blank" rel="noopener noreferrer">Legal & General Cash Trust fund</a>) which aims to provide returns in line with money market rates and a shares fund (<a href="/docs/Fidelity-Index-World-KIID.pdf" target="_blank" rel="noopener noreferrer">Fidelity Global Index fund</a>) which aims to track the performance of global stock markets and therefore large companies such as Amazon, Facebook, Google and Johnson & Johnson.
             </p>
           </div>
         </article>
       </section>
+      
 
     </>
   );

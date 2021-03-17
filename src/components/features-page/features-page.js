@@ -352,13 +352,13 @@ const FeaturesPage = () => {
                   <img src={secondaryTickIcon} width="16" height="12" alt="Tick icon"/>
                 </div>
                 <div className={`${Points.Point_Content}`}>
-                  Low cost index tracker funds from Fidelity and L&G so less taken away in fees
+                  Low cost index tracker funds from <a href="/docs/Fidelity-Index-World-KIID.pdf" target="_blank" rel="noopener noreferrer">Fidelity</a> and <a href="/docs/LG-Cash-Trust-KIID.pdf" target="_blank" rel="noopener noreferrer">L&G</a> so less taken away in fees
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
+      </div>      
 
       <div className={Layout.Sizer}>
         <section>
