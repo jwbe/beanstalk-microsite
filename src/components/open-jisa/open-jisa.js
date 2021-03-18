@@ -5,8 +5,11 @@ import Header from './header/header';
 import Results from './results/results';
 import Theme from './open-jisa.module.scss';
 import SliderTheme from './slider.module.scss';
+import Checkbox from './checkbox/checkbox';
+import { usePopper } from 'react-popper';
 
 const OpenJisa = () => {
+  const ROUND_UP_AMOUNT = 6;
   const GRAPH = null;
   const CASH_GROWTH = 0.0414;
   const SHARE_GROWTH = 0.366;
@@ -29,7 +32,8 @@ const OpenJisa = () => {
     allocation: 60,
     monthlyContribution: 50,
     childAge: 5,
-    upFrontContribution: 50
+    upFrontContribution: 50,
+    roundUp: true
   }
 
   const [calculatorResults, setCalculatorResults] = useState(initialCalculatorResults);
@@ -49,7 +53,8 @@ const OpenJisa = () => {
     return amount;
   }
 
-  const recalculateStackGraphData = (initialDepth, monthDepth, KidStartMonthDepth, cashPercentage, numberOfMonths) => {
+  const recalculateStackGraphData = (initialDepth, monthDepth, KidStartMonthDepth, cashPercentage, numberOfMonths, KidStartRoundUps) => {
+    let KidStartRoundUpsTotal = KidStartRoundUps ? numberOfMonths * (ROUND_UP_AMOUNT * 4) : null;
     let sharePercentage = 1 - cashPercentage;
     let cashGrowthRate = CASH_GROWTH / 100;
     let shareGrowthRate = SHARE_GROWTH / 100;
@@ -63,7 +68,7 @@ const OpenJisa = () => {
     let KidStartCashAmount = calculateFutureValue(KidStartMonthDepth, numberOfMonths, cashPercentage, cashGrowthRate);
     let KidStartShareAmount = calculateFutureValue(KidStartMonthDepth, numberOfMonths, sharePercentage, shareGrowthRate);
 
-    let total = Math.round(cashAmount + shareAmount + cashAmountFixed + shareAmountFixed);
+    let total = Math.round(cashAmount + shareAmount + cashAmountFixed + shareAmountFixed + KidStartRoundUpsTotal);
     let KidStartTotal = Math.round(KidStartCashAmount + KidStartShareAmount);
 
     let series = [];
@@ -78,22 +83,23 @@ const OpenJisa = () => {
   const recalculateData = () => {
     let data = null;
 
-    data = recalculateStackGraphData(calculatorResults.upFrontContribution, calculatorResults.monthlyContribution, 2.5, 1 - (calculatorResults.allocation / 100), (216 - (calculatorResults.childAge * 12)));
+    data = recalculateStackGraphData(calculatorResults.upFrontContribution, calculatorResults.monthlyContribution, 2.5, 1 - (calculatorResults.allocation / 100), (216 - (calculatorResults.childAge * 12)), calculatorResults.roundUp);
     return data;
   }
 
   const calculateStackMaxData = () => {
-    let data = recalculateStackGraphData(calculatorResults.upFrontContribution, calculatorResults.monthlyContribution, 2.5, 0, (216 - (calculatorResults.childAge * 12)));
+    let data = recalculateStackGraphData(calculatorResults.upFrontContribution, calculatorResults.monthlyContribution, 2.5, 0, (216 - (calculatorResults.childAge * 12)), calculatorResults.roundUp);
 
     return data[0][0] + data[1][0]
   }
 
   const graphEventListener = {
     draw: function(event) {
+
       console.log(event, 'graphEventListener event')
       if (event.type === "bar") {
         if (event.seriesIndex === 0) {
-          event.element._node.textContent = "From You";
+          event.element._node.createTextNode = "From You";
           event.element.attr({
             style: "stroke:#32b67a;"
           });
@@ -126,6 +132,12 @@ const OpenJisa = () => {
   const updateUpFrontContribution = (value) => {
     let upFrontContribution = value;
     setCalculatorResults({ ...calculatorResults, upFrontContribution: upFrontContribution })
+  }
+
+  const updateRoundUpPurchases = (event) => {
+    let target = event.target;
+    let value = target.checked;
+    setCalculatorResults({ ...calculatorResults, roundUp: value})
   }
 
   const GRAPH_DATA = {
@@ -188,7 +200,7 @@ const OpenJisa = () => {
 
             <div className={SliderTheme.Slider}>
               <div className={SliderTheme.Slider_Heading}>
-                Up front contribution
+                Will you make an up-front contribution?
               </div>
               <div className={SliderTheme.Slider_InputAndFeedbackWrapper}>
                 <Slider
@@ -211,17 +223,33 @@ const OpenJisa = () => {
               </div>
             </div>
 
+            <div>
+              <div className={SliderTheme.Slider_Heading}>
+                Will you round up your purchases?
+              </div>
+              <div className={Theme.RoundUp}>
+                <Checkbox {...{ updateRoundUpPurchases: updateRoundUpPurchases, checked: calculatorResults.roundUp }}/>
+                <div className={SliderTheme.Slider_Feedback___RoundUp}>
+                  <div className={SliderTheme.Slider_Feedback}>
+                    {
+                      calculatorResults.roundUp ? `Yes` : `No`
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className={SliderTheme.Slider}>
               <div className={`${SliderTheme.Slider_Heading} ${SliderTheme.Slider_Heading___Allocation}`}>
                 How do you want your savings split?
               </div>
 
               <div className={SliderTheme.AllocationHeader}>
-                <span className={SliderTheme.AllocationHeader_Label}>Cash Fund</span>
+                <div className={SliderTheme.AllocationHeader_Label}>Cash Fund<a className={Theme.InformationIcon}></a></div>
                 <div className={SliderTheme.Slider_Feedback}>
                   { <><span>{100 - calculatorResults.allocation}%</span><span> </span><span>{calculatorResults.allocation}%</span></> }
                 </div>
-                <span className={SliderTheme.AllocationHeader_Label}>Shares Fund</span>
+                <div className={SliderTheme.AllocationHeader_Label}>Shares Fund<a className={Theme.InformationIcon}></a></div>
               </div>
 
               <div className={SliderTheme.Slider_InputAndFeedbackWrapper}>
@@ -251,6 +279,9 @@ const OpenJisa = () => {
         </div>
       </div>
 
+      <p className={Theme.Note}>
+        Note: calculation assumes 5%pa growth in shares fund and 1%pa for cash fund less Beanstalk costs. KidStart assumes £3 earned per child per month, round ups £6 per child per week
+      </p>
 
     </>
   )

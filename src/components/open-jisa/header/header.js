@@ -9,25 +9,22 @@ const Header = () => {
       <h1 className={Theme.Heading}>
         Open a Beanstalk account for your child
       </h1>
-      <h2 className={Theme.Subheading}>
-        One of the easiest ways to build a nest egg for their future
-      </h2>
 
       <Points>
         <Point>
-          Free top-ups from KidStart Savings
+          All the family can easily contribute
         </Point>
         <Point>
-          No commitments - top up when you want
+          No contribution required to open account
         </Point>
         <Point>
-          Invite grandparents to help save
+          Packed with tools: round ups, KidStart and more
         </Point>
       </Points>
 
 
       <h3 className={Theme.SecondSubheading}>
-        See what your child's Beanstalk account might look like
+        See what your child's Beanstalk account could look like
       </h3>
 
     </div>

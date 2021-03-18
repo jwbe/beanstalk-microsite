@@ -10,3 +10,31 @@
     float: left;
   }
 }
+
+.RoundUp {
+  display: flex;
+  margin-bottom: $base-unit * 3;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 5;
+  }
+}
+
+.Note {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  max-width: 38.75rem;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit * 6;
+  }
+}
+
+.InformationIcon {
+  margin-top: $base-unit / 4;
+  background-image: url('./images/information-icon.svg');
+  background-repeat: no-repeat;
+  width: $base-unit * 2;
+  height: $base-unit * 2;
+}

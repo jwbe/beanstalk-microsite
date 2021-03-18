@@ -21,7 +21,7 @@ const Results = (props) => {
         </div>
 
         <div className={Theme.SecondaryResult}>
-          <span className={Theme.Highlight}>
+          inc <span className={Theme.Highlight}>
             { new Intl.NumberFormat('en-UK', {
               currency: "GBP",
               style: "currency",

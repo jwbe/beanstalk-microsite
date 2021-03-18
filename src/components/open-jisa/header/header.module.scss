@@ -6,32 +6,43 @@
 }
 
 .Heading {
-  margin-top: $base-unit * 3;
-  margin-bottom: $base-unit * 2;
+  margin-top: $base-unit * 4;
+  margin-bottom: $base-unit * 3;
   font-family: 'Quicksand', sans-serif;
-  font-size: $headline-font-size;
-  line-height: $headline-line-height;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
   font-weight: 700;
   color: $secondary;
   @media (min-width: $breakpoint-sm) {
     margin-top: $base-unit * 6;
+    margin-bottom: $base-unit * 4;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
   }
 }
 
 .Subheading {
   margin-top: 0;
-  margin-bottom: $base-unit * 4;
+  margin-bottom: $base-unit * 3;
   color: $accent-3;
-  font-size: $title-font-size;
-  line-height: $title-line-height;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
 }
 
 .SecondSubheading {
   margin-top: 0;
-  margin-bottom: $base-unit * 4;
+  margin-bottom: $base-unit * 3;
   font-family: 'Quicksand', sans-serif;
   color: $secondary;
-  font-size: $title-font-size;
-  line-height: $title-line-height;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
   font-weight: 700;
+  @media (min-width: $breakpoint-sm) {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
 }
