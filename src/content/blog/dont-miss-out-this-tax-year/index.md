@@ -9,9 +9,11 @@ description: "We look at the things savers and investors can consider before 5
   April to make the most of their money. But the one thing that ties them all
   together is the mantra “take advantage of your tax-free allowances”.  "
 ---
-1. Think long-term – what is likely to deliver the best return between now and the child’s 18th birthday?
-2. Cash is not necessarily ‘risk free’ – low interest rates could mean cash savings will be worth less in 18 years simply because of inflation
-3. Do something! You don’t have to commit to regular or minimum contributions. Roundups, cash-back, other family members can all help make a real difference to the child’s financial headstart
+**1. Think long-term – what is likely to deliver the best return between now and the child’s 18th birthday?**
+
+**2. Cash is not necessarily ‘risk free’ – low interest rates could mean cash savings will be worth less in 18 years simply because of inflation**
+
+**3. Do something! You don’t have to commit to regular or minimum contributions. Roundups, cash-back, other family members can all help make a real difference to the child’s financial headstart**
 
 You have to go back to [medieval times](https://www.independent.co.uk/money/why-uk-tax-year-begins-april-6-it-s-very-strange-tale-a6970801.html) for the reasons why the UK tax year ends on April 5th. Thankfully, however, today the opportunities for you to save on your tax bill are significantly more modern.
 
