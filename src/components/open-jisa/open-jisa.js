@@ -185,7 +185,7 @@ const OpenJisa = () => {
                 defaultValue={50}
                 onChange={updateMonthlyContribution}
                 min={0}
-                max={355}
+                max={700}
                 step={5}
                 />
                 <div className={SliderTheme.Slider_Feedback}>
@@ -261,7 +261,7 @@ const OpenJisa = () => {
                 onChange={updateAllocation}
                 min={20}
                 max={100}
-                step={5}
+                step={10}
                 />
               </div>
             </div>

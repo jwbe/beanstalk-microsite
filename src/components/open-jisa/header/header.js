@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className={Theme.Container}>
       <h1 className={Theme.Heading}>
-        Open a Beanstalk account for your child
+        Beanstalk - the easiest way to build a nest egg for your child's future
       </h1>
 
       <Points>
