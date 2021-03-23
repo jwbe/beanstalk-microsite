@@ -49,8 +49,8 @@ const Footer = ({
                       </Link>
                     </li>
                     <li>
-                      <Link to="/about-beanstalk">
-                        About
+                      <Link to="/faqs">
+                        FAQs
                       </Link>
                     </li>
                     <li>
@@ -59,8 +59,8 @@ const Footer = ({
                       </Link>
                     </li>
                     <li>
-                      <Link to="/faqs">
-                        FAQs
+                      <Link to="/about-beanstalk">
+                        About
                       </Link>
                     </li>
                     <li>

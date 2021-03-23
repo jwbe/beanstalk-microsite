@@ -123,8 +123,8 @@
   font-size: $small-font-size;
   line-height: $small-line-height;
   @media (min-width: $breakpoint-sm) {
-    font-size: $caption-font-size;
-    line-height: $caption-line-height;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
   }
 }
 
