@@ -29,7 +29,7 @@ const OpenJisa = () => {
   }
 
   const initialCalculatorResults = {
-    allocation: 40,
+    allocation: 60,
     monthlyContribution: 50,
     childAge: 5,
     upFrontContribution: 50,
@@ -272,13 +272,15 @@ const OpenJisa = () => {
           </div>
         </div>
         <div className={Theme.Column}>
-          <ChartistGraph 
-            className={`ct-golden-section`}
-            listener={graphEventListener}
-            data={GRAPH_DATA} 
-            options={GRAPH_OPTIONS} 
-            type={GRAPH_TYPE}
-          />
+          <div className={Theme.Graph}>
+            <ChartistGraph 
+              className={`ct-golden-section`}
+              listener={graphEventListener}
+              data={GRAPH_DATA} 
+              options={GRAPH_OPTIONS} 
+              type={GRAPH_TYPE}
+            />
+          </div>
           <Results {...{ childAge: calculatorResults.childAge, data: recalculateData }}/>
         </div>
       </div>
