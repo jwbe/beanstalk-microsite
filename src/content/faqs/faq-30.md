@@ -4,9 +4,9 @@ heading: When does money get invested?
 order: 5
 ---
 
-Buying and selling of funds happens once a week at midday, normally on a Tuesday (or the working day after if a holiday). This is known as the 'order day' in our terms.
+Buying and selling of funds happens once a week, normally on a Tuesday (or the working day after if a holiday). This is known as the 'order day' in our terms.
 
-We use the allocation that is set on your account on the previous working day to determine the allocation that is applied to any new contributions received at that point.
+We use the allocation that is set on your account at midday on the previous working day to determine the allocation that is applied to any new contributions received at that point.
 
 Only contributions that are cleared in your account by 4pm on the day before the order day are included in the calculation. Direct debit payments can be occasionally clawed back through the banking system once they have been received, so we therefore wait a couple of days before clearing these payments for investment.
 
