@@ -29,7 +29,7 @@ const OpenJisa = () => {
   }
 
   const initialCalculatorResults = {
-    allocation: 60,
+    allocation: 40,
     monthlyContribution: 50,
     childAge: 5,
     upFrontContribution: 50,
@@ -69,7 +69,7 @@ const OpenJisa = () => {
 
 
     let KidStartTotal = Math.round(KidStartCashAmount + KidStartShareAmount);
-    let total = Math.round(cashAmount + shareAmount + cashAmountFixed + shareAmountFixed + KidStartTotal);
+    let total = Math.round(cashAmount + shareAmount + cashAmountFixed + shareAmountFixed);
 
     let series = {
       separate: [],
@@ -284,7 +284,7 @@ const OpenJisa = () => {
       </div>
 
       <p className={Theme.Note}>
-        Note: calculation assumes 5%pa growth in shares fund and 1%pa for cash fund less Beanstalk costs. KidStart assumes £3 earned per child per month, round ups £6 per child per week
+        Note: calculation assumes 5%pa growth in shares fund and 1%pa for cash fund less Beanstalk costs. KidStart assumes £3 earned per child per month, round ups £5 per child per week
       </p>
 
     </>

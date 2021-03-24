@@ -38,3 +38,9 @@
   width: $base-unit * 2;
   height: $base-unit * 2;
 }
+
+.Graph {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}

@@ -17,7 +17,7 @@ const Results = (props) => {
             currency: "GBP",
             style: "currency",
             minimumFractionDigits: 0
-          }).format(data().separate[0][0] + data().separate[1][0]) }
+          }).format(data().total[0][0]) }
         </div>
 
         <div className={Theme.SecondaryResult}>
