@@ -9,7 +9,7 @@ import Checkbox from './checkbox/checkbox';
 import { usePopper } from 'react-popper';
 
 const OpenJisa = () => {
-  const ROUND_UP_AMOUNT = 6;
+  const ROUND_UP_AMOUNT = 5;
   const GRAPH = null;
   const CASH_GROWTH = 0.0414;
   const SHARE_GROWTH = 0.366;
@@ -53,8 +53,7 @@ const OpenJisa = () => {
     return amount;
   }
 
-  const recalculateStackGraphData = (initialDepth, monthDepth, KidStartMonthDepth, cashPercentage, numberOfMonths, KidStartRoundUps) => {
-    let KidStartRoundUpsTotal = KidStartRoundUps ? numberOfMonths * (ROUND_UP_AMOUNT * 4) : null;
+  const recalculateStackGraphData = (initialDepth, monthDepth, KidStartMonthDepth, cashPercentage, numberOfMonths) => {
     let sharePercentage = 1 - cashPercentage;
     let cashGrowthRate = CASH_GROWTH / 100;
     let shareGrowthRate = SHARE_GROWTH / 100;
@@ -68,29 +67,35 @@ const OpenJisa = () => {
     let KidStartCashAmount = calculateFutureValue(KidStartMonthDepth, numberOfMonths, cashPercentage, cashGrowthRate);
     let KidStartShareAmount = calculateFutureValue(KidStartMonthDepth, numberOfMonths, sharePercentage, shareGrowthRate);
 
-    let total = Math.round(cashAmount + shareAmount + cashAmountFixed + shareAmountFixed + KidStartRoundUpsTotal);
-    let KidStartTotal = Math.round(KidStartCashAmount + KidStartShareAmount);
 
-    let series = [];
-    series[0] = [];
-    series[0].push(total);
-    series[1] = [];
-    series[1].push(KidStartTotal);
+    let KidStartTotal = Math.round(KidStartCashAmount + KidStartShareAmount);
+    let total = Math.round(cashAmount + shareAmount + cashAmountFixed + shareAmountFixed + KidStartTotal);
+
+    let series = {
+      separate: [],
+      total: []
+    }
+
+    series.separate[0] = [];
+    series.separate[0].push(total);
+    series.separate[1] = [];
+    series.separate[1].push(KidStartTotal);
+
+    series.total[0] = [];
+    series.total[0].push(total + KidStartTotal);
 
     return series;
   }
 
   const recalculateData = () => {
     let data = null;
-
-    data = recalculateStackGraphData(calculatorResults.upFrontContribution, calculatorResults.monthlyContribution, 2.5, 1 - (calculatorResults.allocation / 100), (216 - (calculatorResults.childAge * 12)), calculatorResults.roundUp);
+    data = recalculateStackGraphData(calculatorResults.upFrontContribution, calculatorResults.monthlyContribution + (calculatorResults.roundUp && ROUND_UP_AMOUNT * 4), 3, 1 - (calculatorResults.allocation / 100), (216 - (calculatorResults.childAge * 12)));
     return data;
   }
 
   const calculateStackMaxData = () => {
-    let data = recalculateStackGraphData(calculatorResults.upFrontContribution, calculatorResults.monthlyContribution, 2.5, 0, (216 - (calculatorResults.childAge * 12)), calculatorResults.roundUp);
-
-    return data[0][0] + data[1][0]
+    let data = recalculateStackGraphData(calculatorResults.upFrontContribution, calculatorResults.monthlyContribution + (calculatorResults.roundUp && ROUND_UP_AMOUNT * 4), 3, 0, (216 - (calculatorResults.childAge * 12)));
+    return data.separate[0][0] + data.separate[1][0]
   }
 
   const graphEventListener = {
@@ -142,13 +147,12 @@ const OpenJisa = () => {
 
   const GRAPH_DATA = {
     labels: [''],
-    series: recalculateData()
+    series: recalculateData().total
   }
 
   return (
     <>
       <Header/>
-
       <div className={Theme.Results}>
         <div className={Theme.Column}>
           <div className={SliderTheme.Sliders}>

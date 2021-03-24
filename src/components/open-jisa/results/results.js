@@ -17,7 +17,7 @@ const Results = (props) => {
             currency: "GBP",
             style: "currency",
             minimumFractionDigits: 0
-          }).format(data()[0][0] + data()[1][0]) }
+          }).format(data().separate[0][0] + data().separate[1][0]) }
         </div>
 
         <div className={Theme.SecondaryResult}>
@@ -26,7 +26,7 @@ const Results = (props) => {
               currency: "GBP",
               style: "currency",
               minimumFractionDigits: 0
-            }).format(data()[1][0]) }
+            }).format(data().separate[1][0]) }
           </span> if you regularly use KidStart
         </div>
 
