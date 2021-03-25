@@ -8,11 +8,15 @@ description: We look at five tips for grandparents from thinking long-term to
   earning free money to the best way to give a gift, all to help with their
   grandchild's financial future.
 ---
-* Think long-term – what will deliver returns over the next 10-18 years?
-* Is cash-in-a-card still the best birthday present you can give?
-* How can you earn free money for your grandkids with simply saving tricks?
-* Do you want to create a legacy – and help save on your IHT?
-* Is there flexibility in how you can contribute to their Junior ISA?
+**1. Think long-term – what will deliver returns over the next 10-18 years?**
+
+**2. Is cash-in-a-card still the best birthday present you can give?**
+
+**3. How can you earn free money for your grandkids with simply saving tricks?**
+
+**4. Do you want to create a legacy – and help save on your IHT?**
+
+**5. Is there flexibility in how you can contribute to their Junior ISA?**
 
 The relationship between a grandparent and grandchild is a unique one. In many families, grandparents are already the ‘cavalry’, helping out with the school run and providing ad hoc babysitting. But with children facing financial hurdles in their future which their grandparents never did, families are now having to work together like never before to save for their children’s future.
 
