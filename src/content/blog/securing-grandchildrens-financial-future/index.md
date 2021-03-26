@@ -12,7 +12,7 @@ description: We look at five tips for grandparents from thinking long-term to
 
 **2. Is cash-in-a-card still the best birthday present you can give?**
 
-**3. How can you earn free money for your grandkids with simply saving tricks?**
+**3. How can you earn free money for your grandkids with simple saving tricks?**
 
 **4. Do you want to create a legacy – and help save on your IHT?**
 
