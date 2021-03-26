@@ -8,7 +8,7 @@ import Theme from './open-jisa.module.scss';
 import SliderTheme from './slider.module.scss';
 import Checkbox from './checkbox/checkbox';
 import { usePopper } from 'react-popper';
-import { Popover } from 'react-tiny-popover';
+import { Popover } from 'react-tiny-popover-ssr';
 
 const OpenJisa = () => {
   const ROUND_UP_AMOUNT = 5;
