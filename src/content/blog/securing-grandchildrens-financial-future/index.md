@@ -18,7 +18,7 @@ description: We look at five tips for grandparents from thinking long-term to
 
 **5. Is there flexibility in how you can contribute to their Junior ISA?**
 
-The relationship between a grandparent and grandchild is a unique one. In many families, grandparents are already the ‘cavalry’, helping out with the school run and providing ad hoc babysitting. But with children facing financial hurdles in their future which their grandparents never did, families are now having to work together like never before to save for their children’s future.
+The relationship between a grandparent and a grandchild is a unique one. In many families, grandparents are already the ‘cavalry’, helping out with the school run and providing ad hoc babysitting. But with children facing financial hurdles in their future which their grandparents never did, families are now having to work together like never before to save for their children’s future.
 
 Today’s grandchildren face the prospect of a long climb up a huge financial mountain. In 1971, the average house price was £5,632 – that’s £87,920 in [today’s money](https://www.thisismoney.co.uk/money/bills/article-1633409/Historic-inflation-calculator-value-money-changed-1900.html). But the reality is that house prices have far outstripped inflation – today, the [average house price](https://propertydata.co.uk/charts/house-prices) is in excess of £250,000 (and in excess of half a million pounds if you live in London). This means they can expect that all important house deposit to cost at least £12,500 for just a 95% mortgage. 
 
