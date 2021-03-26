@@ -1,0 +1,47 @@
+.Container {
+  top: $base-unit * 3;
+  position: absolute;
+  min-width: $base-unit * 36;
+  padding-left: .875rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,.15));
+  z-index: 99999;
+  width: 100%;
+}
+
+.Inner {
+  background-color: $white;
+  position: relative;
+  border-radius: $base-unit / 2;
+  border: 1px solid $secondary;
+  &:after {
+    bottom: $base-unit * 3;
+    left: -$base-unit;
+    position: absolute;
+    content: '';
+    width: $base-unit * 2;
+    height: $base-unit * 2;
+    background-color: $secondary;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  header {
+    padding-top: .875rem;
+    padding-bottom: .875rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: $secondary;
+    background-color: $secondary-lighter;
+  }
+  p {
+    padding-top: $base-unit * 2;
+    padding-bottom: $base-unit * 3;
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 2;
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+    color: $accent-3;
+  }
+}
+

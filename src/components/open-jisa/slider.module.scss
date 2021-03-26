@@ -16,6 +16,9 @@
 .Slider {
   display: flex;
   flex-direction: column;
+  .react-tiny-popover-container {
+    z-index: 999;
+  }
   &_Input {
     display: flex;
     align-items: center;

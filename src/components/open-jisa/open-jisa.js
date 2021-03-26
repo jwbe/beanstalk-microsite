@@ -3,10 +3,12 @@ import ChartistGraph from 'react-chartist';
 import Slider from 'react-slider';
 import Header from './header/header';
 import Results from './results/results';
+import Popper from '../popper/popper';
 import Theme from './open-jisa.module.scss';
 import SliderTheme from './slider.module.scss';
 import Checkbox from './checkbox/checkbox';
 import { usePopper } from 'react-popper';
+import { Popover } from 'react-tiny-popover';
 
 const OpenJisa = () => {
   const ROUND_UP_AMOUNT = 5;
@@ -27,6 +29,9 @@ const OpenJisa = () => {
       }
     }
   }
+
+  const [isCashPopoverOpen, setIsCashPopoverOpen] = useState(false);
+  const [isSharesPopoverOpen, setIsSharesPopoverOpen] = useState(false);
 
   const initialCalculatorResults = {
     allocation: 60,
@@ -100,8 +105,6 @@ const OpenJisa = () => {
 
   const graphEventListener = {
     draw: function(event) {
-
-      console.log(event, 'graphEventListener event')
       if (event.type === "bar") {
         if (event.seriesIndex === 0) {
           event.element._node.createTextNode = "From You";
@@ -244,16 +247,41 @@ const OpenJisa = () => {
             </div>
 
             <div className={SliderTheme.Slider}>
+
               <div className={`${SliderTheme.Slider_Heading} ${SliderTheme.Slider_Heading___Allocation}`}>
                 How do you want your savings split?
               </div>
 
               <div className={SliderTheme.AllocationHeader}>
-                <div className={SliderTheme.AllocationHeader_Label}>Cash Fund<a className={Theme.InformationIcon}></a></div>
+                <Popover
+                  containerClassName={`tiny-popover`}
+                  isOpen={isCashPopoverOpen}
+                  position={['top', 'left']}
+                  onClickOutside={() => setIsCashPopoverOpen(false)}
+                  content={() => (
+                    <Popper heading={'What is the The L&G Cash Trust?'}>
+                      The L&G Cash Trust invests in short term deposits, government bonds and similar aiming for a return in line with money market funds. See <a href="/docs/LG-Cash-Trust-KIID.pdf" target="_blank">this document</a> for more information.
+                    </Popper>
+                  )}
+                >
+                <div className={SliderTheme.AllocationHeader_Label}>Cash Fund<a onClick={() => setIsCashPopoverOpen(!isCashPopoverOpen)} className={Theme.InformationIcon}></a></div>
+                </Popover>
                 <div className={SliderTheme.Slider_Feedback}>
                   { <><span>{100 - calculatorResults.allocation}%</span><span> </span><span>{calculatorResults.allocation}%</span></> }
                 </div>
-                <div className={SliderTheme.AllocationHeader_Label}>Shares Fund<a className={Theme.InformationIcon}></a></div>
+                <Popover
+                  containerClassName={`tiny-popover`}
+                  isOpen={isSharesPopoverOpen}
+                  position={['top', 'right']}
+                  onClickOutside={() => setIsSharesPopoverOpen(false)}
+                  content={() => (
+                    <Popper heading={'What is the Fidelity Index World Fund?'}>
+                      The Fidelity Index World fund invests in company share and other assets aiming to track the performance of global stock markets. See <a href="/docs/Fidelity-Index-World-KIID.pdf" target="_blank">this document</a> for more information.
+                    </Popper>
+                  )}
+                >
+                <div className={SliderTheme.AllocationHeader_Label}>Shares Fund<a onClick={() => setIsSharesPopoverOpen(!isSharesPopoverOpen)} className={Theme.InformationIcon}></a></div>
+                </Popover>
               </div>
 
               <div className={SliderTheme.Slider_InputAndFeedbackWrapper}>

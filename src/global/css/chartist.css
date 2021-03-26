@@ -1,3 +1,9 @@
+
+.react-tiny-popover-container,
+.tiny-popover {
+  z-index: 9999;
+}
+
 .ct-label {
   fill: rgba(0, 0, 0, 0.4);
   color: rgba(0, 0, 0, 0.4);

@@ -1,3 +1,7 @@
+.Popver {
+  z-index: 999;
+}
+
 .Results {
   @media (min-width: $breakpoint-sm) {
     overflow: hidden;
