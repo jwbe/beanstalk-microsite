@@ -16,6 +16,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /react-tiny-popover/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  }
+}
+
 exports.onCreateNode = ({node, actions, getNode}) => {
   const { createNodeField } = actions;
   if (_.get(node, 'internal.type') === `Mdx`) {
