@@ -26,11 +26,6 @@ const SignUpPage = () => {
             & save for yourself<br/> & the children you love 
           </>
         }
-        partner={
-          <>
-            from Rest Less
-          </>
-        }
         processSteps
         formSmallPrint={
           <>
@@ -43,29 +38,6 @@ const SignUpPage = () => {
           </>
         }
       >
-        <li>
-          Users must be genuine new, non-duplicate registrations who enter their details on this page and then download and register with the same details on the Beanstalk app
-        </li>
-
-        <li>
-          Your details will be passed on to Reading Eggs once you have signed up to Beanstalk for them to send you your unique code
-        </li>
-
-        <li>
-          Offer is 34% off a combined Mathseeds and Reading Eggs 12 month subscription
-        </li>
-
-        <li>
-          Only one bonus per member.
-        </li>
-
-        <li>
-          The offer is valid until midnight on the 28th February 2021.
-        </li>
-
-        <li>
-          Full Beanstalk T&Cs can be viewed <Link to="/terms-and-conditions-governing-beanstalk">here</Link>. Beanstalk reserve the right to withdraw or amend this offer at any time.
-        </li>
       </SignUp>
     </>
   )

@@ -46,9 +46,12 @@ const SignUp = ({
           <Points/>
           <Callout/>
         </SecondaryColourSectionOnMobile>
-        <TermsAndConditions>
-          {children}
-        </TermsAndConditions>
+        {
+          children &&
+          <TermsAndConditions>
+            {children}
+          </TermsAndConditions>
+        }
       </Container>
       <Footer/>
     </>

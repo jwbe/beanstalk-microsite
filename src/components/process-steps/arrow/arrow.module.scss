@@ -2,6 +2,7 @@
   position: relative;
   width: $base-unit * 6;
   height: $base-unit * 6;
+  opacity: .45;
   @media (max-width: $breakpoint-sm - .0625em) {
     margin-top: $base-unit * 2;
     margin-bottom: $base-unit * 2;
