@@ -1,0 +1,54 @@
+.Container {
+  display: flex;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 2;
+    flex-direction: row;
+    align-items: center
+  }
+  @media (min-width: $breakpoint-sm) {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+}
+
+
+.Thumbnail {
+  padding: $base-unit;
+  width: $base-unit * 18;
+  height: $base-unit * 18;
+  background-color: $secondary;
+  border-radius: 100%;
+}
+
+.Thumbnail_Inner {
+  flex: none;
+  width: $base-unit * 16;
+  height: $base-unit * 16;
+  background-color: $white;
+  box-shadow: $shadow-level-1;
+  overflow: hidden;
+  border-radius: 100%;
+  img {
+    max-width: 12.5rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.Copy {
+  color: $accent-3;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-left: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm) {
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    margin-top: $base-unit * 3;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 7.75rem;
+    text-align: center;
+  }
+}

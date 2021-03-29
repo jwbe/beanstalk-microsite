@@ -8,6 +8,7 @@ import Heading from './components/heading/heading';
 import Callout from './components/callout/callout';
 import SmallPrint from './components/small-print/small-print';
 import Points from './components/points/points';
+import ProcessSteps from '../process-steps/process-steps';
 import SecondaryColourSectionOnMobile from './components/secondary-colour-section-on-mobile/secondary-colour-section-on-mobile';
 import TermsAndConditions from './components/terms-and-conditions/terms-and-conditions';
 
@@ -18,7 +19,8 @@ const SignUp = ({
   secondaryCta,
   partner,
   logo,
-  formSmallPrint
+  formSmallPrint,
+  processSteps,
 }) => {
   return (
     <>
@@ -34,6 +36,9 @@ const SignUp = ({
         <QuoteCredential>
           {quote}
         </QuoteCredential>
+        {
+          processSteps && <ProcessSteps/>
+        }
         <SecondaryColourSectionOnMobile>
           <Heading>
             The easiest way to build a nest egg for yourself, your children or your grandchildren
