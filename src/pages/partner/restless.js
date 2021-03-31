@@ -29,7 +29,7 @@ const SignUpPage = () => {
         processSteps
         formSmallPrint={
           <>
-            <strong>Note:</strong> We will only use your email address so Rest Less can share the offer code, remind you to register and to record whether you registered.
+            <strong>Note:</strong> We will use your email to remind you to register and to share information about Beanstalk. You can unsubscribe at any time.
           </>
         }
         quote={

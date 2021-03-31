@@ -2,7 +2,7 @@ import React from 'react';
 import Theme from './step.module.scss';
 
 const Step = (props) => {
-  let { thumbnail, copy } = props;
+  let { id, thumbnail, copy } = props;
 
   return (
     <div className={Theme.Container}>

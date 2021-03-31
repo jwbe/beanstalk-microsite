@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="48px" height="40px" viewBox="0 0 48 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Arrow</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Partner-landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Landing---Desktop-HD---LATEST" transform="translate(-950.000000, -892.000000)" fill="#32B67A">
-            <g id="Section---How-To-Save-For-Your-Grandchildren" transform="translate(264.000000, 752.000000)">
-                <g id="Arrows" transform="translate(176.000000, 140.000000)">
-                    <g id="Arrow" transform="translate(510.000000, 0.000000)">
-                        <path d="M0.00642468181,0.853030347 C-0.0969180047,0.0127198289 1.07507321,-0.340415635 1.46328563,0.415218315 C4.30452194,5.94373293 11.2115061,14.0622887 27.1133752,13.1949108 L27.1144886,4.90535473 C27.1144886,4.56550931 27.5352133,4.39653589 27.7778945,4.63955384 L47.4683532,21.4590543 C48.1867204,22.0726746 48.1754959,23.1715714 47.4443561,23.7703828 L27.7720887,39.8908269 C27.5274723,40.1262505 27.1144886,39.9557583 27.1144886,39.6193303 L27.1133038,31.1317348 C6.19953491,30.1236845 1.19974614,10.5447054 0.00642468181,0.853030347 Z"></path>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="48" height="40" xmlns="http://www.w3.org/2000/svg"><path d="M.006.853C-.097.013 1.076-.34 1.463.415c2.842 5.529 9.749 13.647 25.65 12.78l.001-8.29c0-.34.421-.508.664-.265l19.69 16.82a1.5 1.5 0 0 1-.024 2.31L27.772 39.89c-.245.236-.658.066-.658-.27v-8.488C6.2 30.124 1.2 10.545.005.853z" fill="#32B67A" fill-rule="evenodd"/></svg>
