@@ -34,6 +34,11 @@ const Footer = ({
                   </Heading>
                   <ul className={Theme.Navigation}>
                     <li>
+                      <Link to="/beanstalk-calculator">
+                        What If tool
+                      </Link>
+                    </li>
+                    <li>
                       <Link to="/designed-for-growth">
                         Designed for Growth
                       </Link>
