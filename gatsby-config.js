@@ -75,7 +75,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: [`/sms-capture`,`/happity`,`/firstnews`,`/kidstart`,`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
+        exclude: [`/blog/welcome-to-beanstalk`, `/blog/5-things-you-need-to-consider-this-jisa-season`, `/blog/are-high-fees-eating-into-your-childs-savings`, `/blog/helping-families-save-together`, `/blog/children-benefit-ctf-windfalls`, `/blog/dont-miss-out-this-tax-year`, `/blog/securing-grandchildrens-financial-future`, `/blog/new-tax-year-resolutions`, `/blog`,`/sms-capture`,`/happity`,`/firstnews`,`/kidstart`,`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
         query: `
         {
           site {
@@ -106,7 +106,15 @@ module.exports = {
         }`,
         serialize: ({ site, allSitePage, allMdx }) => {
           let pages = [
-            {url: `${site.siteMetadata.siteUrl}`, changefreq: `daily`, priority: 1.0},
+            {url: `${site.siteMetadata.siteUrl}/blog/welcome-to-beanstalk`, changefreq: `daily`, priority: 0.9},
+            {url: `${site.siteMetadata.siteUrl}/blog/5-things-you-need-to-consider-this-jisa-season`, changefreq: `daily`, priority: 0.9},
+            {url: `${site.siteMetadata.siteUrl}/blog/are-high-fees-eating-into-your-childs-savings`, changefreq: `daily`, priority: 0.9},
+            {url: `${site.siteMetadata.siteUrl}/blog/helping-families-save-together`, changefreq: `daily`, priority: 0.9},
+            {url: `${site.siteMetadata.siteUrl}/blog/children-benefit-ctf-windfalls`, changefreq: `daily`, priority: 0.9},
+            {url: `${site.siteMetadata.siteUrl}/blog/dont-miss-out-this-tax-year`, changefreq: `daily`, priority: 0.9},
+            {url: `${site.siteMetadata.siteUrl}/blog/securing-grandchildrens-financial-future`, changefreq: `daily`, priority: 0.9},
+            {url: `${site.siteMetadata.siteUrl}/blog/new-tax-year-resolutions`, changefreq: `daily`, priority: 0.9},
+            {url: `${site.siteMetadata.siteUrl}/blog`, changefreq: `daily`, priority: 0.9},
             {url: `${site.siteMetadata.siteUrl}/guides/jisa-guide`, changefreq: `daily`, priority: 0.9},
             {url: `${site.siteMetadata.siteUrl}/save-and-invest-for-kids`, changefreq: `daily`, priority: 0.7},
             {url: `${site.siteMetadata.siteUrl}/the-family-savings-app`, changefreq: `daily`, priority: 0.7},
