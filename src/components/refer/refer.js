@@ -150,7 +150,7 @@ class Refer extends Component {
                 <header className={ReferTheme.Header}>
                   <h1 className={ReferTheme.SignUp_Heading}>
                     You've been invited to join Beanstalk!<br/>
-                    Join today and we will give you £10 when you open and save into an account.
+                    Join today and we will give you £5 when you open and save into an account.
                   </h1>
                   <div className={ReferTheme.SignUp_Subheading}>
                     <strong>2 minutes to open an account.</strong>
