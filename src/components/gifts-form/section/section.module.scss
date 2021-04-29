@@ -1,0 +1,31 @@
+.Container {
+  margin-bottom: $base-unit * 5;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+}
+
+.Heading {
+  order: 0;
+  margin-top: 0;
+  margin-bottom: $base-unit * 3;
+  color: $primary;
+  font-family: "Quicksand", sans-serif;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+}
+
+.Legend + .Heading {
+  margin-bottom: $base-unit;
+}
+
+.Legend {
+  order: 1;
+  margin-top: 0;
+  margin-bottom: $base-unit * 3;
+  color: $accent-3;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}

@@ -1,0 +1,79 @@
+.Container {
+  width: 100%;
+  max-width: $base-unit * 36;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit * 4;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.Card {
+  padding-top: $base-unit * 3;
+  padding-right: $base-unit * 3;
+  padding-bottom: $base-unit * 4;
+  padding-left: $base-unit * 3;
+  font-weight: 700;
+  background-color: $secondary;
+  background-image: url("./images/background.png");
+  background-position: contain;
+  background-blend-mode: multiply;
+  background-size: $base-unit * 62;
+  border-radius: $base-unit;
+  box-shadow: $shadow-level-3;
+  overflow: hidden;
+}
+
+.Currency {
+  margin-right: $base-unit;
+  color: $primary;
+}
+
+.GiftAmount {
+  color: $primary;
+  font-weight: 400;
+  overflow-wrap: break-word;
+}
+
+.GiftMessage {
+  color: $white;
+  font-weight: 400;
+  overflow-wrap: break-word;
+}
+
+.Row {
+  flex-direction: row;
+  &___GiftAmount {
+    margin-bottom: $base-unit * 2;
+  }
+  &___GiftMessage {
+    margin-bottom: $base-unit * 4;
+  }
+}
+
+.Heading {
+  margin-top: 0;
+  margin-bottom: $base-unit * 2;
+  color: $black-light;
+  font-family: "Quicksand", sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    text-align: center;
+  }
+}
+
+.Subheading {
+  color: $white;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;
+  &___GiftAmount {
+    margin-right: $base-unit * 7;
+  }
+  &___GiftMessage {
+    margin-bottom: $base-unit * 2;
+  }
+}

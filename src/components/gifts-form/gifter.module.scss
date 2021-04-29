@@ -1,0 +1,161 @@
+.Container {
+  padding-right: .75rem;
+  padding-left: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+    max-width: $base-unit * 120;
+    padding-right: $base-unit * 3;
+    padding-left: $base-unit * 3;
+  }
+}
+
+.Cell {
+  @media (min-width: $breakpoint-sm) {
+    flex-basis: 50%;
+    display: flex;
+    max-width: 38.75rem;
+  }
+}
+
+.Cell {
+  @media (min-width: $breakpoint-sm) {
+    margin-right: .75rem;
+    &:last-of-type {
+      margin-left: .75rem;
+      @media (min-width: $breakpoint-sm) {
+        max-height: 100vh;
+        top: $base-unit * 2;
+        position: sticky;
+      }
+    }
+  }
+}
+
+.Heading {
+  color: $secondary;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-top: $base-unit * 2;
+    margin-bottom: $base-unit * 3;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 8;
+    margin-bottom: $base-unit * 5;
+    font-size: $headline-font-size;
+    line-height: $headline-line-height;
+  }
+}
+
+.ProviderSelect {
+  margin-bottom: $base-unit * 3;
+  box-shadow: $shadow-level-3;
+  border-radius: $base-unit;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 5;
+  }
+  &_Heading {
+    margin-top: 0;
+    margin-bottom: $base-unit;
+    color: $secondary;
+    font-family: 'Quicksand', sans-serif;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+    @media (min-width: $breakpoint-sm) {
+      font-size: $subheader-font-size;
+      line-height: $subheader-line-height;
+    }
+  }
+}
+
+.SubmittedCopy {
+  color: $primary;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-weight: 700;
+  text-align: center;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form_VisibleInputs {
+  margin-bottom: $base-unit * 3;
+  @media (min-width: $breakpoint-sm) {
+    align-items: flex-end;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: $base-unit * 4;
+  }
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+}
+
+.Form_Input {
+  width: 100%;
+  padding-top: .875rem;
+  padding-right: $base-unit * 2;
+  padding-bottom: .875rem;
+  padding-left: .875rem;
+  margin: 0; // Solves iOS extra margin-top
+  margin-bottom: 0;
+  color: $accent-3;
+  border-radius: $base-unit;
+  background-color: $white;
+  box-shadow: 0 .5rem 1rem 0 rgba(#000000, .1);
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  &::placeholder {
+    color: $accent-3;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+  &_Error {
+    right: .75rem;
+    position: absolute;
+    width: $base-unit * 3;
+    height: $base-unit * 3;
+    background-image: url('./images/error-icon.svg');
+  }
+  &_Wrapper {
+    margin-bottom: $base-unit * 2;
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+    @media (max-width: $breakpoint-sm - .0625em) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.Form_Input___Amount {
+  padding-right: $base-unit * 2.5;
+  box-shadow: none;
+  border-radius: 0;
+  color: $primary;
+  border-bottom: solid .0625rem $primary;
+}
+
+.Form_Input_Currency {
+  position: absolute;
+  color: $primary;
+  font-weight: 700;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+}
