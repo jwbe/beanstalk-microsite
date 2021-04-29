@@ -473,23 +473,6 @@ const Gifts = () => {
               </Section>
 
               <Section
-              heading={`Your details`}
-              >
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='childsName'
-                  name='childsName'
-                  type='text'
-                  value={formFields['childsName']}
-                  onChange={event => handleChange('childsName', event)}
-                  placeholder='Childs name'/>
-                  {formErrors.childsName && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.childsName && (<Tooltip>{formErrors['childsName']}</Tooltip>)}
-                </div>
-              </Section>
-
-              <Section
               heading={`Relationship to child`}
               >
                 <Select
