@@ -93,7 +93,7 @@ const Homepage = () => {
         <Column className={styles.Homepage_column___copy}>
           <Point
             icon={iconPiggybank}
-            heading='Changing the way families save'>
+            heading='Saving and investing made easy'>
             <p>
               Beanstalk makes saving and investing easy whatever your family’s shape or budget.  
             </p>
@@ -111,7 +111,7 @@ const Homepage = () => {
         <Column className={`${styles.Homepage_column___copy}`}>
           <Point
             icon={iconFamily}
-            heading='Family Saving'>
+            heading='Friends can contribute'>
             <p>
               Invite grandparents, or other family & friends through the app and they will be linked to your children’s accounts.  
             </p>
@@ -141,7 +141,7 @@ const Homepage = () => {
         <Column className={styles.Homepage_column___copy}>
           <Point
             icon={iconCashInHand}
-            heading='Reimagining child savings'>
+            heading='Manage all your children’s accounts in one modern app'>
             <>
               <p>
                 We are dragging children's savings kicking and screaming into the 21st century. Through the app you can open and manage accounts for all your children - and yourself if you would like.
