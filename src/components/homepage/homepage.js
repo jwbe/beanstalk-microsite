@@ -111,7 +111,7 @@ const Homepage = () => {
         <Column className={`${styles.Homepage_column___copy}`}>
           <Point
             icon={iconFamily}
-            heading='Friends can contribute'>
+            heading='Family and friends can contribute'>
             <p>
               Invite grandparents, or other family & friends through the app and they will be linked to your children’s accounts.  
             </p>
