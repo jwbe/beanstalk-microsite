@@ -9,7 +9,7 @@ const Section = (props) => {
       <section className={Theme.Container}>
         <header className={Theme.Header}>
           <p className={Theme.Legend}>
-            { legend }
+            { typeof legend === 'function' ? legend() : legend }
           </p>
           <h3 className={Theme.Heading}>
             { heading }

@@ -3,38 +3,38 @@ import axios from 'axios';
 import * as qs from 'query-string';
 import Select from 'react-select';
 import GiftSummary from './gift-summary/gift-summary';
-import Theme from './gifter.module.scss';
+import Checkbox from './checkbox/checkbox';
 import Tooltip from './tooltip/tooltip';
 import Section from './section/section';
 import Button from './cta-button/cta-button';
+import Theme from './gifter.module.scss';
+import IsFormError from './is-form-error/is-form-error';
+import Header from './header/header';
+import TextareaCounter from './textarea-counter/textarea-counter';
 
 const Gifts = () => {
   const initialFormFields = {
     childsName: '',
-    parentsFirstName: '',
-    parentsLastName: '',
-    parentsPhoneNumber: '',
+    parentsName: '',
     parentsEmailAddress: '',
     giftAmount: '',
     giftMessage: '',
-    sendersFirstName: '',
-    sendersLastName: '',
+    sendersName: '',
     sendersEmailAddress: '',
-    sendersRelationshipToChild: ''
+    sendersRelationshipToChild: '',
+    termsAccepted: false
   }
 
   const initialFormErrors = {
     childsName: '',
-    parentsFirstName: '',
-    parentsLastName: '',
-    parentsPhoneNumber: '',
+    parentsName: '',
     parentsEmailAddress: '',
     giftAmount: '',
     giftMessage: '',
-    sendersFirstName: '',
-    sendersLastName: '',
+    sendersName: '',
     sendersEmailAddress: '',
-    sendersRelationshipToChild: ''
+    sendersRelationshipToChild: '',
+    termsAccepted: ''
   }
 
   const initialFormStatus = {
@@ -76,39 +76,15 @@ const Gifts = () => {
       }
     }
 
-    if(fields['parentsFirstName'] === '') {
+    if(fields['parentsName'] === '') {
       formIsValid = false
-      errors['parentsFirstName'] = `You must enter the parent's name`;
+      errors['parentsName'] = `You must enter the parent's name`;
     }
 
-    if(fields['parentsFirstName'] !== '') {
-      if(!fields['parentsFirstName'].match(NAME_VALIDATION_REGEX)) {
+    if(fields['parentsName'] !== '') {
+      if(!fields['parentsName'].match(NAME_VALIDATION_REGEX)) {
         formIsValid = false;
-        errors['parentsFirstName'] = `The parent's name shouldn't contain numbers`;
-      }
-    }
-
-    if(fields['parentsLastName'] === '') {
-      formIsValid = false
-      errors['parentsLastName'] = `You must enter the parent's name`;
-    }
-
-    if(fields['parentsLastName'] !== '') {
-      if(!fields['parentsLastName'].match(NAME_VALIDATION_REGEX)) {
-        formIsValid = false;
-        errors['parentsLastName'] = `The parent's name shouldn't contain numbers`;
-      }
-    }
-
-    if(fields['parentsPhoneNumber'] === '') {
-      formIsValid = false
-      errors['parentsPhoneNumber'] = 'You must enter a phone number';
-    }
-
-    if(fields['parentsPhoneNumber'] !== '') {
-      if(!fields['parentsPhoneNumber'].match(PHONE_VALIDATION_REGEX)) {
-        formIsValid = false;
-        errors['parentsPhoneNumber'] = 'This is not a valid UK phone number';
+        errors['parentsName'] = `The parent's name shouldn't contain numbers`;
       }
     }
 
@@ -141,27 +117,15 @@ const Gifts = () => {
       errors['giftMessage'] = `Gift message must not be empty`;
     }
 
-    if(fields['sendersFirstName'] === '') {
+    if(fields['sendersName'] === '') {
       formIsValid = false
-      errors['sendersFirstName'] = `You must enter your first name`;
+      errors['sendersName'] = `You must enter your name`;
     }
 
-    if(fields['sendersFirstName'] !== '') {
-      if(!fields['sendersFirstName'].match(NAME_VALIDATION_REGEX)) {
+    if(fields['sendersName'] !== '') {
+      if(!fields['sendersName'].match(NAME_VALIDATION_REGEX)) {
         formIsValid = false;
-        errors['sendersFirstName'] = `Your name shouldn't contain numbers`;
-      }
-    }
-
-    if(fields['sendersLastName'] === '') {
-      formIsValid = false
-      errors['sendersLastName'] = `You must enter your last name`;
-    }
-
-    if(fields['sendersLastName'] !== '') {
-      if(!fields['sendersLastName'].match(NAME_VALIDATION_REGEX)) {
-        formIsValid = false;
-        errors['sendersLastName'] = `Your name shouldn't contain numbers`;
+        errors['sendersName'] = `Your name shouldn't contain numbers`;
       }
     }
 
@@ -183,10 +147,11 @@ const Gifts = () => {
 
   const handleChange = (field, event) => {
     let fields = formFields;
-    fields[field] = event.target.value;
+    fields[field] = event.target.value ? event.target.value : event.target.checked;
     if(formStatuses.formSubmitAttempted === true) {
       handleValidation();
     }
+    console.log(fields)
     setFormFields({ ...fields});
   }
 
@@ -196,14 +161,11 @@ const Gifts = () => {
     if(handleValidation()) {
       const formData = {
         childsName: formFields.childsName,
-        parentsFirstName: formFields.parentsFirstName,
-        parentsLastName: formFields.parentsLastName,
-        parentsPhoneNumber: formFields.parentsPhoneNumber,
+        parentsName: formFields.parentsFirstName,
         parentsEmailAddress: formFields.parentsEmailAddress,
         giftAmount: formFields.giftAmount,
         giftMessage: formFields.giftMessage,
-        sendersFirstName: formFields.sendersFirstName,
-        sendersLastName: formFields.sendersLastName,
+        sendersName: formFields.sendersFirstName,
         sendersEmailAddress: formFields.sendersEmailAddress,
         sendersRelationshipToChild: formFields.sendersRelationshipToChild,
         'form-name': 'gifts',
@@ -304,203 +266,194 @@ const Gifts = () => {
 
   return (
     <>
-      <h2 className={Theme.Heading}>
-       Gift a child
-      </h2>
       {
         formStatuses.formSubmitted
         ?
         <p className={Theme.SubmittedCopy}>Your gift has been sent</p>
         :
-        <div className={Theme.Container}>
-          <div className={Theme.Cell}>
-            <form className={Theme.Form} name='gifts' method='POST' noValidate data-netlify='true' data-netlify-honeypot='bot-field' onSubmit={ event => handleSubmit(event) }>
-              <Section
-              heading={`Child's name`}
-              legend={`Who would you like to send a gift to today?`}
-              >
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='childsName'
-                  name='childsName'
-                  type='text'
-                  value={formFields['childsName']}
-                  onChange={event => handleChange('childsName', event)}
-                  placeholder="Child's name"/>
-                  {formErrors.childsName && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.childsName && (<Tooltip>{formErrors['childsName']}</Tooltip>)}
-                </div>
-              </Section>
-
-              <Section
-              heading={`Parent's details`}
-              legend={`We need these to contact the parent and let them know about the gift.`}
-              >
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='parentsFirstName'
-                  name='parentsFirstName'
-                  type='text'
-                  value={formFields['parentsFirstName']}
-                  onChange={event => handleChange('parentsFirstName', event)}
-                  placeholder='First name'/>
-                  {formErrors.parentsFirstName && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.parentsFirstName && (<Tooltip>{formErrors['parentsFirstName']}</Tooltip>)}
-                </div>
-
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='parentsLastName'
-                  name='parentsLastName'
-                  type='text'
-                  value={formFields['parentsLastName']}
-                  onChange={event => handleChange('parentsLastName', event)}
-                  placeholder='Last name'/>
-                  {formErrors.parentsLastName && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.parentsLastName && (<Tooltip>{formErrors['parentsLastName']}</Tooltip>)}
-                </div>
-
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='parentsPhoneNumber'
-                  name='parentsPhoneNumber'
-                  type='number'
-                  value={formFields['parentsPhoneNumber']}
-                  onChange={event => handleChange('parentsPhoneNumber', event)}
-                  placeholder='Phone number'/>
-                  {formErrors.parentsPhoneNumber && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.parentsPhoneNumber && (<Tooltip>{formErrors['parentsPhoneNumber']}</Tooltip>)}
-                </div>
-
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='parentsEmailAddress'
-                  name='parentsEmailAddress'
-                  type='text'
-                  value={formFields['parentsEmailAddress']}
-                  onChange={event => handleChange('parentsEmailAddress', event)}
-                  placeholder='Email address'/>
-                  {formErrors.parentsEmailAddress && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.parentsEmailAddress && (<Tooltip>{formErrors['parentsEmailAddress']}</Tooltip>)}
-                </div>
-              </Section>
-
-              <Section
-              heading={`Gift amount`}
-              legend={`Please enter the amount you'd like to gift`}
-              >
-                <div className={Theme.Form_Input_Wrapper}>
-                  <span className={Theme.Form_Input_Currency}>£</span>
-                  <input
-                  className={`${Theme.Form_Input} ${Theme.Form_Input___Amount}`} 
-                  id='giftAmount'
-                  name='giftAmount'
-                  type='number'
-                  value={formFields['giftAmount']}
-                  onChange={event => handleChange('giftAmount', event)}
-                  />
-                  {formErrors.giftAmount && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.giftAmount && (<Tooltip>{formErrors['giftAmount']}</Tooltip>)}
-                </div>
-              </Section>
-
-              <Section
-              heading={`Message`}
-              legend={`With Beanstalk you can leave a message with your contribution.`}
-              >
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='giftMessage'
-                  name='giftMessage'
-                  placeholder='Write your message here'
-                  type='text'
-                  value={formFields['giftMessage']}
-                  onChange={event => handleChange('giftMessage', event)}
-                  />
-                  {formErrors.giftMessage && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.giftMessage && (<Tooltip>{formErrors['giftMessage']}</Tooltip>)}
-                </div>
-              </Section>
-
-              <Section
-              heading={`Your details`}
-              legend={`With need your details`}
-              >
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='sendersFirstName'
-                  name='sendersFirstName'
-                  type='text'
-                  value={formFields['sendersFirstName']}
-                  onChange={event => handleChange('sendersFirstName', event)}
-                  placeholder='First name'/>
-                  {formErrors.sendersFirstName && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.sendersFirstName && (<Tooltip>{formErrors['sendersFirstName']}</Tooltip>)}
-                </div>
-
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input
-                  className={Theme.Form_Input} 
-                  id='sendersLastName'
-                  name='sendersLastName'
-                  type='text' 
-                  value={formFields['sendersLastName']}
-                  onChange={event => handleChange('sendersLastName', event)}
-                  placeholder='Last name'/>
-                  {formErrors.sendersLastName && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.sendersLastName && (<Tooltip>{formErrors['sendersLastName']}</Tooltip>)}
-                </div>
-
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input 
-                  className={Theme.Form_Input} 
-                  id='sendersEmailAddress'
-                  name='sendersEmailAddress'
-                  type='text' 
-                  value={formFields['sendersEmailAddress']}
-                  onChange={event => handleChange('sendersEmailAddress', event)}
-                  placeholder='Email address'/>
-                  {formErrors.sendersEmailAddress && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.sendersEmailAddress && (<Tooltip>{formErrors['sendersEmailAddress']}</Tooltip>)}
-                </div>
-              </Section>
-
-              <Section
-              heading={`Relationship to child`}
-              >
-                <Select
-                className={Theme.ProviderSelect}
-                styles={selectStyles}
-                placeholder={`Type or scroll to search providers`}
-                onChange={(option, event) => {
-                  let fields = formFields;
-                  let value = '';
-                  if(event.action !== 'clear') {
-                    value = option.value;
-                    fields['sendersRelationshipToChild'] = value;
-                    return setFormFields({ ...fields});
-                  }
+        <>
+          <Header/>
+          <div className={Theme.Container}>
+            <div className={Theme.Cell}>
+              <form className={Theme.Form} name='gifts' method='POST' noValidate data-netlify='true' data-netlify-honeypot='bot-field' onSubmit={ event => handleSubmit(event) }>
+                <Section {...{
+                  heading: `Child's name`,
+                  legend: `Who would you like to send a gift to today?`
                 }}
-                options={SELECT_OPTIONS}/>
-                {formErrors.sendersRelationshipToChild && (<span className={Theme.Form_Input_Error}></span>)}
-                {formErrors.sendersRelationshipToChild && (<Tooltip>{formErrors['sendersRelationshipToChild']}</Tooltip>)}
-              </Section>
-              <input type='hidden' name='bot-field' onChange={ event => handleChange('bot-field', event)} value={formFields['bot-field']}/>
-              <input type='hidden' name='form-name' value='gifts'/>
-              <Button/>
-            </form>
+                >
+                  <div className={Theme.Form_Input_Wrapper}>
+                    <input
+                    className={Theme.Form_Input} 
+                    id='childsName'
+                    name='childsName'
+                    type='text'
+                    value={formFields['childsName']}
+                    onChange={event => handleChange('childsName', event)}
+                    placeholder="Child's name"/>
+                    {formErrors.childsName && (<span className={Theme.Form_Input_Error}></span>)}
+                    {formErrors.childsName && (<Tooltip>{formErrors['childsName']}</Tooltip>)}
+                  </div>
+                </Section>
+
+                <Section {...{
+                  heading: `Parent's details`,
+                  legend: `We need these to contact the parent and let them know about the gift.`
+                }}
+                >
+                  <div className={Theme.Form_Input_Wrapper}>
+                    <input
+                    className={Theme.Form_Input} 
+                    id='parentsName'
+                    name='parentsName'
+                    type='text'
+                    value={formFields['parentsName']}
+                    onChange={event => handleChange('parentsName', event)}
+                    placeholder={`Parent's name`}/>
+                    {formErrors.parentsFirstName && (<span className={Theme.Form_Input_Error}></span>)}
+                    {formErrors.parentsFirstName && (<Tooltip>{formErrors['parentsName']}</Tooltip>)}
+                  </div>
+
+                  <div className={Theme.Form_Input_Wrapper}>
+                    <input
+                    className={Theme.Form_Input} 
+                    id='parentsEmailAddress'
+                    name='parentsEmailAddress'
+                    type='text'
+                    value={formFields['parentsEmailAddress']}
+                    onChange={event => handleChange('parentsEmailAddress', event)}
+                    placeholder='Email address'/>
+                    {formErrors.parentsEmailAddress && (<span className={Theme.Form_Input_Error}></span>)}
+                    {formErrors.parentsEmailAddress && (<Tooltip>{formErrors['parentsEmailAddress']}</Tooltip>)}
+                  </div>
+                </Section>
+
+                <Section {...{
+                  heading: `Gift amount`,
+                  legend: `Please enter the amount you'd like to gift`
+                }}
+                >
+                  <div className={Theme.Form_Input_Wrapper}>
+                    <span className={Theme.Form_Input_Currency}>£</span>
+                    <input
+                    className={`${Theme.Form_Input} ${Theme.Form_Input___Amount}`} 
+                    id='giftAmount'
+                    name='giftAmount'
+                    type='number'
+                    value={formFields['giftAmount']}
+                    onChange={event => handleChange('giftAmount', event)}
+                    />
+                    {formErrors.giftAmount && (<span className={Theme.Form_Input_Error}></span>)}
+                    {formErrors.giftAmount && (<Tooltip>{formErrors['giftAmount']}</Tooltip>)}
+                  </div>
+                </Section>
+
+                <Section {...{
+                  heading: `Message`,
+                  legend: `With Beanstalk you can leave a message with your contribution`
+                }}
+                >
+                  <div className={`${Theme.Form_Input_Wrapper} ${Theme.Form_Input_Wrapper___Textarea}`}>
+                    <textarea
+                    className={`${Theme.Form_Input} ${Theme.Form_Input___Message}`} 
+                    id='giftMessage'
+                    name='giftMessage'
+                    placeholder='Write your message here'
+                    type='text'
+                    value={formFields['giftMessage']}
+                    onChange={event => handleChange('giftMessage', event)}
+                    rows='4'
+                    maxlength='150'
+                    >
+                    </textarea>
+                    {formErrors.giftMessage && (<span className={Theme.Form_Input_Error}></span>)}
+                    {formErrors.giftMessage && (<Tooltip>{formErrors['giftMessage']}</Tooltip>)}
+                  </div>
+                  <TextareaCounter {...{
+                    textareaInput: formFields.giftMessage
+                  }}/>
+                </Section>
+
+                <Section {...{
+                  heading: `Your details`,
+                  legend: () => (<>We need your details <span className={Theme.DetailsAsterix}>*</span></>)
+                }}
+                >
+                  <div className={Theme.Form_Input_Wrapper}>
+                    <input
+                    className={Theme.Form_Input} 
+                    id='sendersName'
+                    name='sendersName'
+                    type='text'
+                    value={formFields['sendersName']}
+                    onChange={event => handleChange('sendersName', event)}
+                    placeholder='Your name'/>
+                    {formErrors.sendersFirstName && (<span className={Theme.Form_Input_Error}></span>)}
+                    {formErrors.sendersFirstName && (<Tooltip>{formErrors['sendersName']}</Tooltip>)}
+                  </div>
+
+                  <div className={Theme.Form_Input_Wrapper}>
+                    <input 
+                    className={Theme.Form_Input} 
+                    id='sendersEmailAddress'
+                    name='sendersEmailAddress'
+                    type='text' 
+                    value={formFields['sendersEmailAddress']}
+                    onChange={event => handleChange('sendersEmailAddress', event)}
+                    placeholder='Email address'/>
+                    {formErrors.sendersEmailAddress && (<span className={Theme.Form_Input_Error}></span>)}
+                    {formErrors.sendersEmailAddress && (<Tooltip>{formErrors['sendersEmailAddress']}</Tooltip>)}
+                  </div>
+
+                  <div className={Theme.Notice}>
+                    * If you are a Beanstalk user enter the email you've registered on the app with
+                  </div>
+                </Section>
+
+                <Section {...{
+                  heading: `Relationship to child`
+                }}
+                >
+                  <Select
+                  className={Theme.ProviderSelect}
+                  styles={selectStyles}
+                  placeholder={`Select an option`}
+                  onChange={(option, event) => {
+                    let fields = formFields;
+                    let value = '';
+                    if(event.action !== 'clear') {
+                      value = option.value;
+                      fields['sendersRelationshipToChild'] = value;
+                      return setFormFields({ ...fields});
+                    }
+                  }}
+                  options={SELECT_OPTIONS}/>
+                  {formErrors.sendersRelationshipToChild && (<span className={Theme.Form_Input_Error}></span>)}
+                  {formErrors.sendersRelationshipToChild && (<Tooltip>{formErrors['sendersRelationshipToChild']}</Tooltip>)}
+
+                  <div className={Theme.CheckboxAndLabel}>
+                    <Checkbox {...{ handleChange: event => handleChange('termsAccepted', event), checked: formFields['termsAccepted'] }}/>
+                    <div className={Theme.CheckboxLabel}>
+                      I agree that this data will be used to send a gift to the child
+                    </div>
+                  </div>
+                </Section>
+                <input type='hidden' name='bot-field' onChange={ event => handleChange('bot-field', event)} value={formFields['bot-field']}/>
+                <input type='hidden' name='form-name' value='gifts'/>
+                <Button/>
+
+                <IsFormError {...{
+                  formErrors: formErrors
+                }}/>
+              </form>
+            </div>
+            <div className={Theme.Cell}>
+              <GiftSummary {...{ 
+                giftAmount: formFields.giftAmount,
+                giftMessage: formFields.giftMessage 
+              }}/>
+            </div>
           </div>
-          <div className={Theme.Cell}>
-            <GiftSummary {...{ giftAmount: formFields.giftAmount , giftMessage: formFields.giftMessage }}/>
-          </div>
-        </div>
+        </>
       }
     </>
   )

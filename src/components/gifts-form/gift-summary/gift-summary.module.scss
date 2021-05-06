@@ -1,12 +1,19 @@
 .Container {
   width: 100%;
-  max-width: $base-unit * 36;
   font-size: $subheader-font-size;
   line-height: $subheader-line-height;
   @media (max-width: $breakpoint-sm - .0625em) {
+    max-width: $base-unit * 36;
     margin-top: $base-unit * 4;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+.StickyWrapper {
+  @media (min-width: $breakpoint-sm) {
+    top: $base-unit * 4;
+    position: sticky;
   }
 }
 

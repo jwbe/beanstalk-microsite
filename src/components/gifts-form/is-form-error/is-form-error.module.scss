@@ -1,0 +1,22 @@
+.Container {
+  margin-top: $base-unit * 3;
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 5;
+    margin-top: $base-unit * 5;
+  }
+}
+
+.Inner {
+  display: inline-block;
+  max-width: $base-unit * 33;
+  padding-top: $base-unit;
+  padding-right: $base-unit * 2;
+  padding-bottom: $base-unit;
+  padding-left: $base-unit * 2;
+  color: $accent-6;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  background-color: $accent-6-lighter;
+  border-radius: $base-unit;
+}
