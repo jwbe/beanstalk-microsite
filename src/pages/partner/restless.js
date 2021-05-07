@@ -26,7 +26,7 @@ const SignUpPage = () => {
             & save for yourself<br/> & the children you love 
           </>
         }
-        processSteps
+        processSteps={[]}
         formSmallPrint={
           <>
             <strong>Note:</strong> We will use your email to remind you to register and to share information about Beanstalk. You can unsubscribe at any time.

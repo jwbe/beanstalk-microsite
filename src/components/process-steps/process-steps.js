@@ -28,8 +28,6 @@ const initialData = [
 
 const BuildSteps = (props) => {
   let { data } = props;
-  console.log( data, ' data insisde buildStepsx')
-  console.log(props, ' props');
   return (
     data.map((step, index) => (
       <React.Fragment
@@ -48,7 +46,7 @@ const BuildSteps = (props) => {
 }
 
 const ProcessSteps = (props) => {
-  let { processSteps } = props; 
+  let { processSteps } = props ? props : []; 
   const data = Object.values([...initialData, ...processSteps].reduce((result, {
     id,
     ...rest
