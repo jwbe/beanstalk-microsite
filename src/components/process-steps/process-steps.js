@@ -3,7 +3,7 @@ import Theme from './process-steps.module.scss';
 import Step from './step/step';
 import Arrow from './arrow/arrow';
 
-const data = [
+const initialData = [
   {
     id: 0,
     thumbnail: require('./images/1.png'),
@@ -27,9 +27,11 @@ const data = [
 ]
 
 const BuildSteps = (props) => {
-  let { data: steps } = props;
+  let { data } = props;
+  console.log( data, ' data insisde buildStepsx')
+  console.log(props, ' props');
   return (
-    steps.map((step, index) => (
+    data.map((step, index) => (
       <React.Fragment
         key={step.id}>
         <Step
@@ -38,14 +40,26 @@ const BuildSteps = (props) => {
           copy: step.copy
         }}/>
         {
-          index < steps.length - 1 && <Arrow/>
+          index < data.length - 1 && <Arrow/>
         }
       </React.Fragment>
     ))
   )
 }
 
-const ProcessSteps = () => {
+const ProcessSteps = (props) => {
+  let { processSteps } = props; 
+  const data = Object.values([...initialData, ...processSteps].reduce((result, {
+    id,
+    ...rest
+  }) => {
+    result[id] = {
+      ...(result[id] || {}),
+      id,
+      ...rest
+    };
+    return result;
+  }, {}));
   return (
     <>
       <h2 className={Theme.Heading}>
