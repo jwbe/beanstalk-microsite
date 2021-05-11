@@ -6,14 +6,20 @@ const Point = ({
   iconSize,
   heading,
   children,
-  linkTarget,
-  linkText
+  link
 }) => {
   return (
     <article className={styles.Point}>
-      <div className={styles.Point_icon}>
-        <img src={icon} width="100%" height="100%"/>
-      </div>
+      {
+        link ?
+        <a className={styles.Point_icon} href={link}>
+          <img src={icon} width="100%" height="100%"/>
+        </a>
+        :
+        <div className={styles.Point_icon}>
+          <img src={icon} width="100%" height="100%"/>
+        </div>
+      }
       <h2 className={styles.Point_heading}>
         {heading}
       </h2>

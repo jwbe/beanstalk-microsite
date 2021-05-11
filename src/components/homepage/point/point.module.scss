@@ -1,4 +1,5 @@
 .Point {
+  display: block;
   @media (max-width: $breakpoint-sm - .0625em) {
     padding-right: $base-unit * 2;
     padding-left: $base-unit * 2;

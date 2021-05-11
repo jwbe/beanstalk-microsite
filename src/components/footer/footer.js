@@ -82,9 +82,9 @@ const Footer = ({
                     Get Beanstalk
                   </Heading>
                   <div className={Theme.Badges}>
-                    <a className={`${Theme.Badge} ${Theme.AppleAppStore}`} href="https://apps.apple.com/gb/app/beanstalk-save-for-your-kids/id1470619597" target="_blank" rel="noreferrer">
+                    <a className={`${Theme.Badge} ${Theme.AppleAppStore}`} href="https://smart.link/e1zksqyenr6pj?site_id=footer" target="_blank" rel="noreferrer">
                     </a>
-                    <a className={`${Theme.Badge} ${Theme.GooglePlayStore}`} href="https://play.google.com/store/apps/details?id=com.beanstalk" target="_blank" rel="noreferrer">
+                    <a className={`${Theme.Badge} ${Theme.GooglePlayStore}`} href="https://smart.link/e1zksqyenr6pj?site_id=footer" target="_blank" rel="noreferrer">
                     </a>
                   </div>
                 </div>
@@ -97,8 +97,8 @@ const Footer = ({
               <Social/>
             </div>
             <div className={Theme.Bottom}>
-              <div className={Theme.Logo}>
-              </div>
+              <a className={Theme.Logo} href="https://smart.link/fbrw987fz7a2c?site_id=nav">
+              </a>
               <p className={Theme.SmallPrint}>
                 Beanstalk is a trading name of KidStart Limited. KidStart Limited is authorised and regulated by the Financial Conduct Authority. Our FCA number is 473606. See <a href='http://www.fca.org.uk' target="_blank" rel="noreferrer">http://www.fca.org.uk</a> for more information. View our <Link to='/data-privacy-and-cookies'>privacy policy</Link> and <Link to='/legals'>terms & conditions</Link>.
               </p>

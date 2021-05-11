@@ -77,7 +77,7 @@ const MobileNavigation = ({
       {
         isHomepage ?
         <div className={`${styles.MobileNavigation_logo_underlay} ${styles.MobileNavigation_logo_underlay___homepage}`}>
-          <Link to='/'>
+          <Link to='https://smart.link/fbrw987fz7a2c?site_id=nav'>
             <img
               className={styles.MobileNavigation_logo}
               src={logo}
@@ -88,7 +88,7 @@ const MobileNavigation = ({
         </div>
         :
         <div className={styles.MobileNavigation_logo_underlay}>
-          <Link to='/'>
+          <Link to='https://smart.link/fbrw987fz7a2c?site_id=nav'>
             <img
               className={styles.MobileNavigation_logo}
               src={logo}

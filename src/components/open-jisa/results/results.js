@@ -30,7 +30,7 @@ const Results = (props) => {
           </span> if you regularly use KidStart
         </div>
 
-        <Button link={`/`}/>
+        <Button link={`https://smart.link/e1zksqyenr6pj?site_id=whatif`}/>
 
       </div>
     </>

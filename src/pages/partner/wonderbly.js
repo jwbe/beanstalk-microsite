@@ -63,19 +63,15 @@ const SignUpPage = () => {
         </li>
 
         <li>
-          Your details will be passed on to Reading Eggs once you have signed up to Beanstalk for them to send you your unique code
+          Unique code for the Wonderbly You & The Beanstalk softcover book will be emailed to you within two weeks of Junior ISA being open and funded.
         </li>
 
         <li>
-          Offer is 34% off a combined Mathseeds and Reading Eggs 12 month subscription
+          Code will cover cost of a You & The Beanstalk softcover book RRP £21.99. You will have to cover cost of postage from £3.99.
         </li>
 
         <li>
-          Only one bonus per member.
-        </li>
-
-        <li>
-          The offer is valid until midnight on the 28th February 2021.
+          The offer is valid until midnight on the 4th July 2021.
         </li>
 
         <li>
