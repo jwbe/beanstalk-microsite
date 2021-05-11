@@ -1,7 +1,7 @@
 ---
 title: " 5 Things You Need To Consider This JISA Season"
-date: 2021-02-08T17:22:14.201Z
 path: 5-things-you-need-to-consider-this-jisa-season
+date: 2021-02-08T17:22:14.201Z
 author: The Beanstalk Team
 featuredImage: beanstalk-5-reasons.png
 description: We discuss the five things you need to consider before opening a
@@ -58,6 +58,6 @@ If your child has a [CTF](https://beanstalkapp.co.uk/articles/locate-a-missing-c
 
 To see how much your child can save in fees on their own Child Trust Fund, we’ve built a [CTF Calculator](https://beanstalkapp.co.uk/ctf-calculator), a simple online tool that lets you calculate how much they can save in fees simply by transferring an existing Child Trust Fund across to a Junior ISA with Beanstalk. 
 
-[Beanstalk](https://beanstalkapp.co.uk/) is a fintech app aimed at helping parents and families build their long-term child savings. The Beanstalk app is available for download for Apple and Android devices.  
+[Beanstalk](https://smart.link/e1zksqyenr6pj?site_id=blog) is a fintech app aimed at helping parents and families build their long-term child savings. The Beanstalk app is available for download for Apple and Android devices.  
 
 You can read our full introduction to Junior ISAs here: <https://beanstalkapp.co.uk/guides/jisa-guide>
