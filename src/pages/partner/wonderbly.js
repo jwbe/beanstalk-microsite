@@ -47,11 +47,6 @@ const SignUpPage = () => {
           <>
           </>
         }
-        formSmallPrint={
-          <>
-            <strong>Note:</strong> We will only use your email address so Reading Eggs can share the offer code, remind you to register and to record whether you registered.
-          </>
-        }
         quote={
           <>
             We're excited to have teamed up with Beanstalk to help you save for your children and as a bonus get one of our beautiful, personalised You & The Beanstalk books for free when you make your first saving into a Beanstalk JISA - <strong>Wonderbly</strong>
