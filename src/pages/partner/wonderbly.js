@@ -26,7 +26,7 @@ const SignUpPage = () => {
         }
         secondaryCta={
           <>
-            & get a free personalised<br/>Wonderbly book when <br/>you save into a <br/>Beanstalk Junior ISA
+            & get a free personalised<br/>Wonderbly book* when <br/>you save into a <br/>Beanstalk Junior ISA
           </>
         }
         processSteps={
@@ -43,6 +43,11 @@ const SignUpPage = () => {
             }
           ]
         }
+        formSmallPrint={
+          <>
+            <strong>Note:</strong> Your email will be used to record your registration for the offer and to send information on Beanstalk.
+          </>
+        }
         partner={
           <>
           </>
@@ -52,7 +57,12 @@ const SignUpPage = () => {
             We're excited to have teamed up with Beanstalk to help you save for your children and as a bonus get one of our beautiful, personalised You & The Beanstalk books for free when you make your first saving into a Beanstalk JISA - <strong>Wonderbly</strong>
           </>
         }
+
       >
+        <li>
+          * Your unique voucher code is only valid on a softcover copy of You & The Beanstalk book and can’t be exchanged in part or in full for cash. Change can't be given and it can’t be used for multiple purchases.
+        </li>
+
         <li>
           Users must be genuine new, non-duplicate registrations who enter their details on this page and then download and register with the same details on the Beanstalk app
         </li>
