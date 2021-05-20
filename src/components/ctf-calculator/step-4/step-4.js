@@ -146,7 +146,7 @@ class Step4 extends Component {
         formData={formData}/>
 
         <div className={StepTheme.CtaButton}>
-          <CtaButton link={'/from-ctf-calculator-shares'}/>
+          <CtaButton link={'https://smart.link/e1zksqyenr6pj?site_id=ctfcalcstocks'}/>
         </div>
 
         <div className={StepTheme.Recalculate} onClick={() => {this.props.goToStep(1)}}>

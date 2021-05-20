@@ -82,9 +82,9 @@ const Footer = ({
                     Get Beanstalk
                   </Heading>
                   <div className={Theme.Badges}>
-                    <a className={`${Theme.Badge} ${Theme.AppleAppStore}`} href="https://smart.link/e1zksqyenr6pj?site_id=footer" target="_blank" rel="noreferrer">
+                    <a className={`${Theme.Badge} ${Theme.AppleAppStore}`} href="https://smart.link/nayw9a5wruuts?site_id=iosfooter" target="_blank" rel="noreferrer">
                     </a>
-                    <a className={`${Theme.Badge} ${Theme.GooglePlayStore}`} href="https://smart.link/e1zksqyenr6pj?site_id=footer" target="_blank" rel="noreferrer">
+                    <a className={`${Theme.Badge} ${Theme.GooglePlayStore}`} href="https://smart.link/i0x4v7cw1rb98?site_id=andrfooter" target="_blank" rel="noreferrer">
                     </a>
                   </div>
                 </div>

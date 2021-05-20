@@ -134,10 +134,10 @@ class Refer extends Component {
                   </div>
                 </header>
                 <div className={ReferTheme.Badges}>
-                  <a className={ReferTheme.Badges_Badge} href="https://smart.link/e1zksqyenr6pj?site_id=beanstalksite" target="_blank" rel="noreferrer">
+                  <a className={ReferTheme.Badges_Badge} href="https://smart.link/i0x4v7cw1rb98?site_id=andrrefer" target="_blank" rel="noreferrer">
                     <img className={ReferTheme.Badges_Badge_Image} src={AppStoreLogo} alt="Apple App Store logo" width="135" height="40"/>
                   </a>
-                  <a className={ReferTheme.Badges_Badge} href="https://smart.link/e1zksqyenr6pj?site_id=beanstalksite" target="_blank" rel="noreferrer">
+                  <a className={ReferTheme.Badges_Badge} href="https://smart.link/nayw9a5wruuts?site_id=iosrefer" target="_blank" rel="noreferrer">
                     <img className={ReferTheme.Badges_Badge_Image} src={GooglePlayStoreLogo} alt="Google Play Store logo" width="135" height="40"/>
                   </a>
                 </div>

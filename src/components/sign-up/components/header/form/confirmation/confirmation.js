@@ -13,10 +13,10 @@ const Confirmation = () => (
       <strong>Now just download the Beanstalk app and<br/> register with the same email you just gave us. </strong><br/>It takes just a couple of minutes to open an account.
     </p>
     <div className={Theme.Badges}>
-      <a className={Theme.Badge} href="https://apps.apple.com/gb/app/beanstalk-save-for-your-kids/id1470619597" target="_blank" rel="noreferrer">
+      <a className={Theme.Badge} href="https://smart.link/nayw9a5wruuts?site_id=iospartner" target="_blank" rel="noreferrer">
         <img src={AppleAppStoreBadge} width="135" height="40" alt="Apple App Store logo"/>
       </a>
-      <a className={Theme.Badge} href="https://play.google.com/store/apps/details?id=com.beanstalk" target="_blank" rel="noreferrer">
+      <a className={Theme.Badge} href="https://smart.link/i0x4v7cw1rb98?site_id=andrpartner" target="_blank" rel="noreferrer">
         <img src={GooglePlayStoreBadge} width="135" height="40" alt="Google Play Store logo"/>
       </a>
     </div>

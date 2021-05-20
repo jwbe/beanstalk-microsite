@@ -487,12 +487,12 @@ const FeaturesPage = () => {
 
           <div className={AppBadges.Container}>
             <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___First}`}>
-              <a href="https://smart.link/e1zksqyenr6pj?site_id=beanstalksite" target="_blank" rel="noreferrer">
+              <a href="https://smart.link/nayw9a5wruuts?site_id=iosfeatures" target="_blank" rel="noreferrer">
                 <img className={AppBadges._Badge} src={appStoreBadge} width="135" height="40" alt="Apple app store badge"/>
               </a>
             </div>
             <div className={`${AppBadges._BadgeWrapper} ${AppBadges._BadgeWrapper___Last}`}>
-              <a href="https://smart.link/e1zksqyenr6pj?site_id=beanstalksite" target="_blank" rel="noreferrer">
+              <a href="https://smart.link/i0x4v7cw1rb98?site_id=andrfeatures" target="_blank" rel="noreferrer">
                 <img className={AppBadges._Badge} src={googlePlayBadge} width="135" height="40" alt="Google Play store badge"/>
               </a>
             </div>
