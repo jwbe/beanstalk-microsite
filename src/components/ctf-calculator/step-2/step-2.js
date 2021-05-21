@@ -29,7 +29,7 @@ class Step2 extends Component {
           </p>
 
         </div>
-        <CtaButton link={'https://smart.link/e1zksqyenr6pj?site_id=ctfcalccash'}/>
+        <CtaButton link={'https://smart.link/hwj4e31tbz9bq?site_id=ctfcalccash'}/>
 
         <div className={StepTheme.Recalculate} onClick={() => {this.props.goToStep(1)}}>
           Recalculate
