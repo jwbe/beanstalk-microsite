@@ -54,13 +54,13 @@ const SignUpPage = () => {
         }
         quote={
           <>
-            `We're thrilled to partner with Beanstalk to help you grow your children's savings – and grow their imagination too! Get a free copy of our personalised fairy tale book You and the Beanstalk when you make your first saving into a Beanstalk JISA<strong>Wonderbly</strong>`
+            `'We're thrilled to partner with Beanstalk to help you grow your children's savings – and grow their imagination too! Get a free copy of our personalised fairy tale book <i>You and the Beanstalk</i> when you make your first saving into a Beanstalk JISA' - <strong>Wonderbly</strong>`
           </>
         }
 
       >
         <li>
-          * Your unique voucher code is only valid on a softcover copy of You & The Beanstalk book and can’t be exchanged in part or in full for cash. Change can't be given and it can’t be used for multiple purchases.
+          * Your unique voucher code is only valid on a softcover copy of <i>You and The Beanstalk</i> book and can’t be exchanged in part or in full for cash. Change can't be given and it can’t be used for multiple purchases.
         </li>
 
         <li>
@@ -72,7 +72,7 @@ const SignUpPage = () => {
         </li>
 
         <li>
-          Code will cover cost of a You & The Beanstalk softcover book RRP £21.99. You will have to cover cost of postage from £3.99.
+          Code will cover cost of a <i>You & The Beanstalk</i> softcover book RRP £21.99. You will have to cover cost of postage from £3.99.
         </li>
 
         <li>
