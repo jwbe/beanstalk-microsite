@@ -68,11 +68,11 @@ const SignUpPage = () => {
         </li>
 
         <li>
-          Unique code for the Wonderbly You & The Beanstalk softcover book will be emailed to you within two weeks of Junior ISA being open and funded.
+          Unique code for the Wonderbly <i>You and The Beanstalk</i> softcover book will be emailed to you within two weeks of Junior ISA being open and funded.
         </li>
 
         <li>
-          Code will cover cost of a <i>You & The Beanstalk</i> softcover book RRP £21.99. You will have to cover cost of postage from £3.99.
+          Code will cover cost of a <i>You and The Beanstalk</i> softcover book RRP £21.99. You will have to cover cost of postage from £3.99.
         </li>
 
         <li>
