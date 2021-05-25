@@ -54,7 +54,7 @@ const SignUpPage = () => {
         }
         quote={
           <>
-            'We're thrilled to partner with Beanstalk to help you grow your children's savings – and grow their imagination too! Get a free copy of our personalised fairy tale book <i>You and the Beanstalk</i> when you make your first saving into a Beanstalk JISA' - <strong>Wonderbly</strong>
+            We're thrilled to partner with Beanstalk to help you grow your children's savings – and grow their imagination too! Get a free copy of our personalised fairy tale book <i>You and the Beanstalk</i> when you make your first saving into a Beanstalk JISA - <strong>Wonderbly</strong>
           </>
         }
 
