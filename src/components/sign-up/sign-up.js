@@ -20,8 +20,11 @@ const SignUp = ({
   partner,
   logo,
   formSmallPrint,
-  processSteps
+  processSteps,
+  processStepsHeading
+
 }) => {
+
   return (
     <>
       <Nav/>
@@ -37,7 +40,10 @@ const SignUp = ({
           {quote}
         </QuoteCredential>
         {
-          processSteps && <ProcessSteps {...{processSteps}}/>
+          processSteps && <ProcessSteps {...{ 
+            heading: processStepsHeading && processStepsHeading, 
+            processSteps 
+          }}/>
         }
         <SecondaryColourSectionOnMobile>
           <Heading>

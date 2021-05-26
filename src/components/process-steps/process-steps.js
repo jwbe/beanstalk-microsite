@@ -46,7 +46,7 @@ const BuildSteps = (props) => {
 }
 
 const ProcessSteps = (props) => {
-  let { processSteps } = props ? props : []; 
+  let { processSteps, heading } = props ? props : []; 
   const data = Object.values([...initialData, ...processSteps].reduce((result, {
     id,
     ...rest
@@ -61,7 +61,9 @@ const ProcessSteps = (props) => {
   return (
     <>
       <h2 className={Theme.Heading}>
-        How to save for your grandchildren with Beanstalk
+        {
+          heading ? heading : `How to save for your grandchildren with Beanstalk`
+        }
       </h2>
       <div className={Theme.Container}>
         <BuildSteps {...{ data }}/>

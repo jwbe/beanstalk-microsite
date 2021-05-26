@@ -29,6 +29,9 @@ const SignUpPage = () => {
             & get a free personalised<br/>Wonderbly book* when <br/>you save into a <br/>Beanstalk Junior ISA
           </>
         }
+        processStepsHeading={
+          `How to claim your free Wonderbly book`
+        }
         processSteps={
           [
             {
@@ -73,6 +76,10 @@ const SignUpPage = () => {
 
         <li>
           Code will cover cost of a <i>You and The Beanstalk</i> softcover book RRP £21.99. You will have to cover cost of postage from £3.99.
+        </li>
+
+        <li>
+          If account transferred within 3 months of opening, we will levy a transfer charge of £10.
         </li>
 
         <li>
