@@ -4,6 +4,7 @@ import Step1 from './step-1/step-1';
 import Step2 from './step-2/step-2';
 import Step3 from './step-3/step-3';
 import Step4 from './step-4/step-4';
+import SmsCapture from '../sms-capture/sms-capture';
 
 import CtfCalculatorTheme from './ctf-calculator.module.scss';
 
@@ -66,6 +67,13 @@ class CtfCalculator extends Component {
   render() {
     return(
       <>
+        <SmsCapture {...{
+          embedded: true,
+          mainCta: `You could save £100+* in fees`,
+          paraOne: () => (<>Save on investment fees by transferring your child trust fund to Beanstalk. <strong>It just takes a minute to open an account.</strong></>),
+          paraTwo: `The app helps your family work together to build a pot of money, giving your kids the best possible launch into adult life.`
+        }}/>
+        
         <div className={CtfCalculatorTheme.Container}>
           <Header
             currentStep={this.state.currentStep}

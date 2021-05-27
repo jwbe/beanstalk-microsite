@@ -18,6 +18,7 @@ export const query = graphql`
         description
         media
         plain
+        fullWidth
         app
         canonical
         isKidStartFamily
@@ -38,11 +39,22 @@ const Layout = ({ data }) => {
           canonical={data.page.meta.canonical}
           />
         { data.page.meta.app ? null : <Header plain={data.page.meta.plain} headerVariant={data.page.meta.media ? HEADER_VARIANT.MEDIA_PAGE : null} heading={data.page.meta.heading} subheading={data.page.meta.subheading}/> }
-        <Main layoutVariant={data.page.meta.media ? LAYOUT_VARIANT.MEDIA_PAGE : LAYOUT_VARIANT.PLAIN_PAGE}>
-          <Content>
-            {data.page.content}
-          </Content>
-        </Main>
+        {
+          data.page.meta.fullWidth ?
+          <Main {...{
+            layoutVariant: `fullWidth`
+          }}>
+            <Content>
+              {data.page.content}
+            </Content>
+          </Main>
+          :
+          <Main layoutVariant={data.page.meta.media ? LAYOUT_VARIANT.MEDIA_PAGE : LAYOUT_VARIANT.PLAIN_PAGE}>
+            <Content>
+              {data.page.content}
+            </Content>
+          </Main>
+        }
         { data.page.meta.app ? null : 
           data.page.meta.isKidStartFamily ? <Footer isKidStartFamily/> : <Footer/> 
         }

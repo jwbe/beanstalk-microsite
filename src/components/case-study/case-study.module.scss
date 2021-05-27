@@ -1,0 +1,48 @@
+.CaseStudy {
+  position: relative;
+  display: flex;
+  &:before,
+  &:after {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: '';
+  }
+  &:before {
+    left: -100%;
+  }
+  &:after {
+    right: -100%;
+  }
+}
+
+.WhiteBackground {
+  color: $accent-3;
+  background-color: $white;
+}
+
+.PrimaryBackground {
+  color: $white;
+  background-color: $primary;
+  &:before {
+    background-color: $primary;
+  }
+  &:after {
+    background-color: $primary;
+  }
+}
+
+.SecondaryBackground {
+  color: $white;
+  background-color: $secondary;
+  &:before {
+    background-color: $secondary;
+  }
+  &:after {
+    background-color: $secondary;
+  }
+}
+
+.RightToLeft {
+
+}

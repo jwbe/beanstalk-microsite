@@ -2,6 +2,10 @@
   margin-right: auto;
   margin-left: auto;
   width: 100%;
+  @media (max-width: $breakpoint-sm - .0625em){
+    padding-right: $base-unit;
+    padding-left: $base-unit;
+  }
   @media (min-width: $breakpoint-sm){
     max-width: 38.75rem;
   }

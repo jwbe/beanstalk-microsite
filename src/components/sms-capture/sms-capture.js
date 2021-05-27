@@ -13,7 +13,8 @@ import Stars from './components/stars/stars';
 import DecorativeSectionJoin from '../shared/decorative-section-join/decorative-section-join';
 
 
-const SmsCapture = () => {
+const SmsCapture = (props) => {
+  let { embedded, mainCta, paraOne, paraTwo } = props;
   return (
     <>
       <div className={`${Theme.Cut_Mask} ${Theme.Background}`}>
@@ -27,19 +28,29 @@ const SmsCapture = () => {
                 </div>
               </div>
               <div className={Theme.Column}>
-                <Heading/>
+                <Heading {...{
+                  mainCta: mainCta,
+                  paraOne: paraOne,
+                  paraTwo: paraTwo
+                }}/>
                 <Form/>
                 <Badges/>
                 <Stars/>
               </div>
             </div>
           </Container>
-          <div className={Theme.DecorativeSectionJoin}>
-            <DecorativeSectionJoin flipped/>
-          </div>
+          {
+            embedded !== true &&
+            <div className={Theme.DecorativeSectionJoin}>
+              <DecorativeSectionJoin flipped/>
+            </div>
+          }
         </div>
       </div>
-      <IphoneOnLeaves/>
+      {
+        embedded !== true &&
+        <IphoneOnLeaves/>
+      }
     </>
   );
 };
