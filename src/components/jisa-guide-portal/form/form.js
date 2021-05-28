@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import * as qs from 'query-string'
+import { Link } from 'gatsby'
 
 import Styles from './form.module.scss'
 import QuestionStyles from './question/question.module.scss'
@@ -168,17 +169,9 @@ class Form extends Component {
                 </div>
               </div>
               <div className={QuestionStyles.Question}>
-                <label className={QuestionStyles.Checkbox}>
-                  <input 
-                  type="checkbox"
-                  name="optIn"
-                  id="optIn"
-                  ref="optIn"
-                  onChange={this.handleCheck.bind(this)}
-                  value={this.state.fields['optIn']}/>
-                  <span className={QuestionStyles.Checkbox_Facade}></span>
-                  <div className={QuestionStyles.Copy}>I would like to receive information about Junior ISAs from Beanstalk</div>
-                </label>
+                <div className={QuestionStyles.Copy}>
+                  By downloading this guide, you consent to receive emails from the Beanstalk & KidStart family. We explain how we use your data in our <Link to={`/data-privacy-and-cookies`}>privacy policy</Link>
+                </div>
               </div>
               <input type="hidden" ref="bot-field" name="bot-field"/>
               <input type="hidden" ref="form-name" name="form-name" value="jisa-guide"/>

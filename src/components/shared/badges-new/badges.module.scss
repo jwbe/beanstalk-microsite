@@ -1,0 +1,23 @@
+.Container {
+  width: 100%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Badge {
+  display: block;
+  img {
+    display: block;
+  }
+  @media (max-width: $breakpoint-sm - .0625em) {
+    &:first-of-type {
+      margin-right: $base-unit * 2;
+    }
+  }
+  @media (min-width: $breakpoint-sm) {
+    &:first-of-type {
+      margin-right: $base-unit * 3;
+    }
+  }
+}
