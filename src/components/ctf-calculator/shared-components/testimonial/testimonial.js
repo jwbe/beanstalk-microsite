@@ -6,10 +6,10 @@ const Testimonial = () => (
     <div className={Theme.Thumbnail}></div>
     <div className={Theme.Content}>
       <p>
-        I saved £100 per year by moving my daughter's CTF
+        "I now feel comfortable that my children's Junior ISA money is in place where fees are low"
       </p>
       <span className={Theme.Author}>
-        Mrs E, London
+        Lynn Beattie aka Mrs MummyPenny, Personal Finance Expert
       </span>
     </div>
   </div>
