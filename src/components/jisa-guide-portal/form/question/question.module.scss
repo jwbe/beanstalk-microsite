@@ -9,9 +9,6 @@
   color: $white;
   font-size: $body-font-size;
   line-height: $body-line-height;
-  @media (min-width: $breakpoint-sm) {
-    padding-left: $base-unit * 3;
-  }
   @media (min-width: $breakpoint-md) {
     margin-top: -$base-unit / 2;
     font-size: $subheader-font-size;
