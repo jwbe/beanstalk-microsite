@@ -24,21 +24,3 @@
     line-height: $body-line-height;
   }
 }
-
-.Callout {
-  @media (max-width: $breakpoint-sm - .0625em){
-    margin-top: $base-unit * 3;
-  }
-  margin-top: $base-unit * 5;
-}
-
-.Smallprint {
-  @media (max-width: $breakpoint-sm - .0625em){
-    margin-top: $base-unit * 3;
-    font-size: $body-font-size;
-    line-height: $body-line-height;
-  }
-  margin-top: $base-unit * 5;
-  font-size: $subheader-font-size;
-  line-height: $subheader-line-height;
-}

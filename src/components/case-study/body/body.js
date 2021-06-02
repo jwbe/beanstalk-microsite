@@ -5,7 +5,7 @@ import Theme from './body.module.scss';
 
 const Body = (props) => {
 
-  let { children } = props;
+  const { children } = props;
   
   return (
     <div className={Theme.Container}>

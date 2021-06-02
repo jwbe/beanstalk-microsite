@@ -6,6 +6,7 @@ import Step3 from './step-3/step-3'
 import Step4 from './step-4/step-4'
 import SmsCapture from '../sms-capture/sms-capture'
 import Callout from '../shared/callout/callout'
+import Footer from './shared-components/footer/footer'
 
 import CtfCalculatorTheme from './ctf-calculator.module.scss'
 
@@ -67,18 +68,13 @@ class CtfCalculator extends Component {
 
   render() {
     return(
-      <>
-        <SmsCapture {...{
-          embedded: true,
-          mainCta: `Customers save on average £150+*`,
-          paraOne: () => (<>Save on investment fees by transferring your child trust fund to Beanstalk. <strong>It just takes a minute to open an account.</strong></>),
-          paraTwo: `The app helps your family work together to build a pot of money, giving your kids the best possible launch into adult life.`
-        }}/>
-        
+      <>        
         <div className={CtfCalculatorTheme.Container}>
-          <Header
-            currentStep={this.state.currentStep}
-            goToStep={this._goToStep}/>
+          <Header {...{
+            embedded: this.props.embedded,
+            currentStep: this.state.currentStep,
+            gotToStep: this._goToStep
+          }}/>
           <Step1 
             currentStep={this.state.currentStep} 
             goToStep={this._goToStep}/>
@@ -100,12 +96,9 @@ class CtfCalculator extends Component {
             firstSelectionId={this.state.firstSelectionId}
             secondSelectionId={this.state.secondSelectionId}
             />
-            <div className={CtfCalculatorTheme.Callout}>
-              <Callout/>
-            </div>
-            <div className={CtfCalculatorTheme.Smallprint}>
-              *A 13 year old with £2500 in a stakeholder CTF charging 1.5% would save ~£115 in fees over the remaining life of the account. The funds we offer have their own fees built in of 0.12 - 0.15%
-            </div>
+            {
+              this.props.smsCaptureFooter && <Footer/>
+            }
         </div>
       </>
     )

@@ -1,7 +1,5 @@
 import React from 'react'
 import classNames from 'classnames/bind'
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MDXProvider } from '@mdx-js/react'
 
 import Theme from './case-study.module.scss'
 
