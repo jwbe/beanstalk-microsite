@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         name: 'Switch & Save',
-        link: '/ctf-calculator'
+        link: '/switch-and-save'
       },
 
     ]
@@ -75,7 +75,7 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: [`/blog/welcome-to-beanstalk`, `/blog/5-things-you-need-to-consider-this-jisa-season`, `/blog/are-high-fees-eating-into-your-childs-savings`, `/blog/helping-families-save-together`, `/blog/children-benefit-ctf-windfalls`, `/blog/dont-miss-out-this-tax-year`, `/blog/securing-grandchildrens-financial-future`, `/blog/new-tax-year-resolutions`, `/blog`,`/sms-capture`,`/happity`,`/firstnews`,`/kidstart`,`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
+        exclude: [`/case-studies`,`/blog/welcome-to-beanstalk`, `/blog/5-things-you-need-to-consider-this-jisa-season`, `/blog/are-high-fees-eating-into-your-childs-savings`, `/blog/helping-families-save-together`, `/blog/children-benefit-ctf-windfalls`, `/blog/dont-miss-out-this-tax-year`, `/blog/securing-grandchildrens-financial-future`, `/blog/new-tax-year-resolutions`, `/blog`,`/sms-capture`,`/happity`,`/firstnews`,`/kidstart`,`/refer`, `/beanstalk-survey`, `/jisa-declaration`, `/isa-declaration`, `/key-features-documents`, `/key-investor-information-documents`],
         query: `
         {
           site {
@@ -167,6 +167,8 @@ module.exports = {
             host: 'https://beanstalkapp.co.uk',
             sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
             policy: [{ userAgent: '*', disallow: [
+              `/switch-and-save`
+              `/case-studies`,
               `/sms-capture`,
               `/happity`,
               `/firstnews`,

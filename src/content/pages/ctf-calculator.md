@@ -1,6 +1,6 @@
 ---
-slug: ctf-calculator
-canonical: 'https://beanstalkapp.co.uk/ctf-calculator'
+slug: switch-and-save
+canonical: 'https://beanstalkapp.co.uk/switch-and-save'
 priority: 0.9
 fullWidth: true
 title: How Much You Could Save With Our CTF Calculator

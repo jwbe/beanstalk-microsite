@@ -170,7 +170,7 @@ class Form extends Component {
               </div>
               <div className={QuestionStyles.Question}>
                 <div className={QuestionStyles.Copy}>
-                  By downloading this guide, you consent to receive emails from the Beanstalk & KidStart family. We explain how we use your data in our <Link to={`/data-privacy-and-cookies`}>privacy policy</Link>
+                  By downloading this guide, you consent to Beanstalk / KidStart emailing you about its services. Please see our <Link to={`/data-privacy-and-cookies`}>privacy policy</Link>
                 </div>
               </div>
               <input type="hidden" ref="bot-field" name="bot-field"/>
