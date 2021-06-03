@@ -167,7 +167,7 @@ module.exports = {
             host: 'https://beanstalkapp.co.uk',
             sitemap: 'https://beanstalkapp.co.uk/sitemap.xml',
             policy: [{ userAgent: '*', disallow: [
-              `/switch-and-save`
+              `/switch-and-save`,
               `/case-studies`,
               `/sms-capture`,
               `/happity`,
