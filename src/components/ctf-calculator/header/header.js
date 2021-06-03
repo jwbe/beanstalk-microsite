@@ -15,7 +15,7 @@ const Header = (props) => {
             Transfer your child's CTF/JISA and save
           </h1>
           <p className={HeaderTheme.SubSuperHeading}>
-            Save on investment fees by transferring your child trust fund to Beanstalk. It just <strong>takes a minute</strong> to open an account.
+            Save on fees by transferring your child trust fund to Beanstalk. It just <strong>takes a minute</strong> to open an account.
           </p>
           <p className={HeaderTheme.SubSuperHeading}>
             The app helps your family work together to build a pot of money, giving your kids the best possible launch into adult life. You or anyone you invite can contribute whenever you want, and you can see immediately how much your kids have.
