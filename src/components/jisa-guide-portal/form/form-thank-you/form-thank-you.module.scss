@@ -1,0 +1,46 @@
+.Submit {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: $base-unit * 2;
+  padding-right: $base-unit * 4;
+  padding-bottom: $base-unit * 2;
+  padding-left: $base-unit * 4;
+  color: $white;
+  text-align: center;
+  font-weight: 700;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  background-color: $secondary;
+  box-shadow: $shadow-level-3;
+  border-radius: 99rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: button;
+  transition: transform .2s, box-shadow .2s, background-color .2s;
+  text-decoration: none;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 4;
+  }
+  &:hover {
+    background-color: lighten($secondary, 5%);
+    transform: translateY(-$base-unit / 4);
+    box-shadow: $shadow-level-4;
+  }
+  &:active {
+    background-color: darken($secondary, 2%);
+    transform: translateY(0);
+    box-shadow: $shadow-level-1;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+.Submit_Wrapper {
+  text-align: center;
+  a {
+    display: inline-block;
+  }
+}

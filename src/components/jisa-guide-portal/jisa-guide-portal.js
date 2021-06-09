@@ -17,7 +17,10 @@ class JisaGuidePortal extends Component {
             <div className={Styles.Container}>
               <section className={`${Styles.Section} ${Styles.Section___First}`}>
                 <div className={Styles.Section_Inner}>
-                  <Form location={location.pathname}/>
+                  <Form {...{
+                    formSubmitted: this.props.formSubmitted,
+                    location: location.pathname
+                  }}/>
                 </div>
               </section>
               <section className={`${Styles.Section} ${Styles.Section___Second}`}>

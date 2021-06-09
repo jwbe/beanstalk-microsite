@@ -8,12 +8,13 @@ import QuestionStyles from './question/question.module.scss'
 import Tooltip from './tooltip/tooltip'
 import Question from './question/question'
 import Header from './header/header'
+import ThankYou from './form-thank-you/form-thank-you'
 
 class Form extends Component {
   constructor(props) {
     super(props)
     this.state = { 
-      formSubmitted: null,
+      formSubmitted: this.props.formSubmitted,
       formSubmitAttempted: false,
       fields: {
         name: '',
@@ -124,15 +125,7 @@ class Form extends Component {
         {
           this.state.formSubmitted
           ?
-          <>
-            <Header
-              heading='Thank you'
-              cta='You can download your guide by clicking the button below'
-            />
-            <div className={Styles.Submit_Wrapper}>
-              <a className={Styles.Submit} href="/docs/beanstalks-guide-to-jisas.pdf" target="_blank" rel="noopener noreferrer">Download guide now</a>
-            </div>
-          </>
+          <ThankYou/>
           :
           <>
             <Header

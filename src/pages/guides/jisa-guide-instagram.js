@@ -3,7 +3,7 @@ import JisaGuidePortal from '../../components/jisa-guide-portal/jisa-guide-porta
 
 const JisaGuidePortalPage = () => (
   <JisaGuidePortal {...{
-    formSubmitted: false
+    formSubmitted: true
   }}/>
 )
 
