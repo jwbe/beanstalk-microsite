@@ -11,8 +11,8 @@ const Header = (props) => {
       </h2>
       <div className={Styles.Badges}>
         <Badges {...{
-          AppStoreLink: 'https://smart.link/nayw9a5wruuts?site_id=iosjg',
-          GooglePlayLink: 'https://smart.link/i0x4v7cw1rb98?site_id=andrjg'
+          AppStoreLink: 'https://smart.link/i0x4v7cw1rb98?site_id=andrjglg',
+          GooglePlayLink: 'https://smart.link/nayw9a5wruuts?site_id=iosjglg'
         }}/>
       </div>
       <h3 className={Styles.Subheader}>
