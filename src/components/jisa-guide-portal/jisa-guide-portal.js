@@ -25,7 +25,11 @@ class JisaGuidePortal extends Component {
               </section>
               <section className={`${Styles.Section} ${Styles.Section___Second}`}>
                 <div className={Styles.Section_Inner}>
-                  <AdditionalInformation/>
+                  <AdditionalInformation {...{
+                    points: this.props.points,
+                    heading: this.props.heading,
+                    subheading: this.props.subheading
+                  }}/>
                 </div>
               </section>
             </div>
