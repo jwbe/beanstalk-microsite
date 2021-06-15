@@ -37,17 +37,11 @@ The consumer champions Which? have created a great video which shows an example 
 
 The most important things to remember about Open Banking are that:
 
-**It’s secure**
+**It’s secure** - You’ll never be asked to share your password or login details with anyone other than your own bank or building society
 
-* You’ll never be asked to share your password or login details with anyone other than your own bank or building society
+**You’re in charge** - It’s always your choice if you want to use round ups by giving permission for a regulated app such as Beanstalk secure access to your data. And you can change your mind and remove that consent whenever you want
 
-**You’re in charge**
-
-* It’s always your choice if you want to use round ups by giving permission for a regulated app such as Beanstalk secure access to your data. And you can change your mind and remove that consent whenever you want
-
-**You’re protected**
-
-* Authorised Open Banking third parties are regulated by the Financial Conduct Authority (FCA) or another European regulator, and will appear on the [FCA Register](https://register.fca.org.uk/s/), and/or the [Open Banking Directory](https://www.openbanking.org.uk/customers/regulated-providers/). Beanstalk is an agent of Openwrks which is how we offer this service.
+**You’re protected** - Authorised Open Banking third parties are regulated by the Financial Conduct Authority (FCA) or another European regulator, and will appear on the [FCA Register](https://register.fca.org.uk/s/), and/or the [Open Banking Directory](https://www.openbanking.org.uk/customers/regulated-providers/). Beanstalk is an agent of Openwrks which is how we offer this service.
 
 ## And with Beanstalk, you are always in control.
 
