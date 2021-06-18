@@ -49,12 +49,13 @@
     position: relative;
     width: 100%;
     max-width: $base-unit * 42;
+    margin-bottom: $base-unit * 2;
     @media (max-width: $breakpoint-sm - .0625em) {
       margin-right: auto;
       margin-left: auto;
     }
-    &:first-of-type {
-      margin-bottom: $base-unit * 2;
+    &:last-of-type {
+      margin-bottom: 0;
     }
   }
 }

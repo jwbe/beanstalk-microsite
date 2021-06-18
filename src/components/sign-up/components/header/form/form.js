@@ -7,6 +7,8 @@ import Tooltip from './tooltip/tooltip';
 import SmallPrint from '../small-print/small-print';
 import Confirmation from './confirmation/confirmation';
 
+import addKidStartUser from '../../../../addKidStartUser/addKidStartUser';
+
 const Form = ({
   formSmallPrint
 }) => {
@@ -25,12 +27,14 @@ const Form = ({
   };
 
   const initialFormFields = {
-    name: '',
+    firstName: '',
+    lastName: '',
     email: ''
   };
 
   const initialFormErrors = {
-    name: '',
+    firstName: '',
+    lastName: '',
     email: ''
   };
 
@@ -39,19 +43,32 @@ const Form = ({
   const [formErrors, setFormErrors] = useState(initialFormErrors);
 
   const handleValidation = () => {
+    let nameRegex = `/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u`;
     let fields = formFields
     let errors = {};
     let formIsValid = true;
 
-    if(fields['name'] === '') {
+    if(fields['firstName'] === '') {
       formIsValid = false
-      errors['name'] = 'You must enter your full name';
+      errors['firstName'] = 'You must enter your first name';
     }
 
-    if(fields['name'] !== '') {
-      if(!fields['name'].match(/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u)) {
+    if(fields['lastName'] === '') {
+      formIsValid = false
+      errors['lastName'] = 'You must enter your last name';
+    }
+
+    if(fields['firstName'] !== '') {
+      if(fields['firstName'].match(nameRegex)) {
         formIsValid = false;
-        errors['name'] = 'Your name shouldn\'t contain numbers';
+        errors['firstName'] = 'Your name shouldn\'t contain numbers';
+      }
+    }
+
+    if(fields['lastName'] !== '') {
+      if(fields['lastName'].match(nameRegex)) {
+        formIsValid = false;
+        errors['lastName'] = 'Your name shouldn\'t contain numbers';
       }
     }
 
@@ -92,34 +109,24 @@ const Form = ({
 
     if(handleValidation()) {
       const formData = {
-        'bot-field': formFields.botField,
-        name: formFields.name,
-        email: formFields.email,
-        partner: location(),
-        'form-name': 'signup'
+        firstName: formFields.firstName,
+        email: formFields.email
       }
 
-      const axiosOptions = {
-        url: location(),
-        method: "post",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        data: qs.stringify(formData),
-      }
-
-      axios(axiosOptions)
-        .then(response => {
-          setFormStatuses({
-            ...formStatuses,
-            formSubmitted: true
-          });
-          console.log(axiosOptions, ' then')
-        })
-        .catch(err => {
-          setFormStatuses({
-            ...formStatuses,
-            formSubmitted: false
-          });
-        })
+      addKidStartUser(formFields.firstName, formFields.lastName, formFields.email)
+      .then(response => {
+        console.log(response);
+        setFormStatuses({
+          ...formStatuses,
+          formSubmitted: true
+        });
+      })
+      .catch(err => {
+        setFormStatuses({
+          ...formStatuses,
+          formSubmitted: false
+        });
+      })
     }
     else {
       setFormStatuses({
@@ -138,7 +145,7 @@ const Form = ({
         <Confirmation/>
         :
           <>
-            <form className={Theme.Form} name="signup" method="POST" noValidate data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={ event => handleSubmit(event) }>
+            <form className={Theme.Form} name="signup" method="POST" noValidate onSubmit={ event => handleSubmit(event) }>
               <div className={Theme.Form_VisibleInputs}>
                 <div className={Theme.Form_Input_Wrapper}>
                   <input 
@@ -156,20 +163,31 @@ const Form = ({
                 <div className={Theme.Form_Input_Wrapper}>
                   <input 
                   className={Theme.Form_Input} 
-                  placeholder="Your full name" 
+                  placeholder="Your first name" 
                   type="text" 
-                  name="name" 
-                  id="name"
-                  onChange={event => handleChange('name', event)}
-                  value={formFields['name']}
+                  name="firstName" 
+                  id="firstName"
+                  onChange={event => handleChange('firstName', event)}
+                  value={formFields['firstName']}
                   />
-                  {formErrors.phoneNumber && <span className={Theme.Form_Input_Error}></span>}
-                  {formErrors.phoneNumber && <Tooltip>{formErrors['phoneNumber']}</Tooltip>}
+                  {formErrors.firstName && <span className={Theme.Form_Input_Error}></span>}
+                  {formErrors.firstName && <Tooltip>{formErrors['firstName']}</Tooltip>}
+                </div>
+                <div className={Theme.Form_Input_Wrapper}>
+                  <input 
+                  className={Theme.Form_Input} 
+                  placeholder="Your last name" 
+                  type="text" 
+                  name="lastName" 
+                  id="lastName"
+                  onChange={event => handleChange('lastName', event)}
+                  value={formFields['lastName']}
+                  />
+                  {formErrors.lastName && <span className={Theme.Form_Input_Error}></span>}
+                  {formErrors.lastName && <Tooltip>{formErrors['lastName']}</Tooltip>}
                 </div>
               </div>
-              <input type="hidden" name="bot-field" onChange={ event => handleChange('bot-field', event)} value={formFields['bot-field']}/>
-              <input type="hidden" name="form-name" value="signup"/>
-              <input type="hidden" name="partner"/>
+
               <button className={Theme.Form_Submit} type="submit">Get Started</button>
             </form>
 

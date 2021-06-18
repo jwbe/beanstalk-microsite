@@ -1,0 +1,9 @@
+{
+  "name": "kidstart-webservice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "easy-soap-request": "^4.1.3"
+  }
+}
