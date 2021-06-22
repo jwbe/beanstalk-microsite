@@ -16,6 +16,7 @@ const SignUpPage = () => {
       </Helmet>
       <SignUp
         logo={Logo}
+        whitelabelId={202}
         mainCta={
           <>
             Join Beanstalk

@@ -12,7 +12,8 @@ import ProcessSteps from '../process-steps/process-steps';
 import SecondaryColourSectionOnMobile from './components/secondary-colour-section-on-mobile/secondary-colour-section-on-mobile';
 import TermsAndConditions from './components/terms-and-conditions/terms-and-conditions';
 
-const SignUp = ({ 
+const SignUp = ({
+  whitelabelId, 
   quote,
   children,
   mainCta,
@@ -28,12 +29,14 @@ const SignUp = ({
   return (
     <>
       <Nav/>
-      <Header
-        mainCta={mainCta}
-        secondaryCta={secondaryCta}
-        partner={partner}
-        logo={logo}
-        formSmallPrint={formSmallPrint}
+      <Header {...{
+        mainCta: mainCta,
+        secondaryCta: secondaryCta,
+        partner: partner,
+        logo: logo,
+        formSmallPrint: formSmallPrint,
+        whitelabelId: whitelabelId
+      }}
       />
       <Container>
         <QuoteCredential>

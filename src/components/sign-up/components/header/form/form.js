@@ -10,6 +10,7 @@ import Confirmation from './confirmation/confirmation';
 import addKidStartUser from '../../../../addKidStartUser/addKidStartUser';
 
 const Form = ({
+  whitelabelId = 208,
   formSmallPrint
 }) => {
 
@@ -23,7 +24,8 @@ const Form = ({
   const initialFormStatus = {
     formSubmitted: null,
     formSubmitAttempted: false,
-    botField: ''
+    botField: '',
+    response: {}
   };
 
   const initialFormFields = {
@@ -37,6 +39,7 @@ const Form = ({
     lastName: '',
     email: ''
   };
+
 
   const [formStatuses, setFormStatuses] = useState(initialFormStatus);
   const [formFields, setFormFields] = useState(initialFormFields);
@@ -113,12 +116,17 @@ const Form = ({
         email: formFields.email
       }
 
-      addKidStartUser(formFields.firstName, formFields.lastName, formFields.email)
+      addKidStartUser({ 
+        firstName: formFields.firstName, 
+        lastName: formFields.lastName, 
+        email: formFields.email, 
+        whitelabelId: whitelabelId 
+      })
       .then(response => {
-        console.log(response);
         setFormStatuses({
           ...formStatuses,
-          formSubmitted: true
+          formSubmitted: true,
+          responseStatus: response['soap:Envelope']['soap:Body'].AddUserAccountResponse.AddUserAccountResult.WebServiceResult
         });
       })
       .catch(err => {
@@ -142,49 +150,57 @@ const Form = ({
       {
         formStatuses.formSubmitted
         ?
-        <Confirmation/>
+        <>
+          <Confirmation {...{
+            responseStatus: formStatuses.responseStatus
+          }}/>
+        </>
         :
           <>
             <form className={Theme.Form} name="signup" method="POST" noValidate onSubmit={ event => handleSubmit(event) }>
               <div className={Theme.Form_VisibleInputs}>
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input 
-                  className={Theme.Form_Input} 
-                  placeholder="Your email address" 
-                  type="email" 
-                  name="email" 
-                  id="email"
-                  onChange={event => handleChange('email', event)}
-                  value={formFields['email']}
-                  />
-                  {formErrors.email && (<span className={Theme.Form_Input_Error}></span>)}
-                  {formErrors.email && (<Tooltip>{formErrors['email']}</Tooltip>)}
-                </div>
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input 
-                  className={Theme.Form_Input} 
-                  placeholder="Your first name" 
-                  type="text" 
-                  name="firstName" 
-                  id="firstName"
-                  onChange={event => handleChange('firstName', event)}
-                  value={formFields['firstName']}
-                  />
-                  {formErrors.firstName && <span className={Theme.Form_Input_Error}></span>}
-                  {formErrors.firstName && <Tooltip>{formErrors['firstName']}</Tooltip>}
-                </div>
-                <div className={Theme.Form_Input_Wrapper}>
-                  <input 
-                  className={Theme.Form_Input} 
-                  placeholder="Your last name" 
-                  type="text" 
-                  name="lastName" 
-                  id="lastName"
-                  onChange={event => handleChange('lastName', event)}
-                  value={formFields['lastName']}
-                  />
-                  {formErrors.lastName && <span className={Theme.Form_Input_Error}></span>}
-                  {formErrors.lastName && <Tooltip>{formErrors['lastName']}</Tooltip>}
+                <div className={Theme.Form_VisibleInputs_Inner}>
+                  <div className={Theme.Form_Input_Wrapper}>
+                    <input 
+                    className={Theme.Form_Input} 
+                    placeholder="Your email address" 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    onChange={event => handleChange('email', event)}
+                    value={formFields['email']}
+                    />
+                    {formErrors.email && (<span className={Theme.Form_Input_Error}></span>)}
+                    {formErrors.email && (<Tooltip>{formErrors['email']}</Tooltip>)}
+                  </div>
+                  <div className={Theme.Form_ShowHorizontalInputsOnDesktopAndTablet}>
+                    <div className={Theme.Form_Input_Wrapper}>
+                      <input 
+                      className={Theme.Form_Input} 
+                      placeholder="First name" 
+                      type="text" 
+                      name="firstName" 
+                      id="firstName"
+                      onChange={event => handleChange('firstName', event)}
+                      value={formFields['firstName']}
+                      />
+                      {formErrors.firstName && <span className={Theme.Form_Input_Error}></span>}
+                      {formErrors.firstName && <Tooltip>{formErrors['firstName']}</Tooltip>}
+                    </div>
+                    <div className={Theme.Form_Input_Wrapper}>
+                      <input 
+                      className={Theme.Form_Input} 
+                      placeholder="Last name" 
+                      type="text" 
+                      name="lastName" 
+                      id="lastName"
+                      onChange={event => handleChange('lastName', event)}
+                      value={formFields['lastName']}
+                      />
+                      {formErrors.lastName && <span className={Theme.Form_Input_Error}></span>}
+                      {formErrors.lastName && <Tooltip>{formErrors['lastName']}</Tooltip>}
+                    </div>
+                  </div>
                 </div>
               </div>
 

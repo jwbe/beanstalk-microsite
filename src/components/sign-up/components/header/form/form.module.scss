@@ -4,16 +4,43 @@
 }
 
 .Form_VisibleInputs {
+  width: 100%;
   margin-bottom: $base-unit * 3;
   @media (min-width: $breakpoint-sm) {
     align-items: flex-end;
     flex-direction: column;
     display: flex;
-    margin-bottom: $base-unit * 4;
+    margin-bottom: $base-unit * 2;
   }
   @media (max-width: $breakpoint-sm - .0625em) {
     padding-right: $base-unit * 2;
     padding-left: $base-unit * 2;
+  }
+  &_Inner {
+    @media (min-width: $breakpoint-sm) {
+      max-width: calc(100% - 1rem);
+    }
+    @media (min-width: $breakpoint-md) {
+      max-width: calc(100% - 6rem);
+    }
+  }
+  .Form_Input_Wrapper {
+    margin-bottom: $base-unit * 2;
+  }
+}
+
+.Form_ShowHorizontalInputsOnDesktopAndTablet {
+  @media (min-width: 23.4375em - .0625em) {
+    width: 100%;
+    display: flex;
+    .Form_Input_Wrapper {
+      flex-basis: percentage(1/3);
+      margin-right: $base-unit * 2;
+      &:last-of-type {
+        margin-right: 0;
+        flex-basis: percentage(2/3);
+      }
+    }
   }
 }
 
@@ -48,14 +75,11 @@
     display: flex;
     position: relative;
     width: 100%;
-    max-width: $base-unit * 42;
-    margin-bottom: $base-unit * 2;
+    //max-width: $base-unit * 42;
+    //margin-bottom: $base-unit * 2;
     @media (max-width: $breakpoint-sm - .0625em) {
       margin-right: auto;
       margin-left: auto;
-    }
-    &:last-of-type {
-      margin-bottom: 0;
     }
   }
 }

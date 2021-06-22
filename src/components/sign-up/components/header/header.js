@@ -8,6 +8,7 @@ import Iphone from '../iphone/iphone';
 import DecorativeSectionJoin from '../decorative-section-join/decorative-section-join';
 
 const Header = ({
+  whitelabelId,
   mainCta,
   secondaryCta,
   partner,
@@ -33,11 +34,10 @@ const Header = ({
           </div>
           <div className={`${Theme.Section} ${Theme.Section__Right}`}>
             <InPartnershipCallout logo={logo}/>
-            <Form 
-              formSmallPrint={
-                formSmallPrint
-              }
-
+            <Form {...{
+              whitelabelId: whitelabelId,
+              formSmallPrint: formSmallPrint
+            }}
             />
             <DecorativeSectionJoin flipped/>
             <div className={`${Theme.Cut} ${Theme.Cut__White}`}>
