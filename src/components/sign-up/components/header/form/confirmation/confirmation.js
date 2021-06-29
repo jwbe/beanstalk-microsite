@@ -14,10 +14,11 @@ const Confirmation = (props) => {
         return (
           <>
             <h2 className={Theme.Heading}>
-              Thank you.
+              Great!
             </h2>
+
             <p className={Theme.Text}>
-              <strong>Now just download the Beanstalk app and<br/> register with the same email you just gave us. </strong><br/>It takes just a couple of minutes to open an account.
+              <strong>To complete your registration, download the<br/> Beanstalk app and log in with the same email address. </strong><br/> Check your email for your temporary password.
             </p>
           </>
         )
@@ -26,10 +27,10 @@ const Confirmation = (props) => {
         return (
           <>
             <h2 className={Theme.Heading}>
-              Something went wrong.
+              You are already registered
             </h2>
             <p className={Theme.Text}>
-              <strong>You have already registered with that email address.<br/> Try another or retrieve it. </strong>
+              <strong>Download the Beanstalk app and then log in / reset your password on the app.</strong>
             </p>
           </>
         )

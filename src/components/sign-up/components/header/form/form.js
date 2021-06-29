@@ -46,10 +46,11 @@ const Form = ({
   const [formErrors, setFormErrors] = useState(initialFormErrors);
 
   const handleValidation = () => {
-    let nameRegex = `/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u`;
+    let nameRegex = `^[^0-9]+$`;
     let fields = formFields
     let errors = {};
     let formIsValid = true;
+
 
     if(fields['firstName'] === '') {
       formIsValid = false
@@ -62,14 +63,14 @@ const Form = ({
     }
 
     if(fields['firstName'] !== '') {
-      if(fields['firstName'].match(nameRegex)) {
+      if(!fields['firstName'].match(nameRegex)) {
         formIsValid = false;
         errors['firstName'] = 'Your name shouldn\'t contain numbers';
       }
     }
 
     if(fields['lastName'] !== '') {
-      if(fields['lastName'].match(nameRegex)) {
+      if(!fields['lastName'].match(nameRegex)) {
         formIsValid = false;
         errors['lastName'] = 'Your name shouldn\'t contain numbers';
       }
@@ -88,6 +89,7 @@ const Form = ({
       }
     }
 
+    console.log(errors, ' errors');
 
     setFormErrors({ ...errors });
 
@@ -126,13 +128,14 @@ const Form = ({
         setFormStatuses({
           ...formStatuses,
           formSubmitted: true,
-          responseStatus: response['soap:Envelope']['soap:Body'].AddUserAccountResponse.AddUserAccountResult.WebServiceResult
+          responseStatus: response['soap:Envelope']['soap:Body'].AddUserAccountResponse.AddUserAccountResult.WebServiceResult ? response['soap:Envelope']['soap:Body'].AddUserAccountResponse.AddUserAccountResult.WebServiceResult : response
         });
       })
       .catch(err => {
         setFormStatuses({
           ...formStatuses,
-          formSubmitted: false
+          formSubmitted: false,
+          responseStatus: err
         });
       })
     }

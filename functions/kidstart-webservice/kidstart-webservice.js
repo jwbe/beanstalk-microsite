@@ -7,9 +7,10 @@ const handler = async function (event) {
   const { body: rawData } = event;
   const data = JSON.parse(rawData);
 
-  const caseInput = data.SOAPAction.substring(data.SOAPAction.lastIndexOf('/') + 1);
+  const soapAction = data.SOAPAction.substring(data.SOAPAction.lastIndexOf('/') + 1);
+  console.log(soapAction, ' soapAction');
 
-  switch (caseInput) {
+  switch (soapAction) {
     case 'Authenticate':
       data.xml = () => {
         const { whitelabelId } = data.message;
@@ -70,35 +71,113 @@ const handler = async function (event) {
     'soapAction': data.SOAPAction,
   };
 
-  let res;
+  const validation = async () => {
+    if (soapAction === 'Authenticate') {
+      let formErrors = {};
+      let formIsValid = false;
+      return [
+        formIsValid,
+        formErrors
+      ]
+    }
 
-  try {
-    async function soapRequestWrapper () {
-      try {
-        let { response } = await soapRequest({ url: GATSBY_KSWEBSERVICE_URL, headers: headers, xml: data.xml()});
-        return response
-      }
-      catch(error) {
-        console.error(error);
+    const { email, firstName, lastName } = data.message;
+
+    let nameRegex = `^[^0-9]+$`;
+    let formErrors = {};
+    let formIsValid = true;
+
+    if(firstName === '') {
+      formIsValid = false
+      formErrors['firstName'] = 'NoFirstName';
+    }
+
+    if(lastName === '') {
+      formIsValid = false
+      errors['lastName'] = 'NoLastName';
+    }
+
+    if(firstName !== '') {
+      if(!firstName.match(nameRegex)) {
+        formIsValid = false;
+        formErrors['firstName'] = 'NoNumbersInName';
       }
     }
 
-    res = await soapRequestWrapper();
+    if(lastName !== '') {
+      if(!lastName.match(nameRegex)) {
+        formIsValid = false;
+        formErrors['error'] = 'NoNumbersInName';
+      }
+    }
 
-  } catch (error) {
+    if(email === '') {
+      formIsValid = false;
+      formErrors['error'] = 'NoEmail';
+    }
+
+    if(email !== '') {
+      const emailRegExp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (!emailRegExp.test(email)) {
+        formIsValid = false;
+        formErrors['error'] = 'NoValidEmail';
+      }
+    }
+
+    return [
+      formIsValid,
+      formErrors,
+    ]
+  }
+
+  const [ formIsValid, formErrors ] = await validation();
+
+  const soap = await (async (formIsValid, formErrors) => {
+    if (soapAction === 'Authenticate' || formIsValid === true) {
+      let res;
+      try {
+        async function soapRequestWrapper () {
+          try {
+            let { response } = await soapRequest({ url: GATSBY_KSWEBSERVICE_URL, headers: headers, xml: data.xml()});
+            console.log(response, ' response');
+            return response
+          }
+          catch(error) {
+            console.error(error);
+          }
+        }
+
+        res = await soapRequestWrapper();
+
+      } catch (error) {
+          return {
+            statusCode: 500,
+            body: JSON.stringify({ 
+              error: error.message 
+            })
+          }
+      }
+      return {
+        statusCode: 200,
+        body: JSON.stringify(
+          res.body
+        )
+      }
+    }
+    else if (formIsValid === false) {
       return {
         statusCode: 500,
-        body: JSON.stringify({ 
-          error: error.message 
-        })
+        body: JSON.stringify(
+          formErrors
+        )
       }
-  }
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      res.body
-    )
-  }
+    }
+  })(formIsValid, formErrors);
+
+  console.log(soap, ' soap');
+
+  return soap;
+
 }
 
 module.exports = { handler };

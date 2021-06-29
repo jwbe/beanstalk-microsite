@@ -54,25 +54,33 @@ const addKidStartUser = async (props = {
       return response.text();
     })
     .then(response => {
-      return JSON.parse(response);
+      try {
+        console.log(response, ' response');
+        return JSON.parse(response);
+      } catch (error) {
+        console.error(error);
+      }
+      
     })
     .catch(err => {
       console.log(err);
     })
   }
 
-  const parseXmltoJson = async (xmlData) => {
+  const parseXmltoJson = async (data) => {
+    console.log(data, 'parseXmltoJson data')
     try {
-      if (xmlParser.validate(xmlData) === true) {
+      if (xmlParser.validate(data) === true) {
         try {
-          return xmlParser.parse(xmlData);
+          return xmlParser.parse(data);
         }
         catch(error) {
           console.error(error);
         }
       }
       else {
-        console.error('XML not valid');
+        console.error(data);
+        return data;
       }
     }
     catch(error) {
@@ -100,7 +108,7 @@ const addKidStartUser = async (props = {
     }
   }
 
-  const registerUserOnKidStart = async (firstName, lastName, email) => {
+  const registerUserOnKidStart = async (firstName, lastName, email, whitelabelId) => {
     let authenticationTokenResponseXml = await queryWebservice(authenticationRequest.SOAPAction, authenticationRequest.message(whitelabelId));
     let authenticationTokenResponseJson = await parseXmltoJson(authenticationTokenResponseXml);
     let authenticationToken = await readAuthenticationToken(authenticationTokenResponseJson);
@@ -110,7 +118,7 @@ const addKidStartUser = async (props = {
       firstName: firstName,
       lastName: lastName
     }));
-    return xmlParser.parse(addUserAccount);
+    return xmlParser.validate(addUserAccount) === true ? xmlParser.parse(addUserAccount) : addUserAccount;
   }
 
   return await registerUserOnKidStart(firstName, lastName, email, whitelabelId);
