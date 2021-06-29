@@ -125,6 +125,7 @@ const Form = ({
         whitelabelId: whitelabelId 
       })
       .then(response => {
+        console.log(response);
         setFormStatuses({
           ...formStatuses,
           formSubmitted: true,

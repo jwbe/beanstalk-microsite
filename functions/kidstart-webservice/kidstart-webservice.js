@@ -2,7 +2,7 @@ const soapRequest = require('easy-soap-request');
 
 const handler = async function (event) {
 
-  const { GATSBY_KSWEBSERVICE_URL, GATSBY_KSWEBSERVICE_WHITELABELID, GATSBY_KSWEBSERVICE_USERNAME, GATSBY_KSWEBSERVICE_PASSWORD } = process.env;
+  const { GATSBY_KSWEBSERVICE_URL, GATSBY_KSWEBSERVICE_USERNAME, GATSBY_KSWEBSERVICE_PASSWORD } = process.env;
 
   const { body: rawData } = event;
   const data = JSON.parse(rawData);
@@ -14,6 +14,7 @@ const handler = async function (event) {
     case 'Authenticate':
       data.xml = () => {
         const { whitelabelId } = data.message;
+        console.log( whitelabelId, ' whitelabelId');
         return (
           `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:kid="http://www.kidstart.co.uk/">
             <soapenv:Header/>
