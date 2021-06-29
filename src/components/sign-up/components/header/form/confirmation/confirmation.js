@@ -39,10 +39,10 @@ const Confirmation = (props) => {
         return (
           <>
             <h2 className={Theme.Heading}>
-              Something went wrong.
+              You are already registered
             </h2>
             <p className={Theme.Text}>
-              <strong>You have already registered with that username.<br/> Try another or retrieve it. </strong>
+              <strong>Download the Beanstalk app and then log in / reset your password on the app.</strong>
             </p>
           </>
         )
