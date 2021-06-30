@@ -46,11 +46,6 @@ const SignUpPage = () => {
             }
           ]
         }
-        formSmallPrint={
-          <>
-            <strong>Note:</strong> Your email will be used to record your registration for the offer and to send information on Beanstalk.
-          </>
-        }
         partner={
           <>
           </>

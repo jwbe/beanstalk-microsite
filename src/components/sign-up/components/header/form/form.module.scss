@@ -44,6 +44,25 @@
   }
 }
 
+.Form_Loading {
+  margin-right: auto;
+  margin-left: auto;
+  width: $base-unit * 9;
+  height: $base-unit * 9;
+  background-image: url('./images/loading.gif');
+  background-repeat: no-repeat;
+  background-size: $base-unit * 6;
+  background-position: center center;
+  background-color: $white;
+  border-radius: 100%;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit * 4;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-right: $base-unit * 4;
+  }
+}
+
 .Form_Input {
   width: 100%;
   padding-top: .875rem;

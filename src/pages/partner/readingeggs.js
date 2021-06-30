@@ -33,7 +33,7 @@ const SignUpPage = () => {
         }
         formSmallPrint={
           <>
-            <strong>Note:</strong> We will only use your email address so Reading Eggs can share the offer code, remind you to register and to record whether you registered.
+            We will use your email address to send you the Reading Eggs offer code.
           </>
         }
         quote={

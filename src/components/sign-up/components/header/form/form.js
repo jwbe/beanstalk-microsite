@@ -22,10 +22,11 @@ const Form = ({
   };
 
   const initialFormStatus = {
-    formSubmitted: null,
+    formSubmitted: false,
     formSubmitAttempted: false,
     botField: '',
-    response: {}
+    formWaiting: false,
+    responseStatus: {}
   };
 
   const initialFormFields = {
@@ -105,6 +106,13 @@ const Form = ({
     setFormFields({ ...fields});
   }
 
+  const spinningWheel = () => {
+    setFormStatuses({
+      ...formStatuses,
+      formWaiting: true
+    });
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -118,16 +126,19 @@ const Form = ({
         email: formFields.email
       }
 
+      spinningWheel();
+
       addKidStartUser({ 
         firstName: formFields.firstName, 
         lastName: formFields.lastName, 
         email: formFields.email, 
-        whitelabelId: whitelabelId 
+        whitelabelId: whitelabelId
       })
       .then(response => {
         console.log(response);
         setFormStatuses({
           ...formStatuses,
+          formWaiting: false,
           formSubmitted: true,
           responseStatus: response['soap:Envelope']['soap:Body'].AddUserAccountResponse.AddUserAccountResult.WebServiceResult ? response['soap:Envelope']['soap:Body'].AddUserAccountResponse.AddUserAccountResult.WebServiceResult : response
         });
@@ -208,7 +219,14 @@ const Form = ({
                 </div>
               </div>
 
-              <button className={Theme.Form_Submit} type="submit">Get Started</button>
+              {
+                formStatuses.formWaiting === false ?
+                <button className={Theme.Form_Submit} type="submit">Get Started</button>
+                :
+                <div className={Theme.Form_Loading}></div>
+              }
+
+
             </form>
 
             <SmallPrint>

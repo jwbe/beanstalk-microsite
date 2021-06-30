@@ -30,7 +30,7 @@ const SignUpPage = () => {
         processSteps={[]}
         formSmallPrint={
           <>
-            <strong>Note:</strong> We will use your email to remind you to register and to share information about Beanstalk. You can unsubscribe at any time.
+            You can unsubscribe at any time.
           </>
         }
         quote={
