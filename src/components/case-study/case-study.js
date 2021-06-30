@@ -3,7 +3,7 @@ import classNames from 'classnames/bind'
 
 import Theme from './case-study.module.scss'
 
-const CaseStudy = (props) => {
+const CaseStudy = props => {
 
   let { background, layout, children } = props;
 

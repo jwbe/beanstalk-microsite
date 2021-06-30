@@ -1,19 +1,13 @@
 import React from 'react';
-import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { MDXProvider } from '@mdx-js/react'
 import Theme from './body.module.scss';
 
-const Body = (props) => {
+const Body = props => {
 
   const { children } = props;
   
   return (
     <div className={Theme.Container}>
-      <MDXProvider>
-        <MDXRenderer>
-          { children }
-        </MDXRenderer>
-      </MDXProvider>
+      {children}
     </div>
   )
 }

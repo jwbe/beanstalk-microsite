@@ -1,8 +1,8 @@
 .CaseStudy {
   position: relative;
-  display: flex;
   &:before,
   &:after {
+    top: 0;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -13,6 +13,15 @@
   }
   &:after {
     right: -100%;
+  }
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-top: $base-unit * 3;
+    padding-bottom: $base-unit * 3;
+  }
+  @media (min-width: $breakpoint-sm) {
+    padding-top: $base-unit * 2;
+    padding-bottom: $base-unit * 2;
+    display: flex;
   }
 }
 
