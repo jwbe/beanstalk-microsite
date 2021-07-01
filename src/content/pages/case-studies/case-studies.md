@@ -9,7 +9,7 @@ import { TestimonialPod, TestimonialPods } from '../../../components/testimonial
 import PressLogos from '../../../components/press-logos/press-logos'
 
 import CaseStudy from '../../../components/case-study/case-study';
-import Media from '../../../components/case-study/Media/Media';
+import Media from '../../../components/case-study/media/media';
 import Heading from '../../../components/case-study/heading/heading';
 import Subheading from '../../../components/case-study/subheading/subheading';
 import Body from '../../../components/case-study/body/body';
