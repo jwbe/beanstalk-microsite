@@ -63,11 +63,11 @@
 
 .RightToLeft {
   flex-direction: row-reverse;
-  img {
-    margin-right: 0
-  }
-  div {
-    @media (min-width: $breakpoint-sm) {
+  @media (min-width: $breakpoint-sm) {
+    img {
+      margin-right: 0
+    }
+    div {
       margin-right: $base-unit * 3;
     }
   }
