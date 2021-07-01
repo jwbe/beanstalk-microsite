@@ -27,6 +27,7 @@
     padding-top: $base-unit * 4;
     padding-bottom: $base-unit * 4;
   }
+  iframe,
   img {
     @media (min-width: $breakpoint-sm) {
       margin-right: $base-unit * 3;
@@ -64,6 +65,7 @@
 .RightToLeft {
   flex-direction: row-reverse;
   @media (min-width: $breakpoint-sm) {
+    iframe,
     img {
       margin-right: 0
     }

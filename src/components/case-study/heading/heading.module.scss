@@ -1,9 +1,14 @@
 .Heading {
   margin-top: 0;
-  margin-bottom: $base-unit * 2;
   color: inherit;
   font-family: "Quicksand", sans-serif;
   font-size: $headline-font-size;
   line-height: $headline-line-height;
   font-weight: 700;
+  @media (min-width: $breakpoint-sm - .0625em) {
+    margin-bottom: $base-unit;
+  }
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 2;
+  }
 }
