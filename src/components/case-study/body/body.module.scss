@@ -1,5 +1,8 @@
 .Container {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
   @media (min-width: $breakpoint-sm) {
-    padding-left: $base-unit * 3;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
   }
 }

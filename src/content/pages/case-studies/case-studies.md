@@ -4,6 +4,10 @@ canonical: 'https://beanstalkapp.co.uk/case-studies'
 heading: Success Stories
 subheading: What our members have to say
 ---
+
+import { TestimonialPod, TestimonialPods } from '../../../components/testimonial-pod/testimonial-pod'
+import PressLogos from '../../../components/press-logos/press-logos'
+
 import CaseStudy from '../../../components/case-study/case-study';
 import Graphic from '../../../components/case-study/graphic/graphic';
 import Heading from '../../../components/case-study/heading/heading';
@@ -16,8 +20,9 @@ import imgNickTammy from './nick-tammy.jpg';
 import imgOzlemGiray from './ozlem-giray.jpg';
 import imgRichardWhite from './richard-white.jpg';
 
-<CaseStudy {...{ 
-  background: 'white', 
+
+<CaseStudy {...{
+  background: 'white'
 }}>
   <Graphic {...{
     src: imgVeliAghdiran
@@ -41,7 +46,8 @@ import imgRichardWhite from './richard-white.jpg';
   </Body> 
 </CaseStudy>
 
-<CaseStudy {...{ 
+<CaseStudy {...{
+  layout: 'rightToLeft',
   background: 'primary', 
 }}>
   <Graphic {...{
@@ -78,7 +84,8 @@ import imgRichardWhite from './richard-white.jpg';
   </Body>
 </CaseStudy>
 
-<CaseStudy {...{ 
+<CaseStudy {...{
+  layout: 'rightToLeft',
   background: 'secondary'
 }}>
   <Graphic {...{
@@ -113,3 +120,23 @@ import imgRichardWhite from './richard-white.jpg';
     <p>From the very first contact with Beanstalk it felt like there was a personal touch, rather than automated responses from a computer. Now, rather than an annual statement which gets filed away probably until we next move house, I can check their JISA account on the Beanstalk App whenever I like."</p>
   </Body>
 </CaseStudy>
+
+## Here's what people say about us
+
+<TestimonialPods>
+  <TestimonialPod author='Oluwatosin Akisanya'>
+    Loving this app. Great way to save for my kids’ future. It's so transparent compared to the other junior ISAs in some banks. I will definitely recommend it.
+  </TestimonialPod>
+
+  <TestimonialPod author='Veli Aghdiran'>
+    Really well-designed app with a lot of different ways for me to save for my family and get other family members to chip in too. I love the round-up feature as a great way to top up savings and being able to invite friends and family makes it all even more useful.
+  </TestimonialPod>
+
+  <TestimonialPod author='K Stephenson'>
+    Two of my children had CTFs with another company, and after setting up a child ISA for my youngest child, Beanstalk helped me transfer the funds belonging to my two older children. Everything was so easy and straightforward. I'm even thinking of setting up an ISA for myself with them.
+  </TestimonialPod>
+</TestimonialPods>
+
+## Here's what the press say about us
+
+<PressLogos links/>
