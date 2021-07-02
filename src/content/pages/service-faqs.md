@@ -15,7 +15,7 @@ import { Faq, Section } from '../../components/faq/faq'
 
   <Faq {...{
     anchor: `1`,
-    summary: `Do I have to transfer my child's existing account to open a Beanstalk account`
+    summary: `Do I have to transfer my child's existing account to open a Beanstalk account?`
   }}>
 
 If your child has a Child Trust Fund (CTF) or a stocks & shares Junior ISA then you must transfer it to Beanstalk as under HMRC rules a child is not allowed to hold a CTF and a Junior ISA, or more than one stocks & shares Junior ISA. If your child has a cash Junior ISA, then there is no need to transfer it, but you may do so if you wish. Please contact us if your child has additional accounts you would like to transfer to Beanstalk.
@@ -131,7 +131,7 @@ Due to Direct Debit rules, contributions made by this method initially show as "
     summary: `Where can I see the percentage change of the account valuation?`
   }}>
 
-Click on the home page account "card" to see more detail about the account. Scroll down to the drop-down menu (default is holdings) and select "Details" Scrolling right will allow you to see the number of units of each fund you hold, its current value, original cost and the percentage change.
+Click on the home page account "card" to see more detail about the account. Scroll down to the drop-down menu (default is holdings) and select "Details". Scrolling right will allow you to see the number of units of each fund you hold, its current value, original cost and the percentage change.
 
   </Faq>
 
