@@ -233,7 +233,7 @@ You will be able to see any contributions they make.  They will be able to view 
     summary: `What do it do if I have received an invitation to save for a child?`
   }}>
 
-Congratulations! You’ve been invited by the parent to help save for a child to give them the best possible launch into adult life.
+Congratulations! You've been invited by the parent to help save for a child to give them the best possible launch into adult life.
 
 To accept the invitation, download the Beanstalk App and register or log in with the email address that the invite was sent to. Once you have logged in you will be given the opportunity to accept or decline the invitation.
 
@@ -298,7 +298,7 @@ Note: the minimum direct debit value we can collect is £5. If your round up tot
 
 KidStart is the company behind the Beanstalk app. Established in 2008, KidStart has been helping families to save millions of pounds for their children for 12 years.
 
-Shopping at any of the 2,500 retailers listed on KidStart earns money back for your children. With well known retailers such as John Lewis, Amazon, Sky and TUI, you can turn your family spending into an investment for your children’s future.
+Shopping at any of the 2,500 retailers listed on KidStart earns money back for your children. With well known retailers such as John Lewis, Amazon, Sky and TUI, you can turn your family spending into an investment for your children's future.
 
 Learn more about KidStart at www.kidstart.co.uk
 
@@ -397,7 +397,7 @@ This process can take 7 working days as we have to wait for the proceeds from th
     summary: `Can't find the answers you are looking for?`
   }}>
 
-Please contact us with any further questions or feedback, we’d love to hear from you.
+See our detailed [FAQs](/service-faqs) for account holders or please contact us with any further questions or feedback, we'd love to hear from you.
 
   </Faq>
 
