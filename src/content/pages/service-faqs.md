@@ -27,7 +27,7 @@ If your child has a Child Trust Fund (CTF) or a stocks & shares Junior ISA then 
     summary: `How does the transfer process work?`
   }}>
 
-It is simple. You complete the [transfer authorisation]('https://beanstalkapp.co.uk/docs/JISATransferform.pdf') form we send you and return to us via "FREEPOST KIDSTART". If you do not have access to a printer, we can send you a paper copy in the post. We then contact the existing provider who have 30 days to complete the transfer to us (in practice it usually it takes 2-3 weeks). We will keep you up to date throughout the process and inform you when the transfer is completed.
+It is simple. You complete the [transfer authorisation](/docs/JISATransferform.pdf) form we send you and return to us via "FREEPOST KIDSTART". If you do not have access to a printer, we can send you a paper copy in the post. We then contact the existing provider who have 30 days to complete the transfer to us (in practice it usually it takes 2-3 weeks). We will keep you up to date throughout the process and inform you when the transfer is completed.
 
   </Faq>
 
@@ -45,7 +45,7 @@ You can "trigger" a top up /set up a regular contribution through the app, but w
     summary: `I have lost my child's old CTF details. What can I do?`
   }}>
 
-We have a simple guide to help parents locate a missing CTF. Please see [https://beanstalkapp.co.uk/articles/locate-a-missing-ctf]('https://beanstalkapp.co.uk/articles/locate-a-missing-ctf') 
+We have a simple guide to help parents locate a missing CTF. Please see [here](/articles/locate-a-missing-ctf) 
 
   </Faq>
 
