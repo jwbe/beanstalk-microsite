@@ -5,7 +5,7 @@
   font-size: $headline-font-size;
   line-height: $headline-line-height;
   font-weight: 700;
-  @media (min-width: $breakpoint-sm - .0625em) {
+  @media (max-width: $breakpoint-sm - .0625em) {
     margin-bottom: $base-unit;
   }
   @media (min-width: $breakpoint-sm) {

@@ -131,7 +131,7 @@ Due to Direct Debit rules, contributions made by this method initially show as "
     summary: `Where can I see the percentage change of the account valuation?`
   }}>
 
-Click on the home page account "card" to see more detail about the account. Scroll down to the drop-down menu (default is holdings) and select "Details." Scrolling right will allow you to see the number of units of each fund you hold, its current value, original cost and the percentage change.
+Click on the home page account "card" to see more detail about the account. Scroll down to the drop-down menu (default is holdings) and select "Details". Scrolling right will allow you to see the number of units of each fund you hold, its current value, original cost and the percentage change.
 
   </Faq>
 

@@ -1,0 +1,91 @@
+.Faq_Section {
+  margin-bottom: $base-unit * 8;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.Faq_Details {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  &[open] {
+    .Faq_Summary {
+      list-style-image: url('./images/arrow-up-mobile.svg');
+      @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md -.0625em) {
+        list-style-image: url('./images/arrow-up-tablet.svg');
+      }
+      @media (min-width: $breakpoint-md) {
+        list-style-image: url('./images/arrow-up-desktop.svg');
+      }
+    }
+  }
+}
+
+.Faq_Summary {
+  position: relative;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding-top: $base-unit * 2;
+  padding-bottom: $base-unit * 2;
+  padding-left: $base-unit * 3;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-weight: 600;
+  background-color: $white;
+  color: $primary;
+  border-bottom: 1px solid $accent-3-lighter;
+  outline: none;
+  list-style-image: url('./images/arrow-down-mobile.svg');
+  @media (min-width: $breakpoint-sm) {
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+  }
+  @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md -.0625em) {
+    padding-top: $base-unit * 3;
+    padding-bottom: $base-unit * 3;
+    padding-left: $base-unit * 3;
+    list-style-image: url('./images/arrow-down-tablet.svg');
+  }
+  @media (min-width: $breakpoint-md) {
+    list-style-image: url('./images/arrow-down-desktop.svg');
+  }
+  &:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: $base-unit * 3;
+    width: $base-unit / 2;
+    background-color: $secondary;
+    @media (min-width: $breakpoint-sm) {
+      height: 1.75rem;
+    }
+  }
+
+  &::-webkit-details-marker {
+    order: 3;
+    margin-left: auto;
+    width: $base-unit * 3;
+    height: $base-unit * 3;
+    background: url('./images/arrow-down-mobile.svg') no-repeat;
+    background-size: 100%;
+    background-position: center;
+    color: transparent;
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md -.0625em) {
+      width: $base-unit * 4;
+      height: $base-unit * 4;
+      background: url('./images/arrow-down-tablet.svg') no-repeat;
+    }
+    @media (min-width: $breakpoint-md) {
+      width: $base-unit * 6;
+      height: $base-unit * 6;
+      background: url('./images/arrow-down-desktop.svg') no-repeat;
+    }
+  }
+}
+
+.Faq_Content {
+  padding-top: $base-unit * 2;
+}
