@@ -45,7 +45,7 @@ You can "trigger" a top up /set up a regular contribution through the app, but w
     summary: `I have lost my child's old CTF details. What can I do?`
   }}>
 
-We have a simple guide to help parents locate a missing CTF. Please see [here](/articles/locate-a-missing-ctf) 
+We have a simple guide to help parents locate a missing CTF. Please see [here](/articles/locate-a-missing-ctf).
 
   </Faq>
 
