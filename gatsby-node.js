@@ -16,6 +16,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    node: {
+      fs: 'empty'
+    }
+  })
+}
+
 exports.onCreateNode = ({node, actions, getNode}) => {
   const { createNodeField } = actions;
   if (_.get(node, 'internal.type') === `Mdx`) {
