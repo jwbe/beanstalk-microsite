@@ -45,23 +45,23 @@ class AllocationCalculatorModule extends Component {
   numbers = (number) => {
     switch(number) {
       case 80:
-        return 1208
+        return 1375
       case 70:
-        return 1320
+        return 1573
       case 60:
-        return 1432
+        return 1770
       case 50:
-        return 1544
+        return 1968
       case 40:
-        return 1656
+        return 2166
       case 30:
-        return 1768
+        return 2364
       case 20:
-        return 1880
+        return 2562
       case 10:
-        return 1992
+        return 2760
       case 0:
-        return 2104
+        return 2958
       default:
         break;
     }
