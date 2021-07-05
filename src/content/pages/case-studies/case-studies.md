@@ -1,4 +1,5 @@
 ---
+slug: case-studies
 canonical: 'https://beanstalkapp.co.uk/case-studies'
 heading: Success Stories
 subheading: What our members have to say
