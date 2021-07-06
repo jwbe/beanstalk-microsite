@@ -2,7 +2,7 @@
 slug: case-studies
 canonical: 'https://beanstalkapp.co.uk/case-studies'
 heading: Success Stories
-subheading: What our members have to say
+subheading: What our members and the press have to say
 ---
 
 import { TestimonialPod, TestimonialPods } from '../../../components/testimonial-pod/testimonial-pod'
