@@ -57,7 +57,7 @@ class AllocationCalculatorModule extends Component {
       case 30:
         return 2364
       case 20:
-        return 2562
+        return 2652
       case 10:
         return 2760
       case 0:
