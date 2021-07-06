@@ -39,7 +39,7 @@ import imgRichardWhite from './richard-white.jpg';
       Lynn Beattie, Personal Finance Expert, founder Mrs Mummypenny and Mum of three
     </Subheading>
     <p>
-      Mrs MummyPenny shares her thoughts on why she switched her children's CTFs to Beanstalk.
+      Mrs MummyPenny shares her thoughts on why she switched her children’s CTFs to Beanstalk.
     </p>
     <p><strong>Get Beanstalk</strong></p>
     <Badges/>
