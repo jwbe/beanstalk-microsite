@@ -8,7 +8,7 @@ const Media = props => {
       { 
         type === 'video'
         ? 
-        <iframe className={Theme.Media} src={src} width="320" height="460" frameborder="0"></iframe>
+        <iframe className={Theme.Media} src={src} width="320" height="460" frameBorder="0"></iframe>
         : 
         <img className={Theme.Media} src={src}/>
       }

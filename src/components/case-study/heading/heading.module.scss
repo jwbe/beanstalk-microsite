@@ -12,3 +12,16 @@
     margin-bottom: $base-unit * 2;
   }
 }
+
+.noMobile {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.onlyMobile {
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    display: none;
+  }
+}

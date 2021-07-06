@@ -7,6 +7,7 @@ subheading: What our members have to say
 
 import { TestimonialPod, TestimonialPods } from '../../../components/testimonial-pod/testimonial-pod'
 import PressLogos from '../../../components/press-logos/press-logos'
+import Badges from '../../../components/shared/badges-new/badges'
 
 import CaseStudy from '../../../components/case-study/case-study';
 import Media from '../../../components/case-study/media/media';
@@ -23,12 +24,15 @@ import imgRichardWhite from './richard-white.jpg';
 <CaseStudy {...{
   background: 'white'
 }}>
+  <Heading onlyMobile>
+    "I feel so much better that I'm paying 1% less in fees"
+  </Heading>
   <Media {...{
     type: 'video',
     src: 'https://www.instagram.com/tv/CON8YD4AVr8/embed'
   }}/>
   <Body>
-    <Heading>
+    <Heading noMobile>
       "I feel so much better that I'm paying 1% less in fees"
     </Heading>
     <Subheading>
@@ -37,6 +41,8 @@ import imgRichardWhite from './richard-white.jpg';
     <p>
       Mrs MummyPenny shares her thoughts on why she switched her children’s CTFs to Beanstalk.
     </p>
+    <p><strong>Get Beanstalk</strong></p>
+    <Badges/>
   </Body> 
 </CaseStudy>
 
@@ -44,12 +50,15 @@ import imgRichardWhite from './richard-white.jpg';
   layout: 'rightToLeft',
   background: 'primary'
 }}>
+  <Heading onlyMobile>
+    "They really put family and most importantly your child at the heart of all that they do"
+  </Heading>
   <Media {...{
     type: 'video',
     src: 'https://www.instagram.com/tv/CQihcmhDfdP/embed'
   }}/>
   <Body>
-    <Heading>
+    <Heading noMobile>
       "They really put family and most importantly your child at the heart of all that they do"
     </Heading>
     <Subheading>
@@ -58,6 +67,8 @@ import imgRichardWhite from './richard-white.jpg';
     <p>
       Emmanuel shares his thoughts on why you should consider an investment product like Beanstalk to save for your children.
     </p>
+    <p><strong>Get Beanstalk</strong></p>
+    <Badges/>
   </Body> 
 </CaseStudy>
 
@@ -120,42 +131,6 @@ import imgRichardWhite from './richard-white.jpg';
   </Body>
 </CaseStudy>
 
-<CaseStudy {...{
-  layout: 'rightToLeft',
-  background: 'secondary'
-}}>
-  <Media {...{
-    src: imgChrisHillAndFamily
-  }}/>
-  <Body>
-    <Heading>
-      "After transferring CTFs and consolidating various child savings accounts set up by their grandparents, we’re both saving on fees and gaining on interest and growth"
-    </Heading>
-    <Subheading>
-      Chris, Dad to Rachel, Olly and Nathanael 
-    </Subheading>
-    <p>"Both Rachel and Olly had Child Trust Funds dating back to when they were born, and even though we’d been making payments into them it wasn’t until we came to move house that we really paid them much attention. Just changing the correspondence address for the accounts was hard, never mind trying to find out actually how much was in each of them. There had to be an easier way!</p>
-    <p>From the very first contact with Beanstalk it felt like there was a personal touch, rather than automated responses from a computer. Now, rather than an annual statement which gets filed away probably until we next move house, I can check their JISA account on the Beanstalk App whenever I like."</p>
-  </Body>
-</CaseStudy>
-
-<CaseStudy {...{ 
-  background: 'white'
-}}>
-  <Media {...{
-    src: imgNickTammy
-  }}/>
-  <Body>
-    <Heading>
-      "Registering was very straight forward and we've found Beanstalk very easy to use"
-    </Heading>
-    <Subheading>
-      Nick, Dad to Tomos
-    </Subheading>
-    <p>"We opened a Beanstalk account for our son Tomos. Registering was very straight-forward and we've found Beanstalk very easy to use. It's great that we can check the balance whenever we want.</p>
-    <p>I invited my partner, Tammy, to become a donor so we can both contribute to Tomos' account. I have set-up a £10 regular contribution and Tammy is using Beanstalk's round up feature to save the spare change from her purchases. I'd recommend Beanstalk to friends and family as it's a brilliant way to put something aside for the children."</p>
-  </Body>
-</CaseStudy>
 
 ## Here's what people say about us
 
@@ -181,4 +156,4 @@ import imgRichardWhite from './richard-white.jpg';
 
 ## Here's what the press say about us
 
-<PressLogos links/>
+<PressLogos secondRow links/>
