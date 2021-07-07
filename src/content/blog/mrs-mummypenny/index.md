@@ -14,7 +14,9 @@ Hands up if you've got a Child Trust Fund.
 
 If your child was born between 1st September 2002 and the 2nd January 2011, you would have been given a £250 voucher by the government, along with the your bounty bag of freebies when your baby was born. 
 
-Many of us – including me – put that money with an institution, much ending up with Foresters or One Family. At the time the fees were capped by the government at 1.5%, but this meant that most of them simply charged fees of 1.5%. I've got my money with Foresters, and yes, they have been charging me 1.5% of the balance every year in fees. 
+Many of us – including me – put that money with an institution, much ending up with Foresters or One Family. At the time the fees were capped by the government at 1.5%, but this meant that most of them simply charged fees of 1.5%. I've got my money with Foresters, and yes, they have been charging me 1.5% of the balance every year in fees.
+
+<iframe src="https://www.instagram.com/tv/CON8YD4AVr8/embed" width="320" height="640" frameborder="0"></iframe>
 
 So, I've now got to the point where after 13 years I've got £2,000 in one CTF and I've got £1,500 after 11 years in another. They’ve grown over time because my children’s CTFs are invested in stocks and shares. And, but the fees are absolutely horrendous. 
 
