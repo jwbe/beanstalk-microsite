@@ -4,10 +4,14 @@
   width: 100%;
   justify-content: space-between;
   display: flex;
+  &:last-of-type {
+    margin-top: $base-unit * 3;
+  }
 }
 
 .Logo {
-  //flex-basis: percentage(1/4);
+  width: 100%;
+  justify-content: center;
   align-items: center;
   display: flex;
   img {

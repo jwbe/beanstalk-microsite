@@ -2,13 +2,27 @@
   margin-top: 0;
   color: inherit;
   font-family: "Quicksand", sans-serif;
+  font-style: italic;
   font-size: $headline-font-size;
   line-height: $headline-line-height;
   font-weight: 700;
   @media (max-width: $breakpoint-sm - .0625em) {
-    margin-bottom: $base-unit;
+    margin-bottom: $base-unit * 3;
   }
   @media (min-width: $breakpoint-sm) {
     margin-bottom: $base-unit * 2;
+  }
+}
+
+.noMobile {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    display: none;
+  }
+}
+
+.onlyMobile {
+  text-align: center;
+  @media (min-width: $breakpoint-sm) {
+    display: none;
   }
 }
