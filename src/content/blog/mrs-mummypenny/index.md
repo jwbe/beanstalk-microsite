@@ -7,7 +7,7 @@ date: 2021-07-07T09:57:16.935Z
 author: Lynn Beattie aka Mrs MummyPenny
 featuredImage: mrsmummypenny_blog.png
 description: Lynn Beattie aka Mrs MummyPenny and a Personal Finance Expert,
-  shares her experience of transferring your children's Child Trust Funds to
+  shares her experience of transferring her children's Child Trust Funds to
   Beanstalk.
 ---
 Hands up if you've got a Child Trust Fund. 
