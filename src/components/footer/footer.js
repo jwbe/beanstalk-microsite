@@ -35,7 +35,7 @@ const Footer = ({
                   <ul className={Theme.Navigation}>
                     <li>
                       <Link to="/case-studies">
-                        Case Studies
+                        Success Stories
                       </Link>
                     </li>
                     <li>
