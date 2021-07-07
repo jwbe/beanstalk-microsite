@@ -62,13 +62,25 @@
   }
 }
 
-.Centred {
+.Badges {
   display: flex;
   align-items: center;
   justify-content: center;
+  h3 {
+    @media (min-width: $breakpoint-sm) {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: $headline-font-size;
+      line-height: $headline-line-height;
+      text-align: right;
+      padding-right: $base-unit * 6;
+      flex: 1;
+    }
+  }
   > div {
     width: auto;
     @media (min-width: $breakpoint-sm) {
+      flex: 1;
       margin-right: 0;
     }
     a {

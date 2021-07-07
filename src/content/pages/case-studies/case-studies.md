@@ -69,11 +69,14 @@ import imgRichardWhite from './richard-white.jpg';
 </CaseStudy>
 
 <CaseStudy {...{
-  layout: 'centred',
+  layout: 'badges',
   background: 'white'
 }}>
   <h3>Get Beanstalk</h3>
-  <Badges/>
+  <Badges {...{
+    AppStoreLink: `https://smart.link/nayw9a5wruuts?site_id=ioscs`,
+    GooglePlayLink: `https://smart.link/i0x4v7cw1rb98?site_id=andrcs`
+  }}/>
 </CaseStudy>
 
 <CaseStudy {...{
