@@ -11,6 +11,7 @@ const CaseStudy = props => {
 
   const className = cx({
     CaseStudy: true,
+    Centred: layout === `centred`,
     LeftToRight: layout === `leftToRight`,
     RightToLeft: layout === `rightToLeft`,
     WhiteBackground: background === `white`,

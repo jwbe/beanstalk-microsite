@@ -62,6 +62,24 @@
   }
 }
 
+.Centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    flex-direction: column;
+    text-align: center;
+    h3 {
+      margin-top: $base-unit;
+      text-align: center;
+    }
+    > div {
+      margin-bottom: $base-unit * 2;
+      width: auto;
+    }
+  }
+}
+
 .RightToLeft {
   flex-direction: row-reverse;
   @media (min-width: $breakpoint-sm) {

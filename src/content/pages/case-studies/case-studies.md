@@ -41,8 +41,6 @@ import imgRichardWhite from './richard-white.jpg';
     <p>
       Mrs MummyPenny shares her thoughts on why she switched her children’s CTFs to Beanstalk.
     </p>
-    <p><strong>Get Beanstalk</strong></p>
-    <Badges/>
   </Body> 
 </CaseStudy>
 
@@ -67,9 +65,15 @@ import imgRichardWhite from './richard-white.jpg';
     <p>
       Emmanuel shares his thoughts on why you should consider an investment product like Beanstalk to save for your children.
     </p>
-    <p><strong>Get Beanstalk</strong></p>
-    <Badges/>
   </Body> 
+</CaseStudy>
+
+<CaseStudy {...{
+  layout: 'centred',
+  background: 'white'
+}}>
+  <h3>Get Beanstalk</h3>
+  <Badges/>
 </CaseStudy>
 
 <CaseStudy {...{
