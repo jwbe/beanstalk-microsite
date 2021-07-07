@@ -66,6 +66,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  > div {
+    width: auto;
+    @media (min-width: $breakpoint-sm) {
+      margin-right: 0;
+    }
+    a {
+      &:last-of-type {
+        img {
+          margin-right: 0;
+        }
+      }
+    }
+  }
   @media (max-width: $breakpoint-sm - .0625em) {
     flex-direction: column;
     text-align: center;
@@ -75,7 +88,6 @@
     }
     > div {
       margin-bottom: $base-unit * 2;
-      width: auto;
     }
   }
 }
