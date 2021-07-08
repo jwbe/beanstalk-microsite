@@ -16,7 +16,7 @@ const PressLogos = props => {
   return (
     <>
       {
-        links === true &&
+        links === true ?
          <div className={styles.Logos}>
            <a className={styles.Logo} href="https://www.thetimes.co.uk/article/the-saving-apps-that-give-parents-a-helping-hand-pcsms7r0r" target="_blank" rel="noopener">
              <img src={TheTimesLogo} alt='The Times logo'/>
@@ -30,6 +30,21 @@ const PressLogos = props => {
            <a className={styles.Logo} href="https://www.themoneypages.com/investments/top-childs-savings-two-minutes-new-app/" target="_blank" rel="noopener">
              <img src={TheMoneyPagesLogo} alt='The Money Pages logo'/>
            </a>
+         </div>
+         :
+         <div className={styles.Logos}>
+           <div className={styles.Logo}>
+             <img src={TheTimesLogo} alt='The Times logo'/>
+           </div>
+           <div className={styles.Logo} href="https://www.dailymail.co.uk/money/saving/article-9369737/Watch-childrens-savings-grow-Junior-Isas-generous.html" target="_blank" rel="noopener">
+             <img src={DailyMailLogo} alt='Daily Mail logo'/>
+           </div>
+           <div className={styles.Logo}>
+             <img src={iNewsLogo} alt='iNews logo'/>
+           </div>
+           <div className={styles.Logo}>
+             <img src={TheMoneyPagesLogo} alt='The Money Pages logo'/>
+           </div>
          </div>
       }
       {
