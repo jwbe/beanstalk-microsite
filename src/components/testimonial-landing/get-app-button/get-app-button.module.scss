@@ -1,0 +1,26 @@
+.Button {
+  display: inline-block;
+  padding-top: $base-unit * 2;
+  padding-right: $base-unit * 4;
+  padding-bottom: $base-unit * 2;
+  padding-left: $base-unit * 4;
+  background-color: $secondary;
+  box-shadow: $shadow-level-2;
+  color: $white;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-weight: 700;
+  border-radius: 99em;
+  text-decoration: none;
+  &:hover, &:active, &:visited {
+    text-decoration: none;
+  }
+}
+
+.Centre {
+  text-align: center;
+}
+
+.Primary {
+  background-color: $primary;
+}

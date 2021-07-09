@@ -1,0 +1,213 @@
+.Top {
+  @media (max-width: $breakpoint-sm - .0625em) {
+    margin-right: -$base-unit * 2;
+    margin-bottom: $base-unit * 4;
+    margin-left: -$base-unit * 2;
+    padding-bottom: $base-unit * 4;
+    background-image: url('./images/background.png');
+    background-size: cover;
+    background-color: $primary;
+  }
+}
+
+.Headline {
+  margin: 0;
+  padding-top: $base-unit * 3;
+  padding-bottom: $base-unit * 3;
+  color: $white;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: $headline-font-size;
+  line-height: $headline-line-height;
+  font-weight: 700;
+  @media (max-width: $breakpoint-sm - .0625em) {
+    padding-right: $base-unit * 2;
+    padding-left: $base-unit * 2;
+  }
+  @media (min-width: $breakpoint-sm) {
+    color: $primary;
+  }
+}
+
+.Heading {
+  margin: 0;
+  margin-bottom: $base-unit * 3;
+  text-align: center;
+  color: $secondary;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: $title-font-size;
+  line-height: $title-line-height;
+
+}
+
+.Testimonial {
+  display: flex;
+  margin-right: auto;
+  margin-bottom: $base-unit * 3;
+  margin-left: auto;
+  padding-left: $base-unit * 2;
+  padding-right: 0.625rem;
+  max-width: 28.75rem;
+  color: $white;
+  border-radius: $base-unit * 2;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 4;
+    padding-top: $base-unit * 3;
+    padding-right: $base-unit * 4;
+    padding-left: $base-unit * 3;
+    padding-bottom: $base-unit * 4;
+    background-image: url('./images/background.png');
+    background-size: 100%;
+    background-position: top center;
+  }
+  &_Thumbnail {
+    margin-right: $base-unit * 2;
+    flex: none;
+    width: $base-unit * 8;
+    height: $base-unit * 8;
+    background-image: url('./images/lynn-beattie.png');
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: $shadow-level-2;
+    @media (min-width: $breakpoint-sm) {
+      width: $base-unit * 9;
+      height: $base-unit * 9;
+    }
+  }
+  p {
+    margin-bottom: $base-unit * 2;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+  small {
+    font-weight: 700;
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+}
+
+.Rating {
+  width: 100%;
+  margin-top: $base-unit * 4;
+  text-align: center;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $white;
+  @media (min-width: $breakpoint-sm) {
+    margin-top: $base-unit * 5;
+    margin-bottom: $base-unit * 5;
+    color: $accent-3;
+  }
+}
+
+.Rating_Inner {
+  display: inline-flex;
+}
+
+.Stars {
+  display: flex;
+}
+
+.Star {
+  margin-right: .75rem;
+  width: $base-unit * 2;
+  height: $base-unit * 2;
+  background-image: url('./images/star.svg');
+  &:last-of-type {
+    margin-right: $base-unit;
+  }
+}
+
+.Details {
+  margin-right: auto;
+  margin-bottom: $base-unit * 4;
+  margin-left: auto;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  color: $accent-3;
+  max-width: $base-unit * 50;
+  @media (min-width: $breakpoint-sm) {
+    margin-bottom: $base-unit * 5;
+  }
+  p {
+    &:first-of-type {
+      margin-bottom: $base-unit * 3;
+    }
+  }
+}
+
+.HomepageGraphic {
+  display: block;
+  margin-right: auto;
+  margin-bottom: $base-unit * 4;
+  margin-left: auto;
+  width: 100%;
+  max-width: 17.25rem;
+}
+
+.GraphWrapper {
+  margin-right: auto;
+  margin-bottom: $base-unit * 4;
+  margin-left: auto;
+  max-width: $base-unit * 54;
+}
+
+.Panels {
+  margin-bottom: $base-unit * 4;
+  max-width: $base-unit * 74;
+  @media (min-width: $breakpoint-sm) {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.Panel {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding-top: $base-unit * 2;
+  padding-right: $base-unit * 2;
+  padding-bottom: $base-unit * 3;
+  padding-left: $base-unit * 2;
+  background-color: $secondary;
+  color: $white;
+  border-radius: $base-unit;
+  &:first-of-type {
+    @media (max-width: $breakpoint-sm - .0625em) {
+      margin-bottom: $base-unit * 3;
+    }
+    @media (min-width: $breakpoint-sm) {
+     margin-right: $base-unit * 3;
+    }
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: $base-unit;
+    color: inherit;
+    font-family: 'Quicksand', sans-serif;
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
+  }
+  a {
+    color: inherit;
+  }
+
+}
+
+.PressLogos {
+  margin-bottom: $base-unit * 6;
+}
+
+.FinalCta {
+  margin-bottom: $base-unit * 10;
+}
+
+.SmallPrint {
+  small {
+    display: block;
+    &:first-of-type {
+      margin-bottom: $base-unit * 2;
+    }
+  }
+}
