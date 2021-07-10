@@ -92,7 +92,7 @@
   margin-top: $base-unit * 4;
   text-align: center;
   font-size: $body-font-size;
-  line-height: $body-line-height;
+  line-height: 1rem;
   color: $white;
   @media (min-width: $breakpoint-sm) {
     margin-top: $base-unit * 5;
@@ -105,6 +105,10 @@
   display: inline-flex;
 }
 
+.Rating_Score {
+  padding-top: .0625rem;
+}
+
 .Stars {
   display: flex;
 }
@@ -115,7 +119,7 @@
   height: $base-unit * 2;
   background-image: url('./images/star.svg');
   &:last-of-type {
-    margin-right: $base-unit;
+    margin-right: $base-unit * 2;
   }
 }
 
@@ -204,6 +208,9 @@
 }
 
 .SmallPrint {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 37rem;
   small {
     display: block;
     &:first-of-type {

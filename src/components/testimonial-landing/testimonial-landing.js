@@ -66,7 +66,9 @@ const TestimonialLanding = props => {
                 className: Theme.Star
               }}></div>
             </div>
-            <div>
+            <div {...{
+              className: Theme.Rating_Score
+            }}>
               4.6
             </div>
           </div>
@@ -172,7 +174,7 @@ const TestimonialLanding = props => {
           * As of April 21st, Beanstalk users transferring in stocks & shares CTFs or JISAs have saved on average £180 in fees until the child is 18.
         </small>
         <small>
-          † Competitor fees checked on their websites, correct as of 09/07/2021
+          † Competitor fees checked on their websites, correct as of 09/07/2021.
         </small>
       </section>
     </>
