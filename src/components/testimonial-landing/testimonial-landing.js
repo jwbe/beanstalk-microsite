@@ -32,7 +32,7 @@ const TestimonialLanding = props => {
               "I now feel comfortable that my children's Junior ISA money is in a place where fees are low"
             </p>
             <small>
-              Lynn Beattie aka Mrs MummyPenny,  <br/>Personal Finance Expert
+              Lynn Beattie aka Mrs MummyPenny, <br/>Personal Finance Expert
             </small>
           </div>
         </blockquote>
