@@ -17,7 +17,7 @@ const TestimonialLanding = props => {
         <h1 {...{
           className: Theme.Headline
         }}>
-          Switch and save £150* for your child
+          Customers have saved on average £150* by switching
         </h1>
 
         <blockquote {...{
